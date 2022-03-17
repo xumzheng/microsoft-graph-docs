@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
+Update the properties of a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object. 
 
 ## Permissions
 
