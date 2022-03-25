@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TrustFrameworkKeySet trustFrameworkKeySet = new TrustFrameworkKeySet();
@@ -32,6 +32,7 @@ keysList.add(keys);
 trustFrameworkKeySet.keys = keysList;
 
 graphClient.trustFramework().keySets()
-    .buildRequest()
-    .post(trustFrameworkKeySet);
+	.buildRequest()
+	.post(trustFrameworkKeySet);
+
 ```

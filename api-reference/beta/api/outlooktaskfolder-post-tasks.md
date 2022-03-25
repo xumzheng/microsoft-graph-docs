@@ -5,7 +5,6 @@ author: "mashriv"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # Create outlookTask (deprecated)
@@ -15,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Create an Outlook task in the specified task folder.
 
@@ -55,7 +55,7 @@ If successful, this method returns `201 Created` response code and [outlookTask]
 ##### Request
 Here is an example of the request.
 
-::: zone pivot="programming-language-curl"
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlooktaskfolder"
@@ -76,38 +76,31 @@ Content-type: application/json
   }
 }
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktask-from-outlooktaskfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktask-from-outlooktaskfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-outlooktask-from-outlooktaskfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlooktaskfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-outlooktask-from-outlooktaskfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-outlooktask-from-outlooktaskfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
 
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
 ##### Response
@@ -168,4 +161,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
 

@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "alamaral"
 ms.prod: "applications"
 doc_type: "apiPageType"
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # servicePrincipal: addTokenSigningCertificate
@@ -20,6 +19,7 @@ The self-signed signing certificate is composed of the following objects, which 
     + A public key object with **usage** set to `Verify`.
 + The [passwordCredentials](../resources/passwordcredential.md) object. 
 
+
 All the objects have the same value of **customKeyIdentifier**.
 
 The **passwordCredential** is used to open the PFX file (private key). It and the associated private key object have the same value of **keyId**. When set during creation through the **displayName** property, the subject of the certificate cannot be updated. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
@@ -31,6 +31,7 @@ The **passwordCredential** is used to open the PFX file (private key). It and th
 |Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | None.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+
 
 ## HTTP request
 
@@ -59,7 +60,9 @@ If successful, this method returns a `200 OK` response code and a new [selfSigne
 
 The following is an example of the request.
 
-::: zone pivot="programming-language-curl"
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_addtokensigningcertificate"
@@ -74,18 +77,13 @@ Content-type: application/json
     "endDateTime":"2024-01-25T00:00:00Z"
 }
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addtokensigningcertificate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+---
+
+
 
 ### Response
 

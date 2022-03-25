@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 DirectorySetting directorySetting = new DirectorySetting();
@@ -29,6 +29,7 @@ valuesList.add(values3);
 directorySetting.values = valuesList;
 
 graphClient.settings()
-    .buildRequest()
-    .post(directorySetting);
+	.buildRequest()
+	.post(directorySetting);
+
 ```

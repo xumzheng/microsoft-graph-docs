@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TeleconferenceDeviceQuality quality = new TeleconferenceDeviceQuality();
@@ -85,10 +85,11 @@ mediaQualityListList.add(mediaQualityList2);
 quality.mediaQualityList = mediaQualityListList;
 
 graphClient.communications().calls()
-    .logTeleconferenceDeviceQuality(CallLogTeleconferenceDeviceQualityParameterSet
-        .newBuilder()
-        .withQuality(quality)
-        .build())
-    .buildRequest()
-    .post();
+	.logTeleconferenceDeviceQuality(CallLogTeleconferenceDeviceQualityParameterSet
+		.newBuilder()
+		.withQuality(quality)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

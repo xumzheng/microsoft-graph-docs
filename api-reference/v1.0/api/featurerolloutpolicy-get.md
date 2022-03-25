@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # Get featureRolloutPolicy
@@ -58,7 +57,8 @@ If successful, this method returns a `200 OK` response code and the requested [f
 
 The following is an example of the request.
 
-::: zone pivot="programming-language-curl"
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_featurerolloutpolicy"
@@ -67,38 +67,32 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-featurerolloutpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-featurerolloutpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-featurerolloutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
+
 
 #### Response
 
@@ -132,7 +126,8 @@ Content-type: application/json
 
 The following is an example of the request.
 
-::: zone pivot="programming-language-curl"
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_featurerolloutpolicy_expand_appliesTo"
@@ -141,38 +136,32 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-featurerolloutpolicy-expand-appliesto-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-featurerolloutpolicy-expand-appliesto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicy-expand-appliesto-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-expand-appliesto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicy-expand-appliesto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-featurerolloutpolicy-expand-appliesto-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
+
 
 #### Response
 
@@ -216,4 +205,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 

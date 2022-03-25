@@ -5,7 +5,6 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # Get the status of an educationSynchronizationProfile
@@ -53,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an [educationsyn
 
 The following is an example of the request.
 
-::: zone pivot="programming-language-curl"
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_status"
@@ -61,38 +60,31 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/profileStatus
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsynchronizationprofile-status-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsynchronizationprofile-status-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-status-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-status-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-status-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-status-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
 
 ##### Response
 
@@ -130,4 +122,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
 

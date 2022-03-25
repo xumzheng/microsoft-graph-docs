@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "carolinetempleton"
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # List privilegedRoleAssignments
@@ -54,7 +53,7 @@ Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forb
 ##### Request
 The following example shows a request to get all role assignments:
 
-::: zone pivot="programming-language-curl"
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments_1"
@@ -62,38 +61,31 @@ The following example shows a request to get all role assignments:
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedroleassignments-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedroleassignments-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedroleassignments-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignments-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
 
 ##### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
@@ -124,7 +116,7 @@ Content-type: application/json
 ##### Request 
 The following example shows a request to query active role assignments:
 
-::: zone pivot="programming-language-curl"
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments_2"
@@ -132,38 +124,31 @@ The following example shows a request to query active role assignments:
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedroleassignments-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedroleassignments-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedroleassignments-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignments-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
 
 ##### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
@@ -202,7 +187,7 @@ Content-type: application/json
 ##### Request 
 The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:
 
-::: zone pivot="programming-language-curl"
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments_3"
@@ -210,38 +195,31 @@ The following example shows a request to query permanent role assignments, where
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedroleassignments-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedroleassignments-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedroleassignments-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignments-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
 
 ##### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
@@ -280,7 +258,7 @@ Content-type: application/json
 ##### Request 
 The following example shows a request to query eligible role assignments, including the active and non-active ones:
 
-::: zone pivot="programming-language-curl"
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments_4"
@@ -288,38 +266,31 @@ The following example shows a request to query eligible role assignments, includ
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedroleassignments-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedroleassignments-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedroleassignments-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignments-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
 
 ##### Response 
 The following example shows the response. Note: The response object shown here might be shortened for readability.

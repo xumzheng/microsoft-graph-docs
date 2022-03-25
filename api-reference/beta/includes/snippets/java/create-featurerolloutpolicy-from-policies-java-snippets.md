@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 FeatureRolloutPolicy featureRolloutPolicy = new FeatureRolloutPolicy();
@@ -14,6 +14,7 @@ featureRolloutPolicy.isEnabled = true;
 featureRolloutPolicy.isAppliedToOrganization = false;
 
 graphClient.policies().featureRolloutPolicies()
-    .buildRequest()
-    .post(featureRolloutPolicy);
+	.buildRequest()
+	.post(featureRolloutPolicy);
+
 ```

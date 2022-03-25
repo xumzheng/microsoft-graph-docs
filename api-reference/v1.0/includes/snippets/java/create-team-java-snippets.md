@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Team team = new Team();
@@ -21,6 +21,7 @@ funSettings.giphyContentRating = GiphyRatingType.STRICT;
 team.funSettings = funSettings;
 
 graphClient.groups("{id}").team()
-    .buildRequest()
-    .put(team);
+	.buildRequest()
+	.put(team);
+
 ```

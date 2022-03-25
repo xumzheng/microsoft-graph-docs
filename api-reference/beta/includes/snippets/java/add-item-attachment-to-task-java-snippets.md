@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ItemAttachment attachment = new ItemAttachment();
@@ -25,6 +25,7 @@ item.end = end;
 attachment.item = item;
 
 graphClient.me().outlook().tasks("AAMkADAAAANXbdnAAA=").attachments()
-    .buildRequest()
-    .post(attachment);
+	.buildRequest()
+	.post(attachment);
+
 ```

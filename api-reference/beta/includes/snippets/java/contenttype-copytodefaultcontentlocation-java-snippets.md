@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ItemReference sourceFile = new ItemReference();
@@ -15,11 +15,12 @@ sourceFile.sharepointIds = sharepointIds;
 String destinationFileName = "newname.txt";
 
 graphClient.sites("{id}").contentTypes("{contentTypeId}")
-    .copyToDefaultContentLocation(ContentTypeCopyToDefaultContentLocationParameterSet
-        .newBuilder()
-        .withSourceFile(sourceFile)
-        .withDestinationFileName(destinationFileName)
-        .build())
-    .buildRequest()
-    .post();
+	.copyToDefaultContentLocation(ContentTypeCopyToDefaultContentLocationParameterSet
+		.newBuilder()
+		.withSourceFile(sourceFile)
+		.withDestinationFileName(destinationFileName)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

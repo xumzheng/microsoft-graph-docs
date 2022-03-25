@@ -1,15 +1,16 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OutlookTaskFolder outlookTaskFolder = new OutlookTaskFolder();
 outlookTaskFolder.name = "Volunteer";
 
 graphClient.me().outlook().taskFolders()
-    .buildRequest()
-    .post(outlookTaskFolder);
+	.buildRequest()
+	.post(outlookTaskFolder);
+
 ```

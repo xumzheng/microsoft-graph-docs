@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CloudPcOnPremisesConnection cloudPcOnPremisesConnection = new CloudPcOnPremisesConnection();
@@ -19,6 +19,7 @@ cloudPcOnPremisesConnection.virtualNetworkId = "/subscriptions/0ac520ee-14c0-480
 cloudPcOnPremisesConnection.subnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet";
 
 graphClient.deviceManagement().virtualEndpoint().onPremisesConnections()
-    .buildRequest()
-    .post(cloudPcOnPremisesConnection);
+	.buildRequest()
+	.post(cloudPcOnPremisesConnection);
+
 ```

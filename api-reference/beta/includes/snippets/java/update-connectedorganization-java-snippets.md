@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConnectedOrganization connectedOrganization = new ConnectedOrganization();
@@ -12,6 +12,7 @@ connectedOrganization.description = "Connected organization new description";
 connectedOrganization.state = ConnectedOrganizationState.CONFIGURED;
 
 graphClient.identityGovernance().entitlementManagement().connectedOrganizations("{id}")
-    .buildRequest()
-    .patch(connectedOrganization);
+	.buildRequest()
+	.patch(connectedOrganization);
+
 ```

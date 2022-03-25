@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String memberEntityType = "String";
@@ -21,14 +21,15 @@ LinkedList<String> removeExclusionsList = new LinkedList<String>();
 removeExclusionsList.add("String");
 
 graphClient.admin().windows().updates().deployments("{deploymentId}").audience()
-    .updateAudienceById(DeploymentAudienceUpdateAudienceByIdParameterSet
-        .newBuilder()
-        .withMemberEntityType(memberEntityType)
-        .withAddMembers(addMembersList)
-        .withRemoveMembers(removeMembersList)
-        .withAddExclusions(addExclusionsList)
-        .withRemoveExclusions(removeExclusionsList)
-        .build())
-    .buildRequest()
-    .post();
+	.updateAudienceById(DeploymentAudienceUpdateAudienceByIdParameterSet
+		.newBuilder()
+		.withMemberEntityType(memberEntityType)
+		.withAddMembers(addMembersList)
+		.withRemoveMembers(removeMembersList)
+		.withAddExclusions(addExclusionsList)
+		.withRemoveExclusions(removeExclusionsList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

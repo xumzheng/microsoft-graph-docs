@@ -5,11 +5,12 @@ author: "mecampos"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # Delete externalItem
 Namespace: microsoft.graph.externalConnectors
+
+
 
 Deletes an [externalItem](../resources/externalconnectors-externalitem.md) object.
 
@@ -48,7 +49,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-::: zone pivot="programming-language-curl"
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_externalitem"
@@ -57,28 +60,26 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-externalitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
+
+
+
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

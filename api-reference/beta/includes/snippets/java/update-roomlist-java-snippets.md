@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 RoomList place = new RoomList();
@@ -25,6 +25,7 @@ geoCoordinates.altitudeAccuracy = 0d;
 place.geoCoordinates = geoCoordinates;
 
 graphClient.places("Building1RroomList@contoso.onmicrosoft.com")
-    .buildRequest()
-    .patch(place);
+	.buildRequest()
+	.patch(place);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AuthenticationContextClassReference authenticationContextClassReference = new AuthenticationContextClassReference();
@@ -13,6 +13,7 @@ authenticationContextClassReference.description = "Medium protection level defin
 authenticationContextClassReference.isAvailable = true;
 
 graphClient.identity().conditionalAccess().authenticationContextClassReferences()
-    .buildRequest()
-    .post(authenticationContextClassReference);
+	.buildRequest()
+	.post(authenticationContextClassReference);
+
 ```

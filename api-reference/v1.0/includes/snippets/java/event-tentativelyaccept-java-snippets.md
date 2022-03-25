@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String comment = "I may not be able to make this week. How about next week?";
@@ -21,12 +21,13 @@ end.timeZone = "Pacific Standard Time";
 proposedNewTime.end = end;
 
 graphClient.me().events("{id}")
-    .tentativelyAccept(EventTentativelyAcceptParameterSet
-        .newBuilder()
-        .withComment(comment)
-        .withSendResponse(sendResponse)
-        .withProposedNewTime(proposedNewTime)
-        .build())
-    .buildRequest()
-    .post();
+	.tentativelyAccept(EventTentativelyAcceptParameterSet
+		.newBuilder()
+		.withComment(comment)
+		.withSendResponse(sendResponse)
+		.withProposedNewTime(proposedNewTime)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

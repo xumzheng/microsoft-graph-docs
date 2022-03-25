@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
@@ -20,11 +20,12 @@ message.attachments = attachmentCollectionPage;
 String comment = "Please take a look at the attached guidelines before you decide on the name.";
 
 graphClient.me().messages("AAMkADA1MTAAAH5JaKAAA=")
-    .replyAll(MessageReplyAllParameterSet
-        .newBuilder()
-        .withMessage(message)
-        .withComment(comment)
-        .build())
-    .buildRequest()
-    .post();
+	.replyAll(MessageReplyAllParameterSet
+		.newBuilder()
+		.withMessage(message)
+		.withComment(comment)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

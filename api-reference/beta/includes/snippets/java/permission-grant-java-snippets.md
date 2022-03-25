@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
@@ -20,11 +20,12 @@ LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("read");
 
 graphClient.shares("{encoded-sharing-url}").permission()
-    .grant(PermissionGrantParameterSet
-        .newBuilder()
-        .withRoles(rolesList)
-        .withRecipients(recipientsList)
-        .build())
-    .buildRequest()
-    .post();
+	.grant(PermissionGrantParameterSet
+		.newBuilder()
+		.withRoles(rolesList)
+		.withRecipients(recipientsList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

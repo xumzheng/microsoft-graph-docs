@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -23,6 +23,7 @@ IdentityProviderCollectionPage identityProviderCollectionPage = new IdentityProv
 b2cIdentityUserFlow.identityProviders = identityProviderCollectionPage;
 
 graphClient.identity().b2cUserFlows()
-    .buildRequest( requestOptions )
-    .post(b2cIdentityUserFlow);
+	.buildRequest( requestOptions )
+	.post(b2cIdentityUserFlow);
+
 ```

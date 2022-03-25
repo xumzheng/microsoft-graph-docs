@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AdministrativeUnit administrativeUnit = new AdministrativeUnit();
@@ -12,6 +12,7 @@ administrativeUnit.description = "description-value";
 administrativeUnit.visibility = "visibility-value";
 
 graphClient.directory().administrativeUnits("{id}")
-    .buildRequest()
-    .patch(administrativeUnit);
+	.buildRequest()
+	.patch(administrativeUnit);
+
 ```

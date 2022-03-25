@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookTableColumn workbookTableColumn = new WorkbookTableColumn();
@@ -13,6 +13,7 @@ workbookTableColumn.index = 99;
 workbookTableColumn.values = JsonParser.parseString("\"values-value\"");
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns()
-    .buildRequest()
-    .post(workbookTableColumn);
+	.buildRequest()
+	.post(workbookTableColumn);
+
 ```

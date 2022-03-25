@@ -1,12 +1,13 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AuthenticationContextClassReferenceCollectionPage authenticationContextClassReferences = graphClient.identity().conditionalAccess().authenticationContextClassReferences()
-    .buildRequest()
-    .get();
+AuthenticationContextClassReference authenticationContextClassReference = graphClient.identity().conditionalAccess().authenticationContextClassReferences("c1")
+	.buildRequest()
+	.get();
+
 ```

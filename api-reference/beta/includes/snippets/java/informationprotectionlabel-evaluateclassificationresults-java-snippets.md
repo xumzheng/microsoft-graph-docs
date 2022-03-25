@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -18,18 +18,19 @@ contentInfo.state = ContentState.REST;
 
 LinkedList<ClassificationResult> classificationResultsList = new LinkedList<ClassificationResult>();
 ClassificationResult classificationResults = new ClassificationResult();
-classificationResults.sensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf";
+classificationResults.sensitiveTypeId = UUID.fromString("cb353f78-2b72-4c3c-8827-92ebe4f69fdf");
 classificationResults.count = 4;
 classificationResults.confidenceLevel = 75;
 
 classificationResultsList.add(classificationResults);
 
 graphClient.informationProtection().policy().labels()
-    .evaluateClassificationResults(InformationProtectionLabelEvaluateClassificationResultsParameterSet
-        .newBuilder()
-        .withContentInfo(contentInfo)
-        .withClassificationResults(classificationResultsList)
-        .build())
-    .buildRequest( requestOptions )
-    .post();
+	.evaluateClassificationResults(InformationProtectionLabelEvaluateClassificationResultsParameterSet
+		.newBuilder()
+		.withContentInfo(contentInfo)
+		.withClassificationResults(classificationResultsList)
+		.build())
+	.buildRequest( requestOptions )
+	.post();
+
 ```

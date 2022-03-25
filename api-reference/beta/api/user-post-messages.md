@@ -65,6 +65,7 @@ To use **mention** to call out another user in the new message:
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.
@@ -492,6 +493,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRv
 ```
+
 
 #### Response
 Here is an example of the response.

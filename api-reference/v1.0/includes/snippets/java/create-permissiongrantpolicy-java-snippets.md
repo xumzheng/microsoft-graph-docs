@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PermissionGrantPolicy permissionGrantPolicy = new PermissionGrantPolicy();
@@ -12,6 +12,7 @@ permissionGrantPolicy.displayName = "Custom application consent policy";
 permissionGrantPolicy.description = "A custom permission grant policy to customize conditions for granting consent.";
 
 graphClient.policies().permissionGrantPolicies()
-    .buildRequest()
-    .post(permissionGrantPolicy);
+	.buildRequest()
+	.post(permissionGrantPolicy);
+
 ```

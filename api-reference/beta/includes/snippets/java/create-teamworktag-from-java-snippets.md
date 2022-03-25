@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TeamworkTag teamworkTag = new TeamworkTag();
@@ -21,6 +21,7 @@ TeamworkTagMemberCollectionPage teamworkTagMemberCollectionPage = new TeamworkTa
 teamworkTag.members = teamworkTagMemberCollectionPage;
 
 graphClient.teams("53c53217-fe77-4383-bc5a-ed4937a1aecd").tags()
-    .buildRequest()
-    .post(teamworkTag);
+	.buildRequest()
+	.post(teamworkTag);
+
 ```

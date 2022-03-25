@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrivilegedRoleSettings privilegedRoleSettings = new PrivilegedRoleSettings();
@@ -23,6 +23,7 @@ approverIdsList.add("22770e3f-b9b4-418e-9dea-d0e3d2f275dd");
 privilegedRoleSettings.approverIds = approverIdsList;
 
 graphClient.privilegedRoles("{id}").settings()
-    .buildRequest()
-    .put(privilegedRoleSettings);
+	.buildRequest()
+	.put(privilegedRoleSettings);
+
 ```

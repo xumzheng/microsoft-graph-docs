@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GovernanceRoleAssignmentRequest governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest();
@@ -14,6 +14,7 @@ governanceRoleAssignmentRequest.assignmentState = "Eligible";
 governanceRoleAssignmentRequest.type = "AdminRemove";
 
 graphClient.privilegedAccess("azureResources").roleAssignmentRequests()
-    .buildRequest()
-    .post(governanceRoleAssignmentRequest);
+	.buildRequest()
+	.post(governanceRoleAssignmentRequest);
+
 ```

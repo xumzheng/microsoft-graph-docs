@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<WorkbookSortField> fieldsList = new LinkedList<WorkbookSortField>();
@@ -29,15 +29,16 @@ String orientation = "orientation-value";
 String method = "method-value";
 
 graphClient.me().drive().items("{id}").workbook().names("{name}")
-    .range().sort()
-    .apply(WorkbookRangeSortApplyParameterSet
-        .newBuilder()
-        .withFields(fieldsList)
-        .withMatchCase(matchCase)
-        .withHasHeaders(hasHeaders)
-        .withOrientation(orientation)
-        .withMethod(method)
-        .build())
-    .buildRequest()
-    .post();
+	.range().sort()
+	.apply(WorkbookRangeSortApplyParameterSet
+		.newBuilder()
+		.withFields(fieldsList)
+		.withMatchCase(matchCase)
+		.withHasHeaders(hasHeaders)
+		.withOrientation(orientation)
+		.withMethod(method)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

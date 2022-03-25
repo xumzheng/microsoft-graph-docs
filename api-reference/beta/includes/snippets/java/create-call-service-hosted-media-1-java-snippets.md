@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Call call = new Call();
@@ -25,6 +25,7 @@ ServiceHostedMediaConfig mediaConfig = new ServiceHostedMediaConfig();
 call.mediaConfig = mediaConfig;
 
 graphClient.communications().calls()
-    .buildRequest()
-    .post(call);
+	.buildRequest()
+	.post(call);
+
 ```

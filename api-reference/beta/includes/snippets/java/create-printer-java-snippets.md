@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String displayName = "Test Printer";
@@ -23,16 +23,17 @@ certificateSigningRequest.transportKey = "{sampleTransportKey}";
 
 
 graphClient.print().printers()
-    .create(PrinterCreateParameterSet
-        .newBuilder()
-        .withDisplayName(displayName)
-        .withManufacturer(manufacturer)
-        .withModel(model)
-        .withPhysicalDeviceId(physicalDeviceId)
-        .withHasPhysicalDevice(hasPhysicalDevice)
-        .withCertificateSigningRequest(certificateSigningRequest)
-        .withConnectorId(connectorId)
-        .build())
-    .buildRequest()
-    .post();
+	.create(PrinterCreateParameterSet
+		.newBuilder()
+		.withDisplayName(displayName)
+		.withManufacturer(manufacturer)
+		.withModel(model)
+		.withPhysicalDeviceId(physicalDeviceId)
+		.withHasPhysicalDevice(hasPhysicalDevice)
+		.withCertificateSigningRequest(certificateSigningRequest)
+		.withConnectorId(connectorId)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

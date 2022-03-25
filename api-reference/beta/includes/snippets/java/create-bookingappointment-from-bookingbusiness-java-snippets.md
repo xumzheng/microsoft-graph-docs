@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 BookingAppointment bookingAppointment = new BookingAppointment();
@@ -35,12 +35,12 @@ bookingAppointment.customerPhone = "213-555-0199";
 bookingAppointment.customerTimeZone = "America/Chicago";
 bookingAppointment.smsNotificationsEnabled = true;
 DateTimeTimeZone end = new DateTimeTimeZone();
-end.dateTime = "2018-05-01T08:30:00-04:00";
+end.dateTime = "2018-05-01T12:30:00+00:00";
 end.timeZone = "UTC";
 bookingAppointment.end = end;
 bookingAppointment.invoiceAmount = 10.0d;
 DateTimeTimeZone invoiceDate = new DateTimeTimeZone();
-invoiceDate.dateTime = "2018-05-01T08:30:00-04:00";
+invoiceDate.dateTime = "2018-05-01T12:30:00+00:00";
 invoiceDate.timeZone = "UTC";
 bookingAppointment.invoiceDate = invoiceDate;
 bookingAppointment.invoiceId = "1001";
@@ -100,7 +100,7 @@ bookingAppointment.serviceLocation = serviceLocation;
 bookingAppointment.serviceName = "Catered bento";
 bookingAppointment.serviceNotes = "Customer requires punctual service.";
 DateTimeTimeZone start = new DateTimeTimeZone();
-start.dateTime = "2018-05-01T08:00:00-04:00";
+start.dateTime = "2018-05-01T12:00:00+00:00";
 start.timeZone = "UTC";
 bookingAppointment.start = start;
 bookingAppointment.maximumAttendeesCount = 5;
@@ -154,6 +154,7 @@ customersList.add(customers);
 bookingAppointment.customers = customersList;
 
 graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").appointments()
-    .buildRequest()
-    .post(bookingAppointment);
+	.buildRequest()
+	.post(bookingAppointment);
+
 ```

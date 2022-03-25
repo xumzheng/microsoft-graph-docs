@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 FederatedIdentityCredential federatedIdentityCredential = new FederatedIdentityCredential();
@@ -15,6 +15,7 @@ audiencesList.add("api://AzureADTokenExchange");
 federatedIdentityCredential.audiences = audiencesList;
 
 graphClient.applications("bcd7c908-1c4d-4d48-93ee-ff38349a75c8").federatedIdentityCredentials()
-    .buildRequest()
-    .post(federatedIdentityCredential);
+	.buildRequest()
+	.post(federatedIdentityCredential);
+
 ```

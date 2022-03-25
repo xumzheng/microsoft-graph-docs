@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String destinationPrinterId = "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea";
@@ -40,11 +40,12 @@ configuration.scaling = PrintScaling.SHRINK_TO_FIT;
 configuration.fitPdfToPage = false;
 
 graphClient.print().printers("d5ef6ec4-07ca-4212-baf9-d45be126bfbb").jobs("44353")
-    .redirect(PrintJobRedirectParameterSet
-        .newBuilder()
-        .withDestinationPrinterId(destinationPrinterId)
-        .withConfiguration(configuration)
-        .build())
-    .buildRequest()
-    .post();
+	.redirect(PrintJobRedirectParameterSet
+		.newBuilder()
+		.withDestinationPrinterId(destinationPrinterId)
+		.withConfiguration(configuration)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

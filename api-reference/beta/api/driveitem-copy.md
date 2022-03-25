@@ -6,7 +6,6 @@ title: driveItem: copy
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
-zone_pivot_groups: graph-sdk-languages
 ---
 # driveItem: copy
 
@@ -53,6 +52,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 
 In the request body, provide a JSON object with the following parameters.
 
+
 | Name            | Value                                          | Description                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                         |
@@ -71,7 +71,7 @@ The new copy of the file will be named `contoso plan (copy).txt`.
 
 ### Request
 
-::: zone pivot="programming-language-curl"
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -86,28 +86,24 @@ Content-Type: application/json
   "name": "contoso plan (copy).txt"
 }
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/copy-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
+
 
 ### Response
 <!-- { "blockType": "response" } -->
@@ -136,4 +132,5 @@ The response from the API will only indicate that the copy operation was accepte
   ]
 }
 -->
+
 

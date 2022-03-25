@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UnifiedRoleAssignmentMultiple unifiedRoleAssignmentMultiple = new UnifiedRoleAssignmentMultiple();
@@ -18,6 +18,7 @@ appScopeIdsList.add("allDevices");
 unifiedRoleAssignmentMultiple.appScopeIds = appScopeIdsList;
 
 graphClient.roleManagement().deviceManagement().roleAssignments()
-    .buildRequest()
-    .post(unifiedRoleAssignmentMultiple);
+	.buildRequest()
+	.post(unifiedRoleAssignmentMultiple);
+
 ```

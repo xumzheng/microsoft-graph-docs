@@ -79,6 +79,7 @@ Failing to do this results in the following error:
 | Authorization  | string  | Bearer {token}. Required. |
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
+
 ## Request body
 Do not supply a request body for this method.
 

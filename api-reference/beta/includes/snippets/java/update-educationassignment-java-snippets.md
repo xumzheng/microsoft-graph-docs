@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 EducationAssignment educationAssignment = new EducationAssignment();
@@ -17,6 +17,7 @@ educationAssignment.addedStudentAction = EducationAddedStudentAction.NONE;
 educationAssignment.addToCalendarAction = EducationAddToCalendarOptions.STUDENTS_AND_PUBLISHER;
 
 graphClient.education().classes("72a7baec-c3e9-4213-a850-f62de0adad5f").assignments("4679bc1b-90c5-45af-ae1a-d5357672ed39")
-    .buildRequest()
-    .patch(educationAssignment);
+	.buildRequest()
+	.patch(educationAssignment);
+
 ```

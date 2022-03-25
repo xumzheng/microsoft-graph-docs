@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ColumnDefinition columnDefinition = new ColumnDefinition();
@@ -12,6 +12,7 @@ columnDefinition.hidden = false;
 columnDefinition.propagateChanges = false;
 
 graphClient.sites("{site-id}").contentTypes("{contentType-id}").columns("{column-id}")
-    .buildRequest()
-    .patch(columnDefinition);
+	.buildRequest()
+	.patch(columnDefinition);
+
 ```

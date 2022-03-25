@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AuthorizationPolicy authorizationPolicy = new AuthorizationPolicy();
@@ -12,6 +12,7 @@ defaultUserRolePermissions.allowedToCreateApps = false;
 authorizationPolicy.defaultUserRolePermissions = defaultUserRolePermissions;
 
 graphClient.policies().authorizationPolicy("authorizationPolicy")
-    .buildRequest()
-    .patch(authorizationPolicy);
+	.buildRequest()
+	.patch(authorizationPolicy);
+
 ```

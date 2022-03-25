@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TimeCard timeCard = new TimeCard();
@@ -51,6 +51,7 @@ breaksList.add(breaks);
 timeCard.breaks = breaksList;
 
 graphClient.teams("fd15cad8-80f6-484f-9666-3caf695fbf32").schedule().timeCards("TCK_3cd7413f-0337-433b-9a49-da0923185b3f")
-    .buildRequest()
-    .put(timeCard);
+	.buildRequest()
+	.put(timeCard);
+
 ```

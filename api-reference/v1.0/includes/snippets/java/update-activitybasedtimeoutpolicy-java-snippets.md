@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ActivityBasedTimeoutPolicy activityBasedTimeoutPolicy = new ActivityBasedTimeoutPolicy();
@@ -14,6 +14,7 @@ activityBasedTimeoutPolicy.displayName = "displayName-value";
 activityBasedTimeoutPolicy.isOrganizationDefault = true;
 
 graphClient.policies().activityBasedTimeoutPolicies("{id}")
-    .buildRequest()
-    .patch(activityBasedTimeoutPolicy);
+	.buildRequest()
+	.patch(activityBasedTimeoutPolicy);
+
 ```

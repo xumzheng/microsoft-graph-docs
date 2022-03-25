@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -18,6 +18,7 @@ userIdsList.add("2a4296b3-a28a-44ba-bc66-0274b9b95851");
 schedulingGroup.userIds = userIdsList;
 
 graphClient.teams("{teamId}").schedule().schedulingGroups("{schedulingGroupId}")
-    .buildRequest( requestOptions )
-    .put(schedulingGroup);
+	.buildRequest( requestOptions )
+	.put(schedulingGroup);
+
 ```

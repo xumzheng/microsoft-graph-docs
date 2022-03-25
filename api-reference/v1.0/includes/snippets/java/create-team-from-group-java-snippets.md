@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Team team = new Team();
@@ -11,6 +11,7 @@ team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https
 team.additionalDataManager().put("group@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/groups('71392b2f-1765-406e-86af-5907d9bdb2ab')"));
 
 graphClient.teams()
-    .buildRequest()
-    .post(team);
+	.buildRequest()
+	.post(team);
+
 ```

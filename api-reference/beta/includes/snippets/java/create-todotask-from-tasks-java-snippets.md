@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TodoTask todoTask = new TodoTask();
@@ -20,6 +20,7 @@ LinkedResourceCollectionPage linkedResourceCollectionPage = new LinkedResourceCo
 todoTask.linkedResources = linkedResourceCollectionPage;
 
 graphClient.me().todo().lists("AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM").tasks()
-    .buildRequest()
-    .post(todoTask);
+	.buildRequest()
+	.post(todoTask);
+
 ```

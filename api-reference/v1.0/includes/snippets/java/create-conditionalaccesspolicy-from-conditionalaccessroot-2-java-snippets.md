@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
@@ -37,6 +37,7 @@ grantControls.builtInControls = builtInControlsList;
 conditionalAccessPolicy.grantControls = grantControls;
 
 graphClient.identity().conditionalAccess().policies()
-    .buildRequest()
-    .post(conditionalAccessPolicy);
+	.buildRequest()
+	.post(conditionalAccessPolicy);
+
 ```

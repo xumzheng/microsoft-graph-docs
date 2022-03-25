@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Post post = new Post();
@@ -59,10 +59,11 @@ AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage
 post.attachments = attachmentCollectionPage;
 
 graphClient.groups("{id}").threads("{id}").posts("{id}")
-    .reply(PostReplyParameterSet
-        .newBuilder()
-        .withPost(post)
-        .build())
-    .buildRequest()
-    .post();
+	.reply(PostReplyParameterSet
+		.newBuilder()
+		.withPost(post)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

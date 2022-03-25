@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OnlineMeeting onlineMeeting = new OnlineMeeting();
@@ -12,6 +12,7 @@ lobbyBypassSettings.isDialInBypassEnabled = true;
 onlineMeeting.lobbyBypassSettings = lobbyBypassSettings;
 
 graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi")
-    .buildRequest()
-    .patch(onlineMeeting);
+	.buildRequest()
+	.patch(onlineMeeting);
+
 ```

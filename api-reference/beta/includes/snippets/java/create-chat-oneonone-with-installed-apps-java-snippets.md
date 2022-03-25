@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Chat chat = new Chat();
@@ -35,6 +35,7 @@ TeamsAppInstallationCollectionPage teamsAppInstallationCollectionPage = new Team
 chat.installedApps = teamsAppInstallationCollectionPage;
 
 graphClient.chats()
-    .buildRequest()
-    .post(chat);
+	.buildRequest()
+	.post(chat);
+
 ```

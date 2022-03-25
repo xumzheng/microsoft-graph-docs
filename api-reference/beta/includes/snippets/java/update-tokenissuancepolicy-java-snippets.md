@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TokenIssuancePolicy tokenIssuancePolicy = new TokenIssuancePolicy();
@@ -14,6 +14,7 @@ tokenIssuancePolicy.displayName = "displayName-value";
 tokenIssuancePolicy.isOrganizationDefault = true;
 
 graphClient.policies().tokenIssuancePolicies("{id}")
-    .buildRequest()
-    .patch(tokenIssuancePolicy);
+	.buildRequest()
+	.patch(tokenIssuancePolicy);
+
 ```

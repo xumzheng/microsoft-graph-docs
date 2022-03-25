@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UnifiedRoleDefinition unifiedRoleDefinition = new UnifiedRoleDefinition();
@@ -19,6 +19,7 @@ rolePermissionsList.add(rolePermissions);
 unifiedRoleDefinition.rolePermissions = rolePermissionsList;
 
 graphClient.roleManagement().cloudPC().roleDefinitions("b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff")
-    .buildRequest()
-    .patch(unifiedRoleDefinition);
+	.buildRequest()
+	.patch(unifiedRoleDefinition);
+
 ```

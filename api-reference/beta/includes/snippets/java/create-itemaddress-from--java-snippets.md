@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ItemAddress itemAddress = new ItemAddress();
@@ -19,6 +19,7 @@ detail.postalCode = "E14 3TD";
 itemAddress.detail = detail;
 
 graphClient.me().profile().addresses()
-    .buildRequest()
-    .post(itemAddress);
+	.buildRequest()
+	.post(itemAddress);
+
 ```

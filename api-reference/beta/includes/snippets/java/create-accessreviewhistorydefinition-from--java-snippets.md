@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessReviewHistoryDefinition accessReviewHistoryDefinition = new AccessReviewHistoryDefinition();
@@ -43,6 +43,7 @@ scopesList.add(scopes1);
 accessReviewHistoryDefinition.scopes = scopesList;
 
 graphClient.identityGovernance().accessReviews().historyDefinitions()
-    .buildRequest()
-    .post(accessReviewHistoryDefinition);
+	.buildRequest()
+	.post(accessReviewHistoryDefinition);
+
 ```

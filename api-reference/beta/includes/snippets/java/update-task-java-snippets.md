@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrintTask printTask = new PrintTask();
@@ -13,6 +13,7 @@ status.description = "completed";
 printTask.status = status;
 
 graphClient.print().taskDefinitions("3203656e-6069-4e10-8147-d25290b00a3c").tasks("d036638b-1272-4bba-9227-732463823ed3")
-    .buildRequest()
-    .patch(printTask);
+	.buildRequest()
+	.patch(printTask);
+
 ```

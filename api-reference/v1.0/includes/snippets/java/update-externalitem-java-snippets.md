@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ExternalItem externalItem = new ExternalItem();
@@ -16,6 +16,7 @@ aclList.add(acl);
 externalItem.acl = aclList;
 
 graphClient.external().connections("contosohr").items("TSP228082938")
-    .buildRequest()
-    .patch(externalItem);
+	.buildRequest()
+	.patch(externalItem);
+
 ```

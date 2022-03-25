@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AttachmentItem attachmentItem = new AttachmentItem();
@@ -14,10 +14,11 @@ attachmentItem.isInline = true;
 attachmentItem.contentId = "my_inline_picture";
 
 graphClient.me().messages("AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=").attachments()
-    .createUploadSession(AttachmentCreateUploadSessionParameterSet
-        .newBuilder()
-        .withAttachmentItem(attachmentItem)
-        .build())
-    .buildRequest()
-    .post();
+	.createUploadSession(AttachmentCreateUploadSessionParameterSet
+		.newBuilder()
+		.withAttachmentItem(attachmentItem)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

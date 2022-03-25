@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 User user = new User();
@@ -13,6 +13,7 @@ user.businessPhones = businessPhonesList;
 user.officeLocation = "18/2111";
 
 graphClient.users("{id}")
-    .buildRequest()
-    .patch(user);
+	.buildRequest()
+	.patch(user);
+
 ```

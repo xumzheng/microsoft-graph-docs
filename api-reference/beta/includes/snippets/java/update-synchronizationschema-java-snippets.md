@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SynchronizationSchema synchronizationSchema = new SynchronizationSchema();
@@ -51,6 +51,7 @@ synchronizationRulesList.add(synchronizationRules);
 synchronizationSchema.synchronizationRules = synchronizationRulesList;
 
 graphClient.servicePrincipals("{id}").synchronization().jobs("{jobId}").schema()
-    .buildRequest()
-    .put(synchronizationSchema);
+	.buildRequest()
+	.put(synchronizationSchema);
+
 ```

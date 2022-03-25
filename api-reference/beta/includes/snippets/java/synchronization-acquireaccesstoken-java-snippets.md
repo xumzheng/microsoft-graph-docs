@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<SynchronizationSecretKeyStringValuePair> credentialsList = new LinkedList<SynchronizationSecretKeyStringValuePair>();
@@ -12,10 +12,11 @@ SynchronizationSecretKeyStringValuePair credentials = new SynchronizationSecretK
 credentialsList.add(credentials);
 
 graphClient.applications("{applicationsId}").synchronization()
-    .acquireAccessToken(SynchronizationAcquireAccessTokenParameterSet
-        .newBuilder()
-        .withCredentials(credentialsList)
-        .build())
-    .buildRequest()
-    .post();
+	.acquireAccessToken(SynchronizationAcquireAccessTokenParameterSet
+		.newBuilder()
+		.withCredentials(credentialsList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

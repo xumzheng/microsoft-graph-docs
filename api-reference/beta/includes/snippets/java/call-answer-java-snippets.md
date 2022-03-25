@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String callbackUri = "callbackUri-value";
@@ -17,14 +17,14 @@ acceptedModalitiesList.add(Modality.AUDIO);
 int participantCapacity = 200;
 
 graphClient.communications().calls("{id}")
-    .answer(CallAnswerParameterSet
-        .newBuilder()
-        .withCallbackUri(callbackUri)
-        .withMediaConfig(mediaConfig)
-        .withAcceptedModalities(acceptedModalitiesList)
-        .withParticipantCapacity(participantCapacity)
-        .withCallOptions(null)
-        .build())
-    .buildRequest()
-    .post();
+	.answer(CallAnswerParameterSet
+		.newBuilder()
+		.withCallbackUri(callbackUri)
+		.withMediaConfig(mediaConfig)
+		.withAcceptedModalities(acceptedModalitiesList)
+		.withParticipantCapacity(participantCapacity)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

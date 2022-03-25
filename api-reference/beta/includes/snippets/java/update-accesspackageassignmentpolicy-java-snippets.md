@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy();
@@ -98,6 +98,7 @@ questionsList.add(questions1);
 accessPackageAssignmentPolicy.questions = questionsList;
 
 graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentPolicies("b2eba9a1-b357-42ee-83a8-336522ed6cbf")
-    .buildRequest()
-    .put(accessPackageAssignmentPolicy);
+	.buildRequest()
+	.put(accessPackageAssignmentPolicy);
+
 ```

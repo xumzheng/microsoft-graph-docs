@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SkillProficiency skillProficiency = new SkillProficiency();
@@ -13,6 +13,7 @@ skillProficiency.categories = categoriesList;
 skillProficiency.proficiency = SkillProficiencyLevel.ADVANCED_PROFESSIONAL;
 
 graphClient.me().profile().skills("{id}")
-    .buildRequest()
-    .patch(skillProficiency);
+	.buildRequest()
+	.patch(skillProficiency);
+
 ```

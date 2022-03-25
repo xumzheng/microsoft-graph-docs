@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UrlAssessmentRequest threatAssessmentRequest = new UrlAssessmentRequest();
@@ -12,6 +12,7 @@ threatAssessmentRequest.expectedAssessment = ThreatExpectedAssessment.BLOCK;
 threatAssessmentRequest.category = ThreatCategory.PHISHING;
 
 graphClient.informationProtection().threatAssessmentRequests()
-    .buildRequest()
-    .post(threatAssessmentRequest);
+	.buildRequest()
+	.post(threatAssessmentRequest);
+
 ```

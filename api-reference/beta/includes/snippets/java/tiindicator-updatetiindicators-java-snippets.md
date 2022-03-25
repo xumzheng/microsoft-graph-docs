@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<TiIndicator> valueList = new LinkedList<TiIndicator>();
@@ -22,10 +22,11 @@ tiIndicatorCollectionResponse.value = valueList;
 TiIndicatorCollectionPage tiIndicatorCollectionPage = new TiIndicatorCollectionPage(tiIndicatorCollectionResponse, null);
 
 graphClient.security().tiIndicators()
-    .updateTiIndicators(TiIndicatorUpdateTiIndicatorsParameterSet
-        .newBuilder()
-        .withValue(valueList)
-        .build())
-    .buildRequest()
-    .post();
+	.updateTiIndicators(TiIndicatorUpdateTiIndicatorsParameterSet
+		.newBuilder()
+		.withValue(valueList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

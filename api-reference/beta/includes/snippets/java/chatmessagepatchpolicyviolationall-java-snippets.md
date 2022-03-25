@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ChatMessage chatMessage = new ChatMessage();
@@ -20,6 +20,7 @@ policyViolation.dlpAction = EnumSet.of(ChatMessagePolicyViolationDlpActionTypes.
 chatMessage.policyViolation = policyViolation;
 
 graphClient.teams("e1234567-e123-4276-55555-6232b0e3a89a").channels("a7654321-e321-0000-0000-123b0e3a00a").messages("19:a21b0b0c05194ebc9e30000000000f61@thread.skype")
-    .buildRequest()
-    .patch(chatMessage);
+	.buildRequest()
+	.patch(chatMessage);
+
 ```

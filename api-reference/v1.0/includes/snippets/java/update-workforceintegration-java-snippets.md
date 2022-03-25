@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkforceIntegration workforceIntegration = new WorkforceIntegration();
@@ -18,6 +18,7 @@ workforceIntegration.url = "url-value";
 workforceIntegration.supportedEntities = EnumSet.of(WorkforceIntegrationSupportedEntities.NONE);
 
 graphClient.teamwork().workforceIntegrations("{workforceIntegrationId}")
-    .buildRequest()
-    .patch(workforceIntegration);
+	.buildRequest()
+	.patch(workforceIntegration);
+
 ```

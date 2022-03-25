@@ -5,11 +5,12 @@ author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # Update externalGroup
 Namespace: microsoft.graph.externalConnectors
+
+
 
 Update the properties of an [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
@@ -48,6 +49,8 @@ In the request body, supply the values for relevant properties that should be up
 | displayName | String | The friendly name of the external group. Optional.                                                                      |
 | description | String | The description of the external group. Optional.                                                                         |
 
+
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
@@ -56,7 +59,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-::: zone pivot="programming-language-curl"
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalgroup"
@@ -71,28 +76,26 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-externalgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-externalgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-externalgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
+
+
+
 
 ### Response
 <!-- {

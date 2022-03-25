@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 InferenceClassificationOverride inferenceClassificationOverride = new InferenceClassificationOverride();
@@ -14,6 +14,7 @@ senderEmailAddress.address = "samanthab@adatum.onmicrosoft.com";
 inferenceClassificationOverride.senderEmailAddress = senderEmailAddress;
 
 graphClient.me().inferenceClassification().overrides()
-    .buildRequest()
-    .post(inferenceClassificationOverride);
+	.buildRequest()
+	.post(inferenceClassificationOverride);
+
 ```

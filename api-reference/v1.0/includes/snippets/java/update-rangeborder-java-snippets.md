@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRangeBorder workbookRangeBorder = new WorkbookRangeBorder();
@@ -13,7 +13,8 @@ workbookRangeBorder.sideIndex = "sideIndex-value";
 workbookRangeBorder.weight = "weight-value";
 
 graphClient.me().drive().items("{id}").workbook().names("{name}")
-    .range().format().borders("{sideIndex}")
-    .buildRequest()
-    .patch(workbookRangeBorder);
+	.range().format().borders("{sideIndex}")
+	.buildRequest()
+	.patch(workbookRangeBorder);
+
 ```

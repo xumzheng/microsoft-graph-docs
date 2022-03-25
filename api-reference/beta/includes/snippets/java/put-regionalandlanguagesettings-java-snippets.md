@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 RegionalAndLanguageSettings regionalAndLanguageSettings = new RegionalAndLanguageSettings();
@@ -47,6 +47,7 @@ translationPreferences.languageOverrides = languageOverridesList;
 regionalAndLanguageSettings.translationPreferences = translationPreferences;
 
 graphClient.me().settings().regionalAndLanguageSettings()
-    .buildRequest()
-    .put(regionalAndLanguageSettings);
+	.buildRequest()
+	.put(regionalAndLanguageSettings);
+
 ```

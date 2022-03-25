@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CustomSecurityAttributeDefinition customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition();
@@ -17,6 +17,7 @@ customSecurityAttributeDefinition.type = "String";
 customSecurityAttributeDefinition.usePreDefinedValuesOnly = false;
 
 graphClient.directory().customSecurityAttributeDefinitions()
-    .buildRequest()
-    .post(customSecurityAttributeDefinition);
+	.buildRequest()
+	.post(customSecurityAttributeDefinition);
+
 ```

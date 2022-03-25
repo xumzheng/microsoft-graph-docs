@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Room place = new Room();
@@ -14,6 +14,7 @@ place.capacity = 50;
 place.isWheelChairAccessible = false;
 
 graphClient.places("cf100@contoso.com")
-    .buildRequest()
-    .patch(place);
+	.buildRequest()
+	.patch(place);
+
 ```

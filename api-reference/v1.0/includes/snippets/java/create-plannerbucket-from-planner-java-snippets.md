@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PlannerBucket plannerBucket = new PlannerBucket();
@@ -12,6 +12,7 @@ plannerBucket.planId = "xqQg5FS2LkCp935s-FIFm2QAFkHM";
 plannerBucket.orderHint = " !";
 
 graphClient.planner().buckets()
-    .buildRequest()
-    .post(plannerBucket);
+	.buildRequest()
+	.post(plannerBucket);
+
 ```

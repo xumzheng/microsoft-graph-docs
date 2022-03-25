@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ""
 author: "abheek-das"
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # Get singleValueLegacyExtendedProperty
@@ -65,6 +64,7 @@ Depending on the resource you're getting the extended property from and the perm
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported |
 | [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported |
+
 
 ## HTTP request
 
@@ -238,6 +238,7 @@ Get instances of the **message** or **event** resource that have a string-typed 
 [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon,
 forward slash, and space.
 
+
 Get **message** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -314,7 +315,8 @@ The first example gets and expands the specified message by including a single-v
 extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`
 (with URL encoding removed here for ease of reading).
 
-::: zone pivot="programming-language-curl"
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_singlevaluelegacyextendedproperty_1"
@@ -322,38 +324,31 @@ extended property that has its **id** matching the string `String {66f5a359-4659
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=/?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-singlevaluelegacyextendedproperty-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-singlevaluelegacyextendedproperty-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-singlevaluelegacyextendedproperty-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-singlevaluelegacyextendedproperty-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-singlevaluelegacyextendedproperty-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-singlevaluelegacyextendedproperty-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
 
 #### Response 1
 The response body includes all the properties of the specified message and extended property returned from the filter.
@@ -421,6 +416,7 @@ the properties of the messages that have the extended property matching the filt
 similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
 include the matching extended property.
 
+
 #### Request 3
 
 The third example gets messages that have the string-typed single-value extended property specified in the filter. The filter
@@ -446,6 +442,7 @@ the **value** `Light green`, would match the filter and be included in the respo
 The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
 include the matching extended property.
 
+
 #### Request 4
 
 The next 2 examples show how to get messages that have non-string typed single-value extended properties. For ease of reading, they do not
@@ -456,6 +453,7 @@ The following example shows a filter that looks for the extended property that h
 - Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.
 
 - Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`. To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.
+
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -468,10 +466,12 @@ The next example shows a filter that looks for the extended property that has:
 
 - Its **value** equal to the integer 12. To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.
 
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
 ```
+
 
 #### Response 4
 
@@ -479,6 +479,7 @@ For each of the preceding 2 examples, a successful response is indicated by an `
 the properties of the messages that have the extended property matching the corresponding filter. The response body is
 similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
 include the matching extended property.
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -493,4 +494,5 @@ include the matching extended property.
   ]
 }
 -->
+
 

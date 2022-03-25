@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ShiftPreferences shiftPreferences = new ShiftPreferences();
@@ -31,6 +31,7 @@ availabilityList.add(availability);
 shiftPreferences.availability = availabilityList;
 
 graphClient.users("871dbd5c-3a6a-4392-bfe1-042452793a50").settings().shiftPreferences()
-    .buildRequest()
-    .patch(shiftPreferences);
+	.buildRequest()
+	.patch(shiftPreferences);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 User user = new User();
@@ -13,6 +13,7 @@ passwordProfile.password = "xWwvJ]6NMw+bWH-d";
 user.passwordProfile = passwordProfile;
 
 graphClient.users("{id}")
-    .buildRequest()
-    .patch(user);
+	.buildRequest()
+	.patch(user);
+
 ```

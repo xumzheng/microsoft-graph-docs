@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AudioRoutingGroup audioRoutingGroup = new AudioRoutingGroup();
@@ -18,6 +18,7 @@ receiversList.add("72f988bf-86f1-41af-91ab-2d7cd011db47");
 audioRoutingGroup.receivers = receiversList;
 
 graphClient.communications().calls("{id}").audioRoutingGroups("{id}")
-    .buildRequest()
-    .patch(audioRoutingGroup);
+	.buildRequest()
+	.patch(audioRoutingGroup);
+
 ```

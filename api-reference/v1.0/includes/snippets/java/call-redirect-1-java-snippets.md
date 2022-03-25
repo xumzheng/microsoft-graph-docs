@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<InvitationParticipantInfo> targetsList = new LinkedList<InvitationParticipantInfo>();
@@ -20,12 +20,13 @@ targetsList.add(targets);
 String callbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039";
 
 graphClient.communications().calls("491f0b00-ffff-4bc9-a43e-b226498ec22a")
-    .redirect(CallRedirectParameterSet
-        .newBuilder()
-        .withTargets(targetsList)
-        .withTimeout(null)
-        .withCallbackUri(callbackUri)
-        .build())
-    .buildRequest()
-    .post();
+	.redirect(CallRedirectParameterSet
+		.newBuilder()
+		.withTargets(targetsList)
+		.withTimeout(null)
+		.withCallbackUri(callbackUri)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

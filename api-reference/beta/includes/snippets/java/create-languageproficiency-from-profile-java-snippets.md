@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LanguageProficiency languageProficiency = new LanguageProficiency();
@@ -14,6 +14,7 @@ languageProficiency.written = LanguageProficiencyLevel.NATIVE_OR_BILINGUAL;
 languageProficiency.reading = LanguageProficiencyLevel.NATIVE_OR_BILINGUAL;
 
 graphClient.me().profile().languages()
-    .buildRequest()
-    .post(languageProficiency);
+	.buildRequest()
+	.post(languageProficiency);
+
 ```

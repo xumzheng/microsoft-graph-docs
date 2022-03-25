@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ClaimsMappingPolicy claimsMappingPolicy = new ClaimsMappingPolicy();
@@ -13,6 +13,7 @@ claimsMappingPolicy.definition = definitionList;
 claimsMappingPolicy.displayName = "Test1234";
 
 graphClient.policies().claimsMappingPolicies()
-    .buildRequest()
-    .post(claimsMappingPolicy);
+	.buildRequest()
+	.post(claimsMappingPolicy);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IdentityUserFlowAttributeAssignment identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignment();
@@ -18,6 +18,7 @@ userAttribute.id = "extension_guid_shoeSize";
 identityUserFlowAttributeAssignment.userAttribute = userAttribute;
 
 graphClient.identity().b2cUserFlows("B2C_1_Consumer").userAttributeAssignments()
-    .buildRequest()
-    .post(identityUserFlowAttributeAssignment);
+	.buildRequest()
+	.post(identityUserFlowAttributeAssignment);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Alert> valueList = new LinkedList<Alert>();
@@ -32,10 +32,11 @@ alertCollectionResponse.value = valueList;
 AlertCollectionPage alertCollectionPage = new AlertCollectionPage(alertCollectionResponse, null);
 
 graphClient.security().alerts()
-    .updateAlerts(AlertUpdateAlertsParameterSet
-        .newBuilder()
-        .withValue(valueList)
-        .build())
-    .buildRequest()
-    .post();
+	.updateAlerts(AlertUpdateAlertsParameterSet
+		.newBuilder()
+		.withValue(valueList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

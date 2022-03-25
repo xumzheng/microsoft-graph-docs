@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: apiPageType
-zone_pivot_groups: graph-sdk-languages
 ---
 
 # user: findMeetingTimes
@@ -20,6 +19,7 @@ If **findMeetingTimes** cannot return any meeting suggestions, the response woul
 Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time. In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,6 +45,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## Request body
 All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body. 
 
+
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |attendees|[attendeeBase](../resources/attendeebase.md) collection|A collection of attendees or resources for the meeting. In the corresponding **type** property, specify `required` or `optional` for a person and `resource` for a resource like meeting room. If not specified, **findMeetingTimes** assumes `required` for the **type** property. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer. Optional.|
@@ -64,6 +65,7 @@ The following table describes the restrictions you can further specify in the **
 |personal| Suggestions are within the user's work hours, and Saturday and Sunday. The default is Monday to Sunday, 8am to 5pm, in the time zone setting for the mailbox.|
 |unrestricted | Suggestions can be from all hours of a day, all days of a week.|
 |unknown | Do not use this value as it will be deprecated in the future. Currently behaves the same as `work`. Change any existing code to use `work`, `personal` or `unrestricted` as appropriate.|
+
 
 Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action 
 calculates the best possible meeting times, and returns any meeting suggestions.
@@ -126,7 +128,7 @@ Notice that the request specifies time in the PST time zone. By default, the res
 ##### Request
 Here is the example request.
 
-::: zone pivot="programming-language-curl"
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_findmeetingtimes"
@@ -177,38 +179,32 @@ Content-Type: application/json
   "minimumAttendeePercentage": "100"
 }
 ```
-
-::: zone-end
-
-::: zone pivot="programming-language-csharp"
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-findmeetingtimes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-browserjs"
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-findmeetingtimes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-objectivec"
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-findmeetingtimes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-java"
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-findmeetingtimes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-go"
+# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-findmeetingtimes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
 
-::: zone pivot="programming-language-powershell"
+# [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-findmeetingtimes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-::: zone-end
+
+---
+
 
 ##### Response
 Here is an example response. Note: The response object shown here might be shortened for readability.
@@ -400,4 +396,5 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   ]
 }
 -->
+
 

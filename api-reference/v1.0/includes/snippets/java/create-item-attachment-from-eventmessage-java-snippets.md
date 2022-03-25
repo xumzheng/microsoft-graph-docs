@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ItemAttachment attachment = new ItemAttachment();
@@ -12,6 +12,7 @@ Message item = new Message();
 attachment.item = item;
 
 graphClient.me().events("{id}").attachments()
-    .buildRequest()
-    .post(attachment);
+	.buildRequest()
+	.post(attachment);
+
 ```

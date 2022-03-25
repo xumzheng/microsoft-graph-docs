@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -14,6 +14,7 @@ PlannerPlan plannerPlan = new PlannerPlan();
 plannerPlan.title = "title-value";
 
 graphClient.planner().plans("{id}")
-    .buildRequest( requestOptions )
-    .patch(plannerPlan);
+	.buildRequest( requestOptions )
+	.patch(plannerPlan);
+
 ```

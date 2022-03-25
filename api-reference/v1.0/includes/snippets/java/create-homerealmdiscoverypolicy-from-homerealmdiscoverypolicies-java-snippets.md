@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 HomeRealmDiscoveryPolicy homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy();
@@ -17,6 +17,7 @@ homeRealmDiscoveryPolicy.displayName = "displayName-value";
 homeRealmDiscoveryPolicy.isOrganizationDefault = true;
 
 graphClient.policies().homeRealmDiscoveryPolicies()
-    .buildRequest()
-    .post(homeRealmDiscoveryPolicy);
+	.buildRequest()
+	.post(homeRealmDiscoveryPolicy);
+
 ```

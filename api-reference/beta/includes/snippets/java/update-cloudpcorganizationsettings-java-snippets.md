@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CloudPcOrganizationSettings cloudPcOrganizationSettings = new CloudPcOrganizationSettings();
@@ -11,6 +11,7 @@ cloudPcOrganizationSettings.userAccountType = CloudPcUserAccountType.STANDARD_US
 cloudPcOrganizationSettings.osVersion = CloudPcOperatingSystem.WINDOWS11;
 
 graphClient.deviceManagement().virtualEndpoint().organizationSettings()
-    .buildRequest()
-    .patch(cloudPcOrganizationSettings);
+	.buildRequest()
+	.patch(cloudPcOrganizationSettings);
+
 ```

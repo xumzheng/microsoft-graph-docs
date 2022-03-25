@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
@@ -26,15 +26,16 @@ templateParameters.value = "5";
 templateParametersList.add(templateParameters);
 
 graphClient.teams("{teamId}")
-    .sendActivityNotification(TeamSendActivityNotificationParameterSet
-        .newBuilder()
-        .withTopic(topic)
-        .withActivityType(activityType)
-        .withChainId(null)
-        .withPreviewText(previewText)
-        .withTemplateParameters(templateParametersList)
-        .withRecipient(recipient)
-        .build())
-    .buildRequest()
-    .post();
+	.sendActivityNotification(TeamSendActivityNotificationParameterSet
+		.newBuilder()
+		.withTopic(topic)
+		.withActivityType(activityType)
+		.withChainId(null)
+		.withPreviewText(previewText)
+		.withTemplateParameters(templateParametersList)
+		.withRecipient(recipient)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

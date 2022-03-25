@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 DriveItem driveItem = new DriveItem();
@@ -13,6 +13,7 @@ driveItem.folder = folder;
 driveItem.additionalDataManager().put("@microsoft.graph.conflictBehavior", new JsonPrimitive("rename"));
 
 graphClient.me().drive().root().children()
-    .buildRequest()
-    .post(driveItem);
+	.buildRequest()
+	.post(driveItem);
+
 ```

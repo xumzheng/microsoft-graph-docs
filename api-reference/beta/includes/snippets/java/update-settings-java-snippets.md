@@ -1,15 +1,31 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PrintSettings printSettings = new PrintSettings();
-printSettings.documentConversionEnabled = true;
+CaseSettings caseSettings = new CaseSettings();
+RedundancyDetectionSettings redundancyDetection = new RedundancyDetectionSettings();
+redundancyDetection.isEnabled = false;
+redundancyDetection.similarityThreshold = 70;
+redundancyDetection.minWords = 12;
+redundancyDetection.maxWords = 400000;
+caseSettings.redundancyDetection = redundancyDetection;
+TopicModelingSettings topicModeling = new TopicModelingSettings();
+topicModeling.isEnabled = false;
+topicModeling.ignoreNumbers = false;
+topicModeling.topicCount = 50;
+topicModeling.dynamicallyAdjustTopicCount = false;
+caseSettings.topicModeling = topicModeling;
+OcrSettings ocr = new OcrSettings();
+ocr.isEnabled = true;
+ocr.maxImageSize = 12000;
+caseSettings.ocr = ocr;
 
-graphClient.customRequest("/print/settings", PrintSettings.class)
-    .buildRequest()
-    .patch(printSettings);
+graphClient.compliance().ediscovery().cases("{caseId}").settings()
+	.buildRequest()
+	.patch(caseSettings);
+
 ```

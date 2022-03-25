@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UnifiedRoleAssignmentScheduleRequest unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequest();
@@ -25,6 +25,7 @@ ticketInfo.ticketSystem = "MS Project";
 unifiedRoleAssignmentScheduleRequest.ticketInfo = ticketInfo;
 
 graphClient.roleManagement().directory().roleAssignmentScheduleRequests()
-    .buildRequest()
-    .post(unifiedRoleAssignmentScheduleRequest);
+	.buildRequest()
+	.post(unifiedRoleAssignmentScheduleRequest);
+
 ```

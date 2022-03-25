@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Device device = new Device();
@@ -21,6 +21,7 @@ device.deviceMetadata = "deviceMetadata-value";
 device.deviceVersion = 99;
 
 graphClient.devices()
-    .buildRequest()
-    .post(device);
+	.buildRequest()
+	.post(device);
+
 ```

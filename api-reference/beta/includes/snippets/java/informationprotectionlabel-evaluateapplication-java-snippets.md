@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -51,18 +51,19 @@ LabelingOptions labelingOptions = new LabelingOptions();
 labelingOptions.additionalDataManager().put("assignmentMethod@odata.type", new JsonPrimitive("#microsoft.graph.assignmentMethod"));
 labelingOptions.assignmentMethod = AssignmentMethod.STANDARD;
 labelingOptions.additionalDataManager().put("labelId@odata.type", new JsonPrimitive("#Guid"));
-labelingOptions.labelId = "97309856-9c28-4ac6-9382-5f8bc20c457b";
+labelingOptions.labelId = UUID.fromString("97309856-9c28-4ac6-9382-5f8bc20c457b");
 labelingOptions.downgradeJustification = null;
 labelingOptions.additionalDataManager().put("extendedProperties@odata.type", new JsonPrimitive("#Collection(microsoft.graph.keyValuePair)"));
 LinkedList<KeyValuePair> extendedPropertiesList = new LinkedList<KeyValuePair>();
 labelingOptions.extendedProperties = extendedPropertiesList;
 
 graphClient.informationProtection().policy().labels()
-    .evaluateApplication(InformationProtectionLabelEvaluateApplicationParameterSet
-        .newBuilder()
-        .withContentInfo(contentInfo)
-        .withLabelingOptions(labelingOptions)
-        .build())
-    .buildRequest( requestOptions )
-    .post();
+	.evaluateApplication(InformationProtectionLabelEvaluateApplicationParameterSet
+		.newBuilder()
+		.withContentInfo(contentInfo)
+		.withLabelingOptions(labelingOptions)
+		.build())
+	.buildRequest( requestOptions )
+	.post();
+
 ```

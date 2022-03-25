@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CalendarPermission calendarPermission = new CalendarPermission();
@@ -16,6 +16,7 @@ calendarPermission.isRemovable = true;
 calendarPermission.role = CalendarRoleType.READ;
 
 graphClient.users("458d4c95-124e-49da-ba9d-1dd0387e682e").calendar().calendarPermissions()
-    .buildRequest()
-    .post(calendarPermission);
+	.buildRequest()
+	.post(calendarPermission);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LegalHold legalHold = new LegalHold();
@@ -19,6 +19,7 @@ legalHold.errors = errorsList;
 legalHold.displayName = "String";
 
 graphClient.compliance().ediscovery().cases("{caseId}").legalHolds()
-    .buildRequest()
-    .post(legalHold);
+	.buildRequest()
+	.post(legalHold);
+
 ```

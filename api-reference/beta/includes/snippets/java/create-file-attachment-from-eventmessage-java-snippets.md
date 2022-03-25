@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 FileAttachment attachment = new FileAttachment();
@@ -14,6 +14,7 @@ attachment.contentLocation = "contentLocation-value";
 attachment.contentBytes = Base64.getDecoder().decode("contentBytes-value");
 
 graphClient.me().messages("{id}").attachments()
-    .buildRequest()
-    .post(attachment);
+	.buildRequest()
+	.post(attachment);
+
 ```

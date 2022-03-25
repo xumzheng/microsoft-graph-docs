@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PersonCertification personCertification = new PersonCertification();
@@ -14,6 +14,7 @@ personCertification.thumbnailUrl = "https://iame.io/dfhdfdfd334.jpg";
 personCertification.webUrl = "https://www.iame.io/blackbelt";
 
 graphClient.me().profile().certifications()
-    .buildRequest()
-    .post(personCertification);
+	.buildRequest()
+	.post(personCertification);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 MessageRule messageRule = new MessageRule();
@@ -13,6 +13,7 @@ actions.markImportance = Importance.HIGH;
 messageRule.actions = actions;
 
 graphClient.me().mailFolders("inbox").messageRules("AQAAAJ5dZqA=")
-    .buildRequest()
-    .patch(messageRule);
+	.buildRequest()
+	.patch(messageRule);
+
 ```

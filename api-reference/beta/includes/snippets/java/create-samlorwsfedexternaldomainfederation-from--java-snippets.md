@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SamlOrWsFedExternalDomainFederation identityProviderBase = new SamlOrWsFedExternalDomainFederation();
@@ -23,6 +23,7 @@ identityProviderBase.domains = externalDomainNameCollectionPage;
 identityProviderBase.signingCertificate = "MIIDADCCAeigAwIBAgIQEX41y8r6";
 
 graphClient.directory().federationConfigurations()
-    .buildRequest()
-    .post(identityProviderBase);
+	.buildRequest()
+	.post(identityProviderBase);
+
 ```

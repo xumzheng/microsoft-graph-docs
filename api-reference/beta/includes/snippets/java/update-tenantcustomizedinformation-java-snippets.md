@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TenantCustomizedInformation tenantCustomizedInformation = new TenantCustomizedInformation();
@@ -20,6 +20,7 @@ tenantCustomizedInformation.contacts = contactsList;
 tenantCustomizedInformation.website = "String";
 
 graphClient.tenantRelationships().managedTenants().tenantsCustomizedInformation("{tenantCustomizedInformationId}")
-    .buildRequest()
-    .patch(tenantCustomizedInformation);
+	.buildRequest()
+	.patch(tenantCustomizedInformation);
+
 ```

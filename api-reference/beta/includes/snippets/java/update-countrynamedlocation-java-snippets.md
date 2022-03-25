@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CountryNamedLocation namedLocation = new CountryNamedLocation();
@@ -15,6 +15,7 @@ namedLocation.countriesAndRegions = countriesAndRegionsList;
 namedLocation.includeUnknownCountriesAndRegions = false;
 
 graphClient.identity().conditionalAccess().namedLocations("1c4427fd-0885-4a3d-8b23-09a899ffa959")
-    .buildRequest()
-    .patch(namedLocation);
+	.buildRequest()
+	.patch(namedLocation);
+
 ```

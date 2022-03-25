@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<SynchronizationJobApplicationParameters> parametersList = new LinkedList<SynchronizationJobApplicationParameters>();
@@ -19,10 +19,11 @@ parameters.ruleId = "ea807875-5618-4f0a-9125-0b46a05298ca";
 parametersList.add(parameters);
 
 graphClient.servicePrincipals("{servicePrincipalsId}").synchronization().jobs("{synchronizationJobId}")
-    .provisionOnDemand(SynchronizationJobProvisionOnDemandParameterSet
-        .newBuilder()
-        .withParameters(parametersList)
-        .build())
-    .buildRequest()
-    .post();
+	.provisionOnDemand(SynchronizationJobProvisionOnDemandParameterSet
+		.newBuilder()
+		.withParameters(parametersList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

@@ -1,14 +1,14 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("2/5/2020 8:49:21 PM");
+OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 01:49:21");
 
-OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("2/5/2020 9:19:21 PM");
+OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 02:19:21");
 
 String subject = "Create a meeting with customId provided";
 
@@ -27,15 +27,16 @@ attendeesList.add(attendees);
 participants.attendees = attendeesList;
 
 graphClient.me().onlineMeetings()
-    .createOrGet(OnlineMeetingCreateOrGetParameterSet
-        .newBuilder()
-        .withChatInfo(null)
-        .withEndDateTime(endDateTime)
-        .withExternalId(externalId)
-        .withParticipants(participants)
-        .withStartDateTime(startDateTime)
-        .withSubject(subject)
-        .build())
-    .buildRequest()
-    .post();
+	.createOrGet(OnlineMeetingCreateOrGetParameterSet
+		.newBuilder()
+		.withChatInfo(null)
+		.withEndDateTime(endDateTime)
+		.withExternalId(externalId)
+		.withParticipants(participants)
+		.withStartDateTime(startDateTime)
+		.withSubject(subject)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

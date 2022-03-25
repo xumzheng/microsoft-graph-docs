@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -15,6 +15,7 @@ tiIndicator.confidence = 42;
 tiIndicator.description = "description-after-update";
 
 graphClient.security().tiIndicators("{id}")
-    .buildRequest( requestOptions )
-    .patch(tiIndicator);
+	.buildRequest( requestOptions )
+	.patch(tiIndicator);
+
 ```

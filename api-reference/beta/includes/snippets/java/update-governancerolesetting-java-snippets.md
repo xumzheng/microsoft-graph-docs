@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GovernanceRoleSetting governanceRoleSetting = new GovernanceRoleSetting();
@@ -15,6 +15,7 @@ adminEligibleSettingsList.add(adminEligibleSettings);
 governanceRoleSetting.adminEligibleSettings = adminEligibleSettingsList;
 
 graphClient.privilegedAccess("azureResources").roleSettings("5fb5aef8-1081-4b8e-bb16-9d5d0385bab5")
-    .buildRequest()
-    .patch(governanceRoleSetting);
+	.buildRequest()
+	.patch(governanceRoleSetting);
+
 ```

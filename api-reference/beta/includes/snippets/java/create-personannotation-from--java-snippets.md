@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PersonAnnotation personAnnotation = new PersonAnnotation();
@@ -14,6 +14,7 @@ personAnnotation.detail = detail;
 personAnnotation.displayName = "About Me";
 
 graphClient.me().profile().notes()
-    .buildRequest()
-    .post(personAnnotation);
+	.buildRequest()
+	.post(personAnnotation);
+
 ```

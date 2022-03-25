@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookChart workbookChart = new WorkbookChart();
@@ -12,6 +12,7 @@ workbookChart.height = 99d;
 workbookChart.left = 99d;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts()
-    .buildRequest()
-    .post(workbookChart);
+	.buildRequest()
+	.post(workbookChart);
+
 ```

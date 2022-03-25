@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Printer printer = new Printer();
@@ -15,6 +15,7 @@ location.altitudeInMeters = 3;
 printer.location = location;
 
 graphClient.print().printers("{id}")
-    .buildRequest()
-    .patch(printer);
+	.buildRequest()
+	.patch(printer);
+
 ```

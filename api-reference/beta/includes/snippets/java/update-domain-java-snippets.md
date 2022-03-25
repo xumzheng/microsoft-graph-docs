@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Domain domain = new Domain();
@@ -14,6 +14,7 @@ supportedServicesList.add("OfficeCommunicationsOnline");
 domain.supportedServices = supportedServicesList;
 
 graphClient.domains("contoso.com")
-    .buildRequest()
-    .patch(domain);
+	.buildRequest()
+	.patch(domain);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AadUserConversationMember conversationMember = new AadUserConversationMember();
@@ -14,6 +14,7 @@ rolesList.add("owner");
 conversationMember.roles = rolesList;
 
 graphClient.chats("19:cf66807577b149cca1b7af0c32eec122@thread.v2").members()
-    .buildRequest()
-    .post(conversationMember);
+	.buildRequest()
+	.post(conversationMember);
+
 ```

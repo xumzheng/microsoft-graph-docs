@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 EducationSchool educationSchool = new EducationSchool();
@@ -27,6 +27,7 @@ educationSchool.externalId = "10002";
 educationSchool.phone = "+1 (253) 555-0102";
 
 graphClient.education().schools()
-    .buildRequest()
-    .post(educationSchool);
+	.buildRequest()
+	.post(educationSchool);
+
 ```

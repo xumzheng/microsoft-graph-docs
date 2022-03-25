@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 MailAssessmentRequest threatAssessmentRequest = new MailAssessmentRequest();
@@ -13,6 +13,7 @@ threatAssessmentRequest.category = ThreatCategory.SPAM;
 threatAssessmentRequest.messageUri = "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=";
 
 graphClient.informationProtection().threatAssessmentRequests()
-    .buildRequest()
-    .post(threatAssessmentRequest);
+	.buildRequest()
+	.post(threatAssessmentRequest);
+
 ```

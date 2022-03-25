@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Subscription subscription = new Subscription();
@@ -15,6 +15,7 @@ subscription.clientState = "secretClientValue";
 subscription.latestSupportedTlsVersion = "v1_2";
 
 graphClient.subscriptions()
-    .buildRequest()
-    .post(subscription);
+	.buildRequest()
+	.post(subscription);
+
 ```

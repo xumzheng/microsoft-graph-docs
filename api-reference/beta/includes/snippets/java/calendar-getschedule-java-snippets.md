@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -24,13 +24,14 @@ endTime.timeZone = "Pacific Standard Time";
 int availabilityViewInterval = 60;
 
 graphClient.me().calendar()
-    .getSchedule(CalendarGetScheduleParameterSet
-        .newBuilder()
-        .withSchedules(schedulesList)
-        .withEndTime(endTime)
-        .withStartTime(startTime)
-        .withAvailabilityViewInterval(availabilityViewInterval)
-        .build())
-    .buildRequest( requestOptions )
-    .post();
+	.getSchedule(CalendarGetScheduleParameterSet
+		.newBuilder()
+		.withSchedules(schedulesList)
+		.withEndTime(endTime)
+		.withStartTime(startTime)
+		.withAvailabilityViewInterval(availabilityViewInterval)
+		.build())
+	.buildRequest( requestOptions )
+	.post();
+
 ```

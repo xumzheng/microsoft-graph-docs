@@ -1,15 +1,16 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OutlookCategory outlookCategory = new OutlookCategory();
 outlookCategory.color = CategoryColor.PRESET15;
 
 graphClient.me().outlook().masterCategories("bac262b7-485d-4739-b436-e31467d64fac")
-    .buildRequest()
-    .patch(outlookCategory);
+	.buildRequest()
+	.patch(outlookCategory);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<InvitationParticipantInfo> participantsList = new LinkedList<InvitationParticipantInfo>();
@@ -31,11 +31,12 @@ participantsList.add(participants1);
 String clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
 
 graphClient.communications().calls("7531d31f-d10d-44de-802f-c569dbca451c").participants()
-    .invite(ParticipantInviteParameterSet
-        .newBuilder()
-        .withParticipants(participantsList)
-        .withClientContext(clientContext)
-        .build())
-    .buildRequest()
-    .post();
+	.invite(ParticipantInviteParameterSet
+		.newBuilder()
+		.withParticipants(participantsList)
+		.withClientContext(clientContext)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

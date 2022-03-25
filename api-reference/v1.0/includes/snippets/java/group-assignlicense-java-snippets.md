@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
@@ -26,11 +26,12 @@ addLicensesList.add(addLicenses1);
 LinkedList<UUID> removeLicensesList = new LinkedList<UUID>();
 
 graphClient.groups("1132b215-826f-42a9-8cfe-1643d19d17fd")
-    .assignLicense(GroupAssignLicenseParameterSet
-        .newBuilder()
-        .withAddLicenses(addLicensesList)
-        .withRemoveLicenses(removeLicensesList)
-        .build())
-    .buildRequest()
-    .post();
+	.assignLicense(GroupAssignLicenseParameterSet
+		.newBuilder()
+		.withAddLicenses(addLicensesList)
+		.withRemoveLicenses(removeLicensesList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String use = "sig";
@@ -15,13 +15,14 @@ Long nbf = 1508969811L;
 Long exp = 1508969811L;
 
 graphClient.trustFramework().keySets("{id}")
-    .generateKey(TrustFrameworkKeySetGenerateKeyParameterSet
-        .newBuilder()
-        .withUse(use)
-        .withKty(kty)
-        .withNbf(nbf)
-        .withExp(exp)
-        .build())
-    .buildRequest()
-    .post();
+	.generateKey(TrustFrameworkKeySetGenerateKeyParameterSet
+		.newBuilder()
+		.withUse(use)
+		.withKty(kty)
+		.withNbf(nbf)
+		.withExp(exp)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

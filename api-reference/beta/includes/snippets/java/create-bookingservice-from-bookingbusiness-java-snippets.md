@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 BookingService bookingService = new BookingService();
@@ -63,6 +63,7 @@ staffMemberIdsList.add("2f5f8794-0b29-45b5-b56a-2eb5ff7aa880");
 bookingService.staffMemberIds = staffMemberIdsList;
 
 graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").services()
-    .buildRequest()
-    .post(bookingService);
+	.buildRequest()
+	.post(bookingService);
+
 ```

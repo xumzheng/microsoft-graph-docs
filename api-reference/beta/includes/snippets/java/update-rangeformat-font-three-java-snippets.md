@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRangeFont workbookRangeFont = new WorkbookRangeFont();
@@ -12,10 +12,11 @@ workbookRangeFont.color = "#FFFFFF";
 workbookRangeFont.size = 26d;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("Sheet1")
-    .range(WorkbookWorksheetRangeParameterSet
-        .newBuilder()
-        .withAddress("$C$1")
-        .build()).format().font()
-    .buildRequest()
-    .patch(workbookRangeFont);
+	.range(WorkbookWorksheetRangeParameterSet
+		.newBuilder()
+		.withAddress("$C$1")
+		.build()).format().font()
+	.buildRequest()
+	.patch(workbookRangeFont);
+
 ```

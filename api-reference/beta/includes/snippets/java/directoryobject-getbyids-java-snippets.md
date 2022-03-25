@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<String> idsList = new LinkedList<String>();
@@ -14,11 +14,12 @@ LinkedList<String> typesList = new LinkedList<String>();
 typesList.add("user");
 
 graphClient.directoryObjects()
-    .getByIds(DirectoryObjectGetByIdsParameterSet
-        .newBuilder()
-        .withIds(idsList)
-        .withTypes(typesList)
-        .build())
-    .buildRequest()
-    .post();
+	.getByIds(DirectoryObjectGetByIdsParameterSet
+		.newBuilder()
+		.withIds(idsList)
+		.withTypes(typesList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

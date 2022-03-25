@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackage accessPackage = new AccessPackage();
@@ -12,6 +12,7 @@ accessPackage.displayName = "sales reps";
 accessPackage.description = "outside sales representatives";
 
 graphClient.identityGovernance().entitlementManagement().accessPackages()
-    .buildRequest()
-    .post(accessPackage);
+	.buildRequest()
+	.post(accessPackage);
+
 ```

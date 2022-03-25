@@ -1,16 +1,16 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 MeetingRegistration meetingRegistration = new MeetingRegistration();
 meetingRegistration.subject = "Microsoft Ignite";
 meetingRegistration.description = "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.";
-meetingRegistration.startDateTime = OffsetDateTimeSerializer.deserialize("2021-11-02T12:00:00-04:00");
-meetingRegistration.endDateTime = OffsetDateTimeSerializer.deserialize("2021-11-04T08:00:00-04:00");
+meetingRegistration.startDateTime = OffsetDateTimeSerializer.deserialize("2021-11-02T16:00:00+00:00");
+meetingRegistration.endDateTime = OffsetDateTimeSerializer.deserialize("2021-11-04T12:00:00+00:00");
 meetingRegistration.allowedRegistrant = MeetingAudience.EVERYONE;
 LinkedList<MeetingSpeaker> speakersList = new LinkedList<MeetingSpeaker>();
 MeetingSpeaker speakers = new MeetingSpeaker();
@@ -43,6 +43,7 @@ MeetingRegistrationQuestionCollectionPage meetingRegistrationQuestionCollectionP
 meetingRegistration.customQuestions = meetingRegistrationQuestionCollectionPage;
 
 graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ").registration()
-    .buildRequest()
-    .post(meetingRegistration);
+	.buildRequest()
+	.post(meetingRegistration);
+
 ```

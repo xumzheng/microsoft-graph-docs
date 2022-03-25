@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -48,10 +48,11 @@ metadataList.add(metadata6);
 contentInfo.metadata = metadataList;
 
 graphClient.informationProtection().policy().labels()
-    .extractLabel(InformationProtectionLabelExtractLabelParameterSet
-        .newBuilder()
-        .withContentInfo(contentInfo)
-        .build())
-    .buildRequest( requestOptions )
-    .post();
+	.extractLabel(InformationProtectionLabelExtractLabelParameterSet
+		.newBuilder()
+		.withContentInfo(contentInfo)
+		.build())
+	.buildRequest( requestOptions )
+	.post();
+
 ```

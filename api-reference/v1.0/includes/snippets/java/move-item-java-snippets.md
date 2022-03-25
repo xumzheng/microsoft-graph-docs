@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 DriveItem driveItem = new DriveItem();
@@ -13,6 +13,7 @@ driveItem.parentReference = parentReference;
 driveItem.name = "new-item-name.txt";
 
 graphClient.me().drive().items("{item-id}")
-    .buildRequest()
-    .patch(driveItem);
+	.buildRequest()
+	.patch(driveItem);
+
 ```

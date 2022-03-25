@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookTable workbookTable = new WorkbookTable();
@@ -13,6 +13,7 @@ workbookTable.showTotals = true;
 workbookTable.style = "style-value";
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}")
-    .buildRequest()
-    .patch(workbookTable);
+	.buildRequest()
+	.patch(workbookTable);
+
 ```

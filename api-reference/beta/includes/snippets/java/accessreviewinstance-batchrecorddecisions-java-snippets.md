@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String decision = "Approve";
@@ -13,13 +13,14 @@ String justification = "All principals with access need continued access to the 
 String resourceId = "a5c51e59-3fcd-4a37-87a1-835c0c21488a";
 
 graphClient.me().pendingAccessReviewInstances("{accessReviewInstanceId}")
-    .batchRecordDecisions(AccessReviewInstanceBatchRecordDecisionsParameterSet
-        .newBuilder()
-        .withDecision(decision)
-        .withJustification(justification)
-        .withPrincipalId(null)
-        .withResourceId(resourceId)
-        .build())
-    .buildRequest()
-    .post();
+	.batchRecordDecisions(AccessReviewInstanceBatchRecordDecisionsParameterSet
+		.newBuilder()
+		.withDecision(decision)
+		.withJustification(justification)
+		.withPrincipalId(null)
+		.withResourceId(resourceId)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

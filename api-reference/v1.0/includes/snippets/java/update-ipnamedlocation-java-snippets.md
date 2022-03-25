@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IpNamedLocation namedLocation = new IpNamedLocation();
@@ -16,6 +16,7 @@ ipRangesList.add(ipRanges);
 namedLocation.ipRanges = ipRangesList;
 
 graphClient.identity().conditionalAccess().namedLocations("0854951d-5fc0-4eb1-b392-9b2c9d7949c2")
-    .buildRequest()
-    .patch(namedLocation);
+	.buildRequest()
+	.patch(namedLocation);
+
 ```

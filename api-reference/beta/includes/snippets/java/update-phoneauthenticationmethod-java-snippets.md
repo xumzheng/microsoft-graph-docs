@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PhoneAuthenticationMethod phoneAuthenticationMethod = new PhoneAuthenticationMethod();
@@ -11,6 +11,7 @@ phoneAuthenticationMethod.phoneNumber = "+1 2065555554";
 phoneAuthenticationMethod.phoneType = AuthenticationPhoneType.MOBILE;
 
 graphClient.me().authentication().phoneMethods("3179e48a-750b-4051-897c-87b9720928f7")
-    .buildRequest()
-    .put(phoneAuthenticationMethod);
+	.buildRequest()
+	.put(phoneAuthenticationMethod);
+
 ```

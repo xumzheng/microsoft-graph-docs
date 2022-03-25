@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 HybridAgentUpdaterConfiguration hybridAgentUpdaterConfiguration = new HybridAgentUpdaterConfiguration();
@@ -13,6 +13,7 @@ updateWindow.updateWindowEndTime = new TimeOfDay(0, 0, 0);
 hybridAgentUpdaterConfiguration.updateWindow = updateWindow;
 
 graphClient.customRequest("/onPremisesPublishingProfiles/provisioning/hybridAgentUpdaterConfiguration", HybridAgentUpdaterConfiguration.class)
-    .buildRequest()
-    .patch(hybridAgentUpdaterConfiguration);
+	.buildRequest()
+	.patch(hybridAgentUpdaterConfiguration);
+
 ```

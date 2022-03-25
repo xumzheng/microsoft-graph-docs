@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ScopedRoleMembership scopedRoleMembership = new ScopedRoleMembership();
@@ -13,6 +13,7 @@ roleMemberInfo.id = "id-value";
 scopedRoleMembership.roleMemberInfo = roleMemberInfo;
 
 graphClient.administrativeUnits("{id}").scopedRoleMembers()
-    .buildRequest()
-    .post(scopedRoleMembership);
+	.buildRequest()
+	.post(scopedRoleMembership);
+
 ```

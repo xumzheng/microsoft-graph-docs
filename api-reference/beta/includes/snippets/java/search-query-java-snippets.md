@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<SearchRequest> requestsList = new LinkedList<SearchRequest>();
@@ -27,10 +27,11 @@ requests.fields = fieldsList;
 requestsList.add(requests);
 
 graphClient.search()
-    .query(SearchEntityQueryParameterSet
-        .newBuilder()
-        .withRequests(requestsList)
-        .build())
-    .buildRequest()
-    .post();
+	.query(SearchEntityQueryParameterSet
+		.newBuilder()
+		.withRequests(requestsList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

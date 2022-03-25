@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Boolean bargeInAllowed = true;
@@ -33,18 +33,19 @@ stopTonesList.add("1");
 stopTonesList.add("*");
 
 graphClient.communications().calls("{id}")
-    .recordResponse(CallRecordResponseParameterSet
-        .newBuilder()
-        .withPrompts(promptsList)
-        .withBargeInAllowed(bargeInAllowed)
-        .withInitialSilenceTimeoutInSeconds(initialSilenceTimeoutInSeconds)
-        .withMaxSilenceTimeoutInSeconds(maxSilenceTimeoutInSeconds)
-        .withMaxRecordDurationInSeconds(maxRecordDurationInSeconds)
-        .withPlayBeep(playBeep)
-        .withStreamWhileRecording(null)
-        .withStopTones(stopTonesList)
-        .withClientContext(clientContext)
-        .build())
-    .buildRequest()
-    .post();
+	.recordResponse(CallRecordResponseParameterSet
+		.newBuilder()
+		.withPrompts(promptsList)
+		.withBargeInAllowed(bargeInAllowed)
+		.withInitialSilenceTimeoutInSeconds(initialSilenceTimeoutInSeconds)
+		.withMaxSilenceTimeoutInSeconds(maxSilenceTimeoutInSeconds)
+		.withMaxRecordDurationInSeconds(maxRecordDurationInSeconds)
+		.withPlayBeep(playBeep)
+		.withStreamWhileRecording(null)
+		.withStopTones(stopTonesList)
+		.withClientContext(clientContext)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

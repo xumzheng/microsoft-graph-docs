@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
@@ -18,11 +18,12 @@ prompts.mediaInfo = mediaInfo;
 promptsList.add(prompts);
 
 graphClient.communications().calls("57dab8b1-894c-409a-b240-bd8beae78896")
-    .playPrompt(CallPlayPromptParameterSet
-        .newBuilder()
-        .withPrompts(promptsList)
-        .withClientContext(clientContext)
-        .build())
-    .buildRequest()
-    .post();
+	.playPrompt(CallPlayPromptParameterSet
+		.newBuilder()
+		.withPrompts(promptsList)
+		.withClientContext(clientContext)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

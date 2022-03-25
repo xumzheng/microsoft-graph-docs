@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PersonInterest personInterest = new PersonInterest();
@@ -15,6 +15,7 @@ personInterest.displayName = "Chelsea FC";
 personInterest.webUrl = "https://www.chelseafc.com";
 
 graphClient.me().profile().interests()
-    .buildRequest()
-    .post(personInterest);
+	.buildRequest()
+	.post(personInterest);
+
 ```

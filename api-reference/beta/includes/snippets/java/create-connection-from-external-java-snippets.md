@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ExternalConnection externalConnection = new ExternalConnection();
@@ -12,6 +12,7 @@ externalConnection.name = "Contoso HR";
 externalConnection.description = "Connection to index Contoso HR system";
 
 graphClient.external().connections()
-    .buildRequest()
-    .post(externalConnection);
+	.buildRequest()
+	.post(externalConnection);
+
 ```

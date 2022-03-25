@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrinterShare printerShare = new PrinterShare();
@@ -12,6 +12,7 @@ printerShare.additionalDataManager().put("printer@odata.bind", new JsonPrimitive
 printerShare.allowAllUsers = false;
 
 graphClient.print().shares("{printerShareId}")
-    .buildRequest()
-    .patch(printerShare);
+	.buildRequest()
+	.patch(printerShare);
+
 ```

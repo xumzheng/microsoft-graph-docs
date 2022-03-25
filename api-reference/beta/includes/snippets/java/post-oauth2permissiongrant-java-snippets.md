@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OAuth2PermissionGrant oAuth2PermissionGrant = new OAuth2PermissionGrant();
@@ -16,6 +16,7 @@ oAuth2PermissionGrant.startTime = OffsetDateTimeSerializer.deserialize("2016-10-
 oAuth2PermissionGrant.expiryTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
 
 graphClient.oauth2PermissionGrants()
-    .buildRequest()
-    .post(oAuth2PermissionGrant);
+	.buildRequest()
+	.post(oAuth2PermissionGrant);
+
 ```

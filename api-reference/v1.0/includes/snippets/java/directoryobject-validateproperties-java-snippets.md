@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String entityType = "Group";
@@ -15,13 +15,14 @@ String mailNickname = "Myprefix_test_mysuffix";
 UUID onBehalfOfUserId = UUID.fromString("onBehalfOfUserId-value");
 
 graphClient.directoryObjects()
-    .validateProperties(DirectoryObjectValidatePropertiesParameterSet
-        .newBuilder()
-        .withEntityType(entityType)
-        .withDisplayName(displayName)
-        .withMailNickname(mailNickname)
-        .withOnBehalfOfUserId(onBehalfOfUserId)
-        .build())
-    .buildRequest()
-    .post();
+	.validateProperties(DirectoryObjectValidatePropertiesParameterSet
+		.newBuilder()
+		.withEntityType(entityType)
+		.withDisplayName(displayName)
+		.withMailNickname(mailNickname)
+		.withOnBehalfOfUserId(onBehalfOfUserId)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

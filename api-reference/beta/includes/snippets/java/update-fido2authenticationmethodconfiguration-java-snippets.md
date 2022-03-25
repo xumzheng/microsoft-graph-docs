@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Fido2AuthenticationMethodConfiguration authenticationMethodConfiguration = new Fido2AuthenticationMethodConfiguration();
@@ -11,6 +11,7 @@ authenticationMethodConfiguration.state = AuthenticationMethodState.ENABLED;
 authenticationMethodConfiguration.isAttestationEnforced = false;
 
 graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations("fido2")
-    .buildRequest()
-    .patch(authenticationMethodConfiguration);
+	.buildRequest()
+	.patch(authenticationMethodConfiguration);
+
 ```

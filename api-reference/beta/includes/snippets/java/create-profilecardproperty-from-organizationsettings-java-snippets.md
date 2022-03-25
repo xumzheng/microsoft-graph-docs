@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ProfileCardProperty profileCardProperty = new ProfileCardProperty();
@@ -21,6 +21,7 @@ annotationsList.add(annotations);
 profileCardProperty.annotations = annotationsList;
 
 graphClient.organization("{organizationId}").settings().profileCardProperties()
-    .buildRequest()
-    .post(profileCardProperty);
+	.buildRequest()
+	.post(profileCardProperty);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<WorkbookSortField> fieldsList = new LinkedList<WorkbookSortField>();
@@ -25,12 +25,13 @@ Boolean matchCase = true;
 String method = "method-value";
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").sort()
-    .apply(WorkbookTableSortApplyParameterSet
-        .newBuilder()
-        .withFields(fieldsList)
-        .withMatchCase(matchCase)
-        .withMethod(method)
-        .build())
-    .buildRequest()
-    .post();
+	.apply(WorkbookTableSortApplyParameterSet
+		.newBuilder()
+		.withFields(fieldsList)
+		.withMatchCase(matchCase)
+		.withMethod(method)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AuthenticationMethodsPolicy authenticationMethodsPolicy = new AuthenticationMethodsPolicy();
@@ -42,6 +42,7 @@ AuthenticationMethodConfigurationCollectionPage authenticationMethodConfiguratio
 authenticationMethodsPolicy.authenticationMethodConfigurations = authenticationMethodConfigurationCollectionPage;
 
 graphClient.policies().authenticationMethodsPolicy()
-    .buildRequest()
-    .patch(authenticationMethodsPolicy);
+	.buildRequest()
+	.patch(authenticationMethodsPolicy);
+
 ```

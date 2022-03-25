@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Site> valueList = new LinkedList<Site>();
@@ -20,10 +20,11 @@ siteCollectionResponse.value = valueList;
 SiteCollectionPage siteCollectionPage = new SiteCollectionPage(siteCollectionResponse, null);
 
 graphClient.users("{user-id}").followedSites()
-    .add(SiteAddParameterSet
-        .newBuilder()
-        .withValue(valueList)
-        .build())
-    .buildRequest()
-    .post();
+	.add(SiteAddParameterSet
+		.newBuilder()
+		.withValue(valueList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

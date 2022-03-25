@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PersonAward personAward = new PersonAward();
@@ -15,6 +15,7 @@ personAward.thumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg";
 personAward.webUrl = "https://www.iabm.io";
 
 graphClient.me().profile().awards()
-    .buildRequest()
-    .post(personAward);
+	.buildRequest()
+	.post(personAward);
+
 ```

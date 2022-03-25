@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Schema schema = new Schema();
@@ -33,6 +33,7 @@ propertiesList.add(properties2);
 schema.properties = propertiesList;
 
 graphClient.external().connections("contosohr").schema()
-    .buildRequest()
-    .patch(schema);
+	.buildRequest()
+	.patch(schema);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SamlOrWsFedExternalDomainFederation samlOrWsFedExternalDomainFederation = new SamlOrWsFedExternalDomainFederation();
@@ -15,6 +15,7 @@ samlOrWsFedExternalDomainFederation.passiveSignInUri = "https://contoso-test.com
 samlOrWsFedExternalDomainFederation.preferredAuthenticationProtocol = AuthenticationProtocol.WS_FED;
 
 graphClient.directory().federationConfigurations().graph.samlOrWsFedExternalDomainFederation("d5a56845-6845-d5a5-4568-a5d54568a5d5")
-    .buildRequest()
-    .patch(samlOrWsFedExternalDomainFederation);
+	.buildRequest()
+	.patch(samlOrWsFedExternalDomainFederation);
+
 ```

@@ -1,18 +1,19 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ReportRootGetGroupArchivedPrintJobsCollectionPage getGroupArchivedPrintJobs = graphClient.print().reports()
-    .getGroupArchivedPrintJobs(ReportRootGetGroupArchivedPrintJobsParameterSet
-        .newBuilder()
-        .withGroupId("016b5565-3bbf-4067-b9ff-4d68167eb1a6")
-        .withStartDateTime("2021-05-24")
-        .withEndDateTime("2021-05-25")
-        .build())
-    .buildRequest()
-    .get();
+	.getGroupArchivedPrintJobs(ReportRootGetGroupArchivedPrintJobsParameterSet
+		.newBuilder()
+		.withGroupId("016b5565-3bbf-4067-b9ff-4d68167eb1a6")
+		.withStartDateTime("2021-05-24")
+		.withEndDateTime("2021-05-25")
+		.build())
+	.buildRequest()
+	.get();
+
 ```

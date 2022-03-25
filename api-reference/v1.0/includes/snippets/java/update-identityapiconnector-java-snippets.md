@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IdentityApiConnector identityApiConnector = new IdentityApiConnector();
@@ -13,6 +13,7 @@ authenticationConfiguration.password = "secret";
 identityApiConnector.authenticationConfiguration = authenticationConfiguration;
 
 graphClient.identity().apiConnectors("be1f769b-9b13-437e-b540-79a905c4932c")
-    .buildRequest()
-    .patch(identityApiConnector);
+	.buildRequest()
+	.patch(identityApiConnector);
+
 ```

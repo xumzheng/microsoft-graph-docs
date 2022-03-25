@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -53,17 +53,18 @@ boolean returnSuggestionReasons = true;
 Double minimumAttendeePercentage = 100d;
 
 graphClient.me()
-    .findMeetingTimes(UserFindMeetingTimesParameterSet
-        .newBuilder()
-        .withAttendees(attendeesList)
-        .withLocationConstraint(locationConstraint)
-        .withTimeConstraint(timeConstraint)
-        .withMeetingDuration(meetingDuration)
-        .withMaxCandidates(null)
-        .withIsOrganizerOptional(isOrganizerOptional)
-        .withReturnSuggestionReasons(returnSuggestionReasons)
-        .withMinimumAttendeePercentage(minimumAttendeePercentage)
-        .build())
-    .buildRequest( requestOptions )
-    .post();
+	.findMeetingTimes(UserFindMeetingTimesParameterSet
+		.newBuilder()
+		.withAttendees(attendeesList)
+		.withLocationConstraint(locationConstraint)
+		.withTimeConstraint(timeConstraint)
+		.withMeetingDuration(meetingDuration)
+		.withMaxCandidates(null)
+		.withIsOrganizerOptional(isOrganizerOptional)
+		.withReturnSuggestionReasons(returnSuggestionReasons)
+		.withMinimumAttendeePercentage(minimumAttendeePercentage)
+		.build())
+	.buildRequest( requestOptions )
+	.post();
+
 ```

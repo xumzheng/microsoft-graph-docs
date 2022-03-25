@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -16,6 +16,7 @@ dueDateTime.timeZone = "Eastern Standard Time";
 outlookTask.dueDateTime = dueDateTime;
 
 graphClient.me().outlook().tasks("AAMkADA1MTHgwAAA=")
-    .buildRequest( requestOptions )
-    .patch(outlookTask);
+	.buildRequest( requestOptions )
+	.patch(outlookTask);
+
 ```

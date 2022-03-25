@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Event event = new Event();
@@ -49,6 +49,7 @@ event.attendees = attendeesList;
 event.allowNewTimeProposals = true;
 
 graphClient.me().events()
-    .buildRequest()
-    .post(event);
+	.buildRequest()
+	.post(event);
+
 ```

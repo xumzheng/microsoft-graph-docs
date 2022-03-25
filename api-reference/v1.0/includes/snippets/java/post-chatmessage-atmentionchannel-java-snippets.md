@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ChatMessage chatMessage = new ChatMessage();
@@ -26,6 +26,7 @@ mentionsList.add(mentions);
 chatMessage.mentions = mentionsList;
 
 graphClient.teams("68a3e365-f7d9-4a56-b499-24332a9cc572").channels("19:0b50940236084d258c97b21bd01917b0@thread.skype").messages()
-    .buildRequest()
-    .post(chatMessage);
+	.buildRequest()
+	.post(chatMessage);
+
 ```

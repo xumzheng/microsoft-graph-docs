@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 HomeRealmDiscoveryPolicy homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy();
@@ -16,6 +16,7 @@ homeRealmDiscoveryPolicy.definition = definitionList;
 homeRealmDiscoveryPolicy.displayName = "Contoso default HRD Policy";
 
 graphClient.policies().homeRealmDiscoveryPolicies("{id}")
-    .buildRequest()
-    .patch(homeRealmDiscoveryPolicy);
+	.buildRequest()
+	.patch(homeRealmDiscoveryPolicy);
+
 ```

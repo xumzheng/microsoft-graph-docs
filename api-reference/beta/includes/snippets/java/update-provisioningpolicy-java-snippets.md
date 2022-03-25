@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CloudPcProvisioningPolicy cloudPcProvisioningPolicy = new CloudPcProvisioningPolicy();
@@ -12,6 +12,7 @@ cloudPcProvisioningPolicy.description = "Provisioning policy for India HR employ
 cloudPcProvisioningPolicy.onPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701b553";
 
 graphClient.deviceManagement().virtualEndpoint().provisioningPolicies("{id}")
-    .buildRequest()
-    .patch(cloudPcProvisioningPolicy);
+	.buildRequest()
+	.patch(cloudPcProvisioningPolicy);
+
 ```

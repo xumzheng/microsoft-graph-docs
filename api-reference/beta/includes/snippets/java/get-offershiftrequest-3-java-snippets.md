@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -15,6 +15,7 @@ offerShiftRequest.senderMessage = "Having a family emergency, could you take thi
 offerShiftRequest.recipientUserId = "fe278b61-21ac-4872-8b41-1962bbb98e3c";
 
 graphClient.teams("788b75d2-a911-48c0-a5e2-dc98480457e3").schedule().offerShiftRequests()
-    .buildRequest( requestOptions )
-    .post(offerShiftRequest);
+	.buildRequest( requestOptions )
+	.post(offerShiftRequest);
+
 ```

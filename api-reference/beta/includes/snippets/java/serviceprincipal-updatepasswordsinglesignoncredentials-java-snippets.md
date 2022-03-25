@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String id = "5793aa3b-cca9-4794-679a240f8b58";
@@ -23,11 +23,12 @@ credentials1.type = "password";
 credentialsList.add(credentials1);
 
 graphClient.servicePrincipals("{id}")
-    .updatePasswordSingleSignOnCredentials(ServicePrincipalUpdatePasswordSingleSignOnCredentialsParameterSet
-        .newBuilder()
-        .withId(id)
-        .withCredentials(credentialsList)
-        .build())
-    .buildRequest()
-    .post();
+	.updatePasswordSingleSignOnCredentials(ServicePrincipalUpdatePasswordSingleSignOnCredentialsParameterSet
+		.newBuilder()
+		.withId(id)
+		.withCredentials(credentialsList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

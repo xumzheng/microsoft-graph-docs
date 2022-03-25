@@ -1,15 +1,16 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
 identityProviderBase.clientSecret = "1111111111111";
 
 graphClient.identity().identityProviders("Amazon-OAUTH")
-    .buildRequest()
-    .patch(identityProviderBase);
+	.buildRequest()
+	.patch(identityProviderBase);
+
 ```

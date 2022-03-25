@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -13,10 +13,11 @@ SynchronizationJobRestartCriteria criteria = new SynchronizationJobRestartCriter
 criteria.resetScope = EnumSet.of(SynchronizationJobRestartScope.WATERMARK,SynchronizationJobRestartScope.ESCROWS,SynchronizationJobRestartScope.QUARANTINE_STATE);
 
 graphClient.servicePrincipals("{id}").synchronization().jobs("{jobId}")
-    .restart(SynchronizationJobRestartParameterSet
-        .newBuilder()
-        .withCriteria(criteria)
-        .build())
-    .buildRequest( requestOptions )
-    .post();
+	.restart(SynchronizationJobRestartParameterSet
+		.newBuilder()
+		.withCriteria(criteria)
+		.build())
+	.buildRequest( requestOptions )
+	.post();
+
 ```

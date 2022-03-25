@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UnifiedRoleAssignmentScheduleRequest unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequest();
@@ -20,6 +20,7 @@ scheduleInfo.expiration = expiration;
 unifiedRoleAssignmentScheduleRequest.scheduleInfo = scheduleInfo;
 
 graphClient.roleManagement().directory().roleAssignmentScheduleRequests()
-    .buildRequest()
-    .post(unifiedRoleAssignmentScheduleRequest);
+	.buildRequest()
+	.post(unifiedRoleAssignmentScheduleRequest);
+
 ```

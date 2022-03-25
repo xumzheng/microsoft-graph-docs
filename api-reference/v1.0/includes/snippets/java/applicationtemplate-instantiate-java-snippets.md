@@ -1,18 +1,19 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String displayName = "My custom name";
 
 graphClient.applicationTemplates("{id}")
-    .instantiate(ApplicationTemplateInstantiateParameterSet
-        .newBuilder()
-        .withDisplayName(displayName)
-        .build())
-    .buildRequest()
-    .post();
+	.instantiate(ApplicationTemplateInstantiateParameterSet
+		.newBuilder()
+		.withDisplayName(displayName)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

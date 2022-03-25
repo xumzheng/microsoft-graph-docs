@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Group directoryObject = new Group();
@@ -17,6 +17,7 @@ directoryObject.mailNickname = "golfassist";
 directoryObject.securityEnabled = false;
 
 graphClient.administrativeUnits("{id}").members()
-    .buildRequest()
-    .post(directoryObject);
+	.buildRequest()
+	.post(directoryObject);
+
 ```

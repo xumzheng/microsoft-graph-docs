@@ -1,17 +1,17 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ChatInfo chatInfo = new ChatInfo();
 chatInfo.threadId = "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2";
 
-OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("2/5/2020 8:49:21 PM");
+OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 01:49:21");
 
-OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("2/5/2020 9:19:21 PM");
+OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 02:19:21");
 
 String externalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56";
 
@@ -30,15 +30,16 @@ participants.attendees = attendeesList;
 String subject = "Create a meeting with customId provided";
 
 graphClient.me().onlineMeetings()
-    .createOrGet(OnlineMeetingCreateOrGetParameterSet
-        .newBuilder()
-        .withChatInfo(chatInfo)
-        .withEndDateTime(endDateTime)
-        .withExternalId(externalId)
-        .withParticipants(participants)
-        .withStartDateTime(startDateTime)
-        .withSubject(subject)
-        .build())
-    .buildRequest()
-    .post();
+	.createOrGet(OnlineMeetingCreateOrGetParameterSet
+		.newBuilder()
+		.withChatInfo(chatInfo)
+		.withEndDateTime(endDateTime)
+		.withExternalId(externalId)
+		.withParticipants(participants)
+		.withStartDateTime(startDateTime)
+		.withSubject(subject)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String comment = "comment-value";
@@ -18,11 +18,12 @@ toRecipients.emailAddress = emailAddress;
 toRecipientsList.add(toRecipients);
 
 graphClient.groups("{id}").threads("{id}").posts("{id}")
-    .forward(PostForwardParameterSet
-        .newBuilder()
-        .withComment(comment)
-        .withToRecipients(toRecipientsList)
-        .build())
-    .buildRequest()
-    .post();
+	.forward(PostForwardParameterSet
+		.newBuilder()
+		.withComment(comment)
+		.withToRecipients(toRecipientsList)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

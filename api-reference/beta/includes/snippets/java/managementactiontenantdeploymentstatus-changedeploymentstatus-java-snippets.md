@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String tenantGroupId = "String";
@@ -17,15 +17,16 @@ String managementTemplateId = "String";
 String status = "String";
 
 graphClient.tenantRelationships().managedTenants().managementActionTenantDeploymentStatuses()
-    .changeDeploymentStatus(ManagementActionTenantDeploymentStatusChangeDeploymentStatusParameterSet
-        .newBuilder()
-        .withTenantGroupId(tenantGroupId)
-        .withTenantId(tenantId)
-        .withManagementActionId(managementActionId)
-        .withManagementTemplateId(managementTemplateId)
-        .withManagementTemplateVersion(null)
-        .withStatus(status)
-        .build())
-    .buildRequest()
-    .post();
+	.changeDeploymentStatus(ManagementActionTenantDeploymentStatusChangeDeploymentStatusParameterSet
+		.newBuilder()
+		.withTenantGroupId(tenantGroupId)
+		.withTenantId(tenantId)
+		.withManagementActionId(managementActionId)
+		.withManagementTemplateId(managementTemplateId)
+		.withManagementTemplateVersion(null)
+		.withStatus(status)
+		.build())
+	.buildRequest()
+	.post();
+
 ```

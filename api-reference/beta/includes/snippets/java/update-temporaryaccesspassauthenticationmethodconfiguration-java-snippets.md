@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TemporaryAccessPassAuthenticationMethodConfiguration authenticationMethodConfiguration = new TemporaryAccessPassAuthenticationMethodConfiguration();
@@ -27,6 +27,7 @@ AuthenticationMethodTargetCollectionPage authenticationMethodTargetCollectionPag
 authenticationMethodConfiguration.includeTargets = authenticationMethodTargetCollectionPage;
 
 graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations("TemporaryAccessPass")
-    .buildRequest()
-    .patch(authenticationMethodConfiguration);
+	.buildRequest()
+	.patch(authenticationMethodConfiguration);
+
 ```

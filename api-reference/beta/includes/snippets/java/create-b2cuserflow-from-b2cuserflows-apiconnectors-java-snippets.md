@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 B2cIdentityUserFlow b2cIdentityUserFlow = new B2cIdentityUserFlow();
@@ -20,6 +20,7 @@ apiConnectorConfiguration.postAttributeCollection = postAttributeCollection;
 b2cIdentityUserFlow.apiConnectorConfiguration = apiConnectorConfiguration;
 
 graphClient.identity().b2cUserFlows()
-    .buildRequest()
-    .post(b2cIdentityUserFlow);
+	.buildRequest()
+	.post(b2cIdentityUserFlow);
+
 ```

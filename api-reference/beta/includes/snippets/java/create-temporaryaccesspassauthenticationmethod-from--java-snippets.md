@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TemporaryAccessPassAuthenticationMethod temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticationMethod();
@@ -12,6 +12,7 @@ temporaryAccessPassAuthenticationMethod.lifetimeInMinutes = 60;
 temporaryAccessPassAuthenticationMethod.isUsableOnce = false;
 
 graphClient.users("kim@contoso.com").authentication().temporaryAccessPassMethods()
-    .buildRequest()
-    .post(temporaryAccessPassAuthenticationMethod);
+	.buildRequest()
+	.post(temporaryAccessPassAuthenticationMethod);
+
 ```

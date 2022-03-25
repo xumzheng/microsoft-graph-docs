@@ -1,12 +1,13 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ResourceSpecificPermissionGrantCollectionPage permissionGrants = graphClient.teams("14c981a4-dca9-4565-bae6-e13ada8861be").permissionGrants()
-    .buildRequest()
-    .get();
+	.buildRequest()
+	.get();
+
 ```

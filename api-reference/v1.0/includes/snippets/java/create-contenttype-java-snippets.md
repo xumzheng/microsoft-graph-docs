@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ContentType contentType = new ContentType();
@@ -16,6 +16,7 @@ contentType.base = base;
 contentType.group = "Document Set Content Types";
 
 graphClient.sites("{id}").contentTypes()
-    .buildRequest()
-    .post(contentType);
+	.buildRequest()
+	.post(contentType);
+
 ```

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 FileAssessmentRequest threatAssessmentRequest = new FileAssessmentRequest();
@@ -13,6 +13,7 @@ threatAssessmentRequest.fileName = "test.txt";
 threatAssessmentRequest.contentData = "VGhpcyBpcyBhIHRlc3QgZmlsZQ==";
 
 graphClient.informationProtection().threatAssessmentRequests()
-    .buildRequest()
-    .post(threatAssessmentRequest);
+	.buildRequest()
+	.post(threatAssessmentRequest);
+
 ```

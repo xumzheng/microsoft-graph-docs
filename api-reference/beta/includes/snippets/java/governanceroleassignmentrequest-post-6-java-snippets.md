@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GovernanceRoleAssignmentRequest governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest();
@@ -20,6 +20,7 @@ schedule.endDateTime = OffsetDateTimeSerializer.deserialize("2018-08-10T23:53:55
 governanceRoleAssignmentRequest.schedule = schedule;
 
 graphClient.privilegedAccess("azureResources").roleAssignmentRequests()
-    .buildRequest()
-    .post(governanceRoleAssignmentRequest);
+	.buildRequest()
+	.post(governanceRoleAssignmentRequest);
+
 ```

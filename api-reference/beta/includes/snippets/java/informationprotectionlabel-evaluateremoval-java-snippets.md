@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -52,11 +52,12 @@ downgradeJustification.justificationMessage = "The information has been declassi
 downgradeJustification.isDowngradeJustified = true;
 
 graphClient.informationProtection().policy().labels()
-    .evaluateRemoval(InformationProtectionLabelEvaluateRemovalParameterSet
-        .newBuilder()
-        .withContentInfo(contentInfo)
-        .withDowngradeJustification(downgradeJustification)
-        .build())
-    .buildRequest( requestOptions )
-    .post();
+	.evaluateRemoval(InformationProtectionLabelEvaluateRemovalParameterSet
+		.newBuilder()
+		.withContentInfo(contentInfo)
+		.withDowngradeJustification(downgradeJustification)
+		.build())
+	.buildRequest( requestOptions )
+	.post();
+
 ```

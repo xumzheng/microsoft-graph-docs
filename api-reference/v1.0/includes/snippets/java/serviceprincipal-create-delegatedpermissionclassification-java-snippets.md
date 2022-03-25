@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 DelegatedPermissionClassification delegatedPermissionClassification = new DelegatedPermissionClassification();
@@ -12,6 +12,7 @@ delegatedPermissionClassification.permissionName = "User.Read";
 delegatedPermissionClassification.classification = PermissionClassificationType.LOW;
 
 graphClient.servicePrincipals("{id}").delegatedPermissionClassifications()
-    .buildRequest()
-    .post(delegatedPermissionClassification);
+	.buildRequest()
+	.post(delegatedPermissionClassification);
+
 ```

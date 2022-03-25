@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
-<!-- markdownlint-disable MD041 -->
 
 ```java
+
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Organization organization = new Organization();
@@ -25,6 +25,7 @@ technicalNotificationMailsList.add("tech@contoso.com");
 organization.technicalNotificationMails = technicalNotificationMailsList;
 
 graphClient.organization("{id}")
-    .buildRequest()
-    .patch(organization);
+	.buildRequest()
+	.patch(organization);
+
 ```
