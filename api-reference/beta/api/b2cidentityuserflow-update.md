@@ -56,6 +56,7 @@ The following table shows the properties that are able to be updated after you c
 |:---|:---|:---|
 |isLanguageCustomizationEnabled|Boolean|The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.|
 |defaultLanguageTag|String|Indicates the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|
+|singleSignOnSessionConfiguration|[userFlowSingleSignOnSessionConfiguration](../resources/userflowsinglesignonsessionconfiguration.md)|Configures the single-sign on and keep me signed in session behavior of authentications.|
 
 ## Response
 
@@ -82,6 +83,15 @@ Content-Type: application/json
 {
   "isLanguageCustomizationEnabled": true,
   "defaultLanguageTag": "en",
+  "singleSignOnSessionConfiguration": {
+      "@odata.type": "#microsoft.graph.userFlowSingleSignOnSessionConfiguration",
+      "isSessionLifetimeAbsolute": true,
+      "sessionLifetimeInMinutes": 1440,
+      "isKeepMeSignedInEnabled": true,
+      "keepMeSignedInDays": 30,
+      "sessionScope": "tenant",
+      "enforceIdTokenHintOnLogout": false
+    }
 }
 ```
 # [JavaScript](#tab/javascript)

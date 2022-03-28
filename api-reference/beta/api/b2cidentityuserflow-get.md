@@ -117,7 +117,8 @@ Content-type: application/json
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 1,
     "isLanguageCustomizationEnabled": false,
-    "defaultLanguageTag": null
+    "defaultLanguageTag": null,
+    "singleSignOnSessionConfiguration": null,
 }
 ```
 
