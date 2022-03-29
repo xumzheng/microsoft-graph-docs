@@ -1,9 +1,9 @@
 ---
-title: "calendarGroup resource type"
-description: "A group of user calendars."
-author: "harini84"
+title: calendarGroup resource type
+description: A group of user calendars.
+author: harini84
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ A group of user calendars.
 
 ## Methods
 
-| Method                                                      | Return Type                        | Description                                                   |
+| Method                                                      | Return type                        | Description                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
 | [List calendar groups](../api/user-list-calendargroups.md)  | [Calendar](calendar.md) collection | Get the user's calendar groups.                               |
 | [Create calendar group](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Create a new calendar group.                                  |
@@ -77,5 +77,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

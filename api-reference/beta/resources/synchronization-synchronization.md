@@ -1,9 +1,9 @@
 ---
-title: "synchronization resource type"
-description: "Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API."
-author: "ArvindHarinder1"
+title: synchronization resource type
+description: Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
+author: ArvindHarinder1
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.prod: applications
 doc_type: resourcePageType
 ---
 
@@ -17,11 +17,10 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 
 ## Methods
 
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[acquireAccessToken](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application. |
-|[Add secrets](../api/synchronization-synchronization-secrets.md)|None| Provide credentials for establishing connectivity with the target system. |
+| Method                                                                             | Return type | Description                                                                                                          |
+| :--------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------------- |
+| [acquireAccessToken](../api/synchronization-synchronization-acquireaccesstoken.md) | None        | Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application. |
+| [Add secrets](../api/synchronization-synchronization-secrets.md)                   | None        | Provide credentials for establishing connectivity with the target system.                                            |
 
 <!--
 |Method|Return type|Description|
@@ -40,18 +39,22 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 -->
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|secrets|[synchronizationSecretKeyStringValuePair](synchronization-synchronizationsecretkeystringvaluepair.md) collection| Represents a collection of credentials to access provisioned cloud applications.|
+
+| Property | Type                                                                                                             | Description                                                                      |
+| :------- | :--------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
+| secrets  | [synchronizationSecretKeyStringValuePair](synchronization-synchronizationsecretkeystringvaluepair.md) collection | Represents a collection of credentials to access provisioned cloud applications. |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|jobs|[synchronizationJob](../resources/synchronization-synchronizationjob.md) collection| Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.|
-|templates|[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) collection| Pre-configured synchronization settings for a particular application.|
+
+| Relationship | Type                                                                                          | Description                                                                                                                                      |
+| :----------- | :-------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| jobs         | [synchronizationJob](../resources/synchronization-synchronizationjob.md) collection           | Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory. |
+| templates    | [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) collection | Pre-configured synchronization settings for a particular application.                                                                            |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -59,7 +62,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.synchronization",
   "version": "String",
@@ -70,4 +74,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

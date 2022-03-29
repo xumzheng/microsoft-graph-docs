@@ -1,10 +1,10 @@
 ---
-title: "schemaExtension resource type (schema extensions)"
-description: "Schema extensions allow you to define a schema to extend and add strongly-typed custom data to a resource type. The custom data appears as a complex type on the extended resource. "
+title: schemaExtension resource type (schema extensions)
+description: 'Schema extensions allow you to define a schema to extend and add strongly-typed custom data to a resource type. The custom data appears as a complex type on the extended resource. '
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: dkershaw10
 doc_type: resourcePageType
-ms.prod: "extensions"
+ms.prod: extensions
 ---
 
 # schemaExtension resource type (schema extensions)
@@ -31,23 +31,24 @@ See the [schema extension example](/graph/extensibility-schema-groups) to learn 
 
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Create](../api/schemaextension-post-schemaextensions.md) | schemaExtension |Create a schema extension definition.|
-|[List](../api/schemaextension-list.md) | schemaExtension |List the avaialbe schemaExtension defintions and their properties.|
-|[Get](../api/schemaextension-get.md) | schemaExtension |Read the properties of a specific schemaExtension definition.|
-|[Update](../api/schemaextension-update.md) | schemaExtension	|Update a schemaExtension definition. |
-|[Delete](../api/schemaextension-delete.md) | None |Delete a schemaExtension definition. |
+| Method                                                    | Return type     | Description                                                        |
+| :-------------------------------------------------------- | :-------------- | :----------------------------------------------------------------- |
+| [Create](../api/schemaextension-post-schemaextensions.md) | schemaExtension | Create a schema extension definition.                              |
+| [List](../api/schemaextension-list.md)                    | schemaExtension | List the avaialbe schemaExtension defintions and their properties. |
+| [Get](../api/schemaextension-get.md)                      | schemaExtension | Read the properties of a specific schemaExtension definition.      |
+| [Update](../api/schemaextension-update.md)                | schemaExtension | Update a schemaExtension definition.                               |
+| [Delete](../api/schemaextension-delete.md)                | None            | Delete a schemaExtension definition.                               |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|description|String|Description for the schema extension. Supports `$filter` (`eq`).|
-|id|String|The unique identifier for the schema extension definition. <br>You can assign a value in one of two ways: <ul><li>Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. As an example, `contoso_mySchema`. </li><li>Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</li></ul>This property cannot be changed after creation. Supports `$filter` (`eq`). <br/><br> **Note:** We recommend that your **id** starts with an alphabetic letter between A-Z because query capabilities might be limited for IDs that begin with integers. |
-|owner|String| The `appId` of the application that is the owner of the schema extension. This property can be supplied on creation, to set the owner.  If not supplied, then the calling application's `appId` will be set as the owner. In either case, the signed-in user must be the owner of the application. So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property. Once set, this property is read-only and cannot be changed. Supports `$filter` (`eq`).|
-|properties|[extensionSchemaProperty](extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
-|status|String|The lifecycle state of the schema extension. Possible states are **InDevelopment**, **Available**, and **Deprecated**. Automatically set to **InDevelopment** on creation. [Schema extensions](/graph/extensibility-overview#schema-extensions) provides more information on the possible state transitions and behaviors. Supports `$filter` (`eq`).|
-|targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from **administrativeUnit**, **contact**, **device**, **event**, **group**, **message**, **organization**, **post**, or **user**.|
+
+| Property    | Type                                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| :---------- | :--------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| description | String                                                           | Description for the schema extension. Supports `$filter` (`eq`).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| id          | String                                                           | The unique identifier for the schema extension definition. <br>You can assign a value in one of two ways: <ul><li>Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. As an example, `contoso_mySchema`. </li><li>Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</li></ul>This property cannot be changed after creation. Supports `$filter` (`eq`). <br/><br> **Note:** We recommend that your **id** starts with an alphabetic letter between A-Z because query capabilities might be limited for IDs that begin with integers. |
+| owner       | String                                                           | The `appId` of the application that is the owner of the schema extension. This property can be supplied on creation, to set the owner.  If not supplied, then the calling application's `appId` will be set as the owner. In either case, the signed-in user must be the owner of the application. So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property. Once set, this property is read-only and cannot be changed. Supports `$filter` (`eq`).                                                                                                                                                                                                                                                                                                                                          |
+| properties  | [extensionSchemaProperty](extensionschemaproperty.md) collection | The collection of property names and types that make up the schema extension definition.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| status      | String                                                           | The lifecycle state of the schema extension. Possible states are **InDevelopment**, **Available**, and **Deprecated**. Automatically set to **InDevelopment** on creation. [Schema extensions](/graph/extensibility-overview#schema-extensions) provides more information on the possible state transitions and behaviors. Supports `$filter` (`eq`).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| targetTypes | String collection                                                | Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from **administrativeUnit**, **contact**, **device**, **event**, **group**, **message**, **organization**, **post**, or **user**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 ## JSON representation
 
@@ -75,6 +76,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -85,5 +87,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

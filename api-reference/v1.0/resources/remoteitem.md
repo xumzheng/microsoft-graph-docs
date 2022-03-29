@@ -3,8 +3,8 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 ms.localizationpriority: medium
-description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
-ms.prod: ""
+description: The remoteItem resource indicates that a driveItem references an item that exists in another drive.
+ms.prod: ''
 doc_type: resourcePageType
 ---
 
@@ -51,7 +51,7 @@ This resource provides the unique IDs of the source drive and target item.
 
 ## Properties
 
-| Property name        | Type                                | Description                                                                                                                                                       |
+| Property             | Type                                | Description                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [IdentitySet](identityset.md)       | Identity of the user, device, and application which created the item. Read-only.                                                                                  |
 | createdDateTime      | Timestamp                           | Date and time of item creation. Read-only.                                                                                                                        |
@@ -59,7 +59,7 @@ This resource provides the unique IDs of the source drive and target item.
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Information about the remote item from the local file system. Read-only.                                                                                          |
 | folder               | [Folder](folder.md)                 | Indicates that the remote item is a folder. Read-only.                                                                                                            |
 | id                   | String                              | Unique identifier for the remote item in its drive. Read-only.                                                                                                    |
-| image                | [Image](image.md)                   | Image metadata, if the item is an image. Read-only.                                                                                               |
+| image                | [Image](image.md)                   | Image metadata, if the item is an image. Read-only.                                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Identity of the user, device, and application which last modified the item. Read-only.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Date and time the item was last modified. Read-only.                                                                                                              |
 | name                 | String                              | Optional. Filename of the remote item. Read-only.                                                                                                                 |
@@ -69,7 +69,7 @@ This resource provides the unique IDs of the source drive and target item.
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Provides interop between items in OneDrive for Business and SharePoint with the full set of item identifiers. Read-only.                                          |
 | size                 | Int64                               | Size of the remote item. Read-only.                                                                                                                               |
 | specialFolder        | [specialFolder][]                   | If the current item is also available as a special folder, this facet is returned. Read-only.                                                                     |
-| video                | [Video](video.md)                   | Video metadata, if the item is a video. Read-only.                                                                                                    |
+| video                | [Video](video.md)                   | Video metadata, if the item is a video. Read-only.                                                                                                                |
 | webDavUrl            | Url                                 | DAV compatible URL for the item.                                                                                                                                  |
 | webUrl               | Url                                 | URL that displays the resource in the browser. Read-only.                                                                                                         |
 
@@ -86,4 +86,3 @@ For more information about the facets on a **driveItem**, see [driveItem](drivei
   "section": "documentation",
   "tocPath": "Facets/RemoteItem"
 } -->
-

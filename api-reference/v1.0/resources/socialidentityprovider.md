@@ -1,13 +1,14 @@
 ---
-title: "socialIdentityProvider resource type"
-description: "Represents social identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
+title: socialIdentityProvider resource type
+description: Represents social identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant.
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
-author: "namkedia"
+ms.prod: identity-and-sign-in
+author: namkedia
 ---
 
 # socialIdentityProvider resource type
+
 Namespace: microsoft.graph
 
 Represents social identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory (Azure AD) tenant and an Azure AD B2C tenant.
@@ -24,24 +25,24 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the [socialidentityprovider](../resources/socialidentityprovider.md) object types. There is no way to retrieve only the social identity providers in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|[socialidentityprovider](../resources/socialidentityprovider.md) |Create a new [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Get](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md) |Retrieve properties of a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Update](../api/identityproviderbase-update.md)|None|Update a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+| Method                                                                                 | Return type                                                             | Description                                                                                                                                                                                                                     |
+| :------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [List](../api/identitycontainer-list-identityproviders.md)                             | [identityProviderBase](../resources/identityproviderbase.md) collection | Retrieve all identity providers configured in a tenant including the [socialidentityprovider](../resources/socialidentityprovider.md) object types. There is no way to retrieve only the social identity providers in a tenant. |
+| [Create](../api/identitycontainer-post-identityproviders.md)                           | [socialidentityprovider](../resources/socialidentityprovider.md)        | Create a new [socialidentityprovider](../resources/socialidentityprovider.md) object.                                                                                                                                           |
+| [Get](../api/identityproviderbase-get.md)                                              | [socialidentityprovider](../resources/socialidentityprovider.md)        | Retrieve properties of a [socialidentityprovider](../resources/socialidentityprovider.md) object.                                                                                                                               |
+| [Update](../api/identityproviderbase-update.md)                                        | None                                                                    | Update a [socialidentityprovider](../resources/socialidentityprovider.md) object.                                                                                                                                               |
+| [Delete](../api/identityproviderbase-delete.md)                                        | None                                                                    | Delete a [socialidentityprovider](../resources/socialidentityprovider.md) object.                                                                                                                                               |
+| [List available provider types](../api/identityproviderbase-availableprovidertypes.md) | String collection                                                       | Retrieve all available identity provider types available in the tenant.                                                                                                                                                         |
 
 ## Properties
 
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|clientId|String|The identifier for the client application obtained when registering the application with the identity provider. Required.|
-|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`. Required.|
-|id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
-|displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
-|identityProviderType|String|For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`. Required.|
+| Property             | Type   | Description                                                                                                                                                                                                      |
+| :------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| clientId             | String | The identifier for the client application obtained when registering the application with the identity provider. Required.                                                                                        |
+| clientSecret         | String | The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`. Required.                             |
+| id                   | String | The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.                                                                                 |
+| displayName          | String | The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).                                                                                          |
+| identityProviderType | String | For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`. Required. |
 
 ### Where to get the client identifier and secret
 
@@ -68,6 +69,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

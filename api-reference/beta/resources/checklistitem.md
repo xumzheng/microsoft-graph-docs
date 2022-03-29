@@ -1,9 +1,9 @@
 ---
-title: "checklistItem resource type"
-description: "Represents a collection of checklist items on a task"
-author: "avijityadav"
+title: checklistItem resource type
+description: Represents a collection of checklist items on a task
+author: avijityadav
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 
@@ -16,28 +16,33 @@ Namespace: microsoft.graph
 Represents a subtask in a bigger [baseTask](./baseTask.md). **ChecklistItem** allows breaking down a complex task into more actionable, smaller tasks. 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get a list of the [checklistItem](../resources/checklistitem.md) objects and their properties.|
-|[Create checklistItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new [checklistItem](../resources/checklistitem.md) object.|
-|[Get checklistItem](../api/checklistitem-get.md)|[checklistItem](../resources/checklistitem.md)|Read the properties and relationships of a [checklistItem](../resources/checklistitem.md) object.|
-|[Update checklistItem](../api/checklistitem-update.md)|[checklistItem](../resources/checklistitem.md)|Update the properties of a [checklistItem](../resources/checklistitem.md) object.|
-|[Delete checklistItem](../api/checklistitem-delete.md)|None|Deletes a [checklistItem](../resources/checklistitem.md) object.|
+
+| Method                                                         | Return type                                               | Description                                                                                       |
+| :------------------------------------------------------------- | :-------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| [List checklistItems](../api/basetask-list-checklistitems.md)  | [checklistItem](../resources/checklistitem.md) collection | Get a list of the [checklistItem](../resources/checklistitem.md) objects and their properties.    |
+| [Create checklistItem](../api/basetask-post-checklistitems.md) | [checklistItem](../resources/checklistitem.md)            | Create a new [checklistItem](../resources/checklistitem.md) object.                               |
+| [Get checklistItem](../api/checklistitem-get.md)               | [checklistItem](../resources/checklistitem.md)            | Read the properties and relationships of a [checklistItem](../resources/checklistitem.md) object. |
+| [Update checklistItem](../api/checklistitem-update.md)         | [checklistItem](../resources/checklistitem.md)            | Update the properties of a [checklistItem](../resources/checklistitem.md) object.                 |
+| [Delete checklistItem](../api/checklistitem-delete.md)         | None                                                      | Deletes a [checklistItem](../resources/checklistitem.md) object.                                  |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|checkedDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
-|createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was created.|
-|displayName|String|Field indicating the title of **checklistItem**.|
-|id|String|Server generated ID for the **checkListItem**|
-|isChecked|Boolean|State indicating whether the item is checked off or not.|
+
+| Property        | Type           | Description                                                |
+| :-------------- | :------------- | :--------------------------------------------------------- |
+| checkedDateTime | DateTimeOffset | The date and time when the **checklistItem** was finished. |
+| createdDateTime | DateTimeOffset | The date and time when the **checklistItem** was created.  |
+| displayName     | String         | Field indicating the title of **checklistItem**.           |
+| id              | String         | Server generated ID for the **checkListItem**              |
+| isChecked       | Boolean        | State indicating whether the item is checked off or not.   |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -45,7 +50,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.checklistItem",
   "displayName": "String",
@@ -55,4 +61,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-

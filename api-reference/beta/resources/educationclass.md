@@ -1,9 +1,9 @@
 ---
-title: "educationClass resource type"
-description: "Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID."
+title: educationClass resource type
+description: Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID.
 ms.localizationpriority: medium
-author: "mmast-msft"
-ms.prod: "education"
+author: mmast-msft
+ms.prod: education
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 
 ## Methods
 
-| Method                                                                  | Return Type                                    | Description                                                                               |
+| Method                                                                  | Return type                                    | Description                                                                               |
 | :---------------------------------------------------------------------- | :--------------------------------------------- | :---------------------------------------------------------------------------------------- |
 | [Get educationClass](../api/educationclass-get.md)                      | [educationClass]                               | Read properties and relationships of an **educationClass** object.                        |
 | [Add member](../api/educationclass-post-members.md)                     | [educationUser]                                | Add a new **educationUser** for the class by posting to the members navigation property.  |
@@ -35,10 +35,10 @@ Students are regular members of the class, and Teachers are owners and have appr
 | [List assignments](../api/educationclass-list-assignments.md)           | [educationAssignment]collection                | Get an **educationAssignment** object collection.                                         |
 | [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Microsoft 365 **group** that corresponds to this **educationClass**.              |
 | [Create educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Create a new **educationCategory** for this class.                                        |
-| [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects that belong to this class.                      |
+| [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects that belong to this class.                    |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
 | [Delete](../api/educationclass-delete.md)                               | None                                           | Delete **educationClass** object.                                                         |
-| [Get delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                          |
+| [Get delta](../api/educationclass-delta.md)                             | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                         |
 
 ## Properties
 
@@ -46,8 +46,8 @@ Students are regular members of the class, and Teachers are owners and have appr
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                   | String                                | Unique identifier for the class.                                                                                                                                     |
 | classCode            | String                                | Class code used by the school to identify the class.                                                                                                                 |
-| course               | [educationCourse](educationcourse.md) | Course information for the class.                                                                                                                                     |
-| createdBy            | [identitySet]                         | Entity who created the class.                                                                                                                                         |
+| course               | [educationCourse](educationcourse.md) | Course information for the class.                                                                                                                                    |
+| createdBy            | [identitySet]                         | Entity who created the class.                                                                                                                                        |
 | description          | String                                | Description of the class.                                                                                                                                            |
 | displayName          | String                                | Name of the class.                                                                                                                                                   |
 | externalId           | String                                | ID of the class from the syncing system.                                                                                                                             |
@@ -99,6 +99,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.educationClass",
   "description": "educationUser resource",
@@ -119,5 +120,3 @@ The following is a JSON representation of the resource.
 [educationterm]: educationterm.md
 [identityset]: identityset.md
 [group]: group.md
-
-

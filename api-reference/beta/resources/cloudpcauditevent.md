@@ -1,9 +1,9 @@
 ---
-title: "cloudPcAuditEvent resource type"
-description: "Represents the audit event entity."
-author: "ecmadao"
+title: cloudPcAuditEvent resource type
+description: Represents the audit event entity.
+author: ecmadao
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.prod: cloud-pc
 doc_type: resourcePageType
 ---
 
@@ -17,54 +17,54 @@ Represents the audit event entity.
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List auditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|List all the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects in a tenant.|
-|[Get cloudPcAuditEvent](../api/cloudpcauditevent-get.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Read the properties and relationships of a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.|
-|[getAuditActivityTypes function](../api/cloudpcauditevent-getauditactivitytypes.md)|String collection|Get audit activity types.|
+| Method                                                                              | Return type                                                       | Description                                                                                               |
+| :---------------------------------------------------------------------------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| [List auditEvents](../api/virtualendpoint-list-auditevents.md)                      | [cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection | List all the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects in a tenant.                  |
+| [Get cloudPcAuditEvent](../api/cloudpcauditevent-get.md)                            | [cloudPcAuditEvent](../resources/cloudpcauditevent.md)            | Read the properties and relationships of a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object. |
+| [getAuditActivityTypes function](../api/cloudpcauditevent-getauditactivitytypes.md) | String collection                                                 | Get audit activity types.                                                                                 |
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the audit entity. Read-only.|
-|displayName|String|Event display name. Read-only.|
-|componentName|String|Component name. Read-only.|
-|actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Azure AD user and application associated with the audit event. Read-only.|
-|activity|String|Friendly name of the activity. Optional.|
-|activityDateTime|DateTimeOffset|The date time in UTC when the activity was performed. Read-only.|
-|activityType|String|The type of activity that was performed. Read-only.|
-|activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|The HTTP operation type of the activity. Possible values include `create`, `delete`, `patch` and `other`. Read-only.|
-|activityResult|[cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)|The result of the activity. Read-only.|
-|correlationId|String|The client request identifier, used to correlate activity within the system. Read-only.|
-|resources|[cloudPcAuditResource](../resources/cloudpcauditresource.md) collection|List of cloudPcAuditResource objects. Read-only.|
-|category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|Audit category. Read-only.|
+| Property              | Type                                                                           | Description                                                                                                          |
+| :-------------------- | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+| id                    | String                                                                         | Key of the audit entity. Read-only.                                                                                  |
+| displayName           | String                                                                         | Event display name. Read-only.                                                                                       |
+| componentName         | String                                                                         | Component name. Read-only.                                                                                           |
+| actor                 | [cloudPcAuditActor](../resources/cloudpcauditactor.md)                         | Azure AD user and application associated with the audit event. Read-only.                                            |
+| activity              | String                                                                         | Friendly name of the activity. Optional.                                                                             |
+| activityDateTime      | DateTimeOffset                                                                 | The date time in UTC when the activity was performed. Read-only.                                                     |
+| activityType          | String                                                                         | The type of activity that was performed. Read-only.                                                                  |
+| activityOperationType | [cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values) | The HTTP operation type of the activity. Possible values include `create`, `delete`, `patch` and `other`. Read-only. |
+| activityResult        | [cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)               | The result of the activity. Read-only.                                                                               |
+| correlationId         | String                                                                         | The client request identifier, used to correlate activity within the system. Read-only.                              |
+| resources             | [cloudPcAuditResource](../resources/cloudpcauditresource.md) collection        | List of cloudPcAuditResource objects. Read-only.                                                                     |
+| category              | [cloudPcAuditCategory](#cloudpcauditcategory-values)                           | Audit category. Read-only.                                                                                           |
 
 ### cloudPcAuditActivityOperationType values
 
-|Member|Description|
-|:---|:---|
-|create|Create operation.|
-|delete|Delete operation.|
-|patch|Patch operation.|
-|other|Other operation.|
+| Member | Description       |
+| :----- | :---------------- |
+| create | Create operation. |
+| delete | Delete operation. |
+| patch  | Patch operation.  |
+| other  | Other operation.  |
 
 ### cloudPcAuditActivityResult values
 
-|Member|Description|
-|:---|:---|
-|success|Operation succeeded.|
-|clientError|Operation failed with client error.|
-|failure|Operation failed.|
-|timeExceeded|Operation failed with timeout.|
-|other|Other result.|
+| Member       | Description                         |
+| :----------- | :---------------------------------- |
+| success      | Operation succeeded.                |
+| clientError  | Operation failed with client error. |
+| failure      | Operation failed.                   |
+| timeExceeded | Operation failed with timeout.      |
+| other        | Other result.                       |
 
 ### cloudPcAuditCategory values
 
-|Member|Description|
-|:---|:---|
-|cloudPC|Cloud PC category.|
-|other |Other category.|
+| Member  | Description        |
+| :------ | :----------------- |
+| cloudPC | Cloud PC category. |
+| other   | Other category.    |
 
 ## Relationships
 
@@ -73,6 +73,7 @@ None.
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -82,7 +83,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
   "id": "String (identifier)",

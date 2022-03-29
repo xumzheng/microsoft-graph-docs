@@ -3,9 +3,10 @@ author: daspek
 title: itemActivity resource type
 description: The itemActivity object provides information about an activity that took place on an item.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.prod: sharepoint
 doc_type: resourcePageType
 ---
+
 # itemActivity resource type
 
 Namespace: microsoft.graph
@@ -21,22 +22,22 @@ The actions that took place within an itemActivity are detailed in the [itemActi
 
 ## Properties
 
-| Property | Type                    | Description
-|:---------|:------------------------|:----------------------------------------
-| id       | string                  | The unique identifier of the activity. Read-only.
-| access   | [accessAction][]        | An item was accessed.
-| actor    | [identitySet][]         | Identity of who performed the action. Read-only.
-| activityDateTime    | DateTimeOffset | Details about when the activity took place. Read-only.
+| Property         | Type             | Description                                            |
+| :--------------- | :--------------- | :----------------------------------------------------- |
+| id               | string           | The unique identifier of the activity. Read-only.      |
+| access           | [accessAction][] | An item was accessed.                                  |
+| actor            | [identitySet][]  | Identity of who performed the action. Read-only.       |
+| activityDateTime | DateTimeOffset   | Details about when the activity took place. Read-only. |
 
 [accessAction]: accessaction.md
 [identitySet]: identityset.md
 
 ## Relationships
 
-| Relationship name | Type          | Description
-|:------------------|:--------------|:-----------------------------------------
-| driveItem         | [driveItem][] | Exposes the **driveItem** that was the target of this activity.
-| listItem          | [listItem][]  | Exposes the **listItem** that was the target of this activity.
+| Relationship | Type          | Description                                                     |
+| :----------- | :------------ | :-------------------------------------------------------------- |
+| driveItem    | [driveItem][] | Exposes the **driveItem** that was the target of this activity. |
+| listItem     | [listItem][]  | Exposes the **listItem** that was the target of this activity.  |
 
 [driveItem]: driveitem.md
 [listItem]: listitem.md
@@ -72,4 +73,3 @@ The actions that took place within an itemActivity are detailed in the [itemActi
   "suppressions": []
 }
 -->
-

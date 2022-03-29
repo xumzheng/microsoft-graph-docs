@@ -1,9 +1,9 @@
 ---
-title: "educationSynchronizationError resource type"
-description: "Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD)."
-author: "mmast-msft"
+title: educationSynchronizationError resource type
+description: Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD).
+author: mmast-msft
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.prod: education
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Represents an error during school data profile validation and/or sync. A unique 
 
 ## Methods
 
-| Method                                                                     | Return Type                                  | Description                                                           |
+| Method                                                                     | Return type                                  | Description                                                           |
 | :------------------------------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------------------- |
 | [Get synchronization errors](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError** collection | Returns the list of synchronization errors associated with a profile. |
 
@@ -54,5 +54,3 @@ Represents an error during school data profile validation and/or sync. A unique 
   "reportableIdentifier": "String"
 }
 ```
-
-

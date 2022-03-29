@@ -1,10 +1,10 @@
 ---
-title: "workbookComment resource type"
-description: "Definition of workbookComment resource type"
+title: workbookComment resource type
+description: Definition of workbookComment resource type
 ms.localizationpriority: medium
-author: "grangeryy"
-ms.prod: "excel"
-doc_type: "resourcePageType"
+author: grangeryy
+ms.prod: excel
+doc_type: resourcePageType
 ---
 
 # workbookComment resource type
@@ -15,24 +15,24 @@ Represents a comment in workbook.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List workbookComments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a **workbookComment** object collection. |
-| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of a **workbookComment** object. |
+| Method                                                    | Return type                                      | Description                                                            |
+| :-------------------------------------------------------- | :----------------------------------------------- | :--------------------------------------------------------------------- |
+| [List workbookComments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a **workbookComment** object collection.                           |
+| [Get workbookComment](../api/workbookcomment-get.md)      | [workbookComment](workbookcomment.md)            | Read the properties and relationships of a **workbookComment** object. |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|content|String|The content of comment.|
-|contentType|String|Indicates the type for the comment.|
-|id|String| Represents the comment identifier. Read-only.|
+| Property    | Type   | Description                                   |
+| :---------- | :----- | :-------------------------------------------- |
+| content     | String | The content of comment.                       |
+| contentType | String | Indicates the type for the comment.           |
+| id          | String | Represents the comment identifier. Read-only. |
 
 ## Relationships
 
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|replies|[workbookCommentReply](workbookcommentreply.md) collection| Read-only. Nullable.|
+| Relationship | Type                                                       | Description          |
+| :----------- | :--------------------------------------------------------- | :------------------- |
+| replies      | [workbookCommentReply](workbookcommentreply.md) collection | Read-only. Nullable. |
 
 ## JSON representation
 
@@ -57,6 +57,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "workbookComment resource",
@@ -64,4 +65,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

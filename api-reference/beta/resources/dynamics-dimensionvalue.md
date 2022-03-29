@@ -1,11 +1,11 @@
 ---
-title: dimensionValues resource type 
+title: dimensionValues resource type
 description: A dimension value in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
 ---
 
@@ -19,24 +19,22 @@ Represents a dimension value in Dynamics 365 Business Central.
 
 ## Methods
 
-| Method       | Return Type  |Description                   |
-|:-------------|:-------------|:-----------------------------|
-|[Get dimensionValues](../api/dynamics-dimensionvalue-get.md)|dimensionValues|Gets a dimension value object.|
-
+| Method                                                       | Return type     | Description                    |
+| :----------------------------------------------------------- | :-------------- | :----------------------------- |
+| [Get dimensionValues](../api/dynamics-dimensionvalue-get.md) | dimensionValues | Gets a dimension value object. |
 
 ## Properties
-| Property	         | Type                  |Description                                        |
-|:-------------------|:----------------------|:--------------------------------------------------|
-|id                  |GUID                   |The unique ID of the item.                         |
-|code                |string, maximum size 20|The dimension value code.                          |
-|displayName         |string                 |Specifies the dimension value's name. This name will appear where the dimension value is used.|
-|lastModifiedDateTime|datetime               |The last datetime the dimension value was modified.|  
 
+| Property             | Type                    | Description                                                                                    |
+| :------------------- | :---------------------- | :--------------------------------------------------------------------------------------------- |
+| id                   | GUID                    | The unique ID of the item.                                                                     |
+| code                 | string, maximum size 20 | The dimension value code.                                                                      |
+| displayName          | string                  | Specifies the dimension value's name. This name will appear where the dimension value is used. |
+| lastModifiedDateTime | datetime                | The last datetime the dimension value was modified.                                            |
 
 ## JSON representation
 
 Here is a JSON representation of the resource.
-
 
 ```json
 {
@@ -47,7 +45,3 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-
-
-
-

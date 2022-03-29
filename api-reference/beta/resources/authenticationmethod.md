@@ -1,10 +1,10 @@
 ---
-title: "authenticationMethod resource type"
-description: "Represents an authentication method registered to a user."
+title: authenticationMethod resource type
+description: Represents an authentication method registered to a user.
 ms.localizationpriority: medium
-author: "mmcla"
-ms.prod: "identity-and-sign-in"
-doc_type: "resourcePageType"
+author: mmcla
+ms.prod: identity-and-sign-in
+doc_type: resourcePageType
 ---
 
 # authenticationMethod resource type
@@ -20,15 +20,15 @@ Represents an authentication method registered to a user. An [authentication met
 
 ## Methods
 
-| Method       | Return type | Description |
-|:-------------|:------------|:------------|
+| Method                                                              | Return type                                                | Description                                                                                |
+| :------------------------------------------------------------------ | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
 | [List authenticationMethods](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) collection | Read the properties and relationships of all of a user's **authenticationMethod** objects. |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|String| The identifier of this instance of an authentication method registered to this user. Read-only. |
+| Property | Type   | Description                                                                                     |
+| :------- | :----- | :---------------------------------------------------------------------------------------------- |
+| id       | String | The identifier of this instance of an authentication method registered to this user. Read-only. |
 
 ## Relationships
 
@@ -55,6 +55,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "authenticationMethod resource",

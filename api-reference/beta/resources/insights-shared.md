@@ -22,7 +22,7 @@ An insight representing files shared with or by a specific user. The following s
 
 ## Methods
 
-| Method                                        | Return Type                                    | Description                 |
+| Method                                        | Return type                                    | Description                 |
 | :-------------------------------------------- | :--------------------------------------------- | :-------------------------- |
 | [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Get a list of shared files. |
 

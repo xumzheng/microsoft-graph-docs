@@ -17,7 +17,7 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 
 ## Methods
 
-| Method                                                             | Return Type                                      | Description                                       |
+| Method                                                             | Return type                                      | Description                                       |
 | :----------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------ |
 | [Create schedulingGroup](../api/schedule-post-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md)            | Create a new `schedulingGroup`.                   |
 | [List schedulingGroups](../api/schedule-list-schedulinggroups.md)  | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroups` in a schedule. |

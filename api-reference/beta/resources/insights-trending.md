@@ -17,7 +17,7 @@ Rich relationship connecting a user to documents that are trending around the us
 
 ## Methods
 
-| Method                                            | Return Type                                 | Description                   |
+| Method                                            | Return type                                 | Description                   |
 | :------------------------------------------------ | :------------------------------------------ | :---------------------------- |
 | [List trending](../api/insights-list-trending.md) | [trending](insights-trending.md) collection | Get a list of trending files. |
 

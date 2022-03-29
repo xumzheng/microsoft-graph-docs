@@ -1,9 +1,9 @@
 ---
-title: "meetingAttendanceReport resource type"
-description: "Contains information associated with a meeting attendance report."
-author: "mkhribech"
+title: meetingAttendanceReport resource type
+description: Contains information associated with a meeting attendance report.
+author: mkhribech
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.prod: cloud-communications
 doc_type: resourcePageType
 ---
 
@@ -19,24 +19,24 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List meetingAttendanceReports](../api/meetingattendancereport-list.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Get a list of  [meetingAttendanceReport](../resources/meetingattendancereport.md) objects and their properties.|
-|[Get meetingAttendanceReport](../api/meetingattendancereport-get.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md)|Read the properties and relationships of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object.|
+| Method                                                                  | Return type                                                                   | Description                                                                                                           |
+| :---------------------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| [List meetingAttendanceReports](../api/meetingattendancereport-list.md) | [meetingAttendanceReport](../resources/meetingattendancereport.md) collection | Get a list of  [meetingAttendanceReport](../resources/meetingattendancereport.md) objects and their properties.       |
+| [Get meetingAttendanceReport](../api/meetingattendancereport-get.md)    | [meetingAttendanceReport](../resources/meetingattendancereport.md)            | Read the properties and relationships of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object. |
 
 ## Properties
 
-| Property              | Type                                               | Description                     |
-|:----------------------|:---------------------------------------------------|:--------------------------------|
-| id                    | String   | Unique identifier for the attendance report. Read-only. |
-| meetingEndDateTime    | DateTimeOffset | UTC time when the meeting ended. Read-only.   |
-| meetingStartDateTime  | DateTimeOffset | UTC time when the meeting started. Read-only.   |
-| totalParticipantCount | Int32 | Total number of participants. Read-only.  |
+| Property              | Type           | Description                                             |
+| :-------------------- | :------------- | :------------------------------------------------------ |
+| id                    | String         | Unique identifier for the attendance report. Read-only. |
+| meetingEndDateTime    | DateTimeOffset | UTC time when the meeting ended. Read-only.             |
+| meetingStartDateTime  | DateTimeOffset | UTC time when the meeting started. Read-only.           |
+| totalParticipantCount | Int32          | Total number of participants. Read-only.                |
 
 ## Relationships
 
-| Relationship | Type | Description |
-| ------------ | ---- | ----------- |
+| Relationship      | Type                                               | Description                                                    |
+| ----------------- | -------------------------------------------------- | -------------------------------------------------------------- |
 | attendanceRecords | [attendanceRecord](attendanceRecord.md) collection | List of attendance records of an attendance report. Read-only. |
 
 ## JSON representation

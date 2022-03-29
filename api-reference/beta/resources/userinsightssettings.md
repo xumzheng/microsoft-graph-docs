@@ -1,9 +1,9 @@
 ---
-title: "userInsightsSettings resource type"
-description: "Represents user privacy settings for item insights and meeting hours insights."
+title: userInsightsSettings resource type
+description: Represents user privacy settings for item insights and meeting hours insights.
 ms.localizationpriority: medium
-author: "simonhult"
-ms.prod: "insights"
+author: simonhult
+ms.prod: insights
 doc_type: resourcePageType
 ---
 
@@ -23,15 +23,16 @@ Use the [insightsSettings](insightssettings.md) resource to disable/enable calcu
 
 ## Methods
 
-| Method                                                 | Return Type                                                   | Description                                                                                        |
-|:-------------------------------------------------------|:--------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [Get](../api/userinsightssettings-get.md)       | [userInsightsSettings](userinsightssettings.md) | Read the properties of a **userinsightssettings** object.  |
+| Method                                          | Return type                                     | Description                                                 |
+| :---------------------------------------------- | :---------------------------------------------- | :---------------------------------------------------------- |
+| [Get](../api/userinsightssettings-get.md)       | [userInsightsSettings](userinsightssettings.md) | Read the properties of a **userinsightssettings** object.   |
 | [Update](../api/userinsightssettings-update.md) | [userInsightsSettings](userinsightssettings.md) | Update the properties of a **userinsightssettings** object. |
 
 ## Properties
-| Property                   | Type                                                  | Description                                                                                                                                                         |
-|----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| isEnabled     | Boolean  |  `true` if user's **itemInsights** and meeting hours insights are enabled; `false` if user's **itemInsights** and meeting hours insights are disabled. Default is `true`. Optional.|
+
+| Property  | Type    | Description                                                                                                                                                                        |
+| --------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| isEnabled | Boolean | `true` if user's **itemInsights** and meeting hours insights are enabled; `false` if user's **itemInsights** and meeting hours insights are disabled. Default is `true`. Optional. |
 
 ## JSON representation
 
@@ -48,5 +49,3 @@ The following is a JSON representation of the resource.
   "isEnabled": "Boolean"
 }
 ```
-
-

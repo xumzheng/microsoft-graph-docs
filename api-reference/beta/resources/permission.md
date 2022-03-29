@@ -3,9 +3,10 @@ author: JeremyKelley
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.prod: sharepoint
 doc_type: resourcePageType
 ---
+
 # permission resource type
 
 Namespace: microsoft.graph
@@ -64,28 +65,28 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property                         | Type                                      | Description |
-|:---------------------------------|:------------------------------------------|:------------------------- |
-| id                               | String                                    | The unique identifier of the permission among all permissions on the item. Read-only. |
-| grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users and applications for this permission. Read-only. |
-| grantedToIdentitiesV2            | Collection([SharePointIdentitySet][])     | For link type permissions, the details of the users to whom permission was granted. Read-only. |
-| invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only. |
-| inheritedFrom                    | [ItemReference][]                         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only. |
-| link                             | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only. |
-| roles                            | Collection(String)                        | The type of permission, for example, `read`. See below for the full list of roles. Read-only. |
-| shareId                          | String                                    | A unique token that can be used to access this shared item via the **[shares API][]**. Read-only. |
+| Property                         | Type                                      | Description                                                                                                                                                                               |
+| :------------------------------- | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                               | String                                    | The unique identifier of the permission among all permissions on the item. Read-only.                                                                                                     |
+| grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users and applications for this permission. Read-only.                                                                                      |
+| grantedToIdentitiesV2            | Collection([SharePointIdentitySet][])     | For link type permissions, the details of the users to whom permission was granted. Read-only.                                                                                            |
+| invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.                                                                                                              |
+| inheritedFrom                    | [ItemReference][]                         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.                                                                           |
+| link                             | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.                                                                                         |
+| roles                            | Collection(String)                        | The type of permission, for example, `read`. See below for the full list of roles. Read-only.                                                                                             |
+| shareId                          | String                                    | A unique token that can be used to access this shared item via the **[shares API][]**. Read-only.                                                                                         |
 | expirationDateTime               | DateTimeOffset                            | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional. |
-| hasPassword                      | Boolean                                   | Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only. |
-| grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users and applications for this permission. Read-only. |
-| grantedToIdentities (deprecated) | Collection([IdentitySet](identityset.md)) | For type permissions, the details of the users to whom permission was granted. Read-only. |
+| hasPassword                      | Boolean                                   | Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.                                   |
+| grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users and applications for this permission. Read-only.                                                                                      |
+| grantedToIdentities (deprecated) | Collection([IdentitySet](identityset.md)) | For type permissions, the details of the users to whom permission was granted. Read-only.                                                                                                 |
 
 ### Roles property values
 
-| Value           | Description                                                                    |
-|:----------------|:-------------------------------------------------------------------------------|
-| read            | Provides the ability to read the metadata and contents of the item.            |
-| write           | Provides the ability to read and modify the metadata and contents of the item. |
-| owner           | For SharePoint and OneDrive for Business this represents the owner role.       |
+| Value | Description                                                                    |
+| :---- | :----------------------------------------------------------------------------- |
+| read  | Provides the ability to read the metadata and contents of the item.            |
+| write | Provides the ability to read and modify the metadata and contents of the item. |
+| owner | For SharePoint and OneDrive for Business this represents the owner role.       |
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
@@ -277,16 +278,16 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 
 ## Methods
 
-| Method                                                   | REST Path
-|:---------------------------------------------------------|:-----------------------
-| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`
-| [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
-| [Revoke grants](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
+| Method                                                   | Return type                                                 | Description |
+| :------------------------------------------------------- | :---------------------------------------------------------- | :---------- |
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`                    |             |
+| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`               |             |
+| [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`                    |             |
+| [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`                        |             |
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`             |             |
+| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`            |             |
+| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`       |             |
+| [Revoke grants](../api/permission-revokegrants.md)       | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants` |             |
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md
@@ -300,6 +301,7 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

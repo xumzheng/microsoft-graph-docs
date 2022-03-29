@@ -1,10 +1,10 @@
 ---
-title: "onenoteResource resource type"
-description: "An image or other file resource on a OneNote page. "
+title: onenoteResource resource type
+description: 'An image or other file resource on a OneNote page. '
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "jewan-microsoft"
+ms.prod: ''
+author: jewan-microsoft
 ---
 
 # onenoteResource resource type
@@ -64,21 +64,25 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ```
 
 ## Methods
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get resource binary data](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
+
+| Method                                             | Return type | Description                                           |
+| :------------------------------------------------- | :---------- | :---------------------------------------------------- |
+| [Get resource binary data](../api/resource-get.md) | Stream      | Retrieve the binary data of a file or image resource. |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| content | Edm.Stream||
-| contentUrl | String ||
+
+| Property   | Type       | Description |
+| :--------- | :--------- | :---------- |
+| content    | Edm.Stream |             |
+| contentUrl | String     |             |
 
 ## Relationships
+
 None.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -89,5 +93,3 @@ None.
   "suppressions": []
 }
 -->
-
-

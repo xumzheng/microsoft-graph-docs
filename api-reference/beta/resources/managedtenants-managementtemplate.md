@@ -1,9 +1,9 @@
 ---
-title: "managementTemplate resource type"
-description: "Represents a group of actions and setting that can be performed against a managed tenant."
-author: "idwilliams"
+title: managementTemplate resource type
+description: Represents a group of actions and setting that can be performed against a managed tenant.
+author: idwilliams
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
 ---
 
@@ -16,26 +16,31 @@ Namespace: microsoft.graph.managedTenants
 Represents a group of actions and setting that can be performed against a managed tenant.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List managementTemplates](../api/managedtenants-managedtenant-list-managementtemplates.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get a list of the [managementTemplate](../resources/managedtenants-managementtemplate.md) objects and their properties.|
-|[Get managementTemplate](../api/managedtenants-managementtemplate-get.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|Read the properties and relationships of a [managementTemplate](../resources/managedtenants-managementtemplate.md) object.|
+
+| Method                                                                                      | Return type                                                                                                       | Description                                                                                                                |
+| :------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| [List managementTemplates](../api/managedtenants-managedtenant-list-managementtemplates.md) | [microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection | Get a list of the [managementTemplate](../resources/managedtenants-managementtemplate.md) objects and their properties.    |
+| [Get managementTemplate](../api/managedtenants-managementtemplate-get.md)                   | [microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)            | Read the properties and relationships of a [managementTemplate](../resources/managedtenants-managementtemplate.md) object. |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|category|managementCategory|The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Required. Read-only.|
-|description|String|The description for the management template. Optional. Read-only.|
-|displayName|String|The display name for the management template. Required. Read-only.|
-|id|String|The unique identifier for the management template. Required. Read-only.|
-|parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection|The collection of parameters used by the management template. Optional. Read-only.|
-|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management template. Optional. Read-only.|
+
+| Property        | Type                                                                                                            | Description                                                                                                                                           |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| category        | managementCategory                                                                                              | The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Required. Read-only. |
+| description     | String                                                                                                          | The description for the management template. Optional. Read-only.                                                                                     |
+| displayName     | String                                                                                                          | The display name for the management template. Required. Read-only.                                                                                    |
+| id              | String                                                                                                          | The unique identifier for the management template. Required. Read-only.                                                                               |
+| parameters      | [microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection | The collection of parameters used by the management template. Optional. Read-only.                                                                    |
+| workloadActions | [microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection       | The collection of workload actions associated with the management template. Optional. Read-only.                                                      |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -44,7 +49,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managedTenants.managementTemplate",
   "id": "String (identifier)",

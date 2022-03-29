@@ -1,9 +1,9 @@
 ---
-title: "groupSettingTemplate resource type"
-description: "Group setting templates represent system-defined settings available to the tenant."
+title: groupSettingTemplate resource type
+description: Group setting templates represent system-defined settings available to the tenant.
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: Jordanndahl
+ms.prod: groups
 doc_type: resourcePageType
 ---
 
@@ -20,24 +20,23 @@ For more information about the available Microsoft 365 group settings, see [Temp
 
 ## Methods
 
-| Method | Return Type | Description |
-|:---------------|:--------|:----------|
-|[Get groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Read the specific properties of one of the system defined groupSettingTemplate objects. |
-|[List groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) |List all of the system defined groupSettingTemplate objects.|
+| Method                                                           | Return type                                                   | Description                                                                             |
+| :--------------------------------------------------------------- | :------------------------------------------------------------ | :-------------------------------------------------------------------------------------- |
+| [Get groupSettingTemplate](../api/groupsettingtemplate-get.md)   | [groupSettingTemplate](groupsettingtemplate.md)               | Read the specific properties of one of the system defined groupSettingTemplate objects. |
+| [List groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) | List all of the system defined groupSettingTemplate objects.                            |
 
 ## Properties
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|description|String| Description of the template. |
-|displayName|String| Display name of the template. The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.|
-|id|String| Unique identifier for the template. Read-only.|
-|values|[settingTemplateValue](settingtemplatevalue.md) collection| Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. |
+| Property    | Type                                                       | Description                                                                                                                                                                                                                          |
+| :---------- | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| description | String                                                     | Description of the template.                                                                                                                                                                                                         |
+| displayName | String                                                     | Display name of the template. The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings. |
+| id          | String                                                     | Unique identifier for the template. Read-only.                                                                                                                                                                                       |
+| values      | [settingTemplateValue](settingtemplatevalue.md) collection | Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.                                                                                                          |
 
 ## Relationships
 
 None.
-
 
 ## JSON representation
 
@@ -62,9 +61,9 @@ Here is a JSON representation of the resource.
 
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "groupSettingTemplate resource",
@@ -72,4 +71,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

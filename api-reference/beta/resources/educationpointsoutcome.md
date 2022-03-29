@@ -1,10 +1,10 @@
 ---
-title: "educationPointsOutcome resource type"
-description: "An educationOutcome that gives a numerical grade"
+title: educationPointsOutcome resource type
+description: An educationOutcome that gives a numerical grade
 ms.localizationpriority: medium
-author: "dipakboyed"
-ms.prod: "education"
-doc_type: "resourcePageType"
+author: dipakboyed
+ms.prod: education
+doc_type: resourcePageType
 ---
 
 # educationPointsOutcome resource type
@@ -17,16 +17,16 @@ An [educationOutcome](educationoutcome.md) that gives a numerical grade.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                       | Return type                             | Description                     |
+| :----------------------------------------------------------- | :-------------------------------------- | :------------------------------ |
 | [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|The numeric grade the teacher has given the student for this assignment.|
-|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A copy of the points property that is made when the grade is released to the student.|
+| Property        | Type                                                                | Description                                                                           |
+| :-------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------ |
+| points          | [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) | The numeric grade the teacher has given the student for this assignment.              |
+| publishedPoints | [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) | A copy of the points property that is made when the grade is released to the student. |
 
 ## Relationships
 
@@ -54,6 +54,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationPointsOutcome resource",
@@ -61,4 +62,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

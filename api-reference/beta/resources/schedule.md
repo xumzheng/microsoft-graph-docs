@@ -17,7 +17,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 ## Methods
 
-| Method                                                    | Return Type             | Description                                        |
+| Method                                                    | Return type             | Description                                        |
 | :-------------------------------------------------------- | :---------------------- | :------------------------------------------------- |
 | [Create or replace schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a schedule.                      |
 | [Get schedule](../api/schedule-get.md)                    | [schedule](schedule.md) | Get a schedule.                                    |

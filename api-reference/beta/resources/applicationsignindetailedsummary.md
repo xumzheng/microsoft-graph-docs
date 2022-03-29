@@ -1,9 +1,9 @@
 ---
-title: "applicationSignInDetailedSummary resource type - Microsoft Graph API"
-description: "Represents a detailed summary of an application sign-in."
+title: applicationSignInDetailedSummary resource type - Microsoft Graph API
+description: Represents a detailed summary of an application sign-in.
 ms.localizationpriority: medium
-author: "sureshja"
-ms.prod: "identity-and-access-reports"
+author: sureshja
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
 ---
 
@@ -17,24 +17,25 @@ Represents a detailed summary of an application sign-in.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List applicationSignInDetailedSummary](../api/reportroot-list-applicationsignindetailedsummary.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) collection | Retrieve **applicationSignInDetailedSummary** objects. |
-| [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read the properties and relationships of an **applicationSignInDetailedSummary** object. |
+| Method                                                                                              | Return type                                                                        | Description                                                                              |
+| :-------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
+| [List applicationSignInDetailedSummary](../api/reportroot-list-applicationsignindetailedsummary.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) collection | Retrieve **applicationSignInDetailedSummary** objects.                                   |
+| [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md)              | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md)            | Read the properties and relationships of an **applicationSignInDetailedSummary** object. |
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|aggregatedEventDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|appDisplayName|String|Name of the application that the user signed in to.|
-|appId|String|ID of the application that the user signed in to.|
-|id|String| A unique ID representing the sign-in activity.|
-|signInCount|Int64|Count of sign-ins made by the application.|
-|status|[signInStatus](signinstatus.md)|Details of the sign-in status.|
+
+| Property                | Type                            | Description                                                                                                                                                                  |
+| :---------------------- | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| aggregatedEventDateTime | DateTimeOffset                  | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| appDisplayName          | String                          | Name of the application that the user signed in to.                                                                                                                          |
+| appId                   | String                          | ID of the application that the user signed in to.                                                                                                                            |
+| id                      | String                          | A unique ID representing the sign-in activity.                                                                                                                               |
+| signInCount             | Int64                           | Count of sign-ins made by the application.                                                                                                                                   |
+| status                  | [signInStatus](signinstatus.md) | Details of the sign-in status.                                                                                                                                               |
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -62,6 +63,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "applicationSignInDetailedSummary resource",
@@ -69,5 +71,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

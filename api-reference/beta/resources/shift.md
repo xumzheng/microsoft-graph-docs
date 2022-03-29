@@ -17,7 +17,7 @@ A unit of scheduled work in a [schedule](schedule.md).
 
 ## Methods
 
-| Method                                         | Return Type                  | Description                                |
+| Method                                         | Return type                  | Description                                |
 | :--------------------------------------------- | :--------------------------- | :----------------------------------------- |
 | [Create shift](../api/schedule-post-shifts.md) | [shift](shift.md)            | Create a new `shift`.                      |
 | [List shifts](../api/schedule-list-shifts.md)  | [shift](shift.md) collection | Get the list of `shifts` in this schedule. |

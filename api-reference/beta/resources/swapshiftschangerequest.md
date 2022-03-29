@@ -1,10 +1,10 @@
 ---
-title: "swapShiftsChangeRequest resource type"
-description: "Represents type of shift request to swap a shift with another user in the team."
+title: swapShiftsChangeRequest resource type
+description: Represents type of shift request to swap a shift with another user in the team.
 ms.localizationpriority: medium
-author: "akumar39"
-ms.prod: "microsoft-teams"
-doc_type: "resourcePageType"
+author: akumar39
+ms.prod: microsoft-teams
+doc_type: resourcePageType
 ---
 
 # swapShiftsChangeRequest resource type
@@ -17,19 +17,19 @@ Represents a type of shift request to swap a [shift](../resources/shift.md) with
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List](../api/swapshiftschangerequest-list.md) | Collection of [swapShiftsChangeRequest](swapshiftschangerequest.md) | List the properties and relationships of **swapShiftsChangeRequest** objects in a team. |
-| [Create](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | Create an instance of an swapshiftschangerequest object. |
-| [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Read the properties and relationships of a **swapShiftsChangeRequest** object. |
-|[Approve](../api/swapshiftschangerequest-approve.md)|None|Approve a **swapShiftsChangeRequest**. |
-|[Decline](../api/swapshiftschangerequest-decline.md)|None|Decline a **swapShiftsChangeRequest**.|
+| Method                                               | Return type                                                         | Description                                                                             |
+| :--------------------------------------------------- | :------------------------------------------------------------------ | :-------------------------------------------------------------------------------------- |
+| [List](../api/swapshiftschangerequest-list.md)       | Collection of [swapShiftsChangeRequest](swapshiftschangerequest.md) | List the properties and relationships of **swapShiftsChangeRequest** objects in a team. |
+| [Create](../api/swapshiftschangerequest-post.md)     | [swapshiftschangerequest](swapshiftschangerequest.md)               | Create an instance of an swapshiftschangerequest object.                                |
+| [Get](../api/swapshiftschangerequest-get.md)         | [swapShiftsChangeRequest](swapshiftschangerequest.md)               | Read the properties and relationships of a **swapShiftsChangeRequest** object.          |
+| [Approve](../api/swapshiftschangerequest-approve.md) | None                                                                | Approve a **swapShiftsChangeRequest**.                                                  |
+| [Decline](../api/swapshiftschangerequest-decline.md) | None                                                                | Decline a **swapShiftsChangeRequest**.                                                  |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|recipientShiftId|String|Shift ID for the recipient user with whom the request is to swap.|
+| Property         | Type   | Description                                                       |
+| :--------------- | :----- | :---------------------------------------------------------------- |
+| recipientShiftId | String | Shift ID for the recipient user with whom the request is to swap. |
 
 ## Relationships
 
@@ -55,6 +55,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "swapShiftsChangeRequest resource",
@@ -62,5 +63,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

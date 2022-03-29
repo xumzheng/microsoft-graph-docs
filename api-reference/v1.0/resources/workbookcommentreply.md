@@ -1,10 +1,10 @@
 ---
-title: "workbookCommentReply resource type"
-description: "Definition of workbookCommentReply resource type"
+title: workbookCommentReply resource type
+description: Definition of workbookCommentReply resource type
 ms.localizationpriority: medium
-author: "grangeryy"
-ms.prod: "excel"
-doc_type: "resourcePageType"
+author: grangeryy
+ms.prod: excel
+doc_type: resourcePageType
 ---
 
 # workbookCommentReply resource type
@@ -15,19 +15,19 @@ Represents a reply to an Excel comment.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List workbookCommentReplies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Retrieve a list of workbookcommentreply objects. |
-| [Get workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Read properties and relationships of workbookCommentReply object. |
-| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new workbookCommentReply. |
+| Method                                                                | Return type                                                | Description                                                       |
+| :-------------------------------------------------------------------- | :--------------------------------------------------------- | :---------------------------------------------------------------- |
+| [List workbookCommentReplies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Retrieve a list of workbookcommentreply objects.                  |
+| [Get workbookCommentReply](../api/workbookcommentreply-get.md)        | [workbookCommentReply](workbookcommentreply.md)            | Read properties and relationships of workbookCommentReply object. |
+| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md)            | Create a new workbookCommentReply.                                |
+
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|content|String|The content of a comment reply.|
-|contentType|String|Indicates the type for the comment reply.|
-|id|String|Represents the comment identifier. Read-only.|
-
+| Property    | Type   | Description                                   |
+| :---------- | :----- | :-------------------------------------------- |
+| content     | String | The content of a comment reply.               |
+| contentType | String | Indicates the type for the comment reply.     |
+| id          | String | Represents the comment identifier. Read-only. |
 
 ## Relationships
 
@@ -56,6 +56,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "workbookCommentReply resource",
@@ -63,4 +64,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

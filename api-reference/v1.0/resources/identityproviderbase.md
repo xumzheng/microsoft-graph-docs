@@ -1,13 +1,14 @@
 ---
-title: "identityProviderBase resource type"
-description: "Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
+title: identityProviderBase resource type
+description: Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant.
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
-author: "namkedia"
+ms.prod: identity-and-sign-in
+author: namkedia
 ---
 
 # identityProviderBase resource type
+
 Namespace: microsoft.graph
 
 Represents identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory (Azure AD) and Azure AD B2C tenants.
@@ -22,21 +23,21 @@ Configuring an identity provider in your Azure AD B2C directory enables users to
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)| [socialidentityprovider](../resources/socialidentityprovider.md) or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Create a new object of one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
-|[Get](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md) or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)| Retrieve properties of one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) <li> [builtInIdentityProvider](../resources/builtinidentityprovider.md) (Azure AD or Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
-|[Update](../api/identityproviderbase-update.md)|None|Update one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) (Azure AD B2C)|
-|[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all supported identity provider types in the tenant.|
+| Method                                                                                 | Return type                                                                                                                                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                        |
+| :------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [List](../api/identitycontainer-list-identityproviders.md)                             | [identityProviderBase](../resources/identityproviderbase.md) collection                                                                                                                                               | Retrieve all identity providers configured in a tenant.                                                                                                                                                                                                                                                                                                                            |
+| [Create](../api/identitycontainer-post-identityproviders.md)                           | [socialidentityprovider](../resources/socialidentityprovider.md) or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)                                                                     | Create a new object of one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>                                                                                                    |
+| [Get](../api/identityproviderbase-get.md)                                              | [socialidentityprovider](../resources/socialidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md) or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) | Retrieve properties of one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) <li> [builtInIdentityProvider](../resources/builtinidentityprovider.md) (Azure AD or Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul> |
+| [Update](../api/identityproviderbase-update.md)                                        | None                                                                                                                                                                                                                  | Update one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>                                                                                                                    |
+| [Delete](../api/identityproviderbase-delete.md)                                        | None                                                                                                                                                                                                                  | Delete one of the following object types: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) (Azure AD B2C)                                                                                                                |
+| [List available provider types](../api/identityproviderbase-availableprovidertypes.md) | String collection                                                                                                                                                                                                     | Retrieve all supported identity provider types in the tenant.                                                                                                                                                                                                                                                                                                                      |
 
 ## Properties
 
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|id|String|The identifier of the identity provider.|
-|displayName|String|The display name of the identity provider.|
+| Property    | Type   | Description                                |
+| :---------- | :----- | :----------------------------------------- |
+| id          | String | The identifier of the identity provider.   |
+| displayName | String | The display name of the identity provider. |
 
 ## JSON representation
 

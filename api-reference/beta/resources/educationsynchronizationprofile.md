@@ -1,9 +1,9 @@
 ---
-title: "educationSynchronizationProfile resource type"
-description: "Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in School Data Sync."
-author: "mmast-msft"
+title: educationSynchronizationProfile resource type
+description: Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in School Data Sync.
+author: mmast-msft
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.prod: education
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Represents a set of configurations used to synchronize education entities and ro
 
 ## Methods
 
-| Method                                                                    | Return Type                                                 | Description                                                                                                                    |
+| Method                                                                    | Return type                                                 | Description                                                                                                                    |
 | :------------------------------------------------------------------------ | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
 | [List profiles](../api/educationsynchronizationprofile-list.md)           | [educationSynchronizationProfile] collection                | Get a list of all the synchronization profiles in the tenant.                                                                  |
 | [Get profile](../api/educationsynchronizationprofile-get.md)              | [educationSynchronizationProfile]                           | Retrieve a specific profile given the profile identifier.                                                                      |
@@ -33,16 +33,16 @@ Represents a set of configurations used to synchronize education entities and ro
 
 ## Properties
 
-| Property                             | Type                                                   | Description                                                                                                                       |
-| :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| id                                   | String                                                 | The unique identifier for the resource. (read-only)                                                                               |
-| displayName                          | String                                                 | Name of the configuration profile for syncing identities.                                                                         |
-| dataProvider                         | [educationSynchronizationDataProvider]                 | The data provider used for the profile.                                                                                           |
-| expirationDate                       | Date                                                   | The date the profile should be considered expired and cease syncing. Provide the date in `YYYY-MM-DD` format, following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). Maximum value is 18 months from profile creation.  (optional)       |
-| handleSpecialCharacterConstraint     | Bool                                                   | Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.             |
-| identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Determines how the Profile should [create new][fullsync] or [match existing][dirsync] AAD Users.                                  |
-| licensesToAssign                     | [educationSynchronizationLicenseAssignment] collection | License setup configuration.                                                                                                      |
-| state                                | educationSynchronizationProfileState                   | The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`. |
+| Property                             | Type                                                   | Description                                                                                                                                                                                                                                               |
+| :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                                   | String                                                 | The unique identifier for the resource. (read-only)                                                                                                                                                                                                       |
+| displayName                          | String                                                 | Name of the configuration profile for syncing identities.                                                                                                                                                                                                 |
+| dataProvider                         | [educationSynchronizationDataProvider]                 | The data provider used for the profile.                                                                                                                                                                                                                   |
+| expirationDate                       | Date                                                   | The date the profile should be considered expired and cease syncing. Provide the date in `YYYY-MM-DD` format, following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). Maximum value is 18 months from profile creation.  (optional) |
+| handleSpecialCharacterConstraint     | Bool                                                   | Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.                                                                                                                                     |
+| identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Determines how the Profile should [create new][fullsync] or [match existing][dirsync] AAD Users.                                                                                                                                                          |
+| licensesToAssign                     | [educationSynchronizationLicenseAssignment] collection | License setup configuration.                                                                                                                                                                                                                              |
+| state                                | educationSynchronizationProfileState                   | The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.                                                                                                                         |
 
 ## Relationships
 
@@ -121,6 +121,7 @@ The following is a JSON representation of the **educationSynchronizationProfile*
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2020-05-06 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationSynchronizationProfile resource",
@@ -128,5 +129,3 @@ The following is a JSON representation of the **educationSynchronizationProfile*
   "section": "documentation",
   "tocPath": "",
 }-->
-
-

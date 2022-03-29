@@ -1,9 +1,9 @@
 ---
-title: "linkedResource_v2 resource type"
-description: "Represents an item in a partner application related to a baseTask"
-author: "avijityadav"
+title: linkedResource_v2 resource type
+description: Represents an item in a partner application related to a baseTask
+author: avijityadav
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 
@@ -22,28 +22,33 @@ Some **linkedResource** objects are not associated with any web URLs, in which c
 ![Image showing how linked resource card with and without URL is displayed. Linked resource card with URL contains Open with partner application Name while linked resource card without URL contains just partner Application name.](/graph/images/todo-linkedresource.png)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List linkedResource_v2](../api/basetask-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get a list of the [linkedResource_v2](../resources/linkedresource_v2.md) objects and their properties.|
-|[Create linkedResource_v2](../api/basetask-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new [linkedResource_v2](../resources/linkedresource_v2.md) object.|
-|[Get linkedResource_v2](../api/linkedresource_v2-get.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Read the properties and relationships of a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
-|[Update linkedResource_v2](../api/linkedresource_v2-update.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Update the properties of a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
-|[Delete linkedResource_v2](../api/linkedresource_v2-delete.md)|None|Deletes a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
+
+| Method                                                              | Return type                                                       | Description                                                                                               |
+| :------------------------------------------------------------------ | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| [List linkedResource_v2](../api/basetask-list-linkedresources.md)   | [linkedResource_v2](../resources/linkedresource_v2.md) collection | Get a list of the [linkedResource_v2](../resources/linkedresource_v2.md) objects and their properties.    |
+| [Create linkedResource_v2](../api/basetask-post-linkedresources.md) | [linkedResource_v2](../resources/linkedresource_v2.md)            | Create a new [linkedResource_v2](../resources/linkedresource_v2.md) object.                               |
+| [Get linkedResource_v2](../api/linkedresource_v2-get.md)            | [linkedResource_v2](../resources/linkedresource_v2.md)            | Read the properties and relationships of a [linkedResource_v2](../resources/linkedresource_v2.md) object. |
+| [Update linkedResource_v2](../api/linkedresource_v2-update.md)      | [linkedResource_v2](../resources/linkedresource_v2.md)            | Update the properties of a [linkedResource_v2](../resources/linkedresource_v2.md) object.                 |
+| [Delete linkedResource_v2](../api/linkedresource_v2-delete.md)      | None                                                              | Deletes a [linkedResource_v2](../resources/linkedresource_v2.md) object.                                  |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|applicationName|String|Field indicating the app name of the source that is sending the **linkedResource**.|
-|displayName|String|Field indicating the title of the **linkedResource**.|
-|externalId|String|Id of the object that is associated with this task on the third-party/partner system.|
-|id|String|Server generated ID for the **linkedResource**. Inherited from [entity](../resources/entity.md).|
-|webUrl|String|Deep link to the **linkedResource**.|
+
+| Property        | Type   | Description                                                                                      |
+| :-------------- | :----- | :----------------------------------------------------------------------------------------------- |
+| applicationName | String | Field indicating the app name of the source that is sending the **linkedResource**.              |
+| displayName     | String | Field indicating the title of the **linkedResource**.                                            |
+| externalId      | String | Id of the object that is associated with this task on the third-party/partner system.            |
+| id              | String | Server generated ID for the **linkedResource**. Inherited from [entity](../resources/entity.md). |
+| webUrl          | String | Deep link to the **linkedResource**.                                                             |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -51,7 +56,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.linkedResource_v2",
   "webUrl": "String",
@@ -61,4 +67,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-

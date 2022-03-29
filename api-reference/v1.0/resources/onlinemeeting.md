@@ -1,10 +1,10 @@
 ---
-title: "onlineMeeting resource type"
-description: "Contains information about a meeting."
-author: "mkhribech"
+title: onlineMeeting resource type
+description: Contains information about a meeting.
+author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "cloud-communications"
+ms.prod: cloud-communications
 ---
 
 # onlineMeeting resource type
@@ -15,40 +15,40 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 ## Methods
 
-| Method                                                             | Return Type                       | Description                                                                                                  |
-| :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
-| [Create onlineMeeting](../api/application-post-onlineMeetings.md)  | [onlineMeeting](onlinemeeting.md) | Create an online meeting.                                                                                    |
-| [Get onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object.                                        |
-| [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
+| Method                                                             | Return type                       | Description                                                                                                            |
+| :----------------------------------------------------------------- | :-------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| [Create onlineMeeting](../api/application-post-onlineMeetings.md)  | [onlineMeeting](onlinemeeting.md) | Create an online meeting.                                                                                              |
+| [Get onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object.                                                  |
+| [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object.                                                                  |
 | [Delete onlineMeeting](../api/onlinemeeting-delete.md)             | None                              | Delete an **onlineMeeting** object.                                                                                    |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an **onlineMeeting** object with a custom, external ID. If the meeting already exists, retrieve its properties. |
 
 ## Properties
 
-| Property              | Type                                          | Description                                                                                                                |
-| :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
-| allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera.                          |
-| allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
-| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
-| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
-| attendeeReport | Stream | The content stream of the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
-| audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                   |
-| broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Settings related to a live event.                                                                  |
-| chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                  |
-| creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                               |
-| endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                               |
-| id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                              |
-| isBroadcast  | Boolean                                       | Indicates if this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events).                  |
-| isEntryExitAnnounced  | Boolean                                       | Indicates whether to announce when callers join or leave.                                                                     |
-| joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
-| joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                             |
-| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
-| participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
-| recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
-| startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
-| subject               | String                                        | The subject of the online meeting.                                                                                         |
-| videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
+| Property                    | Type                                                       | Description                                                                                                                                           |
+| :-------------------------- | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedPresenters           | [onlineMeetingPresenters](#onlinemeetingpresenters-values) | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                                                     |
+| allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                                                                                                 |
+| allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                                                                                             |
+| allowMeetingChat            | [meetingChatMode](#meetingchatmode-values)                 | Specifies the mode of meeting chat.                                                                                                                   |
+| allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                                                                                        |
+| attendeeReport              | Stream                                                     | The content stream of the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| audioConferencing           | [audioConferencing](audioconferencing.md)                  | The phone access (dial-in) information for an online meeting. Read-only.                                                                              |
+| broadcastSettings           | [broadcastMeetingSettings](broadcastMeetingSettings.md)    | Settings related to a live event.                                                                                                                     |
+| chatInfo                    | [chatInfo](chatinfo.md)                                    | The chat information associated with this online meeting.                                                                                             |
+| creationDateTime            | DateTime                                                   | The meeting creation time in UTC. Read-only.                                                                                                          |
+| endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                                                                                          |
+| id                          | String                                                     | The default ID associated with the online meeting. Read-only.                                                                                         |
+| isBroadcast                 | Boolean                                                    | Indicates if this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events).                                              |
+| isEntryExitAnnounced        | Boolean                                                    | Indicates whether to announce when callers join or leave.                                                                                             |
+| joinInformation             | [itemBody](itembody.md)                                    | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only.                            |
+| joinWebUrl                  | String                                                     | The join URL of the online meeting. Read-only.                                                                                                        |
+| lobbyBypassSettings         | [lobbyBypassSettings](lobbyBypassSettings.md)              | Specifies which participants can bypass the meeting   lobby.                                                                                          |
+| participants                | [meetingParticipants](meetingparticipants.md)              | The participants associated with the online meeting.  This includes the organizer and the attendees.                                                  |
+| recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                                                                                                |
+| startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                                                                                        |
+| subject                     | String                                                     | The subject of the online meeting.                                                                                                                    |
+| videoTeleconferenceId       | String                                                     | The video teleconferencing ID. Read-only.                                                                                                             |
 
 ### onlineMeetingPresenters values
 
@@ -76,8 +76,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 ## Relationships
 
-| Relationship | Type | Description |
-| ------------ | ---- | ----------- |
+| Relationship      | Type                                                              | Description                                             |
+| ----------------- | ----------------------------------------------------------------- | ------------------------------------------------------- |
 | attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
 
 ## JSON representation
@@ -89,6 +89,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->
+
 ```json
 {
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
@@ -115,6 +116,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "onlineMeeting resource",
@@ -122,4 +124,3 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "section": "documentation",
   "tocPath": ""
 }-->
-

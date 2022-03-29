@@ -1,9 +1,9 @@
 ---
-title: "teamsAppIcon resource type"
-description: "An icon associated with an app on Microsoft Teams."
-author: "jecha"
+title: teamsAppIcon resource type
+description: An icon associated with an app on Microsoft Teams.
+author: jecha
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---
 
@@ -17,21 +17,21 @@ An icon associated with a [teamsApp](teamsapp.md).
 
 ## Methods
 
-| Method                                            | Return Type                                       | Description                                                    | 
-| :------------------------------------------------ | :------------------------------------------------ | :------------------------------------------------------------- |
-| [Get icon](../api/teamsappicon-get.md)     | [teamsAppIcon](teamsappicon.md)                   | Get an icon associated with a specific version of a Teams app. |
+| Method                                                    | Return type                                       | Description                                                    |
+| :-------------------------------------------------------- | :------------------------------------------------ | :------------------------------------------------------------- |
+| [Get icon](../api/teamsappicon-get.md)                    | [teamsAppIcon](teamsappicon.md)                   | Get an icon associated with a specific version of a Teams app. |
 | [Get hosted content](../api/teamworkhostedcontent-get.md) | [teamworkHostedContent](teamworkhostedcontent.md) | Get hosted content (and its bytes) for an icon.                |
 
 ## Properties
 
-| Property      | Type                        | Description                                                                             |
-| :------------ | :-------------------------- | :-------------------------------------------------------------------------------------- |
-| id            | string                      | The unique ID of the app icon.                                                          |
-| webUrl        | string                      | The web URL that can be used for downloading the image.                                 |
+| Property | Type   | Description                                             |
+| :------- | :----- | :------------------------------------------------------ |
+| id       | string | The unique ID of the app icon.                          |
+| webUrl   | string | The web URL that can be used for downloading the image. |
 
 ## Relationships
 
-| Relationship  | Type	                                            | Description                                                                         |
+| Relationship  | Type                                              | Description                                                                         |
 | :------------ | :------------------------------------------------ | :---------------------------------------------------------------------------------- |
 | hostedContent | [teamworkHostedContent](teamworkhostedcontent.md) | The contents of the app icon if the icon is hosted within the Teams infrastructure. |
 

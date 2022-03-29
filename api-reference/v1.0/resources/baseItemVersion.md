@@ -1,9 +1,9 @@
 ---
-title: "BaseItemVersion resource type"
-description: "The **baseItemVersion** resource represents a previous version of an item or entity."
+title: BaseItemVersion resource type
+description: The **baseItemVersion** resource represents a previous version of an item or entity.
 ms.localizationpriority: medium
-author: "JeremyKelley"
-ms.prod: ""
+author: JeremyKelley
+ms.prod: ''
 doc_type: resourcePageType
 ---
 
@@ -12,7 +12,6 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 The **baseItemVersion** resource represents a previous version of an item or entity.
-
 
 ## JSON representation
 
@@ -35,13 +34,12 @@ The **baseItemVersion** resource represents a previous version of an item or ent
 
 ## Properties
 
-|      Property name       |                         Type                         |                               Description                               |
+| Property                 | Type                                                 | Description                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
-
 
 <!-- {
   "type": "#page.annotation",
@@ -50,4 +48,3 @@ The **baseItemVersion** resource represents a previous version of an item or ent
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
-

@@ -1,10 +1,10 @@
 ---
-title: "connectionOperation resource type"
-description: "Describes status of an asynchronous request to create a Microsoft Search connection schema."
+title: connectionOperation resource type
+description: Describes status of an asynchronous request to create a Microsoft Search connection schema.
 ms.localizationpriority: medium
-author: "snlraju-msft"
-ms.prod: "search"
-doc_type: "resourcePageType"
+author: snlraju-msft
+ms.prod: search
+doc_type: resourcePageType
 ---
 
 # connectionOperation resource type
@@ -17,16 +17,16 @@ Describes status of an asynchronous request to create a Microsoft Search connect
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                                          | Return type                                                      | Description                                      |
+| :------------------------------------------------------------------------------ | :--------------------------------------------------------------- | :----------------------------------------------- |
 | [Get connectionOperation](../api/externalconnectors-connectionoperation-get.md) | [connectionOperation](externalconnectors-connectionoperation.md) | Read properties of a connectionOperation object. |
 
 ## Properties
 
-| Property | Type                          | Description                       |
-|:---------|:------------------------------|:----------------------------------|
-| error    | [publicError](publicerror.md) | If `status` is `failed`, provides more information about the error that caused the failure. |
-| id       | String                        | Unique identifier for the connectionOperation. Read-only. |
+| Property | Type                          | Description                                                                                                                  |
+| :------- | :---------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| error    | [publicError](publicerror.md) | If `status` is `failed`, provides more information about the error that caused the failure.                                  |
+| id       | String                        | Unique identifier for the connectionOperation. Read-only.                                                                    |
 | status   | String                        | Indicates the status of the asynchronous operation. Possible values are: `unspecified`, `inprogress`, `completed`, `failed`. |
 
 ## Relationships
@@ -55,6 +55,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "connectionOperation resource",

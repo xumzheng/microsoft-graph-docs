@@ -1,10 +1,10 @@
 ---
-title: "emailAuthenticationMethodConfiguration resource type"
-description: "Represents an email OTP authentication methods policy"
-author: "mmcla"
+title: emailAuthenticationMethodConfiguration resource type
+description: Represents an email OTP authentication methods policy
+author: mmcla
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
-doc_type: "resourcePageType"
+ms.prod: identity-and-sign-in
+doc_type: resourcePageType
 ---
 
 # emailAuthenticationMethodConfiguration resource type
@@ -15,29 +15,30 @@ Represents this tenant's email OTP authentication methods policy. Authentication
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-get.md)|[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)|Read the properties and relationships of an emailAuthenticationMethodConfiguration object.|
-|[Update emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-update.md)|[emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)|Update the properties of an emailAuthenticationMethodConfiguration object.|
-|[Delete emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-delete.md)|None|Deletes an emailAuthenticationMethodConfiguration object.|
+| Method                                                                                                   | Return type                                                                                      | Description                                                                                |
+| :------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
+| [Get emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-get.md)       | [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) | Read the properties and relationships of an emailAuthenticationMethodConfiguration object. |
+| [Update emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-update.md) | [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) | Update the properties of an emailAuthenticationMethodConfiguration object.                 |
+| [Delete emailAuthenticationMethodConfiguration](../api/emailauthenticationmethodconfiguration-delete.md) | None                                                                                             | Deletes an emailAuthenticationMethodConfiguration object.                                  |
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The authentication method policy identifier. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|state|authenticationMethodState|Indicates whether this authentication method is enabled or not. Possible values are: `enabled`, `disabled`.|
-|allowExternalIdToUseEmailOtp|externalEmailOtpState|Determines whether email OTP is usable by external users for authentication. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. Tenants in the `default` state who did not use public preview will automatically have email OTP enabled beginning in October 2021.|
+| Property                     | Type                      | Description                                                                                                                                                                                                                                                                                  |
+| :--------------------------- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                           | String                    | The authentication method policy identifier. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).                                                                                                                                          |
+| state                        | authenticationMethodState | Indicates whether this authentication method is enabled or not. Possible values are: `enabled`, `disabled`.                                                                                                                                                                                  |
+| allowExternalIdToUseEmailOtp | externalEmailOtpState     | Determines whether email OTP is usable by external users for authentication. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. Tenants in the `default` state who did not use public preview will automatically have email OTP enabled beginning in October 2021. |
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
-|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
+| Relationship   | Type                                                                                | Description                                                                       |
+| :------------- | :---------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
+| includeTargets | [authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection | A collection of users or groups who are enabled to use the authentication method. |
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

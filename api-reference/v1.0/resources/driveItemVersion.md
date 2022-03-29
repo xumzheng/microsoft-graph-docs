@@ -1,9 +1,9 @@
 ---
-title: "driveItemVersion resource type"
-description: "Represents a specific version of a DriveItem."
+title: driveItemVersion resource type
+description: Represents a specific version of a DriveItem.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
-author: "JeremyKelley"
+ms.prod: sharepoint
+author: JeremyKelley
 doc_type: resourcePageType
 ---
 
@@ -15,11 +15,11 @@ Represents a specific version of a [driveItem](driveitem.md).
 
 The following tasks are available for **driveItemVersion** resources.
 
-|            Common task             |         HTTP method         |
-| :--------------------------------- | :-------------------------- |
-| [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
-| [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
+| Common task                        | HTTP method                                                        |
+| :--------------------------------- | :----------------------------------------------------------------- |
+| [List versions][version-list]      | `GET /drive/items/{item-id}/versions`                              |
+| [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`                 |
+| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content`         |
 | [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
@@ -31,7 +31,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 ## Properties
 
-|      Property name       |                         Type                         |                               Description                               |
+| Property                 | Type                                                 | Description                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
@@ -42,9 +42,9 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 ## Instance attributes
 
-| Property name                     | Type   | Description
-|:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.downloadUrl      | string | A URL that can be used to download this version of the file's content. Authentication is not required with this URL. Read-only.
+| Property name                | Type   | Description                                                                                                                     |
+| :--------------------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------ |
+| @microsoft.graph.downloadUrl | string | A URL that can be used to download this version of the file's content. Authentication is not required with this URL. Read-only. |
 
 >**Notes:** 
 >The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL will only be available for a short period of time (1 hour) before it is invalidated.
@@ -72,7 +72,6 @@ Removing file permissions for a user might not immediately invalidate the URL.
   "@microsoft.graph.downloadUrl": "url",
 }
 ```
-
 
 <!-- {
   "type": "#page.annotation",

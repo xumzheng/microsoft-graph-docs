@@ -1,9 +1,9 @@
 ---
-title: "plannerGroup resource type"
-description: "The **plannerGroup** resource provides access to Planner resources for a group. It doesn't contain any usable properties."
+title: plannerGroup resource type
+description: The **plannerGroup** resource provides access to Planner resources for a group. It doesn't contain any usable properties.
 ms.localizationpriority: medium
-author: "TarkanSevilmis"
-ms.prod: "planner"
+author: TarkanSevilmis
+ms.prod: planner
 doc_type: resourcePageType
 ---
 
@@ -17,21 +17,24 @@ The **plannerGroup** resource provides access to Planner resources for a [group]
 
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List plans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
+| Method                                          | Return type                              | Description                              |
+| :---------------------------------------------- | :--------------------------------------- | :--------------------------------------- |
+| [List plans](../api/plannergroup-list-plans.md) | [plannerPlan](plannerplan.md) collection | Get a **plannerPlan** object collection. |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|id|String| Read-only. Identifier of the **plannerGroup**|
+
+| Property | Type   | Description                                   |
+| :------- | :----- | :-------------------------------------------- |
+| id       | String | Read-only. Identifier of the **plannerGroup** |
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.|
+
+| Relationship | Type                                     | Description                                                                         |
+| :----------- | :--------------------------------------- | :---------------------------------------------------------------------------------- |
+| plans        | [plannerPlan](plannerplan.md) collection | Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group. |
 
 ## JSON representation
+
 Here is a JSON representation of the resource.
 
 <!-- {
@@ -53,6 +56,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -63,5 +67,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

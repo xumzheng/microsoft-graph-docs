@@ -1,9 +1,9 @@
 ---
-title: "userSettings resource type"
-description: "The current user settings for content discovery. "
-author: "jpettere"
+title: userSettings resource type
+description: 'The current user settings for content discovery. '
+author: jpettere
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.prod: users
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ Manage user's locale-based preferences:
 Manage user's work shift preferences: 
   - Checking whether a user can be assigned to shifts in a schedule.
   - Updating a user's shift preferences.
-  
+
 Configure [contactMergeSuggestions](../resources/contactmergesuggestions.md):
   - Determining whether suggestion to merge duplicate contacts for a user is enabled.
   - Disabling or enabling suggestion to merge duplicate contacts for a user.
@@ -46,39 +46,40 @@ Inherits from [entity](entity.md). To learn how to get or update user settings, 
 > This endpoint works only with the [user](user.md) resource. 
 
 ## Methods
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get user settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
-|[Update user settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
+
+| Method                                                | Return type                                  | Description                             |
+| :---------------------------------------------------- | :------------------------------------------- | :-------------------------------------- |
+| [Get user settings](../api/usersettings-get.md)       | [userSettings](../resources/usersettings.md) | Get the user and organization settings. |
+| [Update user settings](../api/usersettings-update.md) | [userSettings](../resources/usersettings.md) | Update the user current settings.       |
 
 ## Properties
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|When set to true, documents in the user's Office Delve are disabled. Users can control this setting in [Office Delve](https://support.office.com/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Boolean|Reflects the [Office Delve organization level setting](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff). When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the [SharePoint admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
-|id|String|Unique identifier of the user setting. Read-only. Inherited from [entity](entity.md).|
+| Property                                             | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| :--------------------------------------------------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contributionToContentDiscoveryDisabled               | Boolean | When set to true, documents in the user's Office Delve are disabled. Users can control this setting in [Office Delve](https://support.office.com/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).                                                                                                                                                                                                                            |
+| contributionToContentDiscoveryAsOrganizationDisabled | Boolean | Reflects the [Office Delve organization level setting](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff). When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the [SharePoint admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US). |
+| id                                                   | String  | Unique identifier of the user setting. Read-only. Inherited from [entity](entity.md).                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 ## Relationships
 
-| Relationship | Type | Description |
-|:---------------|:--------|:----------|
-|contactMergeSuggestions|[contactMergeSuggestions](contactmergesuggestions.md)| The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.|
-|itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
-|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
-|shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
-
-
+| Relationship                | Type                                                          | Description                                                                                                                                                                                                                                                         |
+| :-------------------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| contactMergeSuggestions     | [contactMergeSuggestions](contactmergesuggestions.md)         | The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.                                                                                                                                                   |
+| itemInsights                | [userInsightsSettings](userinsightssettings.md)               | The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
+| regionalAndLanguageSettings | [regionalAndLanguageSettings](regionalandlanguagesettings.md) | The user's preferences for languages, regional locale and date/time formatting.                                                                                                                                                                                     |
+| shiftPreferences            | [shiftPreferences](shiftpreferences.md)                       | The shift preferences for the user.                                                                                                                                                                                                                                 |
 
 ## JSON representation
 
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.userSettings",
   "baseType": "microsoft.graph.entity"
 }-->
+
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,
@@ -86,5 +87,3 @@ Here is a JSON representation of the resource.
 }
 
 ```
-
-

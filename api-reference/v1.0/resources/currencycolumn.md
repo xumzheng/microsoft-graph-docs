@@ -3,8 +3,8 @@ author: JeremyKelley
 ms.date: 09/11/2017
 title: CurrencyColumn
 ms.localizationpriority: medium
-description: "The currencyColumn on a columnDefinition resource indicates that the column's values represent currency."
-ms.prod: ""
+description: The currencyColumn on a columnDefinition resource indicates that the column's values represent currency.
+ms.prod: ''
 doc_type: resourcePageType
 ---
 
@@ -17,6 +17,7 @@ The **currencyColumn** on a [columnDefinition](columndefinition.md) resource ind
 ## JSON representation
 
 Here is a JSON representation of a **currencyColumn** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.currencyColumn" } -->
 
 ```json
@@ -27,9 +28,9 @@ Here is a JSON representation of a **currencyColumn** resource.
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| **locale**    | string | Specifies the locale from which to infer the currency symbol.
+| Property   | Type   | Description                                                   |
+| :--------- | :----- | :------------------------------------------------------------ |
+| **locale** | string | Specifies the locale from which to infer the currency symbol. |
 
 <!-- {
   "type": "#page.annotation",
@@ -38,4 +39,3 @@ Here is a JSON representation of a **currencyColumn** resource.
   "section": "documentation",
   "tocPath": "Resources/CurrencyColumn"
 } -->
-

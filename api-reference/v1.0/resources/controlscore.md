@@ -1,13 +1,13 @@
 ---
-title: "controlScore resource type"
-description: "This resource contains a tenant score and description for an individual control."
+title: controlScore resource type
+description: This resource contains a tenant score and description for an individual control.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ""
+ms.prod: ''
 doc_type: resourcePageType
 ---
 
-#  controlScore resource type
+# controlScore resource type
 
 Namespace: microsoft.graph
 
@@ -15,12 +15,12 @@ Contains a tenant score and description for an individual control.
 
 ## Properties
 
-|Name |Type |Description |
-|:--|:--|:--|
-|controlName|String|Control unique name.|
-|score|Double|Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).|
-|controlCategory|String|Control action category (Identity, Data, Device, Apps, Infrastructure).|
-|description|String| Description of the control.|
+| Property        | Type   | Description                                                                                                 |
+| :-------------- | :----- | :---------------------------------------------------------------------------------------------------------- |
+| controlName     | String | Control unique name.                                                                                        |
+| score           | Double | Tenant achieved score for the control (it varies day by day depending on tenant operations on the control). |
+| controlCategory | String | Control action category (Identity, Data, Device, Apps, Infrastructure).                                     |
+| description     | String | Description of the control.                                                                                 |
 
 ## JSON representation
 
@@ -44,7 +44,6 @@ The following is a JSON representation of the resource.
 
 ```
 
-
 <!-- {
   "type": "#page.annotation",
   "description": "controlScore resource",
@@ -52,4 +51,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

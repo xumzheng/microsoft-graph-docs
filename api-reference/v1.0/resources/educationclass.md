@@ -1,9 +1,9 @@
 ---
-title: "educationClass resource type"
-description: "Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  "
+title: educationClass resource type
+description: 'Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  '
 ms.localizationpriority: medium
-author: "mlafleur"
-ms.prod: "education"
+author: mlafleur
+ms.prod: education
 doc_type: resourcePageType
 ---
 
@@ -20,28 +20,28 @@ Inherits from [entity](../resources/entity.md).
 | Method                                                   | Return type                                                 | Description                                                                                          |
 | :------------------------------------------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | [List educationClasses](../api/educationclass-list.md)   | [educationClass](../resources/educationclass.md) collection | Get a list of the [educationClass](../resources/educationclass.md) objects and their properties.     |
-| [Create educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Create a new [educationClass](../resources/educationclass.md) object.                                |
+| [Create educationClass](../api/educationclass-post.md)   | [educationClass](../resources/educationclass.md)            | Create a new [educationClass](../resources/educationclass.md) object.                                |
 | [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Read the properties and relationships of an [educationClass](../resources/educationclass.md) object. |
 | [Update educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Update the properties of an [educationClass](../resources/educationclass.md) object.                 |
-| [Delete educationClass](../api/educationclass-delete.md) | None                                                        | Delete an [educationClass](../resources/educationclass.md) object.                                  |
+| [Delete educationClass](../api/educationclass-delete.md) | None                                                        | Delete an [educationClass](../resources/educationclass.md) object.                                   |
 | [delta](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) collection | Get incremental changes to the resource collection.                                                  |
 
 ## Properties
 
-| Property             | Type                                           | Description                                                        |
-| :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |
+| Property             | Type                                           | Description                                                         |
+| :------------------- | :--------------------------------------------- | :------------------------------------------------------------------ |
 | id                   | String                                         | Object identifier. Inherited from [entity](../resources/entity.md). |
-| displayName          | String                                         | Name of the class.                                                 |
-| mailNickname         | String                                         | Mail name for sending email to all members, if this is enabled.    |
-| description          | String                                         | Description of the class.                                          |
-| createdBy            | [identitySet](../resources/identityset.md)     | Entity who created the class                                       |
-| classCode            | String                                         | Class code used by the school to identify the class.               |
-| externalName         | String                                         | Name of the class in the syncing system.                           |
-| externalId           | String                                         | ID of the class from the syncing system.                           |
-| externalSource       | educationExternalSource                        | How this class was created. Possible values are: `sis`, `manual`.  |
-| externalSourceDetail | String                                         | The name of the external source this resources was generated from. |
-| grade                | String                                         | Grade level of the class.                                          |
-| term                 | [educationTerm](../resources/educationterm.md) | Term for this class.                                               |
+| displayName          | String                                         | Name of the class.                                                  |
+| mailNickname         | String                                         | Mail name for sending email to all members, if this is enabled.     |
+| description          | String                                         | Description of the class.                                           |
+| createdBy            | [identitySet](../resources/identityset.md)     | Entity who created the class                                        |
+| classCode            | String                                         | Class code used by the school to identify the class.                |
+| externalName         | String                                         | Name of the class in the syncing system.                            |
+| externalId           | String                                         | ID of the class from the syncing system.                            |
+| externalSource       | educationExternalSource                        | How this class was created. Possible values are: `sis`, `manual`.   |
+| externalSourceDetail | String                                         | The name of the external source this resources was generated from.  |
+| grade                | String                                         | Grade level of the class.                                           |
+| term                 | [educationTerm](../resources/educationterm.md) | Term for this class.                                                |
 
 ## Relationships
 

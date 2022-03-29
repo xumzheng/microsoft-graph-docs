@@ -1,13 +1,14 @@
 ---
-title: "identityProvider resource type"
-description: "Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
+title: identityProvider resource type
+description: Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant.
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
-author: "namkedia"
+ms.prod: identity-and-sign-in
+author: namkedia
 ---
 
 # identityProvider resource type (deprecated)
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -28,24 +29,24 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identityprovider-list.md)|identityProvider collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identity provider.|
-|[Get](../api/identityprovider-get.md) |identityProvider|Retrieve properties of an identity provider.|
-|[Update](../api/identityprovider-update.md)|None|Update an identity provider.|
-|[Delete](../api/identityprovider-delete.md)|None|Delete an identity provider.|
-|[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
+| Method                                                                                  | Return type                 | Description                                             |
+| :-------------------------------------------------------------------------------------- | :-------------------------- | :------------------------------------------------------ |
+| [List](../api/identityprovider-list.md)                                                 | identityProvider collection | Retrieve all identity providers configured in a tenant. |
+| [Create](../api/identityprovider-post-identityproviders.md)                             | identityProvider            | Create a new identity provider.                         |
+| [Get](../api/identityprovider-get.md)                                                   | identityProvider            | Retrieve properties of an identity provider.            |
+| [Update](../api/identityprovider-update.md)                                             | None                        | Update an identity provider.                            |
+| [Delete](../api/identityprovider-delete.md)                                             | None                        | Delete an identity provider.                            |
+| [List available provider types](../api/identityprovider-list-availableprovidertypes.md) | String collection           | Retrieve all available identity provider types.         |
 
 ## Properties
 
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|clientId|String|The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return `****`. This is a required field. Required. Not nullable.|
-|id|String|The ID of the identity provider.|
-|name|String|The display name of the identity provider. Not nullable.|
-|type|String|The identity provider type is a required field. For B2B scenario: `Google`, `Facebook`. For B2C scenario: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`,`QQ`, `WeChat`, `OpenIDConnect`. Not nullable.|
+| Property     | Type   | Description                                                                                                                                                                                                                                    |
+| :----------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| clientId     | String | The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.                                                                                     |
+| clientSecret | String | The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return `****`. This is a required field. Required. Not nullable.                         |
+| id           | String | The ID of the identity provider.                                                                                                                                                                                                               |
+| name         | String | The display name of the identity provider. Not nullable.                                                                                                                                                                                       |
+| type         | String | The identity provider type is a required field. For B2B scenario: `Google`, `Facebook`. For B2C scenario: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`,`QQ`, `WeChat`, `OpenIDConnect`. Not nullable. |
 
 ### Where to get the client ID and secret
 

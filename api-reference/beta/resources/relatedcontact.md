@@ -1,9 +1,9 @@
 ---
-title: "relatedContact resource type"
-description: "Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on."
-author: "mmast-msft"
+title: relatedContact resource type
+description: Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on.
+author: mmast-msft
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.prod: education
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Contact record related to an [educationUser](../resources/educationuser.md) that
 
 ## Methods
 
-| Method                                    | Return Type                   | Description                                                             |
+| Method                                    | Return type                   | Description                                                             |
 | :---------------------------------------- | :---------------------------- | :---------------------------------------------------------------------- |
 | [Update](../api/relatedcontact-update.md) | **relatedContact** collection | Update the **relatedContacts** for an [educationUser](educationuser.md) |
 

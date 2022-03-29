@@ -1,9 +1,9 @@
 ---
-title: "authenticationEventsPolicy resource type"
-description: "Authentication events are used to invoke user flows at specific points in the authentication flow."
-author: "jkdouglas"
+title: authenticationEventsPolicy resource type
+description: Authentication events are used to invoke user flows at specific points in the authentication flow.
+author: jkdouglas
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
 ---
 
@@ -17,26 +17,27 @@ A resource that specifies the events in the authentication experience, with each
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onSignUpStart listeners](../api/authenticationeventspolicy-list-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md) collection|Get the collection of authenticationListener resources supported by the onSignupStart event.|
-|[Create authenticationListener](../api/authenticationeventspolicy-post-onsignupstart.md)|[authenticationListener](../resources/authenticationlistener.md)|Create a new authenticationListener object for the onSignupStart event.|
+| Method                                                                                   | Return type                                                                 | Description                                                                                  |
+| :--------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| [List onSignUpStart listeners](../api/authenticationeventspolicy-list-onsignupstart.md)  | [authenticationListener](../resources/authenticationlistener.md) collection | Get the collection of authenticationListener resources supported by the onSignupStart event. |
+| [Create authenticationListener](../api/authenticationeventspolicy-post-onsignupstart.md) | [authenticationListener](../resources/authenticationlistener.md)            | Create a new authenticationListener object for the onSignupStart event.                      |
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The identifier of the policy.|
+| Property | Type   | Description                   |
+| :------- | :----- | :---------------------------- |
+| id       | String | The identifier of the policy. |
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
-|onSignupStart|[authenticationListener](../resources/authenticationlistener.md) collection|A list of applicable actions to be taken on sign-up.|
+| Relationship  | Type                                                                        | Description                                          |
+| :------------ | :-------------------------------------------------------------------------- | :--------------------------------------------------- |
+| onSignupStart | [authenticationListener](../resources/authenticationlistener.md) collection | A list of applicable actions to be taken on sign-up. |
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -45,7 +46,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.authenticationEventsPolicy",
   "id": "String (identifier)"

@@ -78,9 +78,9 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 
 ## Methods
 
-| Method                                  | REST Path                |
-| :-------------------------------------- | :----------------------- |
-| [Get shared item](../api/shares-get.md) | `GET /shares/{share-id}` |
+| Method                                  | Return type              | Description |
+| :-------------------------------------- | :----------------------- | :---------- |
+| [Get shared item](../api/shares-get.md) | `GET /shares/{share-id}` |             |
 
 ## Remarks
 

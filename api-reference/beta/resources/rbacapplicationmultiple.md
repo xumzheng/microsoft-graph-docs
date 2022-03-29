@@ -1,10 +1,10 @@
 ---
-title: "rbacApplicationMultiple resource type"
-description: "Role management navigation property"
+title: rbacApplicationMultiple resource type
+description: Role management navigation property
 ms.localizationpriority: medium
-author: "abhijeetsinha"
-ms.prod: "directory-management"
-doc_type: "resourcePageType"
+author: abhijeetsinha
+ms.prod: directory-management
+doc_type: resourcePageType
 ---
 
 # rbacApplicationMultiple resource type
@@ -23,12 +23,12 @@ Inherits from [entity](entity.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new unifiedRoleDefinition by posting to the roleDefinitions collection. |
-| [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a unifiedRoleDefinition object collection. |
-| [Create unifiedRoleAssignmentMultiple](../api/rbacapplicationmultiple-post-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Create a new unifiedRoleAssignmentMultiple by posting to the roleAssignments collection. |
-| [List roleAssignments](../api/rbacapplicationmultiple-list-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) collection | Get unifiedRoleAssignmentMultiple object collection. |
+| Method                                                                                         | Return type                                                                  | Description                                                                              |
+| :--------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
+| [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md)                 | [unifiedRoleDefinition](unifiedroledefinition.md)                            | Create a new unifiedRoleDefinition by posting to the roleDefinitions collection.         |
+| [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md)                         | [unifiedRoleDefinition](unifiedroledefinition.md) collection                 | Get a unifiedRoleDefinition object collection.                                           |
+| [Create unifiedRoleAssignmentMultiple](../api/rbacapplicationmultiple-post-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md)            | Create a new unifiedRoleAssignmentMultiple by posting to the roleAssignments collection. |
+| [List roleAssignments](../api/rbacapplicationmultiple-list-roleassignments.md)                 | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) collection | Get unifiedRoleAssignmentMultiple object collection.                                     |
 
 ## Properties
 
@@ -36,11 +36,11 @@ None
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
-|resourceNamespaces|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Resource that represents a collection of related actions.|
-|roleAssignments|[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) collection| Resource to grant access to users or groups. |
-|roleDefinitions|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection| Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles. |
+| Relationship       | Type                                                                                      | Description                                                                                          |
+| :----------------- | :---------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| resourceNamespaces | [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection   | Resource that represents a collection of related actions.                                            |
+| roleAssignments    | [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) collection | Resource to grant access to users or groups.                                                         |
+| roleDefinitions    | [unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection                 | Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles. |
 
 ## JSON representation
 
@@ -48,6 +48,7 @@ None
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "rbacApplicationMultiple resource",
@@ -55,5 +56,3 @@ None
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

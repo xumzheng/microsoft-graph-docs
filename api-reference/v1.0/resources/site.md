@@ -1,9 +1,9 @@
 ---
 author: JeremyKelley
-title: "site resource type"
-description: The site resource provides metadata and relationships for a Sharepoint site. 
+title: site resource type
+description: The site resource provides metadata and relationships for a Sharepoint site.
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.prod: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -15,23 +15,23 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Methods
 
-| Method                | Return type | Description
-|:-------------------------|:-------------|:----------
-| [Get root site][]        | site | Access the root SharePoint site within a tenant.
-| [Get site][]             | site | Access a sharePoint site using the siteId.
-| [Get site by path][]     | site | Access the root SharePoint site with a relative path.
-| [Get site for a group][] | site | Access the team site for a group.
-| [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource. 
-| [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
-| [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
-| [Follow site][]          | collection of site | Follow a user's site or multiple sites.
-| [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
-| [List followed sites][]  | collection of site | List the sites that have been followed by the signed in user.
-| [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id}
-| [List permissions][]           | GET /sites/{site-id}/permissions
-| [Create permissions][]         | POST /sites/{site-id}/permissions
-| [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
-| [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+| Method                         | Return type                                         | Description                                                                   |
+| :----------------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------- |
+| [Get root site][]              | site                                                | Access the root SharePoint site within a tenant.                              |
+| [Get site][]                   | site                                                | Access a sharePoint site using the siteId.                                    |
+| [Get site by path][]           | site                                                | Access the root SharePoint site with a relative path.                         |
+| [Get site for a group][]       | site                                                | Access the team site for a group.                                             |
+| [Get analytics][]              | [itemAnalytics][]                                   | Get analytics for this resource.                                              |
+| [Get activities by interval][] | [itemActivityStat][]                                | Get a collection of **itemActivityStats** within the specified time interval. |
+| [Search for sites][]           | collection of site                                  | Search across a SharePoint tenant for sites that match keywords provided.     |
+| [Follow site][]                | collection of site                                  | Follow a user's site or multiple sites.                                       |
+| [Unfollow site][]              | collection of site                                  | Follow a user's site or multiple sites.                                       |
+| [List followed sites][]        | collection of site                                  | List the sites that have been followed by the signed in user.                 |
+| [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id}    |                                                                               |
+| [List permissions][]           | GET /sites/{site-id}/permissions                    |                                                                               |
+| [Create permissions][]         | POST /sites/{site-id}/permissions                   |                                                                               |
+| [Delete permission][]          | DELETE /sites/{site-id}/permissions/{permission-id} |                                                                               |
+| [Update permission][]          | PATCH /sites/{site-id}/permissions/{permission-id}  |                                                                               |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -52,7 +52,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Properties
 
-| Property            | Type                                | Description                                                                                    |
+| Property                 | Type                                | Description                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
 | **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | The date and time the item was created. Read-only.                                             |
@@ -67,32 +67,33 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **webUrl**               | string (url)                        | URL that displays the item in the browser. Read-only.                                          |
 
 ### id property
+
 A **site** is identified by a unique ID that is a composite of the following values:
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
 * Site unique ID (GUID)
-  
+
 The `root` identifier always references the root site for a given target, as follows:
 
 * `/sites/root`: The tenant root site.
 * `/groups/{group-id}/sites/root`: The group's team site.
-  
+
 ## Relationships
 
-| Relationship      | Type                                             | Description
-|:------------------|:-------------------------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] resource                       | Analytics about the view activities that took place in this site.
-| **columns**       | Collection([columnDefinition][])                 | The collection of column definitions reusable across lists under this site.
-| **contentTypes**  | Collection([contentType][])                      | The collection of content types defined for this site.
-| **drive**         | [drive][]                                        | The default drive (document library) for this site.
-| **drives**        | Collection([drive][])                            | The collection of drives (document libraries) under this site.
-| **items**         | Collection([baseItem][])                         | Used to address any item contained in this site. This collection can't be enumerated.
-| **lists**         | Collection([list][])                             | The collection of lists under this site.
-| **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.
-| **permissions**   | Collection([permission][])                       | The permissions associated with the site. Nullable.
-| **sites**         | Collection([site][])                             | The collection of the sub-sites under this site.
-| **termStore**     | [microsoft.graph.termStore.store]                | The default termStore under this site.
-| **termStores**    | Collection([microsoft.graph.termStore.store])    | The collection of termStores under this site.
+| Relationship     | Type                                          | Description                                                                           |
+| :--------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------ |
+| **analytics**    | [itemAnalytics][] resource                    | Analytics about the view activities that took place in this site.                     |
+| **columns**      | Collection([columnDefinition][])              | The collection of column definitions reusable across lists under this site.           |
+| **contentTypes** | Collection([contentType][])                   | The collection of content types defined for this site.                                |
+| **drive**        | [drive][]                                     | The default drive (document library) for this site.                                   |
+| **drives**       | Collection([drive][])                         | The collection of drives (document libraries) under this site.                        |
+| **items**        | Collection([baseItem][])                      | Used to address any item contained in this site. This collection can't be enumerated. |
+| **lists**        | Collection([list][])                          | The collection of lists under this site.                                              |
+| **onenote**      | [onenote][]                                   | Calls the OneNote service for notebook related operations.                            |
+| **permissions**  | Collection([permission][])                    | The permissions associated with the site. Nullable.                                   |
+| **sites**        | Collection([site][])                          | The collection of the sub-sites under this site.                                      |
+| **termStore**    | [microsoft.graph.termStore.store]             | The default termStore under this site.                                                |
+| **termStores**   | Collection([microsoft.graph.termStore.store]) | The collection of termStores under this site.                                         |
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md

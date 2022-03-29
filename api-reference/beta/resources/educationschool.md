@@ -1,9 +1,9 @@
 ---
-title: "educationSchool resource type"
-description: "A school. The **educationSchool** resource currently corresponds to an administrativeUnit resource and shares the same ID.  "
+title: educationSchool resource type
+description: 'A school. The **educationSchool** resource currently corresponds to an administrativeUnit resource and shares the same ID.  '
 ms.localizationpriority: medium
-author: "mmast-msft"
-ms.prod: "education"
+author: mmast-msft
+ms.prod: education
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 
 ## Methods
 
-| Method                                                                     | Return Type                                      | Description                                                                                 |
+| Method                                                                     | Return type                                      | Description                                                                                 |
 | :------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------ |
 | [Get](../api/educationschool-get.md)                                       | [educationSchool](educationschool.md)            | Read properties and relationships of an **educationSchool** object.                         |
 | [Add class](../api/educationschool-post-classes.md)                        | [educationClass](educationclass.md)              | Add a new **educationClass** for the school by posting to the classes navigation property.  |
@@ -94,6 +94,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationSchool resource",
@@ -103,5 +104,3 @@ The following is a JSON representation of the resource.
   "suppressions": [
   ]
 }-->
-
-

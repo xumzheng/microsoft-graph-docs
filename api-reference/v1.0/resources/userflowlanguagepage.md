@@ -1,9 +1,9 @@
 ---
-title: "userFlowLanguagePage resource type"
-description: "Determines the strings that are shown to users during a user flow."
-author: "jkdouglas"
+title: userFlowLanguagePage resource type
+description: Determines the strings that are shown to users during a user flow.
+author: jkdouglas
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
 ---
 
@@ -15,17 +15,17 @@ Determines the user flow language pages that are shown to users during a user fl
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get userFlowLanguagePage](../api/userflowlanguagepage-get.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Retrieve the values of a default or custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
-|[Update userFlowLanguagePage](../api/userflowlanguagepage-put.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md)|Update the values in a custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
-|[Delete userFlowLanguagePage](../api/userflowlanguagepage-delete.md)|None|Deletes the values from a custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.|
+| Method                                                               | Return type                                                  | Description                                                                                                     |
+| :------------------------------------------------------------------- | :----------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| [Get userFlowLanguagePage](../api/userflowlanguagepage-get.md)       | [userFlowLanguagePage](../resources/userflowlanguagepage.md) | Retrieve the values of a default or custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. |
+| [Update userFlowLanguagePage](../api/userflowlanguagepage-put.md)    | [userFlowLanguagePage](../resources/userflowlanguagepage.md) | Update the values in a custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.              |
+| [Delete userFlowLanguagePage](../api/userflowlanguagepage-delete.md) | None                                                         | Deletes the values from a custom [userFlowLanguagePage](../resources/userflowlanguagepage.md) object.           |
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The identifier of the userFlowLanguage page.|
+| Property | Type   | Description                                  |
+| :------- | :----- | :------------------------------------------- |
+| id       | String | The identifier of the userFlowLanguage page. |
 
 ## Relationships
 
@@ -34,6 +34,7 @@ None.
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -42,7 +43,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.userFlowLanguagePage",
   "id": "String (identifier)"

@@ -3,8 +3,8 @@ author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
 ms.localizationpriority: medium
-description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
-ms.prod: ""
+description: The numberColumn on a columnDefinition resource indicates that the column's values are numbers.
+ms.prod: ''
 doc_type: resourcePageType
 ---
 
@@ -17,6 +17,7 @@ The **numberColumn** on a [columnDefinition](columndefinition.md) resource indic
 ## JSON representation
 
 Here is a JSON representation of a **numberColumn** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.numberColumn" } -->
 
 ```json
@@ -30,24 +31,24 @@ Here is a JSON representation of a **numberColumn** resource.
 
 ## Properties
 
-| Property name      | Type   | Description
-|:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | string | How many decimal places to display. See below for information about the possible values.
-| **displayAs**      | string | How the value should be presented in the UX. Must be one of `number` or `percentage`. If unspecified, treated as `number`.
-| **maximum**        | double | The maximum permitted value.
-| **minimum**        | double | The minimum permitted value.
+| Property          | Type   | Description                                                                                                                |
+| :---------------- | :----- | :------------------------------------------------------------------------------------------------------------------------- |
+| **decimalPlaces** | string | How many decimal places to display. See below for information about the possible values.                                   |
+| **displayAs**     | string | How the value should be presented in the UX. Must be one of `number` or `percentage`. If unspecified, treated as `number`. |
+| **maximum**       | double | The maximum permitted value.                                                                                               |
+| **minimum**       | double | The minimum permitted value.                                                                                               |
 
 ## DecimalPlaces
 
-| Value          | Description
-|:---------------|:--------------------------------------------------------------
-| **automatic**  | Default. Automatically display decimal places as needed.
-| **none**       | Do not display any decimal places.
-| **one**        | Always display one decimal place.
-| **two**        | Always display two decimal places.
-| **three**      | Always display three decimal places.
-| **four**       | Always display four decimal places.
-| **five**       | Always display five decimal places.
+| Value         | Description                                              |
+| :------------ | :------------------------------------------------------- |
+| **automatic** | Default. Automatically display decimal places as needed. |
+| **none**      | Do not display any decimal places.                       |
+| **one**       | Always display one decimal place.                        |
+| **two**       | Always display two decimal places.                       |
+| **three**     | Always display three decimal places.                     |
+| **four**      | Always display four decimal places.                      |
+| **five**      | Always display five decimal places.                      |
 
 Note: **decimalPlaces** and **displayAs** apply to how numbers are rendered, not stored.
 These properties may be updated.
@@ -65,4 +66,3 @@ These properties may be updated.
   ],
   "tocPath": "Resources/NumberColumn"
 } -->
-

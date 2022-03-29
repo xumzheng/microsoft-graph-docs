@@ -17,30 +17,30 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Methods
 
-| Method                                            | REST Path                                                   |
-| :------------------------------------------------ | :---------------------------------------------------------- |
-| [Get root site][]                                 | GET /sites/root                                             |
-| [Get site][]                                      | GET /sites/{site-id}                                        |
-| [Get site by path][]                              | GET /sites/{hostname}:/{site-path}                          |
-| [Get site for a group][]                          | GET /groups/{group-id}/sites/root                           |
-| [Get analytics][]                                 | GET /sites/{site-id}/analytics                              |
-| [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
-| [List pages][]                                    | GET /sites/{site-id}/pages                                  |
-| [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
-| [Search for sites][]                              | GET /sites?search={query}                                   |
-| [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
-| [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
-| [List followed sites][]                           | GET /me/followedSites                                       |
-| [Get permission][]                                | GET /sites/{site-id}/permissions/{permission-id}            |
-| [List permissions][]                              | GET /sites/{site-id}/permissions                            |
-| [Create permissions][]                            | POST /sites/{site-id}/permissions                           |
-| [Delete permission][]                             | DELETE /sites/{site-id}/permissions/{permission-id}         |
-| [Update permission][]                             | PATCH /sites/{site-id}/permissions/{permission-id}          |
-| [List content types][]                            | GET /sites/{site-id}/contentTypes                           |
-| [Create contentType][]                            | POST /sites/{site-id}/contentTypes                          |
-| [List columns][]                                  | GET /sites/{site-id}/columns                                |
-| [Create column][]                                 | POST /sites/{site-id}/columns                               |
-| [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| Method                                            | Return type                                                 | Description |
+| :------------------------------------------------ | :---------------------------------------------------------- | :---------- |
+| [Get root site][]                                 | GET /sites/root                                             |             |
+| [Get site][]                                      | GET /sites/{site-id}                                        |             |
+| [Get site by path][]                              | GET /sites/{hostname}:/{site-path}                          |             |
+| [Get site for a group][]                          | GET /groups/{group-id}/sites/root                           |             |
+| [Get analytics][]                                 | GET /sites/{site-id}/analytics                              |             |
+| [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |             |
+| [List pages][]                                    | GET /sites/{site-id}/pages                                  |             |
+| [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |             |
+| [Search for sites][]                              | GET /sites?search={query}                                   |             |
+| [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |             |
+| [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |             |
+| [List followed sites][]                           | GET /me/followedSites                                       |             |
+| [Get permission][]                                | GET /sites/{site-id}/permissions/{permission-id}            |             |
+| [List permissions][]                              | GET /sites/{site-id}/permissions                            |             |
+| [Create permissions][]                            | POST /sites/{site-id}/permissions                           |             |
+| [Delete permission][]                             | DELETE /sites/{site-id}/permissions/{permission-id}         |             |
+| [Update permission][]                             | PATCH /sites/{site-id}/permissions/{permission-id}          |             |
+| [List content types][]                            | GET /sites/{site-id}/contentTypes                           |             |
+| [Create contentType][]                            | POST /sites/{site-id}/contentTypes                          |             |
+| [List columns][]                                  | GET /sites/{site-id}/columns                                |             |
+| [Create column][]                                 | POST /sites/{site-id}/columns                               |             |
+| [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |             |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md

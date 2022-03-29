@@ -1,9 +1,9 @@
 ---
-title: "userRegistrationFeatureSummary resource type"
-description: "Summary of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication."
-author: "danielwood95"
+title: userRegistrationFeatureSummary resource type
+description: Summary of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication.
+author: danielwood95
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
 ---
 
@@ -17,17 +17,18 @@ Represents the current state of how many users in your organization are capable 
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                                                   | Return type                    | Description                                                                                                                   |
+| :--------------------------------------------------------------------------------------- | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | userRegistrationFeatureSummary | Get the number of users capable of Multi-Factor Authentication, Self-Service Password Reset, and Passwordless authentication. |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|totalUserCount|Int64|Total number of users accounts, excluding those that are blocked|
-|userRegistrationFeatureCounts|[userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md) collection|Number of users registered or capable for Multi-Factor Authentication, Self-Service Password Reset and Passwordless Authentication.|
-|userRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.|
-|userTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`.|
+
+| Property                      | Type                                                                                    | Description                                                                                                                         |
+| :---------------------------- | :-------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| totalUserCount                | Int64                                                                                   | Total number of users accounts, excluding those that are blocked                                                                    |
+| userRegistrationFeatureCounts | [userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md) collection | Number of users registered or capable for Multi-Factor Authentication, Self-Service Password Reset and Passwordless Authentication. |
+| userRoles                     | includedUserRoles                                                                       | User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.                                                     |
+| userTypes                     | includedUserTypes                                                                       | User type. Possible values are: `all`, `member`, `guest`.                                                                           |
 
 The value `privilegedAdmin` consists of the following privileged admin roles:
 
@@ -44,16 +45,20 @@ The value `privilegedAdmin` consists of the following privileged admin roles:
 The value `admin` includes all Azure AD admin roles. 
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userRegistrationFeatureSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.userRegistrationFeatureSummary",
   "totalUserCount": "Integer",

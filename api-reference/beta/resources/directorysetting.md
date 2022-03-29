@@ -1,9 +1,9 @@
 ---
-title: "directorySetting resource type"
-description: "Directory settings can be created based on the available directorySettingTemplates, and changed from their preset defaults."
+title: directorySetting resource type
+description: Directory settings can be created based on the available directorySettingTemplates, and changed from their preset defaults.
 ms.localizationpriority: medium
-author: "dkershaw10"
-ms.prod: "directory-management"
+author: dkershaw10
+ms.prod: directory-management
 doc_type: resourcePageType
 ---
 
@@ -22,25 +22,26 @@ By default, all entities inherit the preset defaults. To change the default sett
 
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Create setting](../api/group-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate.|
-|[Get setting](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
-|[List settings](../api/group-list-settings.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
-|[Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)	|Update a setting object. Only settingValues can be changed in an update.|
-|[Delete setting](../api/directorysetting-delete.md) | None |Delete a setting object. |
+| Method                                              | Return type                                        | Description                                                              |
+| :-------------------------------------------------- | :------------------------------------------------- | :----------------------------------------------------------------------- |
+| [Create setting](../api/group-post-settings.md)     | [directorySetting](directorysetting.md)            | Create a setting object based on a directorySettingTemplate.             |
+| [Get setting](../api/directorysetting-get.md)       | [directorySetting](directorysetting.md)            | Read properties of a specific setting object.                            |
+| [List settings](../api/group-list-settings.md)      | [directorySetting](directorysetting.md) collection | List properties of all setting objects.                                  |
+| [Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)            | Update a setting object. Only settingValues can be changed in an update. |
+| [Delete setting](../api/directorysetting-delete.md) | None                                               | Delete a setting object.                                                 |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|displayName|string|Display name of this group of settings, which comes from the associated template. Read-only.|
-|id|string| Unique identifier for these settings. Read-only.|
-|templateId|string| Unique identifier for the template used to create this group of settings. Read-only.|
-|values|[settingValue](settingvalue.md) collection| Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced [directorySettingTemplates](directorysettingtemplate.md) object.|
+
+| Property    | Type                                       | Description                                                                                                                                                             |
+| :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName | string                                     | Display name of this group of settings, which comes from the associated template. Read-only.                                                                            |
+| id          | string                                     | Unique identifier for these settings. Read-only.                                                                                                                        |
+| templateId  | string                                     | Unique identifier for the template used to create this group of settings. Read-only.                                                                                    |
+| values      | [settingValue](settingvalue.md) collection | Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced [directorySettingTemplates](directorysettingtemplate.md) object. |
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -66,6 +67,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -76,5 +78,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -25,7 +25,7 @@ When a user acts on a visual notification, the app client can then use the clien
 
 ## Methods
 
-| Method                                                   | Return Type                                 | Description                     |
+| Method                                                   | Return type                                 | Description                     |
 | :------------------------------------------------------- | :------------------------------------------ | :------------------------------ |
 | [Create notification](../api/user-post-notifications.md) | [notification](projectrome-notification.md) | Create and send a notification. |
 

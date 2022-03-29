@@ -1,9 +1,9 @@
 ---
-title: "educationUser resource type"
-description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
-author: "mmast-msft"
+title: educationUser resource type
+description: A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
+author: mmast-msft
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.prod: education
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ This object provides a targeted subset of properties from the core [user] object
 
 ## Methods
 
-| Method                                               | Return Type                                  | Description                                                                   |
+| Method                                               | Return type                                  | Description                                                                   |
 | :--------------------------------------------------- | :------------------------------------------- | :---------------------------------------------------------------------------- |
 | [Get educationUser](../api/educationuser-get.md)     | [educationUser]                              | Read properties and relationships of an **educationUser** object.             |
 | [List classes](../api/educationuser-list-classes.md) | [educationClass] collection                  | Get the **educationClass** object collection for which the user is member.    |
@@ -127,6 +127,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationUser resource",
@@ -156,5 +157,3 @@ The following is a JSON representation of the resource.
 [educationonpremisesinfo]: educationonpremisesinfo.md
 [iso 3166 alpha-2]: https://www.iso.org/obp/ui/#search
 [rfc 822]: https://tools.ietf.org/html/rfc822
-
-

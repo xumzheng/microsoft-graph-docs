@@ -1,9 +1,9 @@
 ---
-title: "insightsSettings resource type"
-description: "Represents privacy settings for insights."
+title: insightsSettings resource type
+description: Represents privacy settings for insights.
 ms.localizationpriority: medium
-author: "simonhult"
-ms.prod: "insights"
+author: simonhult
+ms.prod: insights
 doc_type: resourcePageType
 ---
 
@@ -21,19 +21,18 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List itemInsights](../api/organizationsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying item insights in an organization. |
-| [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying people insights in an organization. |
-| [Update insightsSettings](../api/insightssettings-update.md) | [insightsSettings](insightssettings.md) | Update the properties of an **insightsSettings** resource to manage the display or return of the specified type of insights, which can be item insights or people insights. |
-
+| Method                                                                    | Return type                             | Description                                                                                                                                                                 |
+| :------------------------------------------------------------------------ | :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [List itemInsights](../api/organizationsettings-list-iteminsights.md)     | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying item insights in an organization.                                                    |
+| [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying people insights in an organization.                                                  |
+| [Update insightsSettings](../api/insightssettings-update.md)              | [insightsSettings](insightssettings.md) | Update the properties of an **insightsSettings** resource to manage the display or return of the specified type of insights, which can be item insights or people insights. |
 
 ## Properties
 
-| Property   | Type|Description|
-|:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
+| Property                | Type    | Description                                                                                                                                                                                      |
+| :---------------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| isEnabledInOrganization | Boolean | `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional. |
+| disabledForGroup        | String  | The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.                                                   |
 
 ## JSON representation
 
@@ -51,8 +50,3 @@ The following is a JSON representation of the resource.
   "isEnabledInOrganization": "Boolean"
 }
 ```
-
-
-
-
-

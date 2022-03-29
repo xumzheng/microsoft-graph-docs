@@ -1,9 +1,9 @@
 ---
-title: "relation resource type"
-description: "Represents the relationship between terms in a term store."
+title: relation resource type
+description: Represents the relationship between terms in a term store.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: taxonomy
 doc_type: resourcePageType
 ---
 
@@ -20,27 +20,31 @@ The reuse relationship is similar to the pinned relationship except that changes
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
-|[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Create a new **relation** object.|
 
+| Method                                                    | Return type                                                                         | Description                              |
+| :-------------------------------------------------------- | :---------------------------------------------------------------------------------- | :--------------------------------------- |
+| [List relations](../api/termstore-term-list-relations.md) | [microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection | Retrieve a list of **relation** objects. |
+| [Create relation](../api/termstore-relation-post.md)      | [microsoft.graph.termStore.relation](../resources/termstore-relation.md)            | Create a new **relation** object.        |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The ID of the relation.|
-|relationship|microsoft.graph.termStore.relationType|The type of relation. Possible values are: `pin`, `reuse`.|
+
+| Property     | Type                                   | Description                                                |
+| :----------- | :------------------------------------- | :--------------------------------------------------------- |
+| id           | String                                 | The ID of the relation.                                    |
+| relationship | microsoft.graph.termStore.relationType | The type of relation. Possible values are: `pin`, `reuse`. |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The from [term] of the relation. The term from which the relationship is defined. A *null* value would indicate the relation is directly with the [set]. |
-|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The [set] in which the relation is relevant.|
-|toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to [term] of the relation. The term to which the relationship is defined.|
+
+| Relationship | Type                                                             | Description                                                                                                                                              |
+| :----------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| fromTerm     | [microsoft.graph.termStore.term](../resources/termstore-term.md) | The from [term] of the relation. The term from which the relationship is defined. A *null* value would indicate the relation is directly with the [set]. |
+| set          | [microsoft.graph.termStore.set](../resources/termstore-set.md)   | The [set] in which the relation is relevant.                                                                                                             |
+| toTerm       | [microsoft.graph.termStore.term](../resources/termstore-term.md) | The to [term] of the relation. The term to which the relationship is defined.                                                                            |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -49,7 +53,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.termStore.relation",
   "id": "String (identifier)",
@@ -78,5 +83,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

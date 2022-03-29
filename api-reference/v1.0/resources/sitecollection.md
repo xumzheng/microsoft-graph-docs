@@ -3,8 +3,8 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
-description: "The siteCollection resource provides more information about a site collection."
+ms.prod: sharepoint
+description: The siteCollection resource provides more information about a site collection.
 doc_type: resourcePageType
 ---
 
@@ -37,16 +37,17 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property name        | Type     | Description
-|:---------------------|:---------|:---------------------------------------------------
-| **hostname**         | string   | The hostname for the site collection. Read-only.
-| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.
-| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
+| Property             | Type     | Description                                                                         |
+| :------------------- | :------- | :---------------------------------------------------------------------------------- |
+| **hostname**         | string   | The hostname for the site collection. Read-only.                                    |
+| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.       |
+| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
 
 [root]: root.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "",
@@ -54,4 +55,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "Facets/SiteCollection"
 }-->
-
