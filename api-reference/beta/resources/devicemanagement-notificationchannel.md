@@ -18,8 +18,18 @@ Include information about an alert rule's notification channels selected by user
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationChannelType|notificationChannelType|Type of notification channel.The possible values are: `portal`, `email`, `phoneCall`, `sms`, `unknownFutureValue`.|
+|[notificationChannelType](#notificationchanneltype-values)|notificationChannelType|Type of notification channel.The possible values are: `portal`, `email`, `phoneCall`, `sms`, `unknownFutureValue`.|
 |receivers|String collection|Contact information of notification receivers, like email addresses. For portal notification, receivers can be left blank. For email notification, receivers consist of email addresses like foo@bar.com|
+
+### notificationChannelType values 
+
+|Member|Description|
+|:---|:---|
+|portal|Indicates that the notification message was published via Endpoint Manager Admin Portal.|
+|email|Indicates that the notification message was published via email.|
+|phoneCall|Indicates that the notification message was published via phone call.|
+|sms|Indicates that the notification message was published via SMS.|
+|unknownFutureValue|Unknown future status (reserved, not used right now).|
 
 ## Relationships
 None.
