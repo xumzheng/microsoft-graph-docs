@@ -20,13 +20,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get monitoring](../api/devicemanagement-monitoring-get.md)|[microsoft.graph.deviceManagement.monitoring](../resources/devicemanagement-monitoring.md)|Read the properties and relationships of a [monitoring](../resources/devicemanagement-monitoring.md) object.|
-|[Update monitoring](../api/devicemanagement-monitoring-update.md)|[microsoft.graph.deviceManagement.monitoring](../resources/devicemanagement-monitoring.md)|Update the properties of a [monitoring](../resources/devicemanagement-monitoring.md) object.|
 |[getEffectivePermissions](../api/devicemanagement-monitoring-geteffectivepermissions.md)|String collection|View the effective permissions of the currently authenticated user.|
-|[List alertRecords](../api/devicemanagement-monitoring-list-alertrecords.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md) collection|Get the alertRecord resources from the alertRecords navigation property.|
-|[Create alertRecord](../api/devicemanagement-monitoring-post-alertrecords.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md)|Create a new alertRecord object.|
-|[List alertRules](../api/devicemanagement-monitoring-list-alertrules.md)|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md) collection|Get the alertRule resources from the alertRules navigation property.|
-|[Create alertRule](../api/devicemanagement-monitoring-post-alertrules.md)|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md)|Create a new alertRule object.|
+
 
 ## Properties
 |Property|Type|Description|

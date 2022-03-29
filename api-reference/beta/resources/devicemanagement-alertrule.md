@@ -25,7 +25,6 @@ Inherits from [entity](../resources/entity.md).
 |[Create alertRule](../api/devicemanagement-monitoring-post-alertrules.md)|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md)|Create a new [alertRule](../resources/devicemanagement-alertrule.md) object.|
 |[Get alertRule](../api/devicemanagement-alertrule-get.md)|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md)|Read the properties and relationships of an [alertRule](../resources/devicemanagement-alertrule.md) object.|
 |[Update alertRule](../api/devicemanagement-alertrule-update.md)|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md)|Update the properties of an [alertRule](../resources/devicemanagement-alertrule.md) object.|
-|[Delete alertRule](../api/devicemanagement-alertrule-delete.md)|None|Deletes an [alertRule](../resources/devicemanagement-alertrule.md) object.|
 
 ## Properties
 |Property|Type|Description|

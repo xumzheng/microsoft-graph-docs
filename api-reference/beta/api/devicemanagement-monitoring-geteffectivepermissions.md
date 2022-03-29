@@ -1,18 +1,19 @@
 ---
-title: "List alertRules"
-description: "Get a list of the alertRule objects and their properties."
+title: "monitoring: getEffectivePermissions"
+description: "View the effective permissions of the currently authenticated user."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List alertRules
+# monitoring: getEffectivePermissions
 Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [alertRule](../resources/devicemanagement-alertrule.md) objects and their properties.
+View the effective permissions of the currently authenticated user.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/monitoring/alertRules
+GET /monitoring/getEffectivePermissions
+GET /deviceManagement/monitoring/getEffectivePermissions
 ```
 
 ## Request headers
@@ -45,18 +47,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [alertRule](../resources/devicemanagement-alertrule.md) objects in the response body.
+If successful, this function returns a `200 OK` response code and a String collection in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_alertrule"
+  "name": "monitoringthis.geteffectivepermissions"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules
+GET https://graph.microsoft.com/beta/monitoring/getEffectivePermissions
 ```
 
 
@@ -65,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.deviceManagement.alertRule)"
+  "@odata.type": "Collection(Edm.String)"
 }
 -->
 ``` http
@@ -74,24 +76,8 @@ Content-Type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagement.alertRule",
-      "id": "76c904ea-cb78-d9dd-cfff-0bc4d089ac24",
-      "displayName": "String",
-      "description": "String",
-      "severity": "String",
-      "enabled": "Boolean",
-      "isSystemRule": "Boolean",
-      "alertRuleTemplate": "String",
-      "threshold": {
-        "@odata.type": "microsoft.graph.deviceManagement.ruleThreshold"
-      },
-      "notificationChannels": [
-        {
-          "@odata.type": "microsoft.graph.deviceManagement.notificationChannel"
-        }
-      ]
-    }
+    "String"
   ]
 }
 ```
+

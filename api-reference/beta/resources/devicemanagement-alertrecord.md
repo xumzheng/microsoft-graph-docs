@@ -21,10 +21,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List alertRecords](../api/devicemanagement-alertrecord-list.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md) collection|Get a list of the [alertRecord](../resources/devicemanagement-alertrecord.md) objects and their properties.|
-|[Create alertRecord](../api/devicemanagement-monitoring-post-alertrecords.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md)|Create a new [alertRecord](../resources/devicemanagement-alertrecord.md) object.|
 |[Get alertRecord](../api/devicemanagement-alertrecord-get.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md)|Read the properties and relationships of an [alertRecord](../resources/devicemanagement-alertrecord.md) object.|
-|[Update alertRecord](../api/devicemanagement-alertrecord-update.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md)|Update the properties of an [alertRecord](../resources/devicemanagement-alertrecord.md) object.|
-|[Delete alertRecord](../api/devicemanagement-alertrecord-delete.md)|None|Deletes an [alertRecord](../resources/devicemanagement-alertrecord.md) object.|
 |[getPortalNotifications](../api/devicemanagement-alertrecord-getportalnotifications.md)|[microsoft.graph.deviceManagement.portalNotification](../resources/devicemanagement-portalnotification.md) collection|View a list of all portal notifications that are ready to be consumed for current user. The portal notifications can be used to publish MEM portal notifications.|
 |[setPortalNotificationAsSent](../api/devicemanagement-alertrecord-setportalnotificationassent.md)|None|Set a single portal notification status to published. Will set isPortalNotificationSent property to true for current user.|
 
