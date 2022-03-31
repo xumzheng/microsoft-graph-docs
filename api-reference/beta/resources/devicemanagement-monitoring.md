@@ -17,12 +17,6 @@ The entry point entity type to access all alert related entities and APIs.
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[getEffectivePermissions](../api/devicemanagement-monitoring-geteffectivepermissions.md)|String collection|View the effective permissions of the currently authenticated user.|
-
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

@@ -18,8 +18,8 @@ Create an alertRule object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
 |Delegated (work or school account)|CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CloudPC.ReadWrite.All|
@@ -70,21 +70,31 @@ POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement.alertRule",
-  "id": "76c904ea-cb78-d9dd-cfff-0bc4d089ac24",
-  "displayName": "String",
-  "description": "String",
-  "severity": "String",
-  "enabled": "Boolean",
-  "isSystemRule": "Boolean",
-  "alertRuleTemplate": "String",
+  "id": "215c55cc-b1c9-4d36-a870-be5778101714",
+  "displayName": "Azure network connection failure impacting Cloud PCs",
+  "severity": "informational",
+  "isSystemRule": true,
+  "description": "Azure network connection checks have failed and is potentially impacting existing Cloud PCs and blocking the provisioning of new Cloud PCs",
+  "enabled": true,
+  "alertRuleTemplate": "cloudPcOnPremiseNetworkConnectionCheckScenario",
   "threshold": {
-    "@odata.type": "microsoft.graph.deviceManagement.ruleThreshold"
+      "aggregation": "count",
+      "operator": "greaterOrEqual",
+      "target": 90
   },
   "notificationChannels": [
-    {
-      "@odata.type": "microsoft.graph.deviceManagement.notificationChannel"
-    }
+      {
+          "notificationChannelType": "portal",
+          "receivers": [
+              ""
+          ]
+      },
+      {
+          "notificationChannelType": "email",
+          "receivers": [
+              "foo@bar.com"
+          ]
+      }
   ]
 }
 ```
@@ -99,21 +109,32 @@ HTTP/1.1 201 CREATED
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement.alertRule",
-  "id": "76c904ea-cb78-d9dd-cfff-0bc4d089ac24",
-  "displayName": "String",
-  "description": "String",
-  "severity": "String",
-  "enabled": "Boolean",
-  "isSystemRule": "Boolean",
-  "alertRuleTemplate": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/monitoring/alertRules/$entity",
+  "id": "215c55cc-b1c9-4d36-a870-be5778101714",
+  "displayName": "Azure network connection failure impacting Cloud PCs",
+  "severity": "informational",
+  "isSystemRule": true,
+  "description": "Azure network connection checks have failed and is potentially impacting existing Cloud PCs and blocking the provisioning of new Cloud PCs",
+  "enabled": true,
+  "alertRuleTemplate": "cloudPcOnPremiseNetworkConnectionCheckScenario",
   "threshold": {
-    "@odata.type": "microsoft.graph.deviceManagement.ruleThreshold"
+      "aggregation": "count",
+      "operator": "greaterOrEqual",
+      "target": 90
   },
   "notificationChannels": [
-    {
-      "@odata.type": "microsoft.graph.deviceManagement.notificationChannel"
-    }
+      {
+          "notificationChannelType": "portal",
+          "receivers": [
+              ""
+          ]
+      },
+      {
+          "notificationChannelType": "email",
+          "receivers": [
+              "foo@bar.com"
+          ]
+      }
   ]
 }
 ```

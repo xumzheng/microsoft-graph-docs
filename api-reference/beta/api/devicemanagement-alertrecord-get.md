@@ -19,11 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (work or school account)|CloudPC.Read.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
-|Application|CloudPC.Read.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -59,7 +57,6 @@ If successful, this method returns a `200 OK` response code and an [alertRecord]
 GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/{alertRecordId}
 ```
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -73,21 +70,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement.alertRecord",
-    "id": "a524f545-5726-239a-4a4d-f153503c960d",
-    "displayName": "String",
-    "alertImpact": {
-      "@odata.type": "microsoft.graph.deviceManagement.alertImpact"
-    },
-    "status": "String",
-    "severity": "String",
-    "alertRuleId": "String",
-    "alertRuleTemplate": "String",
-    "detectedDateTime": "String (timestamp)",
-    "resolvedDateTime": "String (timestamp)",
-    "lastUpdatedDateTime": "String (timestamp)"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/monitoring/alertRecords/$entity",
+  "id": "6c46a7ba-e78a-45e5-a81c-179ab8fd3e8e",
+  "displayName": "Upload failure for Device Images",
+  "status": "active",
+  "severity": "warning",
+  "alertRuleId": "30070507-6514-443b-8fa5-06979cedacdf",
+  "alertRuleTemplate": "cloudPcImageUploadScenario",
+  "detectedDateTime": "2022-03-30T11:55:00.1147865Z",
+  "resolvedDateTime": null,
+  "lastUpdatedDateTime": "2022-03-31T01:10:20.9648579Z",
+  "alertImpact": {
+      "value": 2,
+      "aggregationType": "count"
   }
 }
 ```
-

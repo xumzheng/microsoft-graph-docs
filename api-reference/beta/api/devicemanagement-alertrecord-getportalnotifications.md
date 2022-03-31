@@ -19,11 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (work or school account)|CloudPC.Read.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
-|Application|CloudPC.Read.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -71,10 +69,34 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.deviceManagement.portalNotification"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.deviceManagement.portalNotification)",
+    "value": [
+        {
+            "id": "6575ceea-1d1c-48f1-b6af-01b98fbde246",
+            "alertRuleId": "30070507-6514-443b-8fa5-06979cedacdf",
+            "alertRecordId": "6c46a7ba-e78a-45e5-a81c-179ab8fd3e8e",
+            "alertRuleName": "Upload failure for Device Images",
+            "alertRuleTemplate": "cloudPcImageUploadScenario",
+            "isPortalNotificationSent": true,
+            "severity": "warning",
+            "alertImpact": {
+                "value": 2,
+                "aggregationType": "count"
+            }
+        },
+        {
+            "id": "f2c9ef57-44b8-4783-87e6-e4131a9c1008",
+            "alertRuleId": "215c55cc-b1c9-4d36-a870-be5778101714",
+            "alertRecordId": "44336915-dfcb-479b-a4d6-54bd66fa1ad6",
+            "alertRuleName": "Azure network connection failure impacting Cloud PCs",
+            "alertRuleTemplate": "cloudPcOnPremiseNetworkConnectionCheckScenario",
+            "isPortalNotificationSent": true,
+            "severity": "warning",
+            "alertImpact": {
+                "value": 100,
+                "aggregationType": "count"
+            }
+        }
+    ]
 }
 ```

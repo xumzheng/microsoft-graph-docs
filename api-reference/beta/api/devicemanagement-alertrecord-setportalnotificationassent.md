@@ -57,7 +57,6 @@ If successful, this action returns a `204 No Content` response code.
 POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/{alertRecordId}/setPortalNotificationAsSent
 ```
 
-
 ### Response
 <!-- {
   "blockType": "response",

@@ -19,11 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (work or school account)|CloudPC.Read.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
-|Application|CloudPC.Read.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -72,23 +70,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement.alertRule",
-    "id": "76c904ea-cb78-d9dd-cfff-0bc4d089ac24",
-    "displayName": "String",
-    "description": "String",
-    "severity": "String",
-    "enabled": "Boolean",
-    "isSystemRule": "Boolean",
-    "alertRuleTemplate": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/monitoring/alertRules/$entity",
+    "id": "30070507-6514-443b-8fa5-06979cedacdf",
+    "displayName": "Upload failure for Device Images",
+    "severity": "warning",
+    "isSystemRule": true,
+    "description": "Device Image Uploads have failed and can delay the provisioning of new Cloud PCs.",
+    "enabled": true,
+    "alertRuleTemplate": "cloudPcImageUploadScenario",
     "threshold": {
-      "@odata.type": "microsoft.graph.deviceManagement.ruleThreshold"
+        "aggregation": "count",
+        "operator": "greaterOrEqual",
+        "target": 2
     },
     "notificationChannels": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagement.notificationChannel"
-      }
+        {
+            "notificationChannelType": "portal",
+            "receivers": [
+                ""
+            ]
+        },
+        {
+            "notificationChannelType": "email",
+            "receivers": [
+                "foo@bar.com"
+            ]
+        }
     ]
-  }
 }
 ```

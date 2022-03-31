@@ -19,11 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (work or school account)|CloudPC.Read.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
-|Application|CloudPC.Read.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -72,25 +70,92 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://canary.graph.microsoft.com/testprodbeta_cpc_sh/$metadata#deviceManagement/monitoring/alertRules",
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagement.alertRule",
-      "id": "76c904ea-cb78-d9dd-cfff-0bc4d089ac24",
-      "displayName": "String",
-      "description": "String",
-      "severity": "String",
-      "enabled": "Boolean",
-      "isSystemRule": "Boolean",
-      "alertRuleTemplate": "String",
-      "threshold": {
-        "@odata.type": "microsoft.graph.deviceManagement.ruleThreshold"
+      {
+          "id": "215c55cc-b1c9-4d36-a870-be5778101714",
+          "displayName": "Azure network connection failure impacting Cloud PCs",
+          "severity": "warning",
+          "isSystemRule": true,
+          "description": "Azure network connection checks have failed and is potentially impacting existing Cloud PCs and blocking the provisioning of new Cloud PCs",
+          "enabled": true,
+          "alertRuleTemplate": "cloudPcOnPremiseNetworkConnectionCheckScenario",
+          "threshold": {
+              "aggregation": "count",
+              "operator": "greaterOrEqual",
+              "target": 90
+          },
+          "notificationChannels": [
+              {
+                  "notificationChannelType": "portal",
+                  "receivers": [
+                      ""
+                  ]
+              },
+              {
+                  "notificationChannelType": "email",
+                  "receivers": [
+                      "foo@bar.com"
+                  ]
+              }
+          ]
       },
-      "notificationChannels": [
-        {
-          "@odata.type": "microsoft.graph.deviceManagement.notificationChannel"
-        }
-      ]
-    }
+      {
+          "id": "30070507-6514-443b-8fa5-06979cedacdf",
+          "displayName": "Upload failure for Device Images",
+          "severity": "warning",
+          "isSystemRule": true,
+          "description": "Device Image Uploads have failed and can delay the provisioning of new Cloud PCs.",
+          "enabled": true,
+          "alertRuleTemplate": "cloudPcImageUploadScenario",
+          "threshold": {
+              "aggregation": "count",
+              "operator": "greaterOrEqual",
+              "target": 2
+          },
+          "notificationChannels": [
+              {
+                  "notificationChannelType": "portal",
+                  "receivers": [
+                      ""
+                  ]
+              },
+              {
+                  "notificationChannelType": "email",
+                  "receivers": [
+                      "foo@bar.com"
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "b43741fa-254a-445f-86cf-8def2c32571a",
+          "displayName": "Provisioning Failure impacting Cloud PCs",
+          "severity": "warning",
+          "isSystemRule": true,
+          "description": "Provisioning has failed and is delaying end users from connecting to their Cloud PCs.  ",
+          "enabled": true,
+          "alertRuleTemplate": "cloudPcProvisionScenario",
+          "threshold": {
+              "aggregation": "count",
+              "operator": "greaterOrEqual",
+              "target": 1
+          },
+          "notificationChannels": [
+              {
+                  "notificationChannelType": "portal",
+                  "receivers": [
+                      ""
+                  ]
+              },
+              {
+                  "notificationChannelType": "email",
+                  "receivers": [
+                      "foo@bar.com"
+                  ]
+              }
+          ]
+      }
   ]
 }
 ```
