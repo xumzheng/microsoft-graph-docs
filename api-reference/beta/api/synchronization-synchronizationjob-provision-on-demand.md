@@ -71,7 +71,7 @@ Content-Type: application/json
     "parameters": [{
       "subjects": [{
           "objectId": "9bb0f679-a883-4a6f-8260-35b491b8b8c8",
-          "objectTypeName": "User"
+          "objectTypeName": "user"
       }],
       "ruleId": "ea807875-5618-4f0a-9125-0b46a05298ca"
     }]
