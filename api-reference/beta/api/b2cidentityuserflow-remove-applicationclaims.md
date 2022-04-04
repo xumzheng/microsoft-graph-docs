@@ -1,13 +1,13 @@
 ---
-title: "Add a userFlowIdentityProvider"
-description: "Add an identityProvider to a b2cIdentityUserFlow."
+title: "Remove an userFlowApplicationClaim"
+description: "Remove an application claim to a b2cIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "namkedia"
+author: "nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Add a userFlowIdentityProvider
+# Remove an application claim
 
 Namespace: microsoft.graph
 

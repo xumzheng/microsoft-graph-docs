@@ -380,7 +380,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2cuserflow_from_b2cuserflows_sessionandtokenconfig"

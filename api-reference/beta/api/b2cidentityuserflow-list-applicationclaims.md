@@ -1,19 +1,19 @@
 ---
-title: "Add a userFlowIdentityProvider"
-description: "Add an identityProvider to a b2cIdentityUserFlow."
+title: "List userFlowApplicationClaims"
+description: "List the application claims for b2cIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "namkedia"
+author: "nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Add a userFlowIdentityProvider
+# List an application claim
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
+List an identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
 ## Permissions
 
