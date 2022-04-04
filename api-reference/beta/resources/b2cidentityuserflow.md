@@ -37,6 +37,9 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[Delete identity provider](../api/b2cidentityuserflow-delete-userflowidentityproviders.md)|None|Remove an identity provider from a B2C user flow|
 |[List user attribute assignments](../api/b2cidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2C user flow.|
 |[Create user attribute assignment](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2C user flow.|
+|[Add  application claims](../api/b2cidentityuserflow-update-applicationclaims.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|Add an attribute to be returned in the token to the resource application.| /* TODO: */
+|[List application claims](../api/b2cidentityuserflow-list-applicationclaims.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all the attributes that will be returned in the token to the resource application.| /* TODO: */
+|[Remove application claims](../api/b2cidentityuserflow-remove-applicationclaims.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|Remove an attribute so that it is *not* returned in the token to the resource application.| /* TODO: */
 |[List languages](../api/b2cidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2C user flow.|
 |[Create language](../api/b2cidentityuserflow-put-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Creates a custom language in a B2C user flow.|
 |[Get API connectors configuration for user flow](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the user flow. The $expand query parameter is not supported for this method.|
@@ -55,7 +58,9 @@ To help you set up the most common identity tasks for your applications, Azure A
 |isJavaScriptEnabled|Boolean|The property that determines whether JavaScript customization is enabled within the B2C user flow page layouts.|
 |isLanguageCustomizationEnabled|Boolean|The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.|
 |defaultLanguageTag|String|Indicates the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|
-|tokenClaimsConfiguration|[userFlowTokenClaimsConfiguration](../resources/userflowtokenclaimsconfiguration.md)|**TODO: Add Description**|
+<!-- |tokenClaimsConfiguration|[userFlowTokenClaimsConfiguration](../resources/userflowtokenclaimsconfiguration.md)| -->
+|tokenLifetimeConfiguration|[userFlowTokenLifetimeConfiguration](../resources/userflowtokenlifetimeconfiguration.md)| Configures the lifetime for ID, access and refresh tokens. |
+|singleSignOnSessionConfiguration|[userFlowSingleSignOnSessionConfiguration](../resources/userflowsinglesignonsessionconfiguration.md)|Configures the single-sign on and keep me signed in session behavior of authentications.|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuration for enabling an API connector for use as part of the user flow. You can only obtain the value of this object using [Get userFlowApiConnectorConfiguration](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md).|
 
 ## Relationships
@@ -65,6 +70,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 |userflowIdentityProviders|[identityProviderBase](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
 |identityProviders (deprecated)|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
+|applicationClaims|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Attributes that will be returned as claims in the token to the resource application ('relying party').|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.|
 |pageLayouts|[userFlowPageLayout](../resources/userflowpagelayout.md) collection|The page layout used within the user flow.|
 
@@ -90,8 +96,14 @@ The following is a JSON representation of the resource.
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
+    "tokenLifetimeConfiguration": {
+      "@odata.type": "microsoft.graph.userFlowTokenLifetimeConfiguration"
+    },
+    "singleSignOnSessionConfiguration": {
+      "@odata.type": "microsoft.graph.userFlowSingleSignOnSessionConfiguration"
+    },
     "apiConnectorConfiguration": {
       "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
-    }
+    },
 }
 ```

@@ -118,7 +118,23 @@ Content-type: application/json
     "userFlowTypeVersion": 1,
     "isLanguageCustomizationEnabled": false,
     "defaultLanguageTag": null,
-    "singleSignOnSessionConfiguration": null,
+    "tokenLifetimeConfiguration": {
+        "accessAndIdTokenLifetimeInMinutes": 60,
+        "refreshTokenLifetimeInDays": 14,
+        "rollingRefreshTokenLifetimeInDays": 90
+    },
+    "singleSignOnSessionConfiguration": {
+        "sessionLifetimeInMinutes": 1440,
+        "isSessionLifetimeAbsolute": false,
+        "sessionScope": "tenant",
+        "enforceIdTokenHintOnLogout": false,
+        "isKeepMeSignedInEnabled": false,
+        "keepMeSignedInDays": null
+    },
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
+    },
+    "singleSignOnSessionConfiguration": null
 }
 ```
 

@@ -135,10 +135,22 @@ Content-type: application/json
     "isLanguageCustomizationEnabled": false,
     "defaultLanguageTag": "en",
     "authenticationMethods": "emailWithPassword",
+    "tokenLifetimeConfiguration": {
+        "accessAndIdTokenLifetimeInMinutes": 60,
+        "refreshTokenLifetimeInDays": 14,
+        "rollingRefreshTokenLifetimeInDays": 90
+    },
+    "singleSignOnSessionConfiguration": {
+        "sessionLifetimeInMinutes": 1440,
+        "isSessionLifetimeAbsolute": false,
+        "sessionScope": "tenant",
+        "enforceIdTokenHintOnLogout": false,
+        "isKeepMeSignedInEnabled": false,
+        "keepMeSignedInDays": null
+    },
     "tokenClaimsConfiguration": {
         "isIssuerEntityUserFlow": false
     },
-    "singleSignOnSessionConfiguration": null,
     "apiConnectorConfiguration": {}
 }
 ```
@@ -219,10 +231,22 @@ Content-type: application/json
     "isLanguageCustomizationEnabled": false,
     "defaultLanguageTag": "en",
     "authenticationMethods": "0",
+    "tokenLifetimeConfiguration": {
+        "accessAndIdTokenLifetimeInMinutes": 60,
+        "refreshTokenLifetimeInDays": 14,
+        "rollingRefreshTokenLifetimeInDays": 90
+    },
+    "singleSignOnSessionConfiguration": {
+        "sessionLifetimeInMinutes": 1440,
+        "isSessionLifetimeAbsolute": false,
+        "sessionScope": "tenant",
+        "enforceIdTokenHintOnLogout": false,
+        "isKeepMeSignedInEnabled": false,
+        "keepMeSignedInDays": null
+    },
     "tokenClaimsConfiguration": {
         "isIssuerEntityUserFlow": false
     },
-    "singleSignOnSessionConfiguration": null,
     "apiConnectorConfiguration": {}
 }
 ```
@@ -319,6 +343,22 @@ Content-type: application/json
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 1,
     "singleSignOnSessionConfiguration": null,
+    "tokenLifetimeConfiguration": {
+        "accessAndIdTokenLifetimeInMinutes": 60,
+        "refreshTokenLifetimeInDays": 14,
+        "rollingRefreshTokenLifetimeInDays": 90
+    },
+    "singleSignOnSessionConfiguration": {
+        "sessionLifetimeInMinutes": 1440,
+        "isSessionLifetimeAbsolute": false,
+        "sessionScope": "tenant",
+        "enforceIdTokenHintOnLogout": false,
+        "isKeepMeSignedInEnabled": false,
+        "keepMeSignedInDays": null
+    },
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
+    },
     "apiConnectorConfiguration": {}
 }
 ```
@@ -334,7 +374,7 @@ Content-type: application/json
   ]
 }-->
 
-### Example 4: Create a user flow with the default values and configuration for session lifetime
+### Example 4: Create a user flow with the default values and configuration for session and token lifetimes
 
 #### Request
 
@@ -343,7 +383,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_b2cuserflow_from_b2cuserflows_sessionconfig"
+  "name": "create_b2cuserflow_from_b2cuserflows_sessionandtokenconfig"
 }
 -->
 
@@ -355,6 +395,11 @@ Content-type: application/json
     "id": "UserFlowWithAPIConnector",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 1,
+    "tokenLifetimeConfiguration": {
+        "accessAndIdTokenLifetimeInMinutes": 30,
+        "refreshTokenLifetimeInDays": 7,
+        "rollingRefreshTokenLifetimeInDays": 45
+    },
     "singleSignOnSessionConfiguration": {
       "@odata.type": "#microsoft.graph.userFlowSingleSignOnSessionConfiguration",
       "isSessionLifetimeAbsolute": true,
@@ -393,17 +438,21 @@ Content-type: application/json
     "id": "B2C_1_UserFlowWithAPIConnector",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 1,
+    "tokenLifetimeConfiguration": {
+        "accessAndIdTokenLifetimeInMinutes": 30,
+        "refreshTokenLifetimeInDays": 7,
+        "rollingRefreshTokenLifetimeInDays": 45
+    },
     "singleSignOnSessionConfiguration": {
-      "@odata.type": "microsoft.graph.userFlowSingleSignOnSessionConfiguration"
-    }
-    "singleSignOnSessionConfiguration": {
-      "@odata.type": "#microsoft.graph.userFlowSingleSignOnSessionConfiguration",
-      "isSessionLifetimeAbsolute": true,
-      "sessionLifetimeInMinutes": 1440,
-      "isKeepMeSignedInEnabled": true,
-      "keepMeSignedInDays": 30,
-      "sessionScope": "tenant",
-      "enforceIdTokenHintOnLogout": false
+        "sessionLifetimeInMinutes": 1440,
+        "isSessionLifetimeAbsolute": true,
+        "sessionScope": "tenant",
+        "enforceIdTokenHintOnLogout": false
+        "isKeepMeSignedInEnabled": true,
+        "keepMeSignedInDays": 30,
+    },
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
     }
     "apiConnectorConfiguration": {}
 }

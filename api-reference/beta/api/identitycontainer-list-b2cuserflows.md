@@ -125,7 +125,6 @@ Content-type: application/json
           "userFlowTypeVersion": 1,
           "isLanguageCustomizationEnabled": false,
           "defaultLanguageTag": null,
-          "singleSignOnSessionConfiguration": null,
       },
       {
           "id": "B2C_1_CustomerSignIn",
@@ -133,7 +132,6 @@ Content-type: application/json
           "userFlowTypeVersion": 1,
           "isLanguageCustomizationEnabled": true,
           "defaultLanguageTag": "en",
-          "singleSignOnSessionConfiguration": null,
       }
     ]
 }
@@ -214,7 +212,6 @@ Content-type: application/json
                 "clientSecret": "*******"
               }  
           ],
-          "singleSignOnSessionConfiguration": null,
       },
       {
           "id": "B2C_1_CustomerSignIn",
@@ -231,7 +228,6 @@ Content-type: application/json
                 "clientSecret": "*******"
               }  
           ],
-          "singleSignOnSessionConfiguration": null,
       }
    ]
 }

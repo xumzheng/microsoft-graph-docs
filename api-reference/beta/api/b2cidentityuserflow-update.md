@@ -82,16 +82,7 @@ Content-Type: application/json
 
 {
   "isLanguageCustomizationEnabled": true,
-  "defaultLanguageTag": "en",
-  "singleSignOnSessionConfiguration": {
-      "@odata.type": "#microsoft.graph.userFlowSingleSignOnSessionConfiguration",
-      "isSessionLifetimeAbsolute": true,
-      "sessionLifetimeInMinutes": 1440,
-      "isKeepMeSignedInEnabled": true,
-      "keepMeSignedInDays": 30,
-      "sessionScope": "tenant",
-      "enforceIdTokenHintOnLogout": false
-    }
+  "defaultLanguageTag": "en"
 }
 ```
 # [JavaScript](#tab/javascript)

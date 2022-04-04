@@ -39,12 +39,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userFlowSingleSignOnSessionConfiguration",
-  "sessionLifetimeInMinutes": "Integer",
   "isSessionLifetimeAbsolute": "Boolean",
-  "sessionScope": "String",
-  "enforceIdTokenHintOnLogout": "Boolean",
-  "keepAliveInDays": "Integer",
+  "sessionLifetimeInMinutes": "Integer",
   "isKeepMeSignedInEnabled": "Boolean",
-  "keepMeSignedInDays": "Integer"
+  "keepMeSignedInDays": "Integer",
+  "sessionScope": "String",
+  "enforceIdTokenHintOnLogout": "Boolean"
 }
 ```
