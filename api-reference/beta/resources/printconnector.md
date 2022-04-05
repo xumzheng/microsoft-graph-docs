@@ -57,8 +57,7 @@ The following is a JSON representation of the resource.
   "appVersion": "String",
   "deviceHealth": {"@odata.type": "microsoft.graph.deviceHealth"},
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
-  "registeredDateTime": "String (timestamp)",
-  "registeredBy": {"@odata.type": "microsoft.graph.userIdentity"}
+  "registeredDateTime": "String (timestamp)"
 }
 ```
 
