@@ -72,6 +72,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 | mcasSuspiciousInboxManipulationRules | Discovered by Microsoft Defender for Cloud Apps (MDCA). Identifies suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address.|
 | investigationsThreatIntelligenceSigninLinked | Identifies activity that is unusual with known attack patterns based on threat intelligence |
 | maliciousIPAddressValidCredentialsBlockedIP | Indicates that sign-in was made with valid credentials from a malicious IP address. |
+| mcasFinSuspiciousFileAcces | Mass access to sensitive files | This detection is discovered by Microsoft Defender for Cloud Apps (MDA) (Formerly known as Microsoft Cloud App Security (MCAS)). This detection policy profiles your environment and triggers alerts when users access multiple files from Microsoft SharePoint or Microsoft OneDrive. |
+| attemptedPrtAccess | Possible attempt to access Primary Refresh Token (PRT) | This detection is discovered by Microsoft Defender for Endpoint (MDE). It looks for suspected access to the PRT |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 
