@@ -62,3 +62,10 @@ The following is a JSON representation of the resource.
   "target": "Integer"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.deviceManagement"
+}
+-->
