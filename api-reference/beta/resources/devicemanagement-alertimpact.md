@@ -18,18 +18,8 @@ Represents the impact of the alert event. Consists of a number value and the agg
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|aggregationType|[aggregationType](#aggregationtype-values)|The aggregation type of the impact. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
+|aggregationType|[aggregationType](../resources/devicemanagement-rulethreshold.md#aggregationtype-values)|The aggregation type of the impact. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
 |value|Int32|The number value of the impact.|
-
-### aggregationType values 
-
-|Member|Description|
-|:---|:---|
-|count|Indicates the data is aggregated by performing a count on the number of items matching the alert rule conditions.|
-|percentage|Indicates the data is shown as a percentage of items matching the alert rule conditions.|
-|affectedCloudPcCount|Indicates the total number of Cloud PC's that meet the alert rule conditions.|
-|affectedCloudPcPercentage|Indicates the percentage of Cloud PC's that meet the alert rule conditions.|
-|unknownFutureValue|Unknown future status (reserved, not used right now).|
 
 ## Relationships
 None.
