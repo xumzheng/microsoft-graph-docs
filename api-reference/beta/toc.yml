@@ -10231,9 +10231,10 @@ items:
             href: api/cloudpcorganizationsettings-update.md
       - name: Monitoring (preview)
         href: resources/devicemanagement-monitoring.md
+        displayName: Overview
         items:
         - name: Alert recrod
-          href: resources/devicemanagement-alertrecord
+          href: resources/devicemanagement-alertrecord.md
           items:
           - name: List
             href: api/devicemanagement-alertrecord-list.md
