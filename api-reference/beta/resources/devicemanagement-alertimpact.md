@@ -18,7 +18,7 @@ Represents the impact of the alert event. Consists of a number value and the agg
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|aggregationType|[aggregationType](../resources/devicemanagement-rulethreshold.md#aggregationtype-values)|The aggregation type of the impact. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
+|aggregationType|microsoft.graph.deviceManagement.aggregationType|The aggregation type of the impact. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
 |value|Int32|The number value of the impact.|
 
 ## Relationships
