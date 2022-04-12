@@ -29,14 +29,14 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|[alertRuleTemplate](#alertruletemplate-values)|alertRuleTemplate|The rule template of the rule.The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
+|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|alertRuleTemplate|The rule template of the rule.The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
 |description|String|The rule description.|
 |displayName|String|The display name of the rule.|
 |enabled|Boolean|The status of the rule indicating whether the rule is enabled or disabled. When TRUE, indicates the rule is enabled. When FALSE, indicates the rule is disabled.|
 |id|String|The alert rule id. Inherited from [entity](../resources/entity.md).|
 |isSystemRule|Boolean|Indicates whether the rule is a system rule. System rules are built-in and only a few properties can be edited. When TRUE, the rule is a system rule. When FALSE, the rule is a custom defined rule and can be edited.|
 |notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|The notification channels of the rule selected by user.|
-|severity|[ruleSeverityType](#ruleseveritytype-values)|The severity of the rule. Possible values are informational, warning, critical, unknown and unknownFutureValue. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
+|severity|[microsoft.graph.deviceManagement.ruleSeverityType](#ruleseveritytype-values)|The severity of the rule. Possible values are informational, warning, critical, unknown and unknownFutureValue. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
 |threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The threshold of the rule.|
 
 ### alertRuleTemplate values 

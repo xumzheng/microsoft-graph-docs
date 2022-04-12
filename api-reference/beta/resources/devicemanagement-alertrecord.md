@@ -30,33 +30,14 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |alertImpact|[microsoft.graph.deviceManagement.alertImpact](../resources/devicemanagement-alertimpact.md)|The impact of the alert event. Consists of a number followed by the aggregation type. For example: 6 Count, 12 AffectedCloudPcPercentage, etc|
 |alertRuleId|String|The corresponding alert rule id.|
-|alertRuleTemplate|[alertRuleTemplate](#alertruletemplate-values)|The rule template of the alert event.The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
+|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](../resources/devicemanagement-alertrule.md#alertruletemplate-values)|The rule template of the alert event.The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
 |detectedDateTime|DateTimeOffset|The alert event detected time. The Timestamp type represents date and time information using ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
 |displayName|String|The display name of the alert record.|
 |id|String|The alert record id. Inherited from [entity](../resources/entity.md).|
 |lastUpdatedDateTime|DateTimeOffset|The last updated time of the alert record. The Timestamp type represents date and time information using ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
 |resolvedDateTime|DateTimeOffset|The resolved time if alert event is resolved. The Timestamp type represents date and time information using ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
-|severity|[ruleSeverityType](#ruleseveritytype-values)|The severity of the alert event. Possible values are informational, warning, critical, unknown and unknownFutureValue. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
-|status|[alertStatusType](#alertstatustype-values)|The status of the alert record. Possible values are: active, resolved and unknownFutureValue .The possible values are: `active`, `resolved`, `unknownFutureValue`.|
-
-### alertRuleTemplate values 
-
-|Member|Description|
-|:---|:---|
-|cloudPcProvisionScenario|Indicates that the alert rule was triggered for an issue with Cloud PC provisioning. For system rule, the alert rule was triggered for a Cloud PC provisioning failure.|
-|cloudPcImageUploadScenario|Indicates that the alert rule was triggered for an issue with the Cloud PC image uploading process. For system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
-|cloudPcOnPremiseNetworkConnectionCheckScenario|Indicates that the alert rule was triggered for an issue with on-premises network connection check. For system rule, the alert rule was triggered for a failure with the on-premises network connection.|
-|unknownFutureValue|Unknown future status (reserved, not used right now).|
-
-### ruleSeverityType values 
-
-|Member|Description|
-|:---|:---|
-|unknown|Severity level is unknown. Used for initialization.|
-|informational|Severity level is informational.|
-|warning|Severity level is warning.|
-|critical|Severity level is critical.|
-|unknownFutureValue|Unknown future status (reserved, not used right now).|
+|severity|[microsoft.graph.deviceManagement.ruleSeverityType](../resources/devicemanagement-alertrule.md#ruleSeverityType-values)|The severity of the alert event. Possible values are informational, warning, critical, unknown and unknownFutureValue. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
+|status|[microsoft.graph.deviceManagement.alertStatusType](#alertstatustype-values)|The status of the alert record. Possible values are: active, resolved and unknownFutureValue .The possible values are: `active`, `resolved`, `unknownFutureValue`.|
 
 ### alertStatusType values 
 
