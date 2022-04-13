@@ -66,6 +66,7 @@ The following is a JSON representation of the resource.
   "from": 1024,
   "query": {"@odata.type": "microsoft.graph.searchQuery"},
   "queryAlterationOptions": {"@odata.type": "microsoft.graph.searchAlterationOptions"},
+  "region": "String",
   "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}],
   "size": 1024,
   "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
