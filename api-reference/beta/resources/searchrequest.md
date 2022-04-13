@@ -35,6 +35,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
 |queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Provides query alteration options formatted as a JSON blob that contains two optional flags related to spelling correction. Optional. |
+|region|String|Specifies a region for SharePoint File Search. Optional.|
 |resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for rendering connectors search results.|
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
