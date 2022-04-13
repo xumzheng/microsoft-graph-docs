@@ -18,8 +18,8 @@ Includes information about an alert rule's threshold settings.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|aggregation|[aggregationType](#aggregationtype-values)|Indicates the built-in aggregation methods. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
-|operator|[operatorType](#operatortype-values)|Indicates the built-in operator. The possible values are: `greaterOrEqual`, `equal`, `greater`, `less`, `lessOrEqual`, `notEqual`, `unknownFutureValue`.|
+|aggregation|[microsoft.graph.deviceManagement.aggregationType](#aggregationtype-values)|Indicates the built-in aggregation methods. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
+|operator|[microsoft.graph.deviceManagement.operatorType](#operatortype-values)|Indicates the built-in operator. The possible values are: `greaterOrEqual`, `equal`, `greater`, `less`, `lessOrEqual`, `notEqual`, `unknownFutureValue`.|
 |target|Int32|Target threshold value.|
 
 ### aggregationType values 

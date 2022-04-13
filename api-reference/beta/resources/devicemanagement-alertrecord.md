@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The alert record id. Inherited from [entity](../resources/entity.md).|
 |lastUpdatedDateTime|DateTimeOffset|The last updated time of the alert record. The Timestamp type represents date and time information using ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
 |resolvedDateTime|DateTimeOffset|The resolved time if alert event is resolved. The Timestamp type represents date and time information using ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
-|severity|[microsoft.graph.deviceManagement.ruleSeverityType](../resources/devicemanagement-alertrule.md#ruleSeverityType-values)|The severity of the alert event. Possible values are informational, warning, critical, unknown and unknownFutureValue. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
+|severity|[microsoft.graph.deviceManagement.ruleSeverityType](../resources/devicemanagement-alertrule.md#ruleseveritytype-values)|The severity of the alert event. Possible values are informational, warning, critical, unknown and unknownFutureValue. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
 |status|[microsoft.graph.deviceManagement.alertStatusType](#alertstatustype-values)|The status of the alert record. Possible values are: active, resolved and unknownFutureValue .The possible values are: `active`, `resolved`, `unknownFutureValue`.|
 
 ### alertStatusType values 

@@ -91,3 +91,10 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.deviceManagement"
+}
+-->
