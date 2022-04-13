@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|alertRuleTemplate|The rule template of the rule.The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
+|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|The rule template of the rule.The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
 |description|String|The rule description.|
 |displayName|String|The display name of the rule.|
 |enabled|Boolean|The status of the rule indicating whether the rule is enabled or disabled. When TRUE, indicates the rule is enabled. When FALSE, indicates the rule is disabled.|

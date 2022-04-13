@@ -18,7 +18,7 @@ Include information about an alert rule's notification channels selected by user
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|[microsoft.graph.deviceManagement.notificationChannelType](#notificationchanneltype-values)|notificationChannelType|Type of notification channel.The possible values are: `portal`, `email`, `phoneCall`, `sms`, `unknownFutureValue`.|
+|notificationChannelType|[microsoft.graph.deviceManagement.notificationChannelType](#notificationchanneltype-values)|Type of notification channel.The possible values are: `portal`, `email`, `phoneCall`, `sms`, `unknownFutureValue`.|
 |receivers|String collection|Contact information of notification receivers, like email addresses. For portal notification, receivers can be left blank. For email notification, receivers consist of email addresses like foo@bar.com|
 
 ### notificationChannelType values 

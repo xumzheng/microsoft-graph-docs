@@ -102,6 +102,8 @@ Content-Type: application/json
 ##### Response 
 <!-- {
   "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.deviceManagement.alertRule"
 }
 -->
 ``` http
