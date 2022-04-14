@@ -10243,6 +10243,7 @@ items:
           - name: Get portal notifications
             href: api/devicemanagement-alertrecord-getportalnotifications.md
           - name: Set portal notification as sent
+            href: api/devicemanagement-alertrecord-setportalnotificationassent.md
         - name: Alert rule
           href: resources/devicemanagement-alertrule.md
           items:
@@ -10254,14 +10255,6 @@ items:
             href: api/devicemanagement-alertrule-post.md
           - name: Update
             href: api/devicemanagement-alertrule-update.md
-        - name: Alert impact
-          href: resources/devicemanagement-alertimpact.md
-        - name: Notification channel
-          href: resources/devicemanagement-notificationchannel.md
-        - name: Portal notification
-          href: resources/devicemanagement-portalnotification.md
-        - name: Rule threshold
-          href: resources/devicemanagement-rulethreshold.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:

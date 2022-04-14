@@ -15,10 +15,6 @@ Namespace: microsoft.graph.deviceManagement
 
 Represents the rules that IT Admin can config to trigger alerts.
 
-
-Inherits from [entity](../resources/entity.md).
-
-## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List alertRules](../api/devicemanagement-alertrule-list.md)|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md) collection|Get a list of the [alertRule](../resources/devicemanagement-alertrule.md) objects and their properties.|

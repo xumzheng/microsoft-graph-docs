@@ -4,14 +4,6 @@
         "ChangeList": [
           {
             "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
-            "ApiChange": "Resource",
-            "ChangedApiName": "deviceManagement",
-            "ChangeType": "Addition",
-            "Description": "Added the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/deviceManagement?view=graph-rest-beta) resource",
-            "Target": "deviceManagement"
-          },
-          {
-            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
             "ApiChange": "EnumType",
             "ChangedApiName": "aggregationType",
             "ChangeType": "Addition",
@@ -121,14 +113,6 @@
             "ChangeType": "Addition",
             "Description": "Added the [setPortalNotificationAsSent](https://docs.microsoft.com/en-us/graph/api/setPortalNotificationAsSent?view=graph-rest-beta) method to the [setPortalNotificationAsSent](https://docs.microsoft.com/en-us/graph/api/setPortalNotificationAsSent?view=graph-rest-beta) resource.",
             "Target": "setPortalNotificationAsSent"
-          },
-          {
-            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
-            "ApiChange": "Method",
-            "ChangedApiName": "getEffectivePermissions",
-            "ChangeType": "Addition",
-            "Description": "Added the [getEffectivePermissions](https://docs.microsoft.com/en-us/graph/api/getEffectivePermissions?view=graph-rest-beta) method to the [getEffectivePermissions](https://docs.microsoft.com/en-us/graph/api/getEffectivePermissions?view=graph-rest-beta) resource.",
-            "Target": "getEffectivePermissions"
           },
           {
             "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",

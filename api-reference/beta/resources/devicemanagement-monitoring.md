@@ -15,8 +15,6 @@ Namespace: microsoft.graph.deviceManagement
 
 The entry point entity type to access all alert related entities and APIs.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

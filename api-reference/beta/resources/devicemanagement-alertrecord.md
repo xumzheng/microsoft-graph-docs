@@ -15,8 +15,6 @@ Namespace: microsoft.graph.deviceManagement
 
 This entity represents the record of an alert event triggered by the rule. When an alert rule's threshold is reached, a record of the alert event will be generated and stored, and admins will receive notifications via defined notification channels.
 
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
