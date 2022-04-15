@@ -10233,7 +10233,7 @@ items:
         href: resources/devicemanagement-monitoring.md
         displayName: Overview
         items:
-        - name: Alert recrod
+        - name: Alert record
           href: resources/devicemanagement-alertrecord.md
           items:
           - name: List
