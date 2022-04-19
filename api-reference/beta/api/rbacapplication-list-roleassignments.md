@@ -402,6 +402,45 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Get role assignments for a principal in a specific tenant
+
+The following example gets a list of roleassignments for a principal (principalId) in a specific tenant (principalOrganizationId).
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_4"
+}-->
+``` http
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalOrganizationId eq '7f011b8b-e0fa-4fc2-a1c1-e4e3c49f3a4b'and principalId eq '26138f62-3779-4e1b-966f-32a3f76e63b7'
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments(principal())",    "value": [
+        {
+            "id": "lAPpYvVpN0KRkAEhdxReEDH9df82lPxMupFjet7u1WA-1",
+            "principalId": "26138f62-3779-4e1b-966f-32a3f76e63b7",
+            "principalOrganizationId":"7f011b8b-e0fa-4fc2-a1c1-e4e3c49f3a4b",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
+            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+        }
+    ]
+}
+```
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
