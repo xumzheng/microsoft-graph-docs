@@ -429,7 +429,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments(principal())",    "value": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments(principal())",
+    "value": [
         {
             "id": "lAPpYvVpN0KRkAEhdxReEDH9df82lPxMupFjet7u1WA-1",
             "principalId": "26138f62-3779-4e1b-966f-32a3f76e63b7",
