@@ -1570,6 +1570,14 @@ items:
             href: api/contentsharingsession-get.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
+        - name: Add large gallery view
+          href: api/call-addlargegalleryview.md
+        - name: Large gallery view operation
+          items:
+          - name: Add large gallery view operation
+            href: resources/addlargegalleryviewoperation.md
+          - name: Get large gallery view operation status
+            href: api/addlargegalleryviewoperation-get.md
       - name: Call records
         items:
         - name: Overview
@@ -15052,9 +15060,9 @@ items:
           href: api/chatmessage-update.md
         - name: Check user access
           href: api/channel-doesuserhaveaccess.md
-        - name: List teams shared with channel
+        - name: List teams sharing a channel
           href: api/sharedwithchannelteaminfo-list.md
-        - name: Get team shared with channel
+        - name: Get team sharing a channel
           href: api/sharedwithchannelteaminfo-get.md
         - name: Unshare channel with team
           href: api/sharedwithchannelteaminfo-delete.md
