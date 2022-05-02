@@ -142,3 +142,4 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 - Look under **Learn** in the table of contents to read about services and features that _you_ can use in your scenarios.
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use this [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
+- Discover [Microsoft Graph SDKs](sdks/sdks-overview.md) to simplify building high-quality, efficient, and resilient applications.
