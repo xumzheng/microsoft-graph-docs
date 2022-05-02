@@ -125,6 +125,7 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 - Check out some [partner solutions](https://developer.microsoft.com/graph/partners).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
+- Discover [Microsoft Graph SDKs](sdks/sdks-overview.md) to simplify building high-quality, efficient, and resilient applications.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios.
 - Find out how to [get an auth token](auth/auth-concepts.md) in your app.
 - Start [using the API](use-the-api.md).
