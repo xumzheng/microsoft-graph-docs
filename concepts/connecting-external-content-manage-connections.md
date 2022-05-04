@@ -1,6 +1,6 @@
 ---
-title: "Create, update, and delete connections in the Microsoft Graph"
-description: "Learn how to use Microsoft Graph to create and manage connections"
+title: "Create, update, and delete connections in Microsoft Graph"
+description: "Learn how to use Microsoft Graph to create and manage connections."
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
@@ -8,11 +8,11 @@ ms.prod: search
 ---
 <!---<author of this doc: rsamai>--->
 
-# Create, update, and delete connections in the Microsoft Graph
+# Create, update, and delete connections in Microsoft Graph
 
 Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
 
-The Microsoft Graph connectors platform offers a simple way to add your external data into the Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
+The Microsoft Graph connectors platform offers a simple way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
 Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
@@ -61,13 +61,13 @@ A connection allows your application to [define a schema](/graph/api/externalcon
 
 ## Create a connection
 
-Before an application can add items to the search index, it must create and configure a connection using the following steps.
+Before an application can add items to the search index, it must create and configure a connection using the following steps:
 
 - [Create a connection](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) with a unique ID, display name, and description.
 - [Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) to define the fields that will be included in the index.
 
-> [!IMPORTANT]
-> After a schema has been registered, it cannot be changed for an existing connection.
+> [!NOTE]
+> For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## Update a connection
 
@@ -79,7 +79,7 @@ You can [delete a connection](/graph/api/externalconnection-delete?view=graph-re
 
 ## Next steps
 
-- [Register the connection schema](./connecting-external-content-manage-schema.md)
+- [Register the connection schema](/graph/connecting-external-content-manage-schema.md)
 - [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
