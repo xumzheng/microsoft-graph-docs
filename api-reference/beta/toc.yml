@@ -10529,6 +10529,17 @@ items:
               href: api/managedtenants-managedtenant-list-managementtemplatecollections.md
             - name: Get management template collection
               href: api/managedtenants-managementtemplatecollection-get.md
+        - name: Management template step deployment
+          href: resources/managedtenants-managementtemplatestepdeployment.md
+          items:
+            - name: List management template step deloyment
+              href: api/managedtenants-managementtemplatestepdeployment-list
+            - name: Get management template step deployment
+              href: api/managedtenants-managementtemplatestepdeployment-get.md
+            - name: List management template step versions
+              href: api/managedtenants-managementtemplatestepdeployment-list-templatestepversion.md
+            - name: Change deployment status
+              href: api/managedtenants-managementtemplatestepdeployment-changedeploymentstatus.md
         - name: Management template steps
           href: resources/managedtenants-managementtemplatestep.md
           items: 

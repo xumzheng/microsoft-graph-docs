@@ -1,6 +1,6 @@
 ---
 title: "List managementTemplateStep"
-description: "Get the managementTemplateStep resources from the templateStep navigation property."
+description: "Get the managementTemplateStep resources associated with a management template step version."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the managementTemplateStep resources from the templateStep navigation property.
+Get the [microsoft.graph.managedtenants-managementtemplatestep.md](../resources/managedtenants-managementtemplatestep.md) resources associated with a management template step version.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

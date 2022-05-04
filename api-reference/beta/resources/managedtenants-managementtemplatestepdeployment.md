@@ -36,10 +36,10 @@ Represents the deployment detail for a management template used to configure Mic
 
 |Member|Description|
 |:---|:---|
-|toAddress|Represents the management template deployment is be addressed in the future.|
+|toAddress|Represents the deployment has not been addressed.|
 |completed|Represents the management template deployment has been completed.|
 |error|Represents the management template deployment encountered an error when it was deployed.|
-|timeOut|Represents the management template deployment timed out when it was deployed.|
+|timeOut|Represents the request to deploy the management template timed out when attempting to deploy.|
 |inProgress|Represents the management template deployment is currently in progress.|
 |planned|Represents the management template deployment has been planned.|
 |resolvedBy3rdParty|Represent the intent of the management template deployment has been fulfilled by a third party.|

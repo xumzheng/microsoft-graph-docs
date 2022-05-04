@@ -1,6 +1,6 @@
 ---
 title: "managementTemplateCollection resource type"
-description: "Represent a collection of management templates that can be used to configure Microsoft 365 services."
+description: "Represent a collection of management templates that are used to define the group of actions and settings for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a collection of management templates that can be used to configure Microsoft 365 services.
+Represent a collection of [microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) that are used to define the group of actions and settings for a [microsoft.graph.managedTenants.managedTenant](../resources/managedtenants-managedtenant.md).
 
 ## Methods
 |Method|Return type|Description|
