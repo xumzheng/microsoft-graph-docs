@@ -10533,7 +10533,7 @@ items:
           href: resources/managedtenants-managementtemplatestepdeployment.md
           items:
             - name: List management template step deloyment
-              href: api/managedtenants-managementtemplatestepdeployment-list
+              href: api/managedtenants-managementtemplatestepdeployment-list.md
             - name: Get management template step deployment
               href: api/managedtenants-managementtemplatestepdeployment-get.md
             - name: List management template step versions
