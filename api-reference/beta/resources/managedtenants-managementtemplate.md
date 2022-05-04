@@ -60,14 +60,33 @@ The following is a JSON representation of the resource.
   "category": "String",
   "parameters": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.templateParameter"
+      "displayName": "String",
+      "description": "String",
+      "valueType": "String",
+      "jsonDefaultValue": "String",
+      "jsonAllowedValues": "String"
     }
   ],
   "workloadActions": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.workloadAction"
+      "actionId": "String",
+      "category": "String",
+      "licenses": [
+        "String"
+      ],
+      "displayName": "String",
+      "description": "String",
+      "service": "String",
+      "settings": [
+        {
+          "settingId": "String",
+          "displayName": "String",
+          "overwriteAllowed": "Boolean",
+          "valueType": "String",
+          "jsonValue": "String"
+        }
+      ]
     }
   ]
 }
 ```
-
