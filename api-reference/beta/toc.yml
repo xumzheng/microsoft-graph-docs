@@ -13885,7 +13885,7 @@ items:
           - name: Create identity for member
             href: api/externalconnectors-identity-post-members.md
           - name: Delete identity of member
-            href: api/externalconnectors-externalgroupmember-delete.md
+            href: api/externalconnectors-identity-delete.md
           - name: Delete
             href: api/externalconnectors-externalgroup-delete.md
         - name: External group member
