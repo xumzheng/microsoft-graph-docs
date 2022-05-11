@@ -8,7 +8,7 @@ ms.prod: "applications"
 
 # Configure required Azure AD Graph permissions for an app registration
 
-Azure Active Directory (Azure AD) Graph is deprecated and will be retired on June 30, 2022. As part of this deprecation path, adding Azure AD Graph permissions to an app registration through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to [Microsoft Graph](/graph/overview) API.
+Azure Active Directory (Azure AD) Graph is deprecated and will be retired in the near future. As part of this deprecation path, adding Azure AD Graph permissions to an app registration through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to [Microsoft Graph](/graph/overview) API.
 
 However, your app might still temporarily require Azure AD Graph permissions to access resources. This article describes the following four methods for configuring required Azure AD Graph permissions for your app registration:
 
@@ -18,7 +18,7 @@ However, your app might still temporarily require Azure AD Graph permissions to 
 1. [Use the Microsoft Graph PowerShell SDK](#option-4-use-the-microsoft-graph-powershell-sdk)
 
 > [!CAUTION]
-> Any app using Azure AD Graph will still stop functioning after June 30, 2022. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
+> Any app using Azure AD Graph will still stop functioning after the Azure AD Graph API retirement. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
 
 ## Option 1: Use the Azure portal to find the APIs your organization uses
 
@@ -324,17 +324,19 @@ Create a new PowerShell script named **updatePermissions.ps1** and add the follo
 # Sign in with the required Application.ReadWrite.All scope
 Connect-Graph -Scopes "Application.ReadWrite.All" 
 
+## Azure AD Graph's globally unique appId is 00000002-0000-0000-c000-000000000000 identified by the ResourceAppId
+$graphResourceId = "00000002-0000-0000-c000-000000000000"
+
 ## Replace 581088ba-83c5-4975-b8af-11d2d7a76e98 with the object ID of the app you wish to add new permissions to
 $applicationId = '581088ba-83c5-4975-b8af-11d2d7a76e98' 
 
 $app = Get-MgApplication -ApplicationId $applicationId
 
-## Azure AD Graph's globally unique appId is 00000002-0000-0000-c000-000000000000 identified by the ResourceAppId
-$aadAccess = $app.RequiredResourceAccess | Where-Object { $_.ResourceAppId -eq '00000002-0000-0000-c000-000000000000' } 
+$aadAccess = $app.RequiredResourceAccess | Where-Object { $_.ResourceAppId -eq $graphResourceId } 
 
-if($null -eq $aadAccess){ 
+if ($null -eq $aadAccess) { 
     $app.RequiredResourceAccess += @{  
-        ResourceAppId = "00000002-0000-0000-c000-000000000000"; 
+        ResourceAppId = $graphResourceId; 
         ResourceAccess = @( 
 
                 ## Replace the following with values of ID and type for all permissions - both new and existing permissions - you want to configure for the app
@@ -349,10 +351,33 @@ if($null -eq $aadAccess){
                     type = "Role"; 
                 }
             ) 
-     } 
-} 
+    } 
 
-Update-MgApplication -ApplicationId $applicationId -RequiredResourceAccess $app.RequiredResourceAccess 
+    Update-MgApplication -ApplicationId $applicationId -RequiredResourceAccess $app.RequiredResourceAccess
+}
+else {
+    $params = @{  
+        ResourceAppId = $graphResourceId; 
+        ResourceAccess = @( 
+
+            ## Replace the following with values of ID and type for all permissions - both new and existing permissions - you want to configure for the app
+            @{ 
+                # User.Read delegated permission Sign in and read user profile 
+                id = "311a71cc-e848-46a1-bdf8-97ff7156d8e6";  
+                type = "Scope"; 
+            }, 
+            @{ 
+                # Application.Read.All app role (application permission) to view application data
+                id = "3afa6a7d-9b1a-42eb-948e-1650a849e176"; 
+                type = "Role"; 
+            }
+        ) 
+    }
+
+    $params.ResourceAccess += $app.RequiredResourceAccess.ResourceAccess
+
+    Update-MgApplication -ApplicationId $applicationId -RequiredResourceAccess $params 
+}
 ```
 
 Run the script using the following command.
