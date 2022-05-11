@@ -13,8 +13,6 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Namespace: microsoft.graph.externalConnectors
-
 Represents a non-Azure Active Directory group.
 
 External groups determine permissions to the content in your external data source. These external groups can be used in entries on the [acl](../resources/externalconnectors-externalitem.md) of an [externalItem](../resources/externalconnectors-externalitem.md).

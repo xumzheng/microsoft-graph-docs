@@ -6164,7 +6164,7 @@ items:
             href: api/externalconnectors-externalgroup-update.md
           - name: Delete
             href: api/externalconnectors-externalgroup-delete.md
-        - name: External group member
+        - name: Identity
           items:
           - name: Identity
             href: resources/externalconnectors-identity.md

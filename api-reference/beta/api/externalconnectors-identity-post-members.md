@@ -1,5 +1,5 @@
 ---
-title: "Create externalGroupMember"
+title: "Create identity"
 description: "Create an identity object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
