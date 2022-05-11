@@ -13882,18 +13882,12 @@ items:
           items:
           - name: Identity
             href: resources/externalconnectors-identity.md
-          - name: Create identity for member
+          - name: Create
             href: api/externalconnectors-identity-post-members.md
-          - name: Delete identity of member
+          - name: Delete
             href: api/externalconnectors-identity-delete.md
           - name: Delete
             href: api/externalconnectors-externalgroup-delete.md
-        - name: External group member
-          items:
-          - name: External group member
-            href: resources/externalconnectors-externalgroupmember.md
-          - name: Create
-            href: api/externalconnectors-identity-post-members.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
