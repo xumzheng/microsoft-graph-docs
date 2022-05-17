@@ -1,6 +1,6 @@
 ---
 title: "List deployments"
-description: "Get the managementTemplateStepDeployment resources from the deployments navigation property."
+description: "Get the managementTemplateStepDeployment resources associated with a management template step version."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the managementTemplateStepDeployment resources from the deployments navigation property.
+Get the [managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md) resources associated with a [management template step version](../resources/managedtenants-managementtemplatestepversion.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

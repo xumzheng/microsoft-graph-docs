@@ -1,6 +1,6 @@
 ---
 title: "List managementTemplateStepVersions"
-description: "Gets the management template step version that represents the different versions of management templates that are associated with the managed tenant."
+description: "Get the management template step version that represents the different versions of management templates associated with the managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the [microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) that represents the different version of [microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) that are associated with the managed tenant.
+Get the [microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) that represents the different versions of [microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) associated with the managed tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
