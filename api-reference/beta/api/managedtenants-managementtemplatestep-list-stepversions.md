@@ -1,6 +1,6 @@
 ---
 title: "List stepVersions"
-description: "Get the managementTemplateStepVersion resources from the stepVersions navigation property."
+description: "Get the managementTemplateStepVersion resources associated with a managementTemplateStep."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the managementTemplateStepVersion resources from the stepVersions navigation property.
+Get the [managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) resources associated with a [managementTemplateStep](../resources/managedtenants-managementtemplatestep.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

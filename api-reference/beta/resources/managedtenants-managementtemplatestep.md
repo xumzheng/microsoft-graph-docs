@@ -20,8 +20,8 @@ Represents the settings that can be used to configure Microsoft 365 services.
 |:---|:---|:---|
 |[List managementTemplateSteps](../api/managedtenants-managedtenant-list-managementtemplatesteps.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|Get a list of the [microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) objects and their properties.|
 |[Get managementTemplateStep](../api/managedtenants-managementtemplatestep-get.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md)|Read the properties and relationships of a [microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) object.|
-|[List managementTemplate](../api/managedtenants-managementtemplatestep-list-managementtemplate.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get the managementTemplate resources from the managementTemplate navigation property.|
-|[List stepVersions](../api/managedtenants-managementtemplatestep-list-stepversions.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|Get the managementTemplateStepVersion resources from the stepVersions navigation property.|
+|[List managementTemplate](../api/managedtenants-managementtemplatestep-list-managementtemplate.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get the **managementTemplate** resources associated with the **managementTemplateStep**.|
+|[List stepVersions](../api/managedtenants-managementtemplatestep-list-stepversions.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|Get the **managementTemplateStepVersion** resources associated with the **managementTemplateStep**.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +33,7 @@ Represents the settings that can be used to configure Microsoft 365 services.
 |managementPortal|String|The display name for the management portal where further actions can be taken. Required.|
 |portalLink|String|The link for the management where further actions can be taken. Required.|
 |priority|Int32|The position in the sequence where the management template should be applied. Required.|
-|provider|[microsoft.graph.managedTenants.managementProvider](#managementprovider-values)|The provider for the management template step..The possible values are: `microsoft`, `community`, `indirectProvider`, `self`, `unknownFutureValue`. Required. Read-only.|
+|provider|[microsoft.graph.managedTenants.managementProvider](#managementprovider-values)|The provider for the management template step. The possible values are: `microsoft`, `community`, `indirectProvider`, `self`, `unknownFutureValue`. Required. Read-only.|
 
 ### managementProvider values
 
