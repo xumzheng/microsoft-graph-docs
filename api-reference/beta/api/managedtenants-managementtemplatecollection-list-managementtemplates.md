@@ -1,6 +1,6 @@
 ---
 title: "List managementTemplates"
-description: "Gets the managementTemplate resources represents a group of actions and setting that can be performed against a managed tenant."
+description: "Get the managementTemplate resources of a management template collection."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the [managementTemplate](../resources/managedtenants-managementtemplate.md) resources represents a group of actions and setting that can be performed against a managed tenant.
+Get the [managementTemplate](../resources/managedtenants-managementtemplate.md) resources of a [managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

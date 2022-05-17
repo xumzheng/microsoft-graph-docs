@@ -1,6 +1,6 @@
 ---
 title: "managementTemplateStepVersion: deploy"
-description: "Deploys the management template step version to the tenant where the configurations will be made."
+description: "Deploy the management template step version to the tenant where the configurations will be made."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deploys the management template step version to the tenant where the configurations will be made.
+Deploy the [management template step version](../resources/managedtenants-managementtemplatestepversion.md) to the tenant where the configurations will be made.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

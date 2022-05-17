@@ -13,14 +13,14 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an actions that can be performed to configure Microsoft 365 services.
+Represents an action that can be performed to configure Microsoft 365 services.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description for the template action.|
 |displayName|String|The display name for the template action.|
-|service|String|Indicates which Microsoft 365 service where the template action can be performed. Possible values include: `AAD` and `Intune`|
+|service|String|Indicates the Microsoft 365 service where the template action can be performed. Possible values include: `AAD` and `Intune`|
 |settings|[microsoft.graph.managedTenants.setting](../resources/managedtenants-setting.md) collection|The collection of settings associated with the template action.|
 |templateActionId|String|The unique identifier for the template action.|
 
