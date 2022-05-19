@@ -14,8 +14,8 @@ The document covers end-to-end flow for retrieving transcripts of Micosoft Teams
 
 The change notifications can be subscribed at following two different levels:
 
-1. Tenant level subscription
-2. User level subscription
+* Tenant level subscription
+*  User level subscription
 
 ## Tenant level subscription
 
