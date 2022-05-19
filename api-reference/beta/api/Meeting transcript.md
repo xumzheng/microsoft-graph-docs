@@ -10,18 +10,19 @@ doc_type: "apiPageType"
 
 # Get meeting transcript through Change Notifications
 
-The document covers end-to-end flow for retrieving transcripts of Micosoft Teams meetings with [Microsoft Graph Change Notifications](https://docs.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-beta). Change notifications can be leveraged to get near real-time updates on meeting lifecycle events such as when a meeting transcript is ready to be viewed.
+The document covers end-to-end flow for retrieving transcripts of Microsoft Teams meetings with
+[Microsoft Graph Change Notifications](../../../README.md). Change notifications can be leveraged to get near real-time updates on meeting lifecycle events such as when a meeting transcript is ready to be viewed.
 
 The change notifications can be subscribed at following two different levels:
 
 * Tenant level subscription
-*  User level subscription
+* User level subscription
 
 ## Tenant level subscription
 
 Here, the app subscribes to change notifications for all the chat messages across tenant.
 
-**Subscription resource:** [/chats/getAllMessages](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage#subscribe-to-messages-across-all-chats)
+**Subscription resource:** [/chats/getAllMessages](~/graph/teams-changenotifications-chatmessage#subscribe-to-messages-across-all-chats)
 
 Once the above subscription is created, the `notificationUrl` (specified while creating the subscription) is notified with all the different changes happening to the messages across the whole tenant.
 
@@ -104,7 +105,7 @@ For retrieving transcripts for meetings across the tenant, following sequence of
 
 	The app would mainly need the `chatId` property from the above payload to make subsequent calls.
 
-**2. Get the Chat entity from ChatId ([Doc Link](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-1.0&tabs=http))**
+**2. Get the Chat entity from ChatId [doc Link](~/graph/api/chat-get?view=graph-rest-1.0&tabs=http)**
 
 There are two scenarios we face while retrieving chats:
 
@@ -165,7 +166,7 @@ There are two scenarios we face while retrieving chats:
         }
         ```
 
-        The `calendarEventId` property can then be used to retrieve the `joinWebUrl` by calling the calendar API ([Doc Link](https://docs.microsoft.com/en-us/graph/api/event-get?view=graph-rest-1.0&tabs=http)):
+        The `calendarEventId` property can then be used to retrieve the `joinWebUrl` by calling the calendar API ([doc Link](~/graph/api/event-get?view=graph-rest-1.0&tabs=http):
 
         ``` http
         GET https://graph.microsoft.com/beta/users/14b779ae-cb64-47e7-a512-52fd50a4154d/events/AAMkAGE3NjJhOTVhLTNkZDQtNDE2OS05ZjU0LTJmOGQ0YTY2YTdiZQBGAAAAAAD3AG5jNnlgQJvdCL_KgXJIBwBsww5BlIxtT7iFyYWrXV3AAAAAAAENAABsww5BlIxtT7iFyYWrXV3AAACSDwYdAAA=
@@ -194,7 +195,7 @@ There are two scenarios we face while retrieving chats:
 
         Here, the `onlineMeeting's` `joinUrl` property is the joinWebUrl.
 
-**3. Get OnlineMeetingId through joinWebUrl and OrganizerId ([Doc Link](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-get?view=graph-rest-1.0&tabs=http#example-3-retrieve-an-online-meeting-by-joinweburl))**
+**3. Get OnlineMeetingId through joinWebUrl and OrganizerId [doc Link](~/graph/api/onlinemeeting-get?view=graph-rest-1.0&tabs=http#example-3-retrieve-an-online-meeting-by-joinweburl))**
 
 ``` http
 GET https://graph.microsoft.com/beta/users('14b779ae-cb64-47e7-a512-52fd50a4154d')/onlineMeetings?$filter=JoinWebUrl%20eq%20'https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTM5OTY3MGUtNmY4Mi00Yjg4LTk2MDUtY2IyZGRlNmU1ZjA2%40thread.v2/0?context=%7b%22Tid%22%3a%222432b57b-0abd-43db-aa7b-16eadd115d34%22%2c%22Oid%22%3a%2214b779ae-cb64-47e7-a512-52fd50a4154d%22%7d'
@@ -240,7 +241,7 @@ WEBVTT
 
 Here, the app can subscribe to change notifications for calendar event of a specific user.
 
-**Subscription resource:** [/users/\{userId\}/events](https://docs.microsoft.com/en-us/graph/outlook-change-notifications-overview?view=graph-rest-1.0)
+**Subscription resource:** [/users/\{userId\}/events](~/graph/outlook-change-notifications-overview?view=graph-rest-1.0)
 
 ```http
 
@@ -255,7 +256,7 @@ POST https://graph.microsoft.com/beta/subscriptions/
 }
 ```
 
-1. Once the above subscription is created, the `notificationUrl` is notified with all the calendar event changes related to the user. This will send notifications when a new meeting is created. This notification will contain calendar eventId in `resource` property of the notification payload, as shown below. Here, *AAMkADY0NjM1MjRhLTNiNjAtNDBiOC1hYTQxLThkMjAxN2QzMjZhYQBGAAAAAAC03Gz8aL_JQp2Kxvw5a29SBwDFFWHjtoMRTqdrVyQ1h8yLAAAAAAENAADFFWHjtoMRTqdrVyQ1h8yLAAFwC7nAAAA=* is the `eventId`.
+1. Once the above subscription is created, the `notificationUrl` is notified with all the calendar event changes related to the user. This will send notifications when a new meeting is created. This notification will contain calendar eventId in `resource` property of the notification payload, as shown. Here, *AAMkADY0NjM1MjRhLTNiNjAtNDBiOC1hYTQxLThkMjAxN2QzMjZhYQBGAAAAAAC03Gz8aL_JQp2Kxvw5a29SBwDFFWHjtoMRTqdrVyQ1h8yLAAAAAAENAADFFWHjtoMRTqdrVyQ1h8yLAAFwC7nAAAA=* is the `eventId`.
 
     ```json
     {
@@ -269,7 +270,7 @@ POST https://graph.microsoft.com/beta/subscriptions/
     }
     ```
 
-2. After getting the `eventId`, the app can use Get Event API to get the `JoinWebUrl` ([Doc Link](https://docs.microsoft.com/en-us/graph/api/event-get?view=graph-rest-1.0&tabs=http))
+2. After getting the `eventId`, the app can use Get Event API to get the `JoinWebUrl` [doc Link](~/graph/api/event-get?view=graph-rest-1.0&tabs=http)
 
     ```http
     GET https://graph.microsoft.com/beta/users/1273a016-201d-4f95-8083-1b7f99b3edeb/events/AAMkADY0NjM1MjRhLTNiNjAtNDBiOC1hYTQxLThkMjAxN2QzMjZhYQBGAAAAAAC03Gz8aL_JQp2Kxvw5a29SBwDFFWHjtoMRTqdrVyQ1h8yLAAAAAAENAADFFWHjtoMRTqdrVyQ1h8yLAAFwC7nAAAA=
@@ -301,7 +302,7 @@ POST https://graph.microsoft.com/beta/subscriptions/
 
 4. Once the app has the `chatId`, it can then subscribe to get messages for a specific chat.
 
-    **Subscription resource:** [/chats/\{chat-id\}/messages](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage#subscribe-to-messages-in-a-chat)
+    **Subscription resource:** [/chats/\{chat-id\}/messages](~/graph/teams-changenotifications-chatmessage#subscribe-to-messages-in-a-chat)
 
     **OR**
 
