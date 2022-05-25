@@ -1,7 +1,7 @@
 ---
 title: "assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
-author: "jpettere"
+author: "jconley76"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -38,7 +38,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
-|removeLicenses|GUID collection|A collection of GUIDs that identify the licenses to remove.|
+|removeLicenses|Guid collection|A collection of GUIDs that identify the licenses to remove.|
 
 ## Response
 
