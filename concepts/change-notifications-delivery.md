@@ -13,5 +13,3 @@ Change notifications can be delivered in different ways to subscribers. If the m
 This change notifications delivery mode is available for all resources that support Microsoft Graph change notifications.
 
 Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources accross a large set of organizations.
-
-In some cases customers may require graph to send notifications in [cloudevents](https://cloudevents.io/) schema. These customers can get their notifications delivered through Azure EventGrid
