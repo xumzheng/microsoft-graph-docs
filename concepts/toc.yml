@@ -565,7 +565,7 @@ items:
                 items:
                   - name: Overview
                     href: change-notifications-delivery.md
-                  - name: Event Hub
+                  - name: Event Hubs
                     href: get-notifications-delivered-in-event-hub.md
                   - name: Event Grid (Preview)
                     href: get-notifications-delivered-in-event-grid.md
