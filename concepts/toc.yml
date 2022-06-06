@@ -551,7 +551,13 @@ items:
               - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways
-                href: change-notifications-delivery.md
+                items:
+                  - name: Overview
+                    href: change-notifications-delivery.md
+                  - name: Event Hub
+                    href: get-notifications-delivered-in-event-hub.md
+                  - name: Event Grid
+                    href: get-notifications-delivered-in-event-grid.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
               - name: Change notifications in Microsoft Teams
