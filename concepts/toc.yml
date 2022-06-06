@@ -550,13 +550,13 @@ items:
                 href: webhooks-lifecycle.md
               - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
-              - name: Get notifications delivered different ways
+              - name: Get notifications delivered in alternative channels
                 items:
                   - name: Overview
                     href: change-notifications-delivery.md
                   - name: Event Hub
                     href: get-notifications-delivered-in-event-hub.md
-                  - name: Event Grid
+                  - name: Event Grid (Preview)
                     href: get-notifications-delivered-in-event-grid.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
