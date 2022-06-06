@@ -69,7 +69,7 @@ The following example subscribes to users being updated or deleted
 }
 ```
 #### Activating partner topics
-When the subscription is created successfully, an event grid partner topic is automatically created. The partner topic is inactive by default therefore you (the customer) must login to your azure subscription and activate it. To activate a partner topic follow [these steps](/azure/event-grid/subscribe-to-partner-events#activate-a-partner-topic)
+When the subscription is created successfully, an event grid partner topic is automatically created. The partner topic is inactive by default therefore you (the customer) must login to your azure subscription and activate it. To activate a partner topic follow [these steps](https://docs.microsoft.com/en-us/azure/event-grid/subscribe-to-partner-events#activate-a-partner-topic)
 
 #### Adding event subscription
-When the partner topic receives a notification from microsoft graph, the notifications is forwarded to the customer preferred endpoint. To register the end point, you need to add an event subscription to your partner topic. Follow the steps to [create event subscription](/azure/event-grid/subscribe-to-partner-events#subscribe-to-events)
+When the partner topic receives a notification from microsoft graph, the notifications is forwarded to the customer preferred endpoint. To register the end point, you need to add an event subscription to your partner topic. Follow the steps to [create event subscription](https://docs.microsoft.com/en-us/azure/event-grid/subscribe-to-partner-events#subscribe-to-events)
