@@ -31,14 +31,15 @@ Represents a participant in a call.
 
 ## Properties
 
-| Property             | Type                                     | Description                                                  |
-| :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | The participant ID.                                          |
-| info                 | [participantInfo](participantinfo.md)    | Information about the participant.                          |
-| isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
-| isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
-| mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
-| metadata             | String                                   | A blob of data provided by the participant in the roster.     |
+| Property             | Type                                     | Description                                                      |
+| :------------------- | :--------------------------------------- | :----------------------------------------------------------------|
+| id                   | String                                   | The participant ID.                                              |
+| info                 | [participantInfo](participantinfo.md)    | Information about the participant.                               |
+| isIdentityAnonymized | Boolean                                  | `true` if the identity of the participant is anonymized.         |
+| isInLobby            | Boolean                                  | `true` if the participant is in lobby.                           |
+| isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).     |
+| mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                       |
+| metadata             | String                                   | A blob of data provided by the participant in the roster.        |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
 
 ## Relationships
@@ -59,6 +60,7 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "info": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "isIdentityAnonymized": false,
   "isInLobby": true,
   "isMuted": true,
   "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
