@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOf
 [!INCLUDE [sample-code](../includes/snippets/powershell/timeoff-delete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/timeoff-delete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

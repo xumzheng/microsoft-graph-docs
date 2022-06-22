@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-plannerprogresstaskboardtaskformat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-plannerprogresstaskboardtaskformat-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

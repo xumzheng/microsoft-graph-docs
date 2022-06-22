@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-securescorecontrolprofiles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-securescorecontrolprofiles-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

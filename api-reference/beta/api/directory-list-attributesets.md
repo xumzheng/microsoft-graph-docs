@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/directory/attributeSets
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-attributeset-all-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-attributeset-all-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -167,6 +171,10 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$top=10
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-attributeset-top-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-attributeset-top-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -239,6 +247,10 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-attributeset-orderby-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-attributeset-orderby-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

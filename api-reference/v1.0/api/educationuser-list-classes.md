@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/education/me/classes
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-classes-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-classes-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

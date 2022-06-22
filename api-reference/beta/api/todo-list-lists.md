@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/me/todo/lists
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-todotasklist-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-todotasklist-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

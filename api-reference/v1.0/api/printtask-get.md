@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}/ta
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-printtask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-printtask-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-mobilitymanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-mobilitymanagementpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

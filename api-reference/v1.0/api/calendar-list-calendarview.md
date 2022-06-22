@@ -116,6 +116,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-calendarview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

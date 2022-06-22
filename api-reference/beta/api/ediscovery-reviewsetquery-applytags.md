@@ -108,6 +108,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/reviewsetquery-applytags-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/reviewsetquery-applytags-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-usageright-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-usageright-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

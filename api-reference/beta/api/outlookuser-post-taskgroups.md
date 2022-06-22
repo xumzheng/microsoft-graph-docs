@@ -85,6 +85,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-outlooktaskgroup-from-outlookuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-outlooktaskgroup-from-outlookuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [outlookTaskGroup](../resources/outlooktaskgroup.md) object.

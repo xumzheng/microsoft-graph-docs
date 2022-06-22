@@ -70,6 +70,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/go/sendreminder-accessreview-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/sendreminder-accessreview-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

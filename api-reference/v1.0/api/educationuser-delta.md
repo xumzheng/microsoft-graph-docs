@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/education/users/delta
 [!INCLUDE [sample-code](../includes/snippets/powershell/educationuser-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/educationuser-delta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints/{name}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-printserviceendpoint-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-printserviceendpoint-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

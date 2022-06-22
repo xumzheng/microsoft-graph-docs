@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-mastercategories-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-mastercategories-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

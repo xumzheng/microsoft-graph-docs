@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/powershell/outlook-task-get-attachments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/outlook-task-get-attachments-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

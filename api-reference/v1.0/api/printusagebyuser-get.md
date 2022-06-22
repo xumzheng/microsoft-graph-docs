@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-printusagebyuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-printusagebyuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

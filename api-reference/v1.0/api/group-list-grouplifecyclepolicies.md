@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 [!INCLUDE [sample-code](../includes/snippets/go/get-grouplifecyclepolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-grouplifecyclepolicies-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

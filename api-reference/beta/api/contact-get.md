@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-contact-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-contact-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

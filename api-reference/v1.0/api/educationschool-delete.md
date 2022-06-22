@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationschool-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-educationschool-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

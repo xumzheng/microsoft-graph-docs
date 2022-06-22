@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-identityprovider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-identityprovider-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

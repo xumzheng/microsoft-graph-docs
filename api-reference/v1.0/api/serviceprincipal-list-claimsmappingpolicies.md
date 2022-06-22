@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/claimsMappingPolicie
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-claimsmappingpolicies-on-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-claimsmappingpolicies-on-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

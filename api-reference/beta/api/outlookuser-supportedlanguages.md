@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-supportedlanguages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-supportedlanguages-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

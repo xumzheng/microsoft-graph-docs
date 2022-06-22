@@ -72,6 +72,10 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 [!INCLUDE [sample-code](../includes/snippets/go/delete-historyitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-historyitem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

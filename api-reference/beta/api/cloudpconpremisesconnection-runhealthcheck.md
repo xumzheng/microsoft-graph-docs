@@ -94,6 +94,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremise
 [!INCLUDE [sample-code](../includes/snippets/powershell/cloudpconpremisesconnection-runhealthcheck-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpconpremisesconnection-runhealthcheck-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

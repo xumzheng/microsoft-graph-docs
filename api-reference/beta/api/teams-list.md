@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/teams
 [!INCLUDE [sample-code](../includes/snippets/go/get-teams-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-teams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&
 [!INCLUDE [sample-code](../includes/snippets/go/get-teams-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-teams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -230,6 +238,10 @@ GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Tea
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-teams-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

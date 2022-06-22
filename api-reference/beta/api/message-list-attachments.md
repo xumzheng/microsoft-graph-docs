@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-get-attachments-beta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-get-attachments-beta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

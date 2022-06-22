@@ -107,6 +107,10 @@ GET https://graph.microsoft.com/beta/me/findRooms
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-get-rooms-in-tenant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-get-rooms-in-tenant-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

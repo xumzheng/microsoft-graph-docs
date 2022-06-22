@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/me/profile/websites
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-websites-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-websites-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

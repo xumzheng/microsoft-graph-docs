@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/{
 [!INCLUDE [sample-code](../includes/snippets/go/list-riskyserviceprincipalhistoryitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-riskyserviceprincipalhistoryitem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

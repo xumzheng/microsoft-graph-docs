@@ -94,6 +94,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/serviceupdatemessage-unarchive-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceupdatemessage-unarchive-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

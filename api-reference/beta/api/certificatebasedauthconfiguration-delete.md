@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthCo
 [!INCLUDE [sample-code](../includes/snippets/go/delete-certificatebasedauthconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-certificatebasedauthconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

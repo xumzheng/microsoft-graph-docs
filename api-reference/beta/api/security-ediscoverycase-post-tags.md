@@ -95,6 +95,10 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryreviewtag-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryreviewtag-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

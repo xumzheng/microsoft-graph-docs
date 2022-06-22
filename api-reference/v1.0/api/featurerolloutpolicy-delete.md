@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-featurerolloutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-featurerolloutpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

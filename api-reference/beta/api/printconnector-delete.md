@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/print/connectors/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-connector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-connector-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

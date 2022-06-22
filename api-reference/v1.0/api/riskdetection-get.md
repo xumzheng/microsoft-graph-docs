@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-
 [!INCLUDE [sample-code](../includes/snippets/go/get-riskdetection-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-riskdetection-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

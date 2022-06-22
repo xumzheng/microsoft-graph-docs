@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProvider
 [!INCLUDE [sample-code](../includes/snippets/go/get-b2cuserflow-list-identityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-b2cuserflow-list-identityproviders-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

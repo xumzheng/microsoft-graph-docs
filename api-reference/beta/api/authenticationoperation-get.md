@@ -104,6 +104,10 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-operation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-operation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

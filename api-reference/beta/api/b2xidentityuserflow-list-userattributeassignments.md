@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAss
 [!INCLUDE [sample-code](../includes/snippets/go/get-identityuserflowattributeassignment-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-identityuserflowattributeassignment-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -169,6 +173,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAss
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-identityuserflowattributeassignment-expand-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-identityuserflowattributeassignment-expand-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

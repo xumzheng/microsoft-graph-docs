@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs
 [!INCLUDE [sample-code](../includes/snippets/go/get-auditlogs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-auditlogs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

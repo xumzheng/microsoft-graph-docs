@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-uploadurl-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationsynchronizationprofile-uploadurl-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

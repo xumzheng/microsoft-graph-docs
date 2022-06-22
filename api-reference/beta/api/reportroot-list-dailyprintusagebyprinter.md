@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter
 [!INCLUDE [sample-code](../includes/snippets/go/get-endpoints-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-endpoints-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

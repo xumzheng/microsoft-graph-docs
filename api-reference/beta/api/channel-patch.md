@@ -130,6 +130,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/patch-channel-with-moderationsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/patch-channel-with-moderationsettings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

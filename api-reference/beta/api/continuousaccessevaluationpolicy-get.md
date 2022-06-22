@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/identity/continuousAccessEvaluationPolicy
 [!INCLUDE [sample-code](../includes/snippets/go/get-continuousaccessevaluationpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-continuousaccessevaluationpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

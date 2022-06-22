@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-agreementacceptances-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-agreementacceptances-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforc
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-workforceintegration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-workforceintegration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

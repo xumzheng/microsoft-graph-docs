@@ -121,6 +121,10 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-synchronizationschema-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-synchronizationschema-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

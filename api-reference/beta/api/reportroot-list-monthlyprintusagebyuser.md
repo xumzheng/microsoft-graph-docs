@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageByUser
 [!INCLUDE [sample-code](../includes/snippets/go/get-endpoints-6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-endpoints-6-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

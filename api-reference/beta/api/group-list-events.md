@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/events
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-group-events-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-group-events-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

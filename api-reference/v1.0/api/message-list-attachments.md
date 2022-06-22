@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-get-attachments-v1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-get-attachments-v1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

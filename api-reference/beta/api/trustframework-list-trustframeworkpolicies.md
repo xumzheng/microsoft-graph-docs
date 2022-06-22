@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-trustframeworks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-trustframeworks-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

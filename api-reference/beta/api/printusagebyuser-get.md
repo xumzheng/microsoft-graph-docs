@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser/016b556
 [!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-printusagebyuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

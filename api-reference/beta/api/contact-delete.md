@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/me/contacts/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-contact-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-contact-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

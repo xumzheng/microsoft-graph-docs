@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-mailfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-mailfolder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

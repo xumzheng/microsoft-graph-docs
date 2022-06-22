@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/search/bookmarks
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-bookmark-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-bookmark-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

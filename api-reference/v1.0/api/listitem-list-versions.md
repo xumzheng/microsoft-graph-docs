@@ -77,6 +77,10 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-previous-versions-listitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-previous-versions-listitem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

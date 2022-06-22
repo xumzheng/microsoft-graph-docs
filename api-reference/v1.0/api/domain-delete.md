@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-domain-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-domain-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
 [!INCLUDE [sample-code](../includes/snippets/powershell/educationschool-get-users-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/educationschool-get-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

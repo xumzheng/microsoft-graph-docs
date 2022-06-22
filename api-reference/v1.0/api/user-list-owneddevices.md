@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/me/ownedDevices
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-owneddevices-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-owneddevices-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

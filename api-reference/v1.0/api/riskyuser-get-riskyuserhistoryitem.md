@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/41a31b00-3b3b
 [!INCLUDE [sample-code](../includes/snippets/go/get-riskyuserhistoryitem-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-riskyuserhistoryitem-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

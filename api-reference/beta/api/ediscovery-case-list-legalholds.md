@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalH
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-legalhold-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-legalhold-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

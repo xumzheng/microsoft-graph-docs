@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/cus
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedgroupsource-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedgroupsource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

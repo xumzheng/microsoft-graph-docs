@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-conditionalaccesspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-conditionalaccesspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

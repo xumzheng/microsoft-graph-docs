@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-timeoffrequest-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-timeoffrequest-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---

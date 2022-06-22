@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-activity-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-activity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

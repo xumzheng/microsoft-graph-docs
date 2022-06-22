@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{i
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-personcertification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-personcertification-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

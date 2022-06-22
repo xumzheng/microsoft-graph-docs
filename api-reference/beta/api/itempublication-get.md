@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/me/profile/publications/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-itempublication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-itempublication-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcsnapshot-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcsnapshot-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

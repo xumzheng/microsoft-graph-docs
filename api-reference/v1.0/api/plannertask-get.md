@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-plannertask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-plannertask-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

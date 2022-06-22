@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/policies/identitySecurityDefaultsEnforcemen
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-identitysecuritydefaultsenforcementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-identitysecuritydefaultsenforcementpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-856
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationfeedbackresourceoutcome-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-educationfeedbackresourceoutcome-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

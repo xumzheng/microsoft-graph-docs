@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/businessFlowTemplates
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-businessflowtemplate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-businessflowtemplate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/oauth2PermissionGran
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-oauth2permissiongrants-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-serviceprincipal-oauth2permissiongrants-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

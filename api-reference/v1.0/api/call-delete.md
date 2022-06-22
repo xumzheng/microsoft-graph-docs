@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-call-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-call-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

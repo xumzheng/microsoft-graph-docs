@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsD
 [!INCLUDE [sample-code](../includes/snippets/go/get-tenantdetailedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-tenantdetailedinformation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

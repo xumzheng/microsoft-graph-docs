@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-plans-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-plans-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/{publishingTyp
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-publishedresources-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-publishedresources-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

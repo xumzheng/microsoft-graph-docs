@@ -112,6 +112,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-createpasswordsinglesignoncredentials-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-createpasswordsinglesignoncredentials-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

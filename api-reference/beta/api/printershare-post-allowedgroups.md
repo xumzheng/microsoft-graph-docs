@@ -85,6 +85,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-allowedgroup-from-printers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-allowedgroup-from-printers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

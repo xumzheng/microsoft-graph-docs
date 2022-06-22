@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-channel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-channel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

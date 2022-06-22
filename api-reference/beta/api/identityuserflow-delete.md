@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/identity/userFlows/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-identityuserflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-identityuserflow-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

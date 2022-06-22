@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-schools-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-schools-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

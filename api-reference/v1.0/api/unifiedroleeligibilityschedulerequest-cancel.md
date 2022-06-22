@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySc
 [!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleeligibilityschedulerequestthiscancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/unifiedroleeligibilityschedulerequestthiscancel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

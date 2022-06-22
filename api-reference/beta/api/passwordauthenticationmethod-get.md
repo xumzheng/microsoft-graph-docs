@@ -107,6 +107,10 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-passwordauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-passwordauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

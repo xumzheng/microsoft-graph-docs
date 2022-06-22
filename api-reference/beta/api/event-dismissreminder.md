@@ -93,6 +93,10 @@ POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 [!INCLUDE [sample-code](../includes/snippets/powershell/event-dismissreminder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/event-dismissreminder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

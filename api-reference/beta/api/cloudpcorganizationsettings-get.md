@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/organizati
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcorganizationsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcorganizationsettings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

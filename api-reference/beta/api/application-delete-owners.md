@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/owners/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/powershell/application-delete-owners-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/application-delete-owners-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -105,6 +105,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcusersetting-assign-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcusersetting-assign-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

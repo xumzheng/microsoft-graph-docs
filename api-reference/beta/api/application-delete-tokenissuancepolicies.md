@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/tokenIssuancePolicies/
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-tokenissuancepolicy-from-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-tokenissuancepolicy-from-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

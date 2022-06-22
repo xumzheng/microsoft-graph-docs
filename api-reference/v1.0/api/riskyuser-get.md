@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/c2b6c2b9-dddc
 [!INCLUDE [sample-code](../includes/snippets/go/get-riskyuser-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-riskyuser-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

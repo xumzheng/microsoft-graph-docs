@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-crosstenantaccesspolicyconfigurationdefault-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-crosstenantaccesspolicyconfigurationdefault-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

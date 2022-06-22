@@ -96,6 +96,10 @@ Content-Length: 233
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-audioroutinggroup-from-call-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-audioroutinggroup-from-call-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

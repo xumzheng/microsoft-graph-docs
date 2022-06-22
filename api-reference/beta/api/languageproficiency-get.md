@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/me/profile/languages/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-languageproficiency-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-languageproficiency-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -96,6 +96,10 @@ DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/fid
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-fido2authenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-fido2authenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

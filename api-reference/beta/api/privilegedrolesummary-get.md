@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedrolesummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-privilegedrolesummary-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

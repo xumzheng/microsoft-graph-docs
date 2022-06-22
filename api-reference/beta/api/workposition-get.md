@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/profile/positions/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-workposition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-workposition-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

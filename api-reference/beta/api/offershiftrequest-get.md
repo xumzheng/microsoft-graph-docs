@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-offershiftrequest-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-offershiftrequest-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

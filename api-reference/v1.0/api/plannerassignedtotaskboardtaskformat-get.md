@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/assignedToTaskBoard
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-plannerassignedtotaskboardtaskformat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-plannerassignedtotaskboardtaskformat-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

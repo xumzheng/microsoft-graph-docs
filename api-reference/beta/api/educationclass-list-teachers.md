@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/education/classes/11023/teachers
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-teachers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-teachers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

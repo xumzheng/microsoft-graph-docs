@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/connectors
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-connectors-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-connectors-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

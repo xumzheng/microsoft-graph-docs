@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceupdatemessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-serviceupdatemessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

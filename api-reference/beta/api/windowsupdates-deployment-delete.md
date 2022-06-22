@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deplo
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-deployment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-deployment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

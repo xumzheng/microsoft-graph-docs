@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/bucketTaskBoardForm
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-plannerbuckettaskboardtaskformat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-plannerbuckettaskboardtaskformat-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

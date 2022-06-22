@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/MC172851
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceupdatemessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-serviceupdatemessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

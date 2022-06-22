@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/security/cases/eDiscoveryCases/061b9a92-8926-4b
 [!INCLUDE [sample-code](../includes/snippets/powershell/reopen-ediscoverycase-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/reopen-ediscoverycase-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

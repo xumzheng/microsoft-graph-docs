@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{u
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-updatableassetgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-updatableassetgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 [!INCLUDE [sample-code](../includes/snippets/powershell/unarchive-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/unarchive-team-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

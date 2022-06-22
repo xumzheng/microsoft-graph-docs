@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionI
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-permission-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-permission-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

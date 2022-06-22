@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/privilegedApproval
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedapproval-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-privilegedapproval-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

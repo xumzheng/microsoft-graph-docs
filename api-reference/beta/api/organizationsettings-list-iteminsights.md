@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/item
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-insightssettingsrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-insightssettingsrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

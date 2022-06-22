@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sections
 [!INCLUDE [sample-code](../includes/snippets/powershell/notebook-get-sections-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/notebook-get-sections-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

@@ -94,6 +94,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-send-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-send-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

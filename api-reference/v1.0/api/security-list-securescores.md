@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-securescores-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-securescores-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-favoriteplans-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-favoriteplans-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

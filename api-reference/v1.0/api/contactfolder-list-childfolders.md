@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 [!INCLUDE [sample-code](../includes/snippets/powershell/contactfolder-get-childfolders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/contactfolder-get-childfolders-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

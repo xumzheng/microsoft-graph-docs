@@ -75,6 +75,10 @@ POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-6
 [!INCLUDE [sample-code](../includes/snippets/powershell/acceptrecommendations-accessreviewinstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/acceptrecommendations-accessreviewinstance-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/profile/certifications
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-itemcertifications-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-itemcertifications-from-profile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

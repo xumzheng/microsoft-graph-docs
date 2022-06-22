@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/identityProviders
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-identityprovider-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-identityprovider-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

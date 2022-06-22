@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/me/tasks/lists
 [!INCLUDE [sample-code](../includes/snippets/go/list-basetasklist-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-basetasklist-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-claimsmappingpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-claimsmappingpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

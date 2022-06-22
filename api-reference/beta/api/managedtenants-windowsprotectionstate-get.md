@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/windowsP
 [!INCLUDE [sample-code](../includes/snippets/go/get-windowsprotectionstate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-windowsprotectionstate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

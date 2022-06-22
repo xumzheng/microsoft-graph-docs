@@ -130,6 +130,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/synchronizationschema-parseexpression-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/synchronizationschema-parseexpression-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

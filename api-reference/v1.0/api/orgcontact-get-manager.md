@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-manager-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-manager-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

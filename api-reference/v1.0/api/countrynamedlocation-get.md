@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/1
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-countrynamedlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-countrynamedlocation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

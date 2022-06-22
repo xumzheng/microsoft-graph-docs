@@ -106,6 +106,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-createforward-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-createforward-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

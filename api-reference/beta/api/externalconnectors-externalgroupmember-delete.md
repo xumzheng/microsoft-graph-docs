@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-externalgroupmember-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-externalgroupmember-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- markdownlint-disable MD024 -->

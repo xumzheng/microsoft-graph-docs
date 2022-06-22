@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingcurrency-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-bookingcurrency-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

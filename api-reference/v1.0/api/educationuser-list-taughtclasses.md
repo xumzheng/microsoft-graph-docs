@@ -107,6 +107,10 @@ GET https://graph.microsoft.com/v1.0/education/users/{educationUserId}/taughtCla
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-educationclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-educationclass-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

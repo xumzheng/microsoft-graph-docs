@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 [!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-geteffectivepermissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/virtualendpoint-geteffectivepermissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

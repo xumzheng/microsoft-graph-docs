@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-allowedusers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-allowedusers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

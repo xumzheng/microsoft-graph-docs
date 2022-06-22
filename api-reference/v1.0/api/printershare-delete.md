@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-printershare-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-printershare-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

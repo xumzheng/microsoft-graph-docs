@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-i
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-columns-from-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-columns-from-contenttype-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

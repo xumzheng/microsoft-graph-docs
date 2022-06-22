@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders
 [!INCLUDE [sample-code](../includes/snippets/go/get-identityproviderbase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-identityproviderbase-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

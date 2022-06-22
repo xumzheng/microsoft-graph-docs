@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/me/profile/interests
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-interests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-interests-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

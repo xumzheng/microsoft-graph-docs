@@ -81,6 +81,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-directoryobject-from-device-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-directoryobject-from-device-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.

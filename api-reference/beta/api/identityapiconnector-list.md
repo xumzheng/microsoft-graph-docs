@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/identity/apiConnectors
 [!INCLUDE [sample-code](../includes/snippets/go/list-identityapiconnectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-identityapiconnectors-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

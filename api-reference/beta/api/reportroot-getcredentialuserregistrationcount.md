@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 [!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getcredentialuserregistrationcount-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/reportroot-getcredentialuserregistrationcount-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

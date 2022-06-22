@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-supportedtimezones-default-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-supportedtimezones-default-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

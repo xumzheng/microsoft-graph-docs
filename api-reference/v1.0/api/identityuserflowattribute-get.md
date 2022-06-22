@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/identity/userFlowAttributes/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-userflowattributes-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

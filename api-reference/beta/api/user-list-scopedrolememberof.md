@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-scopedadministratorof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-scopedadministratorof-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

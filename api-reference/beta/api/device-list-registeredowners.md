@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/devices/{id}/registeredOwners
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-registeredowners-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-registeredowners-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-resource-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-resource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

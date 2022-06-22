@@ -100,6 +100,10 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-directoryobject-from-directory-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-directoryobject-from-directory-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

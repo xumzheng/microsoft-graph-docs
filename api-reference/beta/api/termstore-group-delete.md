@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
 [!INCLUDE [sample-code](../includes/snippets/go/delete-group-from-store-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-group-from-store-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

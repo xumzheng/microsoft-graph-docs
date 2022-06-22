@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/termStore/sets/{setId}
 [!INCLUDE [sample-code](../includes/snippets/go/delete-set-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-set-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

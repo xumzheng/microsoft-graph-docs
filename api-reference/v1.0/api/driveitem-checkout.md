@@ -79,6 +79,10 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 [!INCLUDE [sample-code](../includes/snippets/powershell/checkout-item-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/checkout-item-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

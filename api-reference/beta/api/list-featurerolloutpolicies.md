@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-featurerolloutpolicies-policies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-featurerolloutpolicies-policies-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

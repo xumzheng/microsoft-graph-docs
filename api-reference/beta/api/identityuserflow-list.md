@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identity/userFlows
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-userflows-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-userflows-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

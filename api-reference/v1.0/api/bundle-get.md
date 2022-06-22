@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-bundle-metadata-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-bundle-metadata-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -152,6 +156,10 @@ GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bundle-and-children-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-bundle-and-children-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

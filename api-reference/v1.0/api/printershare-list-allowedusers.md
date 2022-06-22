@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUsers
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

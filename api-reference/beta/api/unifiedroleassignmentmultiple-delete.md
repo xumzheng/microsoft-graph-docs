@@ -113,6 +113,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroleassignmentmultiple-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedroleassignmentmultiple-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -165,6 +169,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/i
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroleassignmentmultiple-cloudpc-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedroleassignmentmultiple-cloudpc-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
