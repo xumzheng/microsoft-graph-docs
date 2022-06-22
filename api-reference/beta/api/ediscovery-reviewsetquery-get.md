@@ -12,6 +12,7 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
 
 Retrieve the properties and relationships of an eDiscovery [reviewSetQuery](../resources/ediscovery-reviewsetquery.md) object.
 

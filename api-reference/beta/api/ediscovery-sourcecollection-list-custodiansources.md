@@ -12,6 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
 
 Get the list of [dataSource](../resources/ediscovery-datasource.md) objects associated with a source collection.
 

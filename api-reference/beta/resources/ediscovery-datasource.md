@@ -12,6 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
 
 The dataSource entity is an abstract base class used to identify sources of content for eDiscovery.
 

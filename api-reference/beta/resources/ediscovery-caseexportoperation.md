@@ -12,6 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
 
 Represents the process of an eDiscovery export. The **caseExportOperation** can only be retrieved from the `Location` header in the response to a [reviewset export](../api/ediscovery-reviewset-export.md).
 

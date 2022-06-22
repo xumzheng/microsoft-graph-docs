@@ -18,11 +18,13 @@ Use the Microsoft Graph compliance and privacy APIs to build applications that:
 - Automate common tasks in eDiscovery
 - Create and manage subject rights requests
 
-## eDiscovery
+## eDiscovery (deprecated)
 
 eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Learn more about [Microsoft 365 Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
 
 Explore the [Microsoft 365 eDiscovery APIs](ediscovery-ediscoveryapioverview.md).
+
+[!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
 
 ## Subject rights request
 

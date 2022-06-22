@@ -12,6 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
 
 Represents an operation to permanently delete data in a sourceCollection. This operation is currently scoped to Microsoft Teams messages only; more data sources will be in scope in the future.
 

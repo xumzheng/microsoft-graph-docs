@@ -12,6 +12,7 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
 
 Represents static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
 
