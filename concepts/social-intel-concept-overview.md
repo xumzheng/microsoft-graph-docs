@@ -13,14 +13,14 @@ The hundreds of millions of users of Microsoft 365 cloud services form part of t
 
 The _profile API_ lets you, as app developers, model and represent people in Microsoft 365 services, and the profile card API lets administrators control the information showing on users' profile cards in the organization.
 
-As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
+As ubiquitous the user's data is in Microsoft Graph, data derived from the user's interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
 - "Search for People who’s name starts with ‘J’"
 - "Which documents are most interesting to this person?"
 
 You can use the _people API_ and _insights API_ in Microsoft Graph to build smarter apps that can, respectively, access the relevant people and documents for a user.
 
-The people API returns people ordered by relevance to a user, based on that user's contacts, social networks, organization directory, and recent communications on email. This is particularly useful for people-picking scenarios.
+The people API returns people ordered by relevance to a user, based on that user's contacts, organization directory, and recent communications on email. This is particularly useful for people-picking scenarios.
 
 The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Microsoft 365 experiences, including Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
 
@@ -28,7 +28,22 @@ The insights API uses advanced analytics and machine learning to provide the mos
 
 ## Why integrate with people data?
 
-The people API returns data of a single entity, [person](/graph/api/resources/person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in a relevance score of each person, calculated based on the user's communication and collaboration patterns and business relationships. There are 3 main types of application of this _relevance_ data.
+The people API returns data of a single entity, [person](/graph/api/resources/person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in the results returned which are ordered from most relevant to least relevant. 
+There are two people search APIs available in Microsoft graph 
+* [/search](search-concept-people.md) 
+* [/people](/graph/api/resources/person) (maintenance mode)
+
+### Why you should integrate to _/search_
+
+All people search investments are available via _/search_ with _/people_ now in *maintenance mode*. We highly encourage developers to consider using _/search_ when building their products. Below are additional reasons why you should pick _/search_:
+1. All future investments in people search will be made available via _/search_ example, Natural language search like "John the accountant in Nairobi"
+2. Attribute search, matching on additional attributes other than name and email
+3. Better relevance, results from _/search_ give better results due to use of AI, better data models and sophisticated spell correction. 
+4. *lower COGS* when using _/search_, but specifically lower latency.  
+
+
+There are 3 main types of application of this _relevance_ data.
+
 
 ### Browse people by relevance
 
