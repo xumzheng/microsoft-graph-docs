@@ -11,8 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reset a [caseSettings](../resources/ediscovery-caseSettings.md) object to the default values.
 

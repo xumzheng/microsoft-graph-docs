@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the operation that handles applying tags to documents in a review set based on a review set query.
 

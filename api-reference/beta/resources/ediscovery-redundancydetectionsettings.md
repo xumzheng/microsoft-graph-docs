@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Redundancy (email threading and near duplicate detection) settings for an eDiscovery case.
 

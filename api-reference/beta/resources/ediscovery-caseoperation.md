@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract entity that represents a long-running eDiscovery process. It contains a common set of properties that are shared among inheriting entities.  Entities that derive from **caseOperation** include:
 

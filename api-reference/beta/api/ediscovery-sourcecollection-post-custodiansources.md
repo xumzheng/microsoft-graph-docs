@@ -11,8 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add custodian [dataSource](../resources/ediscovery-datasource.md) objects to a source collection.
 

@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The container for a [custodian's](ediscovery-custodian.md) mailbox and OneDrive for Business site.
 

@@ -11,8 +11,8 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the context of eDiscovery, contains custodians, holds, collections, review sets, and exports. For details, see [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
 

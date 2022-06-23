@@ -13,8 +13,8 @@ The Microsoft Graph APIs for compliance and privacy provide functionality for or
 
 The compliance and privacy APIs are intended to help deliver on the vision of helping organizations adapt and extend Microsoft 365 Compliance to their own specific requirements, enable integration for existing custom or third-party solutions, and accelerate and support the use of Microsoft 365 solutions across the enterprise digital estate.
 
-## Electronic discovery (eDiscovery) (preview)
-
+## eDiscovery (deprecated)
+[!INCLUDE [ediscovery-api-deprecation](../../includes/ediscovery-api-deprecation.md)]
 ### Develop applications that ensure a repeatable, predictable, and standard process
 
 Organizations rely on [Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) capabilities to meet requirements to find the truth about what happened in their organization when they need to, based on internal or external requirements such as litigation, investigation, or regulatory compliance.
