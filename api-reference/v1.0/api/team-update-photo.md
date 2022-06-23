@@ -19,15 +19,11 @@ Update the photo (picture) for a team.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamSettingsReadWriteAll, GroupReadWriteAll**, DirectoryReadWriteAll** |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamSettingsEditGroup*, TeamSettingsReadWriteGroup*, TeamSettingsReadWriteAll, GroupReadWriteAll**, DirectoryReadWriteAll** |
-
- **Notes**: 
-> Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward. Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
->  This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+| Permission Type | Permissions (from least to most privileged)  |
+| --------------- | -------------------------------------------- |
+| Delegated (work or school account)        | TeamSettingsReadWriteAll |
+| Delegated (personal Microsoft account)    | Not supported.     |
+| Application                               | TeamSettingsReadWriteAll |
 
 ## HTTP request
 
