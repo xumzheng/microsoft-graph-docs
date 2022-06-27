@@ -1,0 +1,60 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+$graphClient = new GraphClient($requestAdapter);
+
+$requestRequestBody = new SendMailPostRequestBody();
+
+
+
+$message = new Message();
+$requestRequestBody->setMessage($message);
+
+
+$message->setSubject('Meet for lunch?');
+
+$body = new ItemBody();
+$message->setBody($body);
+
+
+$body->setContentType(new BodyType('Text'));
+$body->setContent('The new cafeteria is open.');
+
+$toRecipientsArray = [];
+
+$toRecipientstoRecipients1 = new Recipient();
+
+
+$emailAddress = new EmailAddress();
+$toRecipientstoRecipients1->setEmailAddress($emailAddress);
+
+
+$emailAddress->setAddress('fannyd@contoso.onmicrosoft.com');
+
+
+$toRecipientsArray []= $toRecipientstoRecipients1;
+$message->setToRecipients($toRecipientsArray);
+$ccRecipientsArray = [];
+
+$ccRecipientsccRecipients1 = new Recipient();
+
+
+$emailAddress = new EmailAddress();
+$ccRecipientsccRecipients1->setEmailAddress($emailAddress);
+
+
+$emailAddress->setAddress('danas@contoso.onmicrosoft.com');
+
+
+$ccRecipientsArray []= $ccRecipientsccRecipients1;
+$message->setCcRecipients($ccRecipientsArray);
+
+$requestRequestBody->setSaveToSentItems('false');
+$result =  $graphClient->me()->sendMail()->post($requestRequestBody);
+
+
+```

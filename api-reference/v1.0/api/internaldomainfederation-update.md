@@ -81,6 +81,8 @@ If successful, this method returns a `200 OK` response code and an updated [inte
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_internaldomainfederation"
@@ -95,6 +97,13 @@ Content-Type: application/json
   "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp"
 }
 ```
+
+# [Php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-internaldomainfederation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

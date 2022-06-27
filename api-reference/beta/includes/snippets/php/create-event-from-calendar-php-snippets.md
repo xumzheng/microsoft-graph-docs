@@ -1,0 +1,60 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+$graphClient = new GraphClient($requestAdapter);
+
+$requestRequestBody = new Event();
+
+
+$requestRequestBody->setSubject('Let\'s go for lunch');
+
+$body = new ItemBody();
+$requestRequestBody->setBody($body);
+
+
+$body->setContentType(new BodyType('HTML'));
+$body->setContent('Does next month work for you?');
+
+
+$start = new DateTimeTimeZone();
+$requestRequestBody->setStart($start);
+
+
+$start->setDateTime('2019-03-10T12:00:00');
+$start->setTimeZone('Pacific Standard Time');
+
+
+$end = new DateTimeTimeZone();
+$requestRequestBody->setEnd($end);
+
+
+$end->setDateTime('2019-03-10T14:00:00');
+$end->setTimeZone('Pacific Standard Time');
+
+
+$location = new Location();
+$requestRequestBody->setLocation($location);
+
+
+$location->setDisplayName('Harry\'s Bar');
+
+$attendeesArray = [];
+
+$attendeesattendees1 = new Attendee();
+
+$attendeesattendees1AdditionalData = [
+"type" => 'required',
+];
+$attendeesattendees1->setAdditionalData($attendeesattendees1AdditionalData);
+
+$attendeesArray []= $attendeesattendees1;
+$requestRequestBody->setAttendees($attendeesArray);
+$requestRequestBody->setTransactionId('7E163156-7762-4BEB-A1C6-729EA81755A7');
+$result =  $graphClient->me()->calendarsById('calendar-id')->events()->post($requestRequestBody);
+
+
+```
