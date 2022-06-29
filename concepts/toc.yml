@@ -55,6 +55,8 @@ items:
             href: /graph/tutorials/python
           - name: TypeScript
             href: /graph/tutorials/typescript
+      - name: Samples
+        href: /samples/browse/?products=ms-graph
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -93,7 +95,7 @@ items:
         items:
           - name: Data Connect overview
             href: data-connect-concept-overview.md
-            displayName: Microsoft Graph Data Connect, access data, bulk data           
+            displayName: Microsoft Graph Data Connect, access data, bulk data
           - name: Build your first Data Connect application
             href: data-connect-quickstart.yml
             displayName: Microsoft Graph Data Connect
@@ -207,7 +209,7 @@ items:
             displayName: cross device, Project Rome
       - name: Customer booking (preview)
         items:
-          - name: Overview 
+          - name: Overview
             href: booking-concept-overview.md
             displayName: Bookings, Microsoft Bookings, booking, customer booking
           - name: Business rules
@@ -232,7 +234,7 @@ items:
             displayName: Intune
           - name: Cloud PC (preview)
             href: cloudpc-concept-overview.md
-          - name: Device updates (preview)           
+          - name: Device updates (preview)
             items:
               - name: Overview
                 href: windowsupdates-concept-overview.md
@@ -327,7 +329,7 @@ items:
         items:
           - name: Overview
             href: outlook-mail-concept-overview.md
-            displayName: Outlook, Outlook mail, mail, message           
+            displayName: Outlook, Outlook mail, mail, message
           - name: Automate messaging
             href: outlook-create-send-messages.md
           - name: Organize messages
