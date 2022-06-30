@@ -1,9 +1,9 @@
 ---
 title: "userFlowPasswordConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "API doc to provide details on the password configuration for a b2c userflow"
+author: "harsh-aseeja"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -23,10 +23,10 @@ Password complexity can be configured in the following types of user flows:
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowExpiredPasswordReset|Boolean|**TODO: Add Description**|
+|allowExpiredPasswordReset|Boolean| If `true`, allows end users with expired passwords to reset their password |
 |complexityLevel|userFlowPasswordComplexityLevel|The possible values are: `simple`, `strong`, `custom`.|
 |customConfiguration|[userFlowCustomPasswordComplexity](../resources/userflowcustompasswordcomplexity.md)|Provides ability to set a custom password complexity|
-|isSelfServicePasswordResetAllowed|Boolean|If this is set to true, then this userflow will also support self service password reset without needing another password reset userflow.|
+|isSelfServicePasswordResetAllowed|Boolean|If this is set to `true`, then this userflow will also support self service password reset without needing another password reset userflow.|
 
 |Value|Description|
 |:---|:---|
