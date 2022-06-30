@@ -124,15 +124,15 @@ Content-type: application/json
           "userFlowType": "signUp",
           "userFlowTypeVersion": 1,
           "isLanguageCustomizationEnabled": false,
-          "defaultLanguageTag": null
+          "defaultLanguageTag": null,
       },
       {
           "id": "B2C_1_CustomerSignIn",
           "userFlowType": "signIn",
           "userFlowTypeVersion": 1,
           "isLanguageCustomizationEnabled": true,
-          "defaultLanguageTag": "en"
-      },
+          "defaultLanguageTag": "en",
+      }
     ]
 }
 ```
@@ -211,7 +211,7 @@ Content-type: application/json
                 "clientId": "clientIdFromFacebook",
                 "clientSecret": "*******"
               }  
-          ]
+          ],
       },
       {
           "id": "B2C_1_CustomerSignIn",
@@ -227,7 +227,7 @@ Content-type: application/json
                 "clientId": "clientIdFromFacebook",
                 "clientSecret": "*******"
               }  
-          ]
+          ],
       }
    ]
 }
