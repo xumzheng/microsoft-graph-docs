@@ -83,10 +83,20 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 [!INCLUDE [sample-code](../includes/snippets/java/get-x509certificateauthenticationmethodconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-x509certificateauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-x509certificateauthenticationmethodconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
+
+The following response object shows an x509CertificateAuthenticationMethodConfiguration with its default configuration.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -99,29 +109,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
-	"id": "X509Certificate",
-	"state": "disabled",
-	"certificateUserBindings": [{
-			"x509CertificateField": "PrincipalName",
-			"userProperty": "onPremisesUserPrincipalName",
-			"priority": 1
-		},
-		{
-			"x509CertificateField": "RFC822Name",
-			"userProperty": "userPrincipalName",
-			"priority": 2
-		}
-	],
-	"authenticationModeConfiguration": {
-		"x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
-		"rules": []
-	},
-	"includeTargets": [{
-		"targetType": "group",
-		"id": "all_users",
-		"isRegistrationRequired": false
-	}]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
+    "id": "X509Certificate",
+    "state": "disabled",
+    "certificateUserBindings": [
+        {
+            "x509CertificateField": "PrincipalName",
+            "userProperty": "onPremisesUserPrincipalName",
+            "priority": 1
+        },
+        {
+            "x509CertificateField": "RFC822Name",
+            "userProperty": "userPrincipalName",
+            "priority": 2
+        }
+    ],
+    "authenticationModeConfiguration": {
+        "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
+        "rules": []
+    },
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 
