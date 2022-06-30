@@ -1,5 +1,5 @@
 ---
-title: "userFlowPasswordConfiguration resource type"
+title: "userFlowPasswordConfiguration resource type."
 description: "API doc to provide details on the password configuration for a b2c userflow"
 author: "harsh-aseeja"
 ms.localizationpriority: medium
