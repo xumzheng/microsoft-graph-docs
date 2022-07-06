@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "e13a1d1c-a19a-4365-afb9-b67fa193e834",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [supportedClaimConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/supportedClaimConfiguration?view=graph-rest-beta) property to the [applicationTemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "e13a1d1c-a19a-4365-afb9-b67fa193e834",
+          "ApiChange": "Resource",
+          "ChangedApiName": "supportedClaimConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [supportedClaimConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/supportedClaimConfiguration?view=graph-rest-beta) resource",
+          "Target": "supportedClaimConfiguration"
+        }
+      ],
+      "Id": "e13a1d1c-a19a-4365-afb9-b67fa193e834",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-06T01:37:43.454Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicy",

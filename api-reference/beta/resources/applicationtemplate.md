@@ -35,6 +35,7 @@ Represents an application in the [Azure AD application gallery](/azure/active-di
 |id|String| Unique identifier for the application. Read-only.|
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
+|supportedClaimConfiguration| [supportedClaimConfiguration](supportedclaimconfiguration.md) | The options that the developer should use to configure the application's claim configurations|
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is `sync`.|
 |supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `oidc`, `password`, `saml`, and `notSupported`.|
 
