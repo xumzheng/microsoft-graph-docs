@@ -75,6 +75,7 @@ Content-Type: application/json
   "isUsableOnce": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-temporaryaccesspassauthenticationmethodconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -62,6 +62,7 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoverycase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

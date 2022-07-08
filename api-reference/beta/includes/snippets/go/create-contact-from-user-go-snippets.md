@@ -7,33 +7,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewContact()
+requestBody := graphmodels.NewContact()
 givenName := "Pavel"
-requestBody.SetGivenName(&givenName)
+requestBody.SetGivenName(&givenName) 
 surname := "Bansky"
-requestBody.SetSurname(&surname)
-requestBody.SetEmailAddresses( []TypedEmailAddress {
-	msgraphsdk.NewTypedEmailAddress(),
-	SetAdditionalData(map[string]interface{}{
-		"address": "pavelb@contoso.onmicrosoft.com",
-		"name": "Pavel Bansky",
-		"type": "personal",
-	}
-	msgraphsdk.NewTypedEmailAddress(),
-	SetAdditionalData(map[string]interface{}{
-		"address": "pavelb@fabrikam.onmicrosoft.com",
-		"name": "Pavel Bansky",
-		"type": "other",
-		"otherLabel": "Volunteer work",
-	}
+requestBody.SetSurname(&surname) 
+
+
+typedEmailAddress := graphmodels.NewTypedEmailAddress()
+additionalData := map[string]interface{}{
+	"address" : "pavelb@contoso.onmicrosoft.com", 
+	"name" : "Pavel Bansky", 
+	"type" : "personal", 
 }
-requestBody.SetPhones( []Phone {
-	msgraphsdk.NewPhone(),
+typedEmailAddress.SetAdditionalData(additionalData)
+typedEmailAddress1 := graphmodels.NewTypedEmailAddress()
+additionalData := map[string]interface{}{
+	"address" : "pavelb@fabrikam.onmicrosoft.com", 
+	"name" : "Pavel Bansky", 
+	"type" : "other", 
+	"otherLabel" : "Volunteer work", 
+}
+typedEmailAddress1.SetAdditionalData(additionalData)
+
+emailAddresses := []graphmodels.TypedEmailAddressable {
+	typedEmailAddress,
+	typedEmailAddress1,
+
+}
+requestBody.SetEmailAddresses(emailAddresses)
+
+
+phone := graphmodels.NewPhone()
 number := "+1 732 555 0102"
-	SetNumber(&number)
-type := "business"
-	SetType(&type)
+phone.SetNumber(&number) 
+type := graphmodels.BUSINESS_PHONETYPE 
+phone.SetType(&type) 
+
+phones := []graphmodels.Phoneable {
+	phone,
+
 }
+requestBody.SetPhones(phones)
+
 result, err := graphClient.Me().Contacts().Post(requestBody)
 
 

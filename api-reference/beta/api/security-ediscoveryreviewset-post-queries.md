@@ -75,6 +75,7 @@ Content-Type: application/json
     "contentQuery": "(Author=\"edison\")"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewsetquery-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -7,10 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-channelId := "channel-id"
-sharedWithChannelTeamInfoId := "sharedWithChannelTeamInfo-id"
-graphClient.TeamsById(&teamId).ChannelsById(&channelId).SharedWithTeamsById(&sharedWithChannelTeamInfoId).Delete()
+
+graphClient.TeamsById("team-id").ChannelsById("channel-id").SharedWithTeamsById("sharedWithChannelTeamInfo-id").Delete()
 
 
 ```
