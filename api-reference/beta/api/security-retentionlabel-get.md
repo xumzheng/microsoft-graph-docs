@@ -52,6 +52,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_retentionlabel"
@@ -60,6 +62,13 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ``` http
 GET  https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}
 ```
+
+# [typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-retentionlabel-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
