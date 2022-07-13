@@ -1031,6 +1031,13 @@ items:
               href: api/serviceprincipal-list-claimsmappingpolicies.md
             - name: Remove
               href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Device registration policy
+              href: resources/deviceregistrationpolicy.md
+              items:
+              - name: Get
+                href: api/deviceregistrationpolicy-get.md
+              - name: Update
+                href: api/deviceregistrationpolicy-update.md
           - name: Home realm discovery policy
             href: resources/homerealmdiscoverypolicy.md
             items:

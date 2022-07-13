@@ -12722,7 +12722,7 @@ items:
               href: api/continuousaccessevaluationpolicy-get.md
             - name: Update
               href: api/continuousaccessevaluationpolicy-update.md
-          - name: Device registration policy (preview)
+          - name: Device registration policy
             href: resources/deviceregistrationpolicy.md
             items:
             - name: Get

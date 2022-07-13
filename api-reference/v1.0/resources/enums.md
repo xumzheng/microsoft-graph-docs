@@ -11,6 +11,13 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### multiFactorAuthConfiguration values
+
+| Member             |
+|:-------------------|
+| notRequired        | 
+| required           |
+| unknownFutureValue |
 
 ### crossTenantAccessPolicyTargetConfigurationAccessType values
 
