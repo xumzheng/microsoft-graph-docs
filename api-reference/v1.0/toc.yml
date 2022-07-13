@@ -5408,12 +5408,12 @@ items:
             - name: List applied to applications
               href: api/claimsmappingpolicy-list-appliesto.md
           - name: Device registration policy
-              href: resources/deviceregistrationpolicy.md
-              items:
-              - name: Get
-                href: api/deviceregistrationpolicy-get.md
-              - name: Update
-                href: api/deviceregistrationpolicy-update.md              
+            href: resources/deviceregistrationpolicy.md
+            items:
+            - name: Get
+              href: api/deviceregistrationpolicy-get.md
+            - name: Update
+              href: api/deviceregistrationpolicy-update.md              
           - name: Feature rollout policy
             href: resources/featurerolloutpolicy.md
             items:
