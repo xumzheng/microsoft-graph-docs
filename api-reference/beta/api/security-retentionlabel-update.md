@@ -74,6 +74,8 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_retentionlabel"
@@ -103,6 +105,13 @@ Content-length: 555
   "defaultRecordBehavior": "String"
 }
 ```
+
+# [php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-retentionlabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

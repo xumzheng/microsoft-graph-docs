@@ -52,6 +52,8 @@ If successful, this action returns a `204 No Content` response code. To confirm 
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "crosstenantaccesspolicyconfigurationdefault_resettosystemdefault"
@@ -61,6 +63,13 @@ If successful, this action returns a `204 No Content` response code. To confirm 
 ``` http
 POST https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default/resetToSystemDefault
 ```
+
+# [php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

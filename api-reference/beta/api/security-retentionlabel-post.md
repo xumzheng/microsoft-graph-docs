@@ -68,6 +68,8 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_retentionlabel_from_"
@@ -97,6 +99,13 @@ Content-length: 555
   "defaultRecordBehavior": "String"
 }
 ```
+
+# [php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-retentionlabel-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

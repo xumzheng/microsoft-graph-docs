@@ -55,6 +55,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalidentitiespolicy"
@@ -67,6 +69,13 @@ PATCH https://graph.microsoft.com/beta/policies/externalIdentitiesPolicy
   "allowExternalIdentitiesToLeave":false
 }
 ```
+
+# [php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-externalidentitiespolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 <!-- {

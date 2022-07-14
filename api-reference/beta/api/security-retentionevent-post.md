@@ -59,6 +59,8 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_retentionevent_from_"
@@ -93,6 +95,13 @@ Content-length: 616
   "lastStatusUpdateDateTime": "String (timestamp)"
 }
 ```
+
+# [php](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-retentionevent-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
