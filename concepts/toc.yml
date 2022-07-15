@@ -521,7 +521,6 @@ items:
             href: system-messages.md
           - name: Employee learning
             href: viva-learning-concept-overview.md
-            displayName: Employee learning
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
