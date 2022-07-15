@@ -20,8 +20,6 @@ The Viva Learning APIs in Microsoft Graph enable you to make available your cont
 
 You can integrate your content and learner records from your Learning Management System (LMS) or learning provider, to Viva Learning by either using out-of-the-box integrations where Viva Learning can pull content metadata and learning records from your LMS or learning provider, or by using the Microsoft Graph APIs where you can push content metadata and learning records from your LMS or learning provider into Viva Learning.
 
-![An image showing the Viva learning sources integration model](images/viva-learn-sources-integration.png)
-
 Once the content metadata, learner assignments, and the completion records are uploaded to Viva Learning, they appear in Viva Learning at the following locations:
 
 - The content appears on the home page under *Browse courses* – *Providers* section
