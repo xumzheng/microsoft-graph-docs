@@ -520,10 +520,8 @@ items:
           - name: Get system messages
             href: system-messages.md
           - name: Employee learning
-            items:
-              - name: Overview
-              href: viva-learning-concept-overview.md
-              displayName: Employee learning
+            href: viva-learning-concept-overview.md
+            displayName: Employee learning
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
