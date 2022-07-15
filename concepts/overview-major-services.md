@@ -61,6 +61,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Sites and lists  | SharePoint | Web-based platform for users and Microsoft 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Microsoft 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](planner-concept-overview.md) |
 |Teamwork |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](teams-concept-overview.md) |
+| Viva Learning | Viva Learning | Microsoft Viva Learning empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. Discover, share, and track learning across a variety of sources from a center of learning in Microsoft Teams.  | [Viva Learning overview](viva-learning-concept-overview.md) |
 
 ## People and workplace intelligence
 
