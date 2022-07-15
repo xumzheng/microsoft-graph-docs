@@ -519,11 +519,11 @@ items:
             href: teams-change-notification-in-microsoft-teams-overview.md
           - name: Get system messages
             href: system-messages.md
-          - name: Employee experience
+          - name: Employee learning
             items:
               - name: Overview
               href: viva-learning-concept-overview.md
-              displayName: Employee experience
+              displayName: Employee learning
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
