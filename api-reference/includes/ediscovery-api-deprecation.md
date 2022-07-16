@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD041-->
 
 > [!CAUTION]
-> This version of the eDiscovery APIs under microsoft.graph.ediscovery subnamespace is deprecated.
-> Please use the version of the [eDiscovery APIs under microsoft.graph.security subnamepsace](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta#ediscovery-preview) for your existing and new apps.
+> The eDiscovery APIs in the microsoft.graph.ediscovery subnamespace are deprecated.
+> Please use the [eDiscovery APIs in the microsoft.graph.security subnamepsace](/graph/api/resources/security-api-overview?view=graph-rest-beta#ediscovery-preview) for your existing and new apps.
