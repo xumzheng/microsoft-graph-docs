@@ -1,6 +1,6 @@
 ---
-title: "Introduction to Microsoft Viva Learning"
-description: "Learn how to find resources for Microsoft Viva Learning."
+title: "Microsoft Viva Learning API Overview"
+description: "Learn how to register a provider integrate your content and learner records from your learning provider, to Viva Learning."
 ms.localizationpriority: medium
 author: "malabikaroy"
 ms.prod: "employee-learning"
