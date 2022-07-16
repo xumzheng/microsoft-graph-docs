@@ -101,6 +101,12 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 
 Microsoft Teams supports subscribing to changes (create, update, and delete) to messages in [channels](/graph/api/resources/channel) and [chats](/graph/api/resources/chat) to allow apps to get near-instant updates. For details about how to subscribe to changes, see [Get change notifications for messages in channels and chats](teams-changenotifications-chatmessage.md).
 
+### Register learning providers, upload and manage content metadata, learner assignments, and completion records to Viva Learning
+You can integrate your content and learner records from your Learning Management System (LMS) or learning provider, to Viva Learning by using the Microsoft Graph API. The APIs can be used to
+ - Register and manage a learning provider
+ - Insert, update, retrieve and delete content metadata.
+
+For more information on the Microsoft Graph APIs for Viva Learning, see [Microsoft Viva Learning API Overview](/graph/api/resources/viva-learning-api-overview?view=graph-rest-beta&preserve-view=true).
 ## API reference
 
 Looking for the API reference for this service?
