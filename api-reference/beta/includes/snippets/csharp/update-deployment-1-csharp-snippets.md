@@ -4,18 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var deployment = new Microsoft.Graph.WindowsUpdates.Deployment
+var requestBody = new Deployment
 {
+	@odata.type = "#microsoft.graph.windowsUpdates.deployment",
 	State = new DeploymentState
 	{
-		RequestedValue = Microsoft.Graph.WindowsUpdates.RequestedDeploymentStateValue.Paused
-	}
+		RequestedValue = "paused",
+		AdditionalData = new()
+		{
+			{"@odata.type", "microsoft.graph.windowsUpdates.deploymentState"},
+		}
+	},
 };
+await graphClient.Admin.Windows.Updates.Deployments["deployment-id"].PatchAsync(requestBody);
 
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"]
-	.Request()
-	.UpdateAsync(deployment);
 
 ```

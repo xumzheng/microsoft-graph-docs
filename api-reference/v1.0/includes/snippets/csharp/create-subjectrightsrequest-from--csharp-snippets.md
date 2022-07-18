@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var subjectRightsRequest = new SubjectRightsRequestObject
+var requestBody = new SubjectRightsRequest
 {
-	Type = SubjectRightsRequestType.Export,
-	DataSubjectType = DataSubjectType.Customer,
-	Regulations = new List<String>()
+	Type = "microsoft.graph.subjectRightsRequestType",
+	DataSubjectType = "microsoft.graph.dataSubjectType",
+	Regulations = new List<String>
 	{
-		"String"
-	},
+		"String",
+	}
 	DisplayName = "String",
 	Description = "String",
 	InternalDueDateTime = DateTimeOffset.Parse("String (timestamp)"),
@@ -23,16 +24,14 @@ var subjectRightsRequest = new SubjectRightsRequestObject
 		LastName = "String",
 		Email = "String",
 		Residency = "String",
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new()
 		{
 			{"phoneNumber", "String"},
-			{"SSN", "String"}
+			{"SSN", "String"},
 		}
-	}
+	},
 };
+var result = await graphClient.Privacy.SubjectRightsRequests.PostAsync(requestBody);
 
-await graphClient.Privacy.SubjectRightsRequests
-	.Request()
-	.AddAsync(subjectRightsRequest);
 
 ```

@@ -4,34 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contentInfo = new ContentInfo
+var requestBody = new EvaluateClassificationResultsRequestBody
 {
-	Format = ContentFormat.Default,
-	Identifier = null,
-	State = ContentState.Rest,
-	AdditionalData = new Dictionary<string, object>()
+	ContentInfo = new ContentInfo
 	{
-		{"format@odata.type", "#microsoft.graph.contentFormat"},
-		{"state@odata.type", "#microsoft.graph.contentState"}
+		Format = "default",
+		Identifier = null,
+		State = "rest",
+		AdditionalData = new()
+		{
+			{"@odata.type", "#microsoft.graph.contentInfo"},
+			{"format@odata.type", "#microsoft.graph.contentFormat"},
+			{"state@odata.type", "#microsoft.graph.contentState"},
+		}
+	},
+	ClassificationResults = new List<ClassificationResult>
+	{
+		new ClassificationResult
+		{
+			AdditionalData = new()
+			{
+				{"sensitiveTypeId", "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"},
+				{"count", },
+				{"confidenceLevel", },
+			}
+		},
 	}
 };
-
-var classificationResults = new List<ClassificationResult>()
+var result = await graphClient.InformationProtection.Policy.Labels.EvaluateClassificationResults.PostAsync(requestBody, (requestConfiguration) =>
 {
-	new ClassificationResult
-	{
-		SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
-		Count = 4,
-		ConfidenceLevel = 75
-	}
-};
+	requestConfiguration.Headers.Add("User-Agent", "ContosoLOBApp/1.0");
+});
 
-await graphClient.InformationProtection.Policy.Labels
-	.EvaluateClassificationResults(contentInfo,classificationResults)
-	.Request()
-	.Header("User-Agent","ContosoLOBApp/1.0")
-	.PostAsync();
 
 ```

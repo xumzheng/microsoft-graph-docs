@@ -4,26 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var legalHold = new Microsoft.Graph.Ediscovery.LegalHold
+var requestBody = new LegalHold
 {
+	@odata.type = "#microsoft.graph.ediscovery.legalHold",
 	Description = "String",
 	CreatedBy = new IdentitySet
 	{
+		@odata.type = "microsoft.graph.identitySet",
 	},
-	IsEnabled = false,
-	Status = Microsoft.Graph.Ediscovery.LegalHoldStatus.Pending,
+	IsEnabled = "Boolean",
+	Status = "String",
 	ContentQuery = "String",
-	Errors = new List<String>()
+	Errors = new List<String>
 	{
-		"String"
-	},
-	DisplayName = "String"
+		"String",
+	}
+	DisplayName = "String",
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].LegalHolds.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].LegalHolds
-	.Request()
-	.AddAsync(legalHold);
 
 ```

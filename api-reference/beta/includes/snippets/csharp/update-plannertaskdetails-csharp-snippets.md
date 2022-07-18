@@ -4,35 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerTaskDetails = new PlannerTaskDetails
+var requestBody = new PlannerTaskDetails
 {
-	PreviewType = PlannerPreviewType.NoPreview,
+	PreviewType = "noPreview",
 	References = new PlannerExternalReferences
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new()
 		{
-			{"http%3A//developer%2Emicrosoft%2Ecom", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"alias\":\"Documentation\",\"previewPriority\":\" !\",\"type\":\"Other\"}"},
-			{"https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"previewPriority\":\"  !!\"}"},
-			{"http%3A//www%2Ebing%2Ecom", "null"}
+			{"http%3A//www%2Ebing%2Ecom", null},
 		}
 	},
 	Checklist = new PlannerChecklistItems
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new()
 		{
-			{"95e27074-6c4a-447a-aa24-9d718a0b86fa", "{\"@odata.type\":\"microsoft.graph.plannerChecklistItem\",\"title\":\"Update task details\",\"isChecked\":true}"},
-			{"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff", "{\"@odata.type\":\"microsoft.graph.plannerChecklistItem\",\"isChecked\":true}"},
-			{"a93c93c5-10a6-4167-9551-8bafa09967a7", "null"}
+			{"a93c93c5-10a6-4167-9551-8bafa09967a7", null},
 		}
-	}
+	},
 };
+await graphClient.Planner.Tasks["plannerTask-id"].Details.PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+	requestConfiguration.Headers.Add("If-Match", "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="");
+});
 
-await graphClient.Planner.Tasks["{plannerTask-id}"].Details
-	.Request()
-	.Header("Prefer","return=representation")
-	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
-	.UpdateAsync(plannerTaskDetails);
 
 ```

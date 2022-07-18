@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = new User
+var requestBody = new User
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new()
 	{
-		{"ext55gb1l09_msLearnCourses", "{\"courseType\":\"Admin\"}"}
 	}
 };
+await graphClient.Users["user-id"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"]
-	.Request()
-	.UpdateAsync(user);
 
 ```

@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewInstanceDecisionItem = new AccessReviewInstanceDecisionItem
+var requestBody = new AccessReviewInstanceDecisionItem
 {
 	Decision = "Approve",
-	Justification = "This person is still on my team"
+	Justification = "This person is still on my team",
 };
+await graphClient.IdentityGovernance.AccessReviews.Definitions["accessReviewScheduleDefinition-id"].Instances["accessReviewInstance-id"].Stages["accessReviewStage-id"].Decisions["accessReviewInstanceDecisionItem-id"].PatchAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"].Stages["{accessReviewStage-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"]
-	.Request()
-	.UpdateAsync(accessReviewInstanceDecisionItem);
 
 ```

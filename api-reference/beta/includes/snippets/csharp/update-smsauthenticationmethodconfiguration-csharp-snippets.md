@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationMethodConfiguration = new SmsAuthenticationMethodConfiguration
+var requestBody = new AuthenticationMethodConfiguration
 {
+	@odata.type = "#microsoft.graph.smsAuthenticationMethodConfiguration",
 	Id = "Sms",
-	State = AuthenticationMethodState.Enabled
+	State = "enabled",
 };
+await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["authenticationMethodConfiguration-id"].PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
-	.Request()
-	.UpdateAsync(authenticationMethodConfiguration);
 
 ```

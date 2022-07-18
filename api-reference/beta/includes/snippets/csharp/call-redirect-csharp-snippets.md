@@ -4,27 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var targets = new List<InvitationParticipantInfo>()
+var requestBody = new RedirectRequestBody
 {
-	new InvitationParticipantInfo
+	Targets = new List<InvitationParticipantInfo>
 	{
-		Identity = new IdentitySet
+		new InvitationParticipantInfo
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new()
 			{
-				{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
+				{"@odata.type", "#microsoft.graph.invitationParticipantInfo"},
 			}
-		}
+		},
 	}
+	CallbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
 };
+await graphClient.Communications.Calls["call-id"].Redirect.PostAsync(requestBody);
 
-var callbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039";
-
-await graphClient.Communications.Calls["{call-id}"]
-	.Redirect(targets,null,null,null,null,callbackUri)
-	.Request()
-	.PostAsync();
 
 ```

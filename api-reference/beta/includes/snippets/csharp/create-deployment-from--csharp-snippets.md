@@ -4,37 +4,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var deployment = new Microsoft.Graph.WindowsUpdates.Deployment
+var requestBody = new Deployment
 {
-	Content = new FeatureUpdateReference
+	@odata.type = "#microsoft.graph.windowsUpdates.deployment",
+	Content = new DeployableContent
 	{
-		Version = "20H2"
-	},
-	Settings = new WindowsDeploymentSettings
-	{
-		Rollout = new Microsoft.Graph.WindowsUpdates.RolloutSettings
+		@odata.type = "microsoft.graph.windowsUpdates.featureUpdateReference",
+		AdditionalData = new()
 		{
-			DevicesPerOffer = 100
-		},
-		Monitoring = new Microsoft.Graph.WindowsUpdates.MonitoringSettings
-		{
-			MonitoringRules = new List<Microsoft.Graph.WindowsUpdates.MonitoringRule>()
-			{
-				new Microsoft.Graph.WindowsUpdates.MonitoringRule
-				{
-					Signal = Microsoft.Graph.WindowsUpdates.MonitoringSignal.Rollback,
-					Threshold = 5,
-					Action = Microsoft.Graph.WindowsUpdates.MonitoringAction.PauseDeployment
-				}
-			}
+			{"version", "20H2"},
 		}
-	}
+	},
+	Settings = new DeploymentSettings
+	{
+		@odata.type = "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+		Rollout = new RolloutSettings
+		{
+			DevicesPerOffer = 100,
+		},
+		Monitoring = new MonitoringSettings
+		{
+			MonitoringRules = new List<MonitoringRule>
+			{
+				new MonitoringRule
+				{
+					Signal = "rollback",
+					Threshold = 5,
+					Action = "pauseDeployment",
+					AdditionalData = new()
+					{
+						{"@odata.type", "#microsoft.graph.windowsUpdates.monitoringRule"},
+					}
+				},
+			}
+		},
+	},
 };
+var result = await graphClient.Admin.Windows.Updates.Deployments.PostAsync(requestBody);
 
-await graphClient.Admin.Windows.Updates.Deployments
-	.Request()
-	.AddAsync(deployment);
 
 ```

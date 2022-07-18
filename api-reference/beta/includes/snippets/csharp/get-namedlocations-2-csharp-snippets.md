@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var namedLocations = await graphClient.Identity.ConditionalAccess.NamedLocations
-	.Request()
-	.Filter("isof('microsoft.graph.ipNamedLocation')")
-	.GetAsync();
+var result = await graphClient.Identity.ConditionalAccess.NamedLocations.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "isof('microsoft.graph.ipNamedLocation')";
+});
+
 
 ```

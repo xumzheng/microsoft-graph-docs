@@ -4,21 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var inputIds = new List<String>()
+var requestBody = new TranslateExchangeIdsRequestBody
 {
-	"{rest-formatted-id-1}",
-	"{rest-formatted-id-2}"
+	InputIds = new List<String>
+	{
+		"{rest-formatted-id-1}",
+		"{rest-formatted-id-2}",
+	}
+	SourceIdType = "restId",
+	TargetIdType = "restImmutableEntryId",
 };
+var result = await graphClient.Me.TranslateExchangeIds.PostAsync(requestBody);
 
-var sourceIdType = ExchangeIdFormat.RestId;
-
-var targetIdType = ExchangeIdFormat.RestImmutableEntryId;
-
-await graphClient.Me
-	.TranslateExchangeIds(inputIds,targetIdType,sourceIdType)
-	.Request()
-	.PostAsync();
 
 ```

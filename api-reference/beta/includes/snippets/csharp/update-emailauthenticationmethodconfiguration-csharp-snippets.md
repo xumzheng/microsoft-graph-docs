@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationMethodConfiguration = new EmailAuthenticationMethodConfiguration
+var requestBody = new AuthenticationMethodConfiguration
 {
-	AllowExternalIdToUseEmailOtp = ExternalEmailOtpState.Disabled
+	@odata.type = "#microsoft.graph.emailAuthenticationMethodConfiguration",
+	AdditionalData = new()
+	{
+		{"allowExternalIdToUseEmailOtp", "disabled"},
+	}
 };
+await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["authenticationMethodConfiguration-id"].PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
-	.Request()
-	.UpdateAsync(authenticationMethodConfiguration);
 
 ```

@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var permissionGrantPolicy = new PermissionGrantPolicy
+var requestBody = new PermissionGrantPolicy
 {
 	Id = "my-custom-consent-policy",
 	DisplayName = "Custom application consent policy",
-	Description = "A custom permission grant policy to customize conditions for granting consent."
+	Description = "A custom permission grant policy to customize conditions for granting consent.",
 };
+var result = await graphClient.Policies.PermissionGrantPolicies.PostAsync(requestBody);
 
-await graphClient.Policies.PermissionGrantPolicies
-	.Request()
-	.AddAsync(permissionGrantPolicy);
 
 ```

@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachment = new ItemAttachment
+var requestBody = new Attachment
 {
+	@odata.type = "#Microsoft.OutlookServices.ItemAttachment",
 	Name = "name-value",
-	Item = new Message
+	AdditionalData = new()
 	{
 	}
 };
+var result = await graphClient.Me.Events["event-id"].Attachments.PostAsync(requestBody);
 
-await graphClient.Me.Events["{event-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
 
 ```

@@ -4,52 +4,51 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var conditionalAccessPolicy = new ConditionalAccessPolicy
+var requestBody = new ConditionalAccessPolicy
 {
 	DisplayName = "Require MFA to EXO from non-complaint devices.",
-	State = ConditionalAccessPolicyState.Enabled,
+	State = "enabled",
 	Conditions = new ConditionalAccessConditionSet
 	{
 		Applications = new ConditionalAccessApplications
 		{
-			IncludeApplications = new List<String>()
+			IncludeApplications = new List<String>
 			{
-				"00000002-0000-0ff1-ce00-000000000000"
+				"00000002-0000-0ff1-ce00-000000000000",
 			}
 		},
 		Users = new ConditionalAccessUsers
 		{
-			IncludeGroups = new List<String>()
+			IncludeGroups = new List<String>
 			{
-				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
+				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba",
 			}
 		},
 		Devices = new ConditionalAccessDevices
 		{
-			IncludeDevices = new List<String>()
+			IncludeDevices = new List<String>
 			{
-				"All"
-			},
-			ExcludeDevices = new List<String>()
-			{
-				"Compliant"
+				"All",
 			}
-		}
+			ExcludeDevices = new List<String>
+			{
+				"Compliant",
+			}
+		},
 	},
 	GrantControls = new ConditionalAccessGrantControls
 	{
 		Operator = "OR",
-		BuiltInControls = new List<ConditionalAccessGrantControl>()
+		BuiltInControls = new List<ConditionalAccessGrantControl>
 		{
-			ConditionalAccessGrantControl.Mfa
+			"mfa",
 		}
-	}
+	},
 };
+var result = await graphClient.Identity.ConditionalAccess.Policies.PostAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.Policies
-	.Request()
-	.AddAsync(conditionalAccessPolicy);
 
 ```

@@ -4,43 +4,57 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var addMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
+var requestBody = new UpdateAudienceRequestBody
 {
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
+	AddMembers = new List<Object>
 	{
-		Id = "String (identifier)"
+		new 
+		{
+			AdditionalData = new()
+			{
+				{"@odata.type", "#microsoft.graph.windowsUpdates.azureADDevice"},
+				{"id", "String (identifier)"},
+			}
+		},
+	}
+	RemoveMembers = new List<Object>
+	{
+		new 
+		{
+			AdditionalData = new()
+			{
+				{"@odata.type", "#microsoft.graph.windowsUpdates.azureADDevice"},
+				{"id", "String (identifier)"},
+			}
+		},
+	}
+	AddExclusions = new List<Object>
+	{
+		new 
+		{
+			AdditionalData = new()
+			{
+				{"@odata.type", "#microsoft.graph.windowsUpdates.azureADDevice"},
+				{"id", "String (identifier)"},
+			}
+		},
+	}
+	RemoveExclusions = new List<Object>
+	{
+		new 
+		{
+			AdditionalData = new()
+			{
+				{"@odata.type", "#microsoft.graph.windowsUpdates.azureADDevice"},
+				{"id", "String (identifier)"},
+			}
+		},
 	}
 };
+await graphClient.Admin.Windows.Updates.Deployments["deployment-id"].Audience.UpdateAudience.PostAsync(requestBody);
 
-var removeMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-var addExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-var removeExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"].Audience
-	.UpdateAudience(addMembers,removeMembers,addExclusions,removeExclusions)
-	.Request()
-	.PostAsync();
 
 ```

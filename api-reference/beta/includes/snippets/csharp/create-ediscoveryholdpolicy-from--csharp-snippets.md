@@ -4,22 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var ediscoveryHoldPolicy = new Microsoft.Graph.Security.EdiscoveryHoldPolicy
+var requestBody = new EdiscoveryHoldPolicy
 {
 	Displayname = "My legalHold with sources",
 	Description = "Created from Graph API",
 	ContentQuery = "Bazooka",
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new()
 	{
-		{"userSources@odata.bind", "[{\"@odata.type\":\"microsoft.graph.security.userSource\",\"email\":\"SalesTeam@M365x809305.OnMicrosoft.com\"}]"},
-		{"siteSources@odata.bind", "[{\"@odata.type\":\"microsoft.graph.security.siteSource\",\"site\":{\"webUrl\":\"https://m365x809305.sharepoint.com/sites/Design-topsecret\"}}]"}
+		{"userSources@odata.bind", new List<Object>
+		{
+		}
+		{"siteSources@odata.bind", new List<Object>
+		{
+		}
 	}
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].LegalHolds.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].LegalHolds
-	.Request()
-	.AddAsync(ediscoveryHoldPolicy);
 
 ```

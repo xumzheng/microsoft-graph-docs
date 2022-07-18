@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleAssignmentMultiple = new UnifiedRoleAssignmentMultiple
+var requestBody = new UnifiedRoleAssignmentMultiple
 {
 	DisplayName = "NewName",
-	Description = "A new roleAssignment"
+	Description = "A new roleAssignment",
 };
+await graphClient.RoleManagement.CloudPC.RoleAssignments["unifiedRoleAssignmentMultiple-id"].PatchAsync(requestBody);
 
-await graphClient.RoleManagement.CloudPC.RoleAssignments["{unifiedRoleAssignmentMultiple-id}"]
-	.Request()
-	.UpdateAsync(unifiedRoleAssignmentMultiple);
 
 ```

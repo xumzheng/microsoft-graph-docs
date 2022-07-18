@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticationMethod
+var requestBody = new TemporaryAccessPassAuthenticationMethod
 {
-	StartDateTime = DateTimeOffset.Parse("2022-06-05T00:00:00Z"),
+	StartDateTime = DateTimeOffset.Parse("2022-06-05T00:00:00.000Z"),
 	LifetimeInMinutes = 60,
-	IsUsableOnce = false
+	IsUsableOnce = false,
 };
+var result = await graphClient.Users["user-id"].Authentication.TemporaryAccessPassMethods.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods
-	.Request()
-	.AddAsync(temporaryAccessPassAuthenticationMethod);
 
 ```

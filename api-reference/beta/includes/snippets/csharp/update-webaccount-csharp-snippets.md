@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var webAccount = new WebAccount
+var requestBody = new WebAccount
 {
-	WebUrl = "https://github.com/innocenty.popov"
+	WebUrl = "https://github.com/innocenty.popov",
 };
+await graphClient.Me.Profile.WebAccounts["webAccount-id"].PatchAsync(requestBody);
 
-await graphClient.Me.Profile.WebAccounts["{webAccount-id}"]
-	.Request()
-	.UpdateAsync(webAccount);
 
 ```

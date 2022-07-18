@@ -4,25 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var credentials = new List<SynchronizationSecretKeyStringValuePair>()
-{
-	new SynchronizationSecretKeyStringValuePair
-	{
-		Key = SynchronizationSecret.UserName,
-		Value = "user@domain.com"
-	},
-	new SynchronizationSecretKeyStringValuePair
-	{
-		Key = SynchronizationSecret.Password,
-		Value = "password-value"
-	}
-};
+await graphClient.ServicePrincipals["servicePrincipal-id"].Synchronization.Jobs["synchronizationJob-id"].ValidateCredentials.PostAsync();
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
-	.ValidateCredentials(null,null,null,credentials)
-	.Request()
-	.PostAsync();
 
 ```

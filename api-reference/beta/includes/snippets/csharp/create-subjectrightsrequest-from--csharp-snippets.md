@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var subjectRightsRequest = new SubjectRightsRequestObject
+var requestBody = new SubjectRightsRequest
 {
-	Type = SubjectRightsRequestType.Export,
-	ContentQuery = "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))",
-	DataSubjectType = DataSubjectType.Customer,
+	Type = "export",
+	ContentQuery = "(("Diego Siciliani" OR "Diego.Siciliani@contoso.com") OR (participants:"Diego.Siciliani@contoso.com"))",
+	DataSubjectType = "customer",
 	ExternalId = "F53BF2DA-607D-412A-B568-FAA0F023AC0B",
 	DisplayName = "Export report for customer Id: 12345",
 	Description = "This is a export request",
@@ -22,21 +23,20 @@ var subjectRightsRequest = new SubjectRightsRequestObject
 		FirstName = "Diego",
 		LastName = "Siciliani",
 		Email = "Diego.Siciliani@contoso.com",
-		Residency = "USA"
+		Residency = "USA",
 	},
 	MailboxLocations = null,
 	PauseAfterEstimate = true,
-	Regulations = new List<String>()
+	Regulations = new List<String>
 	{
-		"CCPA"
-	},
-	SiteLocations = new SubjectRightsRequestAllSiteLocation
-	{
+		"CCPA",
 	}
+	SiteLocations = new SubjectRightsRequestSiteLocation
+	{
+		@odata.type = "microsoft.graph.subjectRightsRequestAllSiteLocation",
+	},
 };
+var result = await graphClient.Privacy.SubjectRightsRequests.PostAsync(requestBody);
 
-await graphClient.Privacy.SubjectRightsRequests
-	.Request()
-	.AddAsync(subjectRightsRequest);
 
 ```

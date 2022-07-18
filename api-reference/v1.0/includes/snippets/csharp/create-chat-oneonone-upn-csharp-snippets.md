@@ -4,40 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var chat = new Chat
+var requestBody = new Chat
 {
-	ChatType = ChatType.OneOnOne,
-	Members = new ChatMembersCollectionPage()
+	ChatType = "oneOnOne",
+	Members = new List<ConversationMember>
 	{
-		new AadUserConversationMember
+		new ConversationMember
 		{
-			Roles = new List<String>()
+			@odata.type = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<String>
 			{
-				"owner"
-			},
-			AdditionalData = new Dictionary<string, object>()
+				"owner",
+			}
+			AdditionalData = new()
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"}
+				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"},
 			}
 		},
-		new AadUserConversationMember
+		new ConversationMember
 		{
-			Roles = new List<String>()
+			@odata.type = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<String>
 			{
-				"owner"
-			},
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"}
+				"owner",
 			}
-		}
+			AdditionalData = new()
+			{
+				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"},
+			}
+		},
 	}
 };
+var result = await graphClient.Chats.PostAsync(requestBody);
 
-await graphClient.Chats
-	.Request()
-	.AddAsync(chat);
 
 ```

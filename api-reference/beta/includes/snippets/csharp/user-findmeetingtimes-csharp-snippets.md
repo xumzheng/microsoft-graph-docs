@@ -4,68 +4,66 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attendees = new List<AttendeeBase>()
+var requestBody = new FindMeetingTimesRequestBody
 {
-	new AttendeeBase
+	Attendees = new List<Object>
 	{
-		Type = AttendeeType.Required,
-		EmailAddress = new EmailAddress
+		new 
 		{
-			Name = "Alex Wilbur",
-			Address = "alexw@contoso.onmicrosoft.com"
-		}
-	}
-};
-
-var locationConstraint = new LocationConstraint
-{
-	IsRequired = false,
-	SuggestLocation = false,
-	Locations = new List<LocationConstraintItem>()
-	{
-		new LocationConstraintItem
-		{
-			ResolveAvailability = false,
-			DisplayName = "Conf room Hood"
-		}
-	}
-};
-
-var timeConstraint = new TimeConstraint
-{
-	ActivityDomain = ActivityDomain.Work,
-	TimeSlots = new List<TimeSlot>()
-	{
-		new TimeSlot
-		{
-			Start = new DateTimeTimeZone
+			AdditionalData = new()
 			{
-				DateTime = "2019-04-16T09:00:00",
-				TimeZone = "Pacific Standard Time"
-			},
-			End = new DateTimeTimeZone
-			{
-				DateTime = "2019-04-18T17:00:00",
-				TimeZone = "Pacific Standard Time"
+				{"type", "required"},
 			}
-		}
+		},
 	}
+	LocationConstraint = new LocationConstraint
+	{
+		IsRequired = "false",
+		SuggestLocation = "false",
+		Locations = new List<Object>
+		{
+			new 
+			{
+				AdditionalData = new()
+				{
+					{"resolveAvailability", "false"},
+					{"displayName", "Conf room Hood"},
+				}
+			},
+		}
+	},
+	TimeConstraint = new TimeConstraint
+	{
+		ActivityDomain = "work",
+		TimeSlots = new List<TimeSlot>
+		{
+			new TimeSlot
+			{
+				Start = new DateTimeTimeZone
+				{
+					DateTime = "2019-04-16T09:00:00",
+					TimeZone = "Pacific Standard Time",
+				},
+				End = new DateTimeTimeZone
+				{
+					DateTime = "2019-04-18T17:00:00",
+					TimeZone = "Pacific Standard Time",
+				},
+			},
+		}
+	},
+	IsOrganizerOptional = "false",
+	MeetingDuration = "PT1H",
+	ReturnSuggestionReasons = "true",
+	MinimumAttendeePercentage = "100",
 };
+var result = await graphClient.Me.FindMeetingTimes.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "outlook.timezone="Pacific Standard Time"");
+});
 
-var isOrganizerOptional = false;
-
-var meetingDuration = new Duration("PT1H");
-
-var returnSuggestionReasons = true;
-
-var minimumAttendeePercentage = (double)100;
-
-await graphClient.Me
-	.FindMeetingTimes(attendees,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
-	.Request()
-	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-	.PostAsync();
 
 ```

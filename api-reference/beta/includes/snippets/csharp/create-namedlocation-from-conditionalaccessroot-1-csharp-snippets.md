@@ -4,27 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var namedLocation = new IpNamedLocation
+var requestBody = new NamedLocation
 {
+	@odata.type = "#microsoft.graph.ipNamedLocation",
 	DisplayName = "Untrusted IP named location",
-	IsTrusted = false,
-	IpRanges = new List<IpRange>()
+	AdditionalData = new()
 	{
-		new IPv4CidrRange
+		{"isTrusted", false},
+		{"ipRanges", new List<Object>
 		{
-			CidrAddress = "12.34.221.11/22"
-		},
-		new IPv6CidrRange
-		{
-			CidrAddress = "2001:0:9d38:90d6:0:0:0:0/63"
 		}
 	}
 };
+var result = await graphClient.Identity.ConditionalAccess.NamedLocations.PostAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.NamedLocations
-	.Request()
-	.AddAsync(namedLocation);
 
 ```

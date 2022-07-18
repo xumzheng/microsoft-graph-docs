@@ -4,41 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var deviceRegistrationPolicy = new DeviceRegistrationPolicy
+var requestBody = new DeviceRegistrationPolicyRequestBody
 {
-	Id = "deviceRegistrationPolicy",
-	DisplayName = "Device Registration Policy",
-	Description = "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
-	UserDeviceQuota = 50,
-	MultiFactorAuthConfiguration = MultiFactorAuthConfiguration.NotRequired,
-	AzureADRegistration = new AzureADRegistrationPolicy
+	AdditionalData = new()
 	{
-		AppliesTo = PolicyScope.None,
-		IsAdminConfigurable = false,
-		AllowedUsers = new List<String>()
-		{
-		},
-		AllowedGroups = new List<String>()
-		{
-		}
-	},
-	AzureADJoin = new AzureAdJoinPolicy
-	{
-		AppliesTo = PolicyScope.None,
-		IsAdminConfigurable = true,
-		AllowedUsers = new List<String>()
-		{
-		},
-		AllowedGroups = new List<String>()
-		{
-		}
+		{"id", "deviceRegistrationPolicy"},
+		{"displayName", "Device Registration Policy"},
+		{"description", "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks"},
+		{"userDeviceQuota", },
+		{"multiFactorAuthConfiguration", "0"},
 	}
 };
+await graphClient.DeviceRegistrationPolicy.PutAsync(requestBody);
 
-await graphClient.DeviceRegistrationPolicy
-	.Request()
-	.PutAsync(deviceRegistrationPolicy);
 
 ```

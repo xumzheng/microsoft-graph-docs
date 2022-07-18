@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var workPosition = new WorkPosition
+var requestBody = new WorkPosition
 {
 	Detail = new PositionDetail
 	{
@@ -17,22 +18,20 @@ var workPosition = new WorkPosition
 			OfficeLocation = "AW23/344",
 			Address = new PhysicalAddress
 			{
-				Type = PhysicalAddressType.Business,
+				Type = "business",
 				Street = "123 Patriachy Ponds",
 				City = "Moscow",
 				CountryOrRegion = "Russian Federation",
-				PostalCode = "RU-34621"
+				PostalCode = "RU-34621",
 			},
-			WebUrl = "https://www.adventureworks.com"
+			WebUrl = "https://www.adventureworks.com",
 		},
 		JobTitle = "Senior Product Branding Manager II",
-		Role = "consulting"
+		Role = "consulting",
 	},
-	IsCurrent = true
+	IsCurrent = true,
 };
+var result = await graphClient.Me.Profile.Positions.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Positions
-	.Request()
-	.AddAsync(workPosition);
 
 ```

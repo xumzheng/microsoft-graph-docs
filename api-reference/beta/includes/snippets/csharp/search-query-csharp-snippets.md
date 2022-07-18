@@ -4,37 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var requests = new List<SearchRequestObject>()
+var requestBody = new RequestsRequestBody
 {
-	new SearchRequestObject
+	Requests = new List<SearchRequest>
 	{
-		EntityTypes = new List<EntityType>()
+		new SearchRequest
 		{
-			EntityType.ExternalItem
+			AdditionalData = new()
+			{
+				{"entityTypes", new List<String>
+				{
+					"externalItem",
+				}
+				{"contentSources", new List<String>
+				{
+					"/external/connections/connectionfriendlyname",
+				}
+				{"from", },
+				{"size", },
+				{"fields", new List<String>
+				{
+					"title",
+					"description",
+				}
+			}
 		},
-		ContentSources = new List<String>()
-		{
-			"/external/connections/connectionfriendlyname"
-		},
-		Query = new SearchQuery
-		{
-			QueryString = "contoso product"
-		},
-		From = 0,
-		Size = 25,
-		Fields = new List<String>()
-		{
-			"title",
-			"description"
-		}
 	}
 };
+var result = await graphClient.Search.Query.PostAsync(requestBody);
 
-await graphClient.Search
-	.Query(requests)
-	.Request()
-	.PostAsync();
 
 ```

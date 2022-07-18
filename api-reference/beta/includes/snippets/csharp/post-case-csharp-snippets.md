@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var @case = new Microsoft.Graph.Ediscovery.Case
+var requestBody = new Case
 {
-	DisplayName = "My Case 1"
+	DisplayName = "My Case 1",
 };
+var result = await graphClient.Compliance.Ediscovery.Cases.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases
-	.Request()
-	.AddAsync(@case);
 
 ```

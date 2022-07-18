@@ -4,18 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var threatAssessmentRequest = new EmailFileAssessmentRequestObject
+var requestBody = new ThreatAssessmentRequest
 {
-	RecipientEmail = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
-	ExpectedAssessment = ThreatExpectedAssessment.Block,
-	Category = ThreatCategory.Malware,
-	ContentData = "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
+	@odata.type = "#microsoft.graph.emailFileAssessmentRequest",
+	ExpectedAssessment = "block",
+	Category = "malware",
+	AdditionalData = new()
+	{
+		{"recipientEmail", "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"},
+		{"contentData", "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."},
+	}
 };
+var result = await graphClient.InformationProtection.ThreatAssessmentRequests.PostAsync(requestBody);
 
-await graphClient.InformationProtection.ThreatAssessmentRequests
-	.Request()
-	.AddAsync(threatAssessmentRequest);
 
 ```

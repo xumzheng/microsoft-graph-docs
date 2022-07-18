@@ -4,23 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var callbackUri = "https://bot.contoso.com/api/calls";
-
-var acceptedModalities = new List<Modality>()
+var requestBody = new AnswerRequestBody
 {
-	Modality.Audio
+	CallbackUri = "https://bot.contoso.com/api/calls",
+	AcceptedModalities = new List<Modality>
+	{
+		"audio",
+	}
+	MediaConfig = new MediaConfig
+	{
+		@odata.type = "#microsoft.graph.appHostedMediaConfig",
+		AdditionalData = new()
+		{
+			{"blob", "<Media Session Configuration Blob>"},
+		}
+	},
 };
+await graphClient.Communications.Calls["call-id"].Answer.PostAsync(requestBody);
 
-var mediaConfig = new AppHostedMediaConfig
-{
-	Blob = "<Media Session Configuration Blob>"
-};
-
-await graphClient.Communications.Calls["{call-id}"]
-	.Answer(callbackUri,mediaConfig,acceptedModalities,null,null)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var mobilityManagementPolicy = new MobilityManagementPolicy
+var requestBody = new MobilityManagementPolicy
 {
-	ComplianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance",
-	DiscoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
-	TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx"
+	@odata.type = "#microsoft.graph.mobilityManagementPolicy",
+	ComplianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance",
+	DiscoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc",
+	TermsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx",
 };
+await graphClient.Policies.MobileAppManagementPolicies["mobilityManagementPolicy-id"].PatchAsync(requestBody);
 
-await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"]
-	.Request()
-	.UpdateAsync(mobilityManagementPolicy);
 
 ```

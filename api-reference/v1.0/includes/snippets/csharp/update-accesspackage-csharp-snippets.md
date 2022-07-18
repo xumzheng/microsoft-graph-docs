@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackage = new AccessPackage
+var requestBody = new AccessPackage
 {
-	DisplayName = "Access Package New Name"
+	DisplayName = "Access Package New Name",
 };
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["accessPackage-id"].PatchAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"]
-	.Request()
-	.UpdateAsync(accessPackage);
 
 ```

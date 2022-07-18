@@ -4,46 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var @event = new Event
+var requestBody = new Event
 {
 	Subject = "Let's go for lunch",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.Html,
-		Content = "Does late morning work for you?"
+		ContentType = "HTML",
+		Content = "Does late morning work for you?",
 	},
 	Start = new DateTimeTimeZone
 	{
 		DateTime = "2019-06-16T12:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2019-06-16T14:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	Location = new Location
 	{
-		DisplayName = "Harry's Bar"
+		DisplayName = "Harry's Bar",
 	},
-	Attendees = new List<Attendee>()
+	Attendees = new List<Object>
 	{
-		new Attendee
+		new 
 		{
-			EmailAddress = new EmailAddress
+			AdditionalData = new()
 			{
-				Address = "adelev@contoso.onmicrosoft.com",
-				Name = "Adele Vance"
-			},
-			Type = AttendeeType.Required
-		}
+				{"type", "required"},
+			}
+		},
 	}
 };
+var result = await graphClient.Groups["group-id"].Events.PostAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Events
-	.Request()
-	.AddAsync(@event);
 
 ```

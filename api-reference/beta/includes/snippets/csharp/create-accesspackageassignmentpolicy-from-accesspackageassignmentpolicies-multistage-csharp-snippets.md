@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
+var requestBody = new AccessPackageAssignmentPolicy
 {
 	AccessPackageId = "string (identifier)",
 	DisplayName = "Users from connected organizations can request",
@@ -18,7 +19,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 	{
 		ScopeType = "AllExistingConnectedOrganizationSubjects",
 		AcceptRequests = true,
-		AllowedRequestors = new List<UserSet>()
+		AllowedRequestors = new List<UserSet>
 		{
 		}
 	},
@@ -28,7 +29,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 		IsApprovalRequiredForExtension = false,
 		IsRequestorJustificationRequired = true,
 		ApprovalMode = "Serial",
-		ApprovalStages = new List<ApprovalStage>()
+		ApprovalStages = new List<ApprovalStage>
 		{
 			new ApprovalStage
 			{
@@ -36,27 +37,36 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 				IsApproverJustificationRequired = true,
 				IsEscalationEnabled = true,
 				EscalationTimeInMinutes = 11520,
-				PrimaryApprovers = new List<UserSet>()
+				PrimaryApprovers = new List<UserSet>
 				{
-					new GroupMembers
+					new UserSet
 					{
+						@odata.type = "#microsoft.graph.groupMembers",
 						IsBackup = true,
-						Id = "string (identifier)",
-						Description = "group for users from connected organizations which have no external sponsor"
+						AdditionalData = new()
+						{
+							{"id", "string (identifier)"},
+							{"description", "group for users from connected organizations which have no external sponsor"},
+						}
 					},
-					new ExternalSponsors
+					new UserSet
 					{
-						IsBackup = false
-					}
-				},
-				EscalationApprovers = new List<UserSet>()
+						@odata.type = "#microsoft.graph.externalSponsors",
+						IsBackup = false,
+					},
+				}
+				EscalationApprovers = new List<UserSet>
 				{
-					new SingleUser
+					new UserSet
 					{
+						@odata.type = "#microsoft.graph.singleUser",
 						IsBackup = true,
-						Id = "string (identifier)",
-						Description = "user if the external sponsor does not respond"
-					}
+						AdditionalData = new()
+						{
+							{"id", "string (identifier)"},
+							{"description", "user if the external sponsor does not respond"},
+						}
+					},
 				}
 			},
 			new ApprovalStage
@@ -65,29 +75,38 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 				IsApproverJustificationRequired = true,
 				IsEscalationEnabled = true,
 				EscalationTimeInMinutes = 11520,
-				PrimaryApprovers = new List<UserSet>()
+				PrimaryApprovers = new List<UserSet>
 				{
-					new GroupMembers
+					new UserSet
 					{
+						@odata.type = "#microsoft.graph.groupMembers",
 						IsBackup = true,
-						Id = "string (identifier)",
-						Description = "group for users from connected organizations which have no internal sponsor"
+						AdditionalData = new()
+						{
+							{"id", "string (identifier)"},
+							{"description", "group for users from connected organizations which have no internal sponsor"},
+						}
 					},
-					new InternalSponsors
+					new UserSet
 					{
-						IsBackup = false
-					}
-				},
-				EscalationApprovers = new List<UserSet>()
-				{
-					new SingleUser
-					{
-						IsBackup = true,
-						Id = "string (identifier)",
-						Description = "user if the internal sponsor does not respond"
-					}
+						@odata.type = "#microsoft.graph.internalSponsors",
+						IsBackup = false,
+					},
 				}
-			}
+				EscalationApprovers = new List<UserSet>
+				{
+					new UserSet
+					{
+						@odata.type = "#microsoft.graph.singleUser",
+						IsBackup = true,
+						AdditionalData = new()
+						{
+							{"id", "string (identifier)"},
+							{"description", "user if the internal sponsor does not respond"},
+						}
+					},
+				}
+			},
 		}
 	},
 	AccessReviewSettings = new AssignmentReviewSettings
@@ -97,14 +116,12 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 		ReviewerType = "Self",
 		StartDateTime = DateTimeOffset.Parse("2020-04-01T07:59:59.998Z"),
 		DurationInDays = 25,
-		Reviewers = new List<UserSet>()
+		Reviewers = new List<UserSet>
 		{
 		}
-	}
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies
-	.Request()
-	.AddAsync(accessPackageAssignmentPolicy);
 
 ```

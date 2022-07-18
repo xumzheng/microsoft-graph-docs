@@ -4,22 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var noncustodialDataSource = new Microsoft.Graph.Ediscovery.NoncustodialDataSource
+var requestBody = new NoncustodialDataSource
 {
 	ApplyHoldToSource = false,
-	DataSource = new SiteSource
+	DataSource = new 
 	{
-		Site = new Site
+		@odata.type = "microsoft.graph.ediscovery.siteSource",
+		AdditionalData = new()
 		{
-			WebUrl = "https://contoso.sharepoint.com/sites/SecretSite"
 		}
-	}
+	},
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].NoncustodialDataSources.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].NoncustodialDataSources
-	.Request()
-	.AddAsync(noncustodialDataSource);
 
 ```

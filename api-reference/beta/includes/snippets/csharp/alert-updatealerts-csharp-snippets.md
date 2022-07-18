@@ -4,40 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var value = new List<Alert>()
+var requestBody = new ValueRequestBody
 {
-	new Alert
+	Value = new List<Object>
 	{
-		AssignedTo = "String",
-		ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
-		Comments = new List<String>()
+		new 
 		{
-			"String"
+			AdditionalData = new()
+			{
+				{"assignedTo", "String"},
+				{"closedDateTime", "String (timestamp)"},
+				{"comments", new List<String>
+				{
+					"String",
+				}
+				{"id", "String (identifier)"},
+				{"tags", new List<String>
+				{
+					"String",
+				}
+			}
 		},
-		Feedback = new AlertFeedback
-		{
-		},
-		Id = "String (identifier)",
-		Status = new AlertStatus
-		{
-		},
-		Tags = new List<String>()
-		{
-			"String"
-		},
-		VendorInformation = new SecurityVendorInformation
-		{
-			Provider = "String",
-			Vendor = "String"
-		}
 	}
 };
+var result = await graphClient.Security.Alerts.UpdateAlerts.PostAsync(requestBody);
 
-await graphClient.Security.Alerts
-	.UpdateAlerts(value)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var noncustodialDataSource = new Microsoft.Graph.Ediscovery.NoncustodialDataSource
+var requestBody = new NoncustodialDataSource
 {
 	ApplyHoldToSource = true,
-	DataSource = new UserSource
+	DataSource = new 
 	{
-		Email = "adelev@contoso.com"
-	}
+		@odata.type = "microsoft.graph.ediscovery.userSource",
+		AdditionalData = new()
+		{
+			{"email", "adelev@contoso.com"},
+		}
+	},
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["case-id"].NoncustodialDataSources.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].NoncustodialDataSources
-	.Request()
-	.AddAsync(noncustodialDataSource);
 
 ```

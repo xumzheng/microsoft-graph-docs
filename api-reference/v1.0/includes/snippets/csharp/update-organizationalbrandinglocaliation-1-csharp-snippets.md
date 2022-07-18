@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var organizationalBranding = new OrganizationalBranding
+var requestBody = new OrganizationalBranding
 {
 	SignInPageText = "Default",
-	UsernameHintText = "DefaultHint"
+	UsernameHintText = "DefaultHint",
 };
+await graphClient.Organization["organization-id"].Branding.PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Accept-Language", "0");
+});
 
-await graphClient.Organization["{organization-id}"].Branding
-	.Request()
-	.Header("Accept-Language","0")
-	.UpdateAsync(organizationalBranding);
 
 ```

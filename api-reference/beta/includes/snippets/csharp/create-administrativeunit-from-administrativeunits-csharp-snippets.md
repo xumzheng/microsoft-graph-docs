@@ -4,17 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var administrativeUnit = new AdministrativeUnit
+var requestBody = new AdministrativeUnit
 {
 	DisplayName = "Seattle District Technical Schools",
 	Description = "Seattle district technical schools administration",
-	Visibility = "HiddenMembership"
+	AdditionalData = new()
+	{
+		{"membershipType", "Dynamic"},
+		{"membershipRule", "(user.country -eq "United States")"},
+		{"membershipRuleProcessingState", "On"},
+	}
 };
+var result = await graphClient.AdministrativeUnits.PostAsync(requestBody);
 
-await graphClient.AdministrativeUnits
-	.Request()
-	.AddAsync(administrativeUnit);
 
 ```

@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var customPrompt = new MediaPrompt
+var requestBody = new StartHoldMusicRequestBody
 {
-	MediaInfo = new MediaInfo
+	CustomPrompt = new Prompt
 	{
-		Uri = "https://bot.contoso.com/onHold.wav"
-	}
+		@odata.type = "#microsoft.graph.mediaPrompt",
+		AdditionalData = new()
+		{
+		}
+	},
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
 };
+var result = await graphClient.Communications.Calls["call-id"].Participants["participant-id"].StartHoldMusic.PostAsync(requestBody);
 
-var clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
-
-await graphClient.Communications.Calls["{call-id}"].Participants["{participant-id}"]
-	.StartHoldMusic(customPrompt,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

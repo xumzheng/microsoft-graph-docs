@@ -4,40 +4,55 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Review inactive guests on teams",
 	DescriptionForAdmins = "Control guest user access to our teams.",
 	DescriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more.",
-	InstanceEnumerationScope = new AccessReviewQueryScope
+	InstanceEnumerationScope = new AccessReviewScope
 	{
-		Query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
-		QueryType = "MicrosoftGraph"
-	},
-	Scope = new AccessReviewInactiveUsersQueryScope
-	{
-		Query = "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
-		QueryType = "MicrosoftGraph",
-		InactiveDuration = new Duration("P30D")
-	},
-	Reviewers = new List<AccessReviewReviewerScope>()
-	{
-		new AccessReviewReviewerScope
+		@odata.type = "#microsoft.graph.accessReviewQueryScope",
+		AdditionalData = new()
 		{
-			Query = "./owners",
-			QueryType = "MicrosoftGraph"
+			{"query", "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"},
+			{"queryType", "MicrosoftGraph"},
 		}
 	},
-	FallbackReviewers = new List<AccessReviewReviewerScope>()
+	Scope = new AccessReviewScope
 	{
-		new AccessReviewReviewerScope
+		@odata.type = "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+		AdditionalData = new()
 		{
-			Query = "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-			QueryType = "MicrosoftGraph"
+			{"query", "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"},
+			{"queryType", "MicrosoftGraph"},
+			{"inactiveDuration", "P30D"},
 		}
 	},
+	Reviewers = new List<Object>
+	{
+		new 
+		{
+			AdditionalData = new()
+			{
+				{"query", "./owners"},
+				{"queryType", "MicrosoftGraph"},
+			}
+		},
+	}
+	FallbackReviewers = new List<Object>
+	{
+		new 
+		{
+			AdditionalData = new()
+			{
+				{"query", "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"},
+				{"queryType", "MicrosoftGraph"},
+			}
+		},
+	}
 	Settings = new AccessReviewScheduleSettings
 	{
 		MailNotificationsEnabled = true,
@@ -49,24 +64,22 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 		{
 			Pattern = new RecurrencePattern
 			{
-				Type = RecurrencePatternType.AbsoluteMonthly,
+				Type = "absoluteMonthly",
 				DayOfMonth = 5,
-				Interval = 3
+				Interval = 3,
 			},
 			Range = new RecurrenceRange
 			{
-				Type = RecurrenceRangeType.NoEnd,
-				StartDate = new Date(2020,5,4)
-			}
+				Type = "noEnd",
+				StartDate = "2020-05-04T00:00:00.000Z",
+			},
 		},
 		DefaultDecisionEnabled = true,
 		DefaultDecision = "Deny",
-		AutoApplyDecisionsEnabled = true
-	}
+		AutoApplyDecisionsEnabled = true,
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

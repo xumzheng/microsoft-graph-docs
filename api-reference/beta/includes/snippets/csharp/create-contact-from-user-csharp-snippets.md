@@ -4,40 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contact = new Contact
+var requestBody = new Contact
 {
 	GivenName = "Pavel",
 	Surname = "Bansky",
-	EmailAddresses = new List<TypedEmailAddress>()
+	EmailAddresses = new List<Object>
 	{
-		new TypedEmailAddress
+		new 
 		{
-			Address = "pavelb@contoso.onmicrosoft.com",
-			Name = "Pavel Bansky",
-			Type = EmailType.Personal
+			AdditionalData = new()
+			{
+				{"address", "pavelb@contoso.onmicrosoft.com"},
+				{"name", "Pavel Bansky"},
+				{"type", "personal"},
+			}
 		},
-		new TypedEmailAddress
+		new 
 		{
-			Address = "pavelb@fabrikam.onmicrosoft.com",
-			Name = "Pavel Bansky",
-			Type = EmailType.Other,
-			OtherLabel = "Volunteer work"
-		}
-	},
-	Phones = new List<Phone>()
+			AdditionalData = new()
+			{
+				{"address", "pavelb@fabrikam.onmicrosoft.com"},
+				{"name", "Pavel Bansky"},
+				{"type", "other"},
+				{"otherLabel", "Volunteer work"},
+			}
+		},
+	}
+	Phones = new List<Phone>
 	{
 		new Phone
 		{
 			Number = "+1 732 555 0102",
-			Type = PhoneType.Business
-		}
+			Type = "business",
+		},
 	}
 };
+var result = await graphClient.Me.Contacts.PostAsync(requestBody);
 
-await graphClient.Me.Contacts
-	.Request()
-	.AddAsync(contact);
 
 ```

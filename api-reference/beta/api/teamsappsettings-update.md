@@ -64,6 +64,8 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsappsettings"
@@ -78,6 +80,13 @@ Content-Type: application/json
   "isChatResourceSpecificConsentEnabled": "true"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamsappsettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

@@ -4,34 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachment = new ItemAttachment
+var requestBody = new Attachment
 {
+	@odata.type = "#microsoft.graph.itemAttachment",
 	Name = "Holiday event",
-	Item = new Event
+	AdditionalData = new()
 	{
-		Subject = "Discuss gifts for children",
-		Body = new ItemBody
-		{
-			ContentType = BodyType.Html,
-			Content = "Let's look for funding!"
-		},
-		Start = new DateTimeTimeZone
-		{
-			DateTime = "2016-12-02T18:00:00",
-			TimeZone = "Pacific Standard Time"
-		},
-		End = new DateTimeTimeZone
-		{
-			DateTime = "2016-12-02T19:00:00",
-			TimeZone = "Pacific Standard Time"
-		}
 	}
 };
+var result = await graphClient.Me.Events["event-id"].Attachments.PostAsync(requestBody);
 
-await graphClient.Me.Events["{event-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
 
 ```

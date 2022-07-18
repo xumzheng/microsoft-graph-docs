@@ -4,18 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var timeOffReason = new TimeOffReason
+var requestBody = new TimeOffReason-idRequestBody
 {
-	DisplayName = "Vacation",
-	IconType = TimeOffReasonIconType.Plane,
-	IsActive = true
+	AdditionalData = new()
+	{
+		{"displayName", "Vacation"},
+		{"iconType", "plane"},
+		{"isActive", true},
+	}
 };
+await graphClient.Teams["team-id"].Schedule.TimeOffReasons["timeOffReason-id"].PutAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+});
 
-await graphClient.Teams["{team-id}"].Schedule.TimeOffReasons["{timeOffReason-id}"]
-	.Request()
-	.Header("Prefer","return=representation")
-	.PutAsync(timeOffReason);
 
 ```

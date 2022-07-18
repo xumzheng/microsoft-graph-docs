@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var extension = new OpenTypeExtension
+var requestBody = new Extension
 {
-	ExtensionName = "Com.Contoso.Deal",
-	AdditionalData = new Dictionary<string, object>()
+	@odata.type = "microsoft.graph.openTypeExtension",
+	AdditionalData = new()
 	{
+		{"extensionName", "Com.Contoso.Deal"},
 		{"companyName", "Alpine Skis"},
-		{"dealValue", "1010100"},
-		{"expirationDate", "2015-07-03T13:04:00Z"}
+		{"dealValue", },
+		{"expirationDate", "2015-07-03T13:04:00.000Z"},
 	}
 };
+var result = await graphClient.Groups["group-id"].Events["event-id"].Extensions.PostAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Events["{event-id}"].Extensions
-	.Request()
-	.AddAsync(extension);
 
 ```

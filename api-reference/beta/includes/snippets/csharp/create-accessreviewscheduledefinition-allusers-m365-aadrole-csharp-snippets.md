@@ -4,56 +4,60 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Review employee access to LinkedIn",
 	DescriptionForAdmins = "Review employee access to LinkedIn",
-	Scope = new PrincipalResourceMembershipsScope
+	Scope = new AccessReviewScope
 	{
-		PrincipalScopes = new List<AccessReviewScope>()
+		@odata.type = "#microsoft.graph.principalResourceMembershipsScope",
+		AdditionalData = new()
 		{
-			new AccessReviewQueryScope
+			{"principalScopes", new List<Object>
 			{
-				Query = "/users",
-				QueryType = "MicrosoftGraph"
+			}
+			{"resourceScopes", new List<Object>
+			{
+			}
+		}
+	},
+	Reviewers = new List<Object>
+	{
+		new 
+		{
+			AdditionalData = new()
+			{
+				{"query", "./manager"},
+				{"queryType", "MicrosoftGraph"},
+				{"queryRoot", "decisions"},
 			}
 		},
-		ResourceScopes = new List<AccessReviewScope>()
+	}
+	BackupReviewers = new List<Object>
+	{
+		new 
 		{
-			new AccessReviewQueryScope
+			AdditionalData = new()
 			{
-				Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
-				QueryType = "MicrosoftGraph"
+				{"query", "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"},
+				{"queryType", "MicrosoftGraph"},
 			}
-		}
-	},
-	Reviewers = new List<AccessReviewReviewerScope>()
+		},
+	}
+	FallbackReviewers = new List<Object>
 	{
-		new AccessReviewReviewerScope
+		new 
 		{
-			Query = "./manager",
-			QueryType = "MicrosoftGraph",
-			QueryRoot = "decisions"
-		}
-	},
-	BackupReviewers = new List<AccessReviewReviewerScope>()
-	{
-		new AccessReviewReviewerScope
-		{
-			Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-			QueryType = "MicrosoftGraph"
-		}
-	},
-	FallbackReviewers = new List<AccessReviewReviewerScope>()
-	{
-		new AccessReviewReviewerScope
-		{
-			Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-			QueryType = "MicrosoftGraph"
-		}
-	},
+			AdditionalData = new()
+			{
+				{"query", "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"},
+				{"queryType", "MicrosoftGraph"},
+			}
+		},
+	}
 	Settings = new AccessReviewScheduleSettings
 	{
 		MailNotificationsEnabled = true,
@@ -68,22 +72,20 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 		{
 			Pattern = new RecurrencePattern
 			{
-				Type = RecurrencePatternType.AbsoluteMonthly,
+				Type = "absoluteMonthly",
 				Interval = 6,
-				DayOfMonth = 0
+				DayOfMonth = 0,
 			},
 			Range = new RecurrenceRange
 			{
-				Type = RecurrenceRangeType.Numbered,
-				StartDate = new Date(2021,5,5),
-				EndDate = new Date(2022,5,5)
-			}
-		}
-	}
+				Type = "numbered",
+				StartDate = "2021-05-05",
+				EndDate = "2022-05-05",
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

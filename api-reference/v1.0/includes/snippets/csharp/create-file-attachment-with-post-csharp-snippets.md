@@ -4,28 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var post = new Post
+var requestBody = new PostRequestBody
 {
-	Body = new ItemBody
+	Post = new Post
 	{
-		ContentType = BodyType.Text,
-		Content = "Which quarter does that file cover? See my attachment."
-	},
-	Attachments = new PostAttachmentsCollectionPage()
-	{
-		new FileAttachment
+		Body = new ItemBody
 		{
-			Name = "Another file as attachment",
-			ContentBytes = Encoding.ASCII.GetBytes("VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu")
+			ContentType = "text",
+			Content = "Which quarter does that file cover? See my attachment.",
+		},
+		Attachments = new List<Attachment>
+		{
+			new Attachment
+			{
+				@odata.type = "#microsoft.graph.fileAttachment",
+				Name = "Another file as attachment",
+				AdditionalData = new()
+				{
+					{"contentBytes", "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"},
+				}
+			},
 		}
-	}
+	},
 };
+await graphClient.Groups["group-id"].Threads["conversationThread-id"].Reply.PostAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"]
-	.Reply(post)
-	.Request()
-	.PostAsync();
 
 ```

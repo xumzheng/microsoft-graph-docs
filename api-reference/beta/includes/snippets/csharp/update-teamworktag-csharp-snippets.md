@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var teamworkTag = new TeamworkTag
+var requestBody = new TeamworkTag
 {
-	DisplayName = "Finance"
+	DisplayName = "Finance",
 };
+await graphClient.Teams["team-id"].Tags["teamworkTag-id"].PatchAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Tags["{teamworkTag-id}"]
-	.Request()
-	.UpdateAsync(teamworkTag);
 
 ```

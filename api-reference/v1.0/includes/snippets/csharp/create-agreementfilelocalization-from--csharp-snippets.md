@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var agreementFileLocalization = new AgreementFileLocalization
+var requestBody = new AgreementFileLocalization
 {
 	FileName = "Contoso ToU for guest users (French)",
 	Language = "fr-FR",
@@ -15,12 +16,10 @@ var agreementFileLocalization = new AgreementFileLocalization
 	DisplayName = "Contoso ToU for guest users (French)",
 	FileData = new AgreementFileData
 	{
-		Data = Convert.FromBase64String("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data")
-	}
+		Data = Convert.FromBase64String("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"),
+	},
 };
+var result = await graphClient.IdentityGovernance.TermsOfUse.Agreements["agreement-id"].Files.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.TermsOfUse.Agreements["{agreement-id}"].Files
-	.Request()
-	.AddAsync(agreementFileLocalization);
 
 ```

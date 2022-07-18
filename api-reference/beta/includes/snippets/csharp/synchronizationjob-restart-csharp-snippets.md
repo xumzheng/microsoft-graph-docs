@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var criteria = new SynchronizationJobRestartCriteria
+var requestBody = new CriteriaRequestBody
 {
-	ResetScope = SynchronizationJobRestartScope.Escrows | SynchronizationJobRestartScope.Watermark | SynchronizationJobRestartScope.QuarantineState
+	Criteria = new SynchronizationJobRestartCriteria
+	{
+		ResetScope = "Watermark, Escrows, QuarantineState",
+	},
 };
+await graphClient.ServicePrincipals["servicePrincipal-id"].Synchronization.Jobs["synchronizationJob-id"].Restart.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Authorization", "Bearer <token>");
+});
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
-	.Restart(criteria)
-	.Request()
-	.Header("Authorization","Bearer <token>")
-	.PostAsync();
 
 ```

@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var listItem = new ListItem
+var requestBody = new ListItem
 {
-	Fields = new FieldValueSet
+	Fields = new 
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new()
 		{
 			{"Title", "Widget"},
 			{"Color", "Purple"},
-			{"Weight", "32"}
+			{"Weight", },
 		}
-	}
+	},
 };
+var result = await graphClient.Sites["site-id"].Lists["list-id"].Items.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items
-	.Request()
-	.AddAsync(listItem);
 
 ```

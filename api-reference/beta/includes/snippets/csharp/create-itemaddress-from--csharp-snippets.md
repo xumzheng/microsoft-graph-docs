@@ -4,25 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var itemAddress = new ItemAddress
+var requestBody = new ItemAddress
 {
 	DisplayName = "Home",
 	Detail = new PhysicalAddress
 	{
-		Type = PhysicalAddressType.Home,
+		Type = "home",
 		PostOfficeBox = null,
 		Street = "221B Baker Street",
 		City = "London",
 		State = null,
 		CountryOrRegion = "United Kingdom",
-		PostalCode = "E14 3TD"
-	}
+		PostalCode = "E14 3TD",
+	},
 };
+var result = await graphClient.Me.Profile.Addresses.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Addresses
-	.Request()
-	.AddAsync(itemAddress);
 
 ```

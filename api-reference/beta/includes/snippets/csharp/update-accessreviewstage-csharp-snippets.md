@@ -4,35 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewStage = new AccessReviewStage
+var requestBody = new AccessReviewStage
 {
-	Reviewers = new List<AccessReviewReviewerScope>()
+	@odata.type = "#microsoft.graph.accessReviewStage",
+	Reviewers = new List<Object>
 	{
-		new AccessReviewReviewerScope
+		new 
 		{
-			Query = "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
-			QueryType = "MicrosoftGraph"
-		}
-	},
-	FallbackReviewers = new List<AccessReviewReviewerScope>()
-	{
-		new AccessReviewReviewerScope
-		{
-			Query = "/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
-			QueryType = "MicrosoftGraph"
+			AdditionalData = new()
+			{
+				{"query", "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"},
+				{"queryType", "MicrosoftGraph"},
+			}
 		},
-		new AccessReviewReviewerScope
+	}
+	FallbackReviewers = new List<Object>
+	{
+		new 
 		{
-			Query = "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
-			QueryType = "MicrosoftGraph"
-		}
+			AdditionalData = new()
+			{
+				{"query", "/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"},
+				{"queryType", "MicrosoftGraph"},
+			}
+		},
+		new 
+		{
+			AdditionalData = new()
+			{
+				{"query", "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"},
+				{"queryType", "MicrosoftGraph"},
+			}
+		},
 	}
 };
+await graphClient.IdentityGovernance.AccessReviews.Definitions["accessReviewScheduleDefinition-id"].Instances["accessReviewInstance-id"].Stages["accessReviewStage-id"].PatchAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"].Stages["{accessReviewStage-id}"]
-	.Request()
-	.UpdateAsync(accessReviewStage);
 
 ```

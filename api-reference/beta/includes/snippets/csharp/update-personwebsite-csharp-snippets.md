@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var personWebsite = new PersonWebsite
+var requestBody = new PersonWebsite
 {
-	Description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
+	Description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway",
 };
+await graphClient.Me.Profile.Websites["personWebsite-id"].PatchAsync(requestBody);
 
-await graphClient.Me.Profile.Websites["{personWebsite-id}"]
-	.Request()
-	.UpdateAsync(personWebsite);
 
 ```

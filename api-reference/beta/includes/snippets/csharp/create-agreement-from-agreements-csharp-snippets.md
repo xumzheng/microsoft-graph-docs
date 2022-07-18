@@ -4,29 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var agreement = new Agreement
+var requestBody = new Agreement
 {
 	DisplayName = "Contoso ToU for guest users",
 	IsViewingBeforeAcceptanceRequired = true,
-	Files = new AgreementFilesCollectionPage()
+	Files = new List<AgreementFileLocalization>
 	{
 		new AgreementFileLocalization
 		{
-			FileName = "TOU.pdf",
-			Language = "en",
-			IsDefault = true,
-			FileData = new AgreementFileData
+			AdditionalData = new()
 			{
-				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=//truncated-binary")
+				{"fileName", "TOU.pdf"},
+				{"language", "en"},
+				{"isDefault", true},
 			}
-		}
+		},
 	}
 };
+var result = await graphClient.IdentityGovernance.TermsOfUse.Agreements.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.TermsOfUse.Agreements
-	.Request()
-	.AddAsync(agreement);
 
 ```

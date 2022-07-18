@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var chatMessage = new ChatMessage
+var requestBody = new ChatMessage
 {
 	Body = new ItemBody
 	{
-		Content = "Hello World"
-	}
+		Content = "Hello World",
+	},
 };
+var result = await graphClient.Teams["team-id"].Channels["channel-id"].Messages.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
-	.Request()
-	.AddAsync(chatMessage);
 
 ```

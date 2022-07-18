@@ -4,13 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var bookingService = new BookingService
+var requestBody = new BookingService
 {
-	DefaultDuration = new Duration("PT1H30M"),
+	@odata.type = "#microsoft.graph.bookingService",
+	DefaultDuration = "PT1H30M",
 	DefaultLocation = new Location
 	{
+		@odata.type = "#microsoft.graph.location",
 		Address = new PhysicalAddress
 		{
 			City = "Buffalo",
@@ -20,9 +23,10 @@ var bookingService = new BookingService
 			State = "NY",
 			Street = "4567 First Street",
 			Type = null,
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new()
 			{
-				{"type@odata.type", "#microsoft.graph.physicalAddressType"}
+				{"@odata.type", "#microsoft.graph.physicalAddress"},
+				{"type@odata.type", "#microsoft.graph.physicalAddressType"},
 			}
 		},
 		Coordinates = null,
@@ -32,27 +36,28 @@ var bookingService = new BookingService
 		LocationUri = null,
 		UniqueId = null,
 		UniqueIdType = null,
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new()
 		{
 			{"locationType@odata.type", "#microsoft.graph.locationType"},
-			{"uniqueIdType@odata.type", "#microsoft.graph.locationUniqueIdType"}
+			{"uniqueIdType@odata.type", "#microsoft.graph.locationUniqueIdType"},
 		}
 	},
-	DefaultPrice = 10,
-	DefaultPriceType = BookingPriceType.FixedPrice,
-	DefaultReminders = new List<BookingReminder>()
+	DefaultPrice = 10d,
+	DefaultPriceType = "fixedPrice",
+	DefaultReminders = new List<BookingReminder>
 	{
 		new BookingReminder
 		{
 			Message = "Please be reminded that this service is tomorrow.",
-			Offset = new Duration("P1D"),
-			Recipients = BookingReminderRecipients.AllAttendees,
-			AdditionalData = new Dictionary<string, object>()
+			Offset = "P1D",
+			Recipients = "allAttendees",
+			AdditionalData = new()
 			{
-				{"recipients@odata.type", "#microsoft.graph.bookingReminderRecipients"}
+				{"@odata.type", "#microsoft.graph.bookingReminder"},
+				{"recipients@odata.type", "#microsoft.graph.bookingReminderRecipients"},
 			}
-		}
-	},
+		},
+	}
 	Description = "Individual bento box lunch delivery",
 	DisplayName = "Bento",
 	IsLocationOnline = true,
@@ -60,32 +65,34 @@ var bookingService = new BookingService
 	LanguageTag = "en-US",
 	IsHiddenFromCustomers = false,
 	Notes = "Home-cooked special",
-	PostBuffer = new Duration("PT10M"),
-	PreBuffer = new Duration("PT5M"),
+	PostBuffer = "PT10M",
+	PreBuffer = "PT5M",
 	SchedulingPolicy = new BookingSchedulingPolicy
 	{
 		AllowStaffSelection = true,
-		MaximumAdvance = new Duration("P10D"),
-		MinimumLeadTime = new Duration("PT10H"),
+		MaximumAdvance = "P10D",
+		MinimumLeadTime = "PT10H",
 		SendConfirmationsToOwner = true,
-		TimeSlotInterval = new Duration("PT1H")
+		TimeSlotInterval = "PT1H",
+		AdditionalData = new()
+		{
+			{"@odata.type", "#microsoft.graph.bookingSchedulingPolicy"},
+		}
 	},
-	StaffMemberIds = new List<String>()
+	StaffMemberIds = new List<String>
 	{
 		"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
-		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
-	},
+		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
+	}
 	IsAnonymousJoinEnabled = false,
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new()
 	{
 		{"defaultPriceType@odata.type", "#microsoft.graph.bookingPriceType"},
 		{"defaultReminders@odata.type", "#Collection(microsoft.graph.bookingReminder)"},
-		{"staffMemberIds@odata.type", "#Collection(String)"}
+		{"staffMemberIds@odata.type", "#Collection(String)"},
 	}
 };
+var result = await graphClient.BookingBusinesses["bookingBusiness-id"].Services.PostAsync(requestBody);
 
-await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services
-	.Request()
-	.AddAsync(bookingService);
 
 ```

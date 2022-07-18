@@ -4,31 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var adminConsentRequestPolicy = new AdminConsentRequestPolicy
+var requestBody = new AdminConsentRequestPolicyRequestBody
 {
-	IsEnabled = true,
-	NotifyReviewers = true,
-	RemindersEnabled = true,
-	RequestDurationInDays = 5,
-	Reviewers = new List<AccessReviewReviewerScope>()
+	AdditionalData = new()
 	{
-		new AccessReviewReviewerScope
+		{"isEnabled", true},
+		{"notifyReviewers", true},
+		{"remindersEnabled", true},
+		{"requestDurationInDays", },
+		{"reviewers", new List<Object>
 		{
-			Query = "/users/b6879be8-fb87-4482-a72e-18445d2b5c54",
-			QueryType = "MicrosoftGraph"
-		},
-		new AccessReviewReviewerScope
-		{
-			Query = "/users/b3427cc5-bf69-4dcd-95f7-ed1eb432f5e9",
-			QueryType = "MicrosoftGraph"
 		}
 	}
 };
+await graphClient.Policies.AdminConsentRequestPolicy.PutAsync(requestBody);
 
-await graphClient.Policies.AdminConsentRequestPolicy
-	.Request()
-	.PutAsync(adminConsentRequestPolicy);
 
 ```

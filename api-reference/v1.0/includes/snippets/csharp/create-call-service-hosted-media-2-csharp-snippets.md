@@ -4,50 +4,59 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var call = new Call
+var requestBody = new Call
 {
+	@odata.type = "#microsoft.graph.call",
 	CallbackUri = "https://bot.contoso.com/callback",
 	Source = new ParticipantInfo
 	{
 		Identity = new IdentitySet
 		{
-			AdditionalData = new Dictionary<string, object>()
+			@odata.type = "#microsoft.graph.identitySet",
+			AdditionalData = new()
 			{
-				{"applicationInstance", "{\"@odata.type\":\"#microsoft.graph.identity\",\"displayName\":\"Calling Bot\",\"id\":\"3d913abb-aec0-4964-8fa6-3c6850c4f278\"}"}
 			}
 		},
 		CountryCode = null,
 		EndpointType = null,
 		Region = null,
-		LanguageId = null
+		LanguageId = null,
+		AdditionalData = new()
+		{
+			{"@odata.type", "#microsoft.graph.participantInfo"},
+		}
 	},
-	Targets = new List<InvitationParticipantInfo>()
+	Targets = new List<InvitationParticipantInfo>
 	{
 		new InvitationParticipantInfo
 		{
 			Identity = new IdentitySet
 			{
-				AdditionalData = new Dictionary<string, object>()
+				@odata.type = "#microsoft.graph.identitySet",
+				AdditionalData = new()
 				{
-					{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
 				}
+			},
+			AdditionalData = new()
+			{
+				{"@odata.type", "#microsoft.graph.invitationParticipantInfo"},
 			}
-		}
-	},
-	RequestedModalities = new List<Modality>()
+		},
+	}
+	RequestedModalities = new List<Modality>
 	{
-		Modality.Audio
-	},
-	MediaConfig = new ServiceHostedMediaConfig
+		"audio",
+	}
+	MediaConfig = new MediaConfig
 	{
+		@odata.type = "#microsoft.graph.serviceHostedMediaConfig",
 	},
-	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 };
+var result = await graphClient.Communications.Calls.PostAsync(requestBody);
 
-await graphClient.Communications.Calls
-	.Request()
-	.AddAsync(call);
 
 ```

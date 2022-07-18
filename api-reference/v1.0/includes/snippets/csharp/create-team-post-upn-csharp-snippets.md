@@ -4,34 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var team = new Team
+var requestBody = new Team
 {
 	DisplayName = "My Sample Team",
 	Description = "My Sample Team’s Description",
-	Members = new TeamMembersCollectionPage()
+	Members = new List<ConversationMember>
 	{
-		new AadUserConversationMember
+		new ConversationMember
 		{
-			Roles = new List<String>()
+			@odata.type = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<String>
 			{
-				"owner"
-			},
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"}
+				"owner",
 			}
-		}
-	},
-	AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new()
+			{
+				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"},
+			}
+		},
+	}
+	AdditionalData = new()
 	{
-		{"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"}
+		{"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"},
 	}
 };
+var result = await graphClient.Teams.PostAsync(requestBody);
 
-await graphClient.Teams
-	.Request()
-	.AddAsync(team);
 
 ```

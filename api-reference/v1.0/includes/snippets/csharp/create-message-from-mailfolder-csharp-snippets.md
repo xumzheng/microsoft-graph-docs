@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var message = new Message
+var requestBody = new Message
 {
 	ReceivedDateTime = DateTimeOffset.Parse("datetime-value"),
 	SentDateTime = DateTimeOffset.Parse("datetime-value"),
@@ -14,14 +15,12 @@ var message = new Message
 	Subject = "subject-value",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.Text,
-		Content = "content-value"
+		ContentType = "",
+		Content = "content-value",
 	},
-	BodyPreview = "bodyPreview-value"
+	BodyPreview = "bodyPreview-value",
 };
+var result = await graphClient.Me.MailFolders["mailFolder-id"].Messages.PostAsync(requestBody);
 
-await graphClient.Me.MailFolders["{mailFolder-id}"].Messages
-	.Request()
-	.AddAsync(message);
 
 ```

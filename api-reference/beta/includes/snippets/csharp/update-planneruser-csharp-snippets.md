@@ -4,31 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerUser = new PlannerUser
+var requestBody = new PlannerUser
 {
 	FavoritePlanReferences = new PlannerFavoritePlanReferenceCollection
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new()
 		{
-			{"jd8S5gOaFk2S8aWCIAJz42QAAxtD", "{\"@odata.type\":\"#microsoft.graph.plannerFavoritePlanReference\",\"orderHint\":\" !\",\"planTitle\":\"Next Release Discussion\"}"},
-			{"7oTB5aMIAE2rVo-1N-L7RmQAGX2q", "null"}
+			{"7oTB5aMIAE2rVo-1N-L7RmQAGX2q", null},
 		}
 	},
 	RecentPlanReferences = new PlannerRecentPlanReferenceCollection
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new()
 		{
-			{"jd8S5gOaFk2S8aWCIAJz42QAAxtD", "{\"@odata.type\":\"#microsoft.graph.plannerRecentPlanReference\",\"lastAccessedDateTime\":\"2018-01-02T22:49:46.155Z\",\"planTitle\":\"Next Release Discussion\"}"}
 		}
-	}
+	},
 };
+await graphClient.Me.Planner.PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+	requestConfiguration.Headers.Add("If-Match", "W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="");
+});
 
-await graphClient.Me.Planner
-	.Request()
-	.Header("Prefer","return=representation")
-	.Header("If-Match","W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"")
-	.UpdateAsync(plannerUser);
 
 ```

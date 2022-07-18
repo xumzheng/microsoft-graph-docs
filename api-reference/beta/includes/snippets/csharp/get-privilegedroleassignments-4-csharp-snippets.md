@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var privilegedRoleAssignments = await graphClient.PrivilegedRoleAssignments
-	.Request()
-	.Filter("isElevated eq true and expirationDateTime ne null or isElevated eq false")
-	.GetAsync();
+var result = await graphClient.PrivilegedRoleAssignments.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false";
+});
+
 
 ```

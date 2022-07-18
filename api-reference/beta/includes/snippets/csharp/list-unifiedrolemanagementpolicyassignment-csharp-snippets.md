@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var roleManagementPolicyAssignments = await graphClient.Policies.RoleManagementPolicyAssignments
-	.Request()
-	.Filter("scopeId eq '/' and scopeType eq 'Directory'")
-	.GetAsync();
+var result = await graphClient.Policies.RoleManagementPolicyAssignments.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "scopeId%20eq%20'/'%20and%20scopeType%20eq%20'Directory'";
+});
+
 
 ```

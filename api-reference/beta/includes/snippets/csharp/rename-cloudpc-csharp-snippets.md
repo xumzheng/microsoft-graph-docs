@@ -4,13 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var displayName = "Cloud PC-HR";
+await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["cloudPC-id"].Rename.PostAsync();
 
-await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"]
-	.Rename(displayName)
-	.Request()
-	.PostAsync();
 
 ```

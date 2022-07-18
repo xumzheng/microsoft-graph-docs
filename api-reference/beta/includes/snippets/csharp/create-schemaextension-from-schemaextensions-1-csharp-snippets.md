@@ -4,38 +4,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var schemaExtension = new SchemaExtension
+var requestBody = new SchemaExtension
 {
 	Id = "graphlearn_courses",
 	Description = "Graph Learn training courses extensions",
-	TargetTypes = new List<String>()
+	TargetTypes = new List<String>
 	{
-		"Group"
-	},
-	Properties = new List<ExtensionSchemaProperty>()
+		"Group",
+	}
+	Properties = new List<ExtensionSchemaProperty>
 	{
 		new ExtensionSchemaProperty
 		{
-			Name = "courseId",
-			Type = "Integer"
+			AdditionalData = new()
+			{
+				{"name", "courseId"},
+				{"type", "Integer"},
+			}
 		},
 		new ExtensionSchemaProperty
 		{
-			Name = "courseName",
-			Type = "String"
+			AdditionalData = new()
+			{
+				{"name", "courseName"},
+				{"type", "String"},
+			}
 		},
 		new ExtensionSchemaProperty
 		{
-			Name = "courseType",
-			Type = "String"
-		}
+			AdditionalData = new()
+			{
+				{"name", "courseType"},
+				{"type", "String"},
+			}
+		},
 	}
 };
+var result = await graphClient.SchemaExtensions.PostAsync(requestBody);
 
-await graphClient.SchemaExtensions
-	.Request()
-	.AddAsync(schemaExtension);
 
 ```

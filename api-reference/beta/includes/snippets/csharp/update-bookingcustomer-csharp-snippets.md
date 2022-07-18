@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var bookingCustomer = new BookingCustomer
+var requestBody = new BookingCustomer
 {
 	DisplayName = "Adele",
-	EmailAddress = "adele@relecloud.com"
+	EmailAddress = "adele@relecloud.com",
 };
+await graphClient.BookingBusinesses["bookingBusiness-id"].Customers["bookingCustomer-id"].PatchAsync(requestBody);
 
-await graphClient.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomer-id}"]
-	.Request()
-	.UpdateAsync(bookingCustomer);
 
 ```

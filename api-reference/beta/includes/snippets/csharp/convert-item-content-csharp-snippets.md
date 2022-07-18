@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+await graphClient.Drive.Items["driveItem-id"].Content.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("format", "{format}")
-};
+	requestConfiguration.QueryParameters.Format = "%7Bformat%7D";
+});
 
-var stream = await graphClient.Drive.Items["{driveItem-id}"].Content
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

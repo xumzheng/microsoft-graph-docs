@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var shiftPreferences = new ShiftPreferences
+var requestBody = new ShiftPreferences
 {
 	Id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",
-	Availability = new List<ShiftAvailability>()
+	Availability = new List<ShiftAvailability>
 	{
 		new ShiftAvailability
 		{
@@ -17,32 +18,30 @@ var shiftPreferences = new ShiftPreferences
 			{
 				Pattern = new RecurrencePattern
 				{
-					Type = RecurrencePatternType.Weekly,
-					DaysOfWeek = new List<DayOfWeek>()
+					Type = "Weekly",
+					DaysOfWeek = new List<DayOfWeek>
 					{
-						DayOfWeek.Monday,
-						DayOfWeek.Wednesday,
-						DayOfWeek.Friday
-					},
-					Interval = 1
+						"Monday",
+						"Wednesday",
+						"Friday",
+					}
+					Interval = 1,
 				},
 				Range = new RecurrenceRange
 				{
-					Type = RecurrenceRangeType.NoEnd
-				}
+					Type = "noEnd",
+				},
 			},
 			TimeZone = "Pacific Standard Time",
-			TimeSlots = null
-		}
-	},
-	AdditionalData = new Dictionary<string, object>()
+			TimeSlots = null,
+		},
+	}
+	AdditionalData = new()
 	{
-		{"@odata.etag", "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"}
+		{"@odata.etag", "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"},
 	}
 };
+await graphClient.Users["user-id"].Settings.ShiftPreferences.PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Settings.ShiftPreferences
-	.Request()
-	.UpdateAsync(shiftPreferences);
 
 ```

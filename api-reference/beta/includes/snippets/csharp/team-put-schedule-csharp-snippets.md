@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var schedule = new Schedule
+var requestBody = new ScheduleRequestBody
 {
-	Enabled = true,
-	TimeZone = "America/Chicago"
+	AdditionalData = new()
+	{
+		{"enabled", true},
+		{"timeZone", "America/Chicago"},
+	}
 };
+await graphClient.Teams["team-id"].Schedule.PutAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Schedule
-	.Request()
-	.PutAsync(schedule);
 
 ```

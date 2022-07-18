@@ -4,20 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
-{
-	Definition = new List<String>()
-	{
-		"{\"HomeRealmDiscoveryPolicy\":\r\n     {\"AccelerateToFederatedDomain\":true,\r\n      \"PreferredDomain\":\"federated.example.edu\",\r\n      \"AlternateIdLogin\":{\"Enabled\":true}}}"
-	},
-	DisplayName = "displayName-value",
-	IsOrganizationDefault = true
-};
+var result = await graphClient.Policies.HomeRealmDiscoveryPolicies.PostAsync();
 
-await graphClient.Policies.HomeRealmDiscoveryPolicies
-	.Request()
-	.AddAsync(homeRealmDiscoveryPolicy);
 
 ```

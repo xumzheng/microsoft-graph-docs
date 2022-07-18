@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationSchool = new EducationSchool
+var requestBody = new EducationSchool
 {
+	@odata.type = "#microsoft.graph.educationSchool",
 	DisplayName = "String",
 	Description = "String",
-	ExternalSource = EducationExternalSource.Sis,
+	ExternalSource = "String",
 	ExternalSourceDetail = "String",
 	PrincipalEmail = "String",
 	PrincipalName = "String",
@@ -23,14 +25,17 @@ var educationSchool = new EducationSchool
 	Fax = "String",
 	CreatedBy = new IdentitySet
 	{
+		@odata.type = "microsoft.graph.identitySet",
 	},
 	Address = new PhysicalAddress
 	{
-	}
+		AdditionalData = new()
+		{
+			{"@odata.type", "microsoft.graph.physicalAddress"},
+		}
+	},
 };
+var result = await graphClient.Education.Schools.PostAsync(requestBody);
 
-await graphClient.Education.Schools
-	.Request()
-	.AddAsync(educationSchool);
 
 ```

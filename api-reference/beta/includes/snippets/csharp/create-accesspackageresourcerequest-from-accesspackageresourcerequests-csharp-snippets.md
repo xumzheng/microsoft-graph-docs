@@ -4,26 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageResourceRequest = new AccessPackageResourceRequestObject
+var requestBody = new AccessPackageResourceRequest
 {
 	CatalogId = "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
 	RequestType = "AdminAdd",
 	Justification = "",
-	AccessPackageResource = new AccessPackageResource
+	AccessPackageResource = new 
 	{
 		DisplayName = "Sales",
 		Description = "https://contoso.sharepoint.com/sites/Sales",
 		Url = "https://contoso.sharepoint.com/sites/Sales",
 		ResourceType = "SharePoint Online Site",
 		OriginId = "https://contoso.sharepoint.com/sites/Sales",
-		OriginSystem = "SharePointOnline"
-	}
+		OriginSystem = "SharePointOnline",
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests
-	.Request()
-	.AddAsync(accessPackageResourceRequest);
 
 ```

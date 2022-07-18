@@ -4,24 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var channel = new Channel
+var requestBody = new Channel
 {
 	DisplayName = "TestChannelModeration",
 	Description = "Test channel moderation.",
-	MembershipType = ChannelMembershipType.Standard,
+	MembershipType = "standard",
 	ModerationSettings = new ChannelModerationSettings
 	{
-		UserNewMessageRestriction = UserNewMessageRestriction.EveryoneExceptGuests,
-		ReplyRestriction = ReplyRestriction.Everyone,
+		UserNewMessageRestriction = "everyoneExceptGuests",
+		ReplyRestriction = "everyone",
 		AllowNewMessageFromBots = true,
-		AllowNewMessageFromConnectors = true
-	}
+		AllowNewMessageFromConnectors = true,
+	},
 };
+var result = await graphClient.Teams["team-id"].Channels.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels
-	.Request()
-	.AddAsync(channel);
 
 ```

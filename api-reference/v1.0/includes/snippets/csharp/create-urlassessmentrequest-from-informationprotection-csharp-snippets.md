@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var threatAssessmentRequest = new UrlAssessmentRequestObject
+var requestBody = new ThreatAssessmentRequest
 {
-	Url = "http://test.com",
-	ExpectedAssessment = ThreatExpectedAssessment.Block,
-	Category = ThreatCategory.Phishing
+	@odata.type = "#microsoft.graph.urlAssessmentRequest",
+	ExpectedAssessment = "block",
+	Category = "phishing",
+	AdditionalData = new()
+	{
+		{"url", "http://test.com"},
+	}
 };
+var result = await graphClient.InformationProtection.ThreatAssessmentRequests.PostAsync(requestBody);
 
-await graphClient.InformationProtection.ThreatAssessmentRequests
-	.Request()
-	.AddAsync(threatAssessmentRequest);
 
 ```

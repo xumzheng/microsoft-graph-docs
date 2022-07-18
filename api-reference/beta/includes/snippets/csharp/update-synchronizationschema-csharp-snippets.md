@@ -4,67 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var synchronizationSchema = new SynchronizationSchema
+var requestBody = new SchemaRequestBody
 {
-	Directories = new SynchronizationSchemaDirectoriesCollectionPage()
+	AdditionalData = new()
 	{
-		new DirectoryDefinition
+		{"directories", new List<Object>
 		{
-			Name = "Azure Active Directory",
-			Objects = new List<ObjectDefinition>()
-			{
-				new ObjectDefinition
-				{
-					Name = "User",
-					Attributes = new List<AttributeDefinition>()
-					{
-						new AttributeDefinition
-						{
-							Name = "userPrincipalName",
-							Type = AttributeType.String
-						}
-					}
-				}
-			}
-		},
-		new DirectoryDefinition
-		{
-			Name = "Salesforce"
 		}
-	},
-	SynchronizationRules = new List<SynchronizationRule>()
-	{
-		new SynchronizationRule
+		{"synchronizationRules", new List<Object>
 		{
-			Name = "USER_TO_USER",
-			SourceDirectoryName = "Azure Active Directory",
-			TargetDirectoryName = "Salesforce",
-			ObjectMappings = new List<ObjectMapping>()
-			{
-				new ObjectMapping
-				{
-					SourceObjectName = "User",
-					TargetObjectName = "User",
-					AttributeMappings = new List<AttributeMapping>()
-					{
-						new AttributeMapping
-						{
-							Source = new AttributeMappingSource
-							{
-							},
-							TargetAttributeName = "userName"
-						}
-					}
-				}
-			}
 		}
 	}
 };
+await graphClient.ServicePrincipals["servicePrincipal-id"].Synchronization.Jobs["synchronizationJob-id"].Schema.PutAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].Schema
-	.Request()
-	.PutAsync(synchronizationSchema);
 
 ```

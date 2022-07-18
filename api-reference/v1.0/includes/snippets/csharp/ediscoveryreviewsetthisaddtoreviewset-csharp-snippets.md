@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AddToReviewSetRequestBody
+{
+	Search = new 
+	{
+		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7",
+	},
+	AdditionalDataOptions = "linkedFiles",
+};
+await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].AddToReviewSet.PostAsync(requestBody);
+
+
+```

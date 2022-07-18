@@ -4,63 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var regionalAndLanguageSettings = new RegionalAndLanguageSettings
+var requestBody = new RegionalAndLanguageSettingsRequestBody
 {
-	DefaultDisplayLanguage = new LocaleInfo
+	AdditionalData = new()
 	{
-		Locale = "en-US"
-	},
-	AuthoringLanguages = new List<LocaleInfo>()
-	{
-		new LocaleInfo
+		{"authoringLanguages", new List<Object>
 		{
-			Locale = "fr-FR"
-		},
-		new LocaleInfo
-		{
-			Locale = "de-DE"
-		}
-	},
-	DefaultTranslationLanguage = new LocaleInfo
-	{
-		Locale = "en-US"
-	},
-	DefaultSpeechInputLanguage = new LocaleInfo
-	{
-		Locale = "en-US"
-	},
-	DefaultRegionalFormat = new LocaleInfo
-	{
-		Locale = "en-GB"
-	},
-	RegionalFormatOverrides = new RegionalFormatOverrides
-	{
-		Calendar = "Gregorian Calendar",
-		FirstDayOfWeek = "Sunday",
-		ShortDateFormat = "yyyy-MM-dd",
-		LongDateFormat = "dddd, MMMM d, yyyy",
-		ShortTimeFormat = "HH:mm",
-		LongTimeFormat = "h:mm:ss tt",
-		TimeZone = "Pacific Standard Time"
-	},
-	TranslationPreferences = new TranslationPreferences
-	{
-		TranslationBehavior = TranslationBehavior.Yes,
-		LanguageOverrides = new List<TranslationLanguageOverride>()
-		{
-			new TranslationLanguageOverride
-			{
-				LanguageTag = "fr",
-				TranslationBehavior = TranslationBehavior.Yes
-			}
 		}
 	}
 };
+await graphClient.Me.Settings.RegionalAndLanguageSettings.PutAsync(requestBody);
 
-await graphClient.Me.Settings.RegionalAndLanguageSettings
-	.Request()
-	.PutAsync(regionalAndLanguageSettings);
 
 ```

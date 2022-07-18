@@ -4,36 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var openShift = new OpenShift
+var requestBody = new OpenShift-idRequestBody
 {
-	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-	SharedOpenShift = new OpenShiftItem
+	AdditionalData = new()
 	{
-		Notes = "Inventory Management",
-		OpenSlotCount = 5,
-		DisplayName = "Field shift",
-		StartDateTime = DateTimeOffset.Parse("2018-10-04T00:58:45.34Z"),
-		EndDateTime = DateTimeOffset.Parse("2018-10-04T09:50:45.332Z"),
-		Theme = ScheduleEntityTheme.White,
-		Activities = new List<ShiftActivity>()
-		{
-			new ShiftActivity
-			{
-				IsPaid = true,
-				StartDateTime = DateTimeOffset.Parse("2018-10-04T00:58:45.34Z"),
-				EndDateTime = DateTimeOffset.Parse("2018-10-04T01:58:45.34Z"),
-				Code = "",
-				DisplayName = "Lunch"
-			}
-		}
-	},
-	DraftOpenShift = null
+		{"schedulingGroupId", "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"},
+		{"draftOpenShift", null},
+	}
 };
+await graphClient.Teams["team-id"].Schedule.OpenShifts["openShift-id"].PutAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Schedule.OpenShifts["{openShift-id}"]
-	.Request()
-	.PutAsync(openShift);
 
 ```

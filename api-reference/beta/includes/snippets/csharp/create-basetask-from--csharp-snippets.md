@@ -4,32 +4,48 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var baseTask = new Task
+var requestBody = new BaseTask
 {
+	@odata.type = "#microsoft.graph.task",
 	TextBody = "String",
 	BodyLastModifiedDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	CompletedDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	DueDateTime = new DateTimeTimeZone
 	{
+		AdditionalData = new()
+		{
+			{"@odata.type", "microsoft.graph.dateTimeTimeZone"},
+		}
 	},
 	StartDateTime = new DateTimeTimeZone
 	{
+		AdditionalData = new()
+		{
+			{"@odata.type", "microsoft.graph.dateTimeTimeZone"},
+		}
 	},
-	Importance = Importance.Low,
+	Importance = "String",
 	Recurrence = new PatternedRecurrence
 	{
+		AdditionalData = new()
+		{
+			{"@odata.type", "microsoft.graph.patternedRecurrence"},
+		}
 	},
 	DisplayName = "String",
-	Status = TaskStatus_v2.NotStarted,
+	Status = "String",
 	Viewpoint = new TaskViewpoint
 	{
-	}
+		AdditionalData = new()
+		{
+			{"@odata.type", "microsoft.graph.taskViewpoint"},
+		}
+	},
 };
+var result = await graphClient.Me.Tasks.Lists["baseTaskList-id"].Tasks.PostAsync(requestBody);
 
-await graphClient.Me.Tasks.Lists["{baseTaskList-id}"].Tasks
-	.Request()
-	.AddAsync(baseTask);
 
 ```

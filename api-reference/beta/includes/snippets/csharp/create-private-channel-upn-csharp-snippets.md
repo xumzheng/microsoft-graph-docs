@@ -4,31 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var channel = new Channel
+var requestBody = new Channel
 {
-	MembershipType = ChannelMembershipType.Private,
+	@odata.type = "#Microsoft.Graph.channel",
+	MembershipType = "private",
 	DisplayName = "My First Private Channel",
 	Description = "This is my first private channels",
-	Members = new ChannelMembersCollectionPage()
+	Members = new List<ConversationMember>
 	{
-		new AadUserConversationMember
+		new ConversationMember
 		{
-			Roles = new List<String>()
+			@odata.type = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<String>
 			{
-				"owner"
-			},
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"user@odata.bind", "https://graph.microsoft.com/beta/users('jacob@contoso.com')"}
+				"owner",
 			}
-		}
+			AdditionalData = new()
+			{
+				{"user@odata.bind", "https://graph.microsoft.com/beta/users('jacob@contoso.com')"},
+			}
+		},
 	}
 };
+var result = await graphClient.Teams["team-id"].Channels.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels
-	.Request()
-	.AddAsync(channel);
 
 ```

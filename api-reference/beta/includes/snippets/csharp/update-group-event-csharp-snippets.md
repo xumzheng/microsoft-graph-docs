@@ -4,24 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var @event = new Event
+var requestBody = new Event
 {
 	OriginalStartTimeZone = "originalStartTimeZone-value",
 	OriginalEndTimeZone = "originalEndTimeZone-value",
 	ResponseStatus = new ResponseStatus
 	{
-		Response = ResponseType.None,
-		Time = DateTimeOffset.Parse("datetime-value")
+		Response = "",
+		Time = DateTimeOffset.Parse("datetime-value"),
 	},
 	Uid = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
-	IsReminderOn = true
+	IsReminderOn = true,
 };
+await graphClient.Groups["group-id"].Events["event-id"].PatchAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Events["{event-id}"]
-	.Request()
-	.UpdateAsync(@event);
 
 ```
