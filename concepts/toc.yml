@@ -520,14 +520,7 @@ items:
           - name: Get system messages
             href: system-messages.md
           - name: Employee learning
-            href: viva-learning-concept-overview.md
-      - name: To-do tasks
-        displayName: Microsoft To Do
-        items:
-          - name: Overview
-            href: todo-concept-overview.md
-          - name: Attach files to a task
-            href: todo-attachments.md
+            href: viva-learning-concept-overview.md      
       - name: Workbooks and charts
         items:
           - name: Overview
