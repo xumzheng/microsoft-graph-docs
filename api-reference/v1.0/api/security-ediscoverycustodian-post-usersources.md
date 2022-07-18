@@ -57,6 +57,8 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from_"
@@ -70,6 +72,13 @@ POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-41
     "includedSources": "mailbox, site"
 }
 ```
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-usersource-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

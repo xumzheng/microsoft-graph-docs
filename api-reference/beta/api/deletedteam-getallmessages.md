@@ -70,6 +70,8 @@ If successful, this function returns a `200 OK` response code and a collection o
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "deletedteamthis_getallmessages"
@@ -78,6 +80,13 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/getAllMessages
 ```
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/deletedteamthis-getallmessages-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

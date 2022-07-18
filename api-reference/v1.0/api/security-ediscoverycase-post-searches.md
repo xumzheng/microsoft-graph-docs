@@ -59,6 +59,8 @@ If successful, this method returns a `201 Created` response code and an [microso
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoverysearch_from_"
@@ -82,6 +84,13 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoverysearch-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

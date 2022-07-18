@@ -98,28 +98,9 @@ Content-Type: application/json
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagepatchpolicyviolationall-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/chatmessagepatchpolicyviolationall-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/chatmessagepatchpolicyviolationall-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagepatchpolicyviolationall-powershell-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chatmessagepatchpolicyviolationall-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -153,6 +134,8 @@ HTTP/1.1 200 OK
 
 The following is an example of the request to update the properties on a Microsoft Teams channel message by using delegated permissions.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_1"
@@ -188,6 +171,13 @@ Content-Type: application/json
 }
 ```
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 
 Here is an example of the response.
@@ -204,6 +194,8 @@ HTTP/1.1 204 NoContent
 
 The following is an example of the request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_2"
@@ -269,6 +261,13 @@ Content-Type: application/json
 }
 ```
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 
 Here is an example of the response.
@@ -285,6 +284,8 @@ HTTP/1.1 204 NoContent
 
 The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_3"
@@ -337,6 +338,13 @@ Content-Type: application/json
 }
 ```
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 
 Here is an example of the response.
@@ -354,6 +362,8 @@ HTTP/1.1 204 NoContent
 The following is an example of the request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_4"
@@ -510,6 +520,13 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/patch-chatmessage-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

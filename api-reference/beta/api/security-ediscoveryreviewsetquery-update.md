@@ -56,6 +56,8 @@ If successful, this method returns a `204 No content` response code.
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ediscoveryreviewsetquery"
@@ -70,6 +72,13 @@ Content-Type: application/json
     "contentQuery": "(Author=\"edisons\")"
 }
 ```
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-ediscoveryreviewsetquery-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

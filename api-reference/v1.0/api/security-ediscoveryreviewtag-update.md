@@ -59,6 +59,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ediscoveryreviewtag"
@@ -72,6 +74,13 @@ PATCH https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/58399dff-c
     "description": "Use Graph API to create tags (updated)"
 }
 ```
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-ediscoveryreviewtag-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

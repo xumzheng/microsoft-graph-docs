@@ -64,6 +64,8 @@ If successful, this method returns a `201 Created` response code and a [crossTen
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_crosstenantaccesspolicyconfigurationpartner_from_"
@@ -104,6 +106,13 @@ Content-Type: application/json
   }
 }
 ```
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-crosstenantaccesspolicyconfigurationpartner-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

@@ -58,6 +58,8 @@ If successful, this action returns a `202 Accepted` response code.
 ### Example 1: Apply hold to multiple non-custodial data sources
 #### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoverynoncustialdatasource.applyhold"
@@ -75,6 +77,13 @@ Content-Type: application/json
 }
 ```
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 #### Response
 The following is an example of the response.
@@ -91,6 +100,8 @@ HTTP/1.1 202 Accepted
 ### Example 2: Apply hold to a single non-custodial data source
 #### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoverynoncustialdatasource.applyhold"
@@ -99,6 +110,13 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/39333641443238353535383731453339/applyHold
 ```
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
