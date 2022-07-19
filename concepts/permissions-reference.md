@@ -1234,17 +1234,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Learning provider permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _LearningProvider.Read_ |    Read learning provider | Allows the app to read data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
-| _LearningProvider.ReadWrite_  |    Manage learning provider | Allows the app to create, update, read, and delete data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
-
-
-## Learning content permissions
+## Employee learning permissions
 
 #### Delegated permissions
 
@@ -1252,6 +1242,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _LearningContent.Read.All_ |    Read learning content | Allows the app to read learning content in the organization's directory, on behalf of the signed-in user. | Yes | No |
 | _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, on behalf of the signed-in user. | Yes | No |
+| _LearningProvider.Read_ |    Read learning provider | Allows the app to read data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
+| _LearningProvider.ReadWrite_  |    Manage learning provider | Allows the app to create, update, read, and delete data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
