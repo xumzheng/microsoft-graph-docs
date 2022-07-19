@@ -23,8 +23,8 @@ The employee learning API in Microsoft Graph enable apps to make content from a 
 As administrators, you can integrate your content and learner records (employee assignments and completed course records) from your Learning Management System (LMS) or learning provider with Viva Learning, by using out-of-the-box integrations where Viva Learning can pull content metadata and learning records from your LMS or learning provider. You can also [use the employee learning API](#use-cases-of-the-employee-learning-api-in-microsoft-graph) in Microsoft Graph to push content metadata from your LMS or learning provider into Viva Learning. 
 
 Once the content metadata, employee assignments, and their completed course records are uploaded to Viva Learning, they appear in Viva Learning at the following locations:
-- The content appears on the home page under *Browse courses* – *Providers* section.
-- Assignments and completed course records appear on *My Learning* page under *Assigned to you* and *Completed* sections respectively.
+- The content appears on the home page under the **Browse courses** – **Providers** section.
+- Assignments and completed course records appear on the **My Learning** page under the **Assigned to you** and **Completed** sections respectively.
 
 ## Authorization
 With the appropriate delegated or application [employee learning permissions](/graph/permissions-reference#employee-learning-permissions), your app can use the employee learning API to manage learning providers and their content for a learning hub in a tenant. For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
@@ -41,7 +41,7 @@ Use the employee learning APIs to do the following:
 - Retrieve the properties of a learning content object.
 - Delete the ingested content.
 
-**Note** Assignments and completed course records are not yet available in the employee learning API.
+**Note**: Assignments and completed course records are not yet available in the employee learning API.
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
