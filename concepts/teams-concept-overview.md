@@ -77,7 +77,7 @@ Microsoft Teams apps give work groups a new tool to make collaboration a more pr
 
 You can create websites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
 
-**Types of apps enabled for Microsoft Teams**
+#### Types of apps enabled for Microsoft Teams
 
 ![Call the Microsoft Teams API from tabs, bots, websites, and services](images/teamsappendpoints.png)
 
@@ -101,12 +101,20 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 
 Microsoft Teams supports subscribing to changes (create, update, and delete) to messages in [channels](/graph/api/resources/channel) and [chats](/graph/api/resources/chat) to allow apps to get near-instant updates. For details about how to subscribe to changes, see [Get change notifications for messages in channels and chats](teams-changenotifications-chatmessage.md).
 
+### Enable employee learning using the collaborative capabilities in Teams
+Viva Learning built for Microsoft Teams and Microsoft 365 brings employee learning into the flow of work. Viva Learning lets employers register learning providers, upload and manage content metadata, learner assignments, and completion records. Employees can share learning content in Teams messages, meeting chats, or emails, encouraging peer learning and mentoring conversations. 
+
+Use the employee learning APIs for Viva Learning to: 
+- Register and manage a learning provider.
+- Insert, update, retrieve, and delete content metadata.
+
 ## API reference
 
-Looking for the API reference for this service?
+Looking for the API reference for Teams and Viva Learning?
 
 - [Teams API in Microsoft Graph v1.0](/graph/api/resources/teams-api-overview)
 - [Teams API in Microsoft Graph beta](/graph/api/resources/teams-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Viva Learning API overview](/graph/api/resources/viva-learning-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
