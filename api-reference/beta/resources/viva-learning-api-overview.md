@@ -20,18 +20,16 @@ The employee learning API in Microsoft Graph enable apps to make content from a 
 
 
 ## How integrations work?
-
 As administrators, you can integrate your content and learner records (employee assignments and completed course records) from your Learning Management System (LMS) or learning provider with Viva Learning, by using out-of-the-box integrations where Viva Learning can pull content metadata and learning records from your LMS or learning provider. You can also [use the employee learning API](#use-cases-of-the-employee-learning-api-in-microsoft-graph) in Microsoft Graph to push content metadata from your LMS or learning provider into Viva Learning. 
 
 Once the content metadata, employee assignments, and their completed course records are uploaded to Viva Learning, they appear in Viva Learning at the following locations:
+- The content appears on the home page under *Browse courses* – *Providers* section.
+- Assignments and completed course records appear on *My Learning* page under *Assigned to you* and *Completed* sections respectively.
 
-- The content appears on the home page under *Browse courses* – *Providers* section
-- Assignments and completed course records appear on *My Learning* page under *Assigned to you* and *Completed* sections respectively
+## Authorization
+With the appropriate delegated or application [employee learning permissions](/graph/permissions-reference#employee-learning-permissions), your app can use the employee learning API to manage learning providers and their content for a learning hub in a tenant. For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
 
-### Use cases of the employee learning API in Microsoft Graph
-
-With the appropriate delegated or application [employee learning permissions](/graph/permissions-reference#employee-learning-permissions), your app can manage learning providers and their content for a learning hub in a tenant. For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
-
+## Use cases of the employee learning API in Microsoft Graph
 Use the employee learning APIs to do the following:
 - Register a provider with Viva Learning, provide a display name, square logo that is displayed on a learning content card, and a long logo that is displayed in the *Details* page which is required for the provider content to show up in Viva Learning. The returned registration ID can be used to make the subsequent calls for content ingestion.
 - Enable or disable a registration and update the display name  and logo URLs  for a provider.  
