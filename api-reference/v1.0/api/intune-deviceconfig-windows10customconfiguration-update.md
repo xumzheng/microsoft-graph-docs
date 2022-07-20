@@ -101,7 +101,7 @@ Content-Length: 550
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSetting",
+      "@odata.type": "#microsoft.graph.omaSettingString",
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value"
