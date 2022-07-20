@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamIncomingChannel -TeamId $teamId
+Get-MgTeamIncomingChannel -TeamId $teamId -OutFile $outFileId
 
 ```
