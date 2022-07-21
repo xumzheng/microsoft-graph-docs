@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.aadUserConversationMember"
+requestBody.SetOdataType(&odataType) 
 roles := []string {
 
 }
 requestBody.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/beta/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4", 
+	"odataBind" : "https://graph.microsoft.com/beta/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4", 
 }
 requestBody.SetAdditionalData(additionalData)
 

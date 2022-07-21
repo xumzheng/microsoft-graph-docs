@@ -21,8 +21,8 @@ content := "Internal spending team has a pending finance approval requests"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
 recipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "microsoft.graph.teamMembersNotificationRecipient"
-recipient.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.teamMembersNotificationRecipient"
+recipient.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"teamId" : "e8bece96-d393-4b9b-b8da-69cedef1a7e7", 
 }
@@ -42,7 +42,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.TeamsById("team-id").SendActivityNotification(team-id).Post(requestBody)
+graphClient.TeamsById("team-id").SendActivityNotification().Post(requestBody)
 
 
 ```

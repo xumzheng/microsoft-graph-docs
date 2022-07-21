@@ -63,6 +63,8 @@ If successful, this method returns a `201 Created` response code and a [learning
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_learningprovider_from_"
@@ -82,6 +84,13 @@ Content-Type: application/json
     "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
 }
 ```
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-learningprovider-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 The following is an example of the response.

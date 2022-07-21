@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCall()
-"@odata.type" := "#microsoft.graph.call"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.call"
+requestBody.SetOdataType(&odataType) 
 direction := graphmodels.OUTGOING_CALLDIRECTION 
 requestBody.SetDirection(&direction) 
 subject := "Create a group call with service hosted media"
@@ -17,14 +17,14 @@ requestBody.SetSubject(&subject)
 callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 source := graphmodels.NewParticipantInfo()
-"@odata.type" := "#microsoft.graph.participantInfo"
-source.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.participantInfo"
+source.SetOdataType(&odataType) 
 identity := graphmodels.NewIdentitySet()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identitySet"
+identity.SetOdataType(&odataType) 
 application := graphmodels.NewIdentity()
-"@odata.type" := "#microsoft.graph.identity"
-application.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identity"
+application.SetOdataType(&odataType) 
 displayName := "TestBot"
 application.SetDisplayName(&displayName) 
 id := "dd3885da-f9ab-486b-bfae-85de3d445555"
@@ -35,14 +35,14 @@ requestBody.SetSource(source)
 
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
-"@odata.type" := "#microsoft.graph.invitationParticipantInfo"
-invitationParticipantInfo.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.invitationParticipantInfo"
+invitationParticipantInfo.SetOdataType(&odataType) 
 identity := graphmodels.NewIdentitySet()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identitySet"
+identity.SetOdataType(&odataType) 
 user := graphmodels.NewIdentity()
-"@odata.type" := "#microsoft.graph.identity"
-user.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identity"
+user.SetOdataType(&odataType) 
 displayName := "user1"
 user.SetDisplayName(&displayName) 
 id := "98da8a1a-1b87-452c-a713-65d3f10b5555"
@@ -50,14 +50,14 @@ user.SetId(&id)
 identity.SetUser(user)
 invitationParticipantInfo.SetIdentity(identity)
 invitationParticipantInfo1 := graphmodels.NewInvitationParticipantInfo()
-"@odata.type" := "#microsoft.graph.participantInfo"
-invitationParticipantInfo1.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.participantInfo"
+invitationParticipantInfo1.SetOdataType(&odataType) 
 identity := graphmodels.NewIdentitySet()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identitySet"
+identity.SetOdataType(&odataType) 
 user := graphmodels.NewIdentity()
-"@odata.type" := "#microsoft.graph.identity"
-user.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identity"
+user.SetOdataType(&odataType) 
 displayName := "user2"
 user.SetDisplayName(&displayName) 
 id := "bf5aae9a-d11d-47a8-93b1-782504c95555"
@@ -77,8 +77,8 @@ requestedModalities := []graphmodels.Modalityable {
 }
 requestBody.SetRequestedModalities(requestedModalities)
 mediaConfig := graphmodels.NewMediaConfig()
-"@odata.type" := "#microsoft.graph.serviceHostedMediaConfig"
-mediaConfig.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.serviceHostedMediaConfig"
+mediaConfig.SetOdataType(&odataType) 
 removeFromDefaultAudioGroup := false
 mediaConfig.SetRemoveFromDefaultAudioGroup(&removeFromDefaultAudioGroup) 
 requestBody.SetMediaConfig(mediaConfig)

@@ -11,8 +11,8 @@ requestBody := graphmodels.NewServicePrincipal()
 customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
 additionalData := map[string]interface{}{
 engineering := graphmodels.New()
-"@odata.type" := "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
-engineering.Set"@odata.type"(&"@odata.type") 
+odataType := "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
+engineering.SetOdataType(&odataType) 
 projectDate := "2022-10-01"
 engineering.SetProjectDate(&projectDate) 
 	customSecurityAttributes.SetEngineering(engineering)

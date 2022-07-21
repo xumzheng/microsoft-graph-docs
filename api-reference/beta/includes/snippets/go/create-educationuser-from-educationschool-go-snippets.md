@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewReferenceCreate()
-"@odata.id" := "https://graph.microsoft.com/beta/education/users/14008"
-requestBody.Set"@odata.id"(&"@odata.id") 
+odataId := "https://graph.microsoft.com/beta/education/users/14008"
+requestBody.SetOdataId(&odataId) 
 
 graphClient.Education().SchoolsById("educationSchool-id").Users().$ref().Post(requestBody)
 

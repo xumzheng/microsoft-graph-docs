@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewInternalDomainFederation()
-"@odata.type" := "#microsoft.graph.internalDomainFederation"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.internalDomainFederation"
+requestBody.SetOdataType(&odataType) 
 displayName := "Contoso"
 requestBody.SetDisplayName(&displayName) 
 issuerUri := "http://contoso.com/adfs/services/trust"

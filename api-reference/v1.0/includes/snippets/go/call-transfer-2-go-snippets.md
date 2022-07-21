@@ -9,14 +9,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
-"@odata.type" := "#microsoft.graph.invitationParticipantInfo"
-transferTarget.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.invitationParticipantInfo"
+transferTarget.SetOdataType(&odataType) 
 identity := graphmodels.NewIdentitySet()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identitySet"
+identity.SetOdataType(&odataType) 
 user := graphmodels.NewIdentity()
-"@odata.type" := "#microsoft.graph.identity"
-user.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identity"
+user.SetOdataType(&odataType) 
 id := "550fae72-d251-43ec-868c-373732c2704f"
 user.SetId(&id) 
 displayName := "Heidi Steen"
@@ -31,7 +31,7 @@ additionalData := map[string]interface{}{
 transferTarget.SetAdditionalData(additionalData)
 requestBody.SetTransferTarget(transferTarget)
 
-graphClient.Communications().CallsById("call-id").Transfer(call-id).Post(requestBody)
+graphClient.Communications().CallsById("call-id").Transfer().Post(requestBody)
 
 
 ```

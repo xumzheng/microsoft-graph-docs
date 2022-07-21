@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewReferenceUpdate()
-"@odata.id" := "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
-requestBody.Set"@odata.id"(&"@odata.id") 
+odataId := "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
+requestBody.SetOdataId(&odataId) 
 
 graphClient.ApplicationsById("application-id").ConnectorGroup().$ref().Put(requestBody)
 

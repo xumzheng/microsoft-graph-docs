@@ -11,7 +11,7 @@ requestBody := graphmodels.NewUnifiedGroupSource()
 includedSources := graphmodels.MAILBOX_SOURCETYPE 
 requestBody.SetIncludedSources(&includedSources) 
 additionalData := map[string]interface{}{
-	"group@odata.bind" : "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610", 
 }
 requestBody.SetAdditionalData(additionalData)
 

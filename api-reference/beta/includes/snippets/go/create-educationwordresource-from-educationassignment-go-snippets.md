@@ -11,8 +11,8 @@ requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "microsoft.graph.educationWordResource"
-resource.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.educationWordResource"
+resource.SetOdataType(&odataType) 
 displayName := "Issues and PR in guthub.docx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{

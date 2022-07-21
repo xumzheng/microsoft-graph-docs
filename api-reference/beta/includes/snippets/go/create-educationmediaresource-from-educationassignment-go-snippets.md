@@ -11,8 +11,8 @@ requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "microsoft.graph.educationMediaResource"
-resource.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.educationMediaResource"
+resource.SetOdataType(&odataType) 
 displayName := "homework example.PNG"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{

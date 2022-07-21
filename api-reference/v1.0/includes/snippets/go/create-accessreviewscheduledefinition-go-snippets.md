@@ -15,8 +15,8 @@ requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
 descriptionForReviewers := "If you have any questions, contact jerry@contoso.com"
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-scope.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.accessReviewQueryScope"
+scope.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"query" : "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers", 
 	"queryType" : "MicrosoftGraph", 

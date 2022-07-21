@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewBookingService()
-"@odata.type" := "#microsoft.graph.bookingService"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.bookingService"
+requestBody.SetOdataType(&odataType) 
 defaultDuration := "PT30M"
 requestBody.SetDefaultDuration(&defaultDuration) 
 

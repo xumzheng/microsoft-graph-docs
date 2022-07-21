@@ -33,8 +33,8 @@ message.SetToRecipients(toRecipients)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.fileAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.fileAttachment"
+attachment.SetOdataType(&odataType) 
 name := "attachment.txt"
 attachment.SetName(&name) 
 contentType := "text/plain"

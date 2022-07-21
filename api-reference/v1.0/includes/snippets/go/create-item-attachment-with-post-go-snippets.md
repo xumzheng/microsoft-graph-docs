@@ -18,14 +18,14 @@ post.SetBody(body)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.itemAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.itemAttachment"
+attachment.SetOdataType(&odataType) 
 name := "Holiday event"
 attachment.SetName(&name) 
 additionalData := map[string]interface{}{
 item := graphmodels.New()
-"@odata.type" := "microsoft.graph.event"
-item.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.event"
+item.SetOdataType(&odataType) 
 subject := "Discuss gifts for children"
 item.SetSubject(&subject) 
 body := graphmodels.New()
@@ -57,7 +57,7 @@ attachments := []graphmodels.Attachmentable {
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Reply(group-id, conversationThread-id).Post(requestBody)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Reply().Post(requestBody)
 
 
 ```

@@ -52,6 +52,8 @@ If successful, this method returns a `200 OK` response code and a [learningProvi
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learningprovider"
@@ -60,6 +62,13 @@ The following is an example of a request.
 ``` http
 GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70
 ```
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-learningprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

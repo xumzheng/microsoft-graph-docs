@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewRetentionLabel()
-"@odata.type" := "#microsoft.graph.security.retentionLabel"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.security.retentionLabel"
+requestBody.SetOdataType(&odataType) 
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 behaviorDuringRetentionPeriod := graphmodels.STRING_BEHAVIORDURINGRETENTIONPERIOD 
@@ -19,8 +19,8 @@ requestBody.SetActionAfterRetentionPeriod(&actionAfterRetentionPeriod)
 retentionTrigger := graphmodels.STRING_RETENTIONTRIGGER 
 requestBody.SetRetentionTrigger(&retentionTrigger) 
 retentionDuration := graphmodels.NewRetentionDuration()
-"@odata.type" := "microsoft.graph.security.retentionDuration"
-retentionDuration.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.security.retentionDuration"
+retentionDuration.SetOdataType(&odataType) 
 requestBody.SetRetentionDuration(retentionDuration)
 isInUse := "Boolean"
 requestBody.SetIsInUse(&isInUse) 
@@ -29,8 +29,8 @@ requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
 descriptionForUsers := "String"
 requestBody.SetDescriptionForUsers(&descriptionForUsers) 
 createdBy := graphmodels.NewIdentitySet()
-"@odata.type" := "microsoft.graph.identitySet"
-createdBy.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.identitySet"
+createdBy.SetOdataType(&odataType) 
 requestBody.SetCreatedBy(createdBy)
 labelToBeApplied := "String"
 requestBody.SetLabelToBeApplied(&labelToBeApplied) 

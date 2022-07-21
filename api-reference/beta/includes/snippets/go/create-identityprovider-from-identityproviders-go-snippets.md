@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewIdentityProvider()
-"@odata.type" := "microsoft.graph.identityProvider"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.identityProvider"
+requestBody.SetOdataType(&odataType) 
 name := "Login with Amazon"
 requestBody.SetName(&name) 
 type := "Amazon"

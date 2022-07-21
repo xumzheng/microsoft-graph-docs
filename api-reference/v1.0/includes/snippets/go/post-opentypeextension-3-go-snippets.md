@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.openTypeExtension"
+requestBody.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.Deal", 
 	"companyName" : "Alpine Skis", 

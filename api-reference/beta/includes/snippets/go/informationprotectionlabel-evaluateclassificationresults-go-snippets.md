@@ -15,8 +15,8 @@ configuration := &graphconfig.EvaluateClassificationResultsRequestBuilderPostReq
 }
 requestBody := graphmodels.NewEvaluateClassificationResultsPostRequestBody()
 contentInfo := graphmodels.NewContentInfo()
-"@odata.type" := "#microsoft.graph.contentInfo"
-contentInfo.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.contentInfo"
+contentInfo.SetOdataType(&odataType) 
 format := graphmodels.DEFAULT_CONTENTFORMAT 
 contentInfo.SetFormat(&format) 
 identifier := null
@@ -24,8 +24,8 @@ contentInfo.SetIdentifier(&identifier)
 state := graphmodels.REST_CONTENTSTATE 
 contentInfo.SetState(&state) 
 additionalData := map[string]interface{}{
-	"format@odata.type" : "#microsoft.graph.contentFormat", 
-	"state@odata.type" : "#microsoft.graph.contentState", 
+	"odataType" : "#microsoft.graph.contentFormat", 
+	"odataType" : "#microsoft.graph.contentState", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)

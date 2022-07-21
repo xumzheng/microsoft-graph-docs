@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewColumnDefinition()
 additionalData := map[string]interface{}{
-	"sourceColumn@odata.bind" : "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103", 
+	"odataBind" : "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103", 
 }
 requestBody.SetAdditionalData(additionalData)
 

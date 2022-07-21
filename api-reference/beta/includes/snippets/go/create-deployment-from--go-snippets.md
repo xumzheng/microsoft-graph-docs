@@ -8,19 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewDeployment()
-"@odata.type" := "#microsoft.graph.windowsUpdates.deployment"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.windowsUpdates.deployment"
+requestBody.SetOdataType(&odataType) 
 content := graphmodels.NewDeployableContent()
-"@odata.type" := "microsoft.graph.windowsUpdates.featureUpdateReference"
-content.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.windowsUpdates.featureUpdateReference"
+content.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"version" : "20H2", 
 }
 content.SetAdditionalData(additionalData)
 requestBody.SetContent(content)
 settings := graphmodels.NewDeploymentSettings()
-"@odata.type" := "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
-settings.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
+settings.SetOdataType(&odataType) 
 rollout := graphmodels.NewRolloutSettings()
 devicesPerOffer := int32(100)
 rollout.SetDevicesPerOffer(&devicesPerOffer) 
@@ -29,8 +29,8 @@ monitoring := graphmodels.NewMonitoringSettings()
 
 
 monitoringRule := graphmodels.NewMonitoringRule()
-"@odata.type" := "#microsoft.graph.windowsUpdates.monitoringRule"
-monitoringRule.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.windowsUpdates.monitoringRule"
+monitoringRule.SetOdataType(&odataType) 
 signal := graphmodels.ROLLBACK_MONITORINGSIGNAL 
 monitoringRule.SetSignal(&signal) 
 threshold := int32(5)

@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcProvisioningPolicy()
-"@odata.type" := "#microsoft.graph.cloudPcProvisioningPolicy"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.cloudPcProvisioningPolicy"
+requestBody.SetOdataType(&odataType) 
 description := "Description value"
 requestBody.SetDescription(&description) 
 displayName := "Display Name value"

@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
-"@odata.type" := "#microsoft.graph.emailAuthenticationMethodConfiguration"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.emailAuthenticationMethodConfiguration"
+requestBody.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"allowExternalIdToUseEmailOtp" : "disabled", 
 }

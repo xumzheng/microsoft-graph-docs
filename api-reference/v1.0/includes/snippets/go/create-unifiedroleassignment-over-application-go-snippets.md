@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUnifiedRoleAssignment()
-"@odata.type" := "#microsoft.graph.unifiedRoleAssignment"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.unifiedRoleAssignment"
+requestBody.SetOdataType(&odataType) 
 principalId := "6b937a9d-c731-465b-a844-2d5b5368c161"
 requestBody.SetPrincipalId(&principalId) 
 roleDefinitionId := "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"

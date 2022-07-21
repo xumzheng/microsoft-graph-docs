@@ -20,8 +20,8 @@ requestBody.SetPreviewType(&previewType)
 references := graphmodels.NewPlannerExternalReferences()
 additionalData := map[string]interface{}{
 http%3A//developer%2Emicrosoft%2Ecom := graphmodels.New()
-"@odata.type" := "microsoft.graph.plannerExternalReference"
-http%3A//developer%2Emicrosoft%2Ecom.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.plannerExternalReference"
+http%3A//developer%2Emicrosoft%2Ecom.SetOdataType(&odataType) 
 alias := "Documentation"
 http%3A//developer%2Emicrosoft%2Ecom.SetAlias(&alias) 
 previewPriority := " !"
@@ -30,8 +30,8 @@ type := "Other"
 http%3A//developer%2Emicrosoft%2Ecom.SetType(&type) 
 	references.SetHttp%3A//developer%2Emicrosoft%2Ecom(http%3A//developer%2Emicrosoft%2Ecom)
 "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer" := graphmodels.New()
-"@odata.type" := "microsoft.graph.plannerExternalReference"
-"https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer".Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.plannerExternalReference"
+"https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer".SetOdataType(&odataType) 
 previewPriority := "  !!"
 "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer".SetPreviewPriority(&previewPriority) 
 	references.Set"https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer"("https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer")
@@ -43,16 +43,16 @@ requestBody.SetReferences(references)
 checklist := graphmodels.NewPlannerChecklistItems()
 additionalData := map[string]interface{}{
 "95e27074-6c4a-447a-aa24-9d718a0b86fa" := graphmodels.New()
-"@odata.type" := "microsoft.graph.plannerChecklistItem"
-"95e27074-6c4a-447a-aa24-9d718a0b86fa".Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.plannerChecklistItem"
+"95e27074-6c4a-447a-aa24-9d718a0b86fa".SetOdataType(&odataType) 
 title := "Update task details"
 "95e27074-6c4a-447a-aa24-9d718a0b86fa".SetTitle(&title) 
 	isChecked := true
 "95e27074-6c4a-447a-aa24-9d718a0b86fa".SetIsChecked(&isChecked) 
 	checklist.Set"95e27074-6c4a-447a-aa24-9d718a0b86fa"("95e27074-6c4a-447a-aa24-9d718a0b86fa")
 "d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff" := graphmodels.New()
-"@odata.type" := "microsoft.graph.plannerChecklistItem"
-"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff".Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.plannerChecklistItem"
+"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff".SetOdataType(&odataType) 
 	isChecked := true
 "d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff".SetIsChecked(&isChecked) 
 	checklist.Set"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff"("d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff")

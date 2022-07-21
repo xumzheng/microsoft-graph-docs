@@ -15,8 +15,8 @@ requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
 descriptionForReviewers := "Information security is everyone's responsibility. Review our access policy for more."
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
 instanceEnumerationScope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-instanceEnumerationScope.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.accessReviewQueryScope"
+instanceEnumerationScope.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"query" : "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')", 
 	"queryType" : "MicrosoftGraph", 
@@ -24,8 +24,8 @@ additionalData := map[string]interface{}{
 instanceEnumerationScope.SetAdditionalData(additionalData)
 requestBody.SetInstanceEnumerationScope(instanceEnumerationScope)
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewInactiveUsersQueryScope"
-scope.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.accessReviewInactiveUsersQueryScope"
+scope.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"query" : "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')", 
 	"queryType" : "MicrosoftGraph", 
@@ -35,29 +35,27 @@ scope.SetAdditionalData(additionalData)
 requestBody.SetScope(scope)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "./owners", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "./owners"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 reviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetReviewers(reviewers)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 fallbackReviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)

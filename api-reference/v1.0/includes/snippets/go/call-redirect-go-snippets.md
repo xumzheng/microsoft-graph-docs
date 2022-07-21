@@ -12,13 +12,13 @@ requestBody := graphmodels.NewRedirectPostRequestBody()
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.invitationParticipantInfo", 
+	"odataType" : "#microsoft.graph.invitationParticipantInfo", 
 identity := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identitySet"
+identity.SetOdataType(&odataType) 
 phone := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identity"
-phone.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identity"
+phone.SetOdataType(&odataType) 
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)
@@ -34,7 +34,7 @@ requestBody.SetTargets(targets)
 callbackUri := "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 requestBody.SetCallbackUri(&callbackUri) 
 
-graphClient.Communications().CallsById("call-id").Redirect(call-id).Post(requestBody)
+graphClient.Communications().CallsById("call-id").Redirect().Post(requestBody)
 
 
 ```

@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationSchool()
-"@odata.type" := "#microsoft.graph.educationSchool"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.educationSchool"
+requestBody.SetOdataType(&odataType) 
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 description := "String"
@@ -37,12 +37,12 @@ requestBody.SetPhone(&phone)
 fax := "String"
 requestBody.SetFax(&fax) 
 createdBy := graphmodels.NewIdentitySet()
-"@odata.type" := "microsoft.graph.identitySet"
-createdBy.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.identitySet"
+createdBy.SetOdataType(&odataType) 
 requestBody.SetCreatedBy(createdBy)
 address := graphmodels.NewPhysicalAddress()
-"@odata.type" := "microsoft.graph.physicalAddress"
-address.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.physicalAddress"
+address.SetOdataType(&odataType) 
 requestBody.SetAddress(address)
 
 result, err := graphClient.Education().Schools().Post(requestBody)

@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUnifiedRoleManagementPolicyRule()
-"@odata.type" := "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
+requestBody.SetOdataType(&odataType) 
 id := "Expiration_EndUser_Assignment"
 requestBody.SetId(&id) 
 target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
-"@odata.type" := "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
-target.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
+target.SetOdataType(&odataType) 
 caller := "EndUser"
 target.SetCaller(&caller) 
 operations := []graphmodels.UnifiedRoleManagementPolicyRuleTargetOperationsable {

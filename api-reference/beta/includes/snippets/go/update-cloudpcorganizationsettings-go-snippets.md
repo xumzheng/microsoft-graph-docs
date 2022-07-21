@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcOrganizationSettings()
-"@odata.type" := "#microsoft.graph.cloudPcOrganizationSettings"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.cloudPcOrganizationSettings"
+requestBody.SetOdataType(&odataType) 
 userAccountType := graphmodels.STANDARDUSER_CLOUDPCUSERACCOUNTTYPE 
 requestBody.SetUserAccountType(&userAccountType) 
 osVersion := graphmodels.WINDOWS11_CLOUDPCOPERATINGSYSTEM 

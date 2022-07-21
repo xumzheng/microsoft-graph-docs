@@ -11,8 +11,8 @@ requestBody := graphmodels.NewEducationSubmissionResource()
 resource := graphmodels.NewEducationResource()
 displayName := "category.jpg"
 resource.SetDisplayName(&displayName) 
-"@odata.type" := "#microsoft.graph.educationMediaResource"
-resource.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.educationMediaResource"
+resource.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"fileUrl" : "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG", 
 }

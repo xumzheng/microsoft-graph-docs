@@ -9,12 +9,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewStartHoldMusicPostRequestBody()
 customPrompt := graphmodels.NewPrompt()
-"@odata.type" := "#microsoft.graph.mediaPrompt"
-customPrompt.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.mediaPrompt"
+customPrompt.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 mediaInfo := graphmodels.New()
-"@odata.type" := "#microsoft.graph.mediaInfo"
-mediaInfo.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.mediaInfo"
+mediaInfo.SetOdataType(&odataType) 
 uri := "https://bot.contoso.com/onHold.wav"
 mediaInfo.SetUri(&uri) 
 	customPrompt.SetMediaInfo(mediaInfo)
@@ -24,7 +24,7 @@ requestBody.SetCustomPrompt(customPrompt)
 clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().CallsById("call-id").ParticipantsById("participant-id").StartHoldMusic(call-id, participant-id).Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").ParticipantsById("participant-id").StartHoldMusic().Post(requestBody)
 
 
 ```

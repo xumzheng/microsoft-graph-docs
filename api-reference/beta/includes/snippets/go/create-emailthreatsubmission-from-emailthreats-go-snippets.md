@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEmailThreatSubmission()
-"@odata.type" := "#microsoft.graph.emailUrlThreatSubmission"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.emailUrlThreatSubmission"
+requestBody.SetOdataType(&odataType) 
 category := graphmodels.SPAM_SUBMISSIONCATEGORY 
 requestBody.SetCategory(&category) 
 recipientEmailAddress := "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"

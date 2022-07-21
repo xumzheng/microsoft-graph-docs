@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAttachmentBase()
-"@odata.type" := "#microsoft.graph.taskFileAttachment"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.taskFileAttachment"
+requestBody.SetOdataType(&odataType) 
 name := "smile"
 requestBody.SetName(&name) 
 contentType := "image/gif"

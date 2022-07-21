@@ -12,8 +12,8 @@ message := graphmodels.Newmessage()
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.fileAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.fileAttachment"
+attachment.SetOdataType(&odataType) 
 name := "guidelines.txt"
 attachment.SetName(&name) 
 additionalData := map[string]interface{}{
@@ -30,7 +30,7 @@ requestBody.SetMessage(message)
 comment := "Please take a look at the attached guidelines before you decide on the name."
 requestBody.SetComment(&comment) 
 
-graphClient.Me().MessagesById("message-id").ReplyAll(message-id).Post(requestBody)
+graphClient.Me().MessagesById("message-id").ReplyAll().Post(requestBody)
 
 
 ```

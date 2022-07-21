@@ -61,8 +61,8 @@ accessPackageApprovalStage.SetDurationBeforeEscalation(&durationBeforeEscalation
 
 
 subjectSet := graphmodels.NewSubjectSet()
-"@odata.type" := "#microsoft.graph.internalSponsors"
-subjectSet.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.internalSponsors"
+subjectSet.SetOdataType(&odataType) 
 
 primaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
@@ -72,15 +72,15 @@ accessPackageApprovalStage.SetPrimaryApprovers(primaryApprovers)
 
 
 subjectSet := graphmodels.NewSubjectSet()
-"@odata.type" := "#microsoft.graph.singleUser"
-subjectSet.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.singleUser"
+subjectSet.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"userId" : "7deff43e-1f17-44ef-9e5f-d516b0ba11d4", 
 }
 subjectSet.SetAdditionalData(additionalData)
 subjectSet1 := graphmodels.NewSubjectSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-subjectSet1.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.groupMembers"
+subjectSet1.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
 }
@@ -116,15 +116,15 @@ accessPackageApprovalStage1.SetPrimaryApprovers(primaryApprovers)
 
 
 subjectSet := graphmodels.NewSubjectSet()
-"@odata.type" := "#microsoft.graph.singleUser"
-subjectSet.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.singleUser"
+subjectSet.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"userId" : "46184453-e63b-4f20-86c2-c557ed5d5df9", 
 }
 subjectSet.SetAdditionalData(additionalData)
 subjectSet1 := graphmodels.NewSubjectSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-subjectSet1.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.groupMembers"
+subjectSet1.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
 }
@@ -198,8 +198,8 @@ reviewSettings.SetSchedule(schedule)
 
 
 subjectSet := graphmodels.NewSubjectSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-subjectSet.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.groupMembers"
+subjectSet.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"groupId" : "1623f912-5e86-41c2-af47-39dd67582b66", 
 }

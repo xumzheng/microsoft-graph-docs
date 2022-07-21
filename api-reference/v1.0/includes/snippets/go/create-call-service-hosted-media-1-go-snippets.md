@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCall()
-"@odata.type" := "#microsoft.graph.call"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.call"
+requestBody.SetOdataType(&odataType) 
 callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
-"@odata.type" := "#microsoft.graph.invitationParticipantInfo"
-invitationParticipantInfo.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.invitationParticipantInfo"
+invitationParticipantInfo.SetOdataType(&odataType) 
 identity := graphmodels.NewIdentitySet()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identitySet"
+identity.SetOdataType(&odataType) 
 user := graphmodels.NewIdentity()
-"@odata.type" := "#microsoft.graph.identity"
-user.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.identity"
+user.SetOdataType(&odataType) 
 displayName := "John"
 user.SetDisplayName(&displayName) 
 id := "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
@@ -41,8 +41,8 @@ requestedModalities := []graphmodels.Modalityable {
 }
 requestBody.SetRequestedModalities(requestedModalities)
 mediaConfig := graphmodels.NewMediaConfig()
-"@odata.type" := "#microsoft.graph.serviceHostedMediaConfig"
-mediaConfig.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.serviceHostedMediaConfig"
+mediaConfig.SetOdataType(&odataType) 
 requestBody.SetMediaConfig(mediaConfig)
 
 result, err := graphClient.Communications().Calls().Post(requestBody)

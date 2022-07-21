@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewIdentityProviderBase()
-"@odata.type" := "microsoft.graph.appleManagedIdentityProvider"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.appleManagedIdentityProvider"
+requestBody.SetOdataType(&odataType) 
 displayName := "Sign in with Apple"
 requestBody.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{

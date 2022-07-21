@@ -11,8 +11,8 @@ requestBody := graphmodels.NewAnswerPostRequestBody()
 callbackUri := "callbackUri-value"
 requestBody.SetCallbackUri(&callbackUri) 
 mediaConfig := graphmodels.NewMediaConfig()
-"@odata.type" := "#microsoft.graph.appHostedMediaConfig"
-mediaConfig.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.appHostedMediaConfig"
+mediaConfig.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"blob" : "<Media Session Configuration Blob>", 
 }
@@ -26,7 +26,7 @@ requestBody.SetAcceptedModalities(acceptedModalities)
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity) 
 
-graphClient.Communications().CallsById("call-id").Answer(call-id).Post(requestBody)
+graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
 
 
 ```

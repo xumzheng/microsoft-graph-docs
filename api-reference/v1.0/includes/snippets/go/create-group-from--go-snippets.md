@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewReferenceCreate()
-"@odata.id" := "https://graph.microsoft.com/v1.0/groups/{groupId}"
-requestBody.Set"@odata.id"(&"@odata.id") 
+odataId := "https://graph.microsoft.com/v1.0/groups/{groupId}"
+requestBody.SetOdataId(&odataId) 
 
 graphClient.Print().SharesById("printerShare-id").AllowedGroups().$ref().Post(requestBody)
 

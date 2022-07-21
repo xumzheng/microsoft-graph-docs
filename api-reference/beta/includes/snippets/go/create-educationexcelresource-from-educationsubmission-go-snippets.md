@@ -9,8 +9,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationSubmissionResource()
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "#microsoft.graph.educationExcelResource"
-resource.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.educationExcelResource"
+resource.SetOdataType(&odataType) 
 displayName := "userAgeGroup QueryParameter Test.xlsx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{

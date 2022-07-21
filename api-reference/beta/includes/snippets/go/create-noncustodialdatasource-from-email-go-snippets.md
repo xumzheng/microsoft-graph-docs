@@ -11,8 +11,8 @@ requestBody := graphmodels.NewNoncustodialDataSource()
 applyHoldToSource := true
 requestBody.SetApplyHoldToSource(&applyHoldToSource) 
 dataSource := graphmodels.NewdataSource()
-"@odata.type" := "microsoft.graph.ediscovery.userSource"
-dataSource.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.ediscovery.userSource"
+dataSource.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"email" : "adelev@contoso.com", 
 }

@@ -18,8 +18,8 @@ post.SetBody(body)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.referenceAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.referenceAttachment"
+attachment.SetOdataType(&odataType) 
 name := "Personal pictures"
 attachment.SetName(&name) 
 additionalData := map[string]interface{}{
@@ -37,7 +37,7 @@ attachments := []graphmodels.Attachmentable {
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Reply(group-id, conversationThread-id).Post(requestBody)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Reply().Post(requestBody)
 
 
 ```

@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewBookingCustomQuestion()
-"@odata.type" := "#microsoft.graph.bookingCustomQuestion"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.bookingCustomQuestion"
+requestBody.SetOdataType(&odataType) 
 displayName := "What is your age?"
 requestBody.SetDisplayName(&displayName) 
 answerInputType := graphmodels.TEXT_ANSWERINPUTTYPE 

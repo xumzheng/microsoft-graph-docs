@@ -9,8 +9,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.New$refPostRequestBody()
 additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test", 
-	"@odata.type" : "#microsoft.graph.identityProvider", 
+	"odataId" : "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test", 
+	"odataType" : "#microsoft.graph.identityProvider", 
 }
 requestBody.SetAdditionalData(additionalData)
 

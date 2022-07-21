@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewReferenceCreate()
-"@odata.id" := "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
-requestBody.Set"@odata.id"(&"@odata.id") 
+odataId := "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+requestBody.SetOdataId(&odataId) 
 
 graphClient.DevicesById("device-id").RegisteredOwners().$ref().Post(requestBody)
 

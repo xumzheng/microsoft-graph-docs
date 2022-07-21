@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewLinkedResource()
-"@odata.type" := "#microsoft.graph.linkedResource"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.linkedResource"
+requestBody.SetOdataType(&odataType) 
 webUrl := "http://microsoft.com"
 requestBody.SetWebUrl(&webUrl) 
 applicationName := "Microsoft"

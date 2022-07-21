@@ -16,15 +16,15 @@ acceptedModalities := []graphmodels.Modalityable {
 }
 requestBody.SetAcceptedModalities(acceptedModalities)
 mediaConfig := graphmodels.NewMediaConfig()
-"@odata.type" := "#microsoft.graph.appHostedMediaConfig"
-mediaConfig.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.appHostedMediaConfig"
+mediaConfig.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"blob" : "<Media Session Configuration Blob>", 
 }
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
 
-graphClient.Communications().CallsById("call-id").Answer(call-id).Post(requestBody)
+graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
 
 
 ```

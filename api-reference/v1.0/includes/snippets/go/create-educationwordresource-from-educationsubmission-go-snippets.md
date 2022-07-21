@@ -9,8 +9,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationSubmissionResource()
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "microsoft.graph.educationWordResource"
-resource.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.educationWordResource"
+resource.SetOdataType(&odataType) 
 displayName := "Report.docx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAppManagementPolicie()
 additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}", 
+	"odataId" : "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}", 
 }
 requestBody.SetAdditionalData(additionalData)
 

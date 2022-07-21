@@ -9,8 +9,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCreateUploadSessionPostRequestBody()
 attachmentInfo := graphmodels.NewAttachmentInfo()
-"@odata.type" := "microsoft.graph.attachmentInfo"
-attachmentInfo.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.attachmentInfo"
+attachmentInfo.SetOdataType(&odataType) 
 attachmentType := graphmodels.FILE_ATTACHMENTTYPE 
 attachmentInfo.SetAttachmentType(&attachmentType) 
 name := "flower"
@@ -19,7 +19,7 @@ size := int64(3483322)
 attachmentInfo.SetSize(&size) 
 requestBody.SetAttachmentInfo(attachmentInfo)
 
-result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Attachments().CreateUploadSession(todoTaskList-id, todoTask-id).Post(requestBody)
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Attachments().CreateUploadSession().Post(requestBody)
 
 
 ```

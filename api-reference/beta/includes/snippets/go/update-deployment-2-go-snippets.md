@@ -8,11 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewDeployment()
-"@odata.type" := "#microsoft.graph.windowsUpdates.deployment"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.windowsUpdates.deployment"
+requestBody.SetOdataType(&odataType) 
 settings := graphmodels.NewDeploymentSettings()
-"@odata.type" := "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
-settings.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
+settings.SetOdataType(&odataType) 
 monitoring := graphmodels.NewMonitoringSettings()
 
 

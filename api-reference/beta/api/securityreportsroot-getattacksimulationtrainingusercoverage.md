@@ -53,6 +53,8 @@ If successful, this function returns a `200 OK` response code and a [attackSimul
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securityreportsrootthis.getattacksimulationtrainingusercoverage"
@@ -61,6 +63,13 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationTrainingUserCoverage
 ```
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securityreportsrootthisgetattacksimulationtrainingusercoverage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

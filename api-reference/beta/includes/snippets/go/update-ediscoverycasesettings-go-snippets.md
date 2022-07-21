@@ -8,19 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEdiscoveryCaseSettings()
-"@odata.type" := "#microsoft.graph.security.ediscoveryCaseSettings"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.security.ediscoveryCaseSettings"
+requestBody.SetOdataType(&odataType) 
 redundancyDetection := graphmodels.NewRedundancyDetectionSettings()
-"@odata.type" := "microsoft.graph.security.redundancyDetectionSettings"
-redundancyDetection.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.security.redundancyDetectionSettings"
+redundancyDetection.SetOdataType(&odataType) 
 requestBody.SetRedundancyDetection(redundancyDetection)
 topicModeling := graphmodels.NewTopicModelingSettings()
-"@odata.type" := "microsoft.graph.security.topicModelingSettings"
-topicModeling.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.security.topicModelingSettings"
+topicModeling.SetOdataType(&odataType) 
 requestBody.SetTopicModeling(topicModeling)
 ocr := graphmodels.NewOcrSettings()
-"@odata.type" := "microsoft.graph.security.ocrSettings"
-ocr.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.security.ocrSettings"
+ocr.SetOdataType(&odataType) 
 requestBody.SetOcr(ocr)
 
 graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Settings().Patch(requestBody)

@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcOnPremisesConnection()
-"@odata.type" := "#microsoft.graph.cloudPcOnPremisesConnection"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.cloudPcOnPremisesConnection"
+requestBody.SetOdataType(&odataType) 
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 subscriptionId := "0ac520ee-14c0-480f-b6c9-0a90c585ffff"

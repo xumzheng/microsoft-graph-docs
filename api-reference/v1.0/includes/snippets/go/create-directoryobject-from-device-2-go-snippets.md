@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewRegisteredUser()
 additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/v1.0/directoryObjects/{id}", 
+	"odataId" : "https://graph.microsoft.com/v1.0/directoryObjects/{id}", 
 }
 requestBody.SetAdditionalData(additionalData)
 

@@ -53,8 +53,8 @@ approvalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-userSet.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.groupMembers"
+userSet.SetOdataType(&odataType) 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -63,8 +63,8 @@ additionalData := map[string]interface{}{
 }
 userSet.SetAdditionalData(additionalData)
 userSet1 := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.externalSponsors"
-userSet1.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.externalSponsors"
+userSet1.SetOdataType(&odataType) 
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
@@ -77,8 +77,8 @@ approvalStage.SetPrimaryApprovers(primaryApprovers)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.singleUser"
-userSet.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.singleUser"
+userSet.SetOdataType(&odataType) 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -104,8 +104,8 @@ approvalStage1.SetEscalationTimeInMinutes(&escalationTimeInMinutes)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-userSet.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.groupMembers"
+userSet.SetOdataType(&odataType) 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -114,8 +114,8 @@ additionalData := map[string]interface{}{
 }
 userSet.SetAdditionalData(additionalData)
 userSet1 := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.internalSponsors"
-userSet1.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.internalSponsors"
+userSet1.SetOdataType(&odataType) 
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
@@ -128,8 +128,8 @@ approvalStage1.SetPrimaryApprovers(primaryApprovers)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.singleUser"
-userSet.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.singleUser"
+userSet.SetOdataType(&odataType) 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{

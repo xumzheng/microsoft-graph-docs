@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewResourceConnection()
-"@odata.type" := "#microsoft.graph.windowsUpdates.operationalInsightsConnection"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.windowsUpdates.operationalInsightsConnection"
+requestBody.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"azureSubscriptionId" : "322ec614-e9c2-4cd5-a55c-5711fdecf02e", 
 	"azureResourceGroupName" : "target-resource-group", 

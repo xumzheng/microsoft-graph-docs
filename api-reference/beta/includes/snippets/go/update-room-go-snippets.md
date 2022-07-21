@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewPlace()
-"@odata.type" := "microsoft.graph.room"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.room"
+requestBody.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"nickname" : "Conf Room", 
 	"building" : "1", 

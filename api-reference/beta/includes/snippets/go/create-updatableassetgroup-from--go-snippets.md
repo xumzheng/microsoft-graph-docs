@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUpdatableAsset()
-"@odata.type" := "#microsoft.graph.windowsUpdates.updatableAssetGroup"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.windowsUpdates.updatableAssetGroup"
+requestBody.SetOdataType(&odataType) 
 
 result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Post(requestBody)
 

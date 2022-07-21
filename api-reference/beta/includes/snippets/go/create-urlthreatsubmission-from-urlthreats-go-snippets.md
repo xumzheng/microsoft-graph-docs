@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUrlThreatSubmission()
-"@odata.type" := "#microsoft.graph.urlThreatSubmission"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.urlThreatSubmission"
+requestBody.SetOdataType(&odataType) 
 category := graphmodels.PHISHING_SUBMISSIONCATEGORY 
 requestBody.SetCategory(&category) 
 webUrl := "http://phishing.contoso.com"

@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "displayName eq 'A Contoso Team'"
+
 requestParameters := &graphconfig.TeamsRequestBuilderGetQueryParameters{
-	Filter: "displayName eq 'A Contoso Team'",
+	Filter: &requestFilter,
 	Select: [] string {"id","description"},
 }
 configuration := &graphconfig.TeamsRequestBuilderGetRequestConfiguration{

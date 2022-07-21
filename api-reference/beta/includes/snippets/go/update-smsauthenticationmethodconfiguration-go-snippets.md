@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
-"@odata.type" := "#microsoft.graph.smsAuthenticationMethodConfiguration"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.smsAuthenticationMethodConfiguration"
+requestBody.SetOdataType(&odataType) 
 id := "Sms"
 requestBody.SetId(&id) 
 state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 

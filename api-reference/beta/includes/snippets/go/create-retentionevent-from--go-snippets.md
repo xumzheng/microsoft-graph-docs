@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewRetentionEvent()
-"@odata.type" := "#microsoft.graph.security.retentionEvent"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.security.retentionEvent"
+requestBody.SetOdataType(&odataType) 
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 description := "String"
@@ -17,8 +17,8 @@ requestBody.SetDescription(&description)
 
 
 eventQuery := graphmodels.NewEventQuery()
-"@odata.type" := "microsoft.graph.security.eventQueries"
-eventQuery.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.security.eventQueries"
+eventQuery.SetOdataType(&odataType) 
 
 eventQueries := []graphmodels.EventQueryable {
 	eventQuery,
@@ -28,14 +28,14 @@ requestBody.SetEventQueries(eventQueries)
 eventTriggerDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetEventTriggerDateTime(&eventTriggerDateTime) 
 createdBy := graphmodels.NewIdentitySet()
-"@odata.type" := "microsoft.graph.identitySet"
-createdBy.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.identitySet"
+createdBy.SetOdataType(&odataType) 
 requestBody.SetCreatedBy(createdBy)
 
 
 eventPropagationResult := graphmodels.NewEventPropagationResult()
-"@odata.type" := "microsoft.graph.security.eventPropagationResult"
-eventPropagationResult.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.security.eventPropagationResult"
+eventPropagationResult.SetOdataType(&odataType) 
 
 eventPropagationResults := []graphmodels.EventPropagationResultable {
 	eventPropagationResult,
@@ -43,8 +43,8 @@ eventPropagationResults := []graphmodels.EventPropagationResultable {
 }
 requestBody.SetEventPropagationResults(eventPropagationResults)
 eventStatus := graphmodels.NewRetentionEventStatus()
-"@odata.type" := "microsoft.graph.security.retentionEventStatus"
-eventStatus.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.security.retentionEventStatus"
+eventStatus.SetOdataType(&odataType) 
 requestBody.SetEventStatus(eventStatus)
 lastStatusUpdateDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetLastStatusUpdateDateTime(&lastStatusUpdateDateTime) 

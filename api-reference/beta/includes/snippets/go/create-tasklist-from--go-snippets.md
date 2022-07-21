@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewBaseTaskList()
-"@odata.type" := "#microsoft.graph.taskList"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.taskList"
+requestBody.SetOdataType(&odataType) 
 displayName := "Shopping list"
 requestBody.SetDisplayName(&displayName) 
 

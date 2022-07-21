@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAttachment()
-"@odata.type" := "#Microsoft.OutlookServices.ItemAttachment"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#Microsoft.OutlookServices.ItemAttachment"
+requestBody.SetOdataType(&odataType) 
 name := "name-value"
 requestBody.SetName(&name) 
 additionalData := map[string]interface{}{
 item := graphmodels.New()
-"@odata.type" := "microsoft.graph.message"
-item.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.message"
+item.SetOdataType(&odataType) 
 	requestBody.SetItem(item)
 }
 requestBody.SetAdditionalData(additionalData)

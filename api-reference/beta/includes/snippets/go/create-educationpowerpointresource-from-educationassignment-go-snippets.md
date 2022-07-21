@@ -11,8 +11,8 @@ requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "microsoft.graph.educationPowerPointResource"
-resource.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.educationPowerPointResource"
+resource.SetOdataType(&odataType) 
 displayName := "state diagram.pptx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{

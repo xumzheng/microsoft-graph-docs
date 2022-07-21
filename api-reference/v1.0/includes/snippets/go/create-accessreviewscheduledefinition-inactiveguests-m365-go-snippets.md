@@ -15,8 +15,8 @@ requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
 descriptionForReviewers := "Information security is everyone's responsibility. Review our access policy for more."
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
 instanceEnumerationScope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-instanceEnumerationScope.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.accessReviewQueryScope"
+instanceEnumerationScope.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"query" : "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')", 
 	"queryType" : "MicrosoftGraph", 
@@ -24,8 +24,8 @@ additionalData := map[string]interface{}{
 instanceEnumerationScope.SetAdditionalData(additionalData)
 requestBody.SetInstanceEnumerationScope(instanceEnumerationScope)
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewInactiveUsersQueryScope"
-scope.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.accessReviewInactiveUsersQueryScope"
+scope.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 	"query" : "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')", 
 	"queryType" : "MicrosoftGraph", 

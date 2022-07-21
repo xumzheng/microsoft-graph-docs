@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
-"@odata.type" := "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
+requestBody.SetOdataType(&odataType) 
 state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 
 requestBody.SetState(&state) 
 

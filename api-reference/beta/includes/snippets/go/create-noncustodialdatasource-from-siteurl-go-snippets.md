@@ -11,8 +11,8 @@ requestBody := graphmodels.NewNoncustodialDataSource()
 applyHoldToSource := false
 requestBody.SetApplyHoldToSource(&applyHoldToSource) 
 dataSource := graphmodels.NewdataSource()
-"@odata.type" := "microsoft.graph.ediscovery.siteSource"
-dataSource.Set"@odata.type"(&"@odata.type") 
+odataType := "microsoft.graph.ediscovery.siteSource"
+dataSource.SetOdataType(&odataType) 
 additionalData := map[string]interface{}{
 site := graphmodels.New()
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"

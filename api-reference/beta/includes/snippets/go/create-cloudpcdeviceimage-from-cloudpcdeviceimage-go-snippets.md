@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcDeviceImage()
-"@odata.type" := "#microsoft.graph.cloudPcDeviceImage"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.cloudPcDeviceImage"
+requestBody.SetOdataType(&odataType) 
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 osBuildNumber := "OS Build Number value"

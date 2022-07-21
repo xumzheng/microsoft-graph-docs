@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewTeamsAppSettings()
-"@odata.type" := "#microsoft.graph.teamsAppSettings"
-requestBody.Set"@odata.type"(&"@odata.type") 
+odataType := "#microsoft.graph.teamsAppSettings"
+requestBody.SetOdataType(&odataType) 
 isChatResourceSpecificConsentEnabled := "true"
 requestBody.SetIsChatResourceSpecificConsentEnabled(&isChatResourceSpecificConsentEnabled) 
 
