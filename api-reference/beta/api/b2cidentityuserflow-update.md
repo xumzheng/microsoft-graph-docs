@@ -55,19 +55,19 @@ The following table shows the properties that are able to be updated after you c
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userFlowType|userFlowType|Inherited from [identityUserFlow](../resources/identityuserflow.md). The possible values are: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`. Required.|
-|userFlowTypeVersion|Single|Inherited from [identityUserFlow](../resources/identityuserflow.md). Required.|
-|apiConnectorConfiguration|[Microsoft.Cpim.Api.DataModels.userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Defines which APIs are called at specific points in the user flow. Each relationship of this object corresponds to a specific step in the user flow that can be configured to call an API connector. Optional.|
-|tokenLifetimeConfiguration|[Microsoft.Cpim.Api.DataModels.userFlowTokenLifetimeConfiguration](../resources/userflowtokenlifetimeconfiguration.md)|Configures the lifetime for ID, access and refresh tokens.. Optional.|
+|userFlowType|userFlowType| The possible values are: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`. |
+|userFlowTypeVersion|Single| The version of the user flow.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Defines which APIs are called at specific points in the user flow. Each relationship of this object corresponds to a specific step in the user flow that can be configured to call an API connector. |
+|tokenLifetimeConfiguration|[userFlowTokenLifetimeConfiguration](../resources/userflowtokenlifetimeconfiguration.md)|Configures the lifetime for ID, access, and refresh tokens.|
 |authenticationMethods|b2cAuthenticationMethods|The possible values are: `emailWithPassword`, `userName`, `phoneWithOneTimePassword`. Optional.|
-|isConditionalAccessEnforced|Boolean|If this is enabled, then B2C userflows will evavluate Conditional Access policies post primary authentication. If MFA is selected to be conditional then this flag should also be enabled.  Required.|
-|isJavaScriptEnabled|Boolean|Controls if JavaScript is allowed to run on the HTML pages. Required.|
-|multifactorAuthenticationConfiguration|[Microsoft.Cpim.Api.DataModels.userFlowMultifactorAuthenticationConfiguration](../resources/userflowmultifactorauthenticationconfiguration.md)|To enable multifactor authentication for the userflow, you need to specify multifactorAuthenticationState which controls if and when MFA should be tirggered and multifactorAuthenticationMethod whcih controls which MFA method the user should use. Optional.|
-|tokenClaimsConfiguration|[Microsoft.Cpim.Api.DataModels.userFlowTokenClaimsConfiguration](../resources/userflowtokenclaimsconfiguration.md)|Defines which claims are present in the id, access or refresh token. Optional.|
-|passwordComplexityConfiguration|[Microsoft.Cpim.Api.DataModels.userFlowPasswordConfiguration](../resources/userflowpasswordconfiguration.md)|This property determines the password complexity of the password the users must satisfy for signup or password reset flows. Optional.|
+|isConditionalAccessEnforced|Boolean|If this is enabled, then B2C user flows will evaluate CA policies after the primary authentication. If the **multifactorAuthenticationState** property in the **multifactorAuthenticationConfiguration** object is `conditional`, then this property should be `true`.|
+|isJavaScriptEnabled|Boolean|Controls whether JavaScript is allowed to run on the HTML pages. |
+|multifactorAuthenticationConfiguration|[userFlowMultifactorAuthenticationConfiguration](../resources/userflowmultifactorauthenticationconfiguration.md)| Configure whether MFA is enabled for the user flow.|
+|tokenClaimsConfiguration|[userFlowTokenClaimsConfiguration](../resources/userflowtokenclaimsconfiguration.md)|Defines which claims are present in the id, access, or refresh token.|
+|passwordComplexityConfiguration|[userFlowPasswordConfiguration](../resources/userflowpasswordconfiguration.md)|This property determines the password complexity of the password the users must satisfy for signup or password reset flows. Optional.|
 |isLanguageCustomizationEnabled|Boolean|The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.|
 |defaultLanguageTag|String|Indicates the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|
-|singleSignOnSessionConfiguration|[userFlowSingleSignOnSessionConfiguration](../resources/userflowsinglesignonsessionconfiguration.md)|Configures the single-sign on and keep me signed in session behavior of authentications.|
+|singleSignOnSessionConfiguration|[userFlowSingleSignOnSessionConfiguration](../resources/userflowsinglesignonsessionconfiguration.md)|Configures the single sign-on and Keep Me Signed In (KMSI) session behavior of authentications. |
 
 ## Response
 

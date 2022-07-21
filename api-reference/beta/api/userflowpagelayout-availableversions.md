@@ -1,6 +1,6 @@
 ---
 title: "userFlowPageLayout: availableVersions"
-description: "Show page layout versions so developers and can know the available and supported versions."
+description: "Retrieve the available and supported versions of a page layout."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This function is bound only to "userFlowPageLayout" entities with the purpose to show the supported version for page layout, similar to the behavior used in Azure portal when trying to change the version, this with the intention to show developers and admins the exact values allowed to use for a page layout version.
+Retrieve the available and supported versions of a page layout.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

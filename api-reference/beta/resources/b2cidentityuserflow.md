@@ -59,7 +59,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 |isLanguageCustomizationEnabled|Boolean|The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.|
 |defaultLanguageTag|String|Indicates the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|
 |tokenLifetimeConfiguration|[userFlowTokenLifetimeConfiguration](../resources/userflowtokenlifetimeconfiguration.md)| Configures the lifetime for ID, access and refresh tokens. |
-|singleSignOnSessionConfiguration|[userFlowSingleSignOnSessionConfiguration](../resources/userflowsinglesignonsessionconfiguration.md)|Configures the single-sign on and keep me signed in session behavior of authentications.|
+|singleSignOnSessionConfiguration|[userFlowSingleSignOnSessionConfiguration](../resources/userflowsinglesignonsessionconfiguration.md)|Configures the single-sign on and "keep me signed in" session behavior for authentications.|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuration for enabling an API connector for use as part of the user flow. You can only obtain the value of this object using [Get userFlowApiConnectorConfiguration](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md).|
 
 ## Relationships
@@ -71,7 +71,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |applicationClaims|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Attributes that will be returned as claims in the token to the resource application ('relying party').|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.|
-|pageLayouts|[userFlowPageLayout](../resources/userflowpagelayout.md) collection|The page layout used within the user flow.|
+|pageLayouts|[userFlowPageLayout](../resources/userflowpagelayout.md) collection|The page layout that's used within the userflow.|
 
 ## JSON representation
 

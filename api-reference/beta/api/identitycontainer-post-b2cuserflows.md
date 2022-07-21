@@ -374,7 +374,7 @@ Content-type: application/json
   ]
 }-->
 
-### Example 4: Create a user flow with the default values and configuration for session and token lifetimes
+### Example 4: Create a signUpOrSignIn user flow with customized session and token lifetimes
 
 #### Request
 
@@ -411,15 +411,12 @@ Content-type: application/json
 }
 ```
 
----
 
 #### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
-
-**Note:** The `apiConnectorConfiguration` property always returns a '{}' value. To see full value with the navigation properties, use [this](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

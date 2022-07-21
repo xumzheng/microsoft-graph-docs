@@ -1,5 +1,5 @@
 ---
-title: "restoreDefaultPageUri"
+title: "userFlowPageLayout: restoreDefaultPageUri"
 description: "Restore the default value of the pageUri property."
 author: "almars"
 ms.localizationpriority: medium

@@ -1,6 +1,6 @@
 ---
 title: "userFlowPageLayout resource type"
-description: The amount of page layouts can't be modified, only the present set of entities allows updated for "pageUri" and "version"."
+description: "Contains details about a userflow's page layout."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Contains details about the user flow's page layout.
 
-Azure Active Directory B2C (Azure AD B2C) periodically releases improvements and fixes with each new page layout version. Organizations can browse available AD B2C user flow page layouts and update them to the latest versions.
+Azure Active Directory B2C (Azure AD B2C) periodically releases improvements and fixes with each new page layout version. Organizations can browse available Azure AD B2C user flow page layouts and update them to the latest versions.
 
 > [!IMPORTANT]
 > We highly recommend you keep your page layout versions up-to-date so that all page elements reflect the latest security enhancements, accessibility standards, and your feedback.
