@@ -1,5 +1,5 @@
 ---
-title: "Education graph API best practices"
+title: "Education Graph API Best Practices"
 description: "Provides best practices for developers on how best to use EDU assignments graph apis."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Education graph API best practices
+# Education Graph API Best Practices
 This article walks through the best practices for using the Assignments .NET SDK. Following these practices, will help improve your latency, availability, and boost overall performance. 
 
 ## Pre-condition
