@@ -7,10 +7,10 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-
+# Education graph API best practices
 This article walks through the best practices for using the Assignments .NET SDK. Following these practices, will help improve your latency, availability, and boost overall performance. 
 
-# Pre-condition
+## Pre-condition
 Before you delve into these best practices, it is important to make sure that you are familiar with-
 1. Graph SDK [Overview](https://docs.microsoft.com/en-us/graph/sdks/sdks-overview)
 2. General best practices for Microsoft Graph. The general best practices are listed [here](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/concepts/best-practices-concept.md)
@@ -30,12 +30,10 @@ Before you delve into these best practices, it is important to make sure that yo
 | |Performance Testing Backoffs | When performing testing on your application, you should implement backoffs at `RetryAfter` intervals. Respecting the backoff helps ensure that you'll spend a minimal amount of time waiting between retries.
 
 
-# Best Practices
-
 ## Latency
 Here are some suggestions to improve your latency.
 
-## Use $select whenever possible
+### Use $select whenever possible
 By default, Assignments APIs return a fixed set of properties on GET requests. For example, see the properties returned on an assignment GET by default:
 
 GET Request:
@@ -175,7 +173,7 @@ Reduces COGs for JSON deserialization in the application calling assignments.
 3.
 Less bits to transmit over the wire.
 
-## When using $filter, also specify $orderby
+### When using $filter, also specify $orderby
 When a GET call with a $filter query parameter also has a $orderby, and the $orderby contains at least one property from the $filter, we will generate an index in our underlying database so subsequent GETs will return more quickly. So, if an application has a filter clause like this:
 
 .../assignments/?$filter=status ne 'draft'
