@@ -264,6 +264,8 @@ items:
           - name: Overview
             href: education-concept-overview.md
             displayName: education
+          - name: Best Practices
+            href: education-graph-api-best-practices.md
           - name: Rubrics
             href: education-rubric-overview.md
           - name: Upload files
