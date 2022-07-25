@@ -12,7 +12,7 @@ This article walks through the best practices for using the Assignments .NET SDK
 
 ## Pre-condition
 Before you delve into these best practices, it is important to make sure that you are familiar with-
-1. Graph SDK [Overview](https://docs.microsoft.com/en-us/graph/sdks/sdks-overview)
+1. Graph SDK [Overview](https://docs.microsoft.com/graph/sdks/sdks-overview)
 2. General best practices for Microsoft Graph. The general best practices are listed [here](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/concepts/best-practices-concept.md)
 
 ## Checklist
@@ -23,8 +23,8 @@ Before you delve into these best practices, it is important to make sure that yo
 | |Singleton Client | Use a single instance of `GraphServiceClient` for the lifetime of your application for better performance
 | | CPU | You may run into connectivity/availability issues due to lack of resources on your client machine. Monitor your CPU utilization on nodes running the graph client and scale up/out if usage is very high.
 | |Hosting | Use Windows 64-bit host processing for best performance, whenever possible.
-| |Networking | If using a virtual machine to run your application, enable [Accelerated Networking] (https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-powershell) on your VM to help with bottlenecks due to high traffic and reduce latency or CPU jitter. You might also want to consider using a higher end Virtual Machine where the max CPU usage is under 70%.
-| |Use Async/Await |Avoid blocking calls: `Task.Result`, `Task.Wait`, and `Task.GetAwaiter().GetResult()`. The entire call stack is asynchronous in order to benefit from [async/await](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/) patterns. Many synchronous blocking calls lead to [Thread Pool starvation] (https://docs.microsoft.com/en-us/archive/blogs/vancem/diagnosing-net-core-threadpool-starvation-with-perfview-why-my-service-is-not-saturating-all-cores-or-seems-to-stall) and degraded response times.
+| |Networking | If using a virtual machine to run your application, enable [Accelerated Networking] (https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) on your VM to help with bottlenecks due to high traffic and reduce latency or CPU jitter. You might also want to consider using a higher end Virtual Machine where the max CPU usage is under 70%.
+| |Use Async/Await |Avoid blocking calls: `Task.Result`, `Task.Wait`, and `Task.GetAwaiter().GetResult()`. The entire call stack is asynchronous in order to benefit from [async/await](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/) patterns. Many synchronous blocking calls lead to [Thread Pool starvation] (https://docs.microsoft.com/archive/blogs/vancem/diagnosing-net-core-threadpool-starvation-with-perfview-why-my-service-is-not-saturating-all-cores-or-seems-to-stall) and degraded response times.
 | |End-to-End Timeouts | To get end-to-end timeouts, you'll need to use both `RequestTimeout` and `CancellationToken` parameters.
 | |Retry Logic | A transient error is an error that has an underlying cause that soon resolves itself. Applications that connect to your database should be built to expect these transient errors. To handle them, implement retry logic in your code instead of surfacing them to users as application errors. The SDK has built-in logic to handle these transient failures on retryable requests like read or query operations. The SDK will not retry on writes for transient failures as writes are not idempotent. The SDK does allow users to configure retry logic for throttles. |
 | |Performance Testing Backoffs | When performing testing on your application, you should implement backoffs at `RetryAfter` intervals. Respecting the backoff helps ensure that you'll spend a minimal amount of time waiting between retries.
@@ -190,11 +190,11 @@ We allow filtering and ordering on select properties.
 Your application calls the assignments service. In some cases, you might need to make calls in the context of e.g., say a lot of students and/or resources. This can cause a spike in service traffic. In order to safeguard itself against such spikes and to make sure service remains available to all callers, the service will throttle this specific caller.
 
 In order to make sure you build smooth user experience; the application need to ensure it is not generating lot of calls in the short span of time. You can implement a concurrency control using one of the following mechanisms-
-- [ConcurrentQueue](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=net-6.0)
+- [ConcurrentQueue](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=net-6.0)
   The basic idea is to put the work onto a queue and then have multiple threads reading off that queue. This is a nice simple approach, but it does require us to remember to lock the queue as it will be accessed by multiple threads. In this example I'm using ConcurrentQueue to give us thread safety.
-- [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim?view=net-6.0)
+- [SemaphoreSlim](https://docs.microsoft.com/dotnet/api/system.threading.semaphoreslim?view=net-6.0)
   Use a SemaphoreSlim with an initialCount equal to the maximum number of threads. Then you use WaitAsync to wait until it's OK to queue up another.
-- [Parallel.ForEach](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.parallel.foreach?view=net-6.0)
+- [Parallel.ForEach](https://docs.microsoft.com/dotnet/api/system.threading.tasks.parallel.foreach?view=net-6.0)
    You can simply specify the `MaxDegreeOfParallelism` and then provide an Action to perform on each item in your `IEnumerable`
 - [Polly Bulkhead Policy](https://github.com/App-vNext/Polly/wiki/Bulkhead)
   A bulkhead policy restricts the number of concurrent calls that can be made, and optionally allows you to queue up calls that exceed that number.
@@ -271,10 +271,10 @@ async Task SendResultAsync(CancellationToken cancellationToken)
 }
 ```
 
-# FAQ
-## What to do we if application is seeing 400 (bad request) status code in the service requests?
+## FAQ
+### What to do we if application is seeing 400 (bad request) status code in the service requests?
 The application developer needs to review the assignment service graph documentation carefully. You are likely missing some property or the value of one or more property related to entity in question is wrong.
 
-## What we do if we see Internal Server error?
+### What we do if we see Internal Server error?
 If anytime you see 500 (Internal Server error), Please report it to us.
 
