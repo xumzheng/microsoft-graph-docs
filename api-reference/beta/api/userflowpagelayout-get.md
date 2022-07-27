@@ -1,6 +1,6 @@
 ---
 title: "Get userFlowPageLayout"
-description: "Read the properties and relationships of a userFlowPageLayout object."
+description: "Retrieve a page layout in a b2cidentityuserflow."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [userFlowPageLayout](../resources/userflowpagelayout.md) object.
+Retrieve a [page layout](../resources/userflowpagelayout.md) in a b2cidentityuserflow.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

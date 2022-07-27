@@ -1,6 +1,6 @@
 ---
 title: "userFlowMultifactorAuthenticationConfiguration resource type"
-description: "API settings to contorl MFA settings for B2C userflows"
+description: "Configuration for controlling multi-factor authentication (MFA) settings for B2C userflows."
 author: "harsh-aseeja"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,16 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory B2C (Azure AD B2C) integrates directly with Azure AD Multi-Factor Authentication so that you can add a second layer of security to sign-up and sign-in experiences in your applications. 
-
-To enable multifactor authentication for the userflow, you need to specify `multifactorAuthenticationState` which controls if and when MFA should be tirggered and `multifactorAuthenticationMethod` whcih controls which MFA method the user should use. 
+Azure Active Directory B2C (Azure AD B2C) integrates directly with Azure AD multi-factor authentication (MFA) so that you can add a second layer of security to sign-up and sign-in experiences in your applications. Use this resource to configure the MFA settings in the Azure AD B2C user flow.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|multifactorAuthenticationState|userFlowMultifactorAuthenticationState|The possible values are: `off`, `on`, `conditional`.|
-|multifactorAuthenticationMethod|userFlowMultifactorAuthenticationMethod|The possible values are: `email`, `phoneCallOrSms`, `phoneCall`, `phoneSms`, and `authenticator`.|
+|multifactorAuthenticationState|userFlowMultifactorAuthenticationState|Controls if and when MFA should be triggered. The possible values are: `off`, `on`, `conditional`. For more information about these states, see [userFlowMultifactorAuthenticationState values](#userflowmultifactorauthenticationstate-values).|
+|multifactorAuthenticationMethod|userFlowMultifactorAuthenticationMethod|Specifies the MFA method the user should use when MFA is triggered. The possible values are: `email`, `phoneCallOrSms`, `phoneSms`, `phoneCall`, `authenticator`, `unknownFutureValue`. For more information about these states, see [userFlowMultifactorAuthenticationMethod values](#userflowmultifactorauthenticationmethod-values).|
 
 ### multifactorAuthenticationState values
 |Value|Description|

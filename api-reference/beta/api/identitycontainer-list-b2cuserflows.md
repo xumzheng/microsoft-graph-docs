@@ -124,7 +124,7 @@ Content-type: application/json
           "userFlowType": "signUp",
           "userFlowTypeVersion": 1,
           "isLanguageCustomizationEnabled": false,
-          "defaultLanguageTag": null,
+          "defaultLanguageTag": null
       },
       {
           "id": "B2C_1_CustomerSignIn",

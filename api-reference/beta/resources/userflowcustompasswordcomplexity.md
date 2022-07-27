@@ -1,6 +1,6 @@
 ---
 title: "userFlowCustomPasswordComplexity resource type"
-description: "API doc to describe custom password complexity"
+description: "Use this resource to customize the password complexity rules for a userflow password configuration setting."
 author: "harsh-aseeja"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
+description: Use this resource to customize the password complexity rules for an userflow password configuration setting.
 
 ## Properties
 |Property|Type|Description|

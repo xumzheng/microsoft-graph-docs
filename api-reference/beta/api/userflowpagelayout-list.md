@@ -1,6 +1,6 @@
 ---
-title: "List userFlowPageLayouts"
-description: "Get a list of the userFlowPageLayout objects and their properties."
+title: "List pageLayouts" associated to an userflow
+description: "Get the list of page layouts in an userflow."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [userFlowPageLayout](../resources/userflowpagelayout.md) objects and their properties.
+Get the pageLayouts in an userflow. Userflow pageLayouts are represented by the [userFlowPageLayout](../resources/userflowpagelayout.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
