@@ -1805,6 +1805,16 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
+## Revocation permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _UserRevocationEvent.Read.All_ | Read user revocation event information. | Allows the app to read user revocation event information for all users in your organization without a signed-in user. | Yes | No |
+| _ServiceRevocationEvent.Read.All_ | Read service revocation event information. | Allows the app to read service revocation event information for all users in your organization without a signed-in user. | Yes | No |
+
+---
 
 ## Role management permissions
 
@@ -2657,7 +2667,7 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | **App tasks involving User**	 |  **Required permissions** | **Permission strings** |
 |:-------------------------------|:---------------------|:---------------|
 | App wants to read other users' basic information (only display name and picture), for example to show in a people picking experience	 | _User.ReadBasic.All_  |  Read all user's basic profiles |
-| App wants to read complete user profile for signed in user (see direct reports, and manager, etc.)	 | _User.Read_ | Enable sign-in and read user profile|
+| App wants to read complete user profile for signed in user (see direct reports, and manager, etc.)	 | _User.Read_ | Enable sign-in and read user profile |
 | App wants to read complete user profile all users	 | _User.Read.All_ |  Read all user's full profiles   |
 | App wants to read files, mail and calendar information for the signed in user	 | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Enable sign-in and read user profile, Read users' files,  Read user mail,  Read user calendars |
 | App wants to read the signed-in user's (my) files and files that other users have shared with the signed-in user (me). | _User.Read_, _Files.Read_, _Sites.Read.All_ | Enable sign-in and read user profile, Read users' files,  Read items in all site collections |
@@ -2665,6 +2675,7 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | App wants to read and write complete user profile all users	 | _User.ReadWrite.All_ | Read and write all user's full profiles |
 | App wants to read and write files, mail and calendar information for the signed in user	 | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Read and write access to user profile,  Read and write access to user profile,  Read and write access to user mail, Have full access to user calendars |
 | App wants to submit a data policy operation request to export a user's personal data | _User.Export.All_ | Export a user'a personal data. |
+
 
 
 ### Access scenarios on the Group resource
