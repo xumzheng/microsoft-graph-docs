@@ -8,13 +8,15 @@ doc_type: apiPageType
 ---
 
 # managementActionTenantDeploymentStatus: changeDeploymentStatus
+
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Changes the tenant level deployment status for the management action. This information is used to provide insights into what management actions are in a specific state. As example there might be a plan to apply the require multi-factor authentication for admins, so it would be ideal to change the status to planned to reflect the appropriate status.
+Changes the status for the [management template step deployment](../resources/managedtenants-managementtemplatestepdeployment.md) resources. This information is used to provide insights into what management actions are in a specific state. As example there might be a plan to deploy the require multi-factor authentication for admins, so it would be ideal to change the status to planned to reflect the appropriate status.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,12 +36,14 @@ POST /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuse
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.

@@ -30,7 +30,7 @@ Represents the settings that can be used to configure Microsoft 365 services.
 |description|String|The description for the management template step. Optional. Read-only.|
 |displayName|String|The display name for the management template step. Optional. Read-only.|
 |id|String|The unique identifier for the management template step. Required. Read-only.|
-|managementPortal|String|The display name for the management portal where further actions can be taken. Required.|
+|managementPortal|String|The display name for the management portal of the workload (e.g., Azure Active Directory, Microsoft Endpoint Manager) where service specific management actions can be performed. Required.|
 |portalLink|String|The link for the management where further actions can be taken. Required.|
 |priority|Int32|The position in the sequence where the management template should be applied. Required.|
 |provider|[microsoft.graph.managedTenants.managementProvider](#managementprovider-values)|The provider for the management template step. The possible values are: `microsoft`, `community`, `indirectProvider`, `self`, `unknownFutureValue`. Required. Read-only.|
@@ -39,11 +39,11 @@ Represents the settings that can be used to configure Microsoft 365 services.
 
 |Member|Description|
 |:---|:---|
-|microsoft|Represents that Microsoft is the provider.|
-|community|Represents the community is the provider.|
-|indirectProvider|Represents that an indirect provider is the provider.|
-|self|Represents the managing entity is the provider.|
-|unknownFutureValue|Represent a future or unknown value is the provider.|
+|microsoft|Indicates that Microsoft is the provider.|
+|community|Indicates the community is the provider.|
+|indirectProvider|Indicates that an indirect provider is the provider.|
+|self|Indicates the managing entity is the provider.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use|
 
 ## Relationships
 |Relationship|Type|Description|

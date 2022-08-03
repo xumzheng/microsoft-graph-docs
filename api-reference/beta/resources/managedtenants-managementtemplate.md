@@ -67,6 +67,7 @@ The following is a JSON representation of the resource.
       "jsonAllowedValues": "String"
     }
   ],
+  "version": 1,
   "workloadActions": [
     {
       "actionId": "String",
