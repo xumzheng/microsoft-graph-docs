@@ -19,7 +19,7 @@ Represents relationship information for a management intent.
 |Property|Type|Description|
 |:---|:---|:---|
 |managementIntentDisplayName|String|The display name for the management intent. Optional. Read-only.|
-|managementIntentId|String|	The identifier for the management intent. Required. Read-only.|
+|managementIntentId|String|The identifier for the management intent. Required. Read-only.|
 |managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|The collection of management template information associated with the management intent. Optional. Read-only.|
 
 ## Relationships
@@ -39,7 +39,11 @@ The following is a JSON representation of the resource.
   "managementIntentDisplayName": "String",
   "managementTemplates": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.managementTemplateDetailedInfo"
+      "@odata.type": "microsoft.graph.managedTenants.managementTemplateDetailedInfo",
+      "managementTemplateId": "String",
+      "displayName": "String",
+      "version": "Integer",
+      "category": "String"
     }
   ]
 }
