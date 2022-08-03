@@ -40,6 +40,7 @@ None.
 |managementTemplates|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|The collection of baseline management templates across managed tenants.|
 |managementTemplateSteps|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplateStep.md) collection|The collection of management template steps across managed tenants.|
 |managementTemplateStepVersions|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|The collection of management template step versions across managed tenants.|
+|myRoles|[microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md) collection|The collection of role assignments to a signed-in user for a managed tenant.|
 |tenantGroups|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) collection|The collection of a logical grouping of managed tenants used by the multi-tenant management platform.|
 |tenants|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md) collection|The collection of tenants associated with the managing entity.|
 |tenantsCustomizedInformation|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection|The collection of tenant level customized information across managed tenants.|
