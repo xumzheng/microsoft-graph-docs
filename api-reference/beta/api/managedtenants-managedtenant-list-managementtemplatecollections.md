@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List managementTemplateCollections
+
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph.managedTenants
 Get the [managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) resources associated with a [managedTenant](../resources/managedtenants-managedtenant.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,14 +36,17 @@ GET /tenantRelationships/managedTenants/managementTemplateCollections
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$filter`, `$orderby`, `$select`, and `$top`.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -61,6 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 ```
 
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

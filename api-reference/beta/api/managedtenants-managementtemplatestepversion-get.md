@@ -36,7 +36,8 @@ GET /tenantRelationships/managedTenants/managementTemplates/{managementTemplateI
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, and `$select`.
 
 ## Request headers
 |Name|Description|
