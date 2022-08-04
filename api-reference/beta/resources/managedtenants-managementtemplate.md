@@ -16,6 +16,7 @@ Namespace: microsoft.graph.managedTenants
 Represents a group of actions and setting that can be performed against a managed tenant.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List managementTemplates](../api/managedtenants-managedtenant-list-managementtemplates.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get a list of the [microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) objects and their properties.|
@@ -24,6 +25,7 @@ Represents a group of actions and setting that can be performed against a manage
 |[List managementTemplateSteps](../api/managedtenants-managementtemplate-list-managementtemplatesteps.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|Get the managementTemplateStep resources from the managementTemplateSteps navigation property.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |category|managementCategory|The management category for the management template. The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`. Required. Read-only.|
@@ -35,12 +37,14 @@ Represents a group of actions and setting that can be performed against a manage
 |workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management template. Optional. Read-only.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |managementTemplateCollections|[microsoft.graph.managedTenants.managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) collection|The collection of available management templates.|
 |managementTemplateSteps|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|The collection of available management template steps.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

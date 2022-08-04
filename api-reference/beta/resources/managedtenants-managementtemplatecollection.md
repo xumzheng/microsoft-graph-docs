@@ -16,6 +16,7 @@ Namespace: microsoft.graph.managedTenants
 Represent a collection of [microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) resources used to define the group of actions and settings for a [microsoft.graph.managedTenants.managedTenant](../resources/managedtenants-managedtenant.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List managementTemplateCollections](../api/managedtenants-managedtenant-list-managementtemplatecollections.md)|[microsoft.graph.managedTenants.managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) collection|Get a list of the [managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) objects and their properties.|
@@ -23,6 +24,7 @@ Represent a collection of [microsoft.graph.managedTenants.managementTemplate](..
 |[List managementTemplates](../api/managedtenants-managementtemplatecollection-list-managementtemplates.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get the managementTemplate resources from the managementTemplates navigation property.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description for the management template connection. Optional. Read-only.|
@@ -30,11 +32,13 @@ Represent a collection of [microsoft.graph.managedTenants.managementTemplate](..
 |id|String|The unique identifier for the management template collection. Required. Read-only.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |managementTemplates|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|A collection of management templates that can be used to configure Microsoft 365 services.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
