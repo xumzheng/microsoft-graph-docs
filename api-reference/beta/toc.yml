@@ -10786,6 +10786,11 @@ items:
                 href: api/managedtenants-managedtenant-list-managementtemplatecollections.md
               - name: Get management template collection
                 href: api/managedtenants-managementtemplatecollection-get.md
+              - name: Accepted versions
+                href: resources/managedtenants-managementtemplatestepversion.md
+                items: 
+                  - name: List accepted versions
+                    href: api/managedtenants-managementtemplatestep-list-acceptedversion.md
           - name: Management template step
             href: resources/managedtenants-managementtemplatestep.md
             items:
