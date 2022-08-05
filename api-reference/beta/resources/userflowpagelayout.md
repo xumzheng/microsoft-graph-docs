@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains details about the user flow's page layout.
+Contains details about a userflow's page layout.
 
 Azure Active Directory B2C (Azure AD B2C) periodically releases improvements and fixes with each new page layout version. Organizations can browse available Azure AD B2C user flow page layouts and update them to the latest versions.
 
