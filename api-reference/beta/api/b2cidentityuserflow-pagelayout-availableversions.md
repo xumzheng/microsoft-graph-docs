@@ -54,7 +54,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{b2cIdentityUserFlowId}/pageLayouts/{userFlowPageLayoutId}/availableVersions
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Example/pageLayouts/api.signinandsignupwithpassword1.1/availableVersions
 ```
 
 
@@ -71,8 +71,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    "String"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)," 
+    "value": [
+      "1.2.3",
+      "1.2.2",
+      "1.2.1",
+      "1.2.0",
+      "1.1.0",
+      "1.0.0"
   ]
 }
 ```
