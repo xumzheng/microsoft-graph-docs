@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identity/b2cUserFlows/{b2cIdentityUserFlowId}/pageLayouts/{userFlowPageLayoutId}
+GET /identity/b2cUserFlows/B2C_1_Example/pageLayouts/api.signinandsignupwithpassword1.1
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [userFlowPageL
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{b2cIdentityUserFlowId}/pageLayouts/{userFlowPageLayoutId}
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Example/pageLayouts/api.signinandsignupwithpassword1.1
 ```
 
 
@@ -77,10 +77,10 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.userFlowPageLayout",
     "id": "8073a745-debc-c577-dfc9-e5b451c6b227",
-    "displayName": "String",
-    "isCustomPageUri": "Boolean",
-    "pageUri": "String",
-    "version": "String"
+    "displayName": "Unified sign up or sign in page",
+    "isCustomPageUri": "false",
+    "pageUri": "https://authxcustomizationb2c.onmicrosoft.com/static/tenant/templates/AzureBlue/unified.cshtml",
+    "version": "2.1.1"
   }
 }
 ```
