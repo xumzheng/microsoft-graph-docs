@@ -22,14 +22,14 @@ Azure Active Directory B2C (Azure AD B2C) integrates directly with Azure AD mult
 |multifactorAuthenticationState|userFlowMultifactorAuthenticationState|Controls if and when MFA should be triggered. The possible values are: `off`, `on`, `conditional`. For more information about these states, see [userFlowMultifactorAuthenticationState values](#userflowmultifactorauthenticationstate-values).|
 |multifactorAuthenticationMethod|userFlowMultifactorAuthenticationMethod|Specifies the MFA method the user should use when MFA is triggered. The possible values are: `email`, `phoneCallOrSms`, `phoneSms`, `phoneCall`, `authenticator`, `unknownFutureValue`. For more information about these states, see [userFlowMultifactorAuthenticationMethod values](#userflowmultifactorauthenticationmethod-values).|
 
-### multifactorAuthenticationState values
+### userflowmultifactorauthenticationstate values
 |Value|Description|
 |:---|:---|
 |off|MFA is never enforced during sign-in, and users are not prompted to enroll in MFA during sign-up or sign-in.|
 |on|MFA is always required, regardless of your Conditional Access setup. During sign-up, users are prompted to enroll in MFA. During sign-in, if users aren't already enrolled in MFA, they're prompted to enroll|
 |conditional|During sign-up and sign-in, users are prompted to enroll in MFA (both new users and existing users who aren't enrolled in MFA). During sign-in, MFA is enforced only when an active Conditional Access policy evaluation requires it. If the result is an MFA challenge with no risk, MFA is enforced. If the user isn't already enrolled in MFA, they're prompted to enroll. If the result is an MFA challenge due to risk and the user is not enrolled in MFA, sign-in is blocked.|
 
-### multifactorAuthenticationMethod values
+### userFlowMultifactorAuthenticationMethod values
 
 |Value|Description|
 |:---|:---|
