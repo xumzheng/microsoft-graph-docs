@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identity/b2cUserFlows/B2C_1_Example/pageLayouts/api.signinandsignupwithpassword1.1
+GET /identity/b2cUserFlows/{b2cIdentityUserFlowId}/pageLayouts/{userFlowPageLayoutId}
 ```
 
 ## Optional query parameters
