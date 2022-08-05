@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains details about the user flow's page layout.
+Contains details about a userflow's page layout.
 
 Azure Active Directory B2C (Azure AD B2C) periodically releases improvements and fixes with each new page layout version. Organizations can browse available Azure AD B2C user flow page layouts and update them to the latest versions.
 
@@ -23,7 +23,7 @@ Azure Active Directory B2C (Azure AD B2C) periodically releases improvements and
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userFlowPageLayouts](../api/userflowpagelayout-list.md)|[userFlowPageLayout](../resources/userflowpagelayout.md) collection|Get a list of the [userFlowPageLayout](../resources/userflowpagelayout.md) objects and their properties.|
+|[List pageLayouts](../api/b2cidentityuserflow-list-pagelayouts.md)|[userFlowPageLayout](../resources/userflowpagelayout.md) collection|Get a list of the [userFlowPageLayout](../resources/userflowpagelayout.md) objects and their properties.|
 |[Get userFlowPageLayout](../api/userflowpagelayout-get.md)|[userFlowPageLayout](../resources/userflowpagelayout.md)|Read the properties and relationships of a [userFlowPageLayout](../resources/userflowpagelayout.md) object.|
 |[Update userFlowPageLayout](../api/userflowpagelayout-update.md)|[userFlowPageLayout](../resources/userflowpagelayout.md)|Update the properties of a [userFlowPageLayout](../resources/userflowpagelayout.md) object.|
 |[availableVersions](../api/userflowpagelayout-availableversions.md)|String collection|Show the supported version of page layout to provide admins and developers the exact values allowed to use.|

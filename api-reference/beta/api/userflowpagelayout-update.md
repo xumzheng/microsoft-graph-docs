@@ -1,6 +1,6 @@
 ---
 title: "Update userFlowPageLayout"
-description: "Update the properties of a userFlowPageLayout object."
+description: "Update a page layout in a user flow."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [user
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/{b2cIdentityUserFlowId}/pageLayouts/{userFlowPageLayoutId}
+PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Example/pageLayouts/api.signinandsignupwithpassword1.1
 Content-Type: application/json
 Content-length: 169
 
@@ -89,12 +89,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.userFlowPageLayout",
-  "id": "8073a745-debc-c577-dfc9-e5b451c6b227",
-  "displayName": "String",
-  "isCustomPageUri": "Boolean",
-  "pageUri": "String",
-  "version": "String"
+  "@odata.context": "https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Example/pageLayouts/" 
+    "value": [
+      {
+      "id": "api.signinandsignupwithpassword1.1",
+      "displayName": "Unified sign up or sign in page",
+      "isCustomPageUri": "false",
+      "pageUri": "https://authxcustomizationb2c.onmicrosoft.com/static/tenant/templates/AzureBlue/unified.cshtml",
+      "version": "2.1.1"
+      },
+      {
+      "id": "api.selfasserted.expiredpassword",
+      "displayName": "Update expired password page",
+      "isCustomPageUri": "false",
+      "pageUri": "https://authxcustomizationb2c.onmicrosoft.com/static/tenant/templates/AzureBlue/selfAsserted.cshtml",
+      "version": "2.1.1"
+      }
+    ]
 }
 ```
 
