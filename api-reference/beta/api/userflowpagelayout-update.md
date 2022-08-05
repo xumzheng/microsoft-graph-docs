@@ -1,6 +1,6 @@
 ---
 title: "Update userFlowPageLayout"
-description: "Update the properties of a userFlowPageLayout object."
+description: "Update a page layout in a user flow."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
