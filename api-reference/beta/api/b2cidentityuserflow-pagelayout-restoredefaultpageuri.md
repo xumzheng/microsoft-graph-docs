@@ -1,5 +1,5 @@
 ---
-title: "userFlowPageLayout: restoreDefaultPageUri"
+title: "b2cIdentityUserflowPageLayout: restoreDefaultPageUri"
 description: "Restore the default value of the pageUri property."
 author: "almars"
 ms.localizationpriority: medium
