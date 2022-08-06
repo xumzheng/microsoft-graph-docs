@@ -1,5 +1,5 @@
 ---
-title: "Update userFlowPageLayout"
+title: "b2cIdentityUserflowPageLayout: update"
 description: "Update a page layout in a user flow."
 author: "almars"
 ms.localizationpriority: medium
