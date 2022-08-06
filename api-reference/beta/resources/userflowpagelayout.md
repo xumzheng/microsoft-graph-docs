@@ -24,7 +24,7 @@ Azure Active Directory B2C (Azure AD B2C) periodically releases improvements and
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List pageLayouts](../api/b2cidentityuserflow-list-pagelayouts.md)|[UserFlowPageLayout](../resources/userflowpagelayout.md) collection|Get a list of the [UserFlowPageLayout](../resources/userflowpagelayout.md) objects and their properties.|
-|[Get b2cIdentityUserFlowPageLayout](../api/b2cidentityuserflow-get-pagelayouts.md)|[UserFlowPageLayout](../resources/b2cidentityuserflow-userflowpagelayout.md)|Read the properties and relationships of a [UserFlowPageLayout](../resources/userflowpagelayout.md) object.|
+|[Get userFlowPageLayout](../api/b2cidentityuserflow-get-pagelayouts.md)|[UserFlowPageLayout](../resources/b2cidentityuserflow-userflowpagelayout.md)|Read the properties and relationships of a [UserFlowPageLayout](../resources/userflowpagelayout.md) object.|
 |[Update userFlowPageLayout](../api/b2cidentityuserflow-update-pagelayouts)|[userFlowPageLayout](../resources/userflowpagelayout.md)|Update the properties of a [userFlowPageLayout](../resources/userflowpagelayout.md) object.|
 |[availableVersions](../api/b2cidentityuserflow-pagelayout-availableversions.md)|String collection|Show the supported version of page layout to provide admins and developers the exact values allowed to use.|
 |[restoreDefaultPageUri](../api/b2cidentityuserflow-pagelayout-restoredefaultpageuri.md)|None|Restore the default value of the "pageUri" property.|
