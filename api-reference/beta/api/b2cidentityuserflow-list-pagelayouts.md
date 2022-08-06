@@ -1,6 +1,6 @@
 ---
-title: "List pageLayouts" associated to an userflow
-description: "Get the list of page layouts in an userflow."
+title: "List pageLayouts associated to a userflow"
+description: "Get the list of page layouts in a userflow."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
