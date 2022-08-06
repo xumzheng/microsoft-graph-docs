@@ -1,5 +1,5 @@
 ---
-title: "b2cIdentityUserflowPageLayout: update"
+title: "Update userflowPageLayout"
 description: "Update a page layout in a user flow."
 author: "almars"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Update b2cIdentityUserflowPageLayout
+# Update userflowPageLayout
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
