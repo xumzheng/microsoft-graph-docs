@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# userFlowPageLayout: restoreDefaultPageUri
+# b2cIdentityUserflowPageLayout: restoreDefaultPageUri
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
