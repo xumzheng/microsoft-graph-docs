@@ -1,5 +1,5 @@
 ---
-title: "userFlowPageLayout: availableVersions"
+title: "b2cIdentityUserflowPageLayout: availableVersions"
 description: "Retrieve the available and supported versions of a page layout."
 author: "almars"
 ms.localizationpriority: medium
