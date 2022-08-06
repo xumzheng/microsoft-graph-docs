@@ -1,5 +1,5 @@
 ---
-title: "b2cIdentityUserflowPageLayout: restoreDefaultPageUri"
+title: "userflowPageLayout: restoreDefaultPageUri"
 description: "Restore the default value of the pageUri property."
 author: "almars"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# b2cIdentityUserflowPageLayout: restoreDefaultPageUri
+# UserflowPageLayout: restoreDefaultPageUri
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
