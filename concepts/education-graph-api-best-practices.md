@@ -202,7 +202,7 @@ In order to make sure you build smooth user experience; the application need to 
 These patterns allow you to use a constrained number of threads to work through a batch of jobs.
 
 ### How to avoid excessive throttling?
-Often times excessive throttling is self-inflicted injury i.e. you are calling the service more often than service would want you to call it. The assignment service will send Retry-After header in the response with recommended delay in making subsequent calls. The best practice here is to listen to this header value and no make request earlier that the recommended value.
+Often times excessive throttling is self-inflicted injury i.e. you are calling the service more often than service would want you to call it. The assignment service will send Retry-After header in the response with recommended delay in making subsequent calls. Please consume the value in this header and wait for the recommended interval before making the next API call from your application.
 
 ## CancellationToken
 Whether you’re doing async work or not, accepting a CancellationToken as a parameter to your method is a great pattern for allowing your caller to express lost interest in the result.
