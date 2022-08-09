@@ -187,7 +187,7 @@ The performance gain is amortized; the first time an application makes the $filt
 We allow filtering and ordering on select properties.
 
 ## Throttling
-Your application calls the assignments service. In some cases, you might need to make calls in the context of e.g., say a lot of students and/or resources. This can cause a spike in service traffic. In order to safeguard itself against such spikes and to make sure service remains available to all callers, the service will throttle this specific caller.
+Your application calls the assignments service. In some cases, you might need to make calls in the context of e.g., say a lot of students and/or resources. This can cause a spike in service traffic. In order to safeguard itself against such spikes and to make sure service remains available to all callers, the service will throttle this specific caller. See our [throttling limits](/graph/throttling-limits#assignment-service-limits).
 
 In order to make sure you build smooth user experience; the application need to ensure it is not generating lot of calls in the short span of time. You can implement a concurrency control using one of the following mechanisms-
 - [ConcurrentQueue](/dotnet/api/system.collections.concurrent.concurrentqueue-1)
