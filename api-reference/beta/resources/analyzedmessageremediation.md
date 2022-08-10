@@ -13,9 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
@@ -27,7 +24,6 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bulkId|String|The unique id to identify the Admin Action|
 |id|String|Inherited from [entity](../resources/entity.md).|
 
 
@@ -45,7 +41,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.analyzedMessageRemediation",
   "id": "String (identifier)",
-  "bulkId": "String"
 }
 ```
 
