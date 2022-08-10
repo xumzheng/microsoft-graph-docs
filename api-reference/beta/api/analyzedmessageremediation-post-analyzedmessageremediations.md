@@ -50,7 +50,7 @@ You can specify the following properties when creating an **RemediationRequest**
 |severity|String|The severity of remediation user wants to create. It can be low, medium and high.|
 |type|String|The admin action user wants to create. It can be SoftDelete, HardDelete, MoveToInbox and MoveToJunk|
 |description|String|The description user wants to have while creating remediation.|
-|analyzedMessages|Collection(Value)|The description user wants to have while creating remediation.|
+|analyzedMessages|Value|The description user wants to have while creating remediation.|
 
 
 
