@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleEligibilityScheduleRequest = new UnifiedRoleEligibilityScheduleRequestObject
+var requestBody = new UnifiedRoleEligibilityScheduleRequest
 {
-	Action = UnifiedRoleScheduleRequestActions.AdminAssign,
+	Action = UnifiedRoleScheduleRequestActions.Adminassign,
 	Justification = "Assign Attribute Assignment Admin eligibility to restricted user",
 	RoleDefinitionId = "8424c6f0-a189-499e-bbd0-26c1753c96d4",
 	DirectoryScopeId = "/",
@@ -18,14 +19,12 @@ var unifiedRoleEligibilityScheduleRequest = new UnifiedRoleEligibilityScheduleRe
 		StartDateTime = DateTimeOffset.Parse("2022-04-10T00:00:00Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.AfterDateTime,
-			EndDateTime = DateTimeOffset.Parse("2024-04-10T00:00:00Z")
-		}
-	}
+			Type = ExpirationPatternType.Afterdatetime,
+			EndDateTime = DateTimeOffset.Parse("2024-04-10T00:00:00Z"),
+		},
+	},
 };
+var result = await graphClient.RoleManagement.Directory.RoleEligibilityScheduleRequests.PostAsync(requestBody);
 
-await graphClient.RoleManagement.Directory.RoleEligibilityScheduleRequests
-	.Request()
-	.AddAsync(unifiedRoleEligibilityScheduleRequest);
 
 ```

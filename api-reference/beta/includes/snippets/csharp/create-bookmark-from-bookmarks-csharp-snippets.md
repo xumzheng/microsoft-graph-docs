@@ -4,46 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var bookmark = new Microsoft.Graph.Search.Bookmark
+var requestBody = new Bookmark
 {
 	DisplayName = "Contoso Install Site",
 	WebUrl = "http://www.contoso.com/",
 	Description = "Try or buy Contoso for Home or Business and view product information",
-	Keywords = new Microsoft.Graph.Search.AnswerKeyword
+	Keywords = new AnswerKeyword
 	{
-		Keywords = new List<String>()
+		Keywords = new List<>
 		{
 			"Contoso",
-			"install"
+			"install",
 		},
-		ReservedKeywords = new List<String>()
+		ReservedKeywords = new List<>
 		{
-			"Contoso"
+			"Contoso",
 		},
-		MatchSimilarKeywords = true
+		MatchSimilarKeywords = true,
 	},
 	AvailabilityStartDateTime = null,
 	AvailabilityEndDateTime = null,
-	Platforms = new List<DevicePlatformType>()
+	Platforms = new List<>
 	{
-		DevicePlatformType.Android
+		"windows",
 	},
-	TargetedVariations = new List<Microsoft.Graph.Search.AnswerVariant>()
+	TargetedVariations = new List<AnswerVariant>
 	{
-		new Microsoft.Graph.Search.AnswerVariant
+		new AnswerVariant
 		{
 			LanguageTag = "es-es",
 			DisplayName = "Sitio de instalación Contoso",
-			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
-		}
+			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
+		},
 	},
-	State = Microsoft.Graph.Search.AnswerState.Published
+	State = AnswerState.Published,
 };
+var result = await graphClient.Search.Bookmarks.PostAsync(requestBody);
 
-await graphClient.Search.Bookmarks
-	.Request()
-	.AddAsync(bookmark);
 
 ```

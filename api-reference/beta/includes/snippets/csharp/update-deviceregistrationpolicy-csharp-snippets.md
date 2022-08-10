@@ -4,41 +4,57 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var deviceRegistrationPolicy = new DeviceRegistrationPolicy
+var requestBody = new DeviceRegistrationPolicyPostRequestBody
 {
-	Id = "deviceRegistrationPolicy",
-	DisplayName = "Device Registration Policy",
-	Description = "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
-	UserDeviceQuota = 50,
-	MultiFactorAuthConfiguration = MultiFactorAuthConfiguration.NotRequired,
-	AzureADRegistration = new AzureADRegistrationPolicy
+	AdditionalData = new Dictionary<string, object>
 	{
-		AppliesTo = PolicyScope.None,
-		IsAdminConfigurable = false,
-		AllowedUsers = new List<String>()
 		{
+			"id" , "deviceRegistrationPolicy"
 		},
-		AllowedGroups = new List<String>()
 		{
-		}
+			"displayName" , "Device Registration Policy"
+		},
+		{
+			"description" , "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks"
+		},
+		{
+			"userDeviceQuota" , 50
+		},
+		{
+			"multiFactorAuthConfiguration" , "0"
+		},
+		{
+			"azureADRegistration" , new 
+			{
+				AppliesTo = "1",
+				IsAdminConfigurable = false,
+				AllowedUsers = new List<>
+				{
+				},
+				AllowedGroups = new List<>
+				{
+				},
+			}
+		},
+		{
+			"azureADJoin" , new 
+			{
+				AppliesTo = "1",
+				IsAdminConfigurable = true,
+				AllowedUsers = new List<>
+				{
+				},
+				AllowedGroups = new List<>
+				{
+				},
+			}
+		},
 	},
-	AzureADJoin = new AzureAdJoinPolicy
-	{
-		AppliesTo = PolicyScope.None,
-		IsAdminConfigurable = true,
-		AllowedUsers = new List<String>()
-		{
-		},
-		AllowedGroups = new List<String>()
-		{
-		}
-	}
 };
+await graphClient.DeviceRegistrationPolicy.PutAsync(requestBody);
 
-await graphClient.DeviceRegistrationPolicy
-	.Request()
-	.PutAsync(deviceRegistrationPolicy);
 
 ```

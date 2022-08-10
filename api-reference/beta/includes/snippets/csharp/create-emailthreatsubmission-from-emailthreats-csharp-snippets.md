@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var emailThreatSubmission = new EmailUrlThreatSubmission
+var requestBody = new EmailThreatSubmission
 {
-	Category = Microsoft.Graph.Security.SubmissionCategory.Spam,
+	OdataType = "#microsoft.graph.emailUrlThreatSubmission",
+	Category = SubmissionCategory.Spam,
 	RecipientEmailAddress = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
-	MessageUrl = "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"messageUrl" , "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
+		},
+	},
 };
+var result = await graphClient.Security.ThreatSubmission.EmailThreats.PostAsync(requestBody);
 
-await graphClient.Security.ThreatSubmission.EmailThreats
-	.Request()
-	.AddAsync(emailThreatSubmission);
 
 ```

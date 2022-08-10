@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition
+var requestBody = new CustomSecurityAttributeDefinition
 {
-	Description = "Target completion date (YYYY/MM/DD)"
+	Description = "Target completion date (YYYY/MM/DD)",
 };
+await graphClient.Directory.CustomSecurityAttributeDefinitions["customSecurityAttributeDefinition-id"].PatchAsync(requestBody);
 
-await graphClient.Directory.CustomSecurityAttributeDefinitions["{customSecurityAttributeDefinition-id}"]
-	.Request()
-	.UpdateAsync(customSecurityAttributeDefinition);
 
 ```

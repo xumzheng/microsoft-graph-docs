@@ -1,0 +1,50 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new TransferPostRequestBody
+{
+	TransferTarget = new InvitationParticipantInfo
+	{
+		Identity = new IdentitySet
+		{
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"phone" , new 
+					{
+						OdataType = "#microsoft.graph.identity",
+						Id = "+12345678901",
+					}
+				},
+			},
+		},
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"endpointType" , "default"
+			},
+			{
+				"languageId" , "languageId-value"
+			},
+			{
+				"region" , "region-value"
+			},
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"clientContext" , "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+		},
+	},
+};
+await graphClient.Communications.Calls["call-id"].Transfer.PostAsync(requestBody);
+
+
+```

@@ -4,40 +4,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var value = new List<Alert>()
+var requestBody = new UpdateAlertsPostRequestBody
 {
-	new Alert
+	Value = new List<Alert>
 	{
-		AssignedTo = "String",
-		ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
-		Comments = new List<String>()
+		new Alert
 		{
-			"String"
+			AssignedTo = "String",
+			ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
+			Comments = new List<>
+			{
+				"String",
+			},
+			Feedback = new AlertFeedback
+			{
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"@odata.type" , "microsoft.graph.alertFeedback"
+					},
+				},
+			},
+			Id = "String (identifier)",
+			Status = new AlertStatus
+			{
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"@odata.type" , "microsoft.graph.alertStatus"
+					},
+				},
+			},
+			Tags = new List<>
+			{
+				"String",
+			},
+			VendorInformation = new SecurityVendorInformation
+			{
+				Provider = "String",
+				Vendor = "String",
+			},
 		},
-		Feedback = new AlertFeedback
-		{
-		},
-		Id = "String (identifier)",
-		Status = new AlertStatus
-		{
-		},
-		Tags = new List<String>()
-		{
-			"String"
-		},
-		VendorInformation = new SecurityVendorInformation
-		{
-			Provider = "String",
-			Vendor = "String"
-		}
-	}
+	},
 };
+var result = await graphClient.Security.Alerts.UpdateAlerts.PostAsync(requestBody);
 
-await graphClient.Security.Alerts
-	.UpdateAlerts(value)
-	.Request()
-	.PostAsync();
 
 ```

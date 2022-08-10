@@ -4,28 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var addLicenses = new List<AssignedLicense>()
+var requestBody = new AssignLicensePostRequestBody
 {
-	new AssignedLicense
+	AddLicenses = new List<AssignedLicense>
 	{
-		DisabledPlans = new List<Guid>()
+		new AssignedLicense
 		{
-			Guid.Parse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"disabledPlans" , new List<>
+					{
+						"11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
+					}
+				},
+				{
+					"skuId" , "45715bb8-13f9-4bf6-927f-ef96c102d394"
+				},
+			},
 		},
-		SkuId = Guid.Parse("45715bb8-13f9-4bf6-927f-ef96c102d394")
-	}
+	},
+	RemoveLicenses = new List<>
+	{
+		"bea13e0c-3828-4daa-a392-28af7ff61a0f",
+	},
 };
+var result = await graphClient.Me.AssignLicense.PostAsync(requestBody);
 
-var removeLicenses = new List<Guid>()
-{
-	Guid.Parse("bea13e0c-3828-4daa-a392-28af7ff61a0f")
-};
-
-await graphClient.Me
-	.AssignLicense(addLicenses,removeLicenses)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var bookingBusiness = new BookingBusiness
+var requestBody = new BookingBusiness
 {
 	Email = "admin@fabrikam.com",
 	SchedulingPolicy = new BookingSchedulingPolicy
 	{
-		TimeSlotInterval = new Duration("PT60M"),
-		MinimumLeadTime = new Duration("P1D"),
-		MaximumAdvance = new Duration("P30D"),
+		TimeSlotInterval = TimeSpan.Parse("PT60M"),
+		MinimumLeadTime = TimeSpan.Parse("P1D"),
+		MaximumAdvance = TimeSpan.Parse("P30D"),
 		SendConfirmationsToOwner = true,
-		AllowStaffSelection = true
-	}
+		AllowStaffSelection = true,
+	},
 };
+await graphClient.BookingBusinesses["bookingBusiness-id"].PatchAsync(requestBody);
 
-await graphClient.BookingBusinesses["{bookingBusiness-id}"]
-	.Request()
-	.UpdateAsync(bookingBusiness);
 
 ```

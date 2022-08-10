@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var softwareType = TeamworkSoftwareType.TeamsClient;
+var requestBody = new UpdateSoftwarePostRequestBody
+{
+	SoftwareType = TeamworkSoftwareType.Teamsclient,
+	SoftwareVersion = "1.0.96.22",
+};
+await graphClient.Teamwork.Devices["teamworkDevice-id"].UpdateSoftware.PostAsync(requestBody);
 
-var softwareVersion = "1.0.96.22";
-
-await graphClient.Teamwork.Devices["{teamworkDevice-id}"]
-	.UpdateSoftware(softwareType,softwareVersion)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = new TeamworkUserIdentity
+var requestBody = new UnhideForUserPostRequestBody
 {
-	Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
+	User = new User
+	{
+		Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
+	},
+	TenantId = "2a690434-97d9-4eed-83a6-f5f13600199a",
 };
+await graphClient.Chats["chat-id"].UnhideForUser.PostAsync(requestBody);
 
-var tenantId = "2a690434-97d9-4eed-83a6-f5f13600199a";
-
-await graphClient.Chats["{chat-id}"]
-	.UnhideForUser(user,tenantId)
-	.Request()
-	.PostAsync();
 
 ```

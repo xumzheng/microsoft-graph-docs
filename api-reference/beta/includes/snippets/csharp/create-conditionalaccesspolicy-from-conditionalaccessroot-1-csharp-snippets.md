@@ -4,57 +4,56 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var conditionalAccessPolicy = new ConditionalAccessPolicy
+var requestBody = new ConditionalAccessPolicy
 {
 	DisplayName = "Access to EXO requires MFA",
 	State = ConditionalAccessPolicyState.Enabled,
 	Conditions = new ConditionalAccessConditionSet
 	{
-		ClientAppTypes = new List<ConditionalAccessClientApp>()
+		ClientAppTypes = new List<>
 		{
-			ConditionalAccessClientApp.MobileAppsAndDesktopClients,
-			ConditionalAccessClientApp.Browser
+			"mobileAppsAndDesktopClients",
+			"browser",
 		},
 		Applications = new ConditionalAccessApplications
 		{
-			IncludeApplications = new List<String>()
+			IncludeApplications = new List<>
 			{
-				"00000002-0000-0ff1-ce00-000000000000"
-			}
+				"00000002-0000-0ff1-ce00-000000000000",
+			},
 		},
 		Users = new ConditionalAccessUsers
 		{
-			IncludeGroups = new List<String>()
+			IncludeGroups = new List<>
 			{
-				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
-			}
+				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba",
+			},
 		},
 		Locations = new ConditionalAccessLocations
 		{
-			IncludeLocations = new List<String>()
+			IncludeLocations = new List<>
 			{
-				"All"
+				"All",
 			},
-			ExcludeLocations = new List<String>()
+			ExcludeLocations = new List<>
 			{
-				"AllTrusted"
-			}
-		}
+				"AllTrusted",
+			},
+		},
 	},
 	GrantControls = new ConditionalAccessGrantControls
 	{
 		Operator = "OR",
-		BuiltInControls = new List<ConditionalAccessGrantControl>()
+		BuiltInControls = new List<>
 		{
-			ConditionalAccessGrantControl.Mfa
-		}
-	}
+			"mfa",
+		},
+	},
 };
+var result = await graphClient.Identity.ConditionalAccess.Policies.PostAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.Policies
-	.Request()
-	.AddAsync(conditionalAccessPolicy);
 
 ```

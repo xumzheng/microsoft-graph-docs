@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationFlowsPolicy = new AuthenticationFlowsPolicy
+var requestBody = new AuthenticationFlowsPolicy
 {
 	SelfServiceSignUp = new SelfServiceSignUpAuthenticationFlowConfiguration
 	{
-		IsEnabled = true
-	}
+		IsEnabled = true,
+	},
 };
+await graphClient.Policies.AuthenticationFlowsPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationFlowsPolicy
-	.Request()
-	.UpdateAsync(authenticationFlowsPolicy);
 
 ```

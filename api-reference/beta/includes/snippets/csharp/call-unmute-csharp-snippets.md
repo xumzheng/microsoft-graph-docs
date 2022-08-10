@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var clientContext = "clientContext-value";
+var requestBody = new UnmutePostRequestBody
+{
+	ClientContext = "clientContext-value",
+};
+var result = await graphClient.Communications.Calls["call-id"].Unmute.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Unmute(clientContext)
-	.Request()
-	.PostAsync();
 
 ```

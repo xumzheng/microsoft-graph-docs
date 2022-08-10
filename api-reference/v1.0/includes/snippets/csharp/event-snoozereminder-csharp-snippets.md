@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var newReminderTime = new DateTimeTimeZone
+var requestBody = new SnoozeReminderPostRequestBody
 {
-	DateTime = "dateTime-value",
-	TimeZone = "timeZone-value"
+	NewReminderTime = new DateTimeTimeZone
+	{
+		DateTime = "dateTime-value",
+		TimeZone = "timeZone-value",
+	},
 };
+await graphClient.Me.Events["event-id"].SnoozeReminder.PostAsync(requestBody);
 
-await graphClient.Me.Events["{event-id}"]
-	.SnoozeReminder(newReminderTime)
-	.Request()
-	.PostAsync();
 
 ```

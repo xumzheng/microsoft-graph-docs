@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var outputName = "Export via API";
+var requestBody = new ExportPostRequestBody
+{
+	OutputName = "Export via API",
+	Description = "Export for the Contoso investigation",
+	ExportOptions = ExportOptions.Originalfiles,fileinfo,tags,
+	ExportStructure = ExportFileStructure.Directory,
+};
+await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].Export.PostAsync(requestBody);
 
-var description = "Export for the Contoso investigation";
-
-var exportOptions = Microsoft.Graph.Security.ExportOptions.OriginalFiles | Microsoft.Graph.Security.ExportOptions.FileInfo | Microsoft.Graph.Security.ExportOptions.Tags;
-
-var exportStructure = Microsoft.Graph.Security.ExportFileStructure.Directory;
-
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].ReviewSets["{security.ediscoveryReviewSet-id}"]
-	.Export(outputName,description,null,null,exportOptions,exportStructure)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,26 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var internalDomainFederation = new InternalDomainFederation
+var requestBody = new InternalDomainFederation
 {
+	OdataType = "#microsoft.graph.internalDomainFederation",
 	DisplayName = "Contoso",
 	IssuerUri = "http://contoso.com/adfs/services/trust",
 	MetadataExchangeUri = "https://sts.contoso.com/adfs/services/trust/mex",
 	SigningCertificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
 	PassiveSignInUri = "https://sts.contoso.com/adfs/ls",
-	PreferredAuthenticationProtocol = AuthenticationProtocol.WsFed,
+	PreferredAuthenticationProtocol = AuthenticationProtocol.Wsfed,
 	ActiveSignInUri = "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed",
 	SignOutUri = "https://sts.contoso.com/adfs/ls",
-	PromptLoginBehavior = PromptLoginBehavior.NativeSupport,
+	PromptLoginBehavior = PromptLoginBehavior.Nativesupport,
 	IsSignedAuthenticationRequestRequired = true,
 	NextSigningCertificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp
+	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.Rejectmfabyfederatedidp,
 };
+var result = await graphClient.Domains["domain-id"].FederationConfiguration.PostAsync(requestBody);
 
-await graphClient.Domains["{domain-id}"].FederationConfiguration
-	.Request()
-	.AddAsync(internalDomainFederation);
 
 ```

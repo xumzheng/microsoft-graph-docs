@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Drive.Bundles.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("filter", "bundle/album ne null")
-};
+	requestConfiguration.QueryParameters.Filter = "bundle/album ne null";
+});
 
-var bundles = await graphClient.Drive.Bundles
-	.Request( queryOptions )
-	.Filter("bundle/album ne null")
-	.GetAsync();
 
 ```

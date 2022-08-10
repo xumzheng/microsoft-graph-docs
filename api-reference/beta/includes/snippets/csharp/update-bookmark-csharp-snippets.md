@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var bookmark = new Microsoft.Graph.Search.Bookmark
+var requestBody = new Bookmark
 {
-	Description = "Book a fancy vacation in Tuscany or browse museums in Florence."
+	Description = "Book a fancy vacation in Tuscany or browse museums in Florence.",
 };
+await graphClient.Search.Bookmarks["bookmark-id"].PatchAsync(requestBody);
 
-await graphClient.Search.Bookmarks["{search.bookmark-id}"]
-	.Request()
-	.UpdateAsync(bookmark);
 
 ```

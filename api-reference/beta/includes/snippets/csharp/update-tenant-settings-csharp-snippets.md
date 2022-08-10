@@ -4,25 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var settings = new Microsoft.Graph.TenantAdmin.Settings
+var requestBody = new Settings
 {
 	DeletedUserPersonalSiteRetentionPeriodInDays = 365,
-	ExcludedFileExtensionsForSyncApp = new List<String>()
+	ExcludedFileExtensionsForSyncApp = new List<>
 	{
-		".mp3"
+		".mp3",
 	},
-	ImageTaggingOption = Microsoft.Graph.TenantAdmin.ImageTaggingChoice.Enhanced,
+	ImageTaggingOption = ImageTaggingChoice.Enhanced,
 	IsLegacyAuthProtocolsEnabled = true,
 	IsSitesStorageLimitAutomatic = false,
 	IsSyncButtonHiddenOnPersonalSite = false,
 	IsUnmanagedSyncAppForTenantRestricted = false,
-	PersonalSiteDefaultStorageLimitInMB = 120000
+	PersonalSiteDefaultStorageLimitInMB = 120000L,
 };
+await graphClient.Admin.Sharepoint.Settings.PatchAsync(requestBody);
 
-await graphClient.Admin.Sharepoint.Settings
-	.Request()
-	.UpdateAsync(settings);
 
 ```

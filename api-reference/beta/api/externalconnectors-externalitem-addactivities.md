@@ -61,6 +61,8 @@ If a `207` response is returned, this indicates that only some of the added **ex
 
 The following is an example of a request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "externalitemthis.addactivities"
@@ -81,6 +83,13 @@ Content-length: 190
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/externalitemthisaddactivities-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

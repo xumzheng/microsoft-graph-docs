@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationMethodsPolicy = new AuthenticationMethodsPolicy
+var requestBody = new AuthenticationMethodsPolicy
 {
 	RegistrationEnforcement = new RegistrationEnforcement
 	{
@@ -14,24 +15,31 @@ var authenticationMethodsPolicy = new AuthenticationMethodsPolicy
 		{
 			SnoozeDurationInDays = 1,
 			State = AdvancedConfigState.Enabled,
-			ExcludeTargets = new List<ExcludeTarget>()
+			ExcludeTargets = new List<>
 			{
 			},
-			IncludeTargets = new List<AuthenticationMethodsRegistrationCampaignIncludeTarget>()
+			IncludeTargets = new List<AuthenticationMethodsRegistrationCampaignIncludeTarget>
 			{
 				new AuthenticationMethodsRegistrationCampaignIncludeTarget
 				{
-					Id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
-					TargetType = AuthenticationMethodTargetType.Group,
-					TargetedAuthenticationMethod = "microsoftAuthenticator"
-				}
-			}
-		}
-	}
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"id" , "3ee3a9de-0a86-4e12-a287-9769accf1ba2"
+						},
+						{
+							"targetType" , "group"
+						},
+						{
+							"targetedAuthenticationMethod" , "microsoftAuthenticator"
+						},
+					},
+				},
+			},
+		},
+	},
 };
+await graphClient.Policies.AuthenticationMethodsPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.AuthenticationMethodsPolicy
-	.Request()
-	.UpdateAsync(authenticationMethodsPolicy);
 
 ```

@@ -4,22 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var conversationMember = new AadUserConversationMember
+var requestBody = new ConversationMember
 {
-	Roles = new List<String>()
+	OdataType = "#microsoft.graph.aadUserConversationMember",
+	Roles = new List<>
 	{
-		"owner"
+		"owner",
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"user@odata.bind", "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"}
-	}
+		{
+			"user@odata.bind" , "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+		},
+	},
 };
+var result = await graphClient.Chats["chat-id"].Members.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"].Members
-	.Request()
-	.AddAsync(conversationMember);
 
 ```

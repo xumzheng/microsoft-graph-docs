@@ -4,27 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var participants = new List<InvitationParticipantInfo>()
+var requestBody = new InvitePostRequestBody
 {
-	new InvitationParticipantInfo
+	Participants = new List<InvitationParticipantInfo>
 	{
-		Identity = new IdentitySet
+		new InvitationParticipantInfo
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
-			}
-		}
-	}
+				{
+					"@odata.type" , "#microsoft.graph.invitationParticipantInfo"
+				},
+				{
+					"identity" , new 
+					{
+						OdataType = "#microsoft.graph.identitySet",
+						Phone = new 
+						{
+							OdataType = "#microsoft.graph.identity",
+							Id = "+12345678901",
+						},
+					}
+				},
+			},
+		},
+	},
+	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
 };
+var result = await graphClient.Communications.Calls["call-id"].Participants.Invite.PostAsync(requestBody);
 
-var clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
-
-await graphClient.Communications.Calls["{call-id}"].Participants
-	.Invite(participants,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

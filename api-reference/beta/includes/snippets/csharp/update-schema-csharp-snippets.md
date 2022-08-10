@@ -4,43 +4,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var schema = new Microsoft.Graph.ExternalConnectors.Schema
+var requestBody = new Schema
 {
 	BaseType = "microsoft.graph.externalItem",
-	Properties = new List<Microsoft.Graph.ExternalConnectors.Property>()
+	Properties = new List<Property>
 	{
-		new Microsoft.Graph.ExternalConnectors.Property
+		new Property
 		{
 			Name = "ticketTitle",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
+			Type = PropertyType.String,
 			IsSearchable = true,
 			IsRetrievable = true,
-			Labels = new List<Microsoft.Graph.ExternalConnectors.Label>()
+			Labels = new List<>
 			{
-				Microsoft.Graph.ExternalConnectors.Label.Title
-			}
+				"title",
+			},
 		},
-		new Microsoft.Graph.ExternalConnectors.Property
+		new Property
 		{
 			Name = "priority",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
+			Type = PropertyType.String,
 			IsQueryable = true,
 			IsRetrievable = true,
-			IsSearchable = false
+			IsSearchable = false,
 		},
-		new Microsoft.Graph.ExternalConnectors.Property
+		new Property
 		{
 			Name = "assignee",
-			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
-			IsRetrievable = true
-		}
-	}
+			Type = PropertyType.String,
+			IsRetrievable = true,
+		},
+	},
 };
+await graphClient.External.Connections["externalConnection-id"].Schema.PatchAsync(requestBody);
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Schema
-	.Request()
-	.UpdateAsync(schema);
 
 ```

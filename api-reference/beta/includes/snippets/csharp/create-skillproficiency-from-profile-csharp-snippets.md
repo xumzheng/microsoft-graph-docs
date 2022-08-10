@@ -4,25 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var skillProficiency = new SkillProficiency
+var requestBody = new SkillProficiency
 {
-	Categories = new List<String>()
+	Categories = new List<>
 	{
-		"Professional"
+		"Professional",
 	},
 	AllowedAudiences = AllowedAudiences.Organization,
 	DisplayName = "API Design",
-	Proficiency = SkillProficiencyLevel.GeneralProfessional,
-	CollaborationTags = new List<String>()
+	Proficiency = SkillProficiencyLevel.Generalprofessional,
+	CollaborationTags = new List<>
 	{
-		"ableToMentor"
-	}
+		"ableToMentor",
+	},
 };
+var result = await graphClient.Me.Profile.Skills.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Skills
-	.Request()
-	.AddAsync(skillProficiency);
 
 ```

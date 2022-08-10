@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantIds = new List<String>()
+var requestBody = new AssignTagPostRequestBody
 {
-	"String"
+	TenantIds = new List<>
+	{
+		"String",
+	},
 };
+var result = await graphClient.TenantRelationships.ManagedTenants.TenantTags["tenantTag-id"].AssignTag.PostAsync(requestBody);
 
-await graphClient.TenantRelationships.ManagedTenants.TenantTags["{managedTenants.tenantTag-id}"]
-	.AssignTag(tenantIds)
-	.Request()
-	.PostAsync();
 
 ```

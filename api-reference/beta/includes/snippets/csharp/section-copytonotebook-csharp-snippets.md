@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var id = "id-value";
+var requestBody = new CopyToNotebookPostRequestBody
+{
+	Id = "id-value",
+	GroupId = "groupId-value",
+	RenameAs = "renameAs-value",
+};
+var result = await graphClient.Me.Onenote.Sections["onenoteSection-id"].CopyToNotebook.PostAsync(requestBody);
 
-var groupId = "groupId-value";
-
-var renameAs = "renameAs-value";
-
-await graphClient.Me.Onenote.Sections["{onenoteSection-id}"]
-	.CopyToNotebook(id,groupId,renameAs,null,null)
-	.Request()
-	.PostAsync();
 
 ```

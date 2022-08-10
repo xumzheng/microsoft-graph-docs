@@ -4,21 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var namedLocation = new CountryNamedLocation
+var requestBody = new NamedLocation
 {
+	OdataType = "#microsoft.graph.countryNamedLocation",
 	DisplayName = "Updated named location without unknown countries and regions",
-	CountriesAndRegions = new List<String>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		"CA",
-		"IN"
+		{
+			"countriesAndRegions" , new List<>
+			{
+				"CA",
+				"IN",
+			}
+		},
+		{
+			"includeUnknownCountriesAndRegions" , false
+		},
 	},
-	IncludeUnknownCountriesAndRegions = false
 };
+await graphClient.Identity.ConditionalAccess.NamedLocations["namedLocation-id"].PatchAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"]
-	.Request()
-	.UpdateAsync(namedLocation);
 
 ```

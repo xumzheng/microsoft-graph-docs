@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var ids = new List<String>()
+var requestBody = new AddMembersByIdPostRequestBody
 {
-	"String",
-	"String",
-	"String"
+	Ids = new List<>
+	{
+		"String",
+		"String",
+		"String",
+	},
+	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
 };
+await graphClient.Admin.Windows.Updates.UpdatableAssets["updatableAsset-id"].AddMembersById.PostAsync(requestBody);
 
-var memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice";
-
-await graphClient.Admin.Windows.Updates.UpdatableAssets["{windowsUpdates.updatableAsset-id}"]
-	.AddMembersById(ids,memberEntityType)
-	.Request()
-	.PostAsync();
 
 ```

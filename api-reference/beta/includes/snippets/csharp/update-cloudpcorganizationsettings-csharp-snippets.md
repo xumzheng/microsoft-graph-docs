@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var cloudPcOrganizationSettings = new CloudPcOrganizationSettings
+var requestBody = new CloudPcOrganizationSettings
 {
-	UserAccountType = CloudPcUserAccountType.StandardUser,
+	OdataType = "#microsoft.graph.cloudPcOrganizationSettings",
+	UserAccountType = CloudPcUserAccountType.Standarduser,
 	OsVersion = CloudPcOperatingSystem.Windows11,
 	WindowsSettings = new CloudPcWindowsSettings
 	{
-		Language = "en-US"
-	}
+		Language = "en-US",
+	},
 };
+await graphClient.DeviceManagement.VirtualEndpoint.OrganizationSettings.PatchAsync(requestBody);
 
-await graphClient.DeviceManagement.VirtualEndpoint.OrganizationSettings
-	.Request()
-	.UpdateAsync(cloudPcOrganizationSettings);
 
 ```

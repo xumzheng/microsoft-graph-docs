@@ -4,28 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var device = new Device
+var requestBody = new Device
 {
 	AccountEnabled = true,
-	AlternativeSecurityIds = new List<AlternativeSecurityId>()
+	AlternativeSecurityIds = new List<AlternativeSecurityId>
 	{
 		new AlternativeSecurityId
 		{
-			Type = 99,
-			IdentityProvider = "identityProvider-value",
-			Key = Convert.FromBase64String("base64Y3YxN2E1MWFlYw==")
-		}
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"type" , 99
+				},
+				{
+					"identityProvider" , "identityProvider-value"
+				},
+				{
+					"key" , "base64Y3YxN2E1MWFlYw=="
+				},
+			},
+		},
 	},
 	ApproximateLastSignInDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
 	DeviceId = "deviceId-value",
 	DeviceMetadata = "deviceMetadata-value",
-	DeviceVersion = 99
+	DeviceVersion = 99,
 };
+var result = await graphClient.Devices.PostAsync(requestBody);
 
-await graphClient.Devices
-	.Request()
-	.AddAsync(device);
 
 ```

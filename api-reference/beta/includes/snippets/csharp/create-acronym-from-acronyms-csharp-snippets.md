@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var acronym = new Microsoft.Graph.Search.Acronym
+var requestBody = new Acronym
 {
 	DisplayName = "DNN",
 	StandsFor = "Deep Neural Network",
 	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
 	WebUrl = "http://microsoft.com/deep-neural-network",
-	State = Microsoft.Graph.Search.AnswerState.Draft
+	State = AnswerState.Draft,
 };
+var result = await graphClient.Search.Acronyms.PostAsync(requestBody);
 
-await graphClient.Search.Acronyms
-	.Request()
-	.AddAsync(acronym);
 
 ```

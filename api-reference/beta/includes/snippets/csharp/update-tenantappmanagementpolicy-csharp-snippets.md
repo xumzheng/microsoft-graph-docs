@@ -4,60 +4,59 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantAppManagementPolicy = new TenantAppManagementPolicy
+var requestBody = new TenantAppManagementPolicy
 {
 	IsEnabled = true,
 	ApplicationRestrictions = new AppManagementConfiguration
 	{
-		PasswordCredentials = new List<PasswordCredentialConfiguration>()
+		PasswordCredentials = new List<PasswordCredentialConfiguration>
 		{
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.PasswordAddition,
+				RestrictionType = AppCredentialRestrictionType.Passwordaddition,
 				MaxLifetime = null,
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-01-01T10:37:00Z")
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-01-01T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
-				MaxLifetime = new Duration("P4DT12H30M5S"),
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2017-01-01T10:37:00Z")
+				RestrictionType = AppCredentialRestrictionType.Passwordlifetime,
+				MaxLifetime = TimeSpan.Parse("P4DT12H30M5S"),
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2017-01-01T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
+				RestrictionType = AppCredentialRestrictionType.Symmetrickeyaddition,
 				MaxLifetime = null,
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-01-01T10:37:00Z")
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-01-01T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.CustomPasswordAddition,
+				RestrictionType = AppCredentialRestrictionType.Custompasswordaddition,
 				MaxLifetime = null,
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z")
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				MaxLifetime = new Duration("P40D"),
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z")
-			}
+				RestrictionType = AppCredentialRestrictionType.Symmetrickeylifetime,
+				MaxLifetime = TimeSpan.Parse("P40D"),
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z"),
+			},
 		},
-		KeyCredentials = new List<KeyCredentialConfiguration>()
+		KeyCredentials = new List<KeyCredentialConfiguration>
 		{
 			new KeyCredentialConfiguration
 			{
-				RestrictionType = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
-				MaxLifetime = new Duration("P30D"),
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z")
-			}
-		}
-	}
+				RestrictionType = AppKeyCredentialRestrictionType.Asymmetrickeylifetime,
+				MaxLifetime = TimeSpan.Parse("P30D"),
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z"),
+			},
+		},
+	},
 };
+await graphClient.Policies.DefaultAppManagementPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.DefaultAppManagementPolicy
-	.Request()
-	.UpdateAsync(tenantAppManagementPolicy);
 
 ```

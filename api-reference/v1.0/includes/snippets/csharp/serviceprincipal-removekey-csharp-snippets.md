@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var keyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6");
+var requestBody = new RemoveKeyPostRequestBody
+{
+	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6",
+	Proof = "eyJ0eXAiOiJ...",
+};
+await graphClient.ServicePrincipals["servicePrincipal-id"].RemoveKey.PostAsync(requestBody);
 
-var proof = "eyJ0eXAiOiJ...";
-
-await graphClient.ServicePrincipals["{servicePrincipal-id}"]
-	.RemoveKey(keyId,proof)
-	.Request()
-	.PostAsync();
 
 ```

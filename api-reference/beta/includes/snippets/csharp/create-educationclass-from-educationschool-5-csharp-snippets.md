@@ -4,18 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationClass = new EducationClass
+var requestBody = new ReferenceCreate
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id", "https://graph.microsoft.com/beta/education/classes/11006"}
-	}
+	OdataId = "https://graph.microsoft.com/beta/education/classes/11006",
 };
+await graphClient.Education.Schools["educationSchool-id"].Classes.$ref.PostAsync(requestBody);
 
-await graphClient.Education.Schools["{educationSchool-id}"].Classes.References
-	.Request()
-	.AddAsync(educationClass);
 
 ```

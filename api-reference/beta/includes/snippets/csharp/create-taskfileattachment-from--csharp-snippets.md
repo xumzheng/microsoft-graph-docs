@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachmentBase = new TaskFileAttachment
+var requestBody = new AttachmentBase
 {
+	OdataType = "#microsoft.graph.taskFileAttachment",
 	Name = "smile",
-	ContentBytes = Convert.FromBase64String("a0b1c76de9f7="),
-	ContentType = "image/gif"
+	ContentType = "image/gif",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"contentBytes" , "a0b1c76de9f7="
+		},
+	},
 };
+var result = await graphClient.Me.Todo.Lists["todoTaskList-id"].Tasks["todoTask-id"].Attachments.PostAsync(requestBody);
 
-await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].Attachments
-	.Request()
-	.AddAsync(attachmentBase);
 
 ```

@@ -51,7 +51,6 @@ If successful, this method returns a `200 OK` response code.  It does not return
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignmentrequest_cancel"
@@ -65,12 +64,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
   "requestStatus":"cancelled"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignmentrequest-cancel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

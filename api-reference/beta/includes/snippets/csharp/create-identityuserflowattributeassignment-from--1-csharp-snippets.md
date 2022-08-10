@@ -4,25 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignment
+var requestBody = new IdentityUserFlowAttributeAssignment
 {
 	IsOptional = false,
 	RequiresVerification = false,
-	UserInputType = IdentityUserFlowAttributeInputType.TextBox,
+	UserInputType = IdentityUserFlowAttributeInputType.Textbox,
 	DisplayName = "Shoe size",
-	UserAttributeValues = new List<UserAttributeValuesItem>()
+	UserAttributeValues = new List<>
 	{
 	},
-	UserAttribute = new IdentityUserFlowAttribute
+	UserAttribute = new UserAttribute
 	{
-		Id = "extension_guid_shoeSize"
-	}
+		Id = "extension_guid_shoeSize",
+	},
 };
+var result = await graphClient.Identity.B2cUserFlows["b2cIdentityUserFlow-id"].UserAttributeAssignments.PostAsync(requestBody);
 
-await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments
-	.Request()
-	.AddAsync(identityUserFlowAttributeAssignment);
 
 ```

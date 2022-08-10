@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var connectorGroup = new ConnectorGroup
+var requestBody = new ConnectorGroup
 {
 	Name = "name-value",
-	Region = ConnectorGroupRegion.Nam
+	Region = ConnectorGroupRegion.Region-value,
 };
+await graphClient.OnPremisesPublishingProfiles["onPremisesPublishingProfile-id"].ConnectorGroups["connectorGroup-id"].PatchAsync(requestBody);
 
-await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups["{connectorGroup-id}"]
-	.Request()
-	.UpdateAsync(connectorGroup);
 
 ```

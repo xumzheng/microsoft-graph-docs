@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var comment = "comment-value";
+var requestBody = new ReplyAllPostRequestBody
+{
+	Comment = "comment-value",
+};
+await graphClient.Me.Messages["message-id"].ReplyAll.PostAsync(requestBody);
 
-await graphClient.Me.Messages["{message-id}"]
-	.ReplyAll(null,comment)
-	.Request()
-	.PostAsync();
 
 ```

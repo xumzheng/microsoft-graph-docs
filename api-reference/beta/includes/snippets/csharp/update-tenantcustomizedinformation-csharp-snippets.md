@@ -4,27 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantCustomizedInformation = new Microsoft.Graph.ManagedTenants.TenantCustomizedInformation
+var requestBody = new TenantCustomizedInformation
 {
+	OdataType = "#microsoft.graph.managedTenants.tenantCustomizedInformation",
 	TenantId = "String",
-	Contacts = new List<Microsoft.Graph.ManagedTenants.TenantContactInformation>()
+	Contacts = new List<TenantContactInformation>
 	{
 		new TenantContactInformation
 		{
+			OdataType = "microsoft.graph.managedTenants.tenantContactInformation",
 			Name = "String",
 			Title = "String",
 			Email = "String",
 			Phone = "String",
-			Notes = "String"
-		}
+			Notes = "String",
+		},
 	},
-	Website = "String"
+	Website = "String",
 };
+await graphClient.TenantRelationships.ManagedTenants.TenantsCustomizedInformation["tenantCustomizedInformation-id"].PatchAsync(requestBody);
 
-await graphClient.TenantRelationships.ManagedTenants.TenantsCustomizedInformation["{managedTenants.tenantCustomizedInformation-id}"]
-	.Request()
-	.UpdateAsync(tenantCustomizedInformation);
 
 ```

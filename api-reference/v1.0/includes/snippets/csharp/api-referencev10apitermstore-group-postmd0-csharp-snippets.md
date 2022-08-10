@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var group = new Microsoft.Graph.TermStore.Group
+var requestBody = new Group
 {
-	DisplayName = "myGroup"
+	DisplayName = "myGroup",
 };
+var result = await graphClient.Sites["site-id"].TermStore.Groups.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].TermStore.Groups
-	.Request()
-	.AddAsync(group);
 
 ```

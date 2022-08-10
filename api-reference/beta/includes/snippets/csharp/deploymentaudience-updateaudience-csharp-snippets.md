@@ -4,43 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var addMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
+var requestBody = new UpdateAudiencePostRequestBody
 {
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
+	AddMembers = new List<UpdatableAsset>
 	{
-		Id = "String (identifier)"
-	}
-};
-
-var removeMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
+		new UpdatableAsset
+		{
+			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
+			Id = "String (identifier)",
+		},
+	},
+	RemoveMembers = new List<UpdatableAsset>
 	{
-		Id = "String (identifier)"
-	}
-};
-
-var addExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
+		new UpdatableAsset
+		{
+			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
+			Id = "String (identifier)",
+		},
+	},
+	AddExclusions = new List<UpdatableAsset>
 	{
-		Id = "String (identifier)"
-	}
-};
-
-var removeExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
+		new UpdatableAsset
+		{
+			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
+			Id = "String (identifier)",
+		},
+	},
+	RemoveExclusions = new List<UpdatableAsset>
 	{
-		Id = "String (identifier)"
-	}
+		new UpdatableAsset
+		{
+			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
+			Id = "String (identifier)",
+		},
+	},
 };
+await graphClient.Admin.Windows.Updates.Deployments["deployment-id"].Audience.UpdateAudience.PostAsync(requestBody);
 
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"].Audience
-	.UpdateAudience(addMembers,removeMembers,addExclusions,removeExclusions)
-	.Request()
-	.PostAsync();
 
 ```

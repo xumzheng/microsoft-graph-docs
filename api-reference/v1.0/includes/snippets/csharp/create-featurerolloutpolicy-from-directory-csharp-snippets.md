@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var featureRolloutPolicy = new FeatureRolloutPolicy
+var requestBody = new FeatureRolloutPolicy
 {
 	DisplayName = "PassthroughAuthentication rollout policy",
 	Description = "PassthroughAuthentication rollout policy",
-	Feature = StagedFeatureName.PassthroughAuthentication,
+	Feature = StagedFeatureName.Passthroughauthentication,
 	IsEnabled = true,
-	IsAppliedToOrganization = false
+	IsAppliedToOrganization = false,
 };
+var result = await graphClient.Policies.FeatureRolloutPolicies.PostAsync(requestBody);
 
-await graphClient.Policies.FeatureRolloutPolicies
-	.Request()
-	.AddAsync(featureRolloutPolicy);
 
 ```

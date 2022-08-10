@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var comment = "comment-value";
+var requestBody = new AcceptPostRequestBody
+{
+	Comment = "comment-value",
+	SendResponse = true,
+};
+await graphClient.Me.Events["event-id"].Accept.PostAsync(requestBody);
 
-var sendResponse = true;
-
-await graphClient.Me.Events["{event-id}"]
-	.Accept(comment,sendResponse)
-	.Request()
-	.PostAsync();
 
 ```

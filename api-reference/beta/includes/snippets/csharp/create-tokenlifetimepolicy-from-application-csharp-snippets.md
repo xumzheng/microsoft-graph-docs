@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tokenLifetimePolicy = new TokenLifetimePolicy
+var requestBody = new TokenLifetimePoliciesPostRequestBody
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@odata.id", "https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"}
-	}
+		{
+			"@odata.id" , "https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
+		},
+	},
 };
+await graphClient.Applications["application-id"].TokenLifetimePolicies.PostAsync(requestBody);
 
-await graphClient.Applications["{application-id}"].TokenLifetimePolicies
-	.Request()
-	.AddAsync(tokenLifetimePolicy);
 
 ```

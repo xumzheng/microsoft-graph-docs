@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var personAnnualEvent = new PersonAnnualEvent
+var requestBody = new PersonAnnualEvent
 {
 	Type = PersonAnnualEventType.Birthday,
-	Date = new Date(1980,1,8)
+	Date = "1980-01-08",
 };
+var result = await graphClient.Me.Profile.Anniversaries.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Anniversaries
-	.Request()
-	.AddAsync(personAnnualEvent);
 
 ```
