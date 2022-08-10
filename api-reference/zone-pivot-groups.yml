@@ -10,11 +10,23 @@ groups:
     title: C#
   - id: programming-language-browserjs
     title: JavaScript
-  - id: programming-language-objectivec
-    title: Objective-C
   - id: programming-language-java
     title: Java
   - id: programming-language-go
     title: Go
   - id: programming-language-powershell
     title: PowerShell
+  - id: programming-language-php
+    title: PHP
+  - id: programming-language-csharp-legacy
+    title: C# (Legacy)
+  - id: programming-language-browserjs-legacy
+    title: JavaScript (Legacy)
+  - id: programming-language-java-legacy
+    title: Java (Legacy)
+  - id: programming-language-go-legacy
+    title: Go (Legacy)
+  - id: programming-language-powershell-legacy
+    title: PowerShell (Legacy)
+  - id: programming-language-php-legacy
+    title: PHP (Legacy)
