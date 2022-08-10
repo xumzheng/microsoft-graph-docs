@@ -41,6 +41,9 @@ Use the employee learning APIs to do the following:
 - [Get the specified metadata of a provider's ingested content](../api/learningcontent-get.md) in Viva Learning.
 - [Delete the specfied metadata of a provider's ingested content](../api/learningprovider-delete-learningcontents.md).
 
+## Allowlisting
+As part of Registration, we are going to Allow list your AppId for the tenant. To enable content ingestion from Partner for the tenant. You should provide your App Id https://aka.ms/contentsync
+
 >**Note**: Assignments and completed course records are not yet available in the employee learning API.
 
 ## What's new
