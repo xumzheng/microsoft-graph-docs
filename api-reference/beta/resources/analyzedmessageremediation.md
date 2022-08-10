@@ -3,7 +3,7 @@ title: "analyzedMessageRemediation resource type"
 description: "analyzedMessageRemediation object definition"
 author: "smkjain8"
 ms.localizationpriority: medium
-ms.prod: "analyzedmessage-remediations"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 

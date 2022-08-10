@@ -3,7 +3,7 @@ title: "Create analyzedMessageRemediation"
 description: "Create a new analyzedMessageRemediation object."
 author: "smkjain8"
 ms.localizationpriority: medium
-ms.prod: "analyzedmessage-remediations"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -39,6 +39,9 @@ POST analyzedMessageRemediations
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
+## AnalyzedMessageValue
+It is a json which consists of value key and the value of this key is a list of jsons consisting of keys of mails on which action needs to be performed.
+
 ## Request body
 In the request body, supply a JSON representation of the RemediationRequest object.
 
@@ -50,7 +53,7 @@ You can specify the following properties when creating an **RemediationRequest**
 |severity|String|The severity of remediation user wants to create. It can be low, medium and high.|
 |type|String|The admin action user wants to create. It can be SoftDelete, HardDelete, MoveToInbox and MoveToJunk|
 |description|String|The description user wants to have while creating remediation.|
-|analyzedMessages|Value|The description user wants to have while creating remediation.|
+|analyzedMessages|AnalyzedMessageValue|The description user wants to have while creating remediation.|
 
 
 
