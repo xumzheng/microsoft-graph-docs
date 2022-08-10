@@ -1,7 +1,7 @@
 ---
 title: "Create analyzedMessageRemediation"
 description: "Create a new analyzedMessageRemediation object."
-author: "**smkjain8**"
+author: "smkjain8"
 ms.localizationpriority: medium
 ms.prod: "analyzedmessage-remediations"
 doc_type: apiPageType
