@@ -1,9 +1,9 @@
 ---
 title: "analyzedMessageRemediation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "analyzedMessageRemediation object definition"
+author: "smkjain8"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "analyzedmessage-remediations"
 doc_type: resourcePageType
 ---
 
