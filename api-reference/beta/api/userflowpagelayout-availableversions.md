@@ -1,5 +1,5 @@
 ---
-title: "userFlowPageLayout: availableVersions"
+title: "userflowPageLayout: availableVersions"
 description: "Retrieve the available and supported versions of a page layout."
 author: "almars"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# userFlowPageLayout: availableVersions
+# userflowPageLayout: availableVersions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
