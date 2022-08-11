@@ -28,11 +28,12 @@ Password complexity can be configured in the following types of user flows:
 |customConfiguration|[userFlowCustomPasswordComplexity](../resources/userflowcustompasswordcomplexity.md)|Provides ability to set a custom password complexity|
 |isSelfServicePasswordResetAllowed|Boolean|If this is set to `true`, then this userflow will also support self service password reset without needing another password reset userflow.|
 
+### userFlowPasswordComplexityLevel values
 |Value|Description|
 |:---|:---|
-|`simple`|A password that is at least 8 to 64 characters.|
-|`strong`|A password that is at least 8 to 64 characters. It requires 3 out of 4 of lowercase, uppercase, numbers, or symbols.|
-|`custom`|This option provides the most control over password complexity rules. It allows configuring a custom length. It also allows accepting number-only passwords (pins).  [userFlowCustomPasswordComplexity](../resources/userflowcustompasswordcomplexity.md)|
+|simple|A password that is at least 8 to 64 characters.|
+|strong|A password that is at least 8 to 64 characters. It requires 3 out of 4 of lowercase, uppercase, numbers, or symbols.|
+|custom|This option provides the most control over password complexity rules. It allows configuring a custom length. It also allows accepting number-only passwords (pins).  [userFlowCustomPasswordComplexity](../resources/userflowcustompasswordcomplexity.md)|
 
 ## Relationships
 None.

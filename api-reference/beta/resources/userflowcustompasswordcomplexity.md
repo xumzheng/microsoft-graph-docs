@@ -1,6 +1,6 @@
 ---
 title: "userFlowCustomPasswordComplexity resource type"
-description: "Use this resource to customize the password complexity rules for a userflow password configuration setting."
+description: "API doc to describe custom password complexity"
 author: "harsh-aseeja"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-description: Use this resource to customize the password complexity rules for an userflow password configuration setting.
+
 
 ## Properties
 |Property|Type|Description|
@@ -27,9 +27,9 @@ description: Use this resource to customize the password complexity rules for an
 
 |Value|Description|
 |:---|:---|
-|`2`|2 of 4: Lowercase character, Uppercase character, Number (0-9), Symbol ensures the password contains at least two character types. For example, a number and a lowercase character|
-|`3`|3 of 4: Lowercase character, Uppercase character, Number (0-9), Symbol ensures the password contains at least three character types. For example, a number, a lowercase character and an uppercase character.|
-|`4`|4 of 4: Lowercase character, Uppercase character, Number (0-9), Symbol ensures the password contains all  character types.|
+|2|2 of 4: Lowercase character, Uppercase character, Number (0-9), Symbol ensures the password contains at least two character types. For example, a number and a lowercase character|
+|3|3 of 4: Lowercase character, Uppercase character, Number (0-9), Symbol ensures the password contains at least three character types. For example, a number, a lowercase character and an uppercase character.|
+|4|4 of 4: Lowercase character, Uppercase character, Number (0-9), Symbol ensures the password contains all  character types.|
 
 
 
