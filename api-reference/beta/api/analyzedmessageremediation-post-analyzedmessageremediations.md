@@ -78,7 +78,6 @@ Content-length: 355
 	"type": "SoftDelete",
 	"description": "Emails to be soft deleted",
 	"analyzedMessages": {
-		"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#/security/analyzedMessage",
 		"value": [
 			{
 				"id": "6e41e872-9e46-46cd-700a-08d9990ddb14-16737038841889323262-1"
@@ -105,7 +104,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.analyzedMessageRemediation",
   "id": "3f0e78a8-f94d-a87d-db3b-960469428a7e",
-  "bulkId": "2b09ed57-662c-47c5-9d47-4b920748b208"
 }
 ```
 
