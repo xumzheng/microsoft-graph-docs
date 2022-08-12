@@ -71,7 +71,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)," 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
     "value": [
       "1.2.3",
       "1.2.2",
