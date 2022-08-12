@@ -81,6 +81,7 @@ Content-length: 169
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "@odata.type": "microsoft.graph.userFlowPageLayout",
   "truncated": true
 }
 -->
@@ -89,7 +90,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Example/pageLayouts/"
+  "@odata.context": "https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Example/pageLayouts/",
     "value": [
       {
       "id": "api.signinandsignupwithpassword1.1",
