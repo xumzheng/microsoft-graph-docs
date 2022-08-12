@@ -2416,6 +2416,8 @@ Possible values for user account types (group membership), per Windows definitio
 | threatCategory               | 1     | Aggregate threat assessment request by `threatCategory`.               |
 | mailDestinationRoutingReason | 2     | Aggregate threat assessment request by `mailDestinationRoutingReason`. |
 
+
+
 ### userFlowType values
 
 |Member
@@ -2427,6 +2429,53 @@ Possible values for user account types (group membership), per Windows definitio
 | profileUpdate
 | resourceOwner
 | unknownFutureValue
+
+### userFlowMultifactorAuthenticationMethod values 
+
+
+
+|Member|
+|:---|
+|email|
+|phoneCallOrSms|
+|phoneSms|
+|phoneCall|
+|authenticator|
+|unknownFutureValue|
+
+### userFlowMultifactorAuthenticationState values 
+
+
+
+|Member|
+|:---|
+|off|
+|on|
+|conditional|
+
+### userFlowPasswordComplexityLevel values 
+
+
+
+|Member|
+|:---|
+|simple|
+|strong|
+|custom|
+|legacy|
+|unknownFutureValue|
+
+### userFlowSingleSignOnConfigurationScope values 
+
+
+
+|Member|
+|:---|
+|tenant|
+|application|
+|policy|
+|disabled|
+|unknownFutureValue|
 
 ### openIdConnectResponseMode values
 
