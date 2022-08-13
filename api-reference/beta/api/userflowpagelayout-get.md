@@ -74,7 +74,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Example/pageLayouts",
+  "@odata.context": "https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Example/pageLayouts/",
     "value": [
       {
       "id": "api.signinandsignupwithpassword1.1",
