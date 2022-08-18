@@ -59,8 +59,6 @@ durationBeforeEscalation := "PT0S"
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.requestorManager"
-.Set"@odata.type"(&"@odata.type") 
 managerLevel := int32(1)
 .SetManagerLevel(&managerLevel) 
 
@@ -72,8 +70,6 @@ primaryApprovers := []graphmodels.Objectable {
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.singleUser"
-.Set"@odata.type"(&"@odata.type") 
 userId := "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2"
 .SetUserId(&userId) 
 description := "user"

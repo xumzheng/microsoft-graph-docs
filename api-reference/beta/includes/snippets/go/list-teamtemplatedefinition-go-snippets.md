@@ -7,9 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "definitions/any"
+
 requestParameters := &graphconfig.TeamTemplatesRequestBuilderGetQueryParameters{
 	Expand: [] string {"definitions"},
-	Filter: "definitions/any",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.TeamTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

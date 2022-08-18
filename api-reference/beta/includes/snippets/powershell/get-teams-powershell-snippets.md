@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description"  -OutFile $outFileId
+Get-MgTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description" 
 
 ```

@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "startsWith(subject,'All')"
+
 requestParameters := &graphconfig.EventsRequestBuilderGetQueryParameters{
-	Filter: "startsWith(subject,'All')",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.EventsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

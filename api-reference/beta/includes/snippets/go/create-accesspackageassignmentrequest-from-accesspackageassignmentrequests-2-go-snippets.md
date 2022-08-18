@@ -21,11 +21,7 @@ requestBody.SetAccessPackageAssignment(accessPackageAssignment)
 
 
 accessPackageAnswer := graphmodels.NewAccessPackageAnswer()
-"@odata.type" := "#microsoft.graph.accessPackageAnswerString"
-accessPackageAnswer.Set"@odata.type"(&"@odata.type") 
 answeredQuestion := graphmodels.NewAccessPackageQuestion()
-"@odata.type" := "#microsoft.graph.accessPackageMultipleChoiceQuestion"
-answeredQuestion.Set"@odata.type"(&"@odata.type") 
 id := "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
 answeredQuestion.SetId(&id) 
 accessPackageAnswer.SetAnsweredQuestion(answeredQuestion)
@@ -34,11 +30,7 @@ additionalData := map[string]interface{}{
 }
 accessPackageAnswer.SetAdditionalData(additionalData)
 accessPackageAnswer1 := graphmodels.NewAccessPackageAnswer()
-"@odata.type" := "#microsoft.graph.accessPackageAnswerString"
-accessPackageAnswer1.Set"@odata.type"(&"@odata.type") 
 answeredQuestion := graphmodels.NewAccessPackageQuestion()
-"@odata.type" := "#microsoft.graph.accessPackageTextInputQuestion"
-answeredQuestion.Set"@odata.type"(&"@odata.type") 
 id := "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
 answeredQuestion.SetId(&id) 
 accessPackageAnswer1.SetAnsweredQuestion(answeredQuestion)

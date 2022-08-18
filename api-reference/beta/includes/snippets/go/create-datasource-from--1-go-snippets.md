@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewDataSource()
-"@odata.type" := "microsoft.graph.ediscovery.siteSource"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 site := graphmodels.New()
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"

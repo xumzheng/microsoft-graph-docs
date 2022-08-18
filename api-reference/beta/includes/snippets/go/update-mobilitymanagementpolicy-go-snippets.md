@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewMobilityManagementPolicy()
-"@odata.type" := "#microsoft.graph.mobilityManagementPolicy"
-requestBody.Set"@odata.type"(&"@odata.type") 
 complianceUrl := "https://portal.mg.contoso.com/?portalAction=Compliance"
 requestBody.SetComplianceUrl(&complianceUrl) 
 discoveryUrl := "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc"
