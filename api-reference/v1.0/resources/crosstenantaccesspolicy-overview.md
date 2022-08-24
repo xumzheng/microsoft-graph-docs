@@ -21,6 +21,7 @@ Granular controls let you determine the users, groups, and apps, both in your or
     + In Azure AD B2B collaboration, both access settings are enabled by default. This means all your users can be invited to external organizations, and all your users can invite external users.
     + In Azure AD B2B direct connect, both access settings are disabled by default.
     + The service default settings may be updated.
+    
 + **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Azure AD B2B collaboration and Azure AD B2B direct connect might be disabled across your organization by default, you can enable these features for a specific external organization.
 
 > [!IMPORTANT]
