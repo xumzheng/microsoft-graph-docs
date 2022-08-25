@@ -70,7 +70,7 @@ The CSV file has the following headers for columns:
 - Report Refresh Date
 - Report Period
 - Forms
-- Signed in responses
+- Authenticated responses
 - Anonymous responses
 
 ### JSON
@@ -118,7 +118,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date, Report Period, Forms, Signed in responses, Anonymous responses
+Report Refresh Date, Report Period, Forms, Authenticated in responses, Anonymous responses
 ```
 
 ### Example 2: JSON output
@@ -162,43 +162,43 @@ Content-Length: 294
                 {
                     "reportDate": "2022-06-12",
                     "forms": 366,
-                    "signedResponses": 2329,
+                    "authenticatedResponses": 2329,
                     "anonymousResponses": 2428
                 },
                 {
                     "reportDate": "2022-06-11",
                     "forms": 56,
-                    "signedResponses": 2149,
+                    "authenticatedResponses": 2149,
                     "anonymousResponses": 2243
                 },
                 {
                     "reportDate": "2022-06-10",
                     "forms": 953,
-                    "signedResponses": 16749,
+                    "authenticatedResponses": 16749,
                     "anonymousResponses": 7865
                 },
                 {
                     "reportDate": "2022-06-09",
                     "forms": 1210,
-                    "signedResponses": 19470,
+                    "authenticatedResponses": 19470,
                     "anonymousResponses": 10063
                 },
                 {
                     "reportDate": "2022-06-08",
                     "forms": 1319,
-                    "signedResponses": 19745,
+                    "authenticatedResponses": 19745,
                     "anonymousResponses": 11256
                 },
                 {
                     "reportDate": "2022-06-07",
                     "forms": 1413,
-                    "signedResponses": 20701,
+                    "authenticatedResponses": 20701,
                     "anonymousResponses": 11003
                 },
                 {
                     "reportDate": "2022-06-06",
                     "forms": 1461,
-                    "signedResponses": 18838,
+                    "authenticatedResponses": 18838,
                     "anonymousResponses": 9016
                 }
             ]
