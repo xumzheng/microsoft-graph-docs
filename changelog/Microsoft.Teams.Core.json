@@ -157,7 +157,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "callTranscript",
           "ChangeType": "Addition",
-          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-beta) resource type.",
+          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource type.",
           "Target": "callTranscript"
         },
         {
@@ -165,7 +165,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/callTranscript-list?view=graph-rest-beta) operation to the [callTranscript] resource.",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-beta) operation to the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
           "Target": "callTranscript"
         },
         {
@@ -173,29 +173,19 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-beta) operation to the [callTranscript] resource.",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/calltranscript-get?view=graph-rest-beta) operation to the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
           "Target": "callTranscript"
-        }
-      ],
-      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2022-08-01T17:37:11Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
+        },
         {
-          "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
           "ApiChange": "Relationship",
           "ChangedApiName": "transcripts",
           "ChangeType": "Addition",
-          "Description": "Added the **transcripts** navigation property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **transcripts** navigation property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
-      "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
+      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-01T12:09:10.9478462Z",
@@ -5537,6 +5527,24 @@
     {
       "ChangeList": [
         {
+          "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-22T15:04:69.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTag",
@@ -5573,6 +5581,63 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-08-17T12:29:40.401Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+<<<<<<< HEAD
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworktag?view=graph-rest-1.0) resource type and associated methods.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTagMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworktagmember?view=graph-rest-1.0) resource type and associated methods.",
+          "Target": "teamworkTagMember"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkTagType** enumeration type.",
+          "Target": "teamworkTagType"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-08-17T12:29:40.401Z",
+=======
+          "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-22T15:04:69.427Z",
+>>>>>>> 3f1d533511c9de70511a80d49e47c6b2869b019e
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
