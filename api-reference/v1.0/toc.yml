@@ -7191,6 +7191,8 @@ items:
           href: /graph/teams-list-all-teams?context=graph/api/1.0
         - name: Complete migration for team
           href: api/team-completemigration.md
+        - name: List permission grants
+          href: api/team-list-permissiongrants.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -7332,6 +7334,8 @@ items:
           href: api/chat-post-messages.md
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
+        - name: List permission grants
+          href: api/chat-list-permissiongrants.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -7639,8 +7643,12 @@ items:
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
         items:
+        - name: List for chat
+          href: api/chat-list-permissiongrants.md
         - name: List for group
           href: api/group-list-permissiongrants.md
+        - name: List for team
+          href: api/team-list-permissiongrants.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
