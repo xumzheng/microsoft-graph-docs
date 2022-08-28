@@ -2,7 +2,7 @@
 title: "List permissionGrants of a chat"
 description: "Retrieve permissionGrants of a chat."
 author: "hikum"
-localization_priority: Priority
+ms.localizationpriority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
