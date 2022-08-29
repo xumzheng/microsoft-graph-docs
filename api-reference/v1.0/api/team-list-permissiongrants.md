@@ -69,6 +69,7 @@ GET https://graph.microsoft.com/v1.0/teams/14c981a4-dca9-4565-bae6-e13ada8861be/
 
 The following example shows the response.
 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,6 +79,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#permissionGrants",
     "value": [
