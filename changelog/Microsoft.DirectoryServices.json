@@ -2,6 +2,40 @@
   "changelog": [
     {
       "ChangeList": [
+        { 
+          "Id": "c3d94be9-ad17-4e01-b03f-13aaf5daa1fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added the defaultRedirectURI property to the [application resource](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0)",
+          "Target": "application"
+        },
+        { 
+          "Id": "c3d94be9-ad17-4e01-b03f-13aaf5daa1fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webapplication",
+          "ChangeType": "Addition",
+          "Description": "Added to [redirectUriSettings](https://docs.microsoft.com/en-us/graph/api/resources/redirecturisettings?view=graph-rest-1.0) property to the [webApplication resource](https://docs.microsoft.com/en-us/graph/api/resources/webapplication?view=graph-rest-1.0)",
+          "Target": "webApplication"
+        },
+        { 
+          "Id": "c3d94be9-ad17-4e01-b03f-13aaf5daa1fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirecturisettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriSettings resource](https://docs.microsoft.com/en-us/graph/api/resources/redirecturisettings?view=graph-rest-1.0)",
+          "Target": "redirecturisettings"
+        }
+      ],
+      "Id": "c3d94be9-ad17-4e01-b03f-13aaf5daa1fa",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-01T05:09:37Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
           "ApiChange": "Relationship",
