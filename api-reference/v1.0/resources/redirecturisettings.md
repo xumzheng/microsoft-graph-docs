@@ -3,7 +3,7 @@ title: "redirectUriSettings resource type"
 description: "Specifies the index for a redirectUri"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "application"
 author: "alamaral"
 ---
 
