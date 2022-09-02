@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Me.MailFolders.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Includehiddenfolders = true;
+	requestConfiguration.QueryParameters.IncludeHiddenFolders = true;
 });
 
 

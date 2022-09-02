@@ -40,7 +40,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Qna
 	},
 	Platforms = new List<DevicePlatformType>
 	{
-		DevicePlatformType.Ios,
+		DevicePlatformType.IOS,
 	},
 	State = Microsoft.Graph.Beta.Models.Search.AnswerState.Published,
 };

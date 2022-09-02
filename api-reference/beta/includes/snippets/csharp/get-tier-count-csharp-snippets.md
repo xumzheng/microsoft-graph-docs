@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var result = await graphClient.Groups["group-id"].TransitiveMembers.User.GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Count = true;
-	requestConfiguration.QueryParameters.Orderby = new string []{ "displayName" };
+	requestConfiguration.QueryParameters.OrderBy = new string []{ "displayName" };
 	requestConfiguration.QueryParameters.Search = "\"displayName:tier\"";
 	requestConfiguration.QueryParameters.Select = new string []{ "displayName","id" };
 	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");

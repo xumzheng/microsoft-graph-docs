@@ -12,7 +12,7 @@ var requestBody = new Message
 	Subject = "Annual review",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.HTML,
+		ContentType = BodyType.Html,
 		Content = "You should be proud!",
 	},
 	ToRecipients = new List<Recipient>

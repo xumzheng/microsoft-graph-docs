@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleAssignmentRequests["governanceRoleAssignmentRequest-id"].UpdateRequest.PostAsync();
+var result = await graphClient.PrivilegedAccess["privilegedAccess-id"].RoleAssignmentRequests["governanceRoleAssignmentRequest-id"].UpdateRequest.PostAsync(null);
 
 
 ```

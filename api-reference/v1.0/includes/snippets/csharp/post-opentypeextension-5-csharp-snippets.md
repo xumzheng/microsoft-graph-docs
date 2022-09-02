@@ -20,7 +20,7 @@ var requestBody = new Conversation
 				{
 					Body = new ItemBody
 					{
-						ContentType = BodyType.HTML,
+						ContentType = BodyType.Html,
 						Content = "This is urgent!",
 					},
 					Extensions = new List<Extension>

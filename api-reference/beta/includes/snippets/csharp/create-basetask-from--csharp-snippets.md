@@ -21,13 +21,13 @@ var requestBody = new BaseTask
 	{
 		OdataType = "microsoft.graph.dateTimeTimeZone",
 	},
-	Importance = Importance.String,
+	Importance = Importance.Low,
 	Recurrence = new PatternedRecurrence
 	{
 		OdataType = "microsoft.graph.patternedRecurrence",
 	},
 	DisplayName = "String",
-	Status = TaskStatus_v2.String,
+	Status = TaskStatus_v2.NotStarted,
 	Viewpoint = new TaskViewpoint
 	{
 		OdataType = "microsoft.graph.taskViewpoint",

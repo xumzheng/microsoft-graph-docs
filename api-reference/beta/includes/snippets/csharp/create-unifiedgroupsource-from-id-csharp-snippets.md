@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.UnifiedGroupSource
 {
-	IncludedSources = Microsoft.Graph.Beta.Models.Ediscovery.SourceType.Mailbox, site,
+	IncludedSources = Microsoft.Graph.Beta.Models.Ediscovery.SourceType.Mailbox | Microsoft.Graph.Beta.Models.Ediscovery.SourceType.Site,
 	AdditionalData = new Dictionary<string, object>
 	{
 		{

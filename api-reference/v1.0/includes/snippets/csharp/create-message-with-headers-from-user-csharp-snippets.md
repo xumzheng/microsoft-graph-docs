@@ -12,7 +12,7 @@ var requestBody = new Message
 	Subject = "9/8/2018: concert",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.HTML,
+		ContentType = BodyType.Html,
 		Content = "The group represents Washington.",
 	},
 	ToRecipients = new List<Recipient>

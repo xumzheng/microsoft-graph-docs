@@ -11,7 +11,7 @@ var requestBody = new EducationSchool
 {
 	DisplayName = "Fabrikam High School",
 	Description = "Magnate school for the arts. Los Angeles School District",
-	ExternalSource = EducationExternalSource.String,
+	ExternalSource = EducationExternalSource.Sis,
 	PrincipalEmail = "AmyR@fabrikam.com",
 	PrincipalName = "Amy Roebuck",
 	ExternalPrincipalId = "14007",

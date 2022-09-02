@@ -11,9 +11,9 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionLabel
 {
 	OdataType = "#microsoft.graph.security.retentionLabel",
 	DisplayName = "String",
-	BehaviorDuringRetentionPeriod = Microsoft.Graph.Beta.Models.Security.BehaviorDuringRetentionPeriod.String,
-	ActionAfterRetentionPeriod = Microsoft.Graph.Beta.Models.Security.ActionAfterRetentionPeriod.String,
-	RetentionTrigger = Microsoft.Graph.Beta.Models.Security.RetentionTrigger.String,
+	BehaviorDuringRetentionPeriod = Microsoft.Graph.Beta.Models.Security.BehaviorDuringRetentionPeriod.DoNotRetain,
+	ActionAfterRetentionPeriod = Microsoft.Graph.Beta.Models.Security.ActionAfterRetentionPeriod.None,
+	RetentionTrigger = Microsoft.Graph.Beta.Models.Security.RetentionTrigger.DateLabeled,
 	RetentionDuration = new RetentionDuration
 	{
 		OdataType = "microsoft.graph.security.retentionDuration",
@@ -26,7 +26,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionLabel
 		OdataType = "microsoft.graph.identitySet",
 	},
 	LabelToBeApplied = "String",
-	DefaultRecordBehavior = Microsoft.Graph.Beta.Models.Security.DefaultRecordBehavior.String,
+	DefaultRecordBehavior = Microsoft.Graph.Beta.Models.Security.DefaultRecordBehavior.StartLocked,
 };
 var result = await graphClient.Security.Labels.RetentionLabels.PostAsync(requestBody);
 

@@ -25,7 +25,7 @@ var requestBody = new AccessReviewHistoryDefinition
 		{
 			Pattern = new RecurrencePattern
 			{
-				Type = RecurrencePatternType.Monthly,
+				Type = RecurrencePatternType.Daily,
 				Interval = 1,
 			},
 			Range = new RecurrenceRange

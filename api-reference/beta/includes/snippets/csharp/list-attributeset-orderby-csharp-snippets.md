@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.DirectoryObject.AttributeSets.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Orderby = new string []{ "id" };
+	requestConfiguration.QueryParameters.OrderBy = new string []{ "id" };
 });
 
 

@@ -13,12 +13,12 @@ var requestBody = new WorkforceIntegration
 	ApiVersion = 99,
 	Encryption = new WorkforceIntegrationEncryption
 	{
-		Protocol = WorkforceIntegrationEncryptionProtocol.Protocol-value,
+		Protocol = WorkforceIntegrationEncryptionProtocol.SharedSecret,
 		Secret = "secret-value",
 	},
 	IsActive = true,
 	Url = "url-value",
-	Supports = WorkforceIntegrationSupportedEntities.Supports-value,
+	Supports = WorkforceIntegrationSupportedEntities.None,
 };
 var result = await graphClient.Teamwork.WorkforceIntegrations.PostAsync(requestBody);
 

@@ -12,7 +12,7 @@ var requestBody = new PrivilegedApproval
 	UserId = "userId-value",
 	RoleId = "roleId-value",
 	ApprovalType = "approvalType-value",
-	ApprovalState = ApprovalState.ApprovalState-value,
+	ApprovalState = ApprovalState.Pending,
 	ApprovalDuration = TimeSpan.Parse("datetime-value"),
 };
 var result = await graphClient.PrivilegedApproval.PostAsync(requestBody);

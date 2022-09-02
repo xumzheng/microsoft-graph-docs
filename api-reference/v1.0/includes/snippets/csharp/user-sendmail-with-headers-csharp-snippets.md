@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Me.SendMail.SendMailPostRequestBody
 		Subject = "9/9/2018: concert",
 		Body = new ItemBody
 		{
-			ContentType = BodyType.HTML,
+			ContentType = BodyType.Html,
 			Content = "The group represents Nevada.",
 		},
 		ToRecipients = new List<Recipient>

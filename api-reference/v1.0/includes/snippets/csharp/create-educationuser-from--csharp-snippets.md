@@ -10,9 +10,9 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new EducationUser
 {
 	OdataType = "#microsoft.graph.educationUser",
-	PrimaryRole = EducationUserRole.String,
+	PrimaryRole = EducationUserRole.Student,
 	MiddleName = "String",
-	ExternalSource = EducationExternalSource.String,
+	ExternalSource = EducationExternalSource.Sis,
 	ExternalSourceDetail = "String",
 	ResidenceAddress = new PhysicalAddress
 	{

@@ -15,8 +15,8 @@ var requestBody = new Alert
 	{
 		"String",
 	},
-	Feedback = AlertFeedback.AlertFeedback,
-	Status = AlertStatus.AlertStatus,
+	Feedback = AlertFeedback.Unknown,
+	Status = AlertStatus.Unknown,
 	Tags = new List<string>
 	{
 		"String",

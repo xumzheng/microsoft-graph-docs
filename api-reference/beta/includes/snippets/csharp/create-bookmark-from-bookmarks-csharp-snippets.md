@@ -29,7 +29,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 	AvailabilityEndDateTime = null,
 	Platforms = new List<DevicePlatformType>
 	{
-		DevicePlatformType.Windows,
+		DevicePlatformType.Android,
 	},
 	TargetedVariations = new List<Microsoft.Graph.Beta.Models.Search.AnswerVariant>
 	{

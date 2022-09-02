@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.UnifiedGroupSource
 	{
 		Mail = "SOCTeam@M365x809305.onmicrosoft.com",
 	},
-	IncludedSources = Microsoft.Graph.Beta.Models.Security.SourceType.Mailbox, site,
+	IncludedSources = Microsoft.Graph.Beta.Models.Security.SourceType.Mailbox | Microsoft.Graph.Beta.Models.Security.SourceType.Site,
 };
 var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Custodians["ediscoveryCustodian-id"].UnifiedGroupSources.PostAsync(requestBody);
 

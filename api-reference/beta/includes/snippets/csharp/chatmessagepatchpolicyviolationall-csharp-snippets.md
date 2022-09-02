@@ -20,7 +20,7 @@ var requestBody = new ChatMessage
 				"Credit Card Number",
 			},
 		},
-		VerdictDetails = ChatMessagePolicyViolationVerdictDetailsTypes.AllowOverrideWithoutJustification,AllowFalsePositiveOverride,
+		VerdictDetails = ChatMessagePolicyViolationVerdictDetailsTypes.AllowOverrideWithoutJustification | ChatMessagePolicyViolationVerdictDetailsTypes.AllowFalsePositiveOverride,
 		DlpAction = ChatMessagePolicyViolationDlpActionTypes.BlockAccess,
 	},
 };

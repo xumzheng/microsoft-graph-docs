@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var result = await graphClient.Chats.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Orderby = new string []{ "lastMessagePreview/createdDateTime desc" };
+	requestConfiguration.QueryParameters.OrderBy = new string []{ "lastMessagePreview/createdDateTime desc" };
 });
 
 

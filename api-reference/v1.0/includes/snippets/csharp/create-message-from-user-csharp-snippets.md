@@ -13,7 +13,7 @@ var requestBody = new Message
 	Importance = Importance.Low,
 	Body = new ItemBody
 	{
-		ContentType = BodyType.HTML,
+		ContentType = BodyType.Html,
 		Content = "They were <b>awesome</b>!",
 	},
 	ToRecipients = new List<Recipient>

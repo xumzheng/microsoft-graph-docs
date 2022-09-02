@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.LegalHold
 		OdataType = "microsoft.graph.identitySet",
 	},
 	IsEnabled = boolean,
-	Status = Microsoft.Graph.Beta.Models.Ediscovery.LegalHoldStatus.String,
+	Status = Microsoft.Graph.Beta.Models.Ediscovery.LegalHoldStatus.Pending,
 	ContentQuery = "String",
 	Errors = new List<string>
 	{

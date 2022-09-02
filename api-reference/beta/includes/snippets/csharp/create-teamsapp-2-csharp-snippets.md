@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 await graphClient.AppCatalogs.TeamsApps.PostAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Requiresreview = true;
+	requestConfiguration.QueryParameters.RequiresReview = true;
 });
 
 

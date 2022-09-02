@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new ConnectorGroup
 {
 	Name = "name-value",
-	Region = ConnectorGroupRegion.Region-value,
+	Region = ConnectorGroupRegion.Nam,
 };
 await graphClient.OnPremisesPublishingProfiles["onPremisesPublishingProfile-id"].ConnectorGroups["connectorGroup-id"].PatchAsync(requestBody);
 

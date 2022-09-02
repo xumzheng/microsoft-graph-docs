@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new AuthenticationMethodConfiguration
 {
 	OdataType = "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-	State = AuthenticationMethodState.String,
+	State = AuthenticationMethodState.Enabled,
 };
 await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["authenticationMethodConfiguration-id"].PatchAsync(requestBody);
 
