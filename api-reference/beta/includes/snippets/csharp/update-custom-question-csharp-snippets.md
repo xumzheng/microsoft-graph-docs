@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new MeetingRegistrationQuestion
 {
 	AnswerInputType = AnswerInputType.Radiobutton,
-	AnswerOptions = new List<>
+	AnswerOptions = new List<string>
 	{
 		"Software Engineer",
 		"Software Development Manager",

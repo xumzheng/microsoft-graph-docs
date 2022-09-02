@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AnswerPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Answer.AnswerPostRequestBody
 {
 	CallbackUri = "callbackUri-value",
 	MediaConfig = new MediaConfig
@@ -22,7 +22,7 @@ var requestBody = new AnswerPostRequestBody
 	},
 	AcceptedModalities = new List<>
 	{
-		"audio",
+		Modality.Audio,
 	},
 	CallOptions = new CallOptions
 	{

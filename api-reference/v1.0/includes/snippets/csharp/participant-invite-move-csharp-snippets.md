@@ -7,34 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new InvitePostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Invite.InvitePostRequestBody
 {
 	Participants = new List<InvitationParticipantInfo>
 	{
 		new InvitationParticipantInfo
 		{
-			AdditionalData = new Dictionary<string, object>
+			OdataType = "#microsoft.graph.invitationParticipantInfo",
+			ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
+			ParticipantId = "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+			Identity = new IdentitySet
 			{
+				OdataType = "#microsoft.graph.identitySet",
+				User = new Identity
 				{
-					"@odata.type" , "#microsoft.graph.invitationParticipantInfo"
-				},
-				{
-					"replacesCallId" , "a7ebfb2d-871e-419c-87af-27290b22e8db"
-				},
-				{
-					"participantId" , "7d501bf1-5ee4-4605-ba92-0ae4513c611c"
-				},
-				{
-					"identity" , new 
+					OdataType = "#microsoft.graph.identity",
+					Id = "682b6c37-0729-4fab-ace6-d730d5d9137e",
+					AdditionalData = new Dictionary<string, object>
 					{
-						OdataType = "#microsoft.graph.identitySet",
-						User = new 
 						{
-							OdataType = "#microsoft.graph.identity",
-							Id = "682b6c37-0729-4fab-ace6-d730d5d9137e",
-							IdentityProvider = "AAD",
+							"identityProvider" , "AAD"
 						},
-					}
+					},
 				},
 			},
 		},

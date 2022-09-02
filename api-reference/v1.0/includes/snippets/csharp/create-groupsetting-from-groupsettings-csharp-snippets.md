@@ -14,51 +14,23 @@ var requestBody = new GroupSetting
 	{
 		new SettingValue
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "GuestUsageGuidelinesUrl"
-				},
-				{
-					"value" , "https://privacy.contoso.com/privacystatement"
-				},
-			},
+			Name = "GuestUsageGuidelinesUrl",
+			Value = "https://privacy.contoso.com/privacystatement",
 		},
 		new SettingValue
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "EnableMSStandardBlockedWords"
-				},
-				{
-					"value" , "true"
-				},
-			},
+			Name = "EnableMSStandardBlockedWords",
+			Value = "true",
 		},
 		new SettingValue
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "EnableMIPLabels"
-				},
-				{
-					"value" , "true"
-				},
-			},
+			Name = "EnableMIPLabels",
+			Value = "true",
 		},
 		new SettingValue
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "PrefixSuffixNamingRequirement"
-				},
-				{
-					"value" , "[Contoso-][GroupName]"
-				},
-			},
+			Name = "PrefixSuffixNamingRequirement",
+			Value = "[Contoso-][GroupName]",
 		},
 	},
 };

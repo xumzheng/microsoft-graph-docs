@@ -19,7 +19,7 @@ var requestBody = new Contact
 			Name = "Pavel Bansky",
 		},
 	},
-	BusinessPhones = new List<>
+	BusinessPhones = new List<string>
 	{
 		"+1 732 555 0102",
 	},

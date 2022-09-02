@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new TodoTask
 {
 	Title = "A new task",
-	Categories = new List<>
+	Categories = new List<string>
 	{
 		"Important",
 	},

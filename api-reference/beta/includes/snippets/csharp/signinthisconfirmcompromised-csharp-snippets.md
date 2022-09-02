@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ConfirmCompromisedPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.AuditLogs.SignIns.ConfirmCompromised.ConfirmCompromisedPostRequestBody
 {
-	RequestIds = new List<>
+	RequestIds = new List<string>
 	{
 		"f01c6af6-6683-4a37-a945-0a925501eede",
 		"42bf60ac-d0cb-4206-aa5c-101884298f55",

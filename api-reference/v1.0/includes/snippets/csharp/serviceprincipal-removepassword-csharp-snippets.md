@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new RemovePasswordPostRequestBody
+var requestBody = new Microsoft.Graph.ServicePrincipals.Item.RemovePassword.RemovePasswordPostRequestBody
 {
 	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6",
 };

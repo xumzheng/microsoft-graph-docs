@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new EvaluateRemovalPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtection.SensitivityLabels.EvaluateRemoval.EvaluateRemovalPostRequestBody
 {
 	ContentInfo = new ContentInfo
 	{
 		OdataType = "#microsoft.graph.security.contentInfo",
 		Identifier = null,
 		State = ContentState.Rest,
-		Metadata = new List<KeyValuePair>
+		Metadata = new List<Microsoft.Graph.Beta..Security.KeyValuePair>
 		{
 			new KeyValuePair
 			{

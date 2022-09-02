@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AddCopyPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Sites.Item.Lists.Item.ContentTypes.AddCopy.AddCopyPostRequestBody
 {
 	ContentType = "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101",
 };

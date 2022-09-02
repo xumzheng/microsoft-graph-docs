@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UpdateAudiencePostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Item.Audience.UpdateAudience.UpdateAudiencePostRequestBody
 {
-	AddMembers = new List<UpdatableAsset>
+	AddMembers = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{
@@ -17,7 +17,7 @@ var requestBody = new UpdateAudiencePostRequestBody
 			Id = "String (identifier)",
 		},
 	},
-	RemoveMembers = new List<UpdatableAsset>
+	RemoveMembers = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{
@@ -25,7 +25,7 @@ var requestBody = new UpdateAudiencePostRequestBody
 			Id = "String (identifier)",
 		},
 	},
-	AddExclusions = new List<UpdatableAsset>
+	AddExclusions = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{
@@ -33,7 +33,7 @@ var requestBody = new UpdateAudiencePostRequestBody
 			Id = "String (identifier)",
 		},
 	},
-	RemoveExclusions = new List<UpdatableAsset>
+	RemoveExclusions = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{

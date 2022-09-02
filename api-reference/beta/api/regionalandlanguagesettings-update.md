@@ -61,7 +61,6 @@ If successful, this method returns a 200 response code and the updated **regiona
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "put_regionalAndLanguageSettings"
@@ -111,14 +110,8 @@ Content-type: application/json
      }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/put-regionalandlanguagesettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
+
 
 The following is an example of the response.
 <!-- {

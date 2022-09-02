@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new PersonWebsite
 {
-	Categories = new List<>
+	Categories = new List<string>
 	{
 		"football",
 	},

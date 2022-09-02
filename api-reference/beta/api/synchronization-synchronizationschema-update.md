@@ -52,7 +52,6 @@ The following is an example of a request.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"
@@ -103,12 +102,6 @@ Content-type: application/json
 }
 
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-synchronizationschema-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ##### Response

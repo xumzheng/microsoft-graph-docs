@@ -73,7 +73,6 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example updates a role management policy rule with ID `Expiration_EndUser_Assignment`.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedrolemanagementpolicyrule",
@@ -101,12 +100,6 @@ Content-Type: application/json
     }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicyrule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

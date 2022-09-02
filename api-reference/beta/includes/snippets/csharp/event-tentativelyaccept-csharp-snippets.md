@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new TentativelyAcceptPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.TentativelyAccept.TentativelyAcceptPostRequestBody
 {
 	Comment = "I may not be able to make this week. How about next week?",
 	SendResponse = true,

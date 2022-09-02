@@ -52,7 +52,6 @@ The following example shows how to follow multiple sites.
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -71,14 +70,8 @@ Content-Type: application/json
     ] 
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
+
 
 If successful, it returns the following JSON response. 
 

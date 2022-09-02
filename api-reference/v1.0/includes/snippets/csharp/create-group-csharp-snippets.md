@@ -11,7 +11,7 @@ var requestBody = new Group
 {
 	Description = "Self help community for library",
 	DisplayName = "Library Assist",
-	GroupTypes = new List<>
+	GroupTypes = new List<string>
 	{
 		"Unified",
 	},

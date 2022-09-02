@@ -27,7 +27,7 @@ var requestBody = new SubjectRightsRequest
 	},
 	MailboxLocations = null,
 	PauseAfterEstimate = true,
-	Regulations = new List<>
+	Regulations = new List<string>
 	{
 		"CCPA",
 	},

@@ -30,7 +30,7 @@ var requestBody = new Call
 	},
 	RequestedModalities = new List<>
 	{
-		"audio",
+		Modality.Audio,
 	},
 	CallOptions = new CallOptions
 	{

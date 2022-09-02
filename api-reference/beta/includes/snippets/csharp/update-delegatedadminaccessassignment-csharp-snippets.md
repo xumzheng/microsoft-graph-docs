@@ -15,30 +15,15 @@ var requestBody = new DelegatedAdminAccessAssignment
 		{
 			new UnifiedRole
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"roleDefinitionId" , "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
-					},
-				},
+				RoleDefinitionId = "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
 			},
 			new UnifiedRole
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"roleDefinitionId" , "44367163-eba1-44c3-98af-f5787879f96a"
-					},
-				},
+				RoleDefinitionId = "44367163-eba1-44c3-98af-f5787879f96a",
 			},
 			new UnifiedRole
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"roleDefinitionId" , "729827e3-9c14-49f7-bb1b-9608f156bbb8"
-					},
-				},
+				RoleDefinitionId = "729827e3-9c14-49f7-bb1b-9608f156bbb8",
 			},
 		},
 	},

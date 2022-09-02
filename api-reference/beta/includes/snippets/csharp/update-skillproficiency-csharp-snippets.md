@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new SkillProficiency
 {
-	Categories = new List<>
+	Categories = new List<string>
 	{
 		"Professional",
 	},

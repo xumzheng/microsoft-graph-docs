@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Organization
 {
-	MarketingNotificationEmails = new List<>
+	MarketingNotificationEmails = new List<string>
 	{
 		"marketing@contoso.com",
 	},
@@ -18,15 +18,15 @@ var requestBody = new Organization
 		ContactEmail = "alice@contoso.com",
 		StatementUrl = "https://contoso.com/privacyStatement",
 	},
-	SecurityComplianceNotificationMails = new List<>
+	SecurityComplianceNotificationMails = new List<string>
 	{
 		"security@contoso.com",
 	},
-	SecurityComplianceNotificationPhones = new List<>
+	SecurityComplianceNotificationPhones = new List<string>
 	{
 		"(123) 456-7890",
 	},
-	TechnicalNotificationMails = new List<>
+	TechnicalNotificationMails = new List<string>
 	{
 		"tech@contoso.com",
 	},

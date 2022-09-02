@@ -15,14 +15,9 @@ var requestBody = new UnifiedRoleDefinition
 	{
 		new UnifiedRolePermission
 		{
-			AdditionalData = new Dictionary<string, object>
+			AllowedResourceActions = new List<string>
 			{
-				{
-					"allowedResourceActions" , new List<>
-					{
-						"microsoft.directory/applications/basic/read",
-					}
-				},
+				"microsoft.directory/applications/basic/read",
 			},
 		},
 	},

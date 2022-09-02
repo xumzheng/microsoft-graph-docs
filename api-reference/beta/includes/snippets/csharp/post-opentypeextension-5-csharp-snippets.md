@@ -40,7 +40,7 @@ var requestBody = new Conversation
 									"expirationDate" , "2016-08-03T11:00:00.000Z"
 								},
 								{
-									"topPicks" , new List<>
+									"topPicks" , new List<string>
 									{
 										"Employees only",
 										"Add spouse or guest",

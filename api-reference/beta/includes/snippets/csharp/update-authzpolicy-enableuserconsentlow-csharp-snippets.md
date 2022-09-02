@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AuthorizationPolicy
 {
-	PermissionGrantPolicyIdsAssignedToDefaultUserRole = new List<>
+	PermissionGrantPolicyIdsAssignedToDefaultUserRole = new List<string>
 	{
 		"managePermissionGrantsForSelf.microsoft-user-default-low",
 	},

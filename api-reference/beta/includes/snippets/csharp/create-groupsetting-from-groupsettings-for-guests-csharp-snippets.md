@@ -14,15 +14,8 @@ var requestBody = new DirectorySetting
 	{
 		new SettingValue
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "AllowToAddGuests"
-				},
-				{
-					"value" , "false"
-				},
-			},
+			Name = "AllowToAddGuests",
+			Value = "false",
 		},
 	},
 };

@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UpdateAudienceByIdPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Item.Audience.UpdateAudienceById.UpdateAudienceByIdPostRequestBody
 {
 	MemberEntityType = "String",
-	AddMembers = new List<>
+	AddMembers = new List<string>
 	{
 		"String",
 	},
-	RemoveMembers = new List<>
+	RemoveMembers = new List<string>
 	{
 		"String",
 	},
-	AddExclusions = new List<>
+	AddExclusions = new List<string>
 	{
 		"String",
 	},
-	RemoveExclusions = new List<>
+	RemoveExclusions = new List<string>
 	{
 		"String",
 	},

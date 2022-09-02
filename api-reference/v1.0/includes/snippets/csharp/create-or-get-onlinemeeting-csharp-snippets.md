@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new CreateOrGetPostRequestBody
+var requestBody = new Microsoft.Graph.Me.OnlineMeetings.CreateOrGet.CreateOrGetPostRequestBody
 {
 	StartDateTime = DateTimeOffset.Parse("2020-02-06T01:49:21.3524945+00:00"),
 	EndDateTime = DateTimeOffset.Parse("2020-02-06T02:19:21.3524945+00:00"),

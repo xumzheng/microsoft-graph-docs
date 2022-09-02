@@ -7,22 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ForwardPostRequestBody
+var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Forward.ForwardPostRequestBody
 {
 	Comment = "comment-value",
 	ToRecipients = new List<Recipient>
 	{
 		new Recipient
 		{
-			AdditionalData = new Dictionary<string, object>
+			EmailAddress = new EmailAddress
 			{
-				{
-					"emailAddress" , new 
-					{
-						Name = "name-value",
-						Address = "address-value",
-					}
-				},
+				Name = "name-value",
+				Address = "address-value",
 			},
 		},
 	},

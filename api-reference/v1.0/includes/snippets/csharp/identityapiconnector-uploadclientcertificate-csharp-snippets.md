@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UploadClientCertificatePostRequestBody
+var requestBody = new Microsoft.Graph.Identity.ApiConnectors.Item.UploadClientCertificate.UploadClientCertificatePostRequestBody
 {
 	Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
 	Password = "<password>",

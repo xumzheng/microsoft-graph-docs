@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AddMembersByIdPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.AddMembersById.AddMembersByIdPostRequestBody
 {
-	Ids = new List<>
+	Ids = new List<string>
 	{
 		"String",
 		"String",

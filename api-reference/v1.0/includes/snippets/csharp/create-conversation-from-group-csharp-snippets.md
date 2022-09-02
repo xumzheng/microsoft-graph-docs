@@ -27,15 +27,10 @@ var requestBody = new Conversation
 					{
 						new Recipient
 						{
-							AdditionalData = new Dictionary<string, object>
+							EmailAddress = new EmailAddress
 							{
-								{
-									"emailAddress" , new 
-									{
-										Name = "Adele Vance",
-										Address = "AdeleV@contoso.onmicrosoft.com",
-									}
-								},
+								Name = "Adele Vance",
+								Address = "AdeleV@contoso.onmicrosoft.com",
 							},
 						},
 					},

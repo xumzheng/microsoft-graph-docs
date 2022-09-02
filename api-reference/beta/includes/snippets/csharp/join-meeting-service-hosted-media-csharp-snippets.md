@@ -13,7 +13,7 @@ var requestBody = new Call
 	CallbackUri = "https://bot.contoso.com/callback",
 	RequestedModalities = new List<>
 	{
-		"audio",
+		Modality.Audio,
 	},
 	MediaConfig = new MediaConfig
 	{

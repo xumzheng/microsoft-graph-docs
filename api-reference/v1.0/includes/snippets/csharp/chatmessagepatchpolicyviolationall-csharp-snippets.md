@@ -15,7 +15,7 @@ var requestBody = new ChatMessage
 		{
 			GeneralText = "This item has been blocked by the administrator.",
 			ComplianceUrl = "https://contoso.com/dlp-policy-page",
-			MatchedConditionDescriptions = new List<>
+			MatchedConditionDescriptions = new List<string>
 			{
 				"Credit Card Number",
 			},

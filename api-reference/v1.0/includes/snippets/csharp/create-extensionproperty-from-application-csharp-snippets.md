@@ -11,7 +11,7 @@ var requestBody = new ExtensionProperty
 {
 	Name = "jobGroup",
 	DataType = "String",
-	TargetObjects = new List<>
+	TargetObjects = new List<string>
 	{
 		"User",
 	},

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new CopyToSectionPostRequestBody
+var requestBody = new Microsoft.Graph.Me.Onenote.Pages.Item.CopyToSection.CopyToSectionPostRequestBody
 {
 	Id = "id-value",
 	GroupId = "groupId-value",

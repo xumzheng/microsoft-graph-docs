@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new GetMailTipsPostRequestBody
+var requestBody = new Microsoft.Graph.Me.GetMailTips.GetMailTipsPostRequestBody
 {
-	EmailAddresses = new List<>
+	EmailAddresses = new List<string>
 	{
 		"danas@contoso.onmicrosoft.com",
 		"fannyd@contoso.onmicrosoft.com",

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new DataSource
+var requestBody = new Microsoft.Graph.Beta..Ediscovery.DataSource
 {
 	OdataType = "microsoft.graph.ediscovery.userSource",
 	AdditionalData = new Dictionary<string, object>

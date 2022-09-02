@@ -22,21 +22,11 @@ var requestBody = new DelegatedAdminRelationship
 		{
 			new UnifiedRole
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"roleDefinitionId" , "29232cdf-9323-42fd-ade2-1d097af3e4de"
-					},
-				},
+				RoleDefinitionId = "29232cdf-9323-42fd-ade2-1d097af3e4de",
 			},
 			new UnifiedRole
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"roleDefinitionId" , "3a2c62db-5318-420d-8d74-23affee5d9d5"
-					},
-				},
+				RoleDefinitionId = "3a2c62db-5318-420d-8d74-23affee5d9d5",
 			},
 		},
 	},

@@ -7,18 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new PlayPromptPostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.PlayPrompt.PlayPromptPostRequestBody
 {
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
 	Prompts = new List<Prompt>
 	{
 		new Prompt
 		{
+			OdataType = "#microsoft.graph.mediaPrompt",
 			AdditionalData = new Dictionary<string, object>
 			{
-				{
-					"@odata.type" , "#microsoft.graph.mediaPrompt"
-				},
 				{
 					"mediaInfo" , new 
 					{

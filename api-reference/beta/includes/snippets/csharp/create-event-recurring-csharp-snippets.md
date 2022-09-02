@@ -33,7 +33,7 @@ var requestBody = new Event
 			Interval = 1,
 			DaysOfWeek = new List<>
 			{
-				"Monday",
+				DayOfWeek.Monday,
 			},
 		},
 		Range = new RecurrenceRange

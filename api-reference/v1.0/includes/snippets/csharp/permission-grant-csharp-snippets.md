@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new GrantPostRequestBody
+var requestBody = new Microsoft.Graph.Shares.Item.Permission.Grant.GrantPostRequestBody
 {
 	Recipients = new List<DriveRecipient>
 	{
@@ -20,7 +20,7 @@ var requestBody = new GrantPostRequestBody
 			Email = "ryan@external.com",
 		},
 	},
-	Roles = new List<>
+	Roles = new List<string>
 	{
 		"read",
 	},

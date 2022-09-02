@@ -15,25 +15,25 @@ var requestBody = new ConditionalAccessPolicy
 	{
 		Applications = new ConditionalAccessApplications
 		{
-			IncludeApplications = new List<>
+			IncludeApplications = new List<string>
 			{
 				"00000002-0000-0ff1-ce00-000000000000",
 			},
 		},
 		Users = new ConditionalAccessUsers
 		{
-			IncludeGroups = new List<>
+			IncludeGroups = new List<string>
 			{
 				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba",
 			},
 		},
 		Devices = new ConditionalAccessDevices
 		{
-			IncludeDevices = new List<>
+			IncludeDevices = new List<string>
 			{
 				"All",
 			},
-			ExcludeDevices = new List<>
+			ExcludeDevices = new List<string>
 			{
 				"Compliant",
 			},
@@ -44,7 +44,7 @@ var requestBody = new ConditionalAccessPolicy
 		Operator = "OR",
 		BuiltInControls = new List<>
 		{
-			"mfa",
+			ConditionalAccessGrantControl.Mfa,
 		},
 	},
 };

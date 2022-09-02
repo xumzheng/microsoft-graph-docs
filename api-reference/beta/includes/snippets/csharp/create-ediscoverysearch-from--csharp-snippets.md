@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new EdiscoverySearch
+var requestBody = new Microsoft.Graph.Beta..Security.EdiscoverySearch
 {
 	DisplayName = "My search 2",
 	Description = "My first search",
@@ -15,7 +15,7 @@ var requestBody = new EdiscoverySearch
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"custodianSources@odata.bind" , new List<>
+			"custodianSources@odata.bind" , new List<string>
 			{
 				"https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources/43434642-3137-3138-3432-374142313639",
 				"https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/siteSources/169718e3-a8df-449d-bef4-ee09fe1ddc5d",
@@ -23,7 +23,7 @@ var requestBody = new EdiscoverySearch
 			}
 		},
 		{
-			"noncustodialSources@odata.bind" , new List<>
+			"noncustodialSources@odata.bind" , new List<string>
 			{
 				"https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/35393639323133394345384344303043",
 			}

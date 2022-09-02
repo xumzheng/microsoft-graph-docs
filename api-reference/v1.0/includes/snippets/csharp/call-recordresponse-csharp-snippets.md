@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new RecordResponsePostRequestBody
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.RecordResponse.RecordResponsePostRequestBody
 {
 	BargeInAllowed = true,
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
@@ -32,7 +32,7 @@ var requestBody = new RecordResponsePostRequestBody
 	InitialSilenceTimeoutInSeconds = 5,
 	MaxSilenceTimeoutInSeconds = 2,
 	PlayBeep = true,
-	StopTones = new List<>
+	StopTones = new List<string>
 	{
 		"#",
 		"1",

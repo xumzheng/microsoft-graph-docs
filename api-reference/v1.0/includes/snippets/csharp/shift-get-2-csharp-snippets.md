@@ -21,9 +21,9 @@ var requestBody = new ShiftPreferences
 					Type = RecurrencePatternType.Weekly,
 					DaysOfWeek = new List<>
 					{
-						"Monday",
-						"Wednesday",
-						"Friday",
+						DayOfWeek.Monday,
+						DayOfWeek.Wednesday,
+						DayOfWeek.Friday,
 					},
 					Interval = 1,
 				},

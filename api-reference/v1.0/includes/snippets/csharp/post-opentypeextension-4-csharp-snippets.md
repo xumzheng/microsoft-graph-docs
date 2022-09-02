@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ReplyPostRequestBody
+var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Reply.ReplyPostRequestBody
 {
 	Post = new Post
 	{
@@ -33,7 +33,7 @@ var requestBody = new ReplyPostRequestBody
 						"expirationDate" , "2015-07-03T13:04:00.000Z"
 					},
 					{
-						"topPicks" , new List<>
+						"topPicks" , new List<string>
 						{
 							"Employees only",
 							"Add spouse or guest",

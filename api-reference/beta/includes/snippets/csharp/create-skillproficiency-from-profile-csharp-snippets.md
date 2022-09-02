@@ -9,14 +9,14 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new SkillProficiency
 {
-	Categories = new List<>
+	Categories = new List<string>
 	{
 		"Professional",
 	},
 	AllowedAudiences = AllowedAudiences.Organization,
 	DisplayName = "API Design",
 	Proficiency = SkillProficiencyLevel.Generalprofessional,
-	CollaborationTags = new List<>
+	CollaborationTags = new List<string>
 	{
 		"ableToMentor",
 	},

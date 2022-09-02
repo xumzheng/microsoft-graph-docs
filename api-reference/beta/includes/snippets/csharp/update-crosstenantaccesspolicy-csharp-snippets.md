@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new CrossTenantAccessPolicy
 {
-	AllowedCloudEndpoints = new List<>
+	AllowedCloudEndpoints = new List<string>
 	{
 		"microsoftonline.us",
 		"partner.microsoftonline.cn",

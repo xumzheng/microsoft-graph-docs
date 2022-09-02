@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new LogTeleconferenceDeviceQualityPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenceDeviceQuality.LogTeleconferenceDeviceQualityPostRequestBody
 {
 	Quality = new TeleconferenceDeviceQuality
 	{
@@ -21,219 +21,78 @@ var requestBody = new LogTeleconferenceDeviceQualityPostRequestBody
 		{
 			new TeleconferenceDeviceMediaQuality
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"@odata.type" , "#microsoft.graph.teleconferenceDeviceAudioQuality"
-					},
-					{
-						"channelIndex" , 1
-					},
-					{
-						"mediaDuration" , "PT20M"
-					},
-					{
-						"networkLinkSpeedInBytes" , 13000
-					},
-					{
-						"localIPAddress" , "127.0.0.1"
-					},
-					{
-						"localPort" , 6300
-					},
-					{
-						"remoteIPAddress" , "102.1.1.101"
-					},
-					{
-						"remotePort" , 6301
-					},
-					{
-						"inboundPackets" , 5500
-					},
-					{
-						"outboundPackets" , 5400
-					},
-					{
-						"averageInboundPacketLossRateInPercentage" , 0.01
-					},
-					{
-						"averageOutboundPacketLossRateInPercentage" , 0.02
-					},
-					{
-						"maximumInboundPacketLossRateInPercentage" , 0.05
-					},
-					{
-						"maximumOutboundPacketLossRateInPercentage" , 0.06
-					},
-					{
-						"averageInboundRoundTripDelay" , "PT0.03S"
-					},
-					{
-						"averageOutboundRoundTripDelay" , "PT0.04S"
-					},
-					{
-						"maximumInboundRoundTripDelay" , "PT0.13S"
-					},
-					{
-						"maximumOutboundRoundTripDelay" , "PT0.14S"
-					},
-					{
-						"averageInboundJitter" , "PT0.01S"
-					},
-					{
-						"averageOutboundJitter" , "PT0.015S"
-					},
-					{
-						"maximumInboundJitter" , "PT0.023S"
-					},
-					{
-						"maximumOutboundJitter" , "PT0.024S"
-					},
-				},
+				OdataType = "#microsoft.graph.teleconferenceDeviceAudioQuality",
+				ChannelIndex = 1,
+				MediaDuration = TimeSpan.Parse("PT20M"),
+				NetworkLinkSpeedInBytes = 13000L,
+				LocalIPAddress = "127.0.0.1",
+				LocalPort = 6300,
+				RemoteIPAddress = "102.1.1.101",
+				RemotePort = 6301,
+				InboundPackets = 5500L,
+				OutboundPackets = 5400L,
+				AverageInboundPacketLossRateInPercentage = 0.01d,
+				AverageOutboundPacketLossRateInPercentage = 0.02d,
+				MaximumInboundPacketLossRateInPercentage = 0.05d,
+				MaximumOutboundPacketLossRateInPercentage = 0.06d,
+				AverageInboundRoundTripDelay = TimeSpan.Parse("PT0.03S"),
+				AverageOutboundRoundTripDelay = TimeSpan.Parse("PT0.04S"),
+				MaximumInboundRoundTripDelay = TimeSpan.Parse("PT0.13S"),
+				MaximumOutboundRoundTripDelay = TimeSpan.Parse("PT0.14S"),
+				AverageInboundJitter = TimeSpan.Parse("PT0.01S"),
+				AverageOutboundJitter = TimeSpan.Parse("PT0.015S"),
+				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
+				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
 			new TeleconferenceDeviceMediaQuality
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"@odata.type" , "#microsoft.graph.teleconferenceDeviceVideoQuality"
-					},
-					{
-						"channelIndex" , 1
-					},
-					{
-						"mediaDuration" , "PT20M"
-					},
-					{
-						"networkLinkSpeedInBytes" , 13000
-					},
-					{
-						"localIPAddress" , "127.0.0.1"
-					},
-					{
-						"localPort" , 6300
-					},
-					{
-						"remoteIPAddress" , "102.1.1.101"
-					},
-					{
-						"remotePort" , 6301
-					},
-					{
-						"inboundPackets" , 5500
-					},
-					{
-						"outboundPackets" , 5400
-					},
-					{
-						"averageInboundPacketLossRateInPercentage" , 0.01
-					},
-					{
-						"averageOutboundPacketLossRateInPercentage" , 0.02
-					},
-					{
-						"maximumInboundPacketLossRateInPercentage" , 0.05
-					},
-					{
-						"maximumOutboundPacketLossRateInPercentage" , 0.06
-					},
-					{
-						"averageInboundRoundTripDelay" , "PT0.03S"
-					},
-					{
-						"averageOutboundRoundTripDelay" , "PT0.04S"
-					},
-					{
-						"maximumInboundRoundTripDelay" , "PT0.13S"
-					},
-					{
-						"maximumOutboundRoundTripDelay" , "PT0.14S"
-					},
-					{
-						"averageInboundJitter" , "PT0.01S"
-					},
-					{
-						"averageOutboundJitter" , "PT0.015S"
-					},
-					{
-						"maximumInboundJitter" , "PT0.023S"
-					},
-					{
-						"maximumOutboundJitter" , "PT0.024S"
-					},
-				},
+				OdataType = "#microsoft.graph.teleconferenceDeviceVideoQuality",
+				ChannelIndex = 1,
+				MediaDuration = TimeSpan.Parse("PT20M"),
+				NetworkLinkSpeedInBytes = 13000L,
+				LocalIPAddress = "127.0.0.1",
+				LocalPort = 6300,
+				RemoteIPAddress = "102.1.1.101",
+				RemotePort = 6301,
+				InboundPackets = 5500L,
+				OutboundPackets = 5400L,
+				AverageInboundPacketLossRateInPercentage = 0.01d,
+				AverageOutboundPacketLossRateInPercentage = 0.02d,
+				MaximumInboundPacketLossRateInPercentage = 0.05d,
+				MaximumOutboundPacketLossRateInPercentage = 0.06d,
+				AverageInboundRoundTripDelay = TimeSpan.Parse("PT0.03S"),
+				AverageOutboundRoundTripDelay = TimeSpan.Parse("PT0.04S"),
+				MaximumInboundRoundTripDelay = TimeSpan.Parse("PT0.13S"),
+				MaximumOutboundRoundTripDelay = TimeSpan.Parse("PT0.14S"),
+				AverageInboundJitter = TimeSpan.Parse("PT0.01S"),
+				AverageOutboundJitter = TimeSpan.Parse("PT0.015S"),
+				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
+				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
 			new TeleconferenceDeviceMediaQuality
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"@odata.type" , "#microsoft.graph.teleconferenceDeviceScreenSharingQuality"
-					},
-					{
-						"channelIndex" , 1
-					},
-					{
-						"mediaDuration" , "PT20M"
-					},
-					{
-						"networkLinkSpeedInBytes" , 13000
-					},
-					{
-						"localIPAddress" , "127.0.0.1"
-					},
-					{
-						"localPort" , 6300
-					},
-					{
-						"remoteIPAddress" , "102.1.1.101"
-					},
-					{
-						"remotePort" , 6301
-					},
-					{
-						"inboundPackets" , 5500
-					},
-					{
-						"outboundPackets" , 5400
-					},
-					{
-						"averageInboundPacketLossRateInPercentage" , 0.01
-					},
-					{
-						"averageOutboundPacketLossRateInPercentage" , 0.02
-					},
-					{
-						"maximumInboundPacketLossRateInPercentage" , 0.05
-					},
-					{
-						"maximumOutboundPacketLossRateInPercentage" , 0.06
-					},
-					{
-						"averageInboundRoundTripDelay" , "PT0.03S"
-					},
-					{
-						"averageOutboundRoundTripDelay" , "PT0.04S"
-					},
-					{
-						"maximumInboundRoundTripDelay" , "PT0.13S"
-					},
-					{
-						"maximumOutboundRoundTripDelay" , "PT0.14S"
-					},
-					{
-						"averageInboundJitter" , "PT0.01S"
-					},
-					{
-						"averageOutboundJitter" , "PT0.015S"
-					},
-					{
-						"maximumInboundJitter" , "PT0.023S"
-					},
-					{
-						"maximumOutboundJitter" , "PT0.024S"
-					},
-				},
+				OdataType = "#microsoft.graph.teleconferenceDeviceScreenSharingQuality",
+				ChannelIndex = 1,
+				MediaDuration = TimeSpan.Parse("PT20M"),
+				NetworkLinkSpeedInBytes = 13000L,
+				LocalIPAddress = "127.0.0.1",
+				LocalPort = 6300,
+				RemoteIPAddress = "102.1.1.101",
+				RemotePort = 6301,
+				InboundPackets = 5500L,
+				OutboundPackets = 5400L,
+				AverageInboundPacketLossRateInPercentage = 0.01d,
+				AverageOutboundPacketLossRateInPercentage = 0.02d,
+				MaximumInboundPacketLossRateInPercentage = 0.05d,
+				MaximumOutboundPacketLossRateInPercentage = 0.06d,
+				AverageInboundRoundTripDelay = TimeSpan.Parse("PT0.03S"),
+				AverageOutboundRoundTripDelay = TimeSpan.Parse("PT0.04S"),
+				MaximumInboundRoundTripDelay = TimeSpan.Parse("PT0.13S"),
+				MaximumOutboundRoundTripDelay = TimeSpan.Parse("PT0.14S"),
+				AverageInboundJitter = TimeSpan.Parse("PT0.01S"),
+				AverageOutboundJitter = TimeSpan.Parse("PT0.015S"),
+				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
+				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
 		},
 	},

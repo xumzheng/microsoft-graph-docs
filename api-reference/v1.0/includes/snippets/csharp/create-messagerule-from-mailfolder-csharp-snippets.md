@@ -14,7 +14,7 @@ var requestBody = new MessageRule
 	IsEnabled = true,
 	Conditions = new MessageRulePredicates
 	{
-		SenderContains = new List<>
+		SenderContains = new List<string>
 		{
 			"adele",
 		},

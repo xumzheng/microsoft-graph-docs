@@ -812,7 +812,6 @@ The following is an example of the request.
 > Note: **conversationIdentityType** must be set to `team` to @mention a team.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_atmentionteam",
@@ -843,12 +842,6 @@ Content-type: application/json
     "reactions": []
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-atmentionteam-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response

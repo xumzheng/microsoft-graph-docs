@@ -11,13 +11,13 @@ var requestBody = new Alert
 {
 	AssignedTo = "String",
 	ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
-	Comments = new List<>
+	Comments = new List<string>
 	{
 		"String",
 	},
 	Feedback = AlertFeedback.Alertfeedback,
 	Status = AlertStatus.Alertstatus,
-	Tags = new List<>
+	Tags = new List<string>
 	{
 		"String",
 	},

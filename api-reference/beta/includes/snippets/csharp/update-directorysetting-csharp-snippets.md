@@ -13,15 +13,8 @@ var requestBody = new DirectorySetting
 	{
 		new SettingValue
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "CustomBlockedWordsList"
-				},
-				{
-					"value" , "Contoso"
-				},
-			},
+			Name = "CustomBlockedWordsList",
+			Value = "Contoso",
 		},
 	},
 };

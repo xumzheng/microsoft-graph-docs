@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new EdiscoveryReviewTag
+var requestBody = new Microsoft.Graph..Security.EdiscoveryReviewTag
 {
 	DisplayName = "My tag API 2",
 	Description = "Use Graph API to create tags (updated)",

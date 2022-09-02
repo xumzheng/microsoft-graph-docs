@@ -11,7 +11,7 @@ var requestBody = new SchemaExtension
 {
 	Id = "courses",
 	Description = "Graph Learn training courses extensions",
-	TargetTypes = new List<>
+	TargetTypes = new List<string>
 	{
 		"Group",
 	},
@@ -20,39 +20,18 @@ var requestBody = new SchemaExtension
 	{
 		new ExtensionSchemaProperty
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "courseId"
-				},
-				{
-					"type" , "Integer"
-				},
-			},
+			Name = "courseId",
+			Type = "Integer",
 		},
 		new ExtensionSchemaProperty
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "courseName"
-				},
-				{
-					"type" , "String"
-				},
-			},
+			Name = "courseName",
+			Type = "String",
 		},
 		new ExtensionSchemaProperty
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "courseType"
-				},
-				{
-					"type" , "String"
-				},
-			},
+			Name = "courseType",
+			Type = "String",
 		},
 	},
 };

@@ -84,7 +84,7 @@ var requestBody = new BookingService
 		SendConfirmationsToOwner = true,
 		TimeSlotInterval = TimeSpan.Parse("PT1H"),
 	},
-	StaffMemberIds = new List<>
+	StaffMemberIds = new List<string>
 	{
 		"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
 		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",

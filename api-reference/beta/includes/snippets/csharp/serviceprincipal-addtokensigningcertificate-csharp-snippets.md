@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new SelfSignedCertificatePostRequestBody
+var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.AddTokenSigningCertificate.SelfSignedCertificatePostRequestBody
 {
 	DisplayName = "CN=customDisplayName",
 	EndDateTime = DateTimeOffset.Parse("2024-01-25T00:00:00Z"),

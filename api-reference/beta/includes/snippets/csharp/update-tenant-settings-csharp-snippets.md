@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Settings
+var requestBody = new Microsoft.Graph.Beta..TenantAdmin.Settings
 {
 	DeletedUserPersonalSiteRetentionPeriodInDays = 365,
-	ExcludedFileExtensionsForSyncApp = new List<>
+	ExcludedFileExtensionsForSyncApp = new List<string>
 	{
 		".mp3",
 	},

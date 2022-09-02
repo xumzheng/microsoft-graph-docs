@@ -14,15 +14,8 @@ var requestBody = new GroupSetting
 	{
 		new SettingValue
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "AllowToAddGuests"
-				},
-				{
-					"value" , "false"
-				},
-			},
+			Name = "AllowToAddGuests",
+			Value = "false",
 		},
 	},
 };

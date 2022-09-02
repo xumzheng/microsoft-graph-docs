@@ -15,23 +15,12 @@ var requestBody = new Agreement
 	{
 		new AgreementFileLocalization
 		{
-			AdditionalData = new Dictionary<string, object>
+			FileName = "TOU.pdf",
+			Language = "en",
+			IsDefault = true,
+			FileData = new AgreementFileData
 			{
-				{
-					"fileName" , "TOU.pdf"
-				},
-				{
-					"language" , "en"
-				},
-				{
-					"isDefault" , true
-				},
-				{
-					"fileData" , new 
-					{
-						Data = "SGVsbG8gd29ybGQ=//truncated-binary",
-					}
-				},
+				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=//truncated-binary"),
 			},
 		},
 	},

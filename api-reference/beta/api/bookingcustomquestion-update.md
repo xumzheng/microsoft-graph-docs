@@ -62,7 +62,6 @@ If successful, this method returns a `200 OK` response code and an updated [book
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingcustomquestion",
@@ -81,12 +80,6 @@ Content-Type: application/json
   "answerOptions": []
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingcustomquestion-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response

@@ -13,9 +13,9 @@ var requestBody = new ConditionalAccessPolicy
 	{
 		SignInRiskLevels = new List<>
 		{
-			"high",
-			"medium",
-			"low",
+			RiskLevel.High,
+			RiskLevel.Medium,
+			RiskLevel.Low,
 		},
 	},
 };

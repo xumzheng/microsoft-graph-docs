@@ -16,7 +16,7 @@ var requestBody = new Chat
 		new ConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
-			Roles = new List<>
+			Roles = new List<string>
 			{
 				"owner",
 			},
@@ -30,7 +30,7 @@ var requestBody = new Chat
 		new ConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
-			Roles = new List<>
+			Roles = new List<string>
 			{
 				"owner",
 			},
@@ -44,7 +44,7 @@ var requestBody = new Chat
 		new ConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
-			Roles = new List<>
+			Roles = new List<string>
 			{
 				"owner",
 			},

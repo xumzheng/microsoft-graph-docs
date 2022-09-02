@@ -11,7 +11,7 @@ var requestBody = new ConversationMember
 {
 	OdataType = "#microsoft.graph.aadUserConversationMember",
 	VisibleHistoryStartDateTime = DateTimeOffset.Parse("0001-01-01T00:00:00Z"),
-	Roles = new List<>
+	Roles = new List<string>
 	{
 		"owner",
 	},

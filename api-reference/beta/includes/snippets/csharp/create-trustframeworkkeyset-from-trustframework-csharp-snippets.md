@@ -15,7 +15,7 @@ var requestBody = new TrustFrameworkKeySet
 		new TrustFrameworkKey
 		{
 			K = "k-value",
-			X5c = new List<>
+			X5c = new List<string>
 			{
 				"x5c-value",
 			},

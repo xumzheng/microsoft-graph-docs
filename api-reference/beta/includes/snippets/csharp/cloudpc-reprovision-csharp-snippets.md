@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ReprovisionPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.CloudPCs.Item.Reprovision.ReprovisionPostRequestBody
 {
 	UserAccountType = CloudPcUserAccountType.Administrator,
 	OsVersion = CloudPcOperatingSystem.Windows10,

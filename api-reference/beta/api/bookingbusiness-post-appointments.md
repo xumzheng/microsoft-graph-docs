@@ -61,7 +61,6 @@ If successful, this method returns a `201 Created` response code and a [bookingA
 
 The following is an example of the request. This appointment does not involve booking specific staff members.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness",
@@ -232,14 +231,8 @@ Content-type: application/json
     ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingappointment-from-bookingbusiness-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
+
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.

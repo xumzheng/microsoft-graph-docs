@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ApplyHoldPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.NoncustodialDataSources.ApplyHold.ApplyHoldPostRequestBody
 {
-	Ids = new List<>
+	Ids = new List<string>
 	{
 		"39333641443238353535383731453339",
 		"46333131344239353834433430454335",

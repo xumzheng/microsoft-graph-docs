@@ -12,11 +12,11 @@ var requestBody = new AccessReviewHistoryDefinition
 	DisplayName = "Last quarter's group reviews April 2021",
 	Decisions = new List<>
 	{
-		"approve",
-		"deny",
-		"dontKnow",
-		"notReviewed",
-		"notNotified",
+		AccessReviewHistoryDecisionFilter.Approve,
+		AccessReviewHistoryDecisionFilter.Deny,
+		AccessReviewHistoryDecisionFilter.Dontknow,
+		AccessReviewHistoryDecisionFilter.Notreviewed,
+		AccessReviewHistoryDecisionFilter.Notnotified,
 	},
 	ScheduleSettings = new AccessReviewHistoryScheduleSettings
 	{
@@ -45,11 +45,9 @@ var requestBody = new AccessReviewHistoryDefinition
 	{
 		new AccessReviewScope
 		{
+			OdataType = "#microsoft.graph.accessReviewQueryScope",
 			AdditionalData = new Dictionary<string, object>
 			{
-				{
-					"@odata.type" , "#microsoft.graph.accessReviewQueryScope"
-				},
 				{
 					"queryType" , "MicrosoftGraph"
 				},
@@ -63,11 +61,9 @@ var requestBody = new AccessReviewHistoryDefinition
 		},
 		new AccessReviewScope
 		{
+			OdataType = "#microsoft.graph.accessReviewQueryScope",
 			AdditionalData = new Dictionary<string, object>
 			{
-				{
-					"@odata.type" , "#microsoft.graph.accessReviewQueryScope"
-				},
 				{
 					"queryType" , "MicrosoftGraph"
 				},

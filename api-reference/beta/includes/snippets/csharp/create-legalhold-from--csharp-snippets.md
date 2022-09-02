@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new LegalHold
+var requestBody = new Microsoft.Graph.Beta..Ediscovery.LegalHold
 {
 	OdataType = "#microsoft.graph.ediscovery.legalHold",
 	Description = "String",
@@ -18,7 +18,7 @@ var requestBody = new LegalHold
 	IsEnabled = boolean,
 	Status = LegalHoldStatus.String,
 	ContentQuery = "String",
-	Errors = new List<>
+	Errors = new List<string>
 	{
 		"String",
 	},

@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Term
+var requestBody = new Microsoft.Graph.Beta..TermStore.Term
 {
-	Labels = new List<LocalizedLabel>
+	Labels = new List<Microsoft.Graph.Beta..TermStore.LocalizedLabel>
 	{
 		new LocalizedLabel
 		{

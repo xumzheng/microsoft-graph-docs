@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UnenrollAssetsByIdPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.UnenrollAssetsById.UnenrollAssetsByIdPostRequestBody
 {
 	UpdateCategory = UpdateCategory.Feature,
 	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
-	Ids = new List<>
+	Ids = new List<string>
 	{
 		"String",
 		"String",

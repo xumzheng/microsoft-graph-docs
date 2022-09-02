@@ -15,25 +15,25 @@ var requestBody = new ConditionalAccessPolicy
 	{
 		ClientAppTypes = new List<>
 		{
-			"all",
+			ConditionalAccessClientApp.All,
 		},
 		Applications = new ConditionalAccessApplications
 		{
-			IncludeApplications = new List<>
+			IncludeApplications = new List<string>
 			{
 				"00000002-0000-0ff1-ce00-000000000000",
 			},
 		},
 		Users = new ConditionalAccessUsers
 		{
-			IncludeGroups = new List<>
+			IncludeGroups = new List<string>
 			{
 				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba",
 			},
 		},
 		Locations = new ConditionalAccessLocations
 		{
-			IncludeLocations = new List<>
+			IncludeLocations = new List<string>
 			{
 				"198ad66e-87b3-4157-85a3-8a7b51794ee9",
 			},
@@ -44,7 +44,7 @@ var requestBody = new ConditionalAccessPolicy
 		Operator = "OR",
 		BuiltInControls = new List<>
 		{
-			"block",
+			ConditionalAccessGrantControl.Block,
 		},
 	},
 };

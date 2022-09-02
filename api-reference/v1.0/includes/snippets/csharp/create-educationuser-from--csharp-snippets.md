@@ -39,27 +39,17 @@ var requestBody = new EducationUser
 	{
 		new AssignedLicense
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"@odata.type" , "microsoft.graph.assignedLicense"
-				},
-			},
+			OdataType = "microsoft.graph.assignedLicense",
 		},
 	},
 	AssignedPlans = new List<AssignedPlan>
 	{
 		new AssignedPlan
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"@odata.type" , "microsoft.graph.assignedPlan"
-				},
-			},
+			OdataType = "microsoft.graph.assignedPlan",
 		},
 	},
-	BusinessPhones = new List<>
+	BusinessPhones = new List<string>
 	{
 		"String",
 	},
@@ -80,12 +70,7 @@ var requestBody = new EducationUser
 	{
 		new ProvisionedPlan
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"@odata.type" , "microsoft.graph.provisionedPlan"
-				},
-			},
+			OdataType = "microsoft.graph.provisionedPlan",
 		},
 	},
 	RefreshTokensValidFromDateTime = DateTimeOffset.Parse("String (timestamp)"),

@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UnassignTagPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.TenantTags.Item.UnassignTag.UnassignTagPostRequestBody
 {
-	TenantIds = new List<>
+	TenantIds = new List<string>
 	{
 		"String",
 	},

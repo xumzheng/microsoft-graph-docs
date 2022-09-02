@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Domain
 {
 	IsDefault = true,
-	SupportedServices = new List<>
+	SupportedServices = new List<string>
 	{
 		"Email",
 		"OfficeCommunicationsOnline",

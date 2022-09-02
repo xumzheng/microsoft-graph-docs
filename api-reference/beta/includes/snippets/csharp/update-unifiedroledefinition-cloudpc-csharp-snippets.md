@@ -15,15 +15,10 @@ var requestBody = new UnifiedRoleDefinition
 	{
 		new UnifiedRolePermission
 		{
-			AdditionalData = new Dictionary<string, object>
+			AllowedResourceActions = new List<string>
 			{
-				{
-					"allowedResourceActions" , new List<>
-					{
-						"Microsoft.CloudPC/CloudPCs/Read",
-						"Microsoft.CloudPC/CloudPCs/Reprovision",
-					}
-				},
+				"Microsoft.CloudPC/CloudPCs/Read",
+				"Microsoft.CloudPC/CloudPCs/Reprovision",
 			},
 		},
 	},

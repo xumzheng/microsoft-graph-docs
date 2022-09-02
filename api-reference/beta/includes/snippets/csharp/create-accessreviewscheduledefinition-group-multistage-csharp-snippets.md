@@ -32,7 +32,7 @@ var requestBody = new AccessReviewScheduleDefinition
 			StageId = "1",
 			DurationInDays = 2,
 			RecommendationsEnabled = false,
-			DecisionsThatWillMoveToNextStage = new List<>
+			DecisionsThatWillMoveToNextStage = new List<string>
 			{
 				"NotReviewed",
 				"Approve",
@@ -49,7 +49,7 @@ var requestBody = new AccessReviewScheduleDefinition
 		new AccessReviewStageSettings
 		{
 			StageId = "2",
-			DependsOn = new List<>
+			DependsOn = new List<string>
 			{
 				"1",
 			},

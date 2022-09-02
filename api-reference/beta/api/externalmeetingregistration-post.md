@@ -64,7 +64,6 @@ If successful, this method returns a `201 Created` response code and an [externa
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-externalregistration",
@@ -81,12 +80,6 @@ Content-Type: application/json
   "allowedRegistrant": "everyone"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalregistration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response

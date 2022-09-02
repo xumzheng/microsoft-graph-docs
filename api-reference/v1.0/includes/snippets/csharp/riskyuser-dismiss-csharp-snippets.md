@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new DismissPostRequestBody
+var requestBody = new Microsoft.Graph.IdentityProtection.RiskyUsers.Dismiss.DismissPostRequestBody
 {
-	UserIds = new List<>
+	UserIds = new List<string>
 	{
 		"04487ee0-f4f6-4e7f-8999-facc5a30e232",
 		"13387ee0-f4f6-4e7f-8999-facc5120e345",

@@ -14,51 +14,23 @@ var requestBody = new SchemaExtension
 	{
 		new ExtensionSchemaProperty
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "courseId"
-				},
-				{
-					"type" , "Integer"
-				},
-			},
+			Name = "courseId",
+			Type = "Integer",
 		},
 		new ExtensionSchemaProperty
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "courseName"
-				},
-				{
-					"type" , "String"
-				},
-			},
+			Name = "courseName",
+			Type = "String",
 		},
 		new ExtensionSchemaProperty
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "courseType"
-				},
-				{
-					"type" , "String"
-				},
-			},
+			Name = "courseType",
+			Type = "String",
 		},
 		new ExtensionSchemaProperty
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"name" , "courseSupervisors"
-				},
-				{
-					"type" , "String"
-				},
-			},
+			Name = "courseSupervisors",
+			Type = "String",
 		},
 	},
 };

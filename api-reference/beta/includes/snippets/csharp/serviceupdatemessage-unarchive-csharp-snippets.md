@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UnarchivePostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.ServiceAnnouncement.Messages.Unarchive.UnarchivePostRequestBody
 {
-	MessageIds = new List<>
+	MessageIds = new List<string>
 	{
 		"MC172851",
 		"MC167983",

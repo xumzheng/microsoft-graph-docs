@@ -47,7 +47,6 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_device_2"
@@ -60,14 +59,8 @@ Content-type: application/json
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-device-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {

@@ -11,7 +11,7 @@ var requestBody = new AuthorizationPolicy
 {
 	DefaultUserRolePermissions = new DefaultUserRolePermissions
 	{
-		PermissionGrantPoliciesAssigned = new List<>
+		PermissionGrantPoliciesAssigned = new List<string>
 		{
 			"managePermissionGrantsForSelf.microsoft-user-default-low",
 		},

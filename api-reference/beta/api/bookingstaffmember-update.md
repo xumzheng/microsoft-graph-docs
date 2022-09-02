@@ -54,7 +54,6 @@ If successful, this method returns a `204 No content` response code. It does not
 ### Request
 The following example changes the staff member's schedule to have Mondays off.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingstaffmember",
@@ -130,14 +129,8 @@ Content-type: application/json
     ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingstaffmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
+
 The following is an example of the response.
 <!-- {
   "blockType": "response",

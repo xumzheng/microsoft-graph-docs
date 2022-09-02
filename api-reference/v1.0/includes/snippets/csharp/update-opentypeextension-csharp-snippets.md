@@ -25,7 +25,7 @@ var requestBody = new Extension
 			"DealValue" , 1010100
 		},
 		{
-			"topPicks" , new List<>
+			"topPicks" , new List<string>
 			{
 				"Employees only",
 				"Add spouse or guest",

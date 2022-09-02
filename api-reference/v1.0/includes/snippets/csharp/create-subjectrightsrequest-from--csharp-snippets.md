@@ -11,7 +11,7 @@ var requestBody = new SubjectRightsRequest
 {
 	Type = SubjectRightsRequestType.Subjectrightsrequesttype,
 	DataSubjectType = DataSubjectType.Datasubjecttype,
-	Regulations = new List<>
+	Regulations = new List<string>
 	{
 		"String",
 	},

@@ -14,7 +14,7 @@ var requestBody = new NamedLocation
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"countriesAndRegions" , new List<>
+			"countriesAndRegions" , new List<string>
 			{
 				"US",
 				"GB",

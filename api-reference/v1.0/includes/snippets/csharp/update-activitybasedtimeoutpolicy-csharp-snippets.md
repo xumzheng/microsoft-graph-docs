@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new ActivityBasedTimeoutPolicy
 {
-	Definition = new List<>
+	Definition = new List<string>
 	{
 		"definition-value",
 	},

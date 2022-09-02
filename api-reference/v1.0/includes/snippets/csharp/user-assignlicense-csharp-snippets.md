@@ -7,24 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AssignLicensePostRequestBody
+var requestBody = new Microsoft.Graph.Me.AssignLicense.AssignLicensePostRequestBody
 {
 	AddLicenses = new List<AssignedLicense>
 	{
 		new AssignedLicense
 		{
-			AdditionalData = new Dictionary<string, object>
+			DisabledPlans = new List<>
 			{
-				{
-					"disabledPlans" , new List<>
-					{
-						"11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
-					}
-				},
-				{
-					"skuId" , "45715bb8-13f9-4bf6-927f-ef96c102d394"
-				},
+				"11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
 			},
+			SkuId = "45715bb8-13f9-4bf6-927f-ef96c102d394",
 		},
 	},
 	RemoveLicenses = new List<>

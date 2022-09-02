@@ -99,7 +99,6 @@ The following is an example of the request to assign an appManagementPolicy to a
 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals_appManagementPolicy"
@@ -112,12 +111,6 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolici
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-appmanagementpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response

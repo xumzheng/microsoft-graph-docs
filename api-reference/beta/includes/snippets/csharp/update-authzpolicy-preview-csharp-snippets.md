@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AuthorizationPolicy
 {
-	EnabledPreviewFeatures = new List<>
+	EnabledPreviewFeatures = new List<string>
 	{
 		"assignGroupsToRoles",
 	},

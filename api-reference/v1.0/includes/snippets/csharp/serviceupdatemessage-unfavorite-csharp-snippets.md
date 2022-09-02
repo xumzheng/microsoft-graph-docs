@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UnfavoritePostRequestBody
+var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.Unfavorite.UnfavoritePostRequestBody
 {
-	MessageIds = new List<>
+	MessageIds = new List<string>
 	{
 		"MC172851",
 		"MC167983",

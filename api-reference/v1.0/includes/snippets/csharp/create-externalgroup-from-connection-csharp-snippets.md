@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ExternalGroup
+var requestBody = new Microsoft.Graph..ExternalConnectors.ExternalGroup
 {
 	Id = "31bea3d537902000",
 	DisplayName = "Contoso Marketing",

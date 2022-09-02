@@ -14,18 +14,9 @@ var requestBody = new Device
 	{
 		new AlternativeSecurityId
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"type" , 99
-				},
-				{
-					"identityProvider" , "identityProvider-value"
-				},
-				{
-					"key" , "base64Y3YxN2E1MWFlYw=="
-				},
-			},
+			Type = 99,
+			IdentityProvider = "identityProvider-value",
+			Key = Convert.FromBase64String("base64Y3YxN2E1MWFlYw=="),
 		},
 	},
 	ApproximateLastSignInDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new EvaluateClassificationResultsPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.InformationProtection.Policy.Labels.EvaluateClassificationResults.EvaluateClassificationResultsPostRequestBody
 {
 	ContentInfo = new ContentInfo
 	{
@@ -29,18 +29,9 @@ var requestBody = new EvaluateClassificationResultsPostRequestBody
 	{
 		new ClassificationResult
 		{
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"sensitiveTypeId" , "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
-				},
-				{
-					"count" , 4
-				},
-				{
-					"confidenceLevel" , 75
-				},
-			},
+			SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
+			Count = 4,
+			ConfidenceLevel = 75,
 		},
 	},
 };

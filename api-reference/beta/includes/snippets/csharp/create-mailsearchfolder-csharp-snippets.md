@@ -17,7 +17,7 @@ var requestBody = new MailFolder
 			"includeNestedFolders" , true
 		},
 		{
-			"sourceFolderIds" , new List<>
+			"sourceFolderIds" , new List<string>
 			{
 				"AQMkADYAAAIBDAAAAA==",
 			}

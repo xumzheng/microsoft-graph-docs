@@ -17,7 +17,7 @@ var requestBody = new Channel
 		new ConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
-			Roles = new List<>
+			Roles = new List<string>
 			{
 				"owner",
 			},

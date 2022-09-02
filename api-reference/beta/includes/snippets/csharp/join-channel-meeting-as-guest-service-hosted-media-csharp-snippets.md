@@ -32,7 +32,7 @@ var requestBody = new Call
 	},
 	RequestedModalities = new List<>
 	{
-		"audio",
+		Modality.Audio,
 	},
 	MediaConfig = new MediaConfig
 	{

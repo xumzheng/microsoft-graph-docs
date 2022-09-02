@@ -63,25 +63,6 @@ GET /me/drive/root/children
 
 
 
-### List children of a DriveItem with a known ID
-
-To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
-
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "list-children-files", "scopes": "files.read" } -->
-
-```msgraph-interactive
-GET /drives/{drive-id}/items/{item-id}/children
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-children-files-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ### List children of a DriveItem with a known path
 
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->

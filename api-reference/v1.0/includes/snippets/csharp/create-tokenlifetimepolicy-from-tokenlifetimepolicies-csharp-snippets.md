@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new TokenLifetimePolicy
 {
-	Definition = new List<>
+	Definition = new List<string>
 	{
 		"definition-value",
 	},

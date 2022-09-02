@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Permission
 {
-	Roles = new List<>
+	Roles = new List<string>
 	{
 		"read",
 	},

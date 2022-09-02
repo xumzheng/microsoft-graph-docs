@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new CheckMemberGroupsPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.Item.CheckMemberGroups.CheckMemberGroupsPostRequestBody
 {
-	GroupIds = new List<>
+	GroupIds = new List<string>
 	{
 		"f448435d-3ca7-4073-8152-a1fd73c0fd09",
 		"bd7c6263-4dd5-4ae8-8c96-556e1c0bece6",

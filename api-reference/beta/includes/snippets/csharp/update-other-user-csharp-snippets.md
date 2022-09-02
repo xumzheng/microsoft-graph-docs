@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new User
 {
-	BusinessPhones = new List<>
+	BusinessPhones = new List<string>
 	{
 		"+1 425 555 0109",
 	},

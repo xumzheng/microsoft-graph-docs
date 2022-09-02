@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new RetentionEvent
+var requestBody = new Microsoft.Graph.Beta..Security.RetentionEvent
 {
 	OdataType = "#microsoft.graph.security.retentionEvent",
 	DisplayName = "String",
 	Description = "String",
-	EventQueries = new List<EventQuery>
+	EventQueries = new List<Microsoft.Graph.Beta..Security.EventQuery>
 	{
 		new EventQuery
 		{
@@ -24,7 +24,7 @@ var requestBody = new RetentionEvent
 	{
 		OdataType = "microsoft.graph.identitySet",
 	},
-	EventPropagationResults = new List<EventPropagationResult>
+	EventPropagationResults = new List<Microsoft.Graph.Beta..Security.EventPropagationResult>
 	{
 		new EventPropagationResult
 		{

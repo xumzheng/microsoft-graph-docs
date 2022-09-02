@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ExternalItem
+var requestBody = new Microsoft.Graph..ExternalConnectors.ExternalItem
 {
-	Acl = new List<Acl>
+	Acl = new List<Microsoft.Graph..ExternalConnectors.Acl>
 	{
 		new Acl
 		{

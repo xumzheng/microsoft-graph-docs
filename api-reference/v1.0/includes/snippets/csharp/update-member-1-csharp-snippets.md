@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new ConversationMember
 {
 	OdataType = "#microsoft.graph.aadUserConversationMember",
-	Roles = new List<>
+	Roles = new List<string>
 	{
 		"owner",
 	},

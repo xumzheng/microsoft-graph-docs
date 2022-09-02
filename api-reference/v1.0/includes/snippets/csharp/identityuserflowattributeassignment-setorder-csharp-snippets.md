@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new SetOrderPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Identity.B2xUserFlows.Item.UserAttributeAssignments.SetOrder.SetOrderPostRequestBody
 {
 	NewAssignmentOrder = new AssignmentOrder
 	{
-		Order = new List<>
+		Order = new List<string>
 		{
 			"City",
 			"extension_GUID_ShoeSize",

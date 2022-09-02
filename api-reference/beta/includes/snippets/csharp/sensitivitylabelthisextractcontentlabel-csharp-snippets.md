@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ExtractContentLabelPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtection.SensitivityLabels.ExtractContentLabel.ExtractContentLabelPostRequestBody
 {
 	ContentInfo = new ContentInfo
 	{
 		Identifier = "MyDoc.docx",
 		State = ContentState.Rest,
-		Metadata = new List<KeyValuePair>
+		Metadata = new List<Microsoft.Graph.Beta..Security.KeyValuePair>
 		{
 			new KeyValuePair
 			{
