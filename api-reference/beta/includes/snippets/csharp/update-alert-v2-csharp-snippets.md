@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var alert = new Microsoft.Graph.Security.Alert
+var requestBody = new Alert
 {
 	AssignedTo = "secAdmin@contoso.onmicrosoft.com",
-	Classification = Microsoft.Graph.Security.AlertClassification.TruePositive,
-	Determination = Microsoft.Graph.Security.AlertDetermination.Malware,
-	Status = Microsoft.Graph.Security.AlertStatus.InProgress
+	Classification = AlertClassification.Truepositive,
+	Determination = AlertDetermination.Malware,
+	Status = AlertStatus.Inprogress,
 };
+await graphClient.Security.Alerts_v2["alert-id"].PatchAsync(requestBody);
 
-await graphClient.Security.Alerts_v2["{security.alert-id}"]
-	.Request()
-	.UpdateAsync(alert);
 
 ```

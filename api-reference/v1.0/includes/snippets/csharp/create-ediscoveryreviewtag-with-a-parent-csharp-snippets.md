@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var ediscoveryReviewTag = new Microsoft.Graph.Security.EdiscoveryReviewTag
+var requestBody = new EdiscoveryReviewTag
 {
 	DisplayName = "My tag API",
 	Description = "Use Graph API to create tags",
-	ChildSelectability = Microsoft.Graph.Security.ChildSelectability.Many,
-	AdditionalData = new Dictionary<string, object>()
+	ChildSelectability = ChildSelectability.Many,
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"parent@odata.bind", ""}
-	}
+		{
+			"parent@odata.bind" , ""
+		},
+	},
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Tags.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Tags
-	.Request()
-	.AddAsync(ediscoveryReviewTag);
 
 ```

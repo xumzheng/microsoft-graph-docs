@@ -4,29 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var message = new Message
+var requestBody = new ForwardPostRequestBody
 {
-	IsDeliveryReceiptRequested = true,
-	ToRecipients = new List<Recipient>()
+	Message = new Message
 	{
-		new Recipient
+		IsDeliveryReceiptRequested = true,
+		ToRecipients = new List<Recipient>
 		{
-			EmailAddress = new EmailAddress
+			new Recipient
 			{
-				Address = "danas@contoso.onmicrosoft.com",
-				Name = "Dana Swope"
-			}
-		}
-	}
+				EmailAddress = new EmailAddress
+				{
+					Address = "danas@contoso.onmicrosoft.com",
+					Name = "Dana Swope",
+				},
+			},
+		},
+	},
+	Comment = "Dana, just want to make sure you get this.",
 };
+await graphClient.Me.Messages["message-id"].Forward.PostAsync(requestBody);
 
-var comment = "Dana, just want to make sure you get this.";
-
-await graphClient.Me.Messages["{message-id}"]
-	.Forward(null,message,comment)
-	.Request()
-	.PostAsync();
 
 ```

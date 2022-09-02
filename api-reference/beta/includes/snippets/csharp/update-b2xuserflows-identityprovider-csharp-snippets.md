@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityProvider = new IdentityProvider
+var requestBody = new IdentityProvider
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@odata.id", "https://graph.microsoft.com/beta/identityProviders/{id}"}
-	}
+		{
+			"@odata.id" , "https://graph.microsoft.com/beta/identityProviders/{id}"
+		},
+	},
 };
+await graphClient.Identity.B2xUserFlows["b2xIdentityUserFlow-id"].IdentityProviders["identityProvider-id"].PostAsync(requestBody);
 
-await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].IdentityProviders.References
-	.Request()
-	.AddAsync(identityProvider);
 
 ```

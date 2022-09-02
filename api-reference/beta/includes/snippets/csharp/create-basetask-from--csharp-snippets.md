@@ -4,32 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var baseTask = new Task
+var requestBody = new BaseTask
 {
+	OdataType = "#microsoft.graph.task",
 	TextBody = "String",
 	BodyLastModifiedDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	CompletedDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	DueDateTime = new DateTimeTimeZone
 	{
+		OdataType = "microsoft.graph.dateTimeTimeZone",
 	},
 	StartDateTime = new DateTimeTimeZone
 	{
+		OdataType = "microsoft.graph.dateTimeTimeZone",
 	},
-	Importance = Importance.Low,
+	Importance = Importance.String,
 	Recurrence = new PatternedRecurrence
 	{
+		OdataType = "microsoft.graph.patternedRecurrence",
 	},
 	DisplayName = "String",
-	Status = TaskStatus_v2.NotStarted,
+	Status = TaskStatus_v2.String,
 	Viewpoint = new TaskViewpoint
 	{
-	}
+		OdataType = "microsoft.graph.taskViewpoint",
+	},
 };
+var result = await graphClient.Me.Tasks.Lists["baseTaskList-id"].Tasks.PostAsync(requestBody);
 
-await graphClient.Me.Tasks.Lists["{baseTaskList-id}"].Tasks
-	.Request()
-	.AddAsync(baseTask);
 
 ```

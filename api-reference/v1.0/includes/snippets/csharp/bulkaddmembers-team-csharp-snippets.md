@@ -4,36 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var values = new List<ConversationMember>()
+var requestBody = new AddPostRequestBody
 {
-	new AadUserConversationMember
+	Values = new List<ConversationMember>
 	{
-		Roles = new List<String>()
+		new ConversationMember
 		{
+			OdataType = "microsoft.graph.aadUserConversationMember",
+			Roles = new List<>
+			{
+			},
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
+				},
+			},
 		},
-		AdditionalData = new Dictionary<string, object>()
+		new ConversationMember
 		{
-			{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"}
-		}
+			OdataType = "microsoft.graph.aadUserConversationMember",
+			Roles = new List<>
+			{
+				"owner",
+			},
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
+				},
+			},
+		},
 	},
-	new AadUserConversationMember
-	{
-		Roles = new List<String>()
-		{
-			"owner"
-		},
-		AdditionalData = new Dictionary<string, object>()
-		{
-			{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"}
-		}
-	}
 };
+var result = await graphClient.Teams["team-id"].Members.Add.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Members
-	.Add(values)
-	.Request()
-	.PostAsync();
 
 ```

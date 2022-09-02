@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var notebook = new Notebook
+var requestBody = new Notebook
 {
-	DisplayName = "My Private notebook"
+	DisplayName = "My Private notebook",
 };
+var result = await graphClient.Me.Onenote.Notebooks.PostAsync(requestBody);
 
-await graphClient.Me.Onenote.Notebooks
-	.Request()
-	.AddAsync(notebook);
 
 ```

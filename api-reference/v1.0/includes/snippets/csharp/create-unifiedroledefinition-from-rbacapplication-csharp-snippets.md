@@ -4,27 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleDefinition = new UnifiedRoleDefinition
+var requestBody = new UnifiedRoleDefinition
 {
 	Description = "Update basic properties of application registrations",
 	DisplayName = "Application Registration Support Administrator",
-	RolePermissions = new List<UnifiedRolePermission>()
+	RolePermissions = new List<UnifiedRolePermission>
 	{
 		new UnifiedRolePermission
 		{
-			AllowedResourceActions = new List<String>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				"microsoft.directory/applications/basic/read"
-			}
-		}
+				{
+					"allowedResourceActions" , new List<>
+					{
+						"microsoft.directory/applications/basic/read",
+					}
+				},
+			},
+		},
 	},
-	IsEnabled = true
+	IsEnabled = true,
 };
+var result = await graphClient.RoleManagement.Directory.RoleDefinitions.PostAsync(requestBody);
 
-await graphClient.RoleManagement.Directory.RoleDefinitions
-	.Request()
-	.AddAsync(unifiedRoleDefinition);
 
 ```

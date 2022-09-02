@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identity = new Microsoft.Graph.ExternalConnectors.Identity
+var requestBody = new Identity
 {
 	Id = "1431b9c38ee647f6a",
-	Type = Microsoft.Graph.ExternalConnectors.IdentityType.ExternalGroup
+	Type = IdentityType.Externalgroup,
 };
+var result = await graphClient.External.Connections["externalConnection-id"].Groups["externalGroup-id"].Members.PostAsync(requestBody);
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"].Members
-	.Request()
-	.AddAsync(identity);
 
 ```

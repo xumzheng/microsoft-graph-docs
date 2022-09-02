@@ -4,18 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var synchronizationTemplate = new SynchronizationTemplate
+var requestBody = new Template
 {
-	Id = "Slack",
-	ApplicationId = Guid.Parse("{id}"),
-	FactoryTag = "CustomSCIM"
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"id" , "Slack"
+		},
+		{
+			"applicationId" , "{id}"
+		},
+		{
+			"factoryTag" , "CustomSCIM"
+		},
+	},
 };
+await graphClient.Applications["application-id"].Synchronization.Templates["synchronizationTemplate-id"].PutAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Authorization", "Bearer <token>");
+});
 
-await graphClient.Applications["{application-id}"].Synchronization.Templates["{synchronizationTemplate-id}"]
-	.Request()
-	.Header("Authorization","Bearer <token>")
-	.PutAsync(synchronizationTemplate);
 
 ```

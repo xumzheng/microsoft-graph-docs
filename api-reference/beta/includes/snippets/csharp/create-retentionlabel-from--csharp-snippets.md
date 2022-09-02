@@ -4,29 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var retentionLabel = new Microsoft.Graph.Security.RetentionLabel
+var requestBody = new RetentionLabel
 {
+	OdataType = "#microsoft.graph.security.retentionLabel",
 	DisplayName = "String",
-	BehaviorDuringRetentionPeriod = Microsoft.Graph.Security.BehaviorDuringRetentionPeriod.DoNotRetain,
-	ActionAfterRetentionPeriod = Microsoft.Graph.Security.ActionAfterRetentionPeriod.None,
-	RetentionTrigger = Microsoft.Graph.Security.RetentionTrigger.DateLabeled,
+	BehaviorDuringRetentionPeriod = BehaviorDuringRetentionPeriod.String,
+	ActionAfterRetentionPeriod = ActionAfterRetentionPeriod.String,
+	RetentionTrigger = RetentionTrigger.String,
 	RetentionDuration = new RetentionDuration
 	{
+		OdataType = "microsoft.graph.security.retentionDuration",
 	},
-	IsInUse = false,
+	IsInUse = boolean,
 	DescriptionForAdmins = "String",
 	DescriptionForUsers = "String",
 	CreatedBy = new IdentitySet
 	{
+		OdataType = "microsoft.graph.identitySet",
 	},
 	LabelToBeApplied = "String",
-	DefaultRecordBehavior = Microsoft.Graph.Security.DefaultRecordBehavior.StartLocked
+	DefaultRecordBehavior = DefaultRecordBehavior.String,
 };
+var result = await graphClient.Security.Labels.RetentionLabels.PostAsync(requestBody);
 
-await graphClient.Security.Labels.RetentionLabels
-	.Request()
-	.AddAsync(retentionLabel);
 
 ```

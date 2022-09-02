@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Groups["group-id"].CalendarView.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("startDateTime", "2017-01-01T19:00:00-08:00"),
-	new QueryOption("endDateTime", "2017-10-01T19:00:00.00-08:00")
-};
+	requestConfiguration.QueryParameters.Startdatetime = "2017-01-01T19:00:00-08:00";
+	requestConfiguration.QueryParameters.Enddatetime = "2017-10-01T19:00:00.00-08:00";
+	requestConfiguration.Headers.Add("Prefer", "outlook.body-content-type=\"text\"");
+});
 
-var calendarView = await graphClient.Groups["{group-id}"].CalendarView
-	.Request( queryOptions )
-	.Header("Prefer","outlook.body-content-type=\"text\"")
-	.GetAsync();
 
 ```

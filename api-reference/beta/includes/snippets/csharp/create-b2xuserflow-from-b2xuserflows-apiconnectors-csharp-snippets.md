@@ -4,34 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var b2xIdentityUserFlow = new B2xIdentityUserFlow
+var requestBody = new B2xIdentityUserFlow
 {
 	Id = "UserFlowWithAPIConnector",
-	UserFlowType = UserFlowType.SignUpOrSignIn,
+	UserFlowType = UserFlowType.Signuporsignin,
 	UserFlowTypeVersion = 1f,
 	ApiConnectorConfiguration = new UserFlowApiConnectorConfiguration
 	{
-		PostFederationSignup = new IdentityApiConnector
+		PostFederationSignup = new PostFederationSignup
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"@odata.id", "{apiConnectorId}"}
-			}
+				{
+					"@odata.id" , "{apiConnectorId}"
+				},
+			},
 		},
-		PostAttributeCollection = new IdentityApiConnector
+		PostAttributeCollection = new PostAttributeCollection
 		{
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"@odata.id", "{apiConnectorId}"}
-			}
-		}
-	}
+				{
+					"@odata.id" , "{apiConnectorId}"
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Identity.B2xUserFlows.PostAsync(requestBody);
 
-await graphClient.Identity.B2xUserFlows
-	.Request()
-	.AddAsync(b2xIdentityUserFlow);
 
 ```

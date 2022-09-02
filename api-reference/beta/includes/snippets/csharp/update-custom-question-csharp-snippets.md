@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var meetingRegistrationQuestion = new MeetingRegistrationQuestion
+var requestBody = new MeetingRegistrationQuestion
 {
-	AnswerInputType = AnswerInputType.RadioButton,
-	AnswerOptions = new List<String>()
+	AnswerInputType = AnswerInputType.Radiobutton,
+	AnswerOptions = new List<>
 	{
 		"Software Engineer",
 		"Software Development Manager",
 		"Product Manager",
 		"Data scientist",
-		"Other"
-	}
+		"Other",
+	},
 };
+await graphClient.Me.OnlineMeetings["onlineMeeting-id"].Registration.CustomQuestions["meetingRegistrationQuestion-id"].PatchAsync(requestBody);
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.CustomQuestions["{meetingRegistrationQuestion-id}"]
-	.Request()
-	.UpdateAsync(meetingRegistrationQuestion);
 
 ```

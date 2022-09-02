@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var onlineMeetings = await graphClient.Communications.OnlineMeetings
-	.Request()
-	.Filter("VideoTeleconferenceId eq '123456789'")
-	.GetAsync();
+var result = await graphClient.Communications.OnlineMeetings.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "VideoTeleconferenceId eq '123456789'";
+});
+
 
 ```

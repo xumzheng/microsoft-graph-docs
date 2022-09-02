@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var delegatedAdminRelationshipRequest = new DelegatedAdminRelationshipRequestObject
+var requestBody = new DelegatedAdminRelationshipRequest
 {
-	Action = DelegatedAdminRelationshipRequestAction.LockForApproval
+	Action = DelegatedAdminRelationshipRequestAction.Lockforapproval,
 };
+var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["delegatedAdminRelationship-id"].Requests.PostAsync(requestBody);
 
-await graphClient.TenantRelationships.DelegatedAdminRelationships["{delegatedAdminRelationship-id}"].Requests
-	.Request()
-	.AddAsync(delegatedAdminRelationshipRequest);
 
 ```

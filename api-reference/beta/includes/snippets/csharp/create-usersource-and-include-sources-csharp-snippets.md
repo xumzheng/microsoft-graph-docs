@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var userSource = new Microsoft.Graph.Security.UserSource
+var requestBody = new UserSource
 {
 	Email = "admin@M365x809305.onmicrosoft.com",
-	IncludedSources = Microsoft.Graph.Security.SourceType.Mailbox | Microsoft.Graph.Security.SourceType.Site
+	IncludedSources = SourceType.Mailbox, site,
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].LegalHolds["ediscoveryHoldPolicy-id"].UserSources.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].LegalHolds["{security.ediscoveryHoldPolicy-id}"].UserSources
-	.Request()
-	.AddAsync(userSource);
 
 ```

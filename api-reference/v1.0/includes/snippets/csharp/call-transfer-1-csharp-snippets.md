@@ -4,27 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var transferTarget = new InvitationParticipantInfo
+var requestBody = new TransferPostRequestBody
 {
-	Identity = new IdentitySet
+	TransferTarget = new InvitationParticipantInfo
 	{
-		User = new Identity
+		Identity = new IdentitySet
 		{
-			Id = "550fae72-d251-43ec-868c-373732c2704f",
-			DisplayName = "Heidi Steen"
-		}
+			User = new Identity
+			{
+				Id = "550fae72-d251-43ec-868c-373732c2704f",
+				DisplayName = "Heidi Steen",
+			},
+		},
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"endpointType" , "default"
+			},
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"endpointType", "default"}
-	}
 };
+await graphClient.Communications.Calls["call-id"].Transfer.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Transfer(transferTarget,null)
-	.Request()
-	.PostAsync();
 
 ```

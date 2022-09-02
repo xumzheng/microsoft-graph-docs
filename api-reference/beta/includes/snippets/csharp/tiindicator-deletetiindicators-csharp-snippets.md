@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var value = new List<String>()
+var requestBody = new DeleteTiIndicatorsPostRequestBody
 {
-	"id-value1",
-	"id-value2"
+	Value = new List<>
+	{
+		"id-value1",
+		"id-value2",
+	},
 };
+var result = await graphClient.Security.TiIndicators.DeleteTiIndicators.PostAsync(requestBody);
 
-await graphClient.Security.TiIndicators
-	.DeleteTiIndicators(value)
-	.Request()
-	.PostAsync();
 
 ```

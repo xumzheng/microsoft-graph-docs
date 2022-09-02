@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var outlookTask = await graphClient.Me.Outlook.Tasks["{outlookTask-id}"]
-	.Request()
-	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-	.GetAsync();
+var result = await graphClient.Me.Outlook.Tasks["outlookTask-id"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
+
 
 ```

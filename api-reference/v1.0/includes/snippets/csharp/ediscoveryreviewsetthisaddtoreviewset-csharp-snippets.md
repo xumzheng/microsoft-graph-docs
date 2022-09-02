@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var search = new Microsoft.Graph.Security.EdiscoverySearch
+var requestBody = new AddToReviewSetPostRequestBody
 {
-	Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+	Search = new Search
+	{
+		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7",
+	},
+	AdditionalDataOptions = AdditionalDataOptions.Linkedfiles,
 };
+await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].AddToReviewSet.PostAsync(requestBody);
 
-var additionalDataOptions = Microsoft.Graph.Security.AdditionalDataOptions.LinkedFiles;
-
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].ReviewSets["{security.ediscoveryReviewSet-id}"]
-	.AddToReviewSet(search,additionalDataOptions)
-	.Request()
-	.PostAsync();
 
 ```

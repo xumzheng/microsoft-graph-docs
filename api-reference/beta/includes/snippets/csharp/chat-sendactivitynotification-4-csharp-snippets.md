@@ -4,38 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var topic = new TeamworkActivityTopic
+var requestBody = new SendActivityNotificationPostRequestBody
 {
-	Source = TeamworkActivityTopicSource.EntityUrl,
-	Value = "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
-};
-
-var activityType = "taskCreated";
-
-var previewText = new ItemBody
-{
-	Content = "New Task Created"
-};
-
-var recipient = new ChatMembersNotificationRecipient
-{
-	ChatId = "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
-};
-
-var templateParameters = new List<KeyValuePair>()
-{
-	new KeyValuePair
+	Topic = new TeamworkActivityTopic
 	{
-		Name = "taskId",
-		Value = "Task 12322"
-	}
+		Source = TeamworkActivityTopicSource.Entityurl,
+		Value = "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2",
+	},
+	ActivityType = "taskCreated",
+	PreviewText = new ItemBody
+	{
+		Content = "New Task Created",
+	},
+	Recipient = new TeamworkNotificationRecipient
+	{
+		OdataType = "microsoft.graph.chatMembersNotificationRecipient",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"chatId" , "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+			},
+		},
+	},
+	TemplateParameters = new List<KeyValuePair>
+	{
+		new KeyValuePair
+		{
+			Name = "taskId",
+			Value = "Task 12322",
+		},
+	},
 };
+await graphClient.Chats["chat-id"].SendActivityNotification.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"]
-	.SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
-	.Request()
-	.PostAsync();
 
 ```

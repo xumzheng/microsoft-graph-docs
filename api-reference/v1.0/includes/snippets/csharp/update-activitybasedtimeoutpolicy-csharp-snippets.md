@@ -4,20 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var activityBasedTimeoutPolicy = new ActivityBasedTimeoutPolicy
+var requestBody = new ActivityBasedTimeoutPolicy
 {
-	Definition = new List<String>()
+	Definition = new List<>
 	{
-		"definition-value"
+		"definition-value",
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true
+	IsOrganizationDefault = true,
 };
+await graphClient.Policies.ActivityBasedTimeoutPolicies["activityBasedTimeoutPolicy-id"].PatchAsync(requestBody);
 
-await graphClient.Policies.ActivityBasedTimeoutPolicies["{activityBasedTimeoutPolicy-id}"]
-	.Request()
-	.UpdateAsync(activityBasedTimeoutPolicy);
 
 ```

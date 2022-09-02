@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var shift = new Shift
+var requestBody = new Shift
 {
 	Id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
 	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1",
 	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-	SharedShift = new ShiftItem
+	SharedShift = new SharedShift
 	{
 		DisplayName = "Day shift",
 		Notes = "Please do inventory as part of your shift.",
 		StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
 		EndDateTime = DateTimeOffset.Parse("2019-03-12T00:00:00Z"),
 		Theme = ScheduleEntityTheme.Blue,
-		Activities = new List<ShiftActivity>()
+		Activities = new List<ShiftActivity>
 		{
 			new ShiftActivity
 			{
@@ -26,18 +27,18 @@ var shift = new Shift
 				StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
 				EndDateTime = DateTimeOffset.Parse("2019-03-11T15:15:00Z"),
 				Code = "",
-				DisplayName = "Lunch"
-			}
-		}
+				DisplayName = "Lunch",
+			},
+		},
 	},
-	DraftShift = new ShiftItem
+	DraftShift = new DraftShift
 	{
 		DisplayName = "Day shift",
 		Notes = "Please do inventory as part of your shift.",
 		StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
 		EndDateTime = DateTimeOffset.Parse("2019-03-12T00:00:00Z"),
 		Theme = ScheduleEntityTheme.Blue,
-		Activities = new List<ShiftActivity>()
+		Activities = new List<ShiftActivity>
 		{
 			new ShiftActivity
 			{
@@ -45,14 +46,12 @@ var shift = new Shift
 				StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
 				EndDateTime = DateTimeOffset.Parse("2019-03-11T15:30:00Z"),
 				Code = "",
-				DisplayName = "Lunch"
-			}
-		}
-	}
+				DisplayName = "Lunch",
+			},
+		},
+	},
 };
+var result = await graphClient.Teams["team-id"].Schedule.Shifts.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Schedule.Shifts
-	.Request()
-	.AddAsync(shift);
 
 ```

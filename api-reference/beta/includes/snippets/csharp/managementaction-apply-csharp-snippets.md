@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantId = "String";
+var requestBody = new ApplyPostRequestBody
+{
+	TenantId = "String",
+	TenantGroupId = "String",
+	ManagementTemplateId = "String",
+};
+var result = await graphClient.TenantRelationships.ManagedTenants.ManagementActions["managementAction-id"].Apply.PostAsync(requestBody);
 
-var tenantGroupId = "String";
-
-var managementTemplateId = "String";
-
-await graphClient.TenantRelationships.ManagedTenants.ManagementActions["{managedTenants.managementAction-id}"]
-	.Apply(tenantId,tenantGroupId,managementTemplateId,null,null,null)
-	.Request()
-	.PostAsync();
 
 ```

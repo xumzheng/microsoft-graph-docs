@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantTag = new Microsoft.Graph.ManagedTenants.TenantTag
+var requestBody = new TenantTag
 {
 	DisplayName = "Support",
-	Description = "Tenants that have purchased extended support"
+	Description = "Tenants that have purchased extended support",
 };
+var result = await graphClient.TenantRelationships.ManagedTenants.TenantTags.PostAsync(requestBody);
 
-await graphClient.TenantRelationships.ManagedTenants.TenantTags
-	.Request()
-	.AddAsync(tenantTag);
 
 ```

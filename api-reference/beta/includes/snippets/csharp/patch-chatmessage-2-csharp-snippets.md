@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var chatMessage = new ChatMessage
+var requestBody = new ChatMessage
 {
 	MessageType = ChatMessageType.Message,
 	DeletedDateTime = null,
@@ -14,7 +15,7 @@ var chatMessage = new ChatMessage
 	Summary = null,
 	Importance = ChatMessageImportance.Normal,
 	Locale = "en-us",
-	From = new ChatMessageFromIdentitySet
+	From = new From
 	{
 		Application = null,
 		Device = null,
@@ -22,28 +23,35 @@ var chatMessage = new ChatMessage
 		{
 			Id = "6b3f3c54-d09c-4fdd-b146-9b514a8a4f40",
 			DisplayName = "Sumit Gupta",
-			UserIdentityType = TeamworkUserIdentityType.AadUser
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"userIdentityType" , "aadUser"
+				},
+			},
 		},
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"conversation", "null"}
-		}
+			{
+				"conversation" , null
+			},
+		},
 	},
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at><at id=\"1\">TestGlobalBot</at> YEAH"
+		Content = "<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at><at id=\"1\">TestGlobalBot</at> YEAH",
 	},
-	Attachments = new List<ChatMessageAttachment>()
+	Attachments = new List<>
 	{
 	},
-	Mentions = new List<ChatMessageMention>()
+	Mentions = new List<ChatMessageMention>
 	{
 		new ChatMessageMention
 		{
 			Id = 0,
 			MentionText = "Raghav",
-			Mentioned = new ChatMessageMentionedIdentitySet
+			Mentioned = new Mentioned
 			{
 				Application = null,
 				Device = null,
@@ -52,35 +60,43 @@ var chatMessage = new ChatMessage
 				{
 					Id = "f1b66449-b46d-49b0-9c3c-53c10234c818e",
 					DisplayName = "Raghav Mankad",
-					UserIdentityType = TeamworkUserIdentityType.AadUser
-				}
-			}
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"userIdentityType" , "aadUser"
+						},
+					},
+				},
+			},
 		},
 		new ChatMessageMention
 		{
 			Id = 1,
 			MentionText = "TestGlobalBot",
-			Mentioned = new ChatMessageMentionedIdentitySet
+			Mentioned = new Mentioned
 			{
 				Application = new Identity
 				{
 					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
 					DisplayName = "TestGlobalBot",
-					ApplicationIdentityType = TeamworkApplicationIdentityType.Bot
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"applicationIdentityType" , "bot"
+						},
+					},
 				},
 				Device = null,
 				Conversation = null,
-				User = null
-			}
-		}
+				User = null,
+			},
+		},
 	},
-	Reactions = new List<ChatMessageReaction>()
+	Reactions = new List<>
 	{
-	}
+	},
 };
+await graphClient.Teams["team-id"].Channels["channel-id"].Messages["chatMessage-id"].PatchAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"]
-	.Request()
-	.UpdateAsync(chatMessage);
 
 ```

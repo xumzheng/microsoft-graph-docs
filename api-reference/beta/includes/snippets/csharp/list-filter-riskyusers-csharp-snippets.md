@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var riskyUsers = await graphClient.IdentityProtection.RiskyUsers
-	.Request()
-	.Filter("riskLevel eq microsoft.graph.riskLevel'medium'")
-	.GetAsync();
+var result = await graphClient.IdentityProtection.RiskyUsers.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "riskLevel eq microsoft.graph.riskLevel'medium'";
+});
+
 
 ```

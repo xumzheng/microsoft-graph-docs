@@ -70,6 +70,8 @@ If successful, this method returns a `200 OK` response code.
 
 The following example shows a request that sets the preferred presence as `DoNotDisturb` for a user, with an expiration of 8 hours.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "setUserPreferredPresence",
@@ -86,6 +88,13 @@ Content-Type: application/json
   "expirationDuration": "PT8H"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/setuserpreferredpresence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

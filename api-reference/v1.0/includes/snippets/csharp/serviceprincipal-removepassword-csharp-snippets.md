@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var keyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6");
+var requestBody = new RemovePasswordPostRequestBody
+{
+	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6",
+};
+await graphClient.ServicePrincipals["servicePrincipal-id"].RemovePassword.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"]
-	.RemovePassword(keyId)
-	.Request()
-	.PostAsync();
 
 ```

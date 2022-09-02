@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var displayName = "Myprefix_test_mysuffix";
+var requestBody = new ValidatePropertiesPostRequestBody
+{
+	DisplayName = "Myprefix_test_mysuffix",
+	MailNickname = "Myprefix_test_mysuffix",
+	OnBehalfOfUserId = "onBehalfOfUserId-value",
+};
+await graphClient.Groups["group-id"].ValidateProperties.PostAsync(requestBody);
 
-var mailNickname = "Myprefix_test_mysuffix";
-
-var onBehalfOfUserId = Guid.Parse("onBehalfOfUserId-value");
-
-await graphClient.Groups["{group-id}"]
-	.ValidateProperties(displayName,mailNickname,onBehalfOfUserId)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var directoryObject = new DirectoryObject
+var requestBody = new ReferenceCreate
 {
-	Id = "{id}"
+	OdataId = "https://graph.microsoft.com/v1.0/groups/{id}",
 };
+await graphClient.Directory.AdministrativeUnits["administrativeUnit-id"].Members.Ref.PostAsync(requestBody);
 
-await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].Members.References
-	.Request()
-	.AddAsync(directoryObject);
 
 ```

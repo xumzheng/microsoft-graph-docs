@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequestObject
+var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
-	Action = UnifiedRoleScheduleRequestActions.AdminAssign,
+	Action = UnifiedRoleScheduleRequestActions.Adminassign,
 	Justification = "Assign Groups Admin to IT Helpdesk group",
 	RoleDefinitionId = "fdd7a751-b60b-444a-984c-02652fe8fa1c",
 	DirectoryScopeId = "/",
@@ -18,13 +19,11 @@ var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequ
 		StartDateTime = DateTimeOffset.Parse("2022-04-10T00:00:00Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.NoExpiration
-		}
-	}
+			Type = ExpirationPatternType.Noexpiration,
+		},
+	},
 };
+var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
-await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests
-	.Request()
-	.AddAsync(unifiedRoleAssignmentScheduleRequest);
 
 ```

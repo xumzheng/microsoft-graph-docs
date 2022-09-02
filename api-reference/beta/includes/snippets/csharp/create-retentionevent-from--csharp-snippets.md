@@ -4,36 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var retentionEvent = new Microsoft.Graph.Security.RetentionEvent
+var requestBody = new RetentionEvent
 {
+	OdataType = "#microsoft.graph.security.retentionEvent",
 	DisplayName = "String",
 	Description = "String",
-	EventQueries = new List<Microsoft.Graph.Security.EventQuery>()
+	EventQueries = new List<EventQuery>
 	{
-		new EventQueries
+		new EventQuery
 		{
-		}
+			OdataType = "microsoft.graph.security.eventQueries",
+		},
 	},
 	EventTriggerDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	CreatedBy = new IdentitySet
 	{
+		OdataType = "microsoft.graph.identitySet",
 	},
-	EventPropagationResults = new List<Microsoft.Graph.Security.EventPropagationResult>()
+	EventPropagationResults = new List<EventPropagationResult>
 	{
 		new EventPropagationResult
 		{
-		}
+			OdataType = "microsoft.graph.security.eventPropagationResult",
+		},
 	},
 	EventStatus = new RetentionEventStatus
 	{
+		OdataType = "microsoft.graph.security.retentionEventStatus",
 	},
-	LastStatusUpdateDateTime = DateTimeOffset.Parse("String (timestamp)")
+	LastStatusUpdateDateTime = DateTimeOffset.Parse("String (timestamp)"),
 };
+var result = await graphClient.Security.Triggers.RetentionEvents.PostAsync(requestBody);
 
-await graphClient.Security.Triggers.RetentionEvents
-	.Request()
-	.AddAsync(retentionEvent);
 
 ```

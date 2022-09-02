@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var inferenceClassificationOverride = new InferenceClassificationOverride
+var requestBody = new InferenceClassificationOverride
 {
-	ClassifyAs = InferenceClassificationType.Focused
+	ClassifyAs = InferenceClassificationType.Focused,
 };
+await graphClient.Me.InferenceClassification.Overrides["inferenceClassificationOverride-id"].PatchAsync(requestBody);
 
-await graphClient.Me.InferenceClassification.Overrides["{inferenceClassificationOverride-id}"]
-	.Request()
-	.UpdateAsync(inferenceClassificationOverride);
 
 ```

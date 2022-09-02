@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var activities = new List<Microsoft.Graph.ExternalConnectors.ExternalActivity>()
+var requestBody = new AddActivitiesPostRequestBody
 {
-	new Microsoft.Graph.ExternalConnectors.ExternalActivity
+	Activities = new List<ExternalActivity>
 	{
-		Type = Microsoft.Graph.ExternalConnectors.ExternalActivityType.Viewed,
-		StartDateTime = DateTimeOffset.Parse("String (timestamp)")
-	}
+		new ExternalActivity
+		{
+			OdataType = "#microsoft.graph.externalConnectors.externalActivity",
+			Type = ExternalActivityType.String,
+			StartDateTime = DateTimeOffset.Parse("String (timestamp)"),
+		},
+	},
 };
+var result = await graphClient.Connections["externalConnection-id"].Items["externalItem-id"].AddActivities.PostAsync(requestBody);
 
-await graphClient.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
-	.AddActivities(activities)
-	.Request()
-	.PostAsync();
 
 ```

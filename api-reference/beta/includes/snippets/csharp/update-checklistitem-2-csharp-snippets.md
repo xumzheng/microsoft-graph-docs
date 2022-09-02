@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var checklistItem = new ChecklistItem
+var requestBody = new ChecklistItem
 {
-	DisplayName = "buy cake"
+	DisplayName = "buy cake",
 };
+await graphClient.Me.Tasks.Lists["baseTaskList-id"].Tasks["baseTask-id"].ChecklistItems["checklistItem-id"].PatchAsync(requestBody);
 
-await graphClient.Me.Tasks.Lists["{baseTaskList-id}"].Tasks["{baseTask-id}"].ChecklistItems["{checklistItem-id}"]
-	.Request()
-	.UpdateAsync(checklistItem);
 
 ```

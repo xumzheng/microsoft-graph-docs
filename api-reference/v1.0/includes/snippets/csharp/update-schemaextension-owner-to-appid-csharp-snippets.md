@@ -4,38 +4,65 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var schemaExtension = new SchemaExtension
+var requestBody = new SchemaExtension
 {
 	Owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
-	Properties = new List<ExtensionSchemaProperty>()
+	Properties = new List<ExtensionSchemaProperty>
 	{
 		new ExtensionSchemaProperty
 		{
-			Name = "courseId",
-			Type = "Integer"
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"name" , "courseId"
+				},
+				{
+					"type" , "Integer"
+				},
+			},
 		},
 		new ExtensionSchemaProperty
 		{
-			Name = "courseName",
-			Type = "String"
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"name" , "courseName"
+				},
+				{
+					"type" , "String"
+				},
+			},
 		},
 		new ExtensionSchemaProperty
 		{
-			Name = "courseType",
-			Type = "String"
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"name" , "courseType"
+				},
+				{
+					"type" , "String"
+				},
+			},
 		},
 		new ExtensionSchemaProperty
 		{
-			Name = "courseSupervisors",
-			Type = "String"
-		}
-	}
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"name" , "courseSupervisors"
+				},
+				{
+					"type" , "String"
+				},
+			},
+		},
+	},
 };
+await graphClient.SchemaExtensions["schemaExtension-id"].PatchAsync(requestBody);
 
-await graphClient.SchemaExtensions["{schemaExtension-id}"]
-	.Request()
-	.UpdateAsync(schemaExtension);
 
 ```

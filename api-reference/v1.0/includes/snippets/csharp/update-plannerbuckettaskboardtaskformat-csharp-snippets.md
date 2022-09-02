@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerBucketTaskBoardTaskFormat = new PlannerBucketTaskBoardTaskFormat
+var requestBody = new PlannerBucketTaskBoardTaskFormat
 {
-	OrderHint = "A6673H Ejkl!"
+	OrderHint = "A6673H Ejkl!",
 };
+await graphClient.Planner.Tasks["plannerTask-id"].BucketTaskBoardFormat.PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
-await graphClient.Planner.Tasks["{plannerTask-id}"].BucketTaskBoardFormat
-	.Request()
-	.Header("Prefer","return=representation")
-	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
-	.UpdateAsync(plannerBucketTaskBoardTaskFormat);
 
 ```

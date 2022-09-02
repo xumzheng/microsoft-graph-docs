@@ -4,32 +4,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var team = new Team
+var requestBody = new TeamPostRequestBody
 {
-	MemberSettings = new TeamMemberSettings
+	AdditionalData = new Dictionary<string, object>
 	{
-		AllowCreateUpdateChannels = true
+		{
+			"memberSettings" , new 
+			{
+				AllowCreateUpdateChannels = true,
+			}
+		},
+		{
+			"messagingSettings" , new 
+			{
+				AllowUserEditMessages = true,
+				AllowUserDeleteMessages = true,
+			}
+		},
+		{
+			"funSettings" , new 
+			{
+				AllowGiphy = true,
+				GiphyContentRating = "strict",
+			}
+		},
+		{
+			"discoverySettings" , new 
+			{
+				ShowInTeamsSearchAndSuggestions = true,
+			}
+		},
 	},
-	MessagingSettings = new TeamMessagingSettings
-	{
-		AllowUserEditMessages = true,
-		AllowUserDeleteMessages = true
-	},
-	FunSettings = new TeamFunSettings
-	{
-		AllowGiphy = true,
-		GiphyContentRating = GiphyRatingType.Strict
-	},
-	DiscoverySettings = new TeamDiscoverySettings
-	{
-		ShowInTeamsSearchAndSuggestions = true
-	}
 };
+await graphClient.Groups["group-id"].Team.PutAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Team
-	.Request()
-	.PutAsync(team);
 
 ```

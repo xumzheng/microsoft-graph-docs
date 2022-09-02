@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var hubSiteUrls = new List<String>()
+var requestBody = new AssociateWithHubSitesPostRequestBody
 {
-	"https://graph.microsoft.com/v1.0/sites/{site-id}"
+	HubSiteUrls = new List<>
+	{
+		"https://graph.microsoft.com/v1.0/sites/{site-id}",
+	},
+	PropagateToExistingLists = false,
 };
+await graphClient.Sites["site-id"].ContentTypes["contentType-id"].AssociateWithHubSites.PostAsync(requestBody);
 
-var propagateToExistingLists = false;
-
-await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"]
-	.AssociateWithHubSites(hubSiteUrls,propagateToExistingLists)
-	.Request()
-	.PostAsync();
 
 ```

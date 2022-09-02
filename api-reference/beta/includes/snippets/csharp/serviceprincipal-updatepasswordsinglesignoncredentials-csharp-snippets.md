@@ -4,29 +4,47 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var id = "5793aa3b-cca9-4794-679a240f8b58";
-
-var credentials = new List<Credential>()
+var requestBody = new UpdatePasswordSingleSignOnCredentialsPostRequestBody
 {
-	new Credential
+	Id = "5793aa3b-cca9-4794-679a240f8b58",
+	Credentials = new List<Credential>
 	{
-		FieldId = "param_username",
-		Value = "myusername",
-		Type = "username"
+		new Credential
+		{
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"fieldId" , "param_username"
+				},
+				{
+					"value" , "myusername"
+				},
+				{
+					"type" , "username"
+				},
+			},
+		},
+		new Credential
+		{
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"fieldId" , "param_password"
+				},
+				{
+					"value" , "pa$$w0rd"
+				},
+				{
+					"type" , "password"
+				},
+			},
+		},
 	},
-	new Credential
-	{
-		FieldId = "param_password",
-		Value = "pa$$w0rd",
-		Type = "password"
-	}
 };
+await graphClient.ServicePrincipals["servicePrincipal-id"].UpdatePasswordSingleSignOnCredentials.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"]
-	.UpdatePasswordSingleSignOnCredentials(id,credentials)
-	.Request()
-	.PostAsync();
 
 ```
