@@ -31,7 +31,7 @@ None.
 |secureScores | [secureScore](securescores.md) collection | Measurements of tenants’ security posture to help protect them from threats. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
-|threatSubmissionRoot|[microsoft.graph.security.threatSubmissionRoot](../resources/security-threatsubmissionroot.md)|Provides tenants capability to submit threat to Microsfot; for example, a suspicious email threat, URL threat, or file threat.|
+|threatSubmissionRoot|[microsoft.graph.security.threatSubmissionRoot](../resources/security-threatsubmissionroot.md)|Provides tenants capability to submit threat to Microsoft; for example, a suspicious email threat, URL threat, or file threat.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
