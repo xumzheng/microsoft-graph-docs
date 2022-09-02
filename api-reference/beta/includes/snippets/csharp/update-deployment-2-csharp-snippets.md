@@ -10,14 +10,14 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 {
 	OdataType = "#microsoft.graph.windowsUpdates.deployment",
-	Settings = new DeploymentSettings
+	Settings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
 	{
 		OdataType = "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-		Monitoring = new MonitoringSettings
+		Monitoring = new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSettings
 		{
 			MonitoringRules = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule>
 			{
-				new MonitoringRule
+				new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule
 				{
 					Signal = Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSignal.Rollback,
 					Threshold = 5,

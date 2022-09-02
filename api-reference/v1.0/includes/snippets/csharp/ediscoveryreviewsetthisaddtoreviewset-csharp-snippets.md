@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.AddToReviewSet.AddToReviewSetPostRequestBody
 {
-	Search = new Search
+	Search = new Microsoft.Graph.Models.Security.EdiscoverySearch
 	{
 		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7",
 	},

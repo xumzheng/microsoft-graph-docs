@@ -11,7 +11,7 @@ var requestBody = new ContentType
 {
 	Name = "docSet",
 	Description = "custom docset",
-	Base = new Base
+	Base = new ContentType
 	{
 		Name = "Document Set",
 		Id = "0x0120D520",

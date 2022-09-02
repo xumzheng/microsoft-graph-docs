@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Models.TermStore.Term
 {
 	Labels = new List<Microsoft.Graph.Models.TermStore.LocalizedLabel>
 	{
-		new LocalizedLabel
+		new Microsoft.Graph.Models.TermStore.LocalizedLabel
 		{
 			Name = "changedLabel",
 			LanguageTag = "en-US",

@@ -14,7 +14,7 @@ var requestBody = new B2cIdentityUserFlow
 	UserFlowTypeVersion = 1f,
 	ApiConnectorConfiguration = new UserFlowApiConnectorConfiguration
 	{
-		PostFederationSignup = new PostFederationSignup
+		PostFederationSignup = new IdentityApiConnector
 		{
 			AdditionalData = new Dictionary<string, object>
 			{
@@ -23,7 +23,7 @@ var requestBody = new B2cIdentityUserFlow
 				},
 			},
 		},
-		PostAttributeCollection = new PostAttributeCollection
+		PostAttributeCollection = new IdentityApiConnector
 		{
 			AdditionalData = new Dictionary<string, object>
 			{

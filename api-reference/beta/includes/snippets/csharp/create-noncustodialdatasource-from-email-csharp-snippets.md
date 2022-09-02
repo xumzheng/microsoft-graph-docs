@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.NoncustodialDataSource
 {
 	ApplyHoldToSource = true,
-	DataSource = new DataSource
+	DataSource = new Microsoft.Graph.Beta.Models.Ediscovery.DataSource
 	{
 		OdataType = "microsoft.graph.ediscovery.userSource",
 		AdditionalData = new Dictionary<string, object>

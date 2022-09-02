@@ -10,15 +10,15 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Models.Security.EdiscoveryCaseSettings
 {
 	OdataType = "#microsoft.graph.security.ediscoveryCaseSettings",
-	RedundancyDetection = new RedundancyDetectionSettings
+	RedundancyDetection = new Microsoft.Graph.Models.Security.RedundancyDetectionSettings
 	{
 		OdataType = "microsoft.graph.security.redundancyDetectionSettings",
 	},
-	TopicModeling = new TopicModelingSettings
+	TopicModeling = new Microsoft.Graph.Models.Security.TopicModelingSettings
 	{
 		OdataType = "microsoft.graph.security.topicModelingSettings",
 	},
-	Ocr = new OcrSettings
+	Ocr = new Microsoft.Graph.Models.Security.OcrSettings
 	{
 		OdataType = "microsoft.graph.security.ocrSettings",
 	},

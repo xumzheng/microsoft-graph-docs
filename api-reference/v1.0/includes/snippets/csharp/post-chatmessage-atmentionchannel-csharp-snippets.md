@@ -20,9 +20,9 @@ var requestBody = new ChatMessage
 		{
 			Id = 0,
 			MentionText = "General",
-			Mentioned = new Mentioned
+			Mentioned = new ChatMessageMentionedIdentitySet
 			{
-				Conversation = new Conversation
+				Conversation = new TeamworkConversationIdentity
 				{
 					Id = "19:0b50940236084d258c97b21bd01917b0@thread.skype",
 					DisplayName = "General",

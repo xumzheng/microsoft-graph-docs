@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 	DisplayName = "Contoso Install Site",
 	WebUrl = "http://www.contoso.com/",
 	Description = "Try or buy Contoso for Home or Business and view product information",
-	Keywords = new AnswerKeyword
+	Keywords = new Microsoft.Graph.Beta.Models.Search.AnswerKeyword
 	{
 		Keywords = new List<string>
 		{
@@ -33,7 +33,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 	},
 	TargetedVariations = new List<Microsoft.Graph.Beta.Models.Search.AnswerVariant>
 	{
-		new AnswerVariant
+		new Microsoft.Graph.Beta.Models.Search.AnswerVariant
 		{
 			LanguageTag = "es-es",
 			DisplayName = "Sitio de instalación Contoso",

@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.Schema
 	BaseType = "microsoft.graph.externalItem",
 	Properties = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Property>
 	{
-		new Property
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
 		{
 			Name = "ticketTitle",
 			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
@@ -23,7 +23,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.Schema
 				Microsoft.Graph.Beta.Models.ExternalConnectors.Label.Title,
 			},
 		},
-		new Property
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
 		{
 			Name = "priority",
 			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
@@ -31,7 +31,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.Schema
 			IsRetrievable = true,
 			IsSearchable = false,
 		},
-		new Property
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
 		{
 			Name = "assignee",
 			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,

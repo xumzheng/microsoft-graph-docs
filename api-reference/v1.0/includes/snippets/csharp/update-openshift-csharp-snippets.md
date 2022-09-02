@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new OpenShift
 {
 	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-	SharedOpenShift = new SharedOpenShift
+	SharedOpenShift = new OpenShiftItem
 	{
 		Notes = "Inventory Management",
 		OpenSlotCount = 5,

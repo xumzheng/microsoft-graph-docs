@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 {
 	OdataType = "#microsoft.graph.windowsUpdates.deployment",
-	Content = new DeployableContent
+	Content = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeployableContent
 	{
 		OdataType = "microsoft.graph.windowsUpdates.featureUpdateReference",
 		AdditionalData = new Dictionary<string, object>
@@ -20,18 +20,18 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 			},
 		},
 	},
-	Settings = new DeploymentSettings
+	Settings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
 	{
 		OdataType = "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-		Rollout = new RolloutSettings
+		Rollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.RolloutSettings
 		{
 			DevicesPerOffer = 100,
 		},
-		Monitoring = new MonitoringSettings
+		Monitoring = new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSettings
 		{
 			MonitoringRules = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule>
 			{
-				new MonitoringRule
+				new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule
 				{
 					OdataType = "#microsoft.graph.windowsUpdates.monitoringRule",
 					Signal = Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSignal.Rollback,

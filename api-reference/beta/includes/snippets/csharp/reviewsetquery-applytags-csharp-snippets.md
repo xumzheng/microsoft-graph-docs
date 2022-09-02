@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.Revi
 {
 	TagsToAdd = new List<Microsoft.Graph.Beta.Models.Ediscovery.Tag>
 	{
-		new Tag
+		new Microsoft.Graph.Beta.Models.Ediscovery.Tag
 		{
 			Id = "b4798d14-748d-468e-a1ec-96a2b1d49677",
 		},

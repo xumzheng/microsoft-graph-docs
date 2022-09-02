@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new AccessPackageAssignmentRequest
 {
 	RequestType = AccessPackageRequestType.AdminAdd,
-	Assignment = new Assignment
+	Assignment = new AccessPackageAssignment
 	{
 		AdditionalData = new Dictionary<string, object>
 		{

@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new ListItem
 {
-	Fields = new Fields
+	Fields = new FieldValueSet
 	{
 		AdditionalData = new Dictionary<string, object>
 		{

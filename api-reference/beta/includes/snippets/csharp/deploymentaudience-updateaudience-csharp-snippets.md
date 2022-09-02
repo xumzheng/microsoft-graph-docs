@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 {
 	AddMembers = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
-		new UpdatableAsset
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
 			Id = "String (identifier)",
@@ -19,7 +19,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 	},
 	RemoveMembers = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
-		new UpdatableAsset
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
 			Id = "String (identifier)",
@@ -27,7 +27,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 	},
 	AddExclusions = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
-		new UpdatableAsset
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
 			Id = "String (identifier)",
@@ -35,7 +35,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 	},
 	RemoveExclusions = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
-		new UpdatableAsset
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
 			Id = "String (identifier)",

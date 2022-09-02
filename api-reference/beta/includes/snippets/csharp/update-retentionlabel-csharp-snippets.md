@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionLabel
 	BehaviorDuringRetentionPeriod = Microsoft.Graph.Beta.Models.Security.BehaviorDuringRetentionPeriod.DoNotRetain,
 	ActionAfterRetentionPeriod = Microsoft.Graph.Beta.Models.Security.ActionAfterRetentionPeriod.None,
 	RetentionTrigger = Microsoft.Graph.Beta.Models.Security.RetentionTrigger.DateLabeled,
-	RetentionDuration = new RetentionDuration
+	RetentionDuration = new Microsoft.Graph.Beta.Models.Security.RetentionDuration
 	{
 		OdataType = "microsoft.graph.security.retentionDuration",
 	},

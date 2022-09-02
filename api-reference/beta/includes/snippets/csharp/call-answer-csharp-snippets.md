@@ -24,7 +24,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Answer.Answ
 	{
 		Modality.Audio,
 	},
-	CallOptions = new CallOptions
+	CallOptions = new IncomingCallOptions
 	{
 		OdataType = "#microsoft.graph.incomingCallOptions",
 		IsContentSharingNotificationEnabled = true,

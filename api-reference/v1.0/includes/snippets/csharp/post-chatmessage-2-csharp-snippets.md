@@ -20,7 +20,7 @@ var requestBody = new ChatMessage
 		{
 			Id = 0,
 			MentionText = "Jane Smith",
-			Mentioned = new Mentioned
+			Mentioned = new ChatMessageMentionedIdentitySet
 			{
 				User = new Identity
 				{

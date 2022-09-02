@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalIte
 {
 	Acl = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Acl>
 	{
-		new Acl
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.Acl
 		{
 			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.AclType.Everyone,
 			Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",

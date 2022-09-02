@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.ManagedTenants.TenantCustomize
 	TenantId = "String",
 	Contacts = new List<Microsoft.Graph.Beta.Models.ManagedTenants.TenantContactInformation>
 	{
-		new TenantContactInformation
+		new Microsoft.Graph.Beta.Models.ManagedTenants.TenantContactInformation
 		{
 			OdataType = "microsoft.graph.managedTenants.tenantContactInformation",
 			Name = "String",

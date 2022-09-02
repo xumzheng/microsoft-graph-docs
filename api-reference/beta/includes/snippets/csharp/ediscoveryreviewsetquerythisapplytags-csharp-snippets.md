@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.R
 {
 	TagsToAdd = new List<Microsoft.Graph.Beta.Models.Security.EdiscoveryReviewTag>
 	{
-		new EdiscoveryReviewTag
+		new Microsoft.Graph.Beta.Models.Security.EdiscoveryReviewTag
 		{
 			Id = "d3d99dc704a74801b792b3e1e722aa0d",
 		},

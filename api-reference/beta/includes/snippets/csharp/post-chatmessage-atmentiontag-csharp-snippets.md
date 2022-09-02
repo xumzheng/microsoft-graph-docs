@@ -20,9 +20,9 @@ var requestBody = new ChatMessage
 		{
 			Id = 0,
 			MentionText = "TestTag",
-			Mentioned = new Mentioned
+			Mentioned = new ChatMessageMentionedIdentitySet
 			{
-				Tag = new Tag
+				Tag = new TeamworkTagIdentity
 				{
 					Id = "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ==",
 					DisplayName = "TestTag",

@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.ReviewSets.Item.AddToReviewSet.AddToReviewSetPostRequestBody
 {
-	SourceCollection = new SourceCollection
+	SourceCollection = new Microsoft.Graph.Beta.Models.Ediscovery.SourceCollection
 	{
 		Id = "1a9b4145d8f84e39bc45a7f68c5c5119",
 	},

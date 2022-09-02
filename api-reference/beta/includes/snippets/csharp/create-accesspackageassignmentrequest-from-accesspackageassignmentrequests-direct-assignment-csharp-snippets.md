@@ -12,7 +12,7 @@ var requestBody = new AccessPackageAssignmentRequest
 	RequestType = "AdminAdd",
 	AccessPackageAssignment = new AccessPackageAssignment
 	{
-		Target = new Target
+		Target = new AccessPackageSubject
 		{
 			Email = "user@contoso.com",
 		},

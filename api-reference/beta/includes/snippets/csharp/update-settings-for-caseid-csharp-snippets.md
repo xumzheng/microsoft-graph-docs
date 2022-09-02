@@ -9,21 +9,21 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.CaseSettings
 {
-	RedundancyDetection = new RedundancyDetectionSettings
+	RedundancyDetection = new Microsoft.Graph.Beta.Models.Ediscovery.RedundancyDetectionSettings
 	{
 		IsEnabled = false,
 		SimilarityThreshold = 70,
 		MinWords = 12,
 		MaxWords = 400000,
 	},
-	TopicModeling = new TopicModelingSettings
+	TopicModeling = new Microsoft.Graph.Beta.Models.Ediscovery.TopicModelingSettings
 	{
 		IsEnabled = false,
 		IgnoreNumbers = false,
 		TopicCount = 50,
 		DynamicallyAdjustTopicCount = false,
 	},
-	Ocr = new OcrSettings
+	Ocr = new Microsoft.Graph.Beta.Models.Ediscovery.OcrSettings
 	{
 		IsEnabled = true,
 		MaxImageSize = 12000,

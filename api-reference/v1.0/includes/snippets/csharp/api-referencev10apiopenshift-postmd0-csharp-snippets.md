@@ -11,7 +11,7 @@ var requestBody = new OpenShift
 {
 	Id = "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
 	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-	SharedOpenShift = new SharedOpenShift
+	SharedOpenShift = new OpenShiftItem
 	{
 		Notes = "InventoryManagement",
 		OpenSlotCount = 2,

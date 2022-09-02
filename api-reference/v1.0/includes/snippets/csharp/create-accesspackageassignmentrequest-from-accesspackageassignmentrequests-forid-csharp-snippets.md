@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new AccessPackageAssignmentRequest
 {
 	RequestType = AccessPackageRequestType.AdminRemove,
-	Assignment = new Assignment
+	Assignment = new AccessPackageAssignment
 	{
 		Id = "a6bb6942-3ae1-4259-9908-0133aaee9377",
 	},

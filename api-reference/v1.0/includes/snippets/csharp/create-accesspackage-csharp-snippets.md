@@ -12,7 +12,7 @@ var requestBody = new AccessPackage
 	DisplayName = "sales reps",
 	Description = "outside sales representatives",
 	IsHidden = false,
-	Catalog = new Catalog
+	Catalog = new AccessPackageCatalog
 	{
 		Id = "66584aae-98bb-48cc-9458-7bee5d2a6577",
 	},

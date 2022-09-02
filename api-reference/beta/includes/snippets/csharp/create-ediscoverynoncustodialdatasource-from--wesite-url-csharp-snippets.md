@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryNoncustodialDataSource
 {
-	DataSource = new DataSource
+	DataSource = new Microsoft.Graph.Beta.Models.Security.DataSource
 	{
 		OdataType = "microsoft.graph.security.siteSource",
 		AdditionalData = new Dictionary<string, object>

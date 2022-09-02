@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Connections.Item.Items.Item.AddActivi
 {
 	Activities = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivity>
 	{
-		new ExternalActivity
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivity
 		{
 			OdataType = "#microsoft.graph.externalConnectors.externalActivity",
 			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivityType.Viewed,

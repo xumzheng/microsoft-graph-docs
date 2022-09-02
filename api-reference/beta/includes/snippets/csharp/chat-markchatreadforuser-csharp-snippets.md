@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Chats.Item.MarkChatReadForUser.MarkChatReadForUserPostRequestBody
 {
-	User = new User
+	User = new TeamworkUserIdentity
 	{
 		Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
 	},
