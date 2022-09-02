@@ -19,7 +19,7 @@ var requestBody = new ShiftPreferences
 				Pattern = new RecurrencePattern
 				{
 					Type = RecurrencePatternType.Weekly,
-					DaysOfWeek = new List<>
+					DaysOfWeek = new List<DayOfWeek>
 					{
 						DayOfWeek.Monday,
 						DayOfWeek.Wednesday,
@@ -29,7 +29,7 @@ var requestBody = new ShiftPreferences
 				},
 				Range = new RecurrenceRange
 				{
-					Type = RecurrenceRangeType.Noend,
+					Type = RecurrenceRangeType.NoEnd,
 				},
 			},
 			TimeZone = "Pacific Standard Time",

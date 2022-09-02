@@ -12,7 +12,7 @@ var requestBody = new Event
 	Subject = "Let's go for lunch",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.Html,
+		ContentType = BodyType.HTML,
 		Content = "Does noon time work for you?",
 	},
 	Start = new DateTimeTimeZone
@@ -31,14 +31,14 @@ var requestBody = new Event
 		{
 			Type = RecurrencePatternType.Weekly,
 			Interval = 1,
-			DaysOfWeek = new List<>
+			DaysOfWeek = new List<DayOfWeek>
 			{
 				DayOfWeek.Monday,
 			},
 		},
 		Range = new RecurrenceRange
 		{
-			Type = RecurrenceRangeType.Enddate,
+			Type = RecurrenceRangeType.EndDate,
 			StartDate = "2017-09-04",
 			EndDate = "2017-12-31",
 		},

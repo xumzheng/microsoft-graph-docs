@@ -12,7 +12,7 @@ var requestBody = new CloudPcOrganizationSettings
 	OdataType = "#microsoft.graph.cloudPcOrganizationSettings",
 	EnableMEMAutoEnroll = true,
 	OsVersion = CloudPcOperatingSystem.Windows11,
-	UserAccountType = CloudPcUserAccountType.Standarduser,
+	UserAccountType = CloudPcUserAccountType.StandardUser,
 	WindowsSettings = new CloudPcWindowsSettings
 	{
 		Language = "en-US",

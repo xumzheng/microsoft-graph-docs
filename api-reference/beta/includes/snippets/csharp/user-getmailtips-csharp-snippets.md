@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.GetMailTips.GetMailTipsPostRequest
 		"danas@contoso.onmicrosoft.com",
 		"fannyd@contoso.onmicrosoft.com",
 	},
-	MailTipsOptions = MailTipsType.Automaticreplies, mailboxfullstatus,
+	MailTipsOptions = MailTipsType.AutomaticReplies, mailboxFullStatus,
 };
 var result = await graphClient.Me.GetMailTips.PostAsync(requestBody);
 

@@ -19,7 +19,7 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 		StartDateTime = DateTimeOffset.Parse("2021-08-17T17:40:00.000Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.Afterduration,
+			Type = ExpirationPatternType.AfterDuration,
 			Duration = TimeSpan.Parse("PT5H"),
 		},
 	},
@@ -29,7 +29,7 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 		TicketSystem = "MS Project",
 	},
 };
-var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests.PostAsync(requestBody);
+var result = await graphClient.RoleManagement.DirectoryObject.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
 
 ```

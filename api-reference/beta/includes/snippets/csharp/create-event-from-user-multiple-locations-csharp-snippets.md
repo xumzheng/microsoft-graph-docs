@@ -12,7 +12,7 @@ var requestBody = new Event
 	Subject = "Plan summer company picnic",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.Html,
+		ContentType = BodyType.HTML,
 		Content = "Let's kick-start this event planning!",
 	},
 	Start = new DateTimeTimeZone

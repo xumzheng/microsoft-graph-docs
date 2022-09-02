@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Directory.AdministrativeUnits["administrativeUnit-id"].Members["directoryObject-id"].Ref.DeleteAsync();
+await graphClient.DirectoryObject.AdministrativeUnits["administrativeUnit-id"].Members["directoryObject-id"].Ref.DeleteAsync();
 
 
 ```

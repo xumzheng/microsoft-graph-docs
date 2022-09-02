@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new PrintTaskTrigger
 {
-	Event = PrintEvent.Jobstarted,
+	Event = PrintEvent.JobStarted,
 	AdditionalData = new Dictionary<string, object>
 	{
 		{

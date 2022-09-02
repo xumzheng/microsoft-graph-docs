@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..Security.EdiscoveryReviewTag
+var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryReviewTag
 {
 	DisplayName = "My tag API",
 	Description = "Use Graph API to create tags",
-	ChildSelectability = ChildSelectability.Many,
+	ChildSelectability = Microsoft.Graph.Beta.Models.Security.ChildSelectability.Many,
 };
 var result = await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].Tags.PostAsync(requestBody);
 

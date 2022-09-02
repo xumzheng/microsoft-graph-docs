@@ -18,7 +18,7 @@ var requestBody = new WorkforceIntegration
 	},
 	IsActive = true,
 	Url = "url-value",
-	SupportedEntities = WorkforceIntegrationSupportedEntities.Supportedentities-value,
+	SupportedEntities = WorkforceIntegrationSupportedEntities.SupportedEntities-value,
 };
 var result = await graphClient.Teamwork.WorkforceIntegrations.PostAsync(requestBody);
 

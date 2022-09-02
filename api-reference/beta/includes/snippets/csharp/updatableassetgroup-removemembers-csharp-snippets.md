@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.RemoveMembers.RemoveMembersPostRequestBody
 {
-	Assets = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
+	Assets = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{

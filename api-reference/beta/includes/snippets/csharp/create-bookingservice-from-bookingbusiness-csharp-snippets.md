@@ -49,7 +49,7 @@ var requestBody = new BookingService
 		},
 	},
 	DefaultPrice = 10d,
-	DefaultPriceType = BookingPriceType.Fixedprice,
+	DefaultPriceType = BookingPriceType.FixedPrice,
 	DefaultReminders = new List<BookingReminder>
 	{
 		new BookingReminder
@@ -57,7 +57,7 @@ var requestBody = new BookingService
 			OdataType = "#microsoft.graph.bookingReminder",
 			Message = "Please be reminded that this service is tomorrow.",
 			Offset = TimeSpan.Parse("P1D"),
-			Recipients = BookingReminderRecipients.Allattendees,
+			Recipients = BookingReminderRecipients.AllAttendees,
 			AdditionalData = new Dictionary<string, object>
 			{
 				{

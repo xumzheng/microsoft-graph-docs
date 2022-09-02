@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new InternalDomainFederation
 {
 	DisplayName = "Contoso name change",
-	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.Acceptifmfadonebyfederatedidp,
+	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp,
 };
 await graphClient.Domains["domain-id"].FederationConfiguration["internalDomainFederation-id"].PatchAsync(requestBody);
 

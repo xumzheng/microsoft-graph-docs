@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Teamwork.SendActivityNotificationToRe
 {
 	Topic = new TeamworkActivityTopic
 	{
-		Source = TeamworkActivityTopicSource.Entityurl,
+		Source = TeamworkActivityTopicSource.EntityUrl,
 		Value = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}",
 	},
 	ActivityType = "pendingFinanceApprovalRequests",

@@ -14,7 +14,7 @@ var requestBody = new UnifiedRoleAssignment
 	PrincipalId = "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
 	DirectoryScopeId = "/",
 };
-var result = await graphClient.RoleManagement.Directory.RoleAssignments.PostAsync(requestBody);
+var result = await graphClient.RoleManagement.DirectoryObject.RoleAssignments.PostAsync(requestBody);
 
 
 ```

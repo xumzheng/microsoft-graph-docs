@@ -17,7 +17,7 @@ var requestBody = new EducationAssignment
 	},
 	DueDateTime = DateTimeOffset.Parse("2021-09-10T00:00:00Z"),
 	AddedStudentAction = EducationAddedStudentAction.None,
-	AddToCalendarAction = EducationAddToCalendarOptions.Studentsandpublisher,
+	AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndPublisher,
 };
 await graphClient.Education.Classes["educationClass-id"].Assignments["educationAssignment-id"].PatchAsync(requestBody);
 

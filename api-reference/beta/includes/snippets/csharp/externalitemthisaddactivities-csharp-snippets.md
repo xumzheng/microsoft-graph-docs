@@ -9,12 +9,12 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Connections.Item.Items.Item.AddActivities.AddActivitiesPostRequestBody
 {
-	Activities = new List<Microsoft.Graph.Beta..ExternalConnectors.ExternalActivity>
+	Activities = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivity>
 	{
 		new ExternalActivity
 		{
 			OdataType = "#microsoft.graph.externalConnectors.externalActivity",
-			Type = ExternalActivityType.String,
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivityType.String,
 			StartDateTime = DateTimeOffset.Parse("String (timestamp)"),
 		},
 	},

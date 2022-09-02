@@ -15,7 +15,7 @@ var requestBody = new SkillProficiency
 	},
 	AllowedAudiences = AllowedAudiences.Organization,
 	DisplayName = "API Design",
-	Proficiency = SkillProficiencyLevel.Generalprofessional,
+	Proficiency = SkillProficiencyLevel.GeneralProfessional,
 	CollaborationTags = new List<string>
 	{
 		"ableToMentor",

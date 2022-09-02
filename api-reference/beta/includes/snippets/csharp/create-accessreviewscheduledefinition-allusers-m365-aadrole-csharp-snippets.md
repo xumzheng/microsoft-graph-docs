@@ -79,7 +79,7 @@ var requestBody = new AccessReviewScheduleDefinition
 		{
 			Pattern = new RecurrencePattern
 			{
-				Type = RecurrencePatternType.Absolutemonthly,
+				Type = RecurrencePatternType.AbsoluteMonthly,
 				Interval = 6,
 				DayOfMonth = 0,
 			},

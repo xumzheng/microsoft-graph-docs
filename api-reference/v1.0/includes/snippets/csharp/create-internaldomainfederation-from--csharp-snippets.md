@@ -15,13 +15,13 @@ var requestBody = new InternalDomainFederation
 	MetadataExchangeUri = "https://sts.contoso.com/adfs/services/trust/mex",
 	SigningCertificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
 	PassiveSignInUri = "https://sts.contoso.com/adfs/ls",
-	PreferredAuthenticationProtocol = AuthenticationProtocol.Wsfed,
+	PreferredAuthenticationProtocol = AuthenticationProtocol.WsFed,
 	ActiveSignInUri = "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed",
 	SignOutUri = "https://sts.contoso.com/adfs/ls",
-	PromptLoginBehavior = PromptLoginBehavior.Nativesupport,
+	PromptLoginBehavior = PromptLoginBehavior.NativeSupport,
 	IsSignedAuthenticationRequestRequired = true,
 	NextSigningCertificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.Rejectmfabyfederatedidp,
+	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp,
 };
 var result = await graphClient.Domains["domain-id"].FederationConfiguration.PostAsync(requestBody);
 

@@ -20,11 +20,11 @@ var requestBody = new UnifiedRoleEligibilityScheduleRequest
 		Expiration = new ExpirationPattern
 		{
 			EndDateTime = DateTimeOffset.Parse("2022-06-30T00:00:00Z"),
-			Type = ExpirationPatternType.Afterdatetime,
+			Type = ExpirationPatternType.AfterDateTime,
 		},
 	},
 };
-var result = await graphClient.RoleManagement.Directory.RoleEligibilityScheduleRequests.PostAsync(requestBody);
+var result = await graphClient.RoleManagement.DirectoryObject.RoleEligibilityScheduleRequests.PostAsync(requestBody);
 
 
 ```

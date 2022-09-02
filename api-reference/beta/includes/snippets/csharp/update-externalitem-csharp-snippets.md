@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..ExternalConnectors.ExternalItem
+var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalItem
 {
-	Acl = new List<Microsoft.Graph.Beta..ExternalConnectors.Acl>
+	Acl = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Acl>
 	{
 		new Acl
 		{
-			Type = AclType.Everyone,
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.AclType.Everyone,
 			Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-			AccessType = AccessType.Grant,
+			AccessType = Microsoft.Graph.Beta.Models.ExternalConnectors.AccessType.Grant,
 		},
 	},
 };

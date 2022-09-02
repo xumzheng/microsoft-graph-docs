@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new DelegatedAdminRelationshipRequest
 {
-	Action = DelegatedAdminRelationshipRequestAction.Lockforapproval,
+	Action = DelegatedAdminRelationshipRequestAction.LockForApproval,
 };
 var result = await graphClient.TenantRelationships.DelegatedAdminRelationships["delegatedAdminRelationship-id"].Requests.PostAsync(requestBody);
 

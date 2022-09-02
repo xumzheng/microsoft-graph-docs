@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..Search.Qna
+var requestBody = new Microsoft.Graph.Beta.Models.Search.Qna
 {
 	DisplayName = "Global Country Holidays",
 	WebUrl = "http://www.contoso.com/",
@@ -38,11 +38,11 @@ var requestBody = new Microsoft.Graph.Beta..Search.Qna
 	{
 		"en-us",
 	},
-	Platforms = new List<>
+	Platforms = new List<DevicePlatformType>
 	{
 		DevicePlatformType.Ios,
 	},
-	State = AnswerState.Published,
+	State = Microsoft.Graph.Beta.Models.Search.AnswerState.Published,
 };
 var result = await graphClient.Search.Qnas.PostAsync(requestBody);
 

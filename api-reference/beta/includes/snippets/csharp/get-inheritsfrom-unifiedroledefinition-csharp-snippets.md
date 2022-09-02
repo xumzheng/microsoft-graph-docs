@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.RoleManagement.Directory.RoleDefinitions["unifiedRoleDefinition-id"].GetAsync((requestConfiguration) =>
+var result = await graphClient.RoleManagement.DirectoryObject.RoleDefinitions["unifiedRoleDefinition-id"].GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Expand = new string []{ "inheritsPermissionsFrom" };
 });

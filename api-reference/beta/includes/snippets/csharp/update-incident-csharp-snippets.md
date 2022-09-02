@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..Security.Incident
+var requestBody = new Microsoft.Graph.Beta.Models.Security.Incident
 {
-	Classification = AlertClassification.Truepositive,
-	Determination = AlertDetermination.Multistagedattack,
+	Classification = Microsoft.Graph.Beta.Models.Security.AlertClassification.TruePositive,
+	Determination = Microsoft.Graph.Beta.Models.Security.AlertDetermination.MultiStagedAttack,
 	Tags = new List<string>
 	{
 		"Demo",

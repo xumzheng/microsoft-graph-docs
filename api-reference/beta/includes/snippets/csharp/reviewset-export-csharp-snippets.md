@@ -11,8 +11,8 @@ var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.Revi
 {
 	OutputName = "2020-12-06 Contoso investigation export",
 	Description = "Export for the Contoso investigation",
-	ExportOptions = ExportOptions.Originalfiles,fileinfo,tags,
-	ExportStructure = ExportFileStructure.Directory,
+	ExportOptions = Microsoft.Graph.Beta.Models.Ediscovery.ExportOptions.OriginalFiles,fileInfo,tags,
+	ExportStructure = Microsoft.Graph.Beta.Models.Ediscovery.ExportFileStructure.Directory,
 };
 await graphClient.Compliance.Ediscovery.Cases["case-id"].ReviewSets["reviewSet-id"].Export.PostAsync(requestBody);
 

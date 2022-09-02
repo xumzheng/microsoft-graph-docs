@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..Security.EmailThreatSubmission
+var requestBody = new Microsoft.Graph.Beta.Models.Security.EmailThreatSubmission
 {
 	OdataType = "#microsoft.graph.emailUrlThreatSubmission",
-	Category = SubmissionCategory.Spam,
+	Category = Microsoft.Graph.Beta.Models.Security.SubmissionCategory.Spam,
 	RecipientEmailAddress = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
 	AdditionalData = new Dictionary<string, object>
 	{

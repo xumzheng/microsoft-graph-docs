@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new UnifiedRoleEligibilityScheduleRequest
 {
-	Action = UnifiedRoleScheduleRequestActions.Adminassign,
+	Action = UnifiedRoleScheduleRequestActions.AdminAssign,
 	Justification = "Assign Attribute Assignment Admin eligibility to restricted user",
 	RoleDefinitionId = "8424c6f0-a189-499e-bbd0-26c1753c96d4",
 	DirectoryScopeId = "/",
@@ -19,12 +19,12 @@ var requestBody = new UnifiedRoleEligibilityScheduleRequest
 		StartDateTime = DateTimeOffset.Parse("2022-04-10T00:00:00Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.Afterdatetime,
+			Type = ExpirationPatternType.AfterDateTime,
 			EndDateTime = DateTimeOffset.Parse("2024-04-10T00:00:00Z"),
 		},
 	},
 };
-var result = await graphClient.RoleManagement.Directory.RoleEligibilityScheduleRequests.PostAsync(requestBody);
+var result = await graphClient.RoleManagement.DirectoryObject.RoleEligibilityScheduleRequests.PostAsync(requestBody);
 
 
 ```

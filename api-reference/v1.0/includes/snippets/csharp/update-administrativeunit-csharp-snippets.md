@@ -11,7 +11,7 @@ var requestBody = new AdministrativeUnit
 {
 	DisplayName = "Greater Seattle District Technical Schools",
 };
-await graphClient.Directory.AdministrativeUnits["administrativeUnit-id"].PatchAsync(requestBody);
+await graphClient.DirectoryObject.AdministrativeUnits["administrativeUnit-id"].PatchAsync(requestBody);
 
 
 ```

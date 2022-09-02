@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph..Security.EdiscoveryCase
+var requestBody = new Microsoft.Graph.Models.Security.EdiscoveryCase
 {
 	DisplayName = "My Case 1 - Renamed",
 	Description = "Updated description",

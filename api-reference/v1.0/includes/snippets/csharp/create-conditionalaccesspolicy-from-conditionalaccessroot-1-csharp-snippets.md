@@ -13,9 +13,9 @@ var requestBody = new ConditionalAccessPolicy
 	State = ConditionalAccessPolicyState.Enabled,
 	Conditions = new ConditionalAccessConditionSet
 	{
-		ClientAppTypes = new List<>
+		ClientAppTypes = new List<ConditionalAccessClientApp>
 		{
-			ConditionalAccessClientApp.Mobileappsanddesktopclients,
+			ConditionalAccessClientApp.MobileAppsAndDesktopClients,
 			ConditionalAccessClientApp.Browser,
 		},
 		Applications = new ConditionalAccessApplications
@@ -47,7 +47,7 @@ var requestBody = new ConditionalAccessPolicy
 	GrantControls = new ConditionalAccessGrantControls
 	{
 		Operator = "OR",
-		BuiltInControls = new List<>
+		BuiltInControls = new List<ConditionalAccessGrantControl>
 		{
 			ConditionalAccessGrantControl.Mfa,
 		},

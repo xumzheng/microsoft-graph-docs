@@ -9,8 +9,8 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new SubjectRightsRequest
 {
-	Type = SubjectRightsRequestType.Subjectrightsrequesttype,
-	DataSubjectType = DataSubjectType.Datasubjecttype,
+	Type = SubjectRightsRequestType.SubjectRightsRequestType,
+	DataSubjectType = DataSubjectType.DataSubjectType,
 	Regulations = new List<string>
 	{
 		"String",

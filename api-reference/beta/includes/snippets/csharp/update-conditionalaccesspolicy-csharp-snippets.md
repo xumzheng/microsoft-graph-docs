@@ -11,7 +11,7 @@ var requestBody = new ConditionalAccessPolicy
 {
 	Conditions = new ConditionalAccessConditionSet
 	{
-		SignInRiskLevels = new List<>
+		SignInRiskLevels = new List<RiskLevel>
 		{
 			RiskLevel.High,
 			RiskLevel.Medium,

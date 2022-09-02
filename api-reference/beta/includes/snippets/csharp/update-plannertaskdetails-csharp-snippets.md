@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new PlannerTaskDetails
 {
-	PreviewType = PlannerPreviewType.Nopreview,
+	PreviewType = PlannerPreviewType.NoPreview,
 	References = new PlannerExternalReferences
 	{
 		AdditionalData = new Dictionary<string, object>

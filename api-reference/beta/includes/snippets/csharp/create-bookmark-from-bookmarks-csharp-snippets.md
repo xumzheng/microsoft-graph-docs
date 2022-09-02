@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..Search.Bookmark
+var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 {
 	DisplayName = "Contoso Install Site",
 	WebUrl = "http://www.contoso.com/",
@@ -27,11 +27,11 @@ var requestBody = new Microsoft.Graph.Beta..Search.Bookmark
 	},
 	AvailabilityStartDateTime = null,
 	AvailabilityEndDateTime = null,
-	Platforms = new List<>
+	Platforms = new List<DevicePlatformType>
 	{
 		DevicePlatformType.Windows,
 	},
-	TargetedVariations = new List<Microsoft.Graph.Beta..Search.AnswerVariant>
+	TargetedVariations = new List<Microsoft.Graph.Beta.Models.Search.AnswerVariant>
 	{
 		new AnswerVariant
 		{
@@ -40,7 +40,7 @@ var requestBody = new Microsoft.Graph.Beta..Search.Bookmark
 			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
 		},
 	},
-	State = AnswerState.Published,
+	State = Microsoft.Graph.Beta.Models.Search.AnswerState.Published,
 };
 var result = await graphClient.Search.Bookmarks.PostAsync(requestBody);
 

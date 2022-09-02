@@ -11,7 +11,7 @@ var requestBody = new CustomSecurityAttributeDefinition
 {
 	Description = "Target completion date (YYYY/MM/DD)",
 };
-await graphClient.Directory.CustomSecurityAttributeDefinitions["customSecurityAttributeDefinition-id"].PatchAsync(requestBody);
+await graphClient.DirectoryObject.CustomSecurityAttributeDefinitions["customSecurityAttributeDefinition-id"].PatchAsync(requestBody);
 
 
 ```

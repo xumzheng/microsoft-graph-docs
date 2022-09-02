@@ -12,8 +12,8 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtec
 	ContentInfo = new ContentInfo
 	{
 		Identifier = "MyDoc.docx",
-		State = ContentState.Rest,
-		Metadata = new List<Microsoft.Graph.Beta..Security.KeyValuePair>
+		State = Microsoft.Graph.Beta.Models.Security.ContentState.Rest,
+		Metadata = new List<Microsoft.Graph.Beta.Models.Security.KeyValuePair>
 		{
 			new KeyValuePair
 			{

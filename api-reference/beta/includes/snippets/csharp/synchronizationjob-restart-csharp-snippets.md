@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronizatio
 {
 	Criteria = new SynchronizationJobRestartCriteria
 	{
-		ResetScope = SynchronizationJobRestartScope.Watermark, escrows, quarantinestate,
+		ResetScope = SynchronizationJobRestartScope.Watermark, Escrows, QuarantineState,
 	},
 };
 await graphClient.ServicePrincipals["servicePrincipal-id"].Synchronization.Jobs["synchronizationJob-id"].Restart.PostAsync(requestBody, (requestConfiguration) =>

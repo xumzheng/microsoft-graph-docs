@@ -12,7 +12,7 @@ var requestBody = new AttributeSet
 	Description = "Attributes for engineering team",
 	MaxAttributesPerSet = 20,
 };
-await graphClient.Directory.AttributeSets["attributeSet-id"].PatchAsync(requestBody);
+await graphClient.DirectoryObject.AttributeSets["attributeSet-id"].PatchAsync(requestBody);
 
 
 ```

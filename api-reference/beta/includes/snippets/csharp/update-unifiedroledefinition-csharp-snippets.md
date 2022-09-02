@@ -22,7 +22,7 @@ var requestBody = new UnifiedRoleDefinition
 		},
 	},
 };
-await graphClient.RoleManagement.Directory.RoleDefinitions["unifiedRoleDefinition-id"].PatchAsync(requestBody);
+await graphClient.RoleManagement.DirectoryObject.RoleDefinitions["unifiedRoleDefinition-id"].PatchAsync(requestBody);
 
 
 ```

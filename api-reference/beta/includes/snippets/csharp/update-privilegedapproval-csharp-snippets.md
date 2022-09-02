@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new PrivilegedApproval
 {
-	ApprovalState = ApprovalState.Approvalstate-value,
+	ApprovalState = ApprovalState.ApprovalState-value,
 	ApproverReason = "approverReason-value",
 };
 await graphClient.PrivilegedApproval["privilegedApproval-id"].PatchAsync(requestBody);

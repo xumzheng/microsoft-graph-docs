@@ -12,7 +12,7 @@ var requestBody = new Event
 	Subject = "Let's go for lunch",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.Html,
+		ContentType = BodyType.HTML,
 		Content = "Does noon work for you?",
 	},
 	Start = new DateTimeTimeZone
@@ -43,7 +43,7 @@ var requestBody = new Event
 	},
 	AllowNewTimeProposals = true,
 	IsOnlineMeeting = true,
-	OnlineMeetingProvider = OnlineMeetingProviderType.Teamsforbusiness,
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 };
 var result = await graphClient.Me.Events.PostAsync(requestBody, (requestConfiguration) =>
 {

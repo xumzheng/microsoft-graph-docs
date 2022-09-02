@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Chats.Item.SendActivityNotification.S
 {
 	Topic = new TeamworkActivityTopic
 	{
-		Source = TeamworkActivityTopicSource.Entityurl,
+		Source = TeamworkActivityTopicSource.EntityUrl,
 		Value = "https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}",
 	},
 	ActivityType = "approvalRequired",

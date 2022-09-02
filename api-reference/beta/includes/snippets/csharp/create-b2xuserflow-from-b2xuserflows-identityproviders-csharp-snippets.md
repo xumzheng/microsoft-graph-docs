@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new B2xIdentityUserFlow
 {
 	Id = "Partner",
-	UserFlowType = UserFlowType.Signuporsignin,
+	UserFlowType = UserFlowType.SignUpOrSignIn,
 	UserFlowTypeVersion = 1f,
 	IdentityProviders = new List<IdentityProvider>
 	{

@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Users.Item.Teamwork.SendActivityNotificati
 {
 	Topic = new TeamworkActivityTopic
 	{
-		Source = TeamworkActivityTopicSource.Entityurl,
+		Source = TeamworkActivityTopicSource.EntityUrl,
 		Value = "https://graph.microsoft.com/v1.0/users/{userId}/teamwork/installedApps/{installationId}",
 	},
 	ActivityType = "taskCreated",

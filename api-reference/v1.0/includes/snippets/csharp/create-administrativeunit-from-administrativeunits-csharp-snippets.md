@@ -13,7 +13,7 @@ var requestBody = new AdministrativeUnit
 	Description = "Seattle district technical schools administration",
 	Visibility = "HiddenMembership",
 };
-var result = await graphClient.Directory.AdministrativeUnits.PostAsync(requestBody);
+var result = await graphClient.DirectoryObject.AdministrativeUnits.PostAsync(requestBody);
 
 
 ```

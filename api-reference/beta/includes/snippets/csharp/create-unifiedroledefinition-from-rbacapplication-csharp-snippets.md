@@ -23,7 +23,7 @@ var requestBody = new UnifiedRoleDefinition
 	},
 	IsEnabled = true,
 };
-var result = await graphClient.RoleManagement.Directory.RoleDefinitions.PostAsync(requestBody);
+var result = await graphClient.RoleManagement.DirectoryObject.RoleDefinitions.PostAsync(requestBody);
 
 
 ```

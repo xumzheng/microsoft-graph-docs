@@ -12,7 +12,7 @@ var requestBody = new Event
 	Subject = "Let's go for lunch",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.Html,
+		ContentType = BodyType.HTML,
 		Content = "Does mid month work for you?",
 	},
 	Start = new DateTimeTimeZone

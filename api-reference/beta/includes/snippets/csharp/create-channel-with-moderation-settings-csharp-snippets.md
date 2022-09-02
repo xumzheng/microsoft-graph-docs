@@ -14,7 +14,7 @@ var requestBody = new Channel
 	MembershipType = ChannelMembershipType.Standard,
 	ModerationSettings = new ChannelModerationSettings
 	{
-		UserNewMessageRestriction = UserNewMessageRestriction.Everyoneexceptguests,
+		UserNewMessageRestriction = UserNewMessageRestriction.EveryoneExceptGuests,
 		ReplyRestriction = ReplyRestriction.Everyone,
 		AllowNewMessageFromBots = true,
 		AllowNewMessageFromConnectors = true,

@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Communications.Calls.Item.UpdateRecordingStatus.UpdateRecordingStatusPostRequestBody
 {
 	ClientContext = "clientContext-value",
-	Status = RecordingStatus.Notrecording | recording | failed,
+	Status = RecordingStatus.NotRecording | recording | failed,
 };
 var result = await graphClient.Communications.Calls["call-id"].UpdateRecordingStatus.PostAsync(requestBody);
 

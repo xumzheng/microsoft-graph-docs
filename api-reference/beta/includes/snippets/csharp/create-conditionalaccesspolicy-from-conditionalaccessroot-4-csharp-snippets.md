@@ -42,7 +42,7 @@ var requestBody = new ConditionalAccessPolicy
 	GrantControls = new ConditionalAccessGrantControls
 	{
 		Operator = "OR",
-		BuiltInControls = new List<>
+		BuiltInControls = new List<ConditionalAccessGrantControl>
 		{
 			ConditionalAccessGrantControl.Mfa,
 		},

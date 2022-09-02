@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendAc
 {
 	Topic = new TeamworkActivityTopic
 	{
-		Source = TeamworkActivityTopicSource.Entityurl,
+		Source = TeamworkActivityTopicSource.EntityUrl,
 		Value = "https://graph.microsoft.com/v1.0/chats/{chatId}",
 	},
 	ActivityType = "taskCreated",

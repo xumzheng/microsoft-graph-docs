@@ -16,31 +16,31 @@ var requestBody = new TenantAppManagementPolicy
 		{
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.Passwordaddition,
+				RestrictionType = AppCredentialRestrictionType.PasswordAddition,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-01-01T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.Passwordlifetime,
+				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
 				MaxLifetime = TimeSpan.Parse("P4DT12H30M5S"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2017-01-01T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.Symmetrickeyaddition,
+				RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2021-01-01T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.Custompasswordaddition,
+				RestrictionType = AppCredentialRestrictionType.CustomPasswordAddition,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
 			{
-				RestrictionType = AppCredentialRestrictionType.Symmetrickeylifetime,
+				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
 				MaxLifetime = TimeSpan.Parse("P40D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z"),
 			},
@@ -49,7 +49,7 @@ var requestBody = new TenantAppManagementPolicy
 		{
 			new KeyCredentialConfiguration
 			{
-				RestrictionType = AppKeyCredentialRestrictionType.Asymmetrickeylifetime,
+				RestrictionType = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
 				MaxLifetime = TimeSpan.Parse("P30D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2015-01-01T10:37:00Z"),
 			},

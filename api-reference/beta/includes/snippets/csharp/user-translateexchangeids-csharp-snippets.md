@@ -14,8 +14,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.TranslateExchangeIds.TranslateExch
 		"{rest-formatted-id-1}",
 		"{rest-formatted-id-2}",
 	},
-	SourceIdType = ExchangeIdFormat.Restid,
-	TargetIdType = ExchangeIdFormat.Restimmutableentryid,
+	SourceIdType = ExchangeIdFormat.RestId,
+	TargetIdType = ExchangeIdFormat.RestImmutableEntryId,
 };
 var result = await graphClient.Me.TranslateExchangeIds.PostAsync(requestBody);
 

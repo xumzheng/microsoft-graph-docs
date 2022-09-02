@@ -18,7 +18,7 @@ var requestBody = new CustomSecurityAttributeDefinition
 	Type = "String",
 	UsePreDefinedValuesOnly = true,
 };
-var result = await graphClient.Directory.CustomSecurityAttributeDefinitions.PostAsync(requestBody);
+var result = await graphClient.DirectoryObject.CustomSecurityAttributeDefinitions.PostAsync(requestBody);
 
 
 ```

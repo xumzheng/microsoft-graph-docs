@@ -7,26 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..ExternalConnectors.Schema
+var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.Schema
 {
 	BaseType = "microsoft.graph.externalItem",
-	Properties = new List<Microsoft.Graph.Beta..ExternalConnectors.Property>
+	Properties = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Property>
 	{
 		new Property
 		{
 			Name = "ticketTitle",
-			Type = PropertyType.String,
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
 			IsSearchable = true,
 			IsRetrievable = true,
-			Labels = new List<>
+			Labels = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Label>
 			{
-				Label.Title,
+				Microsoft.Graph.Beta.Models.ExternalConnectors.Label.Title,
 			},
 		},
 		new Property
 		{
 			Name = "priority",
-			Type = PropertyType.String,
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
 			IsQueryable = true,
 			IsRetrievable = true,
 			IsSearchable = false,
@@ -34,7 +34,7 @@ var requestBody = new Microsoft.Graph.Beta..ExternalConnectors.Schema
 		new Property
 		{
 			Name = "assignee",
-			Type = PropertyType.String,
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
 			IsRetrievable = true,
 		},
 	},

@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..Security.RetentionLabel
+var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionLabel
 {
 	OdataType = "#microsoft.graph.security.retentionLabel",
 	DisplayName = "String",
-	BehaviorDuringRetentionPeriod = BehaviorDuringRetentionPeriod.String,
-	ActionAfterRetentionPeriod = ActionAfterRetentionPeriod.String,
-	RetentionTrigger = RetentionTrigger.String,
+	BehaviorDuringRetentionPeriod = Microsoft.Graph.Beta.Models.Security.BehaviorDuringRetentionPeriod.String,
+	ActionAfterRetentionPeriod = Microsoft.Graph.Beta.Models.Security.ActionAfterRetentionPeriod.String,
+	RetentionTrigger = Microsoft.Graph.Beta.Models.Security.RetentionTrigger.String,
 	RetentionDuration = new RetentionDuration
 	{
 		OdataType = "microsoft.graph.security.retentionDuration",
@@ -26,7 +26,7 @@ var requestBody = new Microsoft.Graph.Beta..Security.RetentionLabel
 		OdataType = "microsoft.graph.identitySet",
 	},
 	LabelToBeApplied = "String",
-	DefaultRecordBehavior = DefaultRecordBehavior.String,
+	DefaultRecordBehavior = Microsoft.Graph.Beta.Models.Security.DefaultRecordBehavior.String,
 };
 var result = await graphClient.Security.Labels.RetentionLabels.PostAsync(requestBody);
 

@@ -68,13 +68,13 @@ var requestBody = new AccessReviewScheduleDefinition
 		{
 			Pattern = new RecurrencePattern
 			{
-				Type = RecurrencePatternType.Absolutemonthly,
+				Type = RecurrencePatternType.AbsoluteMonthly,
 				DayOfMonth = 5,
 				Interval = 3,
 			},
 			Range = new RecurrenceRange
 			{
-				Type = RecurrenceRangeType.Noend,
+				Type = RecurrenceRangeType.NoEnd,
 				StartDate = "2020-05-04T00:00:00.000Z",
 			},
 		},

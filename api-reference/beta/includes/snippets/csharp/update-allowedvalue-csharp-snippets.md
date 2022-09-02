@@ -11,7 +11,7 @@ var requestBody = new AllowedValue
 {
 	IsActive = false,
 };
-await graphClient.Directory.CustomSecurityAttributeDefinitions["customSecurityAttributeDefinition-id"].AllowedValues["allowedValue-id"].PatchAsync(requestBody);
+await graphClient.DirectoryObject.CustomSecurityAttributeDefinitions["customSecurityAttributeDefinition-id"].AllowedValues["allowedValue-id"].PatchAsync(requestBody);
 
 
 ```

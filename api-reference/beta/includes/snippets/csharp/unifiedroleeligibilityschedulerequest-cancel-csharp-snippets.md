@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.RoleManagement.Directory.RoleEligibilityScheduleRequests["unifiedRoleEligibilityScheduleRequest-id"].Cancel.PostAsync();
+await graphClient.RoleManagement.DirectoryObject.RoleEligibilityScheduleRequests["unifiedRoleEligibilityScheduleRequest-id"].Cancel.PostAsync();
 
 
 ```

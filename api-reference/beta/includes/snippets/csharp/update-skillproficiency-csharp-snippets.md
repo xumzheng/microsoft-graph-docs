@@ -13,7 +13,7 @@ var requestBody = new SkillProficiency
 	{
 		"Professional",
 	},
-	Proficiency = SkillProficiencyLevel.Advancedprofessional,
+	Proficiency = SkillProficiencyLevel.AdvancedProfessional,
 };
 await graphClient.Me.Profile.Skills["skillProficiency-id"].PatchAsync(requestBody);
 

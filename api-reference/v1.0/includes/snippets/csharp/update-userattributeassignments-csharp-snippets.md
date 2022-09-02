@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new IdentityUserFlowAttributeAssignment
 {
-	UserInputType = IdentityUserFlowAttributeInputType.Textbox,
+	UserInputType = IdentityUserFlowAttributeInputType.TextBox,
 };
 await graphClient.Identity.B2xUserFlows["b2xIdentityUserFlow-id"].UserAttributeAssignments["identityUserFlowAttributeAssignment-id"].PatchAsync(requestBody);
 

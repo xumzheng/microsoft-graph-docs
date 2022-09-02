@@ -9,8 +9,8 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.UnenrollAssets.UnenrollAssetsPostRequestBody
 {
-	UpdateCategory = UpdateCategory.String,
-	Assets = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
+	UpdateCategory = Microsoft.Graph.Beta.Models.WindowsUpdates.UpdateCategory.String,
+	Assets = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{

@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.SendActivityNotification.S
 {
 	Topic = new TeamworkActivityTopic
 	{
-		Source = TeamworkActivityTopicSource.Entityurl,
+		Source = TeamworkActivityTopicSource.EntityUrl,
 		Value = "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/tabs/{tabId}",
 	},
 	ActivityType = "reservationUpdated",

@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Item.Audience.UpdateAudience.UpdateAudiencePostRequestBody
 {
-	AddMembers = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
+	AddMembers = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{
@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 			Id = "String (identifier)",
 		},
 	},
-	RemoveMembers = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
+	RemoveMembers = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{
@@ -25,7 +25,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 			Id = "String (identifier)",
 		},
 	},
-	AddExclusions = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
+	AddExclusions = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{
@@ -33,7 +33,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 			Id = "String (identifier)",
 		},
 	},
-	RemoveExclusions = new List<Microsoft.Graph.Beta..WindowsUpdates.UpdatableAsset>
+	RemoveExclusions = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
 		new UpdatableAsset
 		{

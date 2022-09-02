@@ -12,7 +12,7 @@ var requestBody = new Event
 	Subject = "Let's go for lunch",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.Html,
+		ContentType = BodyType.HTML,
 		Content = "Does next month work for you?",
 	},
 	Start = new DateTimeTimeZone
@@ -42,7 +42,7 @@ var requestBody = new Event
 		},
 	},
 	IsOnlineMeeting = true,
-	OnlineMeetingProvider = OnlineMeetingProviderType.Teamsforbusiness,
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 };
 var result = await graphClient.Me.Calendars["calendar-id"].Events.PostAsync(requestBody);
 

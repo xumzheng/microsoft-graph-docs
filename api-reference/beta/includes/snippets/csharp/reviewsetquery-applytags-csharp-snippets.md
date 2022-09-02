@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.ReviewSets.Item.Queries.Item.ApplyTags.ApplyTagsPostRequestBody
 {
-	TagsToAdd = new List<Microsoft.Graph.Beta..Ediscovery.Tag>
+	TagsToAdd = new List<Microsoft.Graph.Beta.Models.Ediscovery.Tag>
 	{
 		new Tag
 		{

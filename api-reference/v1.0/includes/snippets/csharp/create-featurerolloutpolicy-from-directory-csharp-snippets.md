@@ -11,7 +11,7 @@ var requestBody = new FeatureRolloutPolicy
 {
 	DisplayName = "PassthroughAuthentication rollout policy",
 	Description = "PassthroughAuthentication rollout policy",
-	Feature = StagedFeatureName.Passthroughauthentication,
+	Feature = StagedFeatureName.PassthroughAuthentication,
 	IsEnabled = true,
 	IsAppliedToOrganization = false,
 };

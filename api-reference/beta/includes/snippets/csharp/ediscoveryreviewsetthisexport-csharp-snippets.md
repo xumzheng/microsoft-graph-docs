@@ -11,8 +11,8 @@ var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.R
 {
 	OutputName = "Export via API",
 	Description = "Export for the Contoso investigation",
-	ExportOptions = ExportOptions.Originalfiles,fileinfo,tags,
-	ExportStructure = ExportFileStructure.Directory,
+	ExportOptions = Microsoft.Graph.Beta.Models.Security.ExportOptions.OriginalFiles,fileInfo,tags,
+	ExportStructure = Microsoft.Graph.Beta.Models.Security.ExportFileStructure.Directory,
 };
 await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].Export.PostAsync(requestBody);
 

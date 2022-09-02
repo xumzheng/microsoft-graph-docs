@@ -20,8 +20,8 @@ var requestBody = new ChatMessage
 				"Credit Card Number",
 			},
 		},
-		VerdictDetails = ChatMessagePolicyViolationVerdictDetailsTypes.Allowoverridewithoutjustification,allowfalsepositiveoverride,
-		DlpAction = ChatMessagePolicyViolationDlpActionTypes.Blockaccess,
+		VerdictDetails = ChatMessagePolicyViolationVerdictDetailsTypes.AllowOverrideWithoutJustification,AllowFalsePositiveOverride,
+		DlpAction = ChatMessagePolicyViolationDlpActionTypes.BlockAccess,
 	},
 };
 await graphClient.Teams["team-id"].Channels["channel-id"].Messages["chatMessage-id"].PatchAsync(requestBody);

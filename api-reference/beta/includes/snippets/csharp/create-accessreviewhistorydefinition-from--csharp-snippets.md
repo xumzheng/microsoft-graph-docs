@@ -10,13 +10,13 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new AccessReviewHistoryDefinition
 {
 	DisplayName = "Last quarter's group reviews April 2021",
-	Decisions = new List<>
+	Decisions = new List<AccessReviewHistoryDecisionFilter>
 	{
 		AccessReviewHistoryDecisionFilter.Approve,
 		AccessReviewHistoryDecisionFilter.Deny,
-		AccessReviewHistoryDecisionFilter.Dontknow,
-		AccessReviewHistoryDecisionFilter.Notreviewed,
-		AccessReviewHistoryDecisionFilter.Notnotified,
+		AccessReviewHistoryDecisionFilter.DontKnow,
+		AccessReviewHistoryDecisionFilter.NotReviewed,
+		AccessReviewHistoryDecisionFilter.NotNotified,
 	},
 	ScheduleSettings = new AccessReviewHistoryScheduleSettings
 	{
@@ -30,7 +30,7 @@ var requestBody = new AccessReviewHistoryDefinition
 			},
 			Range = new RecurrenceRange
 			{
-				Type = RecurrenceRangeType.Noend,
+				Type = RecurrenceRangeType.NoEnd,
 				StartDate = "2018-08-03T21:02:30.667Z",
 				AdditionalData = new Dictionary<string, object>
 				{

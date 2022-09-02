@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Chat
 {
-	ChatType = ChatType.Oneonone,
+	ChatType = ChatType.OneOnOne,
 	Members = new List<ConversationMember>
 	{
 		new ConversationMember

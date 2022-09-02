@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Models.ReferenceCreate
 {
 	OdataId = "https://graph.microsoft.com/v1.0/groups/{id}",
 };
-await graphClient.Directory.AdministrativeUnits["administrativeUnit-id"].Members.Ref.PostAsync(requestBody);
+await graphClient.DirectoryObject.AdministrativeUnits["administrativeUnit-id"].Members.Ref.PostAsync(requestBody);
 
 
 ```

@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
-	Action = UnifiedRoleScheduleRequestActions.Adminassign,
+	Action = UnifiedRoleScheduleRequestActions.AdminAssign,
 	Justification = "Assign Groups Admin to IT Helpdesk group",
 	RoleDefinitionId = "fdd7a751-b60b-444a-984c-02652fe8fa1c",
 	DirectoryScopeId = "/",
@@ -19,11 +19,11 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 		StartDateTime = DateTimeOffset.Parse("2022-04-10T00:00:00Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.Noexpiration,
+			Type = ExpirationPatternType.NoExpiration,
 		},
 	},
 };
-var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests.PostAsync(requestBody);
+var result = await graphClient.RoleManagement.DirectoryObject.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
 
 ```

@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Review
 	{
 		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7",
 	},
-	AdditionalDataOptions = AdditionalDataOptions.Linkedfiles,
+	AdditionalDataOptions = Microsoft.Graph.Models.Security.AdditionalDataOptions.LinkedFiles,
 };
 await graphClient.Security.Cases.EdiscoveryCases["ediscoveryCase-id"].ReviewSets["ediscoveryReviewSet-id"].AddToReviewSet.PostAsync(requestBody);
 

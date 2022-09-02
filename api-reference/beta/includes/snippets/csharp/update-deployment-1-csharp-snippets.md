@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta..WindowsUpdates.Deployment
+var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 {
 	OdataType = "#microsoft.graph.windowsUpdates.deployment",
 	State = new DeploymentState
 	{
 		OdataType = "microsoft.graph.windowsUpdates.deploymentState",
-		RequestedValue = RequestedDeploymentStateValue.Paused,
+		RequestedValue = Microsoft.Graph.Beta.Models.WindowsUpdates.RequestedDeploymentStateValue.Paused,
 	},
 };
 await graphClient.Admin.Windows.Updates.Deployments["deployment-id"].PatchAsync(requestBody);

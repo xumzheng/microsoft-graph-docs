@@ -19,11 +19,11 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 		StartDateTime = DateTimeOffset.Parse("2021-07-01T00:00:00Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.Noexpiration,
+			Type = ExpirationPatternType.NoExpiration,
 		},
 	},
 };
-var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests.PostAsync(requestBody);
+var result = await graphClient.RoleManagement.DirectoryObject.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
 
 ```

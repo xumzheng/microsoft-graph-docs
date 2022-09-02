@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new B2cIdentityUserFlow
 {
 	Id = "UserFlowWithAPIConnector",
-	UserFlowType = UserFlowType.Signuporsignin,
+	UserFlowType = UserFlowType.SignUpOrSignIn,
 	UserFlowTypeVersion = 1f,
 	ApiConnectorConfiguration = new UserFlowApiConnectorConfiguration
 	{

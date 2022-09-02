@@ -9,7 +9,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
-	Action = UnifiedRoleScheduleRequestActions.Selfactivate,
+	Action = UnifiedRoleScheduleRequestActions.SelfActivate,
 	PrincipalId = "071cc716-8147-4397-a5ba-b2105951cc0b",
 	RoleDefinitionId = "8424c6f0-a189-499e-bbd0-26c1753c96d4",
 	DirectoryScopeId = "/",
@@ -19,7 +19,7 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 		StartDateTime = DateTimeOffset.Parse("2022-04-14T00:00:00.000Z"),
 		Expiration = new ExpirationPattern
 		{
-			Type = ExpirationPatternType.Afterduration,
+			Type = ExpirationPatternType.AfterDuration,
 			Duration = TimeSpan.Parse("PT5H"),
 		},
 	},
@@ -29,7 +29,7 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 		TicketSystem = "MS Project",
 	},
 };
-var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests.PostAsync(requestBody);
+var result = await graphClient.RoleManagement.DirectoryObject.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
 
 ```

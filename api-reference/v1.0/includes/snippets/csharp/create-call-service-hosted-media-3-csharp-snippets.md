@@ -55,7 +55,7 @@ var requestBody = new Call
 			},
 		},
 	},
-	RequestedModalities = new List<>
+	RequestedModalities = new List<Modality>
 	{
 		Modality.Audio,
 	},

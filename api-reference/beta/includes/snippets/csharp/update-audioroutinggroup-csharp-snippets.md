@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new AudioRoutingGroup
 {
 	Id = "oneToOne",
-	RoutingMode = RoutingMode.Onetoone,
+	RoutingMode = RoutingMode.OneToOne,
 	Sources = new List<string>
 	{
 		"632899f8-2ea1-4604-8413-27bd2892079f",

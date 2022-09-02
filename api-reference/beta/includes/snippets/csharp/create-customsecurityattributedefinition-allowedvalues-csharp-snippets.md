@@ -36,7 +36,7 @@ var requestBody = new CustomSecurityAttributeDefinition
 		},
 	},
 };
-var result = await graphClient.Directory.CustomSecurityAttributeDefinitions.PostAsync(requestBody);
+var result = await graphClient.DirectoryObject.CustomSecurityAttributeDefinitions.PostAsync(requestBody);
 
 
 ```

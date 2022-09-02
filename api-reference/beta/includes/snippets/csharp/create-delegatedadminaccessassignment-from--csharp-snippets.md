@@ -12,7 +12,7 @@ var requestBody = new DelegatedAdminAccessAssignment
 	AccessContainer = new DelegatedAdminAccessContainer
 	{
 		AccessContainerId = "869713c9-0b28-4d08-8949-ae07ae1bf528",
-		AccessContainerType = DelegatedAdminAccessContainerType.Securitygroup,
+		AccessContainerType = DelegatedAdminAccessContainerType.SecurityGroup,
 	},
 	AccessDetails = new DelegatedAdminAccessDetails
 	{

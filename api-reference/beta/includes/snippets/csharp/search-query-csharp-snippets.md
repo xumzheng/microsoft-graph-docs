@@ -13,9 +13,9 @@ var requestBody = new Microsoft.Graph.Beta.Search.Query.QueryPostRequestBody
 	{
 		new SearchRequest
 		{
-			EntityTypes = new List<>
+			EntityTypes = new List<EntityType>
 			{
-				EntityType.Externalitem,
+				EntityType.ExternalItem,
 			},
 			ContentSources = new List<string>
 			{
