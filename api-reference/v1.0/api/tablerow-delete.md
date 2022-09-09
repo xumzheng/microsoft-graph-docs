@@ -1,5 +1,5 @@
 ---
-title: "tableRow: delete"
+title: "workbookTableRow: delete"
 description: "Delete a row from a table."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# WorkbookTableRow: delete
+# workbookTableRow: delete
 
 Namespace: microsoft.graph
 
@@ -44,7 +44,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 
 ### Request
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|
 
 
 ### Response
-Here is an example of the response. 
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
