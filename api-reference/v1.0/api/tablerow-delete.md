@@ -33,7 +33,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|nam
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session ID that determines wheter changes are persisted. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 
