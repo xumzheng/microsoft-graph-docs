@@ -15,13 +15,16 @@ Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 ## Permissions
 
-The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+>[!NOTE]
+>This API requires all the permissions listed in the table.
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
+| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, and Application.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
+| Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, and Application.Read.All |
 
 ## HTTP request
 
