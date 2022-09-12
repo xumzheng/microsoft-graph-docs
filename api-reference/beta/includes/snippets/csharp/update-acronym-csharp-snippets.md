@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var acronym = new Microsoft.Graph.Search.Acronym
+var requestBody = new Microsoft.Graph.Beta.Models.Search.Acronym
 {
-	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
+	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
 };
+await graphClient.Search.Acronyms["acronym-id"].PatchAsync(requestBody);
 
-await graphClient.Search.Acronyms["{search.acronym-id}"]
-	.Request()
-	.UpdateAsync(acronym);
 
 ```

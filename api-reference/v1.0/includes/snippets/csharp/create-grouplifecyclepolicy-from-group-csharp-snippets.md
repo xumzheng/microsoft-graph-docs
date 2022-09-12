@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var groupLifecyclePolicy = new GroupLifecyclePolicy
+var requestBody = new GroupLifecyclePolicy
 {
 	GroupLifetimeInDays = 100,
 	ManagedGroupTypes = "Selected",
-	AlternateNotificationEmails = "admin@contoso.com"
+	AlternateNotificationEmails = "admin@contoso.com",
 };
+var result = await graphClient.GroupLifecyclePolicies.PostAsync(requestBody);
 
-await graphClient.GroupLifecyclePolicies
-	.Request()
-	.AddAsync(groupLifecyclePolicy);
 
 ```

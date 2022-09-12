@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var phoneAuthenticationMethod = new PhoneAuthenticationMethod
+var requestBody = new PhoneAuthenticationMethod
 {
 	PhoneNumber = "+1 2065555555",
-	PhoneType = AuthenticationPhoneType.Mobile
+	PhoneType = AuthenticationPhoneType.Mobile,
 };
+var result = await graphClient.Me.Authentication.PhoneMethods.PostAsync(requestBody);
 
-await graphClient.Me.Authentication.PhoneMethods
-	.Request()
-	.AddAsync(phoneAuthenticationMethod);
 
 ```

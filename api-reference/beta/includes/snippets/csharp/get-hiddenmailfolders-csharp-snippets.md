@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Me.MailFolders.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("includeHiddenFolders", "true")
-};
+	requestConfiguration.QueryParameters.IncludeHiddenFolders = true;
+});
 
-var mailFolders = await graphClient.Me.MailFolders
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

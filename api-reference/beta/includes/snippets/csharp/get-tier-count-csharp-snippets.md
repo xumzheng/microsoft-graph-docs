@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Groups["group-id"].TransitiveMembers.User.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.QueryParameters.OrderBy = new string []{ "displayName" };
+	requestConfiguration.QueryParameters.Search = "\"displayName:tier\"";
+	requestConfiguration.QueryParameters.Select = new string []{ "displayName","id" };
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var user = await graphClient.Groups["{group-id}"].TransitiveMembers
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Search("displayName:tier")
-	.Select("displayName,id")
-	.OrderBy("displayName")
-	.GetAsync();
 
 ```

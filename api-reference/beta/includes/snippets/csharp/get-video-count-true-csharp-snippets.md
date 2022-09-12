@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Groups.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Search = "\"displayName:Video\"";
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var groups = await graphClient.Groups
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Search("displayName:Video")
-	.GetAsync();
 
 ```

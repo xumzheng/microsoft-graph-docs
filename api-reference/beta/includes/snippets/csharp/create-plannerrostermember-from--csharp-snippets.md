@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerRosterMember = new PlannerRosterMember
+var requestBody = new PlannerRosterMember
 {
-	UserId = "String"
+	OdataType = "#microsoft.graph.plannerRosterMember",
+	UserId = "String",
 };
+var result = await graphClient.Planner.Rosters["plannerRoster-id"].Members.PostAsync(requestBody);
 
-await graphClient.Planner.Rosters["{plannerRoster-id}"].Members
-	.Request()
-	.AddAsync(plannerRosterMember);
 
 ```

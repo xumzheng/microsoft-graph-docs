@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var reason = "reason-value";
+var requestBody = new Microsoft.Graph.Beta.PrivilegedRoleAssignments.Item.MakePermanent.MakePermanentPostRequestBody
+{
+	Reason = "reason-value",
+	TicketNumber = "ticketNumber-value",
+	TicketSystem = "ticketSystem-value",
+};
+var result = await graphClient.PrivilegedRoleAssignments["privilegedRoleAssignment-id"].MakePermanent.PostAsync(requestBody);
 
-var ticketNumber = "ticketNumber-value";
-
-var ticketSystem = "ticketSystem-value";
-
-await graphClient.PrivilegedRoleAssignments["{privilegedRoleAssignment-id}"]
-	.MakePermanent(reason,ticketNumber,ticketSystem)
-	.Request()
-	.PostAsync();
 
 ```

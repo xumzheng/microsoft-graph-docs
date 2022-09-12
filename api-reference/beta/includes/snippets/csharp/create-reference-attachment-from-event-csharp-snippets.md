@@ -4,19 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachment = new ReferenceAttachment
+var requestBody = new Attachment
 {
+	OdataType = "#microsoft.graph.referenceAttachment",
 	Name = "Personal pictures",
-	SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-	ProviderType = ReferenceAttachmentProvider.OneDriveConsumer,
-	Permission = ReferenceAttachmentPermission.Edit,
-	IsFolder = true
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"sourceUrl" , "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
+		},
+		{
+			"providerType" , "oneDriveConsumer"
+		},
+		{
+			"permission" , "Edit"
+		},
+		{
+			"isFolder" , "True"
+		},
+	},
 };
+var result = await graphClient.Me.Events["event-id"].Attachments.PostAsync(requestBody);
 
-await graphClient.Me.Events["{event-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
 
 ```

@@ -94,6 +94,8 @@ The following request adds an existing user or group to an administrative unit.
 #### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_administrativeunits_members_ref"
@@ -106,6 +108,13 @@ Content-type: application/json
   "@odata.id":"https://graph.microsoft.com/v1.0/groups/{id}"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-ref-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
@@ -127,6 +136,8 @@ The following example creates a new group in the administrative unit.
 #### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_administrativeunits_members"
@@ -147,6 +158,13 @@ Content-type: application/json
   "securityEnabled": false
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 In the request body, provide the properties of the [group](../resources/group.md) object you want to add.
 

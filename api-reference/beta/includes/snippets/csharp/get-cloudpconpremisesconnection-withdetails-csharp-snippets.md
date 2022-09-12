@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var cloudPcOnPremisesConnection = await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{cloudPcOnPremisesConnection-id}"]
-	.Request()
-	.Select("id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse")
-	.GetAsync();
+var result = await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["cloudPcOnPremisesConnection-id"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse" };
+});
+
 
 ```

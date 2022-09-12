@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var synchronizationJob = new SynchronizationJob
+var requestBody = new SynchronizationJob
 {
-	TemplateId = "BoxOutDelta"
+	TemplateId = "BoxOutDelta",
 };
+var result = await graphClient.ServicePrincipals["servicePrincipal-id"].Synchronization.Jobs.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs
-	.Request()
-	.AddAsync(synchronizationJob);
 
 ```

@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var credentials = new List<SynchronizationSecretKeyStringValuePair>()
+var requestBody = new Microsoft.Graph.Beta.Applications.Item.Synchronization.AcquireAccessToken.AcquireAccessTokenPostRequestBody
 {
-	new SynchronizationSecretKeyStringValuePair
+	Credentials = new List<SynchronizationSecretKeyStringValuePair>
 	{
-	}
+		new SynchronizationSecretKeyStringValuePair
+		{
+			OdataType = "microsoft.graph.synchronizationSecretKeyStringValuePair",
+		},
+	},
 };
+await graphClient.Applications["application-id"].Synchronization.AcquireAccessToken.PostAsync(requestBody);
 
-await graphClient.Applications["{application-id}"].Synchronization
-	.AcquireAccessToken(credentials)
-	.Request()
-	.PostAsync();
 
 ```

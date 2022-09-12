@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var legalHold = new Microsoft.Graph.Ediscovery.LegalHold
+var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.LegalHold
 {
-	Description = "This is a description for a legalHold"
+	Description = "This is a description for a legalHold",
 };
+await graphClient.Compliance.Ediscovery.Cases["case-id"].LegalHolds["legalHold-id"].PatchAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].LegalHolds["{ediscovery.legalHold-id}"]
-	.Request()
-	.UpdateAsync(legalHold);
 
 ```
