@@ -30,8 +30,8 @@ Represents a print job that has been queued for a printer.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|The id of the printjob. Read-only.|
-|displayName|String|The name of the printjob.|
+|id|String|The id of the print job. Read-only.|
+|displayName|String|The name of the print job.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the job was created. Read-only.|
 |status|[printJobStatus](printjobstatus.md)|The status of the print job. Read-only.|
 |configuration|[printJobConfiguration](printJobConfiguration.md)|A group of settings that a printer should use to print a job.|
