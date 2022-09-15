@@ -63,7 +63,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
   "createdDateTime": "String (timestamp)",
   "isFetchable": "Boolean",
   "redirectedFrom": "String",
