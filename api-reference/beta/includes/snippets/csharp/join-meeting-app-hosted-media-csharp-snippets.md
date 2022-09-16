@@ -12,7 +12,7 @@ var requestBody = new Call
 	OdataType = "#microsoft.graph.call",
 	Direction = CallDirection.Outgoing,
 	CallbackUri = "https://bot.contoso.com/callback",
-	RequestedModalities = new List<Modality>
+	RequestedModalities = new List<Modality?>
 	{
 		Modality.Audio,
 	},

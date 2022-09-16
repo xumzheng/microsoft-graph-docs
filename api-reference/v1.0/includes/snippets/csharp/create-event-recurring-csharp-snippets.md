@@ -31,7 +31,7 @@ var requestBody = new Event
 		{
 			Type = RecurrencePatternType.Weekly,
 			Interval = 1,
-			DaysOfWeek = new List<DayOfWeek>
+			DaysOfWeek = new List<DayOfWeek?>
 			{
 				DayOfWeek.Monday,
 			},

@@ -38,7 +38,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Qna
 	{
 		"en-us",
 	},
-	Platforms = new List<DevicePlatformType>
+	Platforms = new List<DevicePlatformType?>
 	{
 		DevicePlatformType.IOS,
 	},

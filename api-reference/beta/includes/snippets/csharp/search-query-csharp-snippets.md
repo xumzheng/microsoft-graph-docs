@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Search.Query.QueryPostRequestBody
 	{
 		new SearchRequest
 		{
-			EntityTypes = new List<EntityType>
+			EntityTypes = new List<EntityType?>
 			{
 				EntityType.ExternalItem,
 			},

@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Answer.AnswerPostRequestBody
 {
 	CallbackUri = "https://bot.contoso.com/api/calls",
-	AcceptedModalities = new List<Modality>
+	AcceptedModalities = new List<Modality?>
 	{
 		Modality.Audio,
 	},

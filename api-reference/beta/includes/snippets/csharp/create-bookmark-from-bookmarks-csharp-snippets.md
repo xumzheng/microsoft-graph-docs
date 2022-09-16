@@ -27,7 +27,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 	},
 	AvailabilityStartDateTime = null,
 	AvailabilityEndDateTime = null,
-	Platforms = new List<DevicePlatformType>
+	Platforms = new List<DevicePlatformType?>
 	{
 		DevicePlatformType.Android,
 	},

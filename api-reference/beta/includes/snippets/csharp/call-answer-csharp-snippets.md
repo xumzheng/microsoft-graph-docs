@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Answer.Answ
 			},
 		},
 	},
-	AcceptedModalities = new List<Modality>
+	AcceptedModalities = new List<Modality?>
 	{
 		Modality.Audio,
 	},

@@ -10,7 +10,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new AccessReviewHistoryDefinition
 {
 	DisplayName = "Last quarter's group reviews April 2021",
-	Decisions = new List<AccessReviewHistoryDecisionFilter>
+	Decisions = new List<AccessReviewHistoryDecisionFilter?>
 	{
 		AccessReviewHistoryDecisionFilter.Approve,
 		AccessReviewHistoryDecisionFilter.Deny,
