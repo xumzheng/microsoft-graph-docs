@@ -78,8 +78,8 @@ var requestBody = new AccessReviewScheduleDefinition
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.Numbered,
-				StartDate = new Date("2021-05-05"),
-				EndDate = new Date("2022-05-05"),
+				StartDate = new Date(DateTime.Parse("2021-05-05")),
+				EndDate = new Date(DateTime.Parse("2022-05-05")),
 			},
 		},
 	},

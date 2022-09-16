@@ -51,7 +51,7 @@ var requestBody = new Event
 		Range = new RecurrenceRange
 		{
 			Type = RecurrenceRangeType.Numbered,
-			StartDate = new Date("2020-02-25"),
+			StartDate = new Date(DateTime.Parse("2020-02-25")),
 			NumberOfOccurrences = 2,
 		},
 	},

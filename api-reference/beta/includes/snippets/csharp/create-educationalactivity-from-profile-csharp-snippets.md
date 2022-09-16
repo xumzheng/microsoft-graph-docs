@@ -9,8 +9,8 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new EducationalActivity
 {
-	CompletionMonthYear = new Date("Date"),
-	EndMonthYear = new Date("Date"),
+	CompletionMonthYear = new Date(DateTime.Parse("Date")),
+	EndMonthYear = new Date(DateTime.Parse("Date")),
 	Institution = new InstitutionData
 	{
 		Description = null,
@@ -39,7 +39,7 @@ var requestBody = new EducationalActivity
 		Notes = null,
 		WebUrl = "https://biz.colostate.edu",
 	},
-	StartMonthYear = new Date("Date"),
+	StartMonthYear = new Date(DateTime.Parse("Date")),
 };
 var result = await graphClient.Me.Profile.EducationalActivities.PostAsync(requestBody);
 

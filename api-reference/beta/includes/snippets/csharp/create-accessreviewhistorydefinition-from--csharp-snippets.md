@@ -31,7 +31,7 @@ var requestBody = new AccessReviewHistoryDefinition
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = new Date("2018-08-03T21:02:30.667Z"),
+				StartDate = new Date(DateTime.Parse("2018-08-03T21:02:30.667Z")),
 				AdditionalData = new Dictionary<string, object>
 				{
 					{

@@ -39,8 +39,8 @@ var requestBody = new Event
 		Range = new RecurrenceRange
 		{
 			Type = RecurrenceRangeType.EndDate,
-			StartDate = new Date("2017-09-04"),
-			EndDate = new Date("2017-12-31"),
+			StartDate = new Date(DateTime.Parse("2017-09-04")),
+			EndDate = new Date(DateTime.Parse("2017-12-31")),
 		},
 	},
 	Location = new Location
