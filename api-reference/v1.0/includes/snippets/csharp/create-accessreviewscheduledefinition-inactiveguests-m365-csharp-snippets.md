@@ -75,7 +75,7 @@ var requestBody = new AccessReviewScheduleDefinition
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = "2020-05-04T00:00:00.000Z",
+				StartDate = new Date("2020-05-04T00:00:00.000Z"),
 			},
 		},
 		DefaultDecisionEnabled = true,

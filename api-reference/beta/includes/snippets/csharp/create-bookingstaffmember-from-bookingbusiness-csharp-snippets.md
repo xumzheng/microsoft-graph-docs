@@ -27,8 +27,8 @@ var requestBody = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					OdataType = "#microsoft.graph.bookingWorkTimeSlot",
-					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
+					End = new Time("17:00:00.0000000"),
+					Start = new Time("08:00:00.0000000"),
 				},
 			},
 			AdditionalData = new Dictionary<string, object>
@@ -50,8 +50,8 @@ var requestBody = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					OdataType = "#microsoft.graph.bookingWorkTimeSlot",
-					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
+					End = new Time("17:00:00.0000000"),
+					Start = new Time("08:00:00.0000000"),
 				},
 			},
 			AdditionalData = new Dictionary<string, object>
@@ -73,8 +73,8 @@ var requestBody = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					OdataType = "#microsoft.graph.bookingWorkTimeSlot",
-					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
+					End = new Time("17:00:00.0000000"),
+					Start = new Time("08:00:00.0000000"),
 				},
 			},
 			AdditionalData = new Dictionary<string, object>
@@ -96,8 +96,8 @@ var requestBody = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					OdataType = "#microsoft.graph.bookingWorkTimeSlot",
-					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
+					End = new Time("17:00:00.0000000"),
+					Start = new Time("08:00:00.0000000"),
 				},
 			},
 			AdditionalData = new Dictionary<string, object>
@@ -119,8 +119,8 @@ var requestBody = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					OdataType = "#microsoft.graph.bookingWorkTimeSlot",
-					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
+					End = new Time("17:00:00.0000000"),
+					Start = new Time("08:00:00.0000000"),
 				},
 			},
 			AdditionalData = new Dictionary<string, object>

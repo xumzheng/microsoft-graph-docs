@@ -46,7 +46,7 @@ var requestBody = new AccessReviewScheduleDefinition
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = "2020-09-08T12:02:30.667Z",
+				StartDate = new Date("2020-09-08T12:02:30.667Z"),
 			},
 		},
 		RecommendationInsightSettings = new List<AccessReviewRecommendationInsightSetting>
