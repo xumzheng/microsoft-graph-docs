@@ -4,20 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var domain = new Domain
+var requestBody = new Domain
 {
 	IsDefault = true,
-	SupportedServices = new List<String>()
+	SupportedServices = new List<string>
 	{
 		"Email",
-		"OfficeCommunicationsOnline"
-	}
+		"OfficeCommunicationsOnline",
+	},
 };
+await graphClient.Domains["domain-id"].PatchAsync(requestBody);
 
-await graphClient.Domains["{domain-id}"]
-	.Request()
-	.UpdateAsync(domain);
 
 ```

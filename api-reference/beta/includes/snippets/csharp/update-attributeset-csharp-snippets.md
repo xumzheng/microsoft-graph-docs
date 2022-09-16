@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attributeSet = new AttributeSet
+var requestBody = new AttributeSet
 {
 	Description = "Attributes for engineering team",
-	MaxAttributesPerSet = 20
+	MaxAttributesPerSet = 20,
 };
+await graphClient.DirectoryObject.AttributeSets["attributeSet-id"].PatchAsync(requestBody);
 
-await graphClient.Directory.AttributeSets["{attributeSet-id}"]
-	.Request()
-	.UpdateAsync(attributeSet);
 
 ```

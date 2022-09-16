@@ -4,11 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.TenantRelationships.ManagedTenants.Tenants["{managedTenants.tenant-id}"]
-	.OffboardTenant()
-	.Request()
-	.PostAsync();
+var result = await graphClient.TenantRelationships.ManagedTenants.Tenants["tenant-id"].OffboardTenant.PostAsync();
+
 
 ```

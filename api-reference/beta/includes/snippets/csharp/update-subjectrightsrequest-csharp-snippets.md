@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var subjectRightsRequest = new SubjectRightsRequestObject
+var requestBody = new SubjectRightsRequest
 {
-	InternalDueDateTime = DateTimeOffset.Parse("2021-08-30T00:00:00Z")
+	OdataType = "#microsoft.graph.subjectRightsRequest",
+	InternalDueDateTime = DateTimeOffset.Parse("2021-08-30T00:00:00Z"),
 };
+await graphClient.Privacy.SubjectRightsRequests["subjectRightsRequest-id"].PatchAsync(requestBody);
 
-await graphClient.Privacy.SubjectRightsRequests["{subjectRightsRequest-id}"]
-	.Request()
-	.UpdateAsync(subjectRightsRequest);
 
 ```

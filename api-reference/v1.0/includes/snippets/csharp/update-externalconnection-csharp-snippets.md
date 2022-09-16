@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var externalConnection = new Microsoft.Graph.ExternalConnectors.ExternalConnection
+var requestBody = new Microsoft.Graph.Models.ExternalConnectors.ExternalConnection
 {
 	Name = "Contoso HR Service Tickets",
-	Description = "Connection to index HR service tickets"
+	Description = "Connection to index HR service tickets",
 };
+await graphClient.External.Connections["externalConnection-id"].PatchAsync(requestBody);
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"]
-	.Request()
-	.UpdateAsync(externalConnection);
 
 ```

@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var internalDomainFederation = new InternalDomainFederation
+var requestBody = new InternalDomainFederation
 {
 	DisplayName = "Contoso name change",
-	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp
+	FederatedIdpMfaBehavior = FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp,
 };
+await graphClient.Domains["domain-id"].FederationConfiguration["internalDomainFederation-id"].PatchAsync(requestBody);
 
-await graphClient.Domains["{domain-id}"].FederationConfiguration["{internalDomainFederation-id}"]
-	.Request()
-	.UpdateAsync(internalDomainFederation);
 
 ```

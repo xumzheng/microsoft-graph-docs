@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationUser = new EducationUser
+var requestBody = new EducationUser
 {
 	DisplayName = "Dion Matheson",
 	GivenName = "Dion",
@@ -19,8 +20,8 @@ var educationUser = new EducationUser
 		User = new Identity
 		{
 			DisplayName = "Susana Rocha",
-			Id = "14012"
-		}
+			Id = "14012",
+		},
 	},
 	ExternalSource = EducationExternalSource.Sis,
 	MailingAddress = new PhysicalAddress
@@ -29,7 +30,7 @@ var educationUser = new EducationUser
 		CountryOrRegion = "United States",
 		PostalCode = "98055",
 		State = "CA",
-		Street = "12345 Main St."
+		Street = "12345 Main St.",
 	},
 	PrimaryRole = EducationUserRole.Student,
 	ResidenceAddress = new PhysicalAddress
@@ -38,12 +39,10 @@ var educationUser = new EducationUser
 		CountryOrRegion = "United States",
 		PostalCode = "98055",
 		State = "CA",
-		Street = "12345 Main St."
-	}
+		Street = "12345 Main St.",
+	},
 };
+var result = await graphClient.Education.Users.PostAsync(requestBody);
 
-await graphClient.Education.Users
-	.Request()
-	.AddAsync(educationUser);
 
 ```

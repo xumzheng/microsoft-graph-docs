@@ -1,0 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new AuthenticationContextClassReference
+{
+	Id = "c1",
+	DisplayName = "Contoso medium",
+	Description = "Medium protection level defined for Contoso policy",
+	IsAvailable = true,
+};
+await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences["authenticationContextClassReference-id"].PatchAsync(requestBody);
+
+
+```

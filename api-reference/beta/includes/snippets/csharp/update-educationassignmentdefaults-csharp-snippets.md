@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationAssignmentDefaults = new EducationAssignmentDefaults
+var requestBody = new EducationAssignmentDefaults
 {
 	AddedStudentAction = EducationAddedStudentAction.AssignIfOpen,
 	AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndTeamOwners,
-	NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+	NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')",
 };
+await graphClient.Education.Classes["educationClass-id"].AssignmentDefaults.PatchAsync(requestBody);
 
-await graphClient.Education.Classes["{educationClass-id}"].AssignmentDefaults
-	.Request()
-	.UpdateAsync(educationAssignmentDefaults);
 
 ```

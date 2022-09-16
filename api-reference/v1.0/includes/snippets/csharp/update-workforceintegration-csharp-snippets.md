@@ -4,24 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var workforceIntegration = new WorkforceIntegration
+var requestBody = new WorkforceIntegration
 {
 	DisplayName = "displayName-value",
 	ApiVersion = 99,
 	Encryption = new WorkforceIntegrationEncryption
 	{
 		Protocol = WorkforceIntegrationEncryptionProtocol.SharedSecret,
-		Secret = "secret-value"
+		Secret = "secret-value",
 	},
 	IsActive = true,
 	Url = "url-value",
-	SupportedEntities = WorkforceIntegrationSupportedEntities.None
+	SupportedEntities = WorkforceIntegrationSupportedEntities.None,
 };
+await graphClient.Teamwork.WorkforceIntegrations["workforceIntegration-id"].PatchAsync(requestBody);
 
-await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegration-id}"]
-	.Request()
-	.UpdateAsync(workforceIntegration);
 
 ```

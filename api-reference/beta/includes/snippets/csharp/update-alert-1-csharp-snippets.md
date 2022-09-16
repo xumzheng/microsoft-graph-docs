@@ -4,31 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var alert = new Alert
+var requestBody = new Alert
 {
 	AssignedTo = "String",
 	ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
-	Comments = new List<String>()
+	Comments = new List<string>
 	{
-		"String"
+		"String",
 	},
 	Feedback = AlertFeedback.Unknown,
 	Status = AlertStatus.Unknown,
-	Tags = new List<String>()
+	Tags = new List<string>
 	{
-		"String"
+		"String",
 	},
 	VendorInformation = new SecurityVendorInformation
 	{
 		Provider = "String",
-		Vendor = "String"
-	}
+		Vendor = "String",
+	},
 };
+await graphClient.Security.Alerts["alert-id"].PatchAsync(requestBody);
 
-await graphClient.Security.Alerts["{alert-id}"]
-	.Request()
-	.UpdateAsync(alert);
 
 ```

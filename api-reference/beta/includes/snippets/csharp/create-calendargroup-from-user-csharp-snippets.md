@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var calendarGroup = new CalendarGroup
+var requestBody = new CalendarGroup
 {
-	Name = "Personal events"
+	Name = "Personal events",
 };
+var result = await graphClient.Me.CalendarGroups.PostAsync(requestBody);
 
-await graphClient.Me.CalendarGroups
-	.Request()
-	.AddAsync(calendarGroup);
 
 ```
