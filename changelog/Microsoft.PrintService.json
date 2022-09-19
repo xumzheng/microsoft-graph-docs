@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayName",
           "ChangeType": "Addition",
-          "Description": "Added the [displayName](https://docs.microsoft.com/en-us/graph/api/resources/intune-printJob?view=graph-rest-beta) resource",
+          "Description": "Added the [displayName](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource",
           "Target": "printJob"
         }
       ],
