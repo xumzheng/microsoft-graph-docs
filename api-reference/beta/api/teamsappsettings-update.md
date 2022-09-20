@@ -51,6 +51,7 @@ PATCH /teamwork/teamsAppSettings
 |Property|Type|Description|
 |:---|:---|:---|
 |isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
+|allowUserRequestsForAppAccess|Boolean|Indicates whether user requests for app approval have been enabled for the tenant. If true, users are able to request approval from the tenant admin for app installation.|
 
 
 
@@ -71,7 +72,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_teamsappsettings"
 }
 -->
-``` http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 Content-Type: application/json
 
@@ -80,30 +81,6 @@ Content-Type: application/json
   "isChatResourceSpecificConsentEnabled": "true"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamsappsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsappsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-teamsappsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-teamsappsettings-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-teamsappsettings-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-teamsappsettings-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

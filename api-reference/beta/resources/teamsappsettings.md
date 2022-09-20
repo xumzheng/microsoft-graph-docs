@@ -27,6 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
+|allowUserRequestsForAppAccess|Boolean|Indicates whether user requests for app approval have been enabled for the tenant. If true, users are able to request approval from the tenant admin for app installation.|
 
 ## Relationships
 None.
@@ -45,7 +46,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.teamsAppSettings",
   "id": "String (identifier)",
-  "isChatResourceSpecificConsentEnabled": "Boolean"
+  "isChatResourceSpecificConsentEnabled": "Boolean",
+  "allowUserRequestsForAppAccess": "Boolean"
 }
 ```
 
