@@ -2269,6 +2269,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ae2bfcd8-1622-4cef-84c1-8806973d46d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat,ResourceSpecificPermissionGrant.ReadForChat.All,ResourceSpecificPermissionGrant.ReadForTeam,ResourceSpecificPermissionGrant.ReadForTeam.All",
+          "ChangeType": "Addition",
+          "Description": "Added new permissions [ResourceSpecificPermissionGrant.ReadForChat](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForChat.All](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForTeam](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForTeam.All](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions)",
+          "Target": "ResourceSpecificPermissionGrant.ReadForChat,ResourceSpecificPermissionGrant.ReadForChat.All,ResourceSpecificPermissionGrant.ReadForTeam,ResourceSpecificPermissionGrant.ReadForTeam.All"
+        }
+      ],
+      "Id": "ae2bfcd8-1622-4cef-84c1-8806973d46d4",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-23T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
           "ApiChange": "Property",
           "ChangedApiName": "members,team",
@@ -5109,20 +5127,20 @@
     {
       "ChangeList": [
         {
-        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
-        "ApiChange": "Member",
-        "ChangedApiName": "emailUser",
-        "ChangeType": "Addition",
-        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
-        "Target": "teamworkUserIdentityType"
-      }
-        ],
-        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
-          "Cloud": "prd",
-          "Version": "beta",
-          "CreatedDateTime": "2022-04-18T20:34:40.595Z",
-          "WorkloadArea": "Teamwork and communications",
-          "SubArea": ""
+          "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+          "ApiChange": "Member",
+          "ChangedApiName": "emailUser",
+          "ChangeType": "Addition",
+          "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
+          "Target": "teamworkUserIdentityType"
+        }
+      ],
+      "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -5431,7 +5449,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-06-15T00:54:29.7304356Z",
-	  "WorkloadArea": "Teamwork and communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5614,7 +5632,7 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "ed2dd249-298c-4f2d-be8f-820179dfa0a7",
@@ -5686,7 +5704,7 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "fcf602d1-fffb-4398-998c-05ce64b1e2a8",

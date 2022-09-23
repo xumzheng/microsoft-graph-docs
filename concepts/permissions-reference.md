@@ -2331,8 +2331,8 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ResourceSpecificPermissionGrant.ReadForChat_ | Read resource specific permissions granted on a chat | Allows the app to read the resource specific permission granted on the chat, on your behalf. | Yes | No |
-| _ResourceSpecificPermissionGrant.ReadForTeam_ | Read resource specific permissions granted on a team | Allows the app to read the resource specific permission granted on the team, on your behalf. | Yes | No |
+| _ResourceSpecificPermissionGrant.ReadForChat.All_ | Read resource specific permissions granted on a chat | Allows the app to read the resource specific permission granted on the chat, on your behalf. | Yes | No |
+| _ResourceSpecificPermissionGrant.ReadForTeam.All_ | Read resource specific permissions granted on a team | Allows the app to read the resource specific permission granted on the team, on your behalf. | Yes | No |
 
 ## Teams device management permissions
 
