@@ -2269,6 +2269,24 @@
     {
       "ChangeList": [
         {
+          "Id": "46b0ea99-e62b-4cc6-85dd-9117a796c440",
+          "ApiChange": "Resource",
+          "ChangedApiName": "TeamsAppInstallation.ReadWriteAndConsentForChat.All,TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All,TeamsAppInstallation.ReadWriteAndConsentForTeam.All,TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All,TeamsAppInstallation.ReadWriteAndConsentForChat,TeamsAppInstallation.ReadWriteAndConsentSelfForChat,TeamsAppInstallation.ReadWriteAndConsentForTeam,TeamsAppInstallation.ReadWriteAndConsentSelfForTeam",
+          "ChangeType": "Addition",
+          "Description": "Added new permissions [TeamsAppInstallation.ReadWriteAndConsentForChat.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteAndConsentForTeam.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions),[TeamsAppInstallation.ReadWriteAndConsentForChat](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteAndConsentSelfForChat](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteAndConsentForTeam](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteAndConsentSelfForTeam](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions)",
+          "Target": "TeamsAppInstallation.ReadWriteAndConsentForChat.All,TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All,TeamsAppInstallation.ReadWriteAndConsentForTeam.All,TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All,TeamsAppInstallation.ReadWriteAndConsentForChat,TeamsAppInstallation.ReadWriteAndConsentSelfForChat,TeamsAppInstallation.ReadWriteAndConsentForTeam,TeamsAppInstallation.ReadWriteAndConsentSelfForTeam"
+        }
+      ],
+      "Id": "46b0ea99-e62b-4cc6-85dd-9117a796c440",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
           "ApiChange": "Property",
           "ChangedApiName": "members,team",
