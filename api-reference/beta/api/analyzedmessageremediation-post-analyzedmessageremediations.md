@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST analyzedMessageRemediations
+POST /security/analyzedMessageRemediations
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/analyzedMessageRemediations
+POST https://graph.microsoft.com/beta/security/analyzedMessageRemediations
 Content-Type: application/json
 Content-length: 355
 
