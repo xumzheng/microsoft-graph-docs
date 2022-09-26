@@ -2,37 +2,37 @@
   "changelog": [
     {
       "ChangeList": [
-        { 
-          "Id": "c3d94be9-ad17-4e01-b03f-13aaf5daa1fa",
+        {
+          "Id": "59155ad3-5a5e-4543-85b8-fefa59d618f7",
           "ApiChange": "Resource",
-          "ChangedApiName": "application",
+          "ChangedApiName": "redirectUriSettings",
           "ChangeType": "Addition",
-          "Description": "Added the defaultRedirectURI property to the [application resource](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0)",
-          "Target": "application"
+          "Description": "Added the [redirectUriSettings](https://docs.microsoft.com/en-us/graph/api/resources/redirectUriSettings?view=graph-rest-1.0) resource type.",
+          "Target": "redirectUriSettings"
         },
-        { 
-          "Id": "c3d94be9-ad17-4e01-b03f-13aaf5daa1fa",
-          "ApiChange": "Resource",
-          "ChangedApiName": "webapplication",
+        {
+          "Id": "59155ad3-5a5e-4543-85b8-fefa59d618f7",
+          "ApiChange": "Property",
+          "ChangedApiName": "redirectUriSettings",
           "ChangeType": "Addition",
-          "Description": "Added to [redirectUriSettings](https://docs.microsoft.com/en-us/graph/api/resources/redirecturisettings?view=graph-rest-1.0) property to the [webApplication resource](https://docs.microsoft.com/en-us/graph/api/resources/webapplication?view=graph-rest-1.0)",
+          "Description": "Added the **redirectUriSettings** property to the [webApplication](https://docs.microsoft.com/en-us/graph/api/resources/webApplication?view=graph-rest-1.0) resource.",
           "Target": "webApplication"
         },
-        { 
-          "Id": "c3d94be9-ad17-4e01-b03f-13aaf5daa1fa",
-          "ApiChange": "Resource",
-          "ChangedApiName": "redirecturisettings",
+        {
+          "Id": "59155ad3-5a5e-4543-85b8-fefa59d618f7",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultRedirectUri",
           "ChangeType": "Addition",
-          "Description": "Added the [redirectUriSettings resource](https://docs.microsoft.com/en-us/graph/api/resources/redirecturisettings?view=graph-rest-1.0)",
-          "Target": "redirecturisettings"
+          "Description": "Added the **defaultRedirectUri** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
         }
       ],
-      "Id": "c3d94be9-ad17-4e01-b03f-13aaf5daa1fa",
+      "Id": "59155ad3-5a5e-4543-85b8-fefa59d618f7",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-09-01T05:09:37Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "CreatedDateTime": "2022-09-26T00:00:00.0462098Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
       "ChangeList": [
