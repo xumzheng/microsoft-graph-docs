@@ -1,9 +1,9 @@
 ---
 title: "profileVideoMetadata resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents metadata of a user's profile video"
+author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "people"
 doc_type: resourcePageType
 ---
 
@@ -13,33 +13,30 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents metadata for the user's profile video, which helps access, play and manage the video.
 
 
-Inherits from [itemFacet](../resources/itemfacet.md).
+This resource type inherits from [itemFacet](../resources/itemfacet.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List profileVideoMetadatas](../api/profile-list-profilevideometadata.md)|[profileVideoMetadata](../resources/profilevideometadata.md) collection|Get a list of the [profileVideoMetadata](../resources/profilevideometadata.md) objects and their properties.|
-|[Create profileVideoMetadata](../api/profile-post-profilevideometadata.md)|[profileVideoMetadata](../resources/profilevideometadata.md)|Create a new [profileVideoMetadata](../resources/profilevideometadata.md) object.|
 |[Get profileVideoMetadata](../api/profilevideometadata-get.md)|[profileVideoMetadata](../resources/profilevideometadata.md)|Read the properties and relationships of a [profileVideoMetadata](../resources/profilevideometadata.md) object.|
 |[Update profileVideoMetadata](../api/profilevideometadata-update.md)|[profileVideoMetadata](../resources/profilevideometadata.md)|Update the properties of a [profileVideoMetadata](../resources/profilevideometadata.md) object.|
-|[Delete profileVideoMetadata](../api/profile-delete-profilevideometadata.md)|None|Delete a [profileVideoMetadata](../resources/profilevideometadata.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|allowedAudiences|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md).The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md).|
+|allowedAudiences|allowedAudiences|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md).The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/intune-identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
+|id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md).|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |isSearchable|Boolean|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md).|
-|profileVideoUrl|String|**TODO: Add Description**|
-|source|[personDataSources](../resources/persondatasources.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
+|profileVideoUrl|String|Provides the url to the actual profile video file|
+|source|[personDataSources](../resources/persondatasources.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 
 ## Relationships
 None.

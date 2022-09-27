@@ -1,9 +1,9 @@
 ---
 title: "Update profileVideoMetadata"
 description: "Update the properties of a profileVideoMetadata object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [profileVideoMetadata](../resources/profilevideometadata.md) object.
+Update the properties of a [profileVideoMetadata](../resources/profilevideometadata.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|User.ReadWrite|
+|Delegated (personal Microsoft account)|User.ReadWrite|
+|Application|User.ReadWrite.All|
 
 ## HTTP request
 
@@ -43,24 +43,15 @@ PATCH /me/profile/profileVideoMetadata
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|allowedAudiences|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. Optional.|
-|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Required.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Required.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Required.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Required.|
-|source|[personDataSources](../resources/persondatasources.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Optional.|
-|isSearchable|Boolean|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Optional.|
-|profileVideoUrl|String|**TODO: Add Description** Optional.|
+|profileVideoUrl|String|Provides the url to the actual profile video file Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [profileVideoMetadata](../resources/profilevideometadata.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -74,22 +65,9 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/me/profile/profileVideoMetadata
 Content-Type: application/json
-Content-length: 384
 
 {
-  "@odata.type": "#microsoft.graph.profileVideoMetadata",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSources"
-  },
-  "isSearchable": "Boolean",
-  "profileVideoUrl": "String"
+  "profileVideoUrl": "https://graph.microsoft.com/v1.0/users/{userId}/drive/items/aHR0cHM6Ly9taWNyb3NvZnQtbXkuc2hhcmV"
 }
 ```
 
@@ -103,29 +81,7 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.profileVideoMetadata",
-  "id": "9e798570-5fab-43fb-152a-3de32e83c8ce",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSources"
-  },
-  "isSearchable": "Boolean",
-  "profileVideoUrl": "String"
-}
 ```
 

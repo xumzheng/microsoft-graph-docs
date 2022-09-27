@@ -1,9 +1,9 @@
 ---
 title: "Get profileVideoMetadata"
-description: "Read the properties and relationships of a profileVideoMetadata object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Retrieve the properties and relationships of a profileVideoMetadata object."
+author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [profileVideoMetadata](../resources/profilevideometadata.md) object.
+Retrieve the properties and relationships of a [profileVideoMetadata](../resources/profilevideometadata.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|User.Read, User.ReadWrite, User.Read.All|
+|Delegated (personal Microsoft account)|User.Read, User.ReadWrite, User.Read.All|
+|Application|User.Read.All, User.ReadWrite.All|
 
 ## HTTP request
 
@@ -79,23 +79,29 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.profileVideoMetadata",
     "id": "9e798570-5fab-43fb-152a-3de32e83c8ce",
-    "allowedAudiences": "String",
-    "inference": {
-      "@odata.type": "microsoft.graph.inferenceData"
-    },
-    "createdDateTime": "String (timestamp)",
+    "allowedAudiences": "organization",
+    "inference": null,
+    "createdDateTime": "2020-07-06T06:34:12.2294868Z",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+      "application": null,
+      "device": null,
+      "user": {
+        "displayName": "Innocenty Popov",
+        "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+      }
     },
-    "lastModifiedDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
     "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+      "application": null,
+      "device": null,
+      "user": {
+        "displayName": "Innocenty Popov",
+        "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+      }
     },
-    "source": {
-      "@odata.type": "microsoft.graph.personDataSources"
-    },
-    "isSearchable": "Boolean",
-    "profileVideoUrl": "String"
+    "source": null,
+    "isSearchable": "true",
+    "profileVideoUrl": "https://graph.microsoft.com/v1.0/users/{userId}/drive/items/01UVTC6G45XUCMK4BMYNH2HUKQ5CMM26K7"
   }
 }
 ```
