@@ -1011,6 +1011,24 @@
       "CreatedDateTime": "2022-05-13T01:31:31.3210645Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "20361528-0b8b-4e0a-ba3a-a3356271c75f",
+          "ApiChange": "Member",
+          "ChangedApiName": "loopPage",
+          "ChangeType": "Addition",
+          "Description": "Added the `loopPage` member to the **plannerPlanContextType** enumeration.",
+          "Target": "plannerPlanContextType"
+        }
+      ],
+      "Id": "20361528-0b8b-4e0a-ba3a-a3356271c75f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-22T00:20:05.2003932Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
