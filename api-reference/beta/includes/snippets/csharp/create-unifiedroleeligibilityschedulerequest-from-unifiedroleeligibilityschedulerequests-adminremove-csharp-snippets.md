@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleEligibilityScheduleRequest = new UnifiedRoleEligibilityScheduleRequestObject
+var requestBody = new UnifiedRoleEligibilityScheduleRequest
 {
 	Action = "AdminRemove",
 	Justification = "Assign User Admin eligibility to IT Helpdesk (User) group",
@@ -19,13 +20,11 @@ var unifiedRoleEligibilityScheduleRequest = new UnifiedRoleEligibilityScheduleRe
 		Expiration = new ExpirationPattern
 		{
 			EndDateTime = DateTimeOffset.Parse("2022-06-30T00:00:00Z"),
-			Type = ExpirationPatternType.AfterDateTime
-		}
-	}
+			Type = ExpirationPatternType.AfterDateTime,
+		},
+	},
 };
+var result = await graphClient.RoleManagement.DirectoryObject.RoleEligibilityScheduleRequests.PostAsync(requestBody);
 
-await graphClient.RoleManagement.Directory.RoleEligibilityScheduleRequests
-	.Request()
-	.AddAsync(unifiedRoleEligibilityScheduleRequest);
 
 ```

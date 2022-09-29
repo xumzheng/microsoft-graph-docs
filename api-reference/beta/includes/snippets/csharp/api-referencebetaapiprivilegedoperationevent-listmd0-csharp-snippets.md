@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var privilegedOperationEvents = await graphClient.PrivilegedOperationEvents
-	.Request()
-	.Filter("requestType eq 'Assign'")
-	.GetAsync();
+var result = await graphClient.PrivilegedOperationEvents.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "requestType eq 'Assign'";
+});
+
 
 ```

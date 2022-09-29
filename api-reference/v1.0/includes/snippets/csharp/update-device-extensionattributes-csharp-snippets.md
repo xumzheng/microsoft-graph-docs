@@ -4,18 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var device = new Device
+var requestBody = new Device
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"extensionAttributes", "{\"extensionAttribute1\":\"BYOD-Device\"}"}
-	}
+		{
+			"extensionAttributes" , new 
+			{
+				ExtensionAttribute1 = "BYOD-Device",
+			}
+		},
+	},
 };
+var result = await graphClient.Devices["device-id"].PatchAsync(requestBody);
 
-await graphClient.Devices["{device-id}"]
-	.Request()
-	.UpdateAsync(device);
 
 ```

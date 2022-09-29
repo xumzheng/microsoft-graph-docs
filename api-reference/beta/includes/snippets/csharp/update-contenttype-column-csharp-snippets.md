@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var columnDefinition = new ColumnDefinition
+var requestBody = new ColumnDefinition
 {
 	Required = true,
 	Hidden = false,
-	PropagateChanges = false
+	PropagateChanges = false,
 };
+var result = await graphClient.Sites["site-id"].ContentTypes["contentType-id"].Columns["columnDefinition-id"].PatchAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].Columns["{columnDefinition-id}"]
-	.Request()
-	.UpdateAsync(columnDefinition);
 
 ```

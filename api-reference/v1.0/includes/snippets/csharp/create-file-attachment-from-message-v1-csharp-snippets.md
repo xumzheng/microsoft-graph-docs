@@ -4,16 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachment = new FileAttachment
+var requestBody = new Attachment
 {
+	OdataType = "#microsoft.graph.fileAttachment",
 	Name = "smile",
-	ContentBytes = Convert.FromBase64String("R0lGODdhEAYEAA7")
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"contentBytes" , "R0lGODdhEAYEAA7"
+		},
+	},
 };
+var result = await graphClient.Me.Messages["message-id"].Attachments.PostAsync(requestBody);
 
-await graphClient.Me.Messages["{message-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
 
 ```

@@ -4,23 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var directoryObject = new Group
+var requestBody = new Microsoft.Graph.DirectoryNamespace.AdministrativeUnits.Item.Members.MembersPostRequestBody
 {
-	Description = "Self help community for golf",
-	DisplayName = "Golf Assist",
-	GroupTypes = new List<String>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		"Unified"
+		{
+			"@odata.type" , "#Microsoft.Graph.Group"
+		},
+		{
+			"description" , "Self help community for golf"
+		},
+		{
+			"displayName" , "Golf Assist"
+		},
+		{
+			"groupTypes" , new List<string>
+			{
+				"Unified",
+			}
+		},
+		{
+			"mailEnabled" , true
+		},
+		{
+			"mailNickname" , "golfassist"
+		},
+		{
+			"securityEnabled" , false
+		},
 	},
-	MailEnabled = true,
-	MailNickname = "golfassist",
-	SecurityEnabled = false
 };
+await graphClient.DirectoryObject.AdministrativeUnits["administrativeUnit-id"].Members.PostAsync(requestBody);
 
-await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].Members
-	.Request()
-	.AddAsync(directoryObject);
 
 ```
