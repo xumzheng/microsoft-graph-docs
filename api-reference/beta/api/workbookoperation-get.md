@@ -72,14 +72,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/ope
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-workbookoperation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-workbookoperation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 

@@ -53,6 +53,8 @@ If successful, this method returns a `202 Accepted` response code and an [addLar
 
 The following example shows how to add the large gallery view to a call.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "addLargeGalleryView-1",
@@ -67,6 +69,13 @@ Content-Length: 46
   "clientContext": "785f4929-92ca-497b-863f-c778c77c9758"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/addlargegalleryview-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

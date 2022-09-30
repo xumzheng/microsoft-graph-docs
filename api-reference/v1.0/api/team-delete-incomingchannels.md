@@ -67,14 +67,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-sharedwithchannelteaminfo-for-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-sharedwithchannelteaminfo-for-channel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-sharedwithchannelteaminfo-for-channel-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 

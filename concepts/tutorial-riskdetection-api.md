@@ -29,6 +29,8 @@ To successfully complete this tutorial, make sure that you have the required pre
 For this tutorial, you create a user account that is used to test risk detections. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_create_user"
@@ -48,6 +50,13 @@ Content-type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-create-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 <!-- {
@@ -86,6 +95,8 @@ One way to trigger a risk detection on a user account is to sign in to the Azure
 When you signed in to the Azure portal using the anonymous browser, an `anonymizedIPAddress` risk event was detected. You can use the `$filter` query parameter to get only the risk detections that are associated with the **MyTestUser1** user account.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_get_riskdetections"
@@ -93,6 +104,13 @@ When you signed in to the Azure portal using the anonymous browser, an `anonymiz
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-get-riskdetections-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -158,6 +176,8 @@ When setting up an account for MFA, you can choose from several methods for auth
 The conditional access policy provides the ability to set the conditions of the policy to identify sign-in risk levels. Risk levels can be `low`, `medium`, `high`, `none`. In the response that was returned from listing the risk detections for **MyTestUser1**, we can see that the risk level is `medium`. This example shows how to require MFA for **MyTestUser1** who was identified as a risky user.
 
 #### Request 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
@@ -191,6 +211,13 @@ Content-type: application/json
   } 
 } 
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-create-conditionalaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response 
 <!-- {
@@ -260,6 +287,8 @@ By signing in to the anonymous browser, a risk is detected, but it is remediated
 Because MFA was completed. Now, when you list risk detections the **riskState** shows the event as `remediated`.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_get_riskdetections_filter"
@@ -267,6 +296,13 @@ Because MFA was completed. Now, when you list risk detections the **riskState** 
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-get-riskdetections-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -313,6 +349,8 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 Instead of providing the opportunity for the user to self-remediate, you can block the user from signing in. In this step, you create a new conditional access policy that blocks the user from signing in if a medium or high risk detection occurs. The difference in policies is that the **builtInControls** is set to `block`.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
@@ -346,6 +384,13 @@ Content-type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-create-conditionalaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 <!-- {
@@ -412,6 +457,8 @@ If you believe the user is not at risk, and you don’t want to enforce a condit
 ### Dismiss the risky user
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_riskyusers.dismiss"
@@ -427,6 +474,13 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-riskyusersdismiss-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response"
@@ -440,13 +494,22 @@ HTTP/1.1 204 No Content
 After dismissing the risk user, you can see in the response when listing risky users that the **MyTestUser1** user account now has a risk level of `none` and a riskState of `dismissed`.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_riskyusers.list"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userDisplayName eq 'MyTestUser1'
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-riskyuserslist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -482,6 +545,8 @@ In this step, you remove the resources that you created.
 Delete the **MyTestUser1** user account.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_delete_user"
@@ -489,6 +554,13 @@ Delete the **MyTestUser1** user account.
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-delete-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -503,6 +575,8 @@ No Content - 204
 Delete the conditional access policy that you created.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_delete_group"
@@ -510,6 +584,13 @@ Delete the conditional access policy that you created.
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/9ad78153-b1f8-4714-adc1-1445727678a8
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-delete-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {

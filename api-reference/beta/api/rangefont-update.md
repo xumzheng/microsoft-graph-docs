@@ -81,14 +81,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-rangefont-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangefont-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangefont-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response

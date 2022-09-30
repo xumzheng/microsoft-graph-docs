@@ -20,6 +20,8 @@ Teams message search also looks for attachments. The [supported file types](/Sha
 #### Request
 The following example queries Teams chat messages in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by descending **dateTime**.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "basicSearchTeamsMessage"
@@ -45,6 +47,13 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/basicsearchteamsmessage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -107,6 +116,8 @@ Content-type: application/json
 #### Request
 The following example uses the search query shown in Example 1, and sorts the results by relevance. 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "searchTopTeamsMessage"
@@ -133,6 +144,13 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/searchtopteamsmessage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -209,6 +227,8 @@ You can use the following  scope terms in your [Keyword Query Language (KQL)](/s
 #### Request
 The following example shows how to search a message that contains Contoso that Bob sent to Alice after 2022-07-14.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "searchTeamsMessageWithKQL"
@@ -235,6 +255,13 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/searchteamsmessagewithkql-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {

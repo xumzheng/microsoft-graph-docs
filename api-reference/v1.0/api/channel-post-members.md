@@ -76,26 +76,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/channel-add-member-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/channel-add-member-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/channel-add-member-1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -129,7 +109,6 @@ Content-type: application/json
 The following is an example of a request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_add_member_2",
@@ -139,32 +118,6 @@ The following is an example of a request.
 ```http
 POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/channel-add-member-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/channel-add-member-2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/channel-add-member-2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -220,26 +173,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-3-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/channel-add-member-3-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/channel-add-member-3-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/channel-add-member-3-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -293,26 +226,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shared-channel-add-intra-tenant-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shared-channel-add-intra-tenant-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shared-channel-add-intra-tenant-member-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/shared-channel-add-intra-tenant-member-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/shared-channel-add-intra-tenant-member-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/shared-channel-add-intra-tenant-member-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -376,26 +289,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/shared-channel-add-x-tenant-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shared-channel-add-x-tenant-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shared-channel-add-x-tenant-member-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/shared-channel-add-x-tenant-member-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/shared-channel-add-x-tenant-member-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/shared-channel-add-x-tenant-member-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -453,26 +346,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-6-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-6-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-6-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/channel-add-member-6-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/channel-add-member-6-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/channel-add-member-6-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

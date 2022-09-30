@@ -79,14 +79,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflowversion-task-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-workflowversion-task-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-workflowversion-task-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 

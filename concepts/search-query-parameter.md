@@ -135,6 +135,8 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 
 For example:
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "search_groups"
@@ -143,10 +145,19 @@ For example:
 GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo OR mail:onevideo"
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/search-groups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
 
 `$search` can be used together with `$filter`:
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "search_filter_groups"
@@ -154,6 +165,13 @@ This looks for all groups with display names that has `one` and `video` tokens, 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/search-filter-groups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 This looks for all mail-enabled groups with display names that look like "OneVideo".
 The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`.

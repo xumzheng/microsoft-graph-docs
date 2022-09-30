@@ -62,7 +62,6 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 #### Request
 Here is an example of a request that includes a file as an attachment when creating a post.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_with_post",
@@ -86,30 +85,8 @@ Content-type: application/json
   }
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-with-post-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-with-post-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-with-post-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-file-attachment-with-post-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-file-attachment-with-post-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
+
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
@@ -125,7 +102,6 @@ HTTP/1.1 202 Accpted
 Here is an example of a request that includes an event as an attachment when creating a post.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_item_attachment_with_post",
@@ -165,28 +141,6 @@ Content-type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-item-attachment-with-post-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-item-attachment-with-post-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-item-attachment-with-post-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-item-attachment-with-post-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-item-attachment-with-post-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 
 #### Response
@@ -206,7 +160,6 @@ Here is an example of a request that includes a reference attachment when creati
 The attachment points to a folder on OneDrive.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_with_post",
@@ -233,28 +186,6 @@ Content-type: application/json
   }
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-with-post-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-reference-attachment-with-post-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-reference-attachment-with-post-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-reference-attachment-with-post-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response

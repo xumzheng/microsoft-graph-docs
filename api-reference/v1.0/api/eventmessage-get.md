@@ -67,26 +67,6 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-eventmessage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-eventmessage-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-eventmessage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-eventmessage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -171,7 +151,6 @@ The second example shows how to get the event associated with an event message. 
 the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 
 and apply an $expand parameter to get the properties of the event.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA="],
@@ -180,34 +159,8 @@ and apply an $expand parameter to get the properties of the event.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA=?$expand=microsoft.graph.eventMessage/event
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-event-based-on-eventmessage-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-event-based-on-eventmessage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-event-based-on-eventmessage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
+
 Here is an example of the response. The properties of the associated event are returned in the response. 
 Note: The response object shown here might be shortened for readability.
 <!-- {

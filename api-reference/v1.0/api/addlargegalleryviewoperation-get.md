@@ -52,6 +52,8 @@ If successful, this method returns a `200 OK` response code and an [addLargeGall
 
 The following is an example of a request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-addLargeGalleryViewOperation-1",
@@ -61,6 +63,13 @@ The following is an example of a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-addlargegalleryviewoperation-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

@@ -120,6 +120,8 @@ For details about what topics are supported for each scenario, see the specific 
 This example shows how you can send an activity feed notification for a new task created in a chat. In this case, the Teams app must be installed in a chat with Id `chatId` and user `569363e2-4e49-4661-87f2-16f245c5d66a` must be part of the chat as well.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification_for_task_created_in_chat"
@@ -151,6 +153,13 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-for-task-created-in-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -166,6 +175,8 @@ HTTP/1.1 204 No Content
 This example shows how you can send an activity feed notification for a team. This example notifies the team owner about a new task created that requires their attention.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_task_created_in_teams"
@@ -197,6 +208,13 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-task-created-in-teams-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -217,6 +235,8 @@ The Yammer notification example shown earlier uses a custom topic because Yammer
 > `webUrl` must start with the Microsoft Teams domain (teams.microsoft.com for example).
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_customer_task"
@@ -249,6 +269,13 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-customer-task-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -267,6 +294,8 @@ This example shows how you can send an activity feed notification to all team me
 > The ability to send notifications to all team members is currently only available in beta.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_about_event"
@@ -293,6 +322,13 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-about-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -311,6 +347,8 @@ This example shows how you can send an activity feed notification to all channel
 > The ability to send notifications to all channel members is currently only available in beta.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_channelmember_about_event"
@@ -338,6 +376,13 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-channelmember-about-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -356,6 +401,8 @@ This example shows how you can send an activity feed notification to all chat me
 > The ability to send notifications to all chat members is currently only available in beta.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification_chatmember_about_event"
@@ -383,6 +430,13 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-chatmember-about-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -402,6 +456,8 @@ The following example shows how to send an activity feed notification to multipl
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamwork_sendactivitynotificationtorecipients"
@@ -443,6 +499,13 @@ Content-Type: application/json
     ] 
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

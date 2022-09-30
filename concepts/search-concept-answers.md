@@ -20,6 +20,8 @@ When triggered by a defined acronym or keyword, these search answers appear at t
 The following request creates a new acronym that will display on the search results page when a user searches for it.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_acronym_from_acronyms"
@@ -36,6 +38,13 @@ Content-Type: application/json
   "state": "published"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-acronym-from-acronyms-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 Here is an example of the response.
@@ -58,6 +67,8 @@ Content-Type: application/json
 The following request creates a new bookmark that will display on the search results page when a user searches for at least one of its keywords.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookmark_from_bookmarks"
@@ -78,6 +89,13 @@ Content-Type: application/json
   "state": "published"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-bookmark-from-bookmarks-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 Here is an example of the response.

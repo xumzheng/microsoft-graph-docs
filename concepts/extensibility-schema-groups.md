@@ -37,13 +37,22 @@ with additive changes. In general, this operation returns any schema extensions 
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schemaextensions-groups-get"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/schemaextensions-groups-get-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

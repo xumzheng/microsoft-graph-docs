@@ -161,22 +161,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentpolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-accesspackageassignmentpolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -260,7 +244,6 @@ To remove the collection of **customExtensionHandlers** and their associated cus
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy_delete_customExtensionHandlers"
@@ -290,28 +273,6 @@ Content-Type: application/json
     "customExtensionHandlers": []
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-delete-customextensionhandlers-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentpolicy-delete-customextensionhandlers-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-accesspackageassignmentpolicy-delete-customextensionhandlers-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

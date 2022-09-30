@@ -70,14 +70,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{upda
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-updatableasset-for-updategroupid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-updatableasset-for-updategroupid-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-for-updategroupid-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 

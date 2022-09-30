@@ -31,6 +31,8 @@ To complete this tutorial, you need the following resources and privileges:
 Create three new test users by running the request below three times, changing the values of the **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record the IDs of the three new test users.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-createUser"
@@ -50,6 +52,13 @@ Content-Type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-createuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -84,6 +93,8 @@ In this call, replace:
 + `d3bcdff4-4f80-4418-a65e-7bf3778c5dca` with the ID of your group owner.
 + `3b8ceebc-49e6-4e0c-9e14-c906374a7ef6` and `bf59c5ba-5304-4c9b-9192-e5a4cb8444e7` with the IDs of the two group members.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-creategroup"
@@ -108,6 +119,13 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-creategroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -151,6 +169,8 @@ The access review has the following settings:
 + It's a one-time access review that ends after five days. Therefore, once access is granted, the user doesn't need to self-attest again within the access review period.
 + The principals who are defined in the scope of the review will receive email notifications and reminders prompting them to self-attest to their need to maintain access.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-create_accessReviewScheduleDefinition"
@@ -193,6 +213,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-create-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 <!-- {
@@ -259,13 +286,22 @@ Once the **status** of the access review is marked as `InProgress`, run the foll
 
 In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review definition returned in Step 3.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstance"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-list-accessreviewinstance-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -310,13 +346,22 @@ You can confirm that all members of the **Building security** group were contact
 
 In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-list_contactedReviewers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/contactedReviewers
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-list-contactedreviewers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -360,13 +405,22 @@ You're interested in the decisions taken for the instance of the access review.
 
 In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition and the instance.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstanceDecisionItem"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-list-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -606,6 +660,8 @@ Delete the resources that you created for this tutorial—the **Building securit
 
 In this call, replace `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the **id** of **Building security**.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-delete_group"
@@ -613,6 +669,13 @@ In this call, replace `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the **id** of 
 ```http
 DELETE https://graph.microsoft.com/beta/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-delete-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -629,6 +692,8 @@ HTTP/1.1 204 No Content
 In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review definition. Because the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-delete_accessReviewScheduleDefinition"
@@ -636,6 +701,13 @@ In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-delete-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -651,6 +723,8 @@ In this call, replace `3b8ceebc-49e6-4e0c-9e14-c906374a7ef6` with the ID of one 
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-delete_user"
@@ -658,6 +732,13 @@ In this call, replace `3b8ceebc-49e6-4e0c-9e14-c906374a7ef6` with the ID of one 
 ```http
 DELETE https://graph.microsoft.com/beta/users/3b8ceebc-49e6-4e0c-9e14-c906374a7ef6
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-delete-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {

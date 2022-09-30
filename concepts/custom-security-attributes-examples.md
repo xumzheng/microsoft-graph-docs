@@ -43,6 +43,8 @@ The following example shows how to assign a custom security attribute with a str
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_assign_user_string"
@@ -62,6 +64,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-string-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -83,6 +92,8 @@ The following example shows how to assign a custom security attribute with a str
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_assign_serviceprincipal_string"
@@ -102,6 +113,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-serviceprincipal-string-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -123,6 +141,8 @@ The following example shows how to assign a custom security attribute with a mul
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_assign_user_multistring"
@@ -144,6 +164,13 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-multistring-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response"
@@ -164,6 +191,8 @@ The following example shows how to assign a custom security attribute with an in
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_assign_user_integer"
@@ -185,6 +214,13 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-integer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response"
@@ -205,6 +241,8 @@ The following example shows how to assign a custom security attribute with a mul
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_assign_user_multiinteger"
@@ -226,6 +264,13 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-multiinteger-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response"
@@ -246,6 +291,8 @@ The following example shows how to assign a custom security attribute with a Boo
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_assign_user_boolean"
@@ -265,6 +312,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-assign-user-boolean-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -288,6 +342,8 @@ The following example shows how to update a custom security attribute assignment
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_update_user_integer"
@@ -308,6 +364,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-update-user-integer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -330,6 +393,8 @@ The following example shows how to update a custom security attribute assignment
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_update_user_boolean"
@@ -349,6 +414,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-update-user-boolean-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -371,6 +443,8 @@ The following example shows how to remove a custom security attribute assignment
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_remove_from_user_singlevalue"
@@ -391,6 +465,13 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-remove-from-user-singlevalue-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 <!-- {
   "blockType": "response"
@@ -410,6 +491,8 @@ The following example shows how to remove a custom security attribute assignment
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customsecurityattribute_remove_from_user_multivalue"
@@ -429,6 +512,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-remove-from-user-multivalue-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {

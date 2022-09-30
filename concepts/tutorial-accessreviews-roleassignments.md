@@ -45,6 +45,8 @@ The following access review schedule definition has the following settings:
 
 In the following request, replace the `f674a1c9-4a40-439c-bfa3-4b61a9f29d85` with the value of your user ID. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-priviledroles-create"
@@ -105,6 +107,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-priviledroles-create-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -207,6 +216,8 @@ Each access review instance represents *each recurrence with each unique resourc
 
 In the following request, replace `57457d7c-af59-470c-ae71-aa72c657fe0f` with the value of the access review that you created in Step 1.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-priviegedroles-getinstances"
@@ -214,6 +225,13 @@ In the following request, replace `57457d7c-af59-470c-ae71-aa72c657fe0f` with th
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-priviegedroles-getinstances-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -288,6 +306,8 @@ In the following request, replace the following values:
 + `57457d7c-af59-470c-ae71-aa72c657fe0f` with the value of the access review that you created in Step 1.
 + `ad0dd148-5d16-4cfd-86e9-ab502f819aaf` with the value of the access review instance you'd like to retrieve decisions for.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-priviegedroles-getnodecisions"
@@ -295,6 +315,13 @@ In the following request, replace the following values:
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-priviegedroles-getnodecisions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -485,6 +512,8 @@ In this tutorial, you won't stop the instance manually, but you'll let it end au
 As an admin, after the **status** of the access review instance is set to `Completed`, you can apply the decisions.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-priviegedroles-applydecisions"
@@ -492,6 +521,13 @@ As an admin, after the **status** of the access review instance is set to `Compl
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/applyDecisions
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-priviegedroles-applydecisions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 <!-- {
@@ -511,6 +547,8 @@ After the decisions have been applied, the **status** of the access review insta
 Contoso's auditors are reviewing of all decisions to grant or deny access to privileged roles in the organization. You'll retrieve access review decision logs for all access reviews scoped to privileged roles. In this example, you'll retrieve decision logs for the **accessReviewScheduleDefinition** you created in Step 1.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-priviegedroles-getdecisions"
@@ -518,6 +556,13 @@ Contoso's auditors are reviewing of all decisions to grant or deny access to pri
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-priviegedroles-getdecisions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -750,6 +795,8 @@ The downloadUri property contains a link to download the history report in an Ex
 Delete the **accessReviewScheduleDefinition** object that you created for this tutorial. Because the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, decisions.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-priviegedroles-deleteaccessreview"
@@ -757,6 +804,13 @@ Delete the **accessReviewScheduleDefinition** object that you created for this t
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-priviegedroles-deleteaccessreview-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 <!-- {

@@ -39,6 +39,8 @@ Create a user who must reset their password at first sign in. From this step, re
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-createUser"
@@ -58,6 +60,13 @@ Content-Type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-assignaadroles-createuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -87,6 +96,8 @@ Create a group that’s assignable to an Azure AD role. Assign yourself as the g
 
 Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your ID and `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's ID.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-createSecurityGroup"
@@ -111,6 +122,13 @@ Content-type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-assignaadroles-createsecuritygroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -151,6 +169,8 @@ Now that you have a security group, assign it as eligible for the User Administr
 
 Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the value of the **id** of the **IT Helpdesk (User)** security group. This **principalId** identifies the assignee of eligibility to the User Administrator role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-unifiedRoleEligibilityScheduleRequest_create"
@@ -174,6 +194,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-assignaadroles-unifiedroleeligibilityschedulerequest-create-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -224,6 +251,8 @@ While the group members are now eligible for the User Administrator role, they'r
 
 In the following request, replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignments_list"
@@ -231,6 +260,13 @@ In the following request, replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with th
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-assignaadroles-roleassignments-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -271,6 +307,8 @@ To activate a role, call the `roleAssignmentScheduleRequests` endpoint. In this 
 + The **roleDefinitionId** is the **id** of the role you're eligible for, in this case, the User Administrator role.
 + Enter the details of the ticket system that provides an auditable justification for activating the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignmentScheduleRequests_selfActivate"
@@ -298,6 +336,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-assignaadroles-roleassignmentschedulerequests-selfactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -358,6 +403,8 @@ Sign in as the Global Administrator and delete the following resources that you 
 
 Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_revoke"
@@ -374,6 +421,13 @@ Content-type: application/json
 }
 
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-assignaadroles-roleeligibilityschedulerequests-revoke-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -403,6 +457,8 @@ Content-type: application/json
 
 Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-group_delete"
@@ -410,6 +466,13 @@ Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Us
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-assignaadroles-group-delete-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -427,6 +490,8 @@ HTTP/1.1 204 No Content
 
 Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-user_delete"
@@ -434,6 +499,13 @@ Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-assignaadroles-user-delete-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
