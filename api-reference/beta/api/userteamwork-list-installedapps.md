@@ -18,7 +18,7 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
-## Supported environments
+### Supported environments
 
 The following table shows the permission types required to call this API for different clouds supported by graph.
 
