@@ -399,6 +399,42 @@
     {
       "ChangeList": [
         {
+          "Id": "ae2bfcd8-1622-4cef-84c1-8806973d46d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat,ResourceSpecificPermissionGrant.ReadForChat.All,ResourceSpecificPermissionGrant.ReadForTeam,ResourceSpecificPermissionGrant.ReadForTeam.All",
+          "ChangeType": "Addition",
+          "Description": "Added new permissions [ResourceSpecificPermissionGrant.ReadForChat](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForChat.All](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForTeam](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForTeam.All](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions)",
+          "Target": "ResourceSpecificPermissionGrant.ReadForChat,ResourceSpecificPermissionGrant.ReadForChat.All,ResourceSpecificPermissionGrant.ReadForTeam,ResourceSpecificPermissionGrant.ReadForTeam.All"
+        }
+      ],
+      "Id": "ae2bfcd8-1622-4cef-84c1-8806973d46d4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-10T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5BE9AC45-5141-44CE-A3D2-B3B6625D03E0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat,ResourceSpecificPermissionGrant.ReadForChat.All,ResourceSpecificPermissionGrant.ReadForTeam,ResourceSpecificPermissionGrant.ReadForTeam.All",
+          "ChangeType": "Addition",
+          "Description": "Added new permissions [ResourceSpecificPermissionGrant.ReadForChat](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForChat.All](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForTeam](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions), [ResourceSpecificPermissionGrant.ReadForTeam.All](https://learn.microsoft.com/en-us/graph/permissions-reference#Resource-specific-permission-grant-permissions)",
+          "Target": "ResourceSpecificPermissionGrant.ReadForChat,ResourceSpecificPermissionGrant.ReadForChat.All,ResourceSpecificPermissionGrant.ReadForTeam,ResourceSpecificPermissionGrant.ReadForTeam.All"
+        }
+      ],
+      "Id": "5BE9AC45-5141-44CE-A3D2-B3B6625D03E0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-10T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0C3FCFD0-DDEF-45A9-8071-CF48DCA98503",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkOnlineMeetingInfo",
