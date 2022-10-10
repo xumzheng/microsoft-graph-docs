@@ -20,9 +20,9 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 
 ## Supported environments
 
-This API is supported in the following environments
+The following table shows the permission types required to call this API for different clouds supported by graph.
 
-|Environment type      | Supported permission types              |
+|Environment      | Supported permission types              |
 |:--------------------|:---------------------------------------------------------|
 | Public | Application context, Delegated (work or school account) |
 | GCC | Application context, Delegated (work or school account)   |
