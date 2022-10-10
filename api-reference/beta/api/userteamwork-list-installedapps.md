@@ -18,6 +18,16 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
+## Supported environments
+
+This API is supported in the following environments
+
+|Environment type      | Supported permission types              |
+|:--------------------|:---------------------------------------------------------|
+| Public | Application context, Delegated (work or school account) |
+| GCC | Application context, Delegated (work or school account)   |
+|GCCH | Not supported |
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
