@@ -2324,15 +2324,15 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ResourceSpecificPermissionGrant.ReadForChat_ | Read resource specific permissions granted on a chat | Allows the app to read the resource specific permission granted on the chat, on your behalf. | Yes | No |
-| _ResourceSpecificPermissionGrant.ReadForTeam_ | Read resource specific permissions granted on a team | Allows the app to read the resource specific permission granted on the team, on your behalf. | Yes | No |
+| _ResourceSpecificPermissionGrant.ReadForChat_ | Read resource specific permissions granted on a chat | Allows the app to read the resource specific permissions granted on the chat, on behalf of the signed-in user. | Yes | No |
+| _ResourceSpecificPermissionGrant.ReadForTeam_ | Read resource specific permissions granted on a team | Allows the app to read the resource specific permissions granted on the team, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ResourceSpecificPermissionGrant.ReadForChat.All_ | Read resource specific permissions granted on a chat | Allows the app to read the resource specific permission granted on the chat, on your behalf. | Yes | No |
-| _ResourceSpecificPermissionGrant.ReadForTeam.All_ | Read resource specific permissions granted on a team | Allows the app to read the resource specific permission granted on the team, on your behalf. | Yes | No |
+| _ResourceSpecificPermissionGrant.ReadForChat.All_ | Read resource specific permissions granted on a chat | Allows the app to read the resource specific permissions granted on the chat without a signed-in user. | Yes | No |
+| _ResourceSpecificPermissionGrant.ReadForTeam.All_ | Read resource specific permissions granted on a team | Allows the app to read the resource specific permissions granted on the team without a signed-in user. | Yes | No |
 
 ## Teams device management permissions
 
