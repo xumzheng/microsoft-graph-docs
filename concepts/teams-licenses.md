@@ -133,7 +133,7 @@ Please note that the organization that owns the app registration is responsible 
 
 The following describes how to monitor costs billed for the metered Microsoft Teams APIs described above.
 
-A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Control) permissions](https://docs.microsoft.com/azure/cost-management-billing/costs/assign-access-acm-data) can use **Cost Analysis** to track metered API consumption as follows: 
+A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data) can use **Cost Analysis** to track metered API consumption as follows: 
 
 1. Sign in to the Azure portal at https://portal.azure.com. 
 2. Navigate to [**Cost Management + Billing > Cost Management > Cost analysis**](https://ms.portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/costanalysis) 
@@ -146,7 +146,7 @@ You can also use the pie charts near the bottom to further breakdown the costs f
 
 ![Screenshot of "Cost analysis"](images/cost-analysis-sample.png)
 
-For more cost management information, please visit [Cost Management + Billing documentation](https://learn.microsoft.com/azure/cost-management-billing/).
+For more cost management information, please visit [Cost Management + Billing documentation](/azure/cost-management-billing/).
 
 ## Frequently asked questions
 
