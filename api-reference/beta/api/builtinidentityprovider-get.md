@@ -1,9 +1,9 @@
 ---
 title: "Get builtInIdentityProvider"
 description: "Read the properties and relationships of a builtInIdentityProvider object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "IoanPana"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+
+The work or school account needs to belong to one of the following roles:
+
+* Global Administrator
+* External Identity Provider Administrator
+* External ID user flow administrator
 
 ## HTTP request
 
@@ -58,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/builtInIdentityProvider
+GET https://graph.microsoft.com/beta/builtInIdentityProvider/{id}
 ```
 
 

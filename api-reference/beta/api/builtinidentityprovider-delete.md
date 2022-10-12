@@ -1,9 +1,9 @@
 ---
 title: "Delete builtInIdentityProvider"
 description: "Deletes a builtInIdentityProvider object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "IoanPana"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not Supported|
+|Application|IdentityProvider.ReadWrite.All|
+
+The work or school account needs to belong to one of the following roles:
+
+* Global Administrator
+* External Identity Provider Administrator
 
 ## HTTP request
 
@@ -55,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/builtInIdentityProvider
+DELETE https://graph.microsoft.com/beta/builtInIdentityProvider{id}
 ```
 
 

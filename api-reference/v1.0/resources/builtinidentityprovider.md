@@ -1,9 +1,9 @@
 ---
 title: "builtInIdentityProvider resource type"
-description: "Represents built-in identity providers in an Azure Active Directory tenant."
-author: "namkedia"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -11,9 +11,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents built-in identity providers with [External Identities](/azure/active-directory/external-identities/) for an Azure Active Directory tenant.
 
-For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be an Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
+
+**TODO: Add Description**
+
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
@@ -22,7 +23,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 |:---|:---|:---|
 |[List builtInIdentityProviders](../api/builtinidentityprovider-list.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md) collection|Get a list of the [builtInIdentityProvider](../resources/builtinidentityprovider.md) objects and their properties.|
 |[Get builtInIdentityProvider](../api/builtinidentityprovider-get.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Read the properties and relationships of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
-|[Update builtInIdentityProvider](../api/builtinidentityprovider-update.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Update the properties of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object(only MSA).|
+|[Update builtInIdentityProvider](../api/builtinidentityprovider-update.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Update the properties of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
 |[Delete builtInIdentityProvider](../api/builtinidentityprovider-delete.md)|None|Deletes a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
 
 ## Properties
