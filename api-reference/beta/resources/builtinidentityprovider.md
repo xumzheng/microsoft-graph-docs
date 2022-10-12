@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents built-in identity providers with [External Identities](/azure/active-directory/external-identities/) for an Azure Active Directory tenant.
+
 For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be an Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
@@ -23,7 +24,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 |:---|:---|:---|
 |[List builtInIdentityProviders](../api/builtinidentityprovider-list.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md) collection|Get a list of the [builtInIdentityProvider](../resources/builtinidentityprovider.md) objects and their properties.|
 |[Get builtInIdentityProvider](../api/builtinidentityprovider-get.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Read the properties and relationships of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
-|[Update builtInIdentityProvider](../api/builtinidentityprovider-update.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Update the properties of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
+|[Update builtInIdentityProvider](../api/builtinidentityprovider-update.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Update the properties of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object (only MSA).|
 |[Delete builtInIdentityProvider](../api/builtinidentityprovider-delete.md)|None|Deletes a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
 
 ## Properties

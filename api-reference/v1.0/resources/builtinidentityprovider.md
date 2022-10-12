@@ -22,7 +22,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 |:---|:---|:---|
 |[List builtInIdentityProviders](../api/builtinidentityprovider-list.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md) collection|Get a list of the [builtInIdentityProvider](../resources/builtinidentityprovider.md) objects and their properties.|
 |[Get builtInIdentityProvider](../api/builtinidentityprovider-get.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Read the properties and relationships of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
-|[Update builtInIdentityProvider](../api/builtinidentityprovider-update.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Update the properties of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
+|[Update builtInIdentityProvider](../api/builtinidentityprovider-update.md)|[builtInIdentityProvider](../resources/builtinidentityprovider.md)|Update the properties of a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object(only MSA).|
 |[Delete builtInIdentityProvider](../api/builtinidentityprovider-delete.md)|None|Deletes a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object.|
 
 ## Properties
