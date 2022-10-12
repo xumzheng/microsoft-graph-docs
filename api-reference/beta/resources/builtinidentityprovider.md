@@ -30,10 +30,10 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|identityProviderType|String|**TODO: Add Description**|
-|state|identityProviderState|**TODO: Add Description**.The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
+|identityProviderType|String|The identity provider type. For a B2B scenario, possible values: `AADSignup`, `MicrosoftAccount`, `EmailOTP`. Required.|
+|state|identityProviderState|The identity provider state value.The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
