@@ -20,7 +20,7 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 
 ### Supported environments
 
-The following table shows the permission types supported supported for this API in different clouds.
+The following table shows the permission types that are supported for this API in different clouds.
 
 |Environment      | Supported permission types              |
 |:--------------------|:---------------------------------------------------------|
