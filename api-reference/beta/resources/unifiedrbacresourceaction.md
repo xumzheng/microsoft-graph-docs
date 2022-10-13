@@ -28,6 +28,7 @@ Represents an operation that an authorized principal is allowed to perform.
 |description|String|Description for the action. Supports `$filter` (`eq`). |
 |id|String|Unique identifier for an action within the resource namespace, such as `microsoft.insights-programs-update-patch`. Cannot include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
 |name|String|Name for the action within the resource namespace, such as `microsoft.insights/programs/update`. Can include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
+|authenticationContextId|String| AuthContext ID|
 |resourceScopeId|String|Not implemented.|
 
 ## Relationships
