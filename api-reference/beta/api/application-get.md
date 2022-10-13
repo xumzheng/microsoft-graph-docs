@@ -25,10 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
-Replace `{id}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
+Replace `{applicationObjectId}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /applications/{id}
+GET /applications/{applicationObjectId}
 ```
 ## Optional query parameters
 
@@ -133,7 +133,7 @@ Content-type: application/json
            "isCertifiedByMicrosoft": true,
            "lastCertificationDateTime": "2021-05-11T23:26:20Z",
            "certificationExpirationDateTime": "2022-05-11T23:26:20Z",
-           "certificationDetailsUrl": "https://docs.microsoft.com/microsoft-365-app-certification/forward/azure/631a96bc-a705-4eda-9f99-fdaf9f54f6a2"
+           "certificationDetailsUrl": "https://learn.microsoft.com/microsoft-365-app-certification/forward/azure/631a96bc-a705-4eda-9f99-fdaf9f54f6a2"
     },
     "tags": [],
     "tokenEncryptionKeyId": null,
