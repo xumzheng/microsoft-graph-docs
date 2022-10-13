@@ -27,7 +27,6 @@ The work or school account needs to belong to one of the following roles:
 
 * Global Administrator
 * External Identity Provider Administrator
-* External ID user flow administrator
 
 ## HTTP request
 
@@ -36,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 }
 -->
 ``` http
-PATCH /builtInIdentityProvider
+PATCH /identity/identityProviders/{id}
 ```
 
 ## Request headers
@@ -60,7 +59,7 @@ The work or school account needs to be Global Administrator.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code. If unsuccessful, a 4xx error will be returned with specific details.
 
 ## Examples
 
@@ -72,14 +71,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/builtInIdentityProvider/MSASignup-OAUTH
+PATCH https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 Content-Type: application/json
-Content-length: 152
 
 {
   "@odata.type": "#microsoft.graph.builtInIdentityProvider",
-  "displayName": "String",
-  "identityProviderType": "String",
   "state": "String"
 }
 ```

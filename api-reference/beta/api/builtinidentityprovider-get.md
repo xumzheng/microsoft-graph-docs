@@ -36,7 +36,7 @@ The work or school account needs to belong to one of the following roles:
 }
 -->
 ``` http
-GET /builtInIdentityProvider
+GET /identity/identityProviders/{id}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [builtInIdentityProvider](../resources/builtinidentityprovider.md) object in the response body for an Azure AD tenant.
 
 ## Examples
 
@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/builtInIdentityProvider/{id}
+GET https://graph.microsoft.com/beta/identity/identityProviders/{id}
 ```
 
 
