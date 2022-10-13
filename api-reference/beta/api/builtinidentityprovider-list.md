@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/builtInIdentityProvider/
+GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
 
