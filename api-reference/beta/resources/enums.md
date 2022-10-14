@@ -3312,3 +3312,10 @@ Possible values for user account types (group membership), per Windows definitio
 |sharedContent|
 |unknownFutureValue|
 
+### identityProviderState values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
