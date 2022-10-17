@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "blackAndWhitePageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `blackAndWhitePageCount` property to the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/intune-printUsage?view=graph-rest-beta) resource.",
+          "Target": "printUsage"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "colorPageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `colorPageCount` property to the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/intune-printUsage?view=graph-rest-beta) resource.",
+          "Target": "printUsage"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "completedJobCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `completedJobCount` property to the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/intune-printUsage?view=graph-rest-beta) resource.",
+          "Target": "printUsage"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "doubleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `doubleSidedSheetCount` property to the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/intune-printUsage?view=graph-rest-beta) resource.",
+          "Target": "printUsage"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "mediaSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `mediaSheetCount` property to the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/intune-printUsage?view=graph-rest-beta) resource.",
+          "Target": "printUsage"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `pageCount` property to the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/intune-printUsage?view=graph-rest-beta) resource.",
+          "Target": "printUsage"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "singleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `singleSidedSheetCount` property to the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/intune-printUsage?view=graph-rest-beta) resource.",
+          "Target": "printUsage"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dailyPrintUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the **dailyPrintUsage** relationship to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/intune-reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-14T23:44:41.2143686Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
           "ApiChange": "Resource",
           "ChangedApiName": "printerShareViewpoint",
@@ -54,7 +128,7 @@
     },
     {
       "ChangeList": [
-                {
+        {
           "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
           "ApiChange": "Enum type",
           "ChangedApiName": "printerStatus",
