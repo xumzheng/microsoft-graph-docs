@@ -2053,6 +2053,8 @@ items:
               href: api/printusagebyprinter-get.md
             - name: List a printer's archived print jobs
               href: api/reports-getprinterarchivedprintjobs.md
+            - name: List daily reports
+              href: api/reportroot-list-dailyprintusage.md
             - name: List daily reports by printer
               href: api/reportroot-list-dailyprintusagebyprinter.md
             - name: List monthly reports by printer
