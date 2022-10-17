@@ -23,10 +23,10 @@ Threat submission root is a unified threat submission node under `security`. It 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|emailThreats|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md) collection|The collection contains email threat submissions.|
-|emailThreatSubmissionPolicies|[microsoft.graph.security.emailThreatSubmissionPolicy](../resources/security-emailthreatsubmissionpolicy.md) collection|The collection contains email threat submission policies.|
-|fileThreats|[microsoft.graph.security.fileThreatSubmission](../resources/security-filethreatsubmission.md) collection|The collection contains file threat submissions.|
-|urlThreats|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md) collection|The collection contains url threat submissions.|
+| emailThreats | [microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md) collection. | Reports suspected spam, malware or phishing emails to Microsoft Defender for Office 365. |
+| emailThreatSubmissionPolicies | [microsoft.graph.security.emailThreatSubmissionPolicy](../resources/security-emailthreatsubmissionpolicy.md) collection. | Represents the guidelines of an organization to report potential threats and spam messages. |
+| fileThreats | [microsoft.graph.security.fileThreatSubmission](../resources/security-filethreatsubmission.md) collection. | Represents threat submissions related to a file. |
+| urlThreats | [microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md) collection. | Represent a threat submission related to a URL. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
