@@ -20,7 +20,6 @@ Describes print activity during a specified time period (usageDate).
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List (daily)](../api/reportroot-list-dailyprintusage.md) | [printUsage](printusage.md) | Get a list of daily print usage summaries. |
-| [Get](../api/printusage-get.md) | [printUsage](printusage.md) | Read properties and relationships of a printUsage object. |
 
 ## Properties
 | Property     | Type        | Description |
