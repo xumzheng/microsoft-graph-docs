@@ -28,7 +28,7 @@ Describes print activity during a specified time period (usageDate).
 |usageDate|Date|The date associated with these statistics.|
 |completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed on the associated date.|
 |completedColorJobCount|Int64|The number of color print jobs completed on the associated date.|
-|completedJobCount|Int64|The number of print jobs that were completed, on the associated date.|
+|completedJobCount|Int64|The number of print jobs that were completed on the associated date.|
 |incompleteJobCount|Int64|The number of print jobs that were queued, but not completed, on the associated date.|
 |pageCount|Int64|The number of pages printed on the associated date.|
 |blackAndWhitePageCount|Int64|The number of black and white pages printed on the associated date.|
