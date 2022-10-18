@@ -76,19 +76,18 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.printUsage",
-      "id": "b8c7e11d-1331-a37a-453c-974aeb0c504d",
-      "usageDate": "Date",
-      "completedBlackAndWhiteJobCount": "45",
-      "completedColorJobCount": "15",
-      "incompleteJobCount": "2",
-      "completedJobCount": "60",
-      "pageCount": "105",
-      "colorPageCount": "15",
-      "blackAndWhitePageCount": "90",
-      "mediaSheetCount": "105",
-      "doubleSidedSheetCount": "45",
-      "singleSidedSheetCount": "15"
+      "id": "Oct-09-2022-dailyPrintUsageSummary",
+      "usageDate": "2022-10-10",
+      "completedBlackAndWhiteJobCount": 45,
+      "completedColorJobCount": 15,
+      "incompleteJobCount": 2,
+      "completedJobCount": 60,
+      "pageCount": 105,
+      "colorPageCount": 15,
+      "blackAndWhitePageCount": 90,
+      "mediaSheetCount": 105,
+      "doubleSidedSheetCount": 45,
+      "singleSidedSheetCount": 15
     }
   ]
 }
