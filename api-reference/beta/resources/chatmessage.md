@@ -63,8 +63,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |:---------------|:--------|:----------|
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |References to attached objects like files, tabs, meetings etc.|
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the chat message. Representation is specified by the contentType inside the body. The content is always in HTML if the chat message contains a [chatMessageMention](chatmessagemention.md). |
-|channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
-|chatId|string|If the message was sent in a **chat**, represents the identity of the **chat**.|
+|channelIdentity|[channelIdentity](channelidentity.md)|Read-only. If the message was sent in a channel, represents identity of the channel.|
+|chatId|string|Read-only. If the message was sent in a **chat**, represents the identity of the **chat**.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the chat message was deleted, or null if not deleted. |
 |etag| string | Read-only. Version number of the chat message. |
