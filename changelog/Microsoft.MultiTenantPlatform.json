@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "895de97f-f3f9-4428-9f9c-d18e66f94cb9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "eaAppPerformances",
+          "ChangeType": "Addition",
+          "Description": "Added the **eaAppPerformances** navigation property to [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "895de97f-f3f9-4428-9f9c-d18e66f94cb9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "eaDeviceAppPerformances",
+          "ChangeType": "Addition",
+          "Description": "Added the **eaDeviceAppPerformances** navigation property to [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "895de97f-f3f9-4428-9f9c-d18e66f94cb9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "eaDeviceHealthStatuses",
+          "ChangeType": "Addition",
+          "Description": "Added the **eaDeviceHealthStatuses** navigation property to [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "895de97f-f3f9-4428-9f9c-d18e66f94cb9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eaAppPerformance",
+          "ChangeType": "Addition",
+          "Description": "Added the [eaAppPerformance](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-eaAppPerformance?view=graph-rest-beta) resource",
+          "Target": "eaAppPerformance"
+        },
+        {
+          "Id": "895de97f-f3f9-4428-9f9c-d18e66f94cb9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eaDeviceAppPerformance",
+          "ChangeType": "Addition",
+          "Description": "Added the [eaDeviceAppPerformance](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-eaDeviceAppPerformance?view=graph-rest-beta) resource",
+          "Target": "eaDeviceAppPerformance"
+        },
+        {
+          "Id": "895de97f-f3f9-4428-9f9c-d18e66f94cb9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eaDeviceHealthStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [eaDeviceHealthStatus](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-eaDeviceHealthStatus?view=graph-rest-beta) resource",
+          "Target": "eaDeviceHealthStatus"
+        }
+      ],
+      "Id": "895de97f-f3f9-4428-9f9c-d18e66f94cb9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-24T19:13:00.9195065Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Multi-tenant management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a673cdb1-b8a3-4de7-bae3-188e3b9f5b53",
           "ApiChange": "Property",
           "ChangedApiName": "deviceSpecification",
