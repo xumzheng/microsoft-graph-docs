@@ -3,7 +3,8 @@ title: "eaDeviceAppPerformance resource type"
 description: "**TODO: Add Description**"
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"doc_type: resourcePageType
+ms.prod: "microsoft-365-lighthouse"
+doc_type: resourcePageType
 ---
 
 # eaDeviceAppPerformance resource type
