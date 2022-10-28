@@ -11,9 +11,44 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a content sharing session in a call. When a content sharing session starts in a call, a notification is sent if the isContentSharingNotificationEnabled is set to true in the [incomingCallOptions](incomingcalloptions.md) (when answering a call) or [outgoingCallOptions](outgoingcalloptions.md) (when creating a call or joining a meeting)
+Represents a content sharing session in a call. 
 
-## contentSharingSession Notifications
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+
+| Method                                                                     | Return Type                                                  | Description                                                     |
+|:---------------------------------------------------------------------------|:-------------------------------------------------------------|:----------------------------------------------------------------|
+| [Get contentSharingSession](../api/contentsharingsession-get.md )          | [contentSharingSession](contentsharingsession.md)            | Retrieve the properties of a **contentSharingSession** object in a call.  |
+| [List contentSharingSessions](../api/call-list-contentsharingsessions.md ) | [contentSharingSession](contentsharingsession.md) collection | Retrieve a list of **contentSharingSession** objects in a call. |
+
+
+## Properties
+
+| Property | Type   | Description                                                                                                    |
+|:---------|:-------|:---------------------------------------------------------------------------------------------------------------|
+| id       | String | Unique identifier for the content sharing session. Read-only. Inherited from [entity](../resources/entity.md). |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.contentSharingSession"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.contentSharingSession",
+  "id": "String (identifier)"
+}
+```
+
+## Receiving contentSharingSession Notifications
+
+When a content sharing session starts in a call, a notification is sent if the isContentSharingNotificationEnabled is set to true in the [incomingCallOptions](incomingcalloptions.md) (when answering a call) or [outgoingCallOptions](outgoingcalloptions.md) (when creating a call or joining a meeting)
+
 
 #### Notification - content sharing started
 
@@ -102,37 +137,5 @@ Content-Type: application/json
       ]
     }
   ]
-}
-```
-
-Inherits from [entity](../resources/entity.md).
-
-## Methods
-
-| Method                                                                     | Return Type                                                  | Description                                                     |
-|:---------------------------------------------------------------------------|:-------------------------------------------------------------|:----------------------------------------------------------------|
-| [Get contentSharingSession](../api/contentsharingsession-get.md )          | [contentSharingSession](contentsharingsession.md)            | Retrieve the properties of a **contentSharingSession** object in a call.  |
-| [List contentSharingSessions](../api/call-list-contentsharingsessions.md ) | [contentSharingSession](contentsharingsession.md) collection | Retrieve a list of **contentSharingSession** objects in a call. |
-
-
-## Properties
-
-| Property | Type   | Description                                                                                                    |
-|:---------|:-------|:---------------------------------------------------------------------------------------------------------------|
-| id       | String | Unique identifier for the content sharing session. Read-only. Inherited from [entity](../resources/entity.md). |
-
-## JSON representation
-
-The following is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.contentSharingSession"
-}
--->
-``` json
-{
-  "@odata.type": "#microsoft.graph.contentSharingSession",
-  "id": "String (identifier)"
 }
 ```
