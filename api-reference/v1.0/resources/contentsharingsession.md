@@ -15,6 +15,7 @@ Represents a content sharing session in a call.
 
 Inherits from [entity](../resources/entity.md).
 
+
 ## Methods
 
 | Method                                                                     | Return Type                                                  | Description                                                     |
