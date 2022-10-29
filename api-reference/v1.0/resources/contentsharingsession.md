@@ -46,9 +46,9 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## Receiving contentSharingSession Notifications
+## Receiving contentSharingSession notifications
 
-When a content sharing session starts in a call, a notification is sent if the isContentSharingNotificationEnabled is set to true in the [incomingCallOptions](incomingcalloptions.md) (when answering a call) or [outgoingCallOptions](outgoingcalloptions.md) (when creating a call or joining a meeting)
+When a content sharing session starts in a call, a notification is sent if **isContentSharingNotificationEnabled** is set to `true` in the [incomingCallOptions](incomingcalloptions.md) (when answering a call) or [outgoingCallOptions](outgoingcalloptions.md) (when creating a call or joining a meeting).
 
 
 #### Notification - content sharing started
