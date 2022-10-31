@@ -20,7 +20,8 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 
 ### Supported national cloud environments
 
-The following table shows the permission types  supported for this API in national clouds.
+
+The following table shows the permission types supported for this API in different national clouds.
 
 |National cloud environment      | Supported permission types              |
 |:--------------------|:---------------------------------------------------------|
