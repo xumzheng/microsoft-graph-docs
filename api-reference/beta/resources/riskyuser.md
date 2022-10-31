@@ -1,7 +1,7 @@
 ---
 title: "riskyUser resource type"
 description: "Represents Azure Active Directory (Azure AD) users who are at risk."
-author: "cloudhandler"
+author: "ebasseri"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
