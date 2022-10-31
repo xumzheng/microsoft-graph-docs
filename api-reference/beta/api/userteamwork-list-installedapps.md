@@ -18,11 +18,11 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
-### Supported environments
+### Supported national cloud environments
 
-The following table shows the permission types supported supported for this API in different clouds.
+The following table shows the permission types  supported for this API in national clouds.
 
-|Environment      | Supported permission types              |
+|National cloud environment      | Supported permission types              |
 |:--------------------|:---------------------------------------------------------|
 | Public | Application context, Delegated (work or school account) |
 | GCC | Application context, Delegated (work or school account)   |
