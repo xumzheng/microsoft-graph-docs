@@ -67,6 +67,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
 |chatId|string|If the message was sent in a chat, represents the identity of the chat.|
+|chatIdentity|[chatIdentity](chatIdentity.md)|If the message was sent in a chat, represents the identity of the chat.|
 |channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
 |webUrl|string|Read-only. Link to the message in Microsoft Teams.|
 |eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only. If present, represents details of an event that happened in a **chat**, a **channel**, or a **team**, for example, adding new members. For event messages, the **messageType** property will be set to `systemEventMessage`.|
@@ -95,6 +96,7 @@ The following is a JSON representation of the resource.
     "reactions",
     "policyViolation",
     "chatId",
+    "chatIdentity",
     "channelIdentity"
   ],
   "baseType": "microsoft.graph.entity",
@@ -123,6 +125,7 @@ The following is a JSON representation of the resource.
   "locale": "string",
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
+  "chatIdentity": {"@odata.type": "microsoft.graph.chatIdentity"},
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
   "webUrl": "string",
   "eventDetail": {

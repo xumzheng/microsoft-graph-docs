@@ -65,6 +65,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the chat message. Representation is specified by the contentType inside the body. The content is always in HTML if the chat message contains a [chatMessageMention](chatmessagemention.md). |
 |channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
 |chatId|string|If the message was sent in a **chat**, represents the identity of the **chat**.|
+|chatIdentity|[chatIdentity](chatIdentity.md)|If the message was sent in a chat, represents the identity of the chat.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the chat message was deleted, or null if not deleted. |
 |etag| string | Read-only. Version number of the chat message. |
@@ -109,6 +110,7 @@ The following is a JSON representation of the resource.
     "reactions",
     "policyViolation",
     "chatId",
+    "chatIdentity",
     "channelIdentity"
   ],
   "baseType": "microsoft.graph.entity",
@@ -137,6 +139,7 @@ The following is a JSON representation of the resource.
   "locale": "string",
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
+  "chatIdentity": {"@odata.type": "microsoft.graph.chatIdentity"},
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
   "webUrl": "string",
   "eventDetail": {

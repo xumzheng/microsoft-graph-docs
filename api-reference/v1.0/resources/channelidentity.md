@@ -8,9 +8,6 @@ ms.prod: "teamwork"
 ---
 # channelIdentity resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-
 Contains basic identification information about a channel in Microsoft Teams.
 
 ## Properties
@@ -19,6 +16,7 @@ Contains basic identification information about a channel in Microsoft Teams.
 |:---------------|:--------|:----------|
 |channelId|string|  The identity of the channel in which the message was posted.|
 |teamId|string|  The identity of the team in which the message was posted.|
+|tenantId|string|  The identity of the tenantId in which the channel belongs to.|
 
 ## JSON representation
 
@@ -35,7 +33,8 @@ The following is a JSON representation of the resource.
 ```json
 {
    "channelId":"string",
-   "teamId":"string"
+   "teamId":"string",
+   "tenantId":"string",
 }
 ```
 

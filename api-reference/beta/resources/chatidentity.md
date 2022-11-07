@@ -1,25 +1,24 @@
 ---
-title: "channelIdentity resource type"
-description: "Represents the identity of a channel in Microsoft Teams."
+title: "chatIdentity resource type"
+description: "Represents the identity of a chat in Microsoft Teams."
 author: "Kanaka"
 doc_type: resourcePageType
 ms.localizationpriority: medium
 ms.prod: "teamwork"
 ---
-# channelIdentity resource type
+# chatIdentity resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Contains basic identification information about a channel in Microsoft Teams.
+Contains basic identification information about a chat in Microsoft Teams.
 
 ## Properties
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|channelId|string|  The identity of the channel in which the message was posted.|
-|teamId|string|  The identity of the team in which the message was posted.|
-|tenantId|string|  The identity of the tenantId in which the channel belongs to.|
+|chatId|string|  The identity of the chat in which the message was posted.|
+|tenantId|string|  The identity of the tenantId in which the chat belongs to.|
 
 ## JSON representation
 
@@ -30,13 +29,12 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     
   ],
-  "@odata.type": "microsoft.graph.channelIdentity"
+  "@odata.type": "microsoft.graph.chatIdentity"
 }-->
 
 ```json
 {
-   "channelId":"string",
-   "teamId":"string",
+   "chatId":"string",
    "tenantId":"string",
 }
 ```
@@ -45,7 +43,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "channel identity  resource",
+  "description": "chat identity  resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
