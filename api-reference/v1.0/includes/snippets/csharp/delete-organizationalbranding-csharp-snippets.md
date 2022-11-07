@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Organization["{organization-id}"].Branding
-	.Request()
-	.DeleteAsync();
+var requestBody = new Microsoft.Graph.Organization.Item.Branding.BrandingDeleteRequestBody
+{
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"id" , "0"
+		},
+	},
+};
+await graphClient.Organization["organization-id"].Branding.DeleteAsync(requestBody);
+
 
 ```

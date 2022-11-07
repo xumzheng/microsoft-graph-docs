@@ -4,17 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Me.CalendarView.Delta().GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$skiptoken", "R0usmci39OQxqJrxK4")
-};
+	requestConfiguration.QueryParameters.Skiptoken = "R0usmci39OQxqJrxK4";
+	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
+});
 
-var delta = await graphClient.Me.CalendarView
-	.Delta()
-	.Request( queryOptions )
-	.Header("Prefer","odata.maxpagesize=2")
-	.GetAsync();
 
 ```

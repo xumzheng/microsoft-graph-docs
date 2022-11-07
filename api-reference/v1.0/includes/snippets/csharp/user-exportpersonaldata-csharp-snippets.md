@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var storageLocation = "storageLocation-value";
+var requestBody = new Microsoft.Graph.Users.Item.ExportPersonalData.ExportPersonalDataPostRequestBody
+{
+	StorageLocation = "storageLocation-value",
+};
+await graphClient.Users["user-id"].ExportPersonalData.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"]
-	.ExportPersonalData(storageLocation)
-	.Request()
-	.PostAsync();
 
 ```

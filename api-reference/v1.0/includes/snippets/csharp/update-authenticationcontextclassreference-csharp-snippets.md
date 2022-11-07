@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authenticationContextClassReference = new AuthenticationContextClassReference
+var requestBody = new AuthenticationContextClassReference
 {
 	DisplayName = "Contoso medium",
 	Description = "Medium protection level defined for Contoso policy",
-	IsAvailable = true
+	IsAvailable = true,
 };
+var result = await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences["authenticationContextClassReference-id"].PatchAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences["{authenticationContextClassReference-id}"]
-	.Request()
-	.UpdateAsync(authenticationContextClassReference);
 
 ```

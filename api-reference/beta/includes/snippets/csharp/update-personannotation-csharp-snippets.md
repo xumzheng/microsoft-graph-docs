@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var personAnnotation = new PersonAnnotation
+var requestBody = new PersonAnnotation
 {
-	AllowedAudiences = AllowedAudiences.Organization
+	AllowedAudiences = AllowedAudiences.Organization,
 };
+var result = await graphClient.Users["user-id"].Profile.Notes["personAnnotation-id"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Profile.Notes["{personAnnotation-id}"]
-	.Request()
-	.UpdateAsync(personAnnotation);
 
 ```

@@ -4,20 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var inferenceClassificationOverride = new InferenceClassificationOverride
+var requestBody = new InferenceClassificationOverride
 {
 	ClassifyAs = InferenceClassificationType.Focused,
 	SenderEmailAddress = new EmailAddress
 	{
 		Name = "Samantha Booth",
-		Address = "samanthab@adatum.onmicrosoft.com"
-	}
+		Address = "samanthab@adatum.onmicrosoft.com",
+	},
 };
+var result = await graphClient.Me.InferenceClassification.Overrides.PostAsync(requestBody);
 
-await graphClient.Me.InferenceClassification.Overrides
-	.Request()
-	.AddAsync(inferenceClassificationOverride);
 
 ```

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var destinationId = "destinationId-value";
+var requestBody = new Microsoft.Graph.Me.Messages.Item.Copy.CopyPostRequestBody
+{
+	DestinationId = "destinationId-value",
+};
+var result = await graphClient.Me.Messages["message-id"].Copy.PostAsync(requestBody);
 
-await graphClient.Me.Messages["{message-id}"]
-	.Copy(destinationId)
-	.Request()
-	.PostAsync();
 
 ```

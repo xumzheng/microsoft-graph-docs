@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var columnDefinition = new ColumnDefinition
+var requestBody = new ColumnDefinition
 {
 	Description = "test",
 	EnforceUniqueValues = false,
@@ -18,12 +19,10 @@ var columnDefinition = new ColumnDefinition
 		AllowMultipleLines = false,
 		AppendChangesToExistingText = false,
 		LinesForEditing = 0,
-		MaxLength = 255
-	}
+		MaxLength = 255,
+	},
 };
+var result = await graphClient.Sites["site-id"].Lists["list-id"].Columns.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Columns
-	.Request()
-	.AddAsync(columnDefinition);
 
 ```

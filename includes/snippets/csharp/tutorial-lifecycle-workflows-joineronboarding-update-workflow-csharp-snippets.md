@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var workflow = new Microsoft.Graph.IdentityGovernance.Workflow
+var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 {
 	IsEnabled = true,
-	IsSchedulingEnabled = true
+	IsSchedulingEnabled = true,
 };
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["workflow-id"].PatchAsync(requestBody);
 
-await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{identityGovernance.workflow-id}"]
-	.Request()
-	.UpdateAsync(workflow);
 
 ```

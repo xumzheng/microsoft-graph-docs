@@ -51,6 +51,8 @@ This method returns a `400 Bad Request` when the submission has exceeded more th
 ### Request
 The following is an example of a request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationFeedbackResourceOutcome"
@@ -67,6 +69,13 @@ Content-type: application/json
      }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationfeedbackresourceoutcome-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 The following is an example of the response.

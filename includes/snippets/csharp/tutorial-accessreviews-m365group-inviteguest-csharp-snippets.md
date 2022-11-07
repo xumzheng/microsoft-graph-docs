@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var invitation = new Invitation
+var requestBody = new Invitation
 {
 	InvitedUserDisplayName = "John Doe (Tailspin Toys)",
 	InvitedUserEmailAddress = "john@tailspintoys.com",
 	SendInvitationMessage = false,
-	InviteRedirectUrl = "https://myapps.microsoft.com"
+	InviteRedirectUrl = "https://myapps.microsoft.com",
 };
+var result = await graphClient.Invitations.PostAsync(requestBody);
 
-await graphClient.Invitations
-	.Request()
-	.AddAsync(invitation);
 
 ```

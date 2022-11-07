@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var calendarPermission = new CalendarPermission
+var requestBody = new CalendarPermission
 {
-	Role = CalendarRoleType.Write
+	Role = CalendarRoleType.Write,
 };
+var result = await graphClient.Users["user-id"].Calendars["calendar-id"].CalendarPermissions["calendarPermission-id"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Calendars["{calendar-id}"].CalendarPermissions["{calendarPermission-id}"]
-	.Request()
-	.UpdateAsync(calendarPermission);
 
 ```

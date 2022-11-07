@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var subjectRightsRequest = new SubjectRightsRequestObject
+var requestBody = new SubjectRightsRequest
 {
 	Type = SubjectRightsRequestType.Export,
 	DataSubjectType = DataSubjectType.Customer,
-	Regulations = new List<String>()
+	Regulations = new List<string>
 	{
-		"String"
+		"String",
 	},
 	DisplayName = "String",
 	Description = "String",
@@ -23,16 +24,18 @@ var subjectRightsRequest = new SubjectRightsRequestObject
 		LastName = "String",
 		Email = "String",
 		Residency = "String",
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"phoneNumber", "String"},
-			{"SSN", "String"}
-		}
-	}
+			{
+				"phoneNumber" , "String"
+			},
+			{
+				"SSN" , "String"
+			},
+		},
+	},
 };
+var result = await graphClient.Privacy.SubjectRightsRequests.PostAsync(requestBody);
 
-await graphClient.Privacy.SubjectRightsRequests
-	.Request()
-	.AddAsync(subjectRightsRequest);
 
 ```

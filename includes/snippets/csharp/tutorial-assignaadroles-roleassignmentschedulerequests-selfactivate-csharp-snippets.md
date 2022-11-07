@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequestObject
+var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
 	Action = UnifiedRoleScheduleRequestActions.SelfActivate,
 	PrincipalId = "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2",
@@ -15,22 +16,20 @@ var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequ
 	Justification = "Need to invalidate all app refresh tokens for Contoso users.",
 	ScheduleInfo = new RequestSchedule
 	{
-		StartDateTime = DateTimeOffset.Parse("2021-09-04T15:13:00Z"),
+		StartDateTime = DateTimeOffset.Parse("2021-09-04T15:13:00.000Z"),
 		Expiration = new ExpirationPattern
 		{
 			Type = ExpirationPatternType.AfterDuration,
-			Duration = new Duration("PT5H")
-		}
+			Duration = TimeSpan.Parse("PT5H"),
+		},
 	},
 	TicketInfo = new TicketInfo
 	{
 		TicketNumber = "CONTOSO:Security-012345",
-		TicketSystem = "Contoso ICM"
-	}
+		TicketSystem = "Contoso ICM",
+	},
 };
+var result = await graphClient.RoleManagement.DirectoryObject.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
-await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests
-	.Request()
-	.AddAsync(unifiedRoleAssignmentScheduleRequest);
 
 ```

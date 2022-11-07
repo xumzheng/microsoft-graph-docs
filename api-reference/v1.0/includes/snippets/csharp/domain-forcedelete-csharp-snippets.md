@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var disableUserAccounts = true;
+var requestBody = new Microsoft.Graph.Domains.Item.ForceDelete.ForceDeletePostRequestBody
+{
+	DisableUserAccounts = true,
+};
+await graphClient.Domains["domain-id"].ForceDelete.PostAsync(requestBody);
 
-await graphClient.Domains["{domain-id}"]
-	.ForceDelete(disableUserAccounts)
-	.Request()
-	.PostAsync();
 
 ```
