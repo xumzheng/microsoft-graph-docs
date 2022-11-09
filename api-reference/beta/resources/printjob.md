@@ -37,6 +37,8 @@ Represents a print job that has been queued for a printer.
 |isFetchable|Edm.Boolean|If true, document can be fetched by printer.|
 |redirectedFrom|Edm.String|Contains the source job URL, if the job has been redirected from another printer.|
 |redirectedTo|Edm.String|Contains the destination job URL, if the job has been redirected to another printer.|
+|errorCode|Edm.Int|Job's errorcode if there is any sent from the printer.|
+|acknowledgedDateTime`|Edm.DateTimeOffset|The dateTimeOffset when printer acknowledged the print job.|
 
 ## Relationships
 | Relationship | Type        | Description |

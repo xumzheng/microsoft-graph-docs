@@ -29,6 +29,8 @@ Represents a document being printed.
 |displayName|String|The document's name. Read-only.|
 |contentType|String|The document's content (MIME) type. Read-only.|
 |size|Int64|The document's size in bytes. Read-only.|
+|uploadedDateTime|Edm.DateTimeOffset|The DateTimeOffset when the document was uploaded by a client to Universal Print Server.|
+|downloadedDateTime|Edm.DateTimeOffset|The DateTimeOffset when the document was downloaded by a printer from Universal Print Server.|
 
 ## JSON representation
 

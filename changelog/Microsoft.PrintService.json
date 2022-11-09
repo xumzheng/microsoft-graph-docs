@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "75133603-c54c-4bc8-aa9a-81cb611388c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "downloadedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `downloadedDateTime` property to the [printDocument](https://docs.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-beta) resource.",
+          "Target": "printDocument"
+        },
+        {
+          "Id": "75133603-c54c-4bc8-aa9a-81cb611388c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "uploadedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `uploadedDateTime` property to the [printDocument](https://docs.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-beta) resource.",
+          "Target": "printDocument"
+        },
+        {
+          "Id": "75133603-c54c-4bc8-aa9a-81cb611388c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "acknowledgedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `acknowledgedDateTime` property to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "75133603-c54c-4bc8-aa9a-81cb611388c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "completedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `completedDateTime` property to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "75133603-c54c-4bc8-aa9a-81cb611388c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the `errorCode` property to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "75133603-c54c-4bc8-aa9a-81cb611388c0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-08T23:57:23.5291764Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
           "ApiChange": "Resource",
           "ChangedApiName": "printerShareViewpoint",
@@ -54,7 +104,7 @@
     },
     {
       "ChangeList": [
-                {
+        {
           "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
           "ApiChange": "Enum type",
           "ChangedApiName": "printerStatus",
