@@ -62,6 +62,17 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 >**Note:** When using application permissions, be sure you know how to get the chat ID. Because listing chats with application permissions is not supported, not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
 
+### Supported national cloud environments
+
+The following table lists the permission types that are supported for this API in different national clouds.
+
+|National cloud environment | Supported permission types | Exceptions   |
+|:--------------------------|:---------------------------|:--------|
+| Public | Application context, Delegated (work or school account) | |
+| GCC | Application context, Delegated (work or school account)   |[List messages in chat](../api/chat-list-messages.md) does not support the use of the `orderBy` parameter. |
+|GCCH | Not supported. | |
+| Gallatin | Application context, Delegated (work or school account) |[List messages in chat](../api/chat-list-messages.md) does not support the use of the `orderBy` parameter. |
+
 ## Properties
 
 | Property   | Type |Description|
