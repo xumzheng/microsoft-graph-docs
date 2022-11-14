@@ -9,7 +9,7 @@ ms.custom: graphiamtop20
 
 # Register an application with the Microsoft identity platform
 
-[!INCLUDE [active-directory-develop-quickstart-register-app](~/azure_docs/includes/active-directory-develop-quickstart-register-app.md)]
+[!INCLUDE [active-directory-develop-quickstart-register-app](~/../azure_docs/includes/active-directory-develop-quickstart-register-app.md)]
 
 ## Next steps
 
