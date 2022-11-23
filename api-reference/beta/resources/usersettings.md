@@ -17,6 +17,7 @@ Settings that represent a user’s preferences for the following:
 - Access to Delve
 - [Item insights](../resources/officegraphinsights.md)
 - [Regional locale and languages](../resources/regionalandlanguagesettings.md)
+- [People inishgts](../resources/peopleinsightsettings.md)
 - [Shift scheduling](../resources/shiftpreferences.md)
 - [Suggestions to merge duplicate contacts](../resources/contactmergesuggestions.md).
 
@@ -66,6 +67,7 @@ Inherits from [entity](entity.md). To learn how to get or update user settings, 
 |contactMergeSuggestions|[contactMergeSuggestions](contactmergesuggestions.md)| The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.|
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
+|peopleInishgts|[peopleInsightSettings](peopleinsightsettings.md)| The user's preferences for people insights. |
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 
 
