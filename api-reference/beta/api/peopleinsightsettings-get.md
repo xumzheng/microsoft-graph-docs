@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [peopleInsightSettings](../resources/peopleinsightsettings.md) object in the response body.
 
-## Example
+## Examples
 
 The following example gets the properties of the signed-in user.
 
@@ -60,33 +60,6 @@ The following example gets the properties of the signed-in user.
 GET https://graph.microsoft.com/beta/me/settings/peopleInsights
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-peopleinsightsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-peopleinsightsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-peopleinsightsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-peopleinsightsettings-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-peopleinsightsettings-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-peopleinsightsettings-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -95,7 +68,7 @@ GET https://graph.microsoft.com/beta/me/settings/peopleInsights
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.peopleInsightSettings",
-  "name": "get_peopleInsightSettings"
+  "name": "get_peopleinsightsettings"
 } -->
 ```http
 HTTP/1.1 200 OK
