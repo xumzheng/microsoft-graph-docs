@@ -1909,7 +1909,7 @@
 			"ChangeType": "Deletion",
 			"Description": "Added the [getFormsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getFormsUserActivityUserDetail?view=graph-rest-beta) method.",
 			"Target": "getFormsUserActivityUserDetail"
-		},
+		}
 		],
 		"Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
 		"Cloud": "prd",
