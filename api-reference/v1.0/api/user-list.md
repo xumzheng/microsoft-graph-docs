@@ -19,6 +19,17 @@ Retrieve a list of [user](../resources/user.md) objects.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!--
+Angela's suggestion: 
+•	Choose one of the following permissions that is the least privileged required by your app.
+•	A delegated permission limits data access to within the signed-in user's privileges. An application permission provides the exact privileges it implies.
+•	Learn more about delegated and application permissions, and look up a permission in the permissions reference.
+
+Comments:
+Shorten - one sentence
+Later for the RBAC boilerplate, add custom roles.
+-->
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |[Delegated (work or school account)](/graph/permissions-overview "Delegated permissions allow the application to access data on behalf of a signed-in user.") | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
