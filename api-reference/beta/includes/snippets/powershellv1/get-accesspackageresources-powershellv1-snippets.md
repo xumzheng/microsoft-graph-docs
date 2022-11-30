@@ -1,0 +1,11 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershellv1
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId $accessPackageCatalogId -Filter "resourceType eq 'Application'" -ExpandProperty "accessPackageResourceScopes" 
+
+```
