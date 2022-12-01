@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var servicePrincipalIds = new List<String>()
+var requestBody = new Microsoft.Graph.Beta.IdentityProtection.RiskyServicePrincipals.Dismiss.DismissPostRequestBody
 {
-	"9089a539-a539-9089-39a5-899039a58990"
+	ServicePrincipalIds = new List<string>
+	{
+		"9089a539-a539-9089-39a5-899039a58990",
+	},
 };
+await graphClient.IdentityProtection.RiskyServicePrincipals.Dismiss.PostAsync(requestBody);
 
-await graphClient.IdentityProtection.RiskyServicePrincipals
-	.Dismiss(servicePrincipalIds)
-	.Request()
-	.PostAsync();
 
 ```

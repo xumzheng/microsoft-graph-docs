@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var scopedRoleMembership = new ScopedRoleMembership
+var requestBody = new ScopedRoleMembership
 {
 	RoleId = "roleId-value",
 	RoleMemberInfo = new Identity
 	{
-		Id = "id-value"
-	}
+		Id = "id-value",
+	},
 };
+var result = await graphClient.DirectoryObject.AdministrativeUnits["administrativeUnit-id"].ScopedRoleMembers.PostAsync(requestBody);
 
-await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].ScopedRoleMembers
-	.Request()
-	.AddAsync(scopedRoleMembership);
 
 ```

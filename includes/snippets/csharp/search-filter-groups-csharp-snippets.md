@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Groups.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$search", "\"displayName:OneVideo\"")
-};
+	requestConfiguration.QueryParameters.Filter = "mailEnabled eq true";
+	requestConfiguration.QueryParameters.Search = "\"displayName:OneVideo\"";
+});
 
-var groups = await graphClient.Groups
-	.Request( queryOptions )
-	.Filter("mailEnabled eq true")
-	.GetAsync();
 
 ```

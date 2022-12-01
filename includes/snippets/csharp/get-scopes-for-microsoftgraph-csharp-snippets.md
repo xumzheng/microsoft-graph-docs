@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var servicePrincipals = await graphClient.ServicePrincipals
-	.Request()
-	.Filter("displayName eq 'Microsoft Graph'")
-	.Select("id,displayName,appId,oauth2PermissionScopes")
-	.GetAsync();
+var result = await graphClient.ServicePrincipals.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "displayName eq 'Microsoft Graph'";
+	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","appId","oauth2PermissionScopes" };
+});
+
 
 ```

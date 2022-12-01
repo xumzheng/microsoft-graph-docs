@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contactFolder = new ContactFolder
+var requestBody = new ContactFolder
 {
-	DisplayName = "Family"
+	DisplayName = "Family",
 };
+var result = await graphClient.Me.ContactFolders["contactFolder-id"].ChildFolders.PostAsync(requestBody);
 
-await graphClient.Me.ContactFolders["{contactFolder-id}"].ChildFolders
-	.Request()
-	.AddAsync(contactFolder);
 
 ```

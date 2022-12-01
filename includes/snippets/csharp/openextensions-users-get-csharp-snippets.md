@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = await graphClient.Me
-	.Request()
-	.Expand("extensions")
-	.Select("id,displayName,mail,mobilePhone")
-	.GetAsync();
+var result = await graphClient.Me.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","mail","mobilePhone" };
+	requestConfiguration.QueryParameters.Expand = new string []{ "extensions" };
+});
+
 
 ```

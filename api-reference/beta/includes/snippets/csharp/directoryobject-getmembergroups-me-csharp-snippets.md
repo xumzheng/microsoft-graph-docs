@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var securityEnabledOnly = true;
+var requestBody = new Microsoft.Graph.Beta.Me.GetMemberGroups.GetMemberGroupsPostRequestBody
+{
+	SecurityEnabledOnly = true,
+};
+var result = await graphClient.Me.GetMemberGroups.PostAsync(requestBody);
 
-await graphClient.Me
-	.GetMemberGroups(securityEnabledOnly)
-	.Request()
-	.PostAsync();
 
 ```

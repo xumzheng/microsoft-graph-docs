@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var installedApps = await graphClient.Teams["{team-id}"].InstalledApps
-	.Request()
-	.Filter("teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
-	.Expand("teamsApp,teamsAppDefinition")
-	.GetAsync();
+var result = await graphClient.Teams["team-id"].InstalledApps.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "teamsApp","teamsAppDefinition" };
+	requestConfiguration.QueryParameters.Filter = "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'";
+});
+
 
 ```

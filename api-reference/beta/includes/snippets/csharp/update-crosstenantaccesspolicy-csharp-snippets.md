@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var crossTenantAccessPolicy = new CrossTenantAccessPolicy
+var requestBody = new CrossTenantAccessPolicy
 {
-	AllowedCloudEndpoints = new List<String>()
+	AllowedCloudEndpoints = new List<string>
 	{
 		"microsoftonline.us",
-		"partner.microsoftonline.cn"
-	}
+		"partner.microsoftonline.cn",
+	},
 };
+var result = await graphClient.Policies.CrossTenantAccessPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.CrossTenantAccessPolicy
-	.Request()
-	.UpdateAsync(crossTenantAccessPolicy);
 
 ```

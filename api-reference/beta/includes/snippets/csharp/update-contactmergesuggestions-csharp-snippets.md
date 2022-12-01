@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contactMergeSuggestions = new ContactMergeSuggestions
+var requestBody = new ContactMergeSuggestions
 {
-	IsEnabled = false
+	IsEnabled = false,
 };
+var result = await graphClient.Me.Settings.ContactMergeSuggestions.PatchAsync(requestBody);
 
-await graphClient.Me.Settings.ContactMergeSuggestions
-	.Request()
-	.UpdateAsync(contactMergeSuggestions);
 
 ```

@@ -4,19 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationSubmissionResource = new EducationSubmissionResource
+var requestBody = new EducationSubmissionResource
 {
-	Resource = new EducationLinkResource
+	Resource = new EducationResource
 	{
 		DisplayName = "Wikipedia",
-		Link = "https://en.wikipedia.org/wiki/Main_Page"
-	}
+		OdataType = "#microsoft.graph.educationLinkResource",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"link" , "https://en.wikipedia.org/wiki/Main_Page"
+			},
+		},
+	},
 };
+var result = await graphClient.Education.Classes["educationClass-id"].Assignments["educationAssignment-id"].Submissions["educationSubmission-id"].Resources.PostAsync(requestBody);
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Resources
-	.Request()
-	.AddAsync(educationSubmissionResource);
 
 ```

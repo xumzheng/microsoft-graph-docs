@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var browserSharedCookie = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].SharedCookies["{browserSharedCookie-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["browserSiteList-id"].SharedCookies["browserSharedCookie-id"].GetAsync();
+
 
 ```

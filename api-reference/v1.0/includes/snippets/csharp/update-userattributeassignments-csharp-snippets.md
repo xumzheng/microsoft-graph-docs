@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignment
+var requestBody = new IdentityUserFlowAttributeAssignment
 {
-	UserInputType = IdentityUserFlowAttributeInputType.TextBox
+	UserInputType = IdentityUserFlowAttributeInputType.TextBox,
 };
+var result = await graphClient.Identity.B2xUserFlows["b2xIdentityUserFlow-id"].UserAttributeAssignments["identityUserFlowAttributeAssignment-id"].PatchAsync(requestBody);
 
-await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].UserAttributeAssignments["{identityUserFlowAttributeAssignment-id}"]
-	.Request()
-	.UpdateAsync(identityUserFlowAttributeAssignment);
 
 ```

@@ -4,32 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var driveItem = new DriveItem
+var requestBody = new Microsoft.Graph.Drive.Bundles.BundlesPostRequestBody
 {
-	Name = "My Day at the Beach",
-	Bundle = new Bundle
+	AdditionalData = new Dictionary<string, object>
 	{
-		Album = new Album
 		{
-		}
-	},
-	Children = new DriveItemChildrenCollectionPage()
-	{
-		new DriveItem
+			"name" , "My Day at the Beach"
+		},
 		{
-			Id = "1234asdf"
-		}
+			"@microsoft.graph.conflictBehavior" , "rename"
+		},
+		{
+			"bundle" , new 
+			{
+				Album = new 
+				{
+				},
+			}
+		},
+		{
+			"children" , new List<>
+			{
+				new 
+				{
+					Id = "1234asdf",
+				},
+			}
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@microsoft.graph.conflictBehavior", "rename"}
-	}
 };
+await graphClient.Drive.Bundles.PostAsync(requestBody);
 
-await graphClient.Drive.Bundles
-	.Request()
-	.AddAsync(driveItem);
 
 ```

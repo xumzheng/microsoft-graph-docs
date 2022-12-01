@@ -4,29 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var displayName = "Test Printer";
-
-var manufacturer = "Test Printer Manufacturer";
-
-var model = "Test Printer Model";
-
-String physicalDeviceId = null;
-
-var hasPhysicalDevice = false;
-
-var certificateSigningRequest = new PrintCertificateSigningRequestObject
+var requestBody = new Microsoft.Graph.Beta.Print.Printers.Create.CreatePostRequestBody
 {
-	Content = "{content}",
-	TransportKey = "{sampleTransportKey}"
+	DisplayName = "Test Printer",
+	Manufacturer = "Test Printer Manufacturer",
+	Model = "Test Printer Model",
+	PhysicalDeviceId = null,
+	HasPhysicalDevice = false,
+	CertificateSigningRequest = new PrintCertificateSigningRequest
+	{
+		Content = "{content}",
+		TransportKey = "{sampleTransportKey}",
+	},
+	ConnectorId = null,
 };
+await graphClient.Print.Printers.Create.PostAsync(requestBody);
 
-String connectorId = null;
-
-await graphClient.Print.Printers
-	.Create(displayName,manufacturer,model,certificateSigningRequest,physicalDeviceId,hasPhysicalDevice,connectorId)
-	.Request()
-	.PostAsync();
 
 ```

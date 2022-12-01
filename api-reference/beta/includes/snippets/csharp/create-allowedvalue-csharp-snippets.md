@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var allowedValue = new AllowedValue
+var requestBody = new AllowedValue
 {
 	Id = "Alpine",
-	IsActive = true
+	IsActive = true,
 };
+var result = await graphClient.DirectoryObject.CustomSecurityAttributeDefinitions["customSecurityAttributeDefinition-id"].AllowedValues.PostAsync(requestBody);
 
-await graphClient.Directory.CustomSecurityAttributeDefinitions["{customSecurityAttributeDefinition-id}"].AllowedValues
-	.Request()
-	.AddAsync(allowedValue);
 
 ```

@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var privilegedApproval = new PrivilegedApproval
+var requestBody = new PrivilegedApproval
 {
 	UserId = "userId-value",
 	RoleId = "roleId-value",
 	ApprovalType = "approvalType-value",
 	ApprovalState = ApprovalState.Pending,
-	ApprovalDuration = new Duration("datetime-value")
+	ApprovalDuration = TimeSpan.Parse("datetime-value"),
 };
+var result = await graphClient.PrivilegedApproval.PostAsync(requestBody);
 
-await graphClient.PrivilegedApproval
-	.Request()
-	.AddAsync(privilegedApproval);
 
 ```

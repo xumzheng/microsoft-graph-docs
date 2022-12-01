@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequestObject
+var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
 	Action = "SelfActivate",
 	PrincipalId = "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
@@ -15,22 +16,20 @@ var unifiedRoleAssignmentScheduleRequest = new UnifiedRoleAssignmentScheduleRequ
 	Justification = "Need to update app roles for selected apps.",
 	ScheduleInfo = new RequestSchedule
 	{
-		StartDateTime = DateTimeOffset.Parse("2021-08-17T17:40:00Z"),
+		StartDateTime = DateTimeOffset.Parse("2021-08-17T17:40:00.000Z"),
 		Expiration = new ExpirationPattern
 		{
 			Type = ExpirationPatternType.AfterDuration,
-			Duration = new Duration("PT5H")
-		}
+			Duration = TimeSpan.Parse("PT5H"),
+		},
 	},
 	TicketInfo = new TicketInfo
 	{
 		TicketNumber = "CONTOSO:Normal-67890",
-		TicketSystem = "MS Project"
-	}
+		TicketSystem = "MS Project",
+	},
 };
+var result = await graphClient.RoleManagement.DirectoryObject.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
-await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests
-	.Request()
-	.AddAsync(unifiedRoleAssignmentScheduleRequest);
 
 ```

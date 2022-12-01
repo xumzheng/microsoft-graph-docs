@@ -4,18 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var claimsMappingPolicy = new ClaimsMappingPolicy
+var requestBody = new Microsoft.Graph.Models.ReferenceCreate
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id", "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-fd5e-4ca8-8248-a3c9934b1b78"}
-	}
+	OdataId = "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-fd5e-4ca8-8248-a3c9934b1b78",
 };
+await graphClient.ServicePrincipals["servicePrincipal-id"].ClaimsMappingPolicies.Ref.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].ClaimsMappingPolicies.References
-	.Request()
-	.AddAsync(claimsMappingPolicy);
 
 ```

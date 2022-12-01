@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var delta = await graphClient.Me.MailFolders["{mailFolder-id}"].Messages
-	.Delta()
-	.Request()
-	.Header("Prefer","odata.maxpagesize=2")
-	.GetAsync();
+var result = await graphClient.Me.MailFolders["mailFolder-id"].Messages.Delta().GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
+});
+
 
 ```

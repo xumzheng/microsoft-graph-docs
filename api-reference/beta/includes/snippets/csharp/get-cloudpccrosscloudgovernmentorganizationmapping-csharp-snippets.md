@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var cloudPcCrossCloudGovernmentOrganizationMapping = await graphClient.DeviceManagement.VirtualEndpoint.CrossCloudGovernmentOrganizationMapping
-	.Request()
-	.Header("X-MS-CloudPC-USGovCloudTenantAADToken","{token}")
-	.GetAsync();
+var result = await graphClient.DeviceManagement.VirtualEndpoint.CrossCloudGovernmentOrganizationMapping.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("X-MS-CloudPC-USGovCloudTenantAADToken", "{token}");
+});
+
 
 ```

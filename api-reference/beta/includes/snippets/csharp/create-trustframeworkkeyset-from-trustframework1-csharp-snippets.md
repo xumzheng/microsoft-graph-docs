@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var trustFrameworkKeySet = new TrustFrameworkKeySet
+var requestBody = new TrustFrameworkKeySet
 {
-	Id = "keyset1"
+	Id = "keyset1",
 };
+var result = await graphClient.TrustFramework.KeySets.PostAsync(requestBody);
 
-await graphClient.TrustFramework.KeySets
-	.Request()
-	.AddAsync(trustFrameworkKeySet);
 
 ```

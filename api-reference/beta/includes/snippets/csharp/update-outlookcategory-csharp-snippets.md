@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var outlookCategory = new OutlookCategory
+var requestBody = new OutlookCategory
 {
-	Color = CategoryColor.Preset15
+	Color = CategoryColor.Preset15,
 };
+var result = await graphClient.Me.Outlook.MasterCategories["outlookCategory-id"].PatchAsync(requestBody);
 
-await graphClient.Me.Outlook.MasterCategories["{outlookCategory-id}"]
-	.Request()
-	.UpdateAsync(outlookCategory);
 
 ```

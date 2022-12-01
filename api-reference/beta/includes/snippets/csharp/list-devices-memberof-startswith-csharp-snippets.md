@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Devices["device-id"].MemberOf.Group.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.QueryParameters.OrderBy = new string []{ "displayName" };
+	requestConfiguration.QueryParameters.Filter = "startswith(displayName,%20'A')";
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var group = await graphClient.Devices["{device-id}"].MemberOf
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Filter("startswith(displayName, 'A')")
-	.OrderBy("displayName")
-	.GetAsync();
 
 ```

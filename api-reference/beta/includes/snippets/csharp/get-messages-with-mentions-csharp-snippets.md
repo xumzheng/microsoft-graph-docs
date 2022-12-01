@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var messages = await graphClient.Me.Messages
-	.Request()
-	.Filter("MentionsPreview/IsMentioned eq true")
-	.Select("subject,sender,receivedDateTime,mentionsPreview")
-	.GetAsync();
+var result = await graphClient.Me.Messages.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "MentionsPreview/IsMentioned eq true";
+	requestConfiguration.QueryParameters.Select = new string []{ "Subject","Sender","ReceivedDateTime","MentionsPreview" };
+});
+
 
 ```

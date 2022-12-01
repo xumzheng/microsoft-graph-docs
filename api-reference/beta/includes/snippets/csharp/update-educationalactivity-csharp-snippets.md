@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationalActivity = new EducationalActivity
+var requestBody = new EducationalActivity
 {
 	Institution = new InstitutionData
 	{
@@ -18,13 +19,11 @@ var educationalActivity = new EducationalActivity
 			City = "Fort Collins",
 			State = "Colorado",
 			CountryOrRegion = "USA",
-			PostalCode = "80525"
-		}
-	}
+			PostalCode = "80525",
+		},
+	},
 };
+var result = await graphClient.Me.Profile.EducationalActivities["educationalActivity-id"].PatchAsync(requestBody);
 
-await graphClient.Me.Profile.EducationalActivities["{educationalActivity-id}"]
-	.Request()
-	.UpdateAsync(educationalActivity);
 
 ```

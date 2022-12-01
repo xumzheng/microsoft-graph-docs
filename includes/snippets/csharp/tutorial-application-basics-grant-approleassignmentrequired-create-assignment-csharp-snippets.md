@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var appRoleAssignment = new AppRoleAssignment
+var requestBody = new AppRoleAssignment
 {
-	PrincipalId = Guid.Parse("b8afc02cb-4d62-4dba-b536-9f6d73e9e26"),
-	ResourceId = Guid.Parse("89473e09-0737-41a1-a0c3-1418d6908bcd"),
-	AppRoleId = Guid.Parse("00000000-0000-0000-0000-000000000000")
+	PrincipalId = "b8afc02cb-4d62-4dba-b536-9f6d73e9e26",
+	ResourceId = "89473e09-0737-41a1-a0c3-1418d6908bcd",
+	AppRoleId = "00000000-0000-0000-0000-000000000000",
 };
+var result = await graphClient.ServicePrincipals["servicePrincipal-id"].AppRoleAssignedTo.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppRoleAssignedTo
-	.Request()
-	.AddAsync(appRoleAssignment);
 
 ```
