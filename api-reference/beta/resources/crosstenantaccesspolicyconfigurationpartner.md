@@ -38,7 +38,7 @@ For any partner-specific property that is `null`, these settings will inherit th
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations. |
 | isServiceProvider | Boolean | Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization. |
 | tenantId | String | The tenant identifier for the partner Azure AD organization. Read-only. Key.|
-| userSyncInbound | [crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md) | **TODO: Add Description** |
+| userSyncInbound | [crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md) | Determines the partner-specific configuration for inbound user synchronization. Unless specifically configured, the `isSyncAllowed` property will be **null** and inherit from default settings, which is always `false`. |
 
 ## Relationships
 
@@ -74,9 +74,9 @@ The following is a JSON representation of the resource.
   "b2bDirectConnectInbound": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
   },
-  "isServiceProvider": "Boolean",
   "userSyncInbound": {
     "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
-  }
+  },
+  "isServiceProvider": "Boolean"
 }
 ```
