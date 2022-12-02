@@ -29,6 +29,32 @@
     {
       "ChangeList": [
         {
+          "Id": "e09cd28b-f5df-484b-9495-200902698362",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the **userSyncInbound** property to the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "e09cd28b-f5df-484b-9495-200902698362",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantUserSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantUserSyncInbound](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantusersyncinbound?view=graph-rest-beta) resource.",
+          "Target": "crossTenantUserSyncInbound"
+        }
+      ],
+      "Id": "e09cd28b-f5df-484b-9495-200902698362",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-02T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fd0b2af6-a129-4284-9114-7303d3091a3c",
           "ApiChange": "Property",
           "ChangedApiName": "defaultUsageLocation",
