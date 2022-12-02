@@ -27,7 +27,7 @@ Azure Active Directory (Azure AD) supports the following types of groups.
 - Distribution groups
 
 > [!NOTE]
-> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) which cannot be managed or retrieved through Microsoft Graph.
+> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which cannot be managed or retrieved through Microsoft Graph.
 
 Only Microsoft 365 and security groups can be managed through the Microsoft Graph groups API. Mail-enabled and distribution groups are read-only through Microsoft Graph.
 
@@ -160,7 +160,7 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 
 With the appropriate permissions, the app can read the profiles of groups that it obtains by following links in navigation properties; for example, `/groups/{id}/members`.
 
-For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
+For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions).
 
 ## Group-based licensing
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents a device registered in the organization. Devices are created in the cloud using the Device Registration Service or by Intune. They're used by conditional access policies for multi-factor authentication. These devices can range from desktop and laptop machines to phones and tablets. Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview). This resource is an open type that allows other properties to be passed in.
+This resource is an open type that allows other properties to be passed in. You can also add your own data to custom properties as [extensions](/graph/extensibility-overview).
 
 
 ## Methods
@@ -62,9 +62,9 @@ This resource lets you add your own data to custom properties using [extensions]
 |onPremisesSyncEnabled|Boolean|`true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; `null` if this object has never been synced from an on-premises directory (default). Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). |
 |operatingSystem|String| The type of operating system on the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`, and `eq` on `null` values). |
 |operatingSystemVersion|String|The version of the operating system on the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`, and `eq` on `null` values). |
-|physicalIds|String collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`, and counting empty collections). |
+|physicalIds|String collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`,`/$count eq 0`, `/$count ne 0`). |
 |profileType|deviceProfileType|The profile type of the device. Possible values: `RegisteredDevice` (default), `SecureVM`, `Printer`, `Shared`, `IoT`.|
-|systemLabels|String collection| List of labels applied to the device by the system. Supports `$filter` (`eq` when counting empty collections). |
+|systemLabels|String collection| List of labels applied to the device by the system. Supports `$filter` (`/$count eq 0`, `/$count ne 0`). |
 |trustType|String| Type of trust for the joined device. Read-only. Possible values:  `Workplace` (indicates *bring your own personal devices*), `AzureAd` (Cloud only joined devices), `ServerAd` (on-premises domain joined devices joined to Azure AD). For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
 
 ## Relationships
