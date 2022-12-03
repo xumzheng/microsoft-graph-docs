@@ -52,7 +52,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List all partner configurations
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -64,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 ```
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -83,10 +85,6 @@ Content-Type: application/json
     {
       "tenantId": "123f4846-ba00-4fd7-ba43-dac1f8f63013",
       "inboundTrust": null,
-      "userSyncInbound":
-      {
-        "isSyncAllowed": null
-      },
       "b2bCollaborationInbound": null,
       "b2bCollaborationOutbound": null,
       "b2bDirectConnectOutbound": null,
@@ -115,5 +113,51 @@ Content-Type: application/json
       }
     }
   ]
+}
+```
+
+### Example 2: List the user synchronization for all partner configurations
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_crosstenantaccesspolicyconfigurationpartner_identitysynchronization"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners?select=tenantId&$expand=identitySynchronization
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.crossTenantAccessPolicyConfigurationPartner)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "value": [
+        {
+            "tenantId": "123f4846-ba00-4fd7-ba43-dac1f8f63013",
+            "identitySynchronization":
+            {
+                "tenantId": "123f4846-ba00-4fd7-ba43-dac1f8f63013",
+                "displayName": "Fabrikam",
+                "userSyncInbound":
+                {
+                    "isSyncAllowed": true
+                }
+            }
+        }
+    ]
 }
 ```

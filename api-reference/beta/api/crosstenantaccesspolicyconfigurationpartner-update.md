@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 PATCH /policies/crossTenantAccessPolicy/partners/{id}
+PATCH /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
 ## Request headers
@@ -100,16 +101,18 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Configure userSyncInbound setting to enable user synchronization in the tenant
 
+If you set `isSyncAllowed` to false, user synchronization from the source tenant to the target tenant will stop. Also, user objects that already been synchronized will not be cleaned up.
+
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "update_crosstenantaccesspolicyconfigurationpartner"
+  "name": "update_crosstenantaccesspolicyconfigurationpartner_identitysynchronization"
 }
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1
+PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1/identitySynchronization
 Content-Type: application/json
 
 {

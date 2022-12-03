@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 GET /policies/crossTenantAccessPolicy/partners/{id}
+GET /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
 ## Request headers
@@ -52,7 +53,9 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 
 ## Examples
 
-### Request
+### Example 1: Read a partner-specific configuration
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -64,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9c5d131d-b1c3-4fc4-9e3f-c6557947d551
 ```
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -81,10 +84,6 @@ Content-Type: application/json
 {
   "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
   "inboundTrust": null,
-  "userSyncInbound":
-  {
-    "isSyncAllowed": null
-  },
   "b2bCollaborationInbound": null,
   "b2bCollaborationOutbound": null,
   "b2bDirectConnectOutbound": null,
@@ -111,5 +110,43 @@ Content-Type: application/json
       ]
     }
   }
+}
+```
+
+### Example 2: Read the user synchronization for a partner-specific configuration
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_crosstenantaccesspolicyconfigurationpartner_identitysynchronization"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9c5d131d-b1c3-4fc4-9e3f-c6557947d551/identitySynchronization
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
+    "displayName": "Fabrikam",
+    "userSyncInbound":
+    {
+        "isSyncAllowed": true
+    }
 }
 ```

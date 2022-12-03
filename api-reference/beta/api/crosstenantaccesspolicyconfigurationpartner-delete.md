@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 DELETE /policies/crossTenantAccessPolicy/partners/{id}
+DELETE /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
 ## Request headers
@@ -52,10 +53,12 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Delete a partner-specific configuration
 
+Note: If a configuration includes a user synchronization object, you must first delete the user synchronization object before you can delete the root endpoint /policies/crossTenantAccessPolicy/partners/{id}.
 
-# [HTTP](#tab/http)
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "delete_crosstenantaccesspolicyconfigurationpartner"
@@ -66,34 +69,35 @@ If successful, this method returns a `204 No Content` response code.
 DELETE https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9c5d131d-b1c3-4fc4-9e3f-c6557947d551
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-crosstenantaccesspolicyconfigurationpartner-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Response
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-crosstenantaccesspolicyconfigurationpartner-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-crosstenantaccesspolicyconfigurationpartner-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+``` http
+HTTP/1.1 204 No Content
+```
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-crosstenantaccesspolicyconfigurationpartner-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Example 2: Delete the user synchronization for a partner-specific configuration
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+If you delete the user synchronization object associated with a partner-specific configuration, user synchronization from the source tenant to the target tenant will stop. Also, user objects that already been synchronized will not be cleaned up.
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-crosstenantaccesspolicyconfigurationpartner-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Request
 
----
+<!-- {
+  "blockType": "request",
+  "name": "delete_crosstenantaccesspolicyconfigurationpartner_identitysynchronization"
+}
+-->
 
+``` http
+DELETE https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9c5d131d-b1c3-4fc4-9e3f-c6557947d551/identitySynchronization
+```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",

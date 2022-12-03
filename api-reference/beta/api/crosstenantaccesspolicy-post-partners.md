@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 POST /policies/crossTenantAccessPolicy/partners
+PUT /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
 ## Request headers
@@ -65,10 +66,10 @@ If successful, this method returns a `201 Created` response code and a [crossTen
 
 ## Examples
 
-### Request
+### Example 1: Create a new partner configuration
 
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_crosstenantaccesspolicyconfigurationpartner_from_"
@@ -110,34 +111,7 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-crosstenantaccesspolicyconfigurationpartner-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-crosstenantaccesspolicyconfigurationpartner-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-crosstenantaccesspolicyconfigurationpartner-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-crosstenantaccesspolicyconfigurationpartner-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-crosstenantaccesspolicyconfigurationpartner-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-crosstenantaccesspolicyconfigurationpartner-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### Response
+#### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -184,4 +158,38 @@ Content-Type: application/json
     }
   }
 }
+```
+
+### Example 2: Create the user synchronization for a partner-specific configuration
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_crosstenantaccesspolicyconfigurationpartner_from_identitysynchronization"
+}
+-->
+
+``` http
+PUT https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/3d0f5dec-5d3d-455c-8016-e2af1ae4d31a/identitySynchronization
+Content-Type: application/json
+
+{
+    "displayName": "Fabrikam",
+    "userSyncInbound": {
+        "isSyncAllowed": "true"
+    }
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
 ```
