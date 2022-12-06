@@ -44,6 +44,7 @@ Microsoft Bookings supports a maximum of 100 staff members in a booking calendar
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address can be used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business. Required.|
 |id|String| The ID of the staff member, in a GUID format. Read-only.|
 |IsEmailNotificationEnabled|Boolean|`True` means staff member will be notified via email when a booking assigned to them is created or changed.
+|membershipStatus| bookingStaffMembershipStatus | The membership status of the staff member in the business. Possible values are: `active`, `pendingAcceptance` and `rejectedByStaff`.
 |role|bookingStaffRole| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`, `unknownFutureValue`, `scheduler` and `member`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this `[evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`: `scheduler`, `member`. Required. |
 |timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |useBusinessHours|Boolean|True means the staff member's availability is as specified in the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHours** property setting.|
@@ -73,6 +74,7 @@ The following is a JSON representation of the resource.
   "emailAddress": "String",
   "id": "String (identifier)",
   "role": {"@odata.type": "microsoft.graph.bookingStaffRole"},
+  "membershipStatus": {"@odata.type": "microsoft.graph.bookingStaffMembershipStatus"},
   "useBusinessHours": true,
   "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}],
   "timeZone": "String",
