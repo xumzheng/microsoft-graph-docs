@@ -22,6 +22,7 @@ In this case, the **displayName** property for the identity will be returned, bu
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName | String | The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).     |
 | id          | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
+| tenantId            | String | Unique identity of the tenant (optional).                                                                                                                                                                                                                                                                             |
 
 ## JSON representation
 
@@ -32,6 +33,7 @@ In this case, the **displayName** property for the identity will be returned, bu
 {
   "displayName": "string",
   "id": "string",
+  "tenantId": "string",
   "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
 }
 ```

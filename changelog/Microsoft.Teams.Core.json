@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "75fb8c2c-ae04-4abe-b666-01586eb014ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageFromIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the resource [chatMessageFromIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageFromIdentitySet?view=graph-rest-1.0) to represent the sender of a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0). No changes have been made to JSON representation of [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "75fb8c2c-ae04-4abe-b666-01586eb014ec",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-12-07T13:04:49.407Z",
+      "WorkloadArea": "Teasmwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
           "ApiChange": "Parameter",
           "ChangedApiName": "chatMessage",
@@ -5993,8 +6011,8 @@
       "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },    
-	  {
+    },
+    {
       "ChangeList": [
         {
           "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
@@ -6028,7 +6046,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-10-20T20:34:40.595Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "" 
+      "SubArea": ""
     },
     {
       "ChangeList": [
