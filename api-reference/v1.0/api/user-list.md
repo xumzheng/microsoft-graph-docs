@@ -47,6 +47,19 @@ Choose the permission marked as least privileged for this API. Only add one of t
 | [Delegated (personal Microsoft account)](/graph/permissions-overview "Not all delegated permissions are valid for personal Microsoft accounts.")              | Not supported.              | Not supported.     |
 | [Application](/graph/permissions-overview "Application permissions allow the app the access data without signed-in user present.")                            | User.Read.All               | User.ReadWrite.All |
 
+---
+
+#### Option 4:
+
+Choose the permission marked as least privileged for this API. Only add one of the other permissions if your app requires it. Learn more about [delegated and application permissions](/graph/permissions-overview "Delegated permissions allow the application to access data on behalf of a signed-in user. Application permissions allow the app the access data without signed-in user present."), and look up a permission in the [permissions reference](/graph/permissions-reference).
+
+| Permission type                         | Least privileged permission  | Other permissions  |
+|-----------------------------------------|------------------------------|--------------------|
+| Delegated (work or school account)      | User.ReadBasic.All           | User.Read.All      |
+| Delegated (personal Microsoft account)  | Not supported.               | Not supported.     |
+| Application                             | User.Read.All                | User.ReadWrite.All |
+
+
 <!--
 Angela's suggestion: 
 •	Choose one of the following permissions that is the least privileged required by your app.
