@@ -5,9 +5,9 @@
         {
           "Id": "75fb8c2c-ae04-4abe-b666-01586eb014ec",
           "ApiChange": "Resource",
-          "ChangedApiName": "chatMessageFromIdentitySet",
+          "ChangedApiName": "identity",
           "ChangeType": "Addition",
-          "Description": "Added the resource [chatMessageFromIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageFromIdentitySet?view=graph-rest-1.0) to represent the sender of a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0). No changes have been made to JSON representation of [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
+          "Description": "Added tenantId property to resource [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0).",
           "Target": "chatMessage"
         }
       ],
