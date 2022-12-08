@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identity",
           "ChangeType": "Addition",
-          "Description": "Added tenantId property to resource [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0).",
+          "Description": "Added the **tenantId** property to the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource.",
           "Target": "chatMessage"
         }
       ],
@@ -15,7 +15,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-12-07T13:04:49.407Z",
-      "WorkloadArea": "Teasmwork and communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
