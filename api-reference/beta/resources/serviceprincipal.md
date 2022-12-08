@@ -76,6 +76,13 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
 |[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
 |[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
+|**Remote Desktop Security Configuration**| | |
+|[Get remoteDesktopSecurityConfiguration](../api/serviceprincipal-get-remotedesktopsecurityconfiguration.md) |[remoteDesktopSecurityConfiguration](remotedesktopsecurityconfiguration.md) collection| Get the remote desktop security configuration property on the service principal.|
+|[Update remoteDesktopSecurityConfiguration](../api/serviceprincipal-update-remotedesktopsecurityconfiguration.md) |None | Update the remote desktop security configuration property on the service principal.. |
+|[Add targetDeviceGroups](../api/serviceprincipal-add-targetdevicegroups.md) | None | Add target device groups to the remote desktop security configuration property on the service principal.|
+|[Get targetDeviceGroups](../api/serviceprincipal-get-targetdevicegroups.md) | [targetDeviceGroups](targetdevicegroups.md) collection | Get target device groups of the remote desktop security configuration property on the service principal.|
+|[Delete targetDeviceGroups](../api/serviceprincipal-delete-targetdevicegroups.md) | None | Delete target device groups of the remote desktop security configuration property on the service principal.|
+|[Delete remoteDesktopSecurityConfiguration](../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md) |None | Delete the remote desktop security configuration property on the service principal.|
 |**Single sign on**| | |
 |[createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md)|Create a credential set for the user or group specified in the body.|
 |[getPasswordSingleSignOnCredentials](../api/serviceprincipal-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md)|Get a credential set for the user or group specified in the body.|
