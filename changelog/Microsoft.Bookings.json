@@ -637,7 +637,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "membershipStatus",
             "ChangeType": "Addition",
-            "Description": "Added the `membershipStatus` property to the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-beta) resource.",
+            "Description": "Added the **membershipStatus** property to the [bookingStaffMember](https://learn.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-beta) resource.",
             "Target": "bookingStaffMember"
           }
         ],
