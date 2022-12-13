@@ -31,6 +31,7 @@ An instance of a workforce integration with shifts.
 |:-------------|:------------|:------------|
 |apiVersion|Int32|API version for the call back URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
+|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| The Shifts entities supported for eligibile filtering. Shifts will make a call back to the url provided on client changes when loading those entities with a filter. By default, no entities are supported for eligible filtering.<br><br>The possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`,`timeOffReason`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
 |supports|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
@@ -57,6 +58,7 @@ The following is a JSON representation of the resource.
 {
   "apiVersion": 1024,
   "displayName": "String",
+  "eligibilityFilteringEnabledEntities": "string",
   "encryption": {"@odata.type": "microsoft.graph.workforceIntegrationEncryption"},
   "isActive": true,
   "supports": "string",
