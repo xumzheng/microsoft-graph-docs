@@ -11,14 +11,16 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 An instance of a workforce integration with shifts.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | Create a new **workforceIntegration** object.|
 | [List](../api/workforceintegration-list.md) | [workforceIntegration](workforceintegration.md) collection | Get the list of **workforceIntegration** objects associated with this schedule.|
+| [Create](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | Create a new **workforceIntegration** object.|
 | [Get](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Read the properties and relationships of a **workforceIntegration** object. |
 | [Update](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Update a **workforceIntegration** object. |
 | [Delete](../api/workforceintegration-delete.md) | None | Delete a **workforceIntegration** object. |
@@ -29,9 +31,11 @@ An instance of a workforce integration with shifts.
 |:-------------|:------------|:------------|
 |apiVersion|Int32|API version for the call back URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
+|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| The Shifts entities supported for eligibile filtering. Shifts will make a call back to the url provided on client changes when loading those entities with a filter. By default, no entities are supported for eligible filtering.<br><br>The possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`,`timeOffReason`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openshift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`.|
+|supports|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
+|supportedEntities|workforceIntegrationSupportedEntities | This property has replaced **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property is still supported in beta for the time being. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
 |url|String| Workforce Integration URL for callbacks from the Shifts service.|
 
 ## Relationships
@@ -56,8 +60,10 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "encryption": {"@odata.type": "microsoft.graph.workforceIntegrationEncryption"},
   "isActive": true,
-  "supportedEntities": "string",
-  "url": "String"
+  "supports": "string",
+  "supportedEntities": "string",  
+  "url": "String",
+  "eligibilityFilteringEnabledEntities": "string",
 }
 ```
 
@@ -70,4 +76,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
