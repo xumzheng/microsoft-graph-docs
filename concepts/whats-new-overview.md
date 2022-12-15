@@ -12,6 +12,23 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## December 2022: New in preview only
+
+### People and workplace intelligence | Item insights
+A user whose item insights have been disabled can still see the file-based activities of other users with item insights enabled. Previous to this update, that user with item insights disabled would not see anybody's trending content. Learn more about [an organization's insights-based experience after disabling a user's item insights](item-insights-overview.md#disable-or-re-enable-item-insights).
+
+### Use SDKs
+Try the new [Microsoft Graph Python SDK (preview)](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-python-sdk-now-available-for-public-preview/) and take advantage of the following improvements:
+- A new authentication provider that automatically refreshes access tokens.
+- A built-in retry handler that understands response status codes.
+- A fluent request building pattern to improve efficiency and discoverability.
+- Type annotations, both synchronous and asynchronous experiences and HTTP2 support.
+
+**Note**: The Microsoft Graph Python SDK is currently in public preview. Don't use this SDK in production environments. For details see [SDKs in preview or GA status](/graph/sdks/sdks-overview#sdks-in-preview-or-ga-status).
+
+To get started, see:
+- [README](https://github.com/microsoftgraph/msgraph-sdk-python#readme)
+- [Upgrade guide](https://github.com/microsoftgraph/msgraph-sdk-python/blob/main/UPGRADING.md)
 
 ## November 2022: New and generally available
 
@@ -44,7 +61,6 @@ Specify in a [schema](/graph/api/resources/externalconnectors-schema?view=graph-
 
 ### Search | Query
 Specify in a [search request](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true) one or more [criteria](/graph/api/resources/collapseproperty?view=graph-rest-beta&preserve-view=true) to collapse search results.
-
 
 ## October 2022: New and generally available
 
