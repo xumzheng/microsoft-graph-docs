@@ -1,0 +1,41 @@
+---
+title: "Webapp needs to create assignments with links back to user website"
+description: "Use Microsoft Graph APIs to update assignment and grade data for use in custom tools."
+ms.localizationpriority: medium
+author: "AshwaniBansal1"
+ms.prod: "education"
+doc_type: conceptualPageType
+---
+
+# Create assignments for web application with links back to user website
+
+Education institutions have custom tools that needs data from Assignments and Grades, e.g. tools that are used for reporting and communication to the school district, or tools that are used to automate a set of process. You can get data for assignments and grades for both classes and students.
+
+Before you can update data, you must get the relevant class and member information.
+
+> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
+
+## Use share to teams feature
+
+Follow these two steps to add share to teams assignments to your website
+
+- Add a launcher to your website using the below script:
+
+```
+<script async defer src=https://teams.microsoft.com/share/launcher.js></script>
+```
+
+- Add share button to your resource page using the below script: 
+
+```
+<
+class="teams-share-button"
+data-href="https://<link-to-be-shared>"
+</div>
+```
+
+For authenticated EDU account users assignment with a resource link will automatically get created.
+
+## Information on how to do share to teams
+
+All assignment and student information is linked to class and submission information, respectively. The following APIs retrieve information about class assignments and submissions:
