@@ -20,22 +20,23 @@ The delta query in Microsoft Graph is inferred when the `delta` function is appe
 
 The typical call pattern is as follows:
 
-1. The application begins by calling a GET request with the delta function on the desired resource.
+1. The application begins by calling a GET request with the delta function on the desired resource. For example, `https://graph.microsoft.com/v1.0/users/delta`.
 2. Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
 
      a.  If a `@odata.nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL to retrieve all pages of data until a `@odata.deltaLink` URL is returned in the response.
 
      b.  If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `@odata.deltaLink` URL to learn about changes to the resource.
 
+     c. The response contains the resources that currently exist in the collection. Resources that have been created and deleted prior to the initial delta query won't be returned. Updates made before the initial request are summarized on the resource returned as its latest state.
+
 3. When the application needs to learn about changes to the resource, it makes a new request using the `@odata.deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
 4. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
 > [!NOTE]
 >
-> - Azure AD, OneDrive, and SharePoint resources support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead.
->   - For Azure AD resources such as groups and users, append `$deltaToken=latest` query string to the `delta` function and the response will contain a `@odata.deltaLink` and no resource data. For example, `https://graph.microsoft.com/v1.0/users/delta?$deltatoken=latest`.
->   - For OneDrive and SharePoint resources, append `token=latest` instead. For example, `https://graph.microsoft.com/v1.0/me/drive/root/delta?token=latest`.
-> - The initial request to the delta query function (no `$deltaToken` or `$skipToken`) will return the resources that currently exist in the collection. Resources that have been created and deleted prior to the initial delta query won't be returned. Updates made before the initial request are summarized on the resource returned as its latest state.
+> Azure AD, OneDrive, and SharePoint resources support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead.
+> - For Azure AD resources such as groups and users, append `$deltaToken=latest` query string to the `delta` function and the response will contain a `@odata.deltaLink` and no resource data. For example, `https://graph.microsoft.com/v1.0/users/delta?$deltatoken=latest`.
+> - For OneDrive and SharePoint resources, append `token=latest` instead. For example, `https://graph.microsoft.com/v1.0/me/drive/root/delta?token=latest`.
 
 ### State tokens
 
