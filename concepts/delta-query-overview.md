@@ -20,7 +20,7 @@ The delta query in Microsoft Graph is inferred when the `delta` function is appe
 
 The typical call pattern is as follows:
 
-1. The application begins by calling a GET request with the delta function on the desired resource. For example, `https://graph.microsoft.com/v1.0/users/delta`.
+1. The application begins by calling a GET request with the delta function on the desired resource. For example, `https://graph.microsoft.com/v1.0/users/delta` or `https://graph.microsoft.com/v1.0/users/microsoft.graph.delta`.
 2. Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
 
      a.  If a `@odata.nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL to retrieve all pages of data until a `@odata.deltaLink` URL is returned in the response.
