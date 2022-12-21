@@ -177,9 +177,9 @@ Delta query is currently supported for the following resources. Note that some r
 
 Currently, you must specify the `$select` query parameter in the initial request to track changes for specific properties. Microsoft Graph automatically encodes the parameter into the `@odata.nextLink` or `@odata.deltaLink` provided in the response. Adding `$select` to the `$deltaLink` so that you can change the properties you want to track for an existing `@odata.deltaLink` isn't supported.
 
-### Adding $select to a $skipToken isn't supported
+### Adding $select to a $skipToken won't be supported from July 1, 2023
 
-Delta queries with both `$select` and `$skipToken` aren't supported.
+From July 1, 2023, using both `$select` and `$skipToken` will no longer be supported.
 
 ### Properties stored outside of the main data store
 

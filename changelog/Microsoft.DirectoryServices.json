@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+     "ChangeList": [
+       {
+         "Id": "9b7e0212-ed09-40be-bd3a-fcdf8c78200d",
+         "ApiChange": "Method",
+         "ChangedApiName": "delta",
+         "ChangeType": "Deprecation",
+         "Description": "From July 1, 2023, using both `$select` and `$skipToken` for delta queries in Microsoft Graph will no longer be supported.",
+         "Target": "delta"
+       }
+     ],
+     "Id": "9b7e0212-ed09-40be-bd3a-fcdf8c78200d",
+     "Cloud": "Prod",
+     "Version": "beta",
+     "CreatedDateTime": "2022-12-21T00:00:00.1897204Z",
+     "WorkloadArea": "Identity and access",
+     "SubArea": "Directory management"
+   },
+    {
       "ChangeList": [
         {
           "Id": "ab9f3248-ba7e-4a4f-abcc-92cdc69b8dda",
