@@ -1,5 +1,5 @@
 ---
-title: "Webapp needs to create assignments with links back to user website"
+title: "Create education assignments for web application with links to user website"
 description: "Use Microsoft Graph APIs to update assignment and grade data for use in custom tools."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
@@ -7,17 +7,13 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Create assignments for web application with links back to user website
+# Create education assignments for web application with links to user website
 
 Education institutions have custom tools that needs data from Assignments and Grades, e.g. tools that are used for reporting and communication to the school district, or tools that are used to automate a set of process. You can get data for assignments and grades for both classes and students.
 
-Before you can update data, you must get the relevant class and member information.
-
-> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the [Education APIs](https://learn.microsoft.com/en-us/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
-
 ## Use share to teams feature
 
-Follow these two steps to add share to teams assignments to your website
+Share to Teams is a button enabled on any web app, that allows users to share content to other users in Teams. Follow these two steps to add share to teams assignments to your website
 
 - Add a launcher to your website using the below script:
 
@@ -34,8 +30,25 @@ data-href="https://<link-to-be-shared>"
 </div>
 ```
 
-For authenticated EDU account users assignment with a resource link will automatically get created.
+For authenticated EDU account users `Create an Assignment` option for assignment with a resource link of the content will automatically get created.
 
-## Information on how to do share to teams
+**Note:** Checkout [Embed a Share to Teams button](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/share-to-teams-from-web-apps#embed-a-share-to-teams-button) for more information.
 
-All assignment and student information is linked to class and submission information, respectively. The following APIs retrieve information about class assignments and submissions:
+## Parameters when launched from assignments
+
+You can select to set default values for the msgText,assignInstr and assignTitl fields on the Share to Teams form.
+
+### Example
+
+```
+<span
+    class="teams-share-button"
+    data-href="https://www.microsoft.com/education/products/teams"
+    data-msg-text="Default Message"
+    data-assign-title="Default Assignment Title"
+    data-assign-instr="Default Assignment Instructions"
+></span>
+```
+# Permissions
+
+For additional option to `Create an Assignment` using `Share to Teams` button in the chosen Team, user must have teacher account.
