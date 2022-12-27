@@ -101,6 +101,30 @@
           "ChangeType": "Addition",
           "Description": "Added the **originTenantInfo** property to the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
+        },
+        {
+          "Id": "e61edcf6-86b7-454c-a4f5-675f5cc0cb50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantSynchronizationResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantSynchronizationResource](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantsynchronizationresource?view=graph-rest-beta) resource type.",
+          "Target": "crossTenantSynchronizationResource"
+        },
+        {
+          "Id": "e61edcf6-86b7-454c-a4f5-675f5cc0cb50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationInfo](https://learn.microsoft.com/en-us/graph/api/resources/synchronizationinfo?view=graph-rest-beta) resource type.",
+          "Target": "synchronizationInfo"
+        },
+        {
+          "Id": "e61edcf6-86b7-454c-a4f5-675f5cc0cb50",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "synchronizationInfoCreationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationInfoCreationType** enumeration.",
+          "Target": "synchronizationInfoCreationType"
         }
       ],
       "Id": "e61edcf6-86b7-454c-a4f5-675f5cc0cb50",
