@@ -451,6 +451,9 @@ Here is a JSON representation of the resource
   "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "String",
+  "originTenantInfo": {
+    "@odata.type": "microsoft.graph.crossTenantResource"
+  },
   "otherMails": ["String"],
   "passwordPolicies": "String",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
