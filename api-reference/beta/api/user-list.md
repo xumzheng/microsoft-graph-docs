@@ -916,3 +916,55 @@ Content-type: application/json
   ]
 }
 -->
+
+### Example 13: Get information about the original users in a specific source tenant the users were synchronized from
+
+The following example lists information about the original users in a specific source Azure AD tenant the users were synchronized from. This information is only populated for users that are synchronized using Azure AD cross-tenant synchronization.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_users_origintenantinfo"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=originTenantInfo/originTenantId eq '376a1f89-b02f-4a85-8252-2974d1984d14'&$select=originTenantInfo
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(originTenantInfo)",
+    "value": [
+        {
+            "originTenantInfo": {
+                "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
+                "originTenantId": "376a1f89-b02f-4a85-8252-2974d1984d14",
+                "originId": "c28334bc-4f66-44de-b9b1-5dccc28496b1",
+                "synchronizationInfo": {
+                    "creationType": "tenantToTenantSync"
+                }
+            }
+        },
+        {
+            "originTenantInfo": {
+                "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
+                "originTenantId": "376a1f89-b02f-4a85-8252-2974d1984d14",
+                "originId": "1897469a-2d9b-4337-a372-947efcbf8f4a",
+                "synchronizationInfo": {
+                    "creationType": "tenantToTenantSync"
+                }
+            }
+        }
+    ]
+}
+```

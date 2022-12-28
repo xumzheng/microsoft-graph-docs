@@ -471,8 +471,55 @@ Content-type: application/json
 }
 ```
 
+### Example 6: Get information about the original user the user was synchronized from
 
+The following example gets information about the original user in the source Azure AD tenant the user was synchronized from. This information is only populated for users that are synchronized using Azure AD cross-tenant synchronization.
 
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_origintenantinfo"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?$select=originTenantInfo
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(originTenantInfo)/$entity",
+    "originTenantInfo": {
+        "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
+        "originTenantId": "376a1f89-b02f-4a85-8252-2974d1984d14",
+        "originId": "c28334bc-4f66-44de-b9b1-5dccc28496b1",
+        "synchronizationInfo": {
+            "creationType": "tenantToTenantSync"
+        }
+    }
+}
+```
+
+If user wasn't synchronized, `originTenantInfo` will be null.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(originTenantInfo)/$entity",
+    "originTenantInfo": null
+}
+```
 
 ## See also
 
