@@ -7,9 +7,9 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Create education assignments for web application with links to user website
+# Enable a web app to create assignments with links back to a website
 
-Education institutions have custom tools that needs data from Assignments and Grades, e.g. tools that are used for reporting and communication to the school district, or tools that are used to automate a set of process. You can get data for assignments and grades for both classes and students.
+Education institutions have custom tools that need data from assignments and grades - for example, tools that are used for reporting and communication to the school district, or tools that are used to automate a set of processes. You can get data for assignments and grades for both classes and students.
 
 ## Use share to teams feature
 
