@@ -28,6 +28,13 @@ Namespace: microsoft.graph
 |[Get attackSimulationOperation](../api/attacksimulationroot-get-operation.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation campaign operation for a tracking ID.|
 |[Get excludedAccountTarget](../api/attacksimulationroot-get-excludedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get excluded account targets (users) for an attack simulation campaign for a tenant.|
 |[Get includedAccountTarget](../api/attacksimulationroot-get-includedaccounttarget.md)|[accountTargetContent](../resources/accountTargetContent.md)|Get included account targets (users) for an attack simulation campaign for a tenant.|
+|[List endUserNotifications](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get the endUserNotification resources from the endUserNotifications navigation property.|
+|[Get endUserNotifications](../api/attacksimulationroot-get-endUserNotifications.md)|[endUserNotification](../resources/endUserNotification.md)|Get the endUserNotification resources from the endUserNotifications navigation property.|
+|[List landingPages](../api/attacksimulationroot-list-landingpages.md)|[landingPage](../resources/landingpage.md) collection|Get the landingPage resources from the landingPages navigation property.|
+|[Get landingPages](../api/attacksimulationroot-list-landingpages.md)|[landingPage](../resources/landingpage.md) |Get the landingPage resources from the landingPages navigation property.|
+|[List loginPages](../api/attacksimulationroot-list-loginpages.md)|[loginPage](../resources/loginpage.md) collection|Get the loginPage resources from the loginPages navigation property.|
+|[Get loginPages](../api/attacksimulationroot-list-loginpages.md)|[loginPage](../resources/loginpage.md)|Get the loginPage resources from the loginPages navigation property.|
+|[List trainings](../api/attacksimulationroot-list-trainings.md)|[training](../resources/training.md) collection|Get the training resources from the trainings navigation property.|
 
 ## Properties
 None.
