@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 ## Permissions
 
-#### Option 1: 
+#### Option 1: Ordinary links
 
 Choose the permission marked as least privileged for this API. Use a higher privileged permission only if your app requires it. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -24,7 +24,7 @@ Choose the permission marked as least privileged for this API. Use a higher priv
 
 ---------------------------------------------------------
 
-#### Option 2:
+#### Option 2: Anchor text when you hover links
 
 Choose the permission marked as least privileged for this API. Use a higher privileged permission only if your app requires it. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types "Delegated permissions allow the application to access data on behalf of a signed-in user. Application permissions allow the app the access data without signed-in user present."). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
