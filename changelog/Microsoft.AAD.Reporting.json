@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Member",
+          "ChangedApiName": "identityBestPractice",
+          "ChangeType": "Addition",
+          "Description": "Added the `identityBestPractice` member to the **recommendationCategory** enumeration.",
+          "Target": "recommendationCategory"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Member",
+          "ChangedApiName": "identitySecureScore",
+          "ChangeType": "Addition",
+          "Description": "Added the `identitySecureScore` member to the **recommendationCategory** enumeration.",
+          "Target": "recommendationCategory"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "recommendationFeatureAreas",
+          "ChangeType": "Addition",
+          "Description": "Added the **recommendationFeatureAreas** enumeration type.",
+          "Target": "recommendationFeatureAreas"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "recommendationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **recommendationType** enumeration type.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "impactedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "complete",
+          "ChangeType": "Addition",
+          "Description": "Added the [complete](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "postpone",
+          "ChangeType": "Addition",
+          "Description": "Added the [postpone](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "reactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [reactivate](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        }
+      ],
+      "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-09T22:16:18.601897Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8b880876-f40f-4be3-bfde-8ada2332d698",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationAppAdminConfiguration",
