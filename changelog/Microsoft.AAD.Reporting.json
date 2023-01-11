@@ -44,14 +44,6 @@
         },
         {
           "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
-          "ApiChange": "Resource",
-          "ChangedApiName": "recommendationBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource",
-          "Target": "recommendationBase"
-        },
-        {
-          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
           "ApiChange": "Method",
           "ChangedApiName": "complete",
           "ChangeType": "Addition",

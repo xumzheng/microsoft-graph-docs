@@ -1,9 +1,9 @@
 ---
 title: "recommendation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant."
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access"
 doc_type: resourcePageType
 ---
 
@@ -13,54 +13,58 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant.
 
+The Azure AD recommendation service runs daily to check your tenant against predefined conditions for every recommendation. If the service detects that a recommendation applies to your tenant, the corresponding recommendation object is generated and its status is set to active.
 
-Inherits from [recommendationBase](../resources/recommendationbase.md).
+There supported recommendations include the following:
+
+1. Convert from per user MFA to Conditional Access MFA
+2. Minimize MFA prompts for users signing in from known devices
+3. Migrate apps from AD FS to Azure AD
+4. Migrate eligible users from SMS and voice call to use the Authenticator app
+
+For more information, see [What is Azure Active Directory recommendations?](https://go.microsoft.com/fwlink/?linkid=2221712).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List recommendations](../api/directory-list-recommendations.md)|[recommendation](../resources/recommendation.md) collection|Get a list of the [recommendation](../resources/recommendation.md) objects and their properties.|
-|[Create recommendation](../api/directory-post-recommendations.md)|[recommendation](../resources/recommendation.md)|Create a new [recommendation](../resources/recommendation.md) object.|
 |[Get recommendation](../api/recommendation-get.md)|[recommendation](../resources/recommendation.md)|Read the properties and relationships of a [recommendation](../resources/recommendation.md) object.|
-|[Update recommendation](../api/recommendation-update.md)|[recommendation](../resources/recommendation.md)|Update the properties of a [recommendation](../resources/recommendation.md) object.|
-|[Delete recommendation](../api/directory-delete-recommendations.md)|None|Delete a [recommendation](../resources/recommendation.md) object.|
-|[postpone](../api/recommendation-postpone.md)|[recommendation](../resources/recommendation.md)|**TODO: Add Description**|
-|[dismiss](../api/recommendation-dismiss.md)|[recommendation](../resources/recommendation.md)|**TODO: Add Description**|
-|[complete](../api/recommendation-complete.md)|[recommendation](../resources/recommendation.md)|**TODO: Add Description**|
-|[reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|**TODO: Add Description**|
-|[List impactedResources](../api/recommendationbase-list-impactedresources.md)|[impactedResource](../resources/impactedresource.md) collection|Get the impactedResource resources from the impactedResources navigation property.|
-|[Create impactedResource](../api/recommendation-post-impactedresources.md)|[impactedResource](../resources/impactedresource.md)|Create a new impactedResource object.|
+|[Postpone](../api/recommendation-postpone.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `postponed` to a specified date and time.|
+|[Dismiss](../api/recommendation-dismiss.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `dismissed`.|
+|[Complete](../api/recommendation-complete.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `completedByUser`.|
+|[Reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `active`.|
+|[List impactedResources](../api/recommendation-list-impactedresources.md)|[impactedResource](../resources/impactedresource.md) collection|Get the [impactedResource](../resources/impactedresource.md) resources from the impactedResources navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSteps|[actionStep](../resources/actionstep.md) collection|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|benefits|String|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|category|recommendationCategory|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).The possible values are: `identityBestPractice`, `identitySecureScore`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|currentScore|Double|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|displayName|String|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|featureAreas|recommendationFeatureAreas collection|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|id|String|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|impactStartDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|impactType|String|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|insights|String|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|lastCheckedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|lastModifiedBy|String|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|maxScore|Double|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|postponeUntilDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|priority|recommendationPriority|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).The possible values are: `low`, `medium`, `high`.|
-|recommendationType|recommendationType|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).The possible values are: `adfsAppsMigration`, `enableDesktopSSO`, `enablePHS`, `enableProvisioning`, `switchFromPerUserMFA`, `tenantMFA`, `thirdPartyApps`, `turnOffPerUserMFA`, `useAuthenticatorApp`, `useMyApps`, `staleApps`, `staleAppCreds`, `applicationCredentialExpiry`, `servicePrincipalKeyExpiry`, `adminMFAV2`, `blockLegacyAuthentication`, `integratedApps`, `mfaRegistrationV2`, `pwagePolicyNew`, `passwordHashSync`, `oneAdmin`, `roleOverlap`, `selfServicePasswordReset`, `signinRiskPolicy`, `userRiskPolicy`, `verifyAppPublisher`, `privateLinkForAAD`, `appRoleAssignmentsGroups`, `appRoleAssignmentsUsers`, `managedIdentity`, `overprivilegedApps`, `unknownFutureValue`.|
-|remediationImpact|String|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).|
-|status|recommendationStatus|**TODO: Add Description** Inherited from [recommendationBase](../resources/recommendationbase.md).The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`.|
+|actionSteps|[actionStep](../resources/actionstep.md) collection|List of actions to take to complete a [recommendation](../resources/recommendation.md)|
+|benefits|String|An explanation of why [completing the recommendation](../api/recommendation-complete.md) will benefit you. Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
+|category|recommendationCategory|Indicates the category of intelligent guidance the recommendation falls under. The possible values are: `identityBestPractice`, `identitySecureScore`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|The date and time when the [recommendation](../resources/recommendation.md) was detected as applicable to your directory.|
+|currentScore|Double|The number of points the tenant has attained. Only applies to [recommendations](../resources/recommendation.md) with **category** set to `identitySecureScore`.|
+|displayName|String|The title of the [recommendation](../resources/recommendation.md).|
+|featureAreas|recommendationFeatureAreas collection|The directory feature that the [recommendation](../resources/recommendation.md) is related to.|
+|id|String|The unique identifier for the [recommendation](../resources/recommendation.md) object generated for your tenant.|
+|impactStartDateTime|DateTimeOffset|The future date and time when a [recommendation](../resources/recommendation.md) should be completed.|
+|impactType|String|	Indicates the scope of impact of a recommendation. `Tenant level` indicates that the recommendation impacts the whole tenant. Other possible values include `users`, `applications`.|
+|insights|String|Describes why a recommendation uniquely applies to your directory. Corresponds to the *Description* section of a recommendation shown in the Azure AD portal.|
+|lastCheckedDateTime|DateTimeOffset|The most recent date and time a [recommendation](../resources/recommendation.md) was deemed applicable to your directory.|
+|lastModifiedBy|String|Name of the user who last updated the **status** of the [recommendation](../resources/recommendation.md).|
+|lastModifiedDateTime|DateTimeOffset|	The date and time the **status** of a [recommendation](../resources/recommendation.md) was last updated.|
+|maxScore|Double|The maximum number of points attainable. Only applies to [recommendations](../resources/recommendation.md) with **category** set to `identitySecureScore`.|
+|postponeUntilDateTime|DateTimeOffset|The future date and time when the **status** of a postponed [recommendation](../resources/recommendation.md) will be `active` again.|
+|priority|recommendationPriority|Indicates the time sensitivity for a [recommendation](../resources/recommendation.md) to be completed. Microsoft auto assigns this value. The possible values are: `low`, `medium`, `high`. Read-only.|
+|recommendationType|recommendationType|Friendly shortname to identify the [recommendation](../resources/recommendation.md). The possible values are: `adfsAppsMigration`, `enableDesktopSSO`, `enablePHS`, `enableProvisioning`, `switchFromPerUserMFA`, `tenantMFA`, `thirdPartyApps`, `turnOffPerUserMFA`, `useAuthenticatorApp`, `useMyApps`, `staleApps`, `staleAppCreds`, `applicationCredentialExpiry`, `servicePrincipalKeyExpiry`, `adminMFAV2`, `blockLegacyAuthentication`, `integratedApps`, `mfaRegistrationV2`, `pwagePolicyNew`, `passwordHashSync`, `oneAdmin`, `roleOverlap`, `selfServicePasswordReset`, `signinRiskPolicy`, `userRiskPolicy`, `verifyAppPublisher`, `privateLinkForAAD`, `appRoleAssignmentsGroups`, `appRoleAssignmentsUsers`, `managedIdentity`, `overprivilegedApps`, `unknownFutureValue`.|
+|remediationImpact|String|Description of the impact on users of the remediation. Only applies to [recommendations](../resources/recommendation.md) with **category** set to `identitySecureScore`.|
+|status|recommendationStatus|	Indicates the status of the [recommendation](../resources/recommendation.md) based on user or system action. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`. By default, a recommendation's **status** is set to `active` when the recommendation is first generated. **Status** is set to `completedBySystem` when our service detects that a recommendation which was previously active no longer applies.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|impactedResources|[impactedResource](../resources/impactedresource.md) collection|**TODO: Add Description** Inherited from [Microsoft.AAD.Reporting.recommendationBase](../resources/recommendationbase.md)|
+|impactedResources|[impactedResource](../resources/impactedresource.md) collection|The list of directory objects associated with the [recommendation](../resources/recommendation.md).|
 
 ## JSON representation
 The following is a JSON representation of the resource.

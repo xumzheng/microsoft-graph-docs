@@ -1,9 +1,9 @@
 ---
 title: "impactedResource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an Azure AD resource in your tenant that's associated with an Azure AD recommendation."
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access"
 doc_type: resourcePageType
 ---
 
@@ -13,39 +13,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an Azure AD resource in your tenant that's associated with an Azure AD [recommendation](../resources/recommendation.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List impactedResources](../api/recommendationbase-list-impactedresources.md)|[impactedResource](../resources/impactedresource.md) collection|Get a list of the [impactedResource](../resources/impactedresource.md) objects and their properties.|
-|[Create impactedResource](../api/recommendationbase-post-impactedresources.md)|[impactedResource](../resources/impactedresource.md)|Create a new [impactedResource](../resources/impactedresource.md) object.|
 |[Get impactedResource](../api/impactedresource-get.md)|[impactedResource](../resources/impactedresource.md)|Read the properties and relationships of an [impactedResource](../resources/impactedresource.md) object.|
-|[Update impactedResource](../api/impactedresource-update.md)|[impactedResource](../resources/impactedresource.md)|Update the properties of an [impactedResource](../resources/impactedresource.md) object.|
-|[Delete impactedResource](../api/recommendationbase-delete-impactedresources.md)|None|Delete an [impactedResource](../resources/impactedresource.md) object.|
-|[postpone](../api/impactedresource-postpone.md)|[impactedResource](../resources/impactedresource.md)|**TODO: Add Description**|
-|[dismiss](../api/impactedresource-dismiss.md)|[impactedResource](../resources/impactedresource.md)|**TODO: Add Description**|
-|[complete](../api/impactedresource-complete.md)|[impactedResource](../resources/impactedresource.md)|**TODO: Add Description**|
-|[reactivate](../api/impactedresource-reactivate.md)|[impactedResource](../resources/impactedresource.md)|**TODO: Add Description**|
+|[Postpone](../api/impactedresource-postpone.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `postponed` to a specified date and time.|
+|[Dismiss](../api/impactedresource-dismiss.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `dismissed`.|
+|[Complete](../api/impactedresource-complete.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `completedByUser`.|
+|[Reactivate](../api/impactedresource-reactivate.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `active`.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addedDateTime|DateTimeOffset|**TODO: Add Description**|
-|additionalDetails|[keyValue](../resources/keyvalue.md) collection|**TODO: Add Description**|
-|apiUrl|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|lastModifiedBy|String|**TODO: Add Description**|
-|lastModifiedDateTime|String|**TODO: Add Description**|
-|owner|String|**TODO: Add Description**|
-|portalUrl|String|**TODO: Add Description**|
-|postponeUntilDateTime|DateTimeOffset|**TODO: Add Description**|
-|rank|Int32|**TODO: Add Description**|
-|recommendationId|String|**TODO: Add Description**|
-|resourceType|String|**TODO: Add Description**|
-|status|recommendationStatus|**TODO: Add Description**.The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`.|
-|subjectId|String|**TODO: Add Description**|
+|addedDateTime|DateTimeOffset|The date and time when the [impactedResource](../resources/impactedresource.md) object was initially associated with a [recommendation](../resources/recommendation.md).|
+|additionalDetails|[keyValue](../resources/keyvalue.md) collection|Additional information unique to the [impactedResource](../resources/impactedresource.md) to help contextualize the [recommendation](../resources/recommendation.md).|
+|apiUrl|String|The URL link to the corresponding Azure AD resource.|
+|displayName|String|Friendly name of the Azure AD resource.|
+|id|String|A unique identifier of the impacted Azure AD resource.|
+|lastModifiedBy|String|Name of the user or service that last updated the **status**.|
+|lastModifiedDateTime|String|The date and time when the **status** was last updated.|
+|owner|String|The user responsible for maintaining the resource.|
+|portalUrl|String|The URL link to the corresponding Azure AD portal page of the resource.|
+|postponeUntilDateTime|DateTimeOffset|The future date and time when the **status** of a postponed [impactedResource](../resources/impactedresource.md) will be `active` again.|
+|rank|Int32|Indicates the importance of the resource. A resource with a rank equal to 1 is of the highest importance.|
+|recommendationId|String|The unique identifier of the [recommendation](../resources/recommendation.md) that the resource is associated with.|
+|resourceType|String|Indicates the type of Azure AD resource. Examples include `user`, `application`.|
+|status|recommendationStatus|Indicates whether a resource needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`. By default, a recommendation's **status** is set to `active` when the recommendation is first generated. **Status** is set to `completedBySystem` when our service detects that a resource which was once active no longer applies.|
+|subjectId|String|The related unique identifier, depending on the `resourceType`. For example, this property is set to the `applicationId` if the `resourceType` is an application.|
 
 ## Relationships
 None.

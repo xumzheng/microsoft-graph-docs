@@ -1,9 +1,9 @@
 ---
 title: "actionUrl resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "The link to the documentation or Azure portal page that provides more information about an actionStep."
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The link to the documentation or Azure portal page that provides more information about an [actionStep](../resources/actionstep.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|url|String|**TODO: Add Description**|
+|displayName|String|Brief title for the page that the links directs to.|
+|url|String|The URL to the documentation or Azure portal page.|
 
 ## Relationships
 None.

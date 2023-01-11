@@ -1,9 +1,9 @@
 ---
 title: "actionStep resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a single action to take toward completing a recommendation."
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a single action to take toward completing a [recommendation](../resources/recommendation.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionUrl|[actionUrl](../resources/actionurl.md)|**TODO: Add Description**|
-|stepNumber|Int64|**TODO: Add Description**|
-|text|String|**TODO: Add Description**|
+|actionUrl|[actionUrl](../resources/actionurl.md)|A link to the documentation or Azure portal page that is associated with the action step.|
+|stepNumber|Int64|Indicates the position for this action in the order of the collection of actions to be taken.|
+|text|String|Friendly description of the action to take.|
 
 ## Relationships
 None.
