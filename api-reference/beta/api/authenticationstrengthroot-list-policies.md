@@ -23,6 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
 
+The following [administrator roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) are required: 
+* Conditional Access administrator 
+*	Security Administrator 
+*	Security Reader 
+
+
 ## HTTP request
 
 <!-- {
