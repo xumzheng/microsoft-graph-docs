@@ -13811,7 +13811,7 @@ items:
         - name: impactedResource
           href: resource/impactedResource.md
         - name: List
-          href: api/recommendation-list-impactedresource.md
+          href: api/recommendation-list-impactedresources.md
         - name: Get
           href: api/impactedresource-get.md
         - name: Complete
