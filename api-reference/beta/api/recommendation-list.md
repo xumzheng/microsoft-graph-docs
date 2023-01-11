@@ -1,9 +1,9 @@
 ---
-title: "List recommendationBases"
-description: "Get a list of the recommendationBase objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "List recommendations"
+description: "Get a list of the recommendation objects and their properties."
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [recommendationBase](../resources/recommendationbase.md) objects and their properties.
+Get a list of the [recommendation](../resources/recommendation.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for Microsoft.AAD.Reporting.recommendationBase not found
+GET /directory/recommendations
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for Microsoft.AAD.Reporting.recommendationBase not found
+GET https://graph.microsoft.com/beta/directory/recommendations
 ```
 
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.Reporting.recommendationBase)"
+  "@odata.type": "Collection(Microsoft.AAD.Reporting.recommendation)"
 }
 -->
 ``` http
@@ -78,7 +78,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.AAD.Reporting.recommendationBase",
+      "@odata.type": "#Microsoft.AAD.Reporting.recommendation",
       "id": "2a6b89e0-bc33-9bce-229c-0b9058a9bfe2",
       "actionSteps": [
         {

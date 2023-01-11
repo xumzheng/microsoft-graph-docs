@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/impactedResources/{impactedResourceId}
-GET /recommendationBase/impactedResources/{impactedResourceId}
+GET /directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}
 ```
 
 ## Optional query parameters
@@ -59,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/impactedResources/{impactedResourceId}
+GET https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}
 ```
 
 

@@ -1,9 +1,9 @@
 ---
 title: "impactedResource: postpone"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Postpone action on an impactedResource object to a specified future date and time."
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Postpone action on an [impactedResource](../resources/impactedresource.md) object to a specified future date and time by marking its **status** as `postponed`. On the specified date and time, Azure AD will automatically mark the status of the **impactedResource** object to `active`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DirectoryRecommendations.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DirectoryRecommendations.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/impactedResources/{impactedResourceId}/postpone
-POST /recommendationBase/impactedResources/{impactedResourceId}/postpone
+POST /directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}/postpone
 ```
 
 ## Request headers
@@ -47,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|postponeUntilDateTime|DateTimeOffset|**TODO: Add Description**|
+|postponeUntilDateTime|DateTimeOffset|The date and time when the **status** of the **impactedResource** will be updated to `active`.|
 
 
 
@@ -65,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/impactedResources/{impactedResourceId}/postpone
+POST https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}/postpone
 Content-Type: application/json
 
 {

@@ -1,9 +1,9 @@
 ---
 title: "impactedResource: reactivate"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Reactivate an accidentally dismissed, completed, or postponed impactedResource object."
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Reactivate an accidentally dismissed, completed, or postponed **impactedResource** object. This action updates the **status** of the resource to `active`. This method is relevant only if the status of the **impactedResource** object is `dismissed`, `postponed`, or `completedByUser`. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DirectoryRecommendations.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DirectoryRecommendations.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/impactedResources/{impactedResourceId}/reactivate
-POST /recommendationBase/impactedResources/{impactedResourceId}/reactivate
+POST /directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}/reactivate
 ```
 
 ## Request headers
@@ -56,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/impactedResources/{impactedResourceId}/reactivate
+POST https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}/reactivate
 ```
 
 

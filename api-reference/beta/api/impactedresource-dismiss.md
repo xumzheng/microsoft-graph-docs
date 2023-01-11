@@ -1,9 +1,9 @@
 ---
 title: "impactedResource: dismiss"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Dismiss a recommendationResource object and update its status to dismissed."
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Dismiss an [impactedResources](../resources/impactedresource.md) object and update its status to `dismissed`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DirectoryRecommendations.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DirectoryRecommendations.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/impactedResources/{impactedResourceId}/dismiss
-POST /recommendationBase/impactedResources/{impactedResourceId}/dismiss
+POST /directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}/dismiss
 ```
 
 ## Request headers
@@ -47,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|dismissReason|String|**TODO: Add Description**|
+|dismissReason|String|Audited reason for deeming an [impactedResource](../resources/impactedresource.md) inapplicable to you and its associated [recommendation](../resources/recommendation.md).|
 
 
 
@@ -65,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/impactedResources/{impactedResourceId}/dismiss
+POST https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}/dismiss
 Content-Type: application/json
 
 {

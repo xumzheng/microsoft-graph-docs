@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /recommendations/{recommendationId}/impactedResources/{impactedResourceId}/complete
+POST /directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}/complete
 ```
 
 ## Request headers
