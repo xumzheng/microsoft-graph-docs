@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 ## Permissions
 
-#### Option 1: Ordinary links
-
 Choose the permission marked as least privileged for this API. Use a higher privileged permission only if your app requires it. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 | Permission type                        | Least privileged permission | Higher privileged permissions                                                  |
@@ -21,6 +19,7 @@ Choose the permission marked as least privileged for this API. Use a higher priv
 | Delegated (personal Microsoft account) | Not supported.              | Not supported.                                                                 |
 | Application                            | User.Read.All               | User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All                |
 
+<!--
 
 ---------------------------------------------------------
 
@@ -36,7 +35,6 @@ Choose the permission marked as least privileged for this API. Use a higher priv
 
 
 ---------------------------------------------------------
-<!--
 
 Choose the permission marked as least privileged for this API. Use a higher privileged permission only if your app requires it. To learn more about these permissions, see the [Permissions reference](/graph/permissions-reference).
 
