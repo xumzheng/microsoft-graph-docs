@@ -87,7 +87,8 @@ To get started, see:
 - Use the delegated permission `QnA.Read.All` to [query](/graph/api/search-query) and read all Questions and Answers on behalf of a signed-in user.
 - Use the delegated permission `Chat.Read` to [query](/graph/api/search-query) and read a signed-in user's 1:1 or group chat messages, on behalf of the signed-in user.
 - Use the delegated permission `ChannelMessage.Read.All` to [query](/graph/api/search-query) and read all messages in a Teams channel on behalf of a signed-in user.
-- [Graph Search API](/graph/api/search-query) is supported in China now.
+- [Graph Search API](/graph/api/search-query) is supported in China.
+- Teams message search is supported in [Graph Search API](/graph/api/search-query).
 - Search acronym, bookmark and qna in [Graph Search API](/graph/api/search-query).
 
 ### Security | eDiscovery
