@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Contains information about the original object in the source Azure AD tenant the object was synchronized from. This information is only populated for objects that are synchronized using Azure AD cross-tenant synchronization.
 
-This is an abstract type.
+This is an abstract type that's inherited by the [crossTenantSynchronizationResource](crosstenantsynchronizationresource.md) resource type.
 
 ## Properties
 |Property|Type|Description|

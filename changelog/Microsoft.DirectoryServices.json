@@ -120,7 +120,7 @@
         },
         {
           "Id": "e61edcf6-86b7-454c-a4f5-675f5cc0cb50",
-          "ApiChange": "Enum type",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "synchronizationInfoCreationType",
           "ChangeType": "Addition",
           "Description": "Added the **synchronizationInfoCreationType** enumeration.",
