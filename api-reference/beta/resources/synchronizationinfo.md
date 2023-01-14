@@ -1,6 +1,6 @@
 ---
 title: "synchronizationInfo resource type"
-description: "Contains information about how the object was synchronized."
+description: "Contains information about how the object was synchronized. This information is only populated for objects that are synchronized using Azure AD cross-tenant synchronization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -19,7 +19,7 @@ Contains information about how the object was synchronized. This information is 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|creationType|synchronizationInfoCreationType| indicates how the object was synchronized. The possible values are: `tenantToTenantSync`, `unknownFutureValue`. `tenantToTenantSync` indicates that the object was created using Azure AD cross-tenant synchronization.|
+|creationType|synchronizationInfoCreationType| Indicates how the object was synchronized. The possible values are: `tenantToTenantSync`, `unknownFutureValue`. `tenantToTenantSync` indicates that the object was created using Azure AD cross-tenant synchronization.|
 
 ## Relationships
 None.
