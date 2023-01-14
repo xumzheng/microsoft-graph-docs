@@ -19,7 +19,7 @@ Contains information about how the object was synchronized. This information is 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|creationType|synchronizationInfoCreationType|Value that indicates how object was synchronized. The possible values are: `tenantToTenantSync`, `unknownFutureValue`. `tenantToTenantSync` indicates that the object was created using Azure AD cross-tenant synchronization.|
+|creationType|synchronizationInfoCreationType| indicates how the object was synchronized. The possible values are: `tenantToTenantSync`, `unknownFutureValue`. `tenantToTenantSync` indicates that the object was created using Azure AD cross-tenant synchronization.|
 
 ## Relationships
 None.
