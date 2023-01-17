@@ -172,6 +172,7 @@ Content-type: application/json
 - Search [bookmark](/graph/search-concept-bookmark)
 - Search [qna](/graph/search-concept-qna)
 - [Sort](/graph/search-concept-sort) search results
+- [Collapse](/graph/search-concept-collapse) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
 - Enable [spell corrections](/graph/search-concept-speller) in search results
 
