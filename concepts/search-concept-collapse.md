@@ -163,7 +163,7 @@ In below table, the ranking is still maintained, but we collapse first on Filena
 |Notebook|Andy|Culture|7|
 
 ## Expected Response
-Once you use collapseProperties, each returned result contains a Boolean field of "isCollapsed", representing collapse state of the current result.
+When using collapseProperties, the response will contain an "isCollapsed" Boolean field for reach result that represents the collapse state of that result.
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -209,7 +209,7 @@ Content-type: application/json
 }
 ```
 ## Known limitations
-- The **collapseProperties** property is not supported for the following resources: **message**, **chatMessage**, **event**, **person**, **bookmark** or **acronym**.
+- The **collapseProperties** property is not supported for the following resources: **message**,**chatMessage**, **event**, **person**, **externalItem**, **bookmark**, **acronym** or **qna**.
 
 ## Next steps
 
