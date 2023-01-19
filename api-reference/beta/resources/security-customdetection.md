@@ -23,7 +23,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List customDetections](../api/security-security-list-customdetections.md)|[microsoft.graph.security.customDetection](../resources/security-customdetection.md) collection|Get a list of the [microsoft.graph.security.customDetection](../resources/security-customdetection.md) objects and their properties.|
-|[Create customDetection](../api/security-security-post-customdetections.md)|[microsoft.graph.security.customDetection](../resources/security-customdetection.md)|Create a new [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object.|
+|[Create customDetection](../api/security-post-customdetections.md)|[microsoft.graph.security.customDetection](../resources/security-customdetection.md)|Create a new [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object.|
 |[Get customDetection](../api/security-customdetection-get.md)|[microsoft.graph.security.customDetection](../resources/security-customdetection.md)|Read the properties and relationships of a [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object.|
 |[Update customDetection](../api/security-customdetection-update.md)|[microsoft.graph.security.customDetection](../resources/security-customdetection.md)|Update the properties of a [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object.|
 |[Delete customDetection](../api/security-security-delete-customdetections.md)|None|Delete a [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object.|
