@@ -1,18 +1,18 @@
 ---
-title: "Update customDetection"
-description: "Update the properties of a microsoft.graph.security.customDetection object."
+title: "Create customDetection"
+description: "Create a new customDetection object."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Update customDetection
+# Create customDetection
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object.
+Create a new customDetection object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /security/customDetections/{customDetectionId}
+POST /security/customDetections
 ```
 
 ## Request headers
@@ -40,8 +40,9 @@ PATCH /security/customDetections/{customDetectionId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object.
 
+You can specify the following properties when creating a **customDetection**.
 
 | Property               | Type                                                                                                                        | Description                                                                                                                                                                          |
 |:-----------------------|:----------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -61,7 +62,7 @@ PATCH /security/customDetections/{customDetectionId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.customDetection](../resources/security-customdetection.md) object in the response body.
 
 ## Examples
 
@@ -69,11 +70,11 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_customdetection"
+  "name": "create_customdetection_from_"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/customDetections/{customDetectionId}
+POST https://graph.microsoft.com/beta/security/customDetections
 Content-Type: application/json
 
 {
@@ -112,11 +113,12 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.customDetection"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
