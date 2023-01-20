@@ -4,6 +4,46 @@
       "ChangeList": [
         {
           "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendation",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendation](../../api-reference/beta/resources/recommendation.md) resource",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "complete",
+          "ChangeType": "Addition",
+          "Description": "Added the [complete](../../api-reference/beta/api/recommendation-complete.md) method to the [recommendation](../../api-reference/beta/resources/recommendation.md) resource.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](../../api-reference/beta/api/recommendation-dismiss.md) method to the [recommendation](../../api-reference/beta/resources/recommendation.md) resource.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "postpone",
+          "ChangeType": "Addition",
+          "Description": "Added the [postpone](../../api-reference/beta/api/recommendation-postpone.md) method to the [recommendation](../../api-reference/beta/resources/recommendation.md) resource.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "reactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [reactivate](../../api-reference/beta/api/recommendation-reactivate.md) method to the [recommendation](../../api-reference/beta/resources/recommendation.md) resource.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "87be8d35-264c-44c5-8dde-99749f374d1d",
           "ApiChange": "Member",
           "ChangedApiName": "identityBestPractice",
           "ChangeType": "Addition",
@@ -39,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "impactedResource",
           "ChangeType": "Addition",
-          "Description": "Added the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource",
+          "Description": "Added the [impactedResource](../../api-reference/beta/resources/impactedresource.md) resource",
           "Target": "impactedResource"
         },
         {
@@ -47,7 +87,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "complete",
           "ChangeType": "Addition",
-          "Description": "Added the [complete](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [complete](../../api-reference/beta/api/impactedresource-complete.md) method to the [impactedResource](../../api-reference/beta/resources/impactedresource.md) resource.",
           "Target": "impactedResource"
         },
         {
@@ -55,7 +95,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "dismiss",
           "ChangeType": "Addition",
-          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [dismiss](../../api-reference/beta/api/impactedresource-dismiss.md) method to the [impactedResource](../../api-reference/beta/resources/impactedresource.md) resource.",
           "Target": "impactedResource"
         },
         {
@@ -63,7 +103,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "postpone",
           "ChangeType": "Addition",
-          "Description": "Added the [postpone](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [postpone](../../api-reference/beta/api/impactedresource-postpone.md) method to the [impactedResource](../../api-reference/beta/resources/impactedresource.md) resource.",
           "Target": "impactedResource"
         },
         {
@@ -71,7 +111,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reactivate",
           "ChangeType": "Addition",
-          "Description": "Added the [reactivate](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/impactedResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [reactivate](../../api-reference/beta/api/impactedresource-reactivate.md) method to the [impactedResource](../../api-reference/beta/resources/impactedresource.md) resource.",
           "Target": "impactedResource"
         }
       ],

@@ -55,7 +55,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/impactedResources/{impactedResourceId}/reactivate
+POST https://graph.microsoft.com/beta/directory/recommendations/
+0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.ApplicationCredentialExpiry/impactedResources/dbd9935e-15b7-4800-9049-8d8704c23ad2/reactivate
 ```
 
 
@@ -73,28 +74,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#Microsoft.AAD.Reporting.impactedResource",
-    "id": "String (identifier)",
-    "subjectId": "String",
-    "recommendationId": "String",
-    "addedDateTime": "String (timestamp)",
-    "portalUrl": "String",
-    "apiUrl": "String",
-    "displayName": "String",
-    "resourceType": "String",
-    "owner": "String",
-    "rank": "Integer",
-    "status": "String",
-    "additionalDetails": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#impactedResource",
+  "@odata.type": "#microsoft.graph.impactedResource",
+  "id": "dbd9935e-15b7-4800-9049-8d8704c23ad2",
+  "subjectId": "f9c3466a-9cb5-46ee-84db-e7e6e405b937",
+  "recommendationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ApplicationCredentialExpiry",
+  "resourceType": "app",
+  "addedDateTime": "2022-03-19T09:40:39.0420371Z",
+  "postponeUntilDateTime": null,
+  "lastModifiedDateTime": "2022-04-04T20:43:28.9687029Z",
+  "lastModifiedBy": "b5fa65db-0d2b-4233-8788-ab0213567669",
+  "displayName": "Contoso IWA App Tutorial",
+  "owner": null,
+  "rank": 1,
+  "portalUrl": "https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/Credentials/appId/ f9c3466a-9cb5-46ee-84db-e7e6e405b937",
+  "apiUrl": null,
+  "status": "active",
+  "additionalDetails": [
       {
-        "@odata.type": "microsoft.graph.keyValue"
+          "key": "ExpiringCredentialsCount",
+          "value": "1"
       }
-    ],
-    "lastModifiedBy": "String",
-    "lastModifiedDateTime": "String",
-    "postponeUntilDateTime": "String (timestamp)"
-  }
+  ]
 }
 ```
 

@@ -50,7 +50,9 @@ If successful, this method returns a `200 OK` response code and a [recommendatio
 
 ## Examples
 
-### Request
+### Example 1: Get a recommendation object without its associated resources by the recommendationId
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -58,11 +60,10 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}
+GET https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA
 ```
 
-
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -76,35 +77,207 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#Microsoft.AAD.Reporting.recommendation",
-    "id": "bc2cb4cb-51af-e5b8-cbfc-3b48ee5306f2",
-    "actionSteps": [
-      {
-        "@odata.type": "microsoft.graph.actionStep"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/recommendations/$entity",
+  "id": "0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA",
+  "recommendationType": "turnOffPerUserMFA",
+  "createdDateTime": "2022-02-28T02:53:00Z",
+  "impactStartDateTime": "2022-02-28T02:53:00Z",
+  "postponeUntilDateTime": null,
+  "lastModifiedDateTime": "2023-01-10T22:57:10.2509132Z",
+  "lastModifiedBy": "d5a3853c-8e04-42b6-a530-bf159e99174a",
+  "currentScore": 0,
+  "maxScore": 5,
+  "displayName": "Convert from per-user MFA to Conditional Access MFA",
+  "featureAreas": [
+    "conditionalAccess"
+  ],
+  "insights": "13 users are currently configured for per-user Multi-Factor Authentication (MFA)...",
+  "benefits": "Improve user productivity and minimize sign-in time with fewer MFA prompts...",
+  "category": "identityBestPractice",
+  "status": "active",
+  "priority": "medium",
+  "impactType": "users",
+  "remediationImpact": "",
+  "actionSteps": [
+    {
+      "stepNumber": 1,
+      "text": "1. To get started, confirm that there is an existing CA policy with an MFA requirement...",
+      "actionUrl": {
+        "displayName": "Click here to view your CA policies",
+        "url": "https://portal.azure.com/#blade/Microsoft_AAD_IAM/PoliciesTemplateBlade"
       }
-    ],
-    "benefits": "String",
-    "category": "String",
-    "createdDateTime": "String (timestamp)",
-    "currentScore": "Double",
-    "displayName": "String",
-    "featureAreas": [
-      "String"
-    ],
-    "impactType": "String",
-    "impactStartDateTime": "String (timestamp)",
-    "insights": "String",
-    "lastCheckedDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": "String",
-    "maxScore": "Double",
-    "postponeUntilDateTime": "String (timestamp)",
-    "priority": "String",
-    "status": "String",
-    "remediationImpact": "String",
-    "recommendationType": "String"
-  }
+    },
+    {
+      "stepNumber": 2,
+      "text": "2. To require MFA via a CA policy, follow the steps in this tutorial.",
+      "actionUrl": {
+          "displayName": "Secure user sign-in events with Azure AD Multi-Factor Authentication",
+          "url": "https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa?toc=/azure/active-directory/conditional-access/toc.json&bc=/azure/active-directory/conditional-access/breadcrumb/toc.json"
+      }
+    },
+    {
+      "stepNumber": 3,
+      "text": "3. Ensure that the per-user MFA configuration is turned off",
+      "actionUrl": {
+          "displayName": "Navigate to MFA settings.",
+          "url": "https://account.activedirectory.windowsazure.com/UserManagement/MfaSettings.aspx"
+      }
+    }
+  ]
+}
+```
+### Example 2: Get a recommendation object without its associated resources by the recommendationType
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_recommendation"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/directory/recommendations?$filter=recommendationType eq 'turnOffPerUserMFA'
+```
+
+#### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Microsoft.AAD.Reporting.recommendation"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/recommendations/$entity",
+  "id": "0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA",
+  "recommendationType": "turnOffPerUserMFA",
+  "createdDateTime": "2022-02-28T02:53:00Z",
+  "impactStartDateTime": "2022-02-28T02:53:00Z",
+  "postponeUntilDateTime": null,
+  "lastModifiedDateTime": "2023-01-10T22:57:10.2509132Z",
+  "lastModifiedBy": "d5a3853c-8e04-42b6-a530-bf159e99174a",
+  "currentScore": 0,
+  "maxScore": 5,
+  "displayName": "Convert from per-user MFA to Conditional Access MFA",
+  "featureAreas": [
+    "conditionalAccess"
+  ],
+  "insights": "13 users are currently configured for per-user Multi-Factor Authentication (MFA)...",
+  "benefits": "Improve user productivity and minimize sign-in time with fewer MFA prompts...",
+  "category": "identityBestPractice",
+  "status": "active",
+  "priority": "medium",
+  "impactType": "users",
+  "remediationImpact": "",
+  "actionSteps": [
+    {
+      "stepNumber": 1,
+      "text": "1. To get started, confirm that...",
+      "actionUrl": {
+        "displayName": "Click here to view your CA policies",
+        "url": "https://portal.azure.com/#blade/Microsoft_AAD_IAM/PoliciesTemplateBlade"
+      }
+    },
+    {
+      "stepNumber": 2,
+      "text": "2. To require MFA via a CA policy, follow the steps in this tutorial.",
+      "actionUrl": {
+          "displayName": "Secure user sign-in events with Azure AD Multi-Factor Authentication",
+          "url": "https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa?toc=/azure/active-directory/conditional-access/toc.json&bc=/azure/active-directory/conditional-access/breadcrumb/toc.json"
+      }
+    },
+    {
+      "stepNumber": 3,
+      "text": "3. Ensure that the per-user MFA configuration is turned off",
+      "actionUrl": {
+          "displayName": "Navigate to MFA settings.",
+          "url": "https://account.activedirectory.windowsazure.com/UserManagement/MfaSettings.aspx"
+      }
+    }
+  ]
 }
 ```
 
+### Example 3: Get a recommendation object with its associated impacted resources
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_recommendation"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/directory/recommendations?$filter=id eq '0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA'&$expand=impactedResources
+```
+
+#### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Microsoft.AAD.Reporting.recommendation"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/recommendations(impactedResources())",
+  "id": "0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA",
+  "recommendationType": "turnOffPerUserMFA",
+  "createdDateTime": "2022-02-28T02:53:00Z",
+  "impactStartDateTime": "2022-02-28T02:53:00Z",
+  "postponeUntilDateTime": null,
+  "lastModifiedDateTime": "2023-01-10T22:57:10.2509132Z",
+  "lastModifiedBy": "d5a3853c-8e04-42b6-a530-bf159e99174a",
+  "currentScore": 0,
+  "maxScore": 5,
+  "displayName": "Convert from per-user MFA to Conditional Access MFA",
+  "featureAreas": [
+    "conditionalAccess"
+  ],
+  "insights": "13 users are currently configured for per-user Multi-Factor Authentication (MFA). However, there are 6 users configured for Conditional Access (CA) MFA. The per-user MFA configuration supersedes the MFA settings applied via CA policies, potentially creating unnecessary MFA prompts.",
+  "benefits": "Improve user productivity and minimize sign-in time with fewer MFA prompts. Ensure that your most sensitive resources can have the tighest controls, while your least sensitive resources can be more freely accessible.",
+  "category": "identityBestPractice",
+  "status": "active",
+  "priority": "medium",
+  "impactType": "users",
+  "remediationImpact": "",
+  "actionSteps": [
+    {
+      "stepNumber": 1,
+      "text": "1. To get started, confirm that there is an existing CA policy with an MFA requirement. Ensure that you are covering all resources and users you would like to secure with MFA.",
+      "actionUrl": {
+        "displayName": "Click here to view your CA policies",
+        "url": "https://portal.azure.com/#blade/Microsoft_AAD_IAM/PoliciesTemplateBlade"
+      }
+    },
+    {
+      "stepNumber": 2,
+      "text": "2. To require MFA via a CA policy, follow the steps in this tutorial.",
+      "actionUrl": {
+          "displayName": "Secure user sign-in events with Azure AD Multi-Factor Authentication",
+          "url": "https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa?toc=/azure/active-directory/conditional-access/toc.json&bc=/azure/active-directory/conditional-access/breadcrumb/toc.json"
+      }
+    },
+    {
+      "stepNumber": 3,
+      "text": "3. Ensure that the per-user MFA configuration is turned off",
+      "actionUrl": {
+          "displayName": "Navigate to MFA settings.",
+          "url": "https://account.activedirectory.windowsazure.com/UserManagement/MfaSettings.aspx"
+      }
+    }
+  ],
+  "impactedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/recommendations('0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA')/impactedResources",
+  "impactedResources": []
+}
+```

@@ -47,7 +47,7 @@ For more information, see [What is Azure Active Directory recommendations?](http
 |currentScore|Double|The number of points the tenant has attained. Only applies to [recommendations](../resources/recommendation.md) with **category** set to `identitySecureScore`.|
 |displayName|String|The title of the [recommendation](../resources/recommendation.md).|
 |featureAreas|recommendationFeatureAreas collection|The directory feature that the [recommendation](../resources/recommendation.md) is related to.|
-|id|String|The unique identifier for the [recommendation](../resources/recommendation.md) object generated for your tenant.|
+|id|String|The unique identifier for the [recommendation](../resources/recommendation.md) object generated for your tenant. This is a concatenation of your tenant ID and an Azure AD-assigned nickname for the recommendation. For example, `7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ThirdPartyApps`|
 |impactStartDateTime|DateTimeOffset|The future date and time when a [recommendation](../resources/recommendation.md) should be completed.|
 |impactType|String|	Indicates the scope of impact of a recommendation. `Tenant level` indicates that the recommendation impacts the whole tenant. Other possible values include `users`, `applications`.|
 |insights|String|Describes why a recommendation uniquely applies to your directory. Corresponds to the *Description* section of a recommendation shown in the Azure AD portal.|

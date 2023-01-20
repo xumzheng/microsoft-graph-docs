@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/complete
+POST https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA/complete
 ```
 
 
@@ -73,35 +73,54 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#Microsoft.AAD.Reporting.recommendation",
-    "id": "String (identifier)",
-    "actionSteps": [
-      {
-        "@odata.type": "microsoft.graph.actionStep"
-      }
-    ],
-    "benefits": "String",
-    "category": "String",
-    "createdDateTime": "String (timestamp)",
-    "currentScore": "Double",
-    "displayName": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#recommendation",
+    "@odata.type": "#microsoft.graph.recommendation",
+    "id": "0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA",
+    "recommendationType": "turnOffPerUserMFA",
+    "createdDateTime": "2022-02-28T02:53:00Z",
+    "impactStartDateTime": "2022-02-28T02:53:00Z",
+    "postponeUntilDateTime": null,
+    "lastModifiedDateTime": "2023-01-20T02:08:33.4580541Z",
+    "lastModifiedBy": "b5fa65db-0d2b-4233-8788-ab0213567669",
+    "currentScore": 0,
+    "maxScore": 5,
+    "displayName": "Convert from per-user MFA to Conditional Access MFA",
     "featureAreas": [
-      "String"
+        "conditionalAccess"
     ],
-    "impactType": "String",
-    "impactStartDateTime": "String (timestamp)",
-    "insights": "String",
-    "lastCheckedDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": "String",
-    "maxScore": "Double",
-    "postponeUntilDateTime": "String (timestamp)",
-    "priority": "String",
-    "status": "String",
-    "remediationImpact": "String",
-    "recommendationType": "String"
-  }
+    "insights": "13 users are currently configured for per-user Multi-Factor Authentication (MFA). However, there are 6 users configured for Conditional Access (CA) MFA. The per-user MFA configuration supersedes the MFA settings applied via CA policies, potentially creating unnecessary MFA prompts.",
+    "benefits": "Improve user productivity and minimize sign-in time with fewer MFA prompts. Ensure that your most sensitive resources can have the tighest controls, while your least sensitive resources can be more freely accessible.",
+    "category": "identityBestPractice",
+    "status": "completedByUser",
+    "priority": "medium",
+    "impactType": "users",
+    "remediationImpact": "",
+    "actionSteps": [
+        {
+            "stepNumber": 1,
+            "text": "1. To get started, confirm that there is an existing CA policy with an MFA requirement. Ensure that you are covering all resources and users you would like to secure with MFA.",
+            "actionUrl": {
+                "displayName": "Click here to view your CA policies",
+                "url": "https://portal.azure.com/#blade/Microsoft_AAD_IAM/PoliciesTemplateBlade"
+            }
+        },
+        {
+            "stepNumber": 2,
+            "text": "2. To require MFA via a CA policy, follow the steps in this tutorial.",
+            "actionUrl": {
+                "displayName": "Secure user sign-in events with Azure AD Multi-Factor Authentication",
+                "url": "https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa?toc=/azure/active-directory/conditional-access/toc.json&bc=/azure/active-directory/conditional-access/breadcrumb/toc.json"
+            }
+        },
+        {
+            "stepNumber": 3,
+            "text": "3. Ensure that the per-user MFA configuration is turned off",
+            "actionUrl": {
+                "displayName": "Navigate to MFA settings.",
+                "url": "https://account.activedirectory.windowsazure.com/UserManagement/MfaSettings.aspx"
+            }
+        }
+    ]
 }
 ```
 
