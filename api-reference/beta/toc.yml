@@ -13809,7 +13809,7 @@ items:
       - name: impactedResource
         items:
         - name: impactedResource
-          href: resource/impactedResource.md
+          href: resource/impactedresource.md
         - name: List
           href: api/recommendation-list-impactedresources.md
         - name: Get
