@@ -66,7 +66,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.AAD.Reporting.recommendation"
+  "@odata.type": "microsoft.graph.recommendation"
 }
 -->
 ``` http

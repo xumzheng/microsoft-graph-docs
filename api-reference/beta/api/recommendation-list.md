@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_recommendationbase"
+  "name": "list_recommendation"
 }
 -->
 ``` http
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.Reporting.recommendation)"
+  "@odata.type": "Collection(microsoft.graph.recommendation)"
 }
 -->
 ``` http
