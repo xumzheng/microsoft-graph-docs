@@ -96,8 +96,8 @@ Content-Type: application/json
     "postponeUntilDateTime": null,
     "lastModifiedDateTime": "2023-01-20T02:08:33.4580541Z",
     "lastModifiedBy": "b5fa65db-0d2b-4233-8788-ab0213567669",
-    "currentScore": 0,
-    "maxScore": 5,
+    "currentScore": 0.0,
+    "maxScore": 5.0,
     "displayName": "Convert from per-user MFA to Conditional Access MFA",
     "featureAreas": [
         "conditionalAccess"

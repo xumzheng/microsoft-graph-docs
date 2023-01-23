@@ -85,8 +85,8 @@ Content-Type: application/json
   "postponeUntilDateTime": null,
   "lastModifiedDateTime": "2023-01-10T22:57:10.2509132Z",
   "lastModifiedBy": "d5a3853c-8e04-42b6-a530-bf159e99174a",
-  "currentScore": 0,
-  "maxScore": 5,
+  "currentScore": 0.0,
+  "maxScore": 5.0,
   "displayName": "Convert from per-user MFA to Conditional Access MFA",
   "featureAreas": [
     "conditionalAccess"
@@ -161,8 +161,8 @@ Content-Type: application/json
   "postponeUntilDateTime": null,
   "lastModifiedDateTime": "2023-01-10T22:57:10.2509132Z",
   "lastModifiedBy": "d5a3853c-8e04-42b6-a530-bf159e99174a",
-  "currentScore": 0,
-  "maxScore": 5,
+  "currentScore": 0.0,
+  "maxScore": 5.0,
   "displayName": "Convert from per-user MFA to Conditional Access MFA",
   "featureAreas": [
     "conditionalAccess"
@@ -238,8 +238,8 @@ Content-Type: application/json
   "postponeUntilDateTime": null,
   "lastModifiedDateTime": "2023-01-10T22:57:10.2509132Z",
   "lastModifiedBy": "d5a3853c-8e04-42b6-a530-bf159e99174a",
-  "currentScore": 0,
-  "maxScore": 5,
+  "currentScore": 0.0,
+  "maxScore": 5.0,
   "displayName": "Convert from per-user MFA to Conditional Access MFA",
   "featureAreas": [
     "conditionalAccess"
