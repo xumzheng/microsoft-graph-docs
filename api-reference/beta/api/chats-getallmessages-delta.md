@@ -38,7 +38,7 @@ GET /users/{id | user-principal-name}/chats/getAllMessages/delta
 ```
 
 ## Optional query parameters
-You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
+You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
 as shown in the following examples.  
 If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
@@ -47,18 +47,18 @@ GET /users/{id | user-principal-name}/chats/getAllMessages/delta?model=A
 GET /users/{id | user-principal-name}/chats/getAllMessages/delta?model=B
 ```
 
-`$top` parameter is configurable only at the start of the synchronization. If this parameter is included in subsequent requests, new value will be ignored and the original one will be used instead.
+The `$top` parameter is configurable only at the beginning of the synchronization. If this parameter is included in subsequent requests, the new value is ignored, and the original is used instead.
 
 ```http
 GET /users/{id}/chats/getAllMessages/delta?$top=50
  ```
 
-There is limited support for `$filter` parameter. The only supported $filter expression is `$filter=lastModifiedDateTime+gt+{value}`.
+There is limited support for the `$filter` parameter. The only supported $filter expression is `$filter=lastModifiedDateTime+gt+{value}`.
 
 ```http
 GET /users/{id}/chats/getAllMessages/delta?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z
  ```
- `$orderby` parameter is not supported. The return order of items is not guaranteed; default ordering is `DESC` but `updated` and `deleted` items take priority over pending items.
+ The `$orderby` parameter is not supported. The return order of items is not guaranteed; default ordering is `DESC` but `updated` and `deleted` items take priority over pending items.
 
 ## Request headers
 | Header       | Value |
