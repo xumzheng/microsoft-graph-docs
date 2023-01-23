@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recommendation",
           "ChangeType": "Addition",
-          "Description": "Added the [recommendation](https://learn.microsoft.com/en-us/graph/resources/recommendation.md) resource",
+          "Description": "Added the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation.md) resource",
           "Target": "recommendation"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "complete",
           "ChangeType": "Addition",
-          "Description": "Added the [complete](https://learn.microsoft.com/en-us/graph/api/recommendation-complete.md) method to the [recommendation](https://learn.microsoft.com/en-us/graph/resources/recommendation.md) resource.",
+          "Description": "Added the [complete](https://learn.microsoft.com/en-us/graph/api/recommendation-complete.md) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation.md) resource.",
           "Target": "recommendation"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "dismiss",
           "ChangeType": "Addition",
-          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/recommendation-dismiss.md) method to the [recommendation](https://learn.microsoft.com/en-us/graph/resources/recommendation.md) resource.",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/recommendation-dismiss.md) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation.md) resource.",
           "Target": "recommendation"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "postpone",
           "ChangeType": "Addition",
-          "Description": "Added the [postpone](https://learn.microsoft.com/en-us/graph/api/recommendation-postpone.md) method to the [recommendation](https://learn.microsoft.com/en-us/graph/resources/recommendation.md) resource.",
+          "Description": "Added the [postpone](https://learn.microsoft.com/en-us/graph/api/recommendation-postpone.md) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation.md) resource.",
           "Target": "recommendation"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reactivate",
           "ChangeType": "Addition",
-          "Description": "Added the [reactivate](https://learn.microsoft.com/en-us/graph/recommendation-reactivate.md) method to the [recommendation](https://learn.microsoft.com/en-us/graph/resources/recommendation.md) resource.",
+          "Description": "Added the [reactivate](https://learn.microsoft.com/en-us/graph/api/recommendation-reactivate.md) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation.md) resource.",
           "Target": "recommendation"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "impactedResource",
           "ChangeType": "Addition",
-          "Description": "Added the [impactedResource](https://learn.microsoft.com/en-us/graph/resources/impactedresource.md) resource",
+          "Description": "Added the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedresource.md) resource",
           "Target": "impactedResource"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "complete",
           "ChangeType": "Addition",
-          "Description": "Added the [complete](https://learn.microsoft.com/en-us/graph/api/impactedresource-complete.md) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/resources/impactedresource.md) resource.",
+          "Description": "Added the [complete](https://learn.microsoft.com/en-us/graph/api/impactedresource-complete.md) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedresource.md) resource.",
           "Target": "impactedResource"
         },
         {
