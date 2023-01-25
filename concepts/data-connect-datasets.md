@@ -67,6 +67,8 @@ Please consider that these datasets are available after 48 hours (about two days
 
 The data available is from the last 21 days (about three weeks). For example, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
 
+These datasets are now available in the same regions as MGDC.
+
 | Dataset name | Description | Sample and Schema | Billing |
 |--|--|--|--|
 | DocumentSharingDataset_v0_Preview | Contains information about sharing permissions of documents. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/DocumentSharingDataset_v0_Preview.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DocumentSharingDataset_v0_Preview.md)</li></ul> | [Free](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
