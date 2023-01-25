@@ -80,7 +80,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | `alertCreationFailed`      | The query ran but alert creation failed                                                                                         |
 | `alertReportNotFound`      | An event in the query results for this custom detection rule could not be matched to the given Timestamp, DeviceId, or ReportId |
 | `partialRowsFailed`        | A portion of the custom detection rule's query results failed to trigger alerts                                                 |
-| `queryTimeout`             | unknownFutureValue for evolvable enums pattern                                                                                  |
+| `unknownFutureValue`       | unknownFutureValue for evolvable enums pattern                                                                                  |
 
 ### huntingRuleRunStatus values
 

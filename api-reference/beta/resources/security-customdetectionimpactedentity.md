@@ -16,17 +16,17 @@ Namespace: microsoft.graph.security
 An entity to which the action set in a custom detection rule is applied to.
 
 ## Properties
-| Property         | Type         | Description                                                                                                                                  |
-|:-----------------|:-------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| entityIdentifier | String       | Unique identifier for the impacted entity.                                                                                                   |
-| entityType       | evidenceType | Type of object, such as a file, a process, a device, or a user .The possible values are: `user`, `machine`, `mailbox`, `unknownFutureValue`. |
+| Property         | Type         | Description                                                                                                                    |
+|:-----------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------|
+| entityIdentifier | String       | Unique identifier for the impacted entity.                                                                                     |
+| entityType       | evidenceType | Type of object, such as a user, device or mailbox. The possible values are: `user`, `device`, `mailbox`, `unknownFutureValue`. |
 
 ### evidenceType values
 
 | Value                | Description                                    |
 |----------------------|------------------------------------------------|
 | `user`               | Impacted entity is a user account              |
-| `machine`            | Impacted entity is a device                    |
+| `device`             | Impacted entity is a device                    |
 | `mailbox`            | Impacted entity is a mailbox                   |
 | `unknownFutureValue` | unknownFutureValue for evolvable enums pattern |
 

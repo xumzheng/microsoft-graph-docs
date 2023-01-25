@@ -31,15 +31,15 @@ Action taken on impacted entities as set in a custom detection rule.
 | `runAntivirusScan`            | Performs a full Microsoft Defender Antivirus scan on the device                                                                           |
 | `initiateInvestigation`       | Initiates an automated investigation on the device                                                                                        |
 | `stopAndQuarantineFile`       | Deletes the file from its current location and places a copy in quarantine                                                                |
-| `allowFile`                   | Allows the file to run                                                                                                                    |
-| `blockFile`                   | Blocks the file from running                                                                                                              |
+| `allowFile`                   | Allows the file to run on devices controlled by Microsoft Defender for Endpoint                                                           |
+| `blockFile`                   | Blocks the file from running on devices controlled by Microsoft Defender for Endpoint                                                     |
 | `restrictAppExecution`        | Sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run                                |
 | `markUserAsCompromised`       | Sets the users risk level to "high" in Azure Active Directory, triggering corresponding identity protection policies                      |
 | `moveEmailToFolder`           | Moves the email to a selected folder                                                                                                      |
 | `deleteEmail`                 | Deletes the email message                                                                                                                 |
 | `blockEmailSender`            | Blocks the email sender from sending more email to the org                                                                                |
 | `blockEmailUrl`               | Blocks the URL in the email from being accessed                                                                                           |
-| `disableUser`                 | Temporarily prevents a user from logging in                                                                                               |
+| `disableUser`                 | Temporarily prevents a user from logging in to the on-premises network                                                                    |
 | `forceUserPasswordReset`      | Prompts the user to change their password on the next sign in session                                                                     |
 | `unknownFutureValue`          | unknownFutureValue for evolvable enums pattern                                                                                            |
 
