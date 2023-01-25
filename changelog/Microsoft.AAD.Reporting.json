@@ -95,7 +95,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "dismiss",
           "ChangeType": "Addition",
-          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/impactedresource-dismiss?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/impactedresource-dismiss?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
           "Target": "impactedResource"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "postpone",
           "ChangeType": "Addition",
-          "Description": "Added the [postpone](https://learn.microsoft.com/en-us/graph/api/impactedresource-postpone?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [postpone](https://learn.microsoft.com/en-us/graph/api/impactedresource-postpone?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
           "Target": "impactedResource"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reactivate",
           "ChangeType": "Addition",
-          "Description": "Added the [reactivate](https://learn.microsoft.com/en-us/graph/api/impactedresource-reactivate?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [reactivate](https://learn.microsoft.com/en-us/graph/api/impactedresource-reactivate?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
           "Target": "impactedResource"
         }
       ],
