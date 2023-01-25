@@ -1,6 +1,6 @@
 ---
-title: "onPremisesSipInfo complex type"
-description: "onPremisesSipInfo complex type type "
+title: "onPremisesSipInfo resource type"
+description: "onPremisesSipInfo resource type  "
 author: "CecilyK"
 ms.localizationpriority: medium
 ms.prod: "users"
