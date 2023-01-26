@@ -23306,6 +23306,18 @@ items:
           href: resources/security-huntingrowresult.md
         - name: Single property schema
           href: resources/security-singlepropertyschema.md
+        - name: Custom detection
+          items:
+            - name: Custom detection
+              href: resources/security-customdetection.md
+            - name: List custom detections
+              href: api/security-security-list-customdetections.md
+            - name: Get custom detection
+              href: api/security-customdetection-get.md
+            - name: Update custom detection
+              href: api/security-customdetection-update.md
+            - name: Delete custom detection
+              href: api/security-security-delete-customdetections.md
       - name: Alerts and incidents
         items:
         - name: Alert
