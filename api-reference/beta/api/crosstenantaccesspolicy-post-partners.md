@@ -90,7 +90,7 @@ Content-Type: application/json
       "targets": [
         {
             "target": "6f546279-4da5-4b53-a095-09ea0cef9971",
-            "targetDescription": "Marketing group should be allowed."
+            "targetDescription": "Marketing group should be allowed.",
             "targetType": "group"
         }
       ]
@@ -104,7 +104,7 @@ Content-Type: application/json
       "targets": [
         {
             "target": "Office365",
-            "targetDescription": "Only allow access to Office 365."
+            "targetDescription": "Only allow access to Office 365.",
             "targetType": "application"
         }
       ]
@@ -142,7 +142,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "6f546279-4da5-4b53-a095-09ea0cef9971",
-          "targetDescription": "Marketing group should be allowed."
+          "targetDescription": "Marketing group should be allowed.",
           "targetType": "group"
         }
       ]
@@ -156,7 +156,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "Office365",
-          "targetDescription": "Only allow access to Office 365."
+          "targetDescription": "Only allow access to Office 365.",
           "targetType": "application"
         }
       ]
