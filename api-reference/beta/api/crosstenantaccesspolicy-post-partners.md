@@ -56,6 +56,7 @@ The following table shows the properties that are required when you create the [
 | b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration. |
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect. |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. |
+| displayName | String | Defines a friendly name for the partner being added. This value is free-form text. **Nullable**. |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations. |
 | isServiceProvider | Boolean | Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization. |
 | tenantId | String | The tenant identifier for the partner Azure AD organization. Read-only. Key.|
@@ -68,8 +69,6 @@ If successful, this method returns a `201 Created` response code and a [crossTen
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_crosstenantaccesspolicyconfigurationpartner_from_"
@@ -82,6 +81,7 @@ Content-Type: application/json
 
 {
   "tenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
+  "displayName": "Contoso",
   "b2bDirectConnectOutbound": 
   {
     "usersAndGroups": 
@@ -90,6 +90,7 @@ Content-Type: application/json
       "targets": [
         {
             "target": "6f546279-4da5-4b53-a095-09ea0cef9971",
+            "targetDescription": "Marketing group should be allowed."
             "targetType": "group"
         }
       ]
@@ -103,6 +104,7 @@ Content-Type: application/json
       "targets": [
         {
             "target": "Office365",
+            "targetDescription": "Only allow access to Office 365."
             "targetType": "application"
         }
       ]
@@ -110,33 +112,6 @@ Content-Type: application/json
   }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-crosstenantaccesspolicyconfigurationpartner-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-crosstenantaccesspolicyconfigurationpartner-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-crosstenantaccesspolicyconfigurationpartner-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-crosstenantaccesspolicyconfigurationpartner-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-crosstenantaccesspolicyconfigurationpartner-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-crosstenantaccesspolicyconfigurationpartner-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -155,6 +130,7 @@ Content-Type: application/json
 
 {
   "tenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
+  "displayName": "Contoso",
   "inboundTrust": null,
   "b2bCollaborationInbound": null,
   "b2bCollaborationOutbound": null,
@@ -166,6 +142,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "6f546279-4da5-4b53-a095-09ea0cef9971",
+          "targetDescription": "Marketing group should be allowed."
           "targetType": "group"
         }
       ]
@@ -179,6 +156,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "Office365",
+          "targetDescription": "Only allow access to Office 365."
           "targetType": "application"
         }
       ]
