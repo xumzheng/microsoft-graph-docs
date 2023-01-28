@@ -20,7 +20,9 @@ Represents a single peer-to-peer call or a group call between multiple participa
 | [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read properties and relationships of callRecord object. |
 | [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | List **pstnCallLogRow** objects in a call record. |
 | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow collection](callrecords-directroutinglogrow.md)| List **directRoutingLogRow** objects for a call record. |
-
+| [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow collection](callrecords-pstnblockeduserslogrow.md)| List **pstnBlockedUsersLogRow** objects for a call record. |
+| [getPstnOnlineMeetingDialoutReport](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md) | [microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport collection](callrecords-pstnonlinemeetingdialoutreport.md)| List **pstnOnlineMeetingDialoutReport** objects for a call record. |
+| [getSmsLog](../api/callrecords-callrecord-getsmslog.md) | [microsoft.graph.callRecords.smsLogRow collection](callrecords-smslogrow.md)| List **smsLogRow** objects for a call record. |
 
 ## Properties
 

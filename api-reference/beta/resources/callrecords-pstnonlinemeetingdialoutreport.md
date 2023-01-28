@@ -30,7 +30,7 @@ All dial-out calls/duration/charge is counted under a meeting organizer. It's no
 |:---|:---|:---|
 |currency|String|Currency used to calculate the cost of the call (ISO 4217)|
 |destinationContext|String|Whether the call was domestic (within a country or region) or international (outside a country or region) based on the user's location|
-|totalCallCharge|Decimal|Total costs of all the calls within the selected time range (includes call charges and connection fees)|
+|totalCallCharge|Double|Total costs of all the calls within the selected time range (includes call charges and connection fees)|
 |totalCalls|Int32|Total number of dial-out calls within the selected time range|
 |totalCallSeconds|Int32|Total duration of all the calls within the selected time range, in seconds|
 |usageLocation|String|Country code of the user (ISO 3166-1)|
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
   "destinationContext": "String",
   "currency": "String",
   "totalCalls": "Integer",
-  "totalCallCharge": "Decimal",
+  "totalCallCharge": "Double",
   "totalCallSeconds": "Integer"
 }
 ```

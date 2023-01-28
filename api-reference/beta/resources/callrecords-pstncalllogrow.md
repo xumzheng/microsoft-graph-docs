@@ -30,9 +30,9 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |callerNumber|String|Number that received the call for inbound calls or the number dialed for outbound calls. E.164 format.|
 |callId|String|Call identifier. Not guaranteed to be unique.|
 |callType|String|Whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference.|
-|charge|Decimal|Amount of money or cost of the call that is charged to your account.|
+|charge|Double|Amount of money or cost of the call that is charged to your account.|
 |conferenceId|String|ID of the audio conference.|
-|connectionCharge|Decimal|Connection fee price.|
+|connectionCharge|Double|Connection fee price.|
 |currency|String|Type of currency used to calculate the cost of the call ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)).|
 |destinationContext|String|Whether the call was domestic (within a country or region) or international (outside a country or region) based on the user's location.|
 |destinationName|String|Country or region dialed.|
@@ -76,13 +76,13 @@ The following is a JSON representation of the resource.
   "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "duration": "Integer",
-  "charge": "Decimal",
+  "charge": "Double",
   "callType": "String",
   "currency": "String",
   "calleeNumber": "String",
   "usageCountryCode": "String",
   "tenantCountryCode": "String",
-  "connectionCharge": "Decimal",
+  "connectionCharge": "Double",
   "callerNumber": "String",
   "destinationContext": "String",
   "destinationName": "String",

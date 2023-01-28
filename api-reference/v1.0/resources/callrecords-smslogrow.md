@@ -26,7 +26,7 @@ For those countries the three or four last digits of the phone number are replac
 
 |Property|Type|Description|
 |:---|:---|:---|
-|callCharge|Decimal|Amount of money or cost of the SMS that is charged|
+|callCharge|Double|Amount of money or cost of the SMS that is charged|
 |currency|String|Currency used to calculate the cost of the call (ISO 4217)|
 |destinationContext|String|Whether the SMS was domestic (within a country or region) or international (outside a country or region) based on the user's location|
 |destinationName|String|Country or region of a phone number that received the SMS|
@@ -70,7 +70,7 @@ The following is a JSON representation of the resource.
   "sourceNumber": "String",
   "destinationNumber": "String",
   "sentDateTime": "String (timestamp)",
-  "callCharge": "Decimal",
+  "callCharge": "Double",
   "currency": "String",
   "smsType": "String",
   "destinationContext": "String",
