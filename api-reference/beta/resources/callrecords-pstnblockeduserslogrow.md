@@ -28,7 +28,7 @@ Represents a row of data in the PSTN blocked users log. Each row maps to a user 
 |blockDateTime|DateTimeOffset|Block or unblock time|
 |blockReason|String|Reason the user is blocked/unblocked from making calls|
 |remediationId|String|ID of the blocking/unblocking action|
-|userBlockMode|pstnUserBlockMode|Indicates whether the user is `blocked` or `unblocked` from making PSTN calls in Teams.The possible values are: `blocked`, `unblocked`, `unknownFutureValue`.|
+|userBlockMode|microsoft.graph.callRecords.pstnUserBlockMode|Indicates whether the user is `blocked` or `unblocked` from making PSTN calls in Teams.The possible values are: `blocked`, `unblocked`, `unknownFutureValue`.|
 |userDisplayName|String|Display name of the user|
 |userId|String|Blocked user's ID in Graph (Guid)|
 |userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address|
