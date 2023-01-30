@@ -20054,7 +20054,7 @@ items:
           - name: Impacted resources
             items:
             - name: Impacted resource
-              href: resource/impactedresource.md
+              href: resources/impactedresource.md
             - name: List
               href: api/recommendation-list-impactedresources.md
             - name: Get
