@@ -6261,7 +6261,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getConfigurationPolicyNonComplianceReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getConfigurationPolicyNonComplianceReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getConfigurationPolicyNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getConfigurationPolicyNonComplianceReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6269,7 +6269,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getConfigurationSettingNonComplianceReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getConfigurationSettingNonComplianceReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getConfigurationSettingNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getConfigurationSettingNonComplianceReport resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6277,7 +6277,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getDeviceManagementIntentSettingsReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getDeviceManagementIntentSettingsReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getDeviceManagementIntentSettingsReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getDeviceManagementIntentSettingsReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6293,7 +6293,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getCompliancePolicyNonComplianceReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompliancePolicyNonComplianceReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getCompliancePolicyNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getCompliancePolicyNonComplianceReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6301,7 +6301,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getComplianceSettingNonComplianceReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getComplianceSettingNonComplianceReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getComplianceSettingNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getComplianceSettingNonComplianceReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6309,7 +6309,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getCachedReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getCachedReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getCachedReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getCachedReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6317,7 +6317,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Description": "Added the configurationManagerCollectionAssignmentTarget resource type.",
           "Target": "configurationManagerCollectionAssignmentTarget"
         },
         {
@@ -6341,7 +6341,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "appGroupType",
           "ChangeType": "Addition",
-          "Description": "Added the **appGroupType** parameter to the [targetApps](https://learn.microsoft.com/graph/api/intune-targetedManagedAppConfiguration-targetApps?view=graph-rest-1.0) method.",
+          "Description": "Added the **appGroupType** parameter to the targetApps method.",
           "Target": "targetApps"
         },
         {
@@ -6349,7 +6349,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "targetApps",
           "ChangeType": "Addition",
-          "Description": "Added the [targetApps](https://learn.microsoft.com/graph/api/intune-targetedManagedAppProtection-targetApps?view=graph-rest-1.0) method to the [targetedManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-targetedManagedAppProtection?view=graph-rest-1.0) resource.",
+          "Description": "Added the targetApps method to the targetedManagedAppProtection resource.",
           "Target": "targetedManagedAppProtection"
         },
         {
@@ -6357,7 +6357,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Description": "Added the configurationManagerCollectionAssignmentTarget resource type.",
           "Target": "configurationManagerCollectionAssignmentTarget"
         },
         {
@@ -6373,7 +6373,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Description": "Added the configurationManagerCollectionAssignmentTarget resource type.",
           "Target": "configurationManagerCollectionAssignmentTarget"
         },
         {
@@ -6389,7 +6389,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getOmaSettingPlainTextValue",
           "ChangeType": "Addition",
-          "Description": "Added the [getOmaSettingPlainTextValue](https://learn.microsoft.com/graph/api/intune-deviceConfiguration-getOmaSettingPlainTextValue?view=graph-rest-1.0) method to the [deviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceConfiguration?view=graph-rest-1.0) resource.",
+          "Description": "Added the getOmaSettingPlainTextValue method to the deviceConfiguration resource.",
           "Target": "deviceConfiguration"
         },
         {
@@ -6397,7 +6397,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Description": "Added the configurationManagerCollectionAssignmentTarget resource type.",
           "Target": "configurationManagerCollectionAssignmentTarget"
         },
         {
@@ -6405,7 +6405,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Description": "Added the configurationManagerCollectionAssignmentTarget resource type.",
           "Target": "configurationManagerCollectionAssignmentTarget"
         },
         {
@@ -6445,7 +6445,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Description": "Added the configurationManagerCollectionAssignmentTarget resource type.",
           "Target": "configurationManagerCollectionAssignmentTarget"
         },
         {
@@ -6471,7 +6471,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementTroubleshootingEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementTroubleshootingEvent](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementTroubleshootingEvent?view=graph-rest-1.0) resource type.",
+          "Description": "Added the deviceManagementTroubleshootingEvent resource type.",
           "Target": "deviceManagementTroubleshootingEvent"
         },
         {
@@ -6479,7 +6479,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrollmentTroubleshootingEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [enrollmentTroubleshootingEvent](https://learn.microsoft.com/graph/api/resources/intune-enrollmentTroubleshootingEvent?view=graph-rest-1.0) resource type.",
+          "Description": "Added the enrollmentTroubleshootingEvent resource type.",
           "Target": "enrollmentTroubleshootingEvent"
         },
         {
@@ -6487,7 +6487,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "report",
           "ChangeType": "Addition",
-          "Description": "Added the [report](https://learn.microsoft.com/graph/api/resources/intune-report?view=graph-rest-1.0) resource type.",
+          "Description": "Added the report resource type.",
           "Target": "report"
         },
         {
@@ -6511,7 +6511,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "managedDeviceEnrollmentFailureDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceEnrollmentFailureDetails](https://learn.microsoft.com/graph/api/intune-reportRoot-managedDeviceEnrollmentFailureDetails?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/graph/api/resources/intune-reportRoot?view=graph-rest-1.0) resource.",
+          "Description": "Added the managedDeviceEnrollmentFailureDetails method to the reportRoot resource.",
           "Target": "reportRoot"
         },
         {
