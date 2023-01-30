@@ -23,6 +23,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DirectoryRecommendations.ReadWrite.All|
 
+For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+- Global administrator
+- Security administrator
+- Security operator
+- Application administrator
+- Cloud application administrator
+
 ## HTTP request
 
 <!-- {
@@ -46,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|dismissReason|String|Audited reason for deeming an [impactedResource](../resources/impactedresource.md) inapplicable to you and its associated [recommendation](../resources/recommendation.md).|
+|dismissReason|String|Audited reason for deeming an [impactedResource](../resources/impactedresource.md) inapplicable to you.|
 
 
 

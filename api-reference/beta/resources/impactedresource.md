@@ -23,6 +23,7 @@ Represents an Azure AD resource in your tenant that's associated with an Azure A
 |[Dismiss](../api/impactedresource-dismiss.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `dismissed`.|
 |[Complete](../api/impactedresource-complete.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `completedByUser`.|
 |[Reactivate](../api/impactedresource-reactivate.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `active`.|
+|[List impactedResources](../api/recommendation-list-impactedresources.md)|[impactedResource](../resources/impactedresource.md) collection|Get the [impactedResource](../resources/impactedresource.md) resources from the impactedResources navigation property.|
 
 ## Properties
 |Property|Type|Description|
