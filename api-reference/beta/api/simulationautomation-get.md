@@ -33,27 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}
 ```
 
-## Optional query parameters
-This method supports the `$count`, `$filter`, `$orderby`, `$skip`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **displayName** and **status** properties.
-
-If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
-
-The following are examples of their use:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$count=true
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$orderby={property}
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$skip={skipCount}
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$top=1
-GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$select={property}
-```
-
 ## Request headers
 |Name|Description|
 |:---|:---|

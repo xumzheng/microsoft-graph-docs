@@ -31,27 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /security/attackSimulation/simulations/{simulationId}
 ```
 
-## Optional query parameters
-This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
-
-If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
-
-The following are examples of their use:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /security/attackSimulation/simulations/{simulationId}?$count=true
-GET /security/attackSimulation/simulations/{simulationId}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulations/{simulationId}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulations/{simulationId}?$orderby={property}
-GET /security/attackSimulation/simulations/{simulationId}?$skipToken={skipToken}
-GET /security/attackSimulation/simulations/{simulationId}?$top=1
-GET /security/attackSimulation/simulations/{simulationId}?$select={property}
-```
-
 ## Request headers
 |Name|Description|
 |:---|:---|
