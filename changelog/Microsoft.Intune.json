@@ -6115,7 +6115,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPlatformSupportedProperties",
           "ChangeType": "Addition",
-          "Description": "Added the getPlatformSupportedProperties method to the [deviceAndAppManagementAssignmentFilter](https://learn.microsoft.com/graph/api/resources/intune-deviceAndAppManagementAssignmentFilter?view=graph-rest-beta) resource.",
+          "Description": "Added the getPlatformSupportedProperties method to the deviceAndAppManagementAssignmentFilter resource.",
           "Target": "deviceAndAppManagementAssignmentFilter"
         },
         {
@@ -6285,7 +6285,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getCompliancePolicyNonComplianceSummaryReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompliancePolicyNonComplianceSummaryReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports-getCompliancePolicyNonComplianceSummaryReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Description": "Added the getCompliancePolicyNonComplianceSummaryReport method to the deviceManagementReports resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -6519,7 +6519,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "managedDeviceEnrollmentFailureDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceEnrollmentFailureDetails](https://learn.microsoft.com/graph/api/intune-reportRoot-managedDeviceEnrollmentFailureDetails?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/graph/api/resources/intune-reportRoot?view=graph-rest-1.0) resource.",
+          "Description": "Added the managedDeviceEnrollmentFailureDetails method to the reportRoot resource.",
           "Target": "reportRoot"
         },
         {
@@ -6527,7 +6527,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "managedDeviceEnrollmentTopFailures",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceEnrollmentTopFailures](https://learn.microsoft.com/graph/api/intune-reportRoot-managedDeviceEnrollmentTopFailures?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/graph/api/resources/intune-reportRoot?view=graph-rest-1.0) resource.",
+          "Description": "Added the managedDeviceEnrollmentTopFailures method to the reportRoot resource.",
           "Target": "reportRoot"
         },
         {
@@ -6535,7 +6535,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "managedDeviceEnrollmentTopFailures",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceEnrollmentTopFailures](https://learn.microsoft.com/graph/api/intune-reportRoot-managedDeviceEnrollmentTopFailures?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/graph/api/resources/intune-reportRoot?view=graph-rest-1.0) resource.",
+          "Description": "Added the managedDeviceEnrollmentTopFailures method to the reportRoot resource.",
           "Target": "reportRoot"
         },
         {
@@ -6543,7 +6543,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "certificateSerialNumber",
           "ChangeType": "Addition",
-          "Description": "Added the **certificateSerialNumber** property to the [applePushNotificationCertificate](https://learn.microsoft.com/graph/api/resources/intune-applePushNotificationCertificate?view=graph-rest-1.0) resource.",
+          "Description": "Added the **certificateSerialNumber** property to the applePushNotificationCertificate resource.",
           "Target": "applePushNotificationCertificate"
         },
         {
@@ -6551,7 +6551,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "iccid",
           "ChangeType": "Addition",
-          "Description": "Added the **iccid** property to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Description": "Added the **iccid** property to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -6559,7 +6559,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "udid",
           "ChangeType": "Addition",
-          "Description": "Added the **udid** property to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Description": "Added the **udid** property to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -6567,7 +6567,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notes",
           "ChangeType": "Addition",
-          "Description": "Added the **notes** property to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Description": "Added the **notes** property to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -6575,7 +6575,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ethernetMacAddress",
           "ChangeType": "Addition",
-          "Description": "Added the **ethernetMacAddress** property to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Description": "Added the **ethernetMacAddress** property to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -6583,7 +6583,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "physicalMemoryInBytes",
           "ChangeType": "Addition",
-          "Description": "Added the **physicalMemoryInBytes** property to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Description": "Added the **physicalMemoryInBytes** property to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -6615,7 +6615,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "persistEsimDataPlan",
           "ChangeType": "Addition",
-          "Description": "Added the **persistEsimDataPlan** parameter to the [wipe](https://learn.microsoft.com/graph/api/intune-managedDevice-wipe?view=graph-rest-1.0) method.",
+          "Description": "Added the **persistEsimDataPlan** parameter to the wipe method.",
           "Target": "wipe"
         },
         {
@@ -6953,7 +6953,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig2-deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate?view=graph-rest-beta) resource type.",
+          "Description": "Added the deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate resource type.",
           "Target": "deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate"
         },
         {
@@ -7001,7 +7001,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createCopy",
           "ChangeType": "Addition",
-          "Description": "Added the [createCopy](https://learn.microsoft.com/graph/api/intune-deviceconfigv2-deviceManagementConfigurationPolicy-createCopy?view=graph-rest-beta) method to the [deviceManagementConfigurationPolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [createCopy](https://learn.microsoft.com/graph/api/intune-deviceconfigv2-deviceManagementConfigurationPolicy-createCopy?view=graph-rest-beta) method to the deviceManagementConfigurationPolicy resource.",
           "Target": "deviceManagementConfigurationPolicy"
         }
       ],
@@ -7163,7 +7163,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedWindowsAutopilotDeviceState",
           "ChangeType": "Addition",
-          "Description": "Added the [deletedWindowsAutopilotDeviceState](https://learn.microsoft.com/graph/api/resources/intune-enrollment-deletedWindowsAutopilotDeviceState?view=graph-rest-beta) resource type.",
+          "Description": "Added the deletedWindowsAutopilotDeviceState resource type.",
           "Target": "deletedWindowsAutopilotDeviceState"
         },
         {
