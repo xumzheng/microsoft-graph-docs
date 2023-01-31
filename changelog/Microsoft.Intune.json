@@ -1067,8 +1067,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "routeExcludes",
           "ChangeType": "Addition",
-          "Description": "Added the `routeExcludes` property to the microsoftTunnelConfiguration resource.",
-          "Description": "Added the `routeExcludes` property to the microsoftTunnelConfiguration resource.",
+          "Description": "Added the `routeExcludes` property to the [microsoftTunnelConfiguration](https://learn.microsoft.com/graph/api/resources/microsoftTunnelConfiguration?view=graph-rest-beta) resource.",
           "Target": "microsoftTunnelConfiguration"
         },
         {
@@ -1076,8 +1075,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "routeIncludes",
           "ChangeType": "Addition",
-          "Description": "Added the `routeIncludes` property to the microsoftTunnelConfiguration resource.",
-          "Description": "Added the `routeIncludes` property to the microsoftTunnelConfiguration resource.",
+          "Description": "Added the `routeIncludes` property to the [microsoftTunnelConfiguration](https://learn.microsoft.com/graph/api/resources/microsoftTunnelConfiguration?view=graph-rest-beta) resource.",
           "Target": "microsoftTunnelConfiguration"
         },
         {
@@ -1393,7 +1391,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetAppAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the winGetAppAssignmentSettings resource type.",
+          "Description": "Added the [winGetAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppAssignmentSettings?view=graph-rest-beta) resource type.",
           "Target": "winGetAppAssignmentSettings"
         },
         {
@@ -1401,7 +1399,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetAppInstallExperience",
           "ChangeType": "Addition",
-          "Description": "Added the winGetAppInstallExperience resource type.",
+          "Description": "Added the [winGetAppInstallExperience](https://learn.microsoft.com/graph/api/resources/intune-winGetAppInstallExperience?view=graph-rest-beta) resource type.",
           "Target": "winGetAppInstallExperience"
         },
         {
@@ -1409,7 +1407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetAppInstallTimeSettings",
           "ChangeType": "Addition",
-          "Description": "Added the winGetAppInstallTimeSettings resource type.",
+          "Description": "Added the [winGetAppInstallTimeSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppInstallTimeSettings?view=graph-rest-beta) resource type.",
           "Target": "winGetAppInstallTimeSettings"
         },
         {
@@ -1417,7 +1415,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetAppRestartSettings",
           "ChangeType": "Addition",
-          "Description": "Added the winGetAppRestartSettings resource type.",
+          "Description": "Added the [winGetAppRestartSettings](https://learn.microsoft.com/graph/api/resources/intune-winGetAppRestartSettings?view=graph-rest-beta) resource type.",
           "Target": "winGetAppRestartSettings"
         },
         {
@@ -1425,7 +1423,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "winGetApp",
           "ChangeType": "Addition",
-          "Description": "Added the winGetApp resource",
+          "Description": "Added the [winGetApp](https://learn.microsoft.com/graph/api/resources/intune-winGetApp?view=graph-rest-beta) resource",
           "Target": "winGetApp"
         },
         {
@@ -1489,7 +1487,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dataProcessorServiceForWindowsFeaturesOnboarding",
           "ChangeType": "Addition",
-          "Description": "Added the dataProcessorServiceForWindowsFeaturesOnboarding resource type.",
+          "Description": "Added the [dataProcessorServiceForWindowsFeaturesOnboarding](https://learn.microsoft.com/graph/api/resources/intune-dataProcessorServiceForWindowsFeaturesOnboarding?view=graph-rest-beta) resource type.",
           "Target": "dataProcessorServiceForWindowsFeaturesOnboarding"
         },
         {
@@ -1633,7 +1631,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getZebraFotaDeploymentReport",
           "ChangeType": "Deletion",
-          "Description": "Removed the **getZebraFotaDeploymentReport** method from the deviceManagementReports resource.",
+          "Description": "Removed the **getZebraFotaDeploymentReport** method from the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
           "Target": "deviceManagementReports"
         },
         {
@@ -1658,6 +1656,7 @@
           "ChangedApiName": "createRemoteHelpSessionResponse",
           "ChangeType": "Addition",
           "Description": "Added the createRemoteHelpSessionResponse resource",
+          "Description": "Added the createRemoteHelpSessionResponse resource",
           "Target": "createRemoteHelpSessionResponse"
         },
         {
@@ -1665,6 +1664,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedDevice",
           "ChangeType": "Addition",
+          "Description": "Added the managedDevice resource",
           "Description": "Added the managedDevice resource",
           "Target": "managedDevice"
         },
@@ -1674,6 +1674,7 @@
           "ChangedApiName": "requestRemoteHelpSessionAccessResponse",
           "ChangeType": "Addition",
           "Description": "Added the requestRemoteHelpSessionAccessResponse resource",
+          "Description": "Added the requestRemoteHelpSessionAccessResponse resource",
           "Target": "requestRemoteHelpSessionAccessResponse"
         },
         {
@@ -1681,6 +1682,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retrieveRemoteHelpSessionResponse",
           "ChangeType": "Addition",
+          "Description": "Added the retrieveRemoteHelpSessionResponse resource",
           "Description": "Added the retrieveRemoteHelpSessionResponse resource",
           "Target": "retrieveRemoteHelpSessionResponse"
         },
@@ -1690,6 +1692,7 @@
           "ChangedApiName": "createRemoteHelpSession",
           "ChangeType": "Addition",
           "Description": "Added the createRemoteHelpSession method to the managedDevice resource.",
+          "Description": "Added the createRemoteHelpSession method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -1697,6 +1700,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "requestRemoteHelpSessionAccess",
           "ChangeType": "Addition",
+          "Description": "Added the requestRemoteHelpSessionAccess method to the managedDevice resource.",
           "Description": "Added the requestRemoteHelpSessionAccess method to the managedDevice resource.",
           "Target": "managedDevice"
         },
@@ -1706,6 +1710,7 @@
           "ChangedApiName": "getAllowedRemoteHelpActions",
           "ChangeType": "Addition",
           "Description": "Added the getAllowedRemoteHelpActions method to the managedDevice resource.",
+          "Description": "Added the getAllowedRemoteHelpActions method to the managedDevice resource.",
           "Target": "managedDevice"
         },
         {
@@ -1713,6 +1718,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveRemoteHelpSession",
           "ChangeType": "Addition",
+          "Description": "Added the retrieveRemoteHelpSession method to the managedDevice resource.",
           "Description": "Added the retrieveRemoteHelpSession method to the managedDevice resource.",
           "Target": "managedDevice"
         },
@@ -1755,6 +1761,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userExperienceAnalyticsDevicePerformance",
           "ChangeType": "Addition",
+          "Description": "Added the userExperienceAnalyticsDevicePerformance resource",
           "Description": "Added the userExperienceAnalyticsDevicePerformance resource",
           "Target": "userExperienceAnalyticsDevicePerformance"
         },
@@ -1837,6 +1844,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "androidDeviceOwnerSilentCertificateAccess",
           "ChangeType": "Addition",
+          "Description": "Added the androidDeviceOwnerSilentCertificateAccess resource type.",
           "Description": "Added the androidDeviceOwnerSilentCertificateAccess resource type.",
           "Target": "androidDeviceOwnerSilentCertificateAccess"
         },
@@ -15813,8 +15821,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "(https://learn.microsoft.com/graph/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig?view=graph-rest-beta) function on (https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)",
           "ChangeType": "Deletion",
-          "Description": "Removed the exportMobileConfig](https://learn.microsoft.com/graph/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig?view=graph-rest-beta) function on [enrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)",
-          "Target": "(https://learn.microsoft.com/graph/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig?view=graph-rest-beta) function on (https://learn.microsoft.com/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta)"
+          "Description": "Removed the exportMobileConfig function on enrollmentProfile",
+          "Target": ""
         },
         {
           "Id": "bb3560f9-6809-4b82-8128-5955dfcb888e",
