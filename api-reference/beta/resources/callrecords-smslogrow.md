@@ -29,22 +29,22 @@ For those countries the three or four last digits of the phone number are replac
 |Property|Type|Description|
 |:---|:---|:---|
 |callCharge|Double|Amount of money or cost of the SMS that is charged|
-|currency|String|Currency used to calculate the cost of the call (ISO 4217)|
-|destinationContext|String|Whether the SMS was domestic (within a country or region) or international (outside a country or region) based on the user's location|
+|currency|String|Currency used to calculate the cost of the call ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217))|
+|destinationContext|String|Whether the SMS was `Domestic` (within a country or region) or `International` (outside a country or region) based on the user's location|
 |destinationName|String|Country or region of a phone number that received the SMS|
-|destinationNumber|String|Partially obfuscated phone number that received the SMS (E.164)|
-|id|String|Unique SMS identifier (Guid)|
+|destinationNumber|String|Partially obfuscated phone number that received the SMS ([E.164](https://en.wikipedia.org/wiki/E.164))|
+|id|String|Unique SMS identifier (GUID)|
 |licenseCapability|String|The license used for the SMS|
-|otherPartyCountryCode|String|In case of outbound SMS the country code of the receiver; in case of inbound SMS the country code of the sender (ISO 3166-1)|
+|otherPartyCountryCode|String|In case of outbound SMS the country code of the receiver; in case of inbound SMS the country code of the sender ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2))|
 |sentDateTime|DateTimeOffset|SMS sent time|
 |smsId|String|SMS identifier, not guaranteed to be unique|
 |smsType|String|Type of SMS (such as outbound or inbound)|
 |smsUnits|Int32|Number of SMS units sent/received|
-|sourceNumber|String|Partially obfuscated phone number that sent the SMS (E.164)|
-|tenantCountryCode|String|Country code of the tenant (ISO 3166-1)|
-|userCountryCode|String|Country code of the user (ISO 3166-1)|
+|sourceNumber|String|Partially obfuscated phone number that sent the SMS ([E.164](https://en.wikipedia.org/wiki/E.164))|
+|tenantCountryCode|String|Country code of the tenant ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2))|
+|userCountryCode|String|Country code of the user ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2))|
 |userDisplayName|String|Display name of the user|
-|userId|String|User Id in Graph (Guid)|
+|userId|String|User Id in Graph (GUID)|
 |userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address|
 
 ## Relationships

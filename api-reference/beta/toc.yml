@@ -24612,9 +24612,9 @@ items:
               href: resources/callrecords-pstnblockeduserslogrow.md
             - name: List blocked users
               href: api/callrecords-callrecord-getpstnblockeduserslog.md
-            - name: PSTN dialout report
+            - name: PSTN conference dialout report
               href: resources/callrecords-pstnonlinemeetingdialoutreport.md
-            - name: Get dialout report
+            - name: Get conference dialout report
               href: api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md
           - name: SMS
             items:
