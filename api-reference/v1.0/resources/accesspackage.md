@@ -24,6 +24,13 @@ Each access package is referenced by a single access package catalog, and has li
 |[Get accessPackage](../api/accesspackage-get.md)|[accessPackage](accesspackage.md)|Read properties and relationships of an **accesspackage** object. |
 |[Update accessPackage](../api/accesspackage-update.md)|None|Update the properties of an **accesspackage** object. |
 |[Delete accessPackage](../api/accesspackage-delete.md)|None|Delete an **accesspackage**. |
+| [List incompatibleAccessPackages](../api/accesspackage-list-incompatibleaccesspackages.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of the incompatible **accesspackage** objects for this access package. |
+| [Add accessPackage to incompatibleAccessPackages](../api/accesspackage-post-incompatibleaccesspackage.md) | None | Add a link to indicate another **accesspackage** is incompatible with a specified access package. |
+| [Remove accessPackage from incompatibleAccessPackages](../api/accesspackage-delete-incompatibleaccesspackage.md) | None | Remove a link that indicated an **accesspackage** was incompatible. |
+| [List incompatibleGroups](../api/accesspackage-list-incompatiblegroups.md) | [group](group.md) collection | Retrieve a list of the incompatible **group** objects for this access package. |
+| [Add group to incompatibleGroups](../api/accesspackage-post-incompatiblegroup.md) | None | Add a link to indicate membership of a **group** is incompatible with a specified access package. |
+| [Remove group from incompatibleGroups](../api/accesspackage-delete-incompatiblegroup.md) | None | Remove a link that indicated a **group** membership was incompatible.|
+| [List accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of the  **accesspackage** objects which list this access package as incompatible. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[accessPackage](../resources/accesspackage.md) collection|Retrieve the list of **accessPackage** objects filtered on the signed-in user.|
 |[getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md)|[accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection|Retrieve a list of **accessPackageAssignmentRequestRequirement** objects with request requirements. |
 |[List resourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md)|[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) collection|Get the accessPackageResourceRoleScope resources from the resourceRoleScopes navigation property.|
@@ -42,9 +49,12 @@ Each access package is referenced by a single access package catalog, and has li
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|accessPackagesIncompatibleWith | [accessPackage](accesspackage.md) collection | The access packages that are incompatible with this package. Read-only. |
 |assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Read-only. Nullable.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Read-only. Nullable.|
-|resourceRoleScopes|[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) collection|**TODO: Add Description**|
+|incompatibleAccessPackages | [accessPackage](accesspackage.md) collection | The access packages whose assigned users are ineligible to be assigned this access package. |
+|incompatibleGroups | [group](group.md) collection | The groups whose members are ineligible to be assigned this access package. |
+|resourceRoleScopes|[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) collection|The role scopes associated with the access package. Nullable. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -58,11 +68,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackage",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "isHidden": "Boolean",
   "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String", 
+  "id": "String (identifier)",
+  "isHidden": "Boolean",
   "modifiedDateTime": "String (timestamp)"
 }
 ```
