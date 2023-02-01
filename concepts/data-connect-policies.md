@@ -41,6 +41,19 @@ There is no charge for extraction of objects from the following datasets:
 - BasicDataSet_v0.GroupMembers
 - BasicDataSet_v0.GroupOwners
 
+## Estimating copy speed
+Extracting all the data from your Microsoft 365 tenant to Azure can take time. The total time a copy takes depends on the number of records to be extracted. This number can vary between tenants of the same data range. If the number of records is known, it is possible to estimate the time it will take to extract most of them. The total time for one extraction job can still be higher as even if one user is not extracted, the extraction will continue until all data is extracted or the deadline of 24 hours is met. 
+
+Based on some assumptions, the following example represents one possible calculation.
+
+Total records per user for 60 days: 30000 (assuming 500 records are created for this user per day).
+- Expected extraction time for 3000 users: 2hr bootstrap/clean up time + (30000/100) min + 2hr buffer time = 2hr + 5hr + 2hr = 9hr
+- Expected extraction time for 6000 users: 2hr bootstrap/clean up time + (30000/100)*2 min + 2hr buffer time = 2hr + 10hr + 2hr = 14hr
+- Expected extraction time for 12000 users: 2hr bootstrap/clean up time + (30000/100)*4 min + 2hr buffer time = 2hr + 20hr + 2hr = 24hr
+
+Based on above assumption on number of records, it is possible to extract up to 12000 users in a day for the last 60 days worth of data (where each day has around 500 records).
+
+> **Note:** It's not recommended to extract too many datasets for same users and bulk extractions simultaneously.
 
 ## See also
 
