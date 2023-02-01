@@ -38,6 +38,7 @@ For any partner-specific property that is `null`, these settings will inherit th
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations. |
 | isServiceProvider | Boolean | Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization. |
+| protectedContentSharing | [inboundOutboundPolicyConfiguration](../resources/inboundoutboundpolicyconfiguration.md) | Determines the partner-specific configuration for protectedContentSharing. **This setting currently only applies to Azure AD tenants in a different Microsoft cloud.** |
 | tenantId | String | The tenant identifier for the partner Azure AD organization. Read-only. Key.|
 
 ## Relationships
@@ -61,8 +62,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
   "tenantId": "String (identifier)",
-  "inboundTrust": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+  "automaticUserConsentSettings": {
+    "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
   },
   "b2bCollaborationOutbound": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
@@ -76,9 +77,12 @@ The following is a JSON representation of the resource.
   "b2bDirectConnectInbound": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
   },
-  "automaticUserConsentSettings": {
+  "inboundTrust": {
+    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+  },
+  "isServiceProvider": "Boolean",
+  "protectedContentSharing": {
     "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
   },
-  "isServiceProvider": "Boolean"
 }
 ```
