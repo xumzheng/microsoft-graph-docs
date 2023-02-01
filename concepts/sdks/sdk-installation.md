@@ -141,10 +141,11 @@ Install-Module Microsoft.Graph -AllowClobber -Force
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-The [Microsoft Graph Python SDK (preview)](https://github.com/microsoftgraph/msgraph-sdk-python) is available on [PyPI](https://pypi.org/).
+The [Microsoft Graph Core Python Client Library (preview)](https://github.com/microsoftgraph/msgraph-sdk-python-core) is available on [PyPI](https://pypi.org/).
 
-```py
-pip install msgraph-sdk
+```Shell
+python -m pip install msgraph-core
+python -m pip install azure-identity
 ```
 
 ## See also

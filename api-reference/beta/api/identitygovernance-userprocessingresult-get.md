@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the user processing result of a user processing result of a [run](../resources/identitygovernance-run.md).
+Get the user processing result of a [run](../resources/identitygovernance-run.md) object.
 
 ## Permissions
 
@@ -206,3 +206,4 @@ Content-Type: application/json
     }
 }
 ```
+
