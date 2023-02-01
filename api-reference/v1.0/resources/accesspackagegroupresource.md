@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-A reference to an [Azure AD group](../resource/group.md) resource.
+A reference to an [Azure AD group](../resource/groups-overview.md) resource.
 
 
 Inherits from [accessPackageResource](../resources/accesspackageresource.md).

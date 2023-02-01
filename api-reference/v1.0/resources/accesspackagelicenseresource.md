@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-A reference to a [license resource](../resources/license-details.md).
+A reference to a [license resource](../resources/licensedetails.md).
 
 
 Inherits from [accessPackageResource](../resources/accesspackageresource.md).
