@@ -52,13 +52,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.recommendation",
+  "@odata.type": "microsoft.graph.recommendationBase",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.recommendation",
+  "@odata.type": "#microsoft.graph.recommendationBase",
   "id": "String (identifier)",
   "actionSteps": [
     {
