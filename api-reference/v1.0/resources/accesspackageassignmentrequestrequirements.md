@@ -16,6 +16,7 @@ Represents requirements that a caller must fulfill in order to successfully crea
 |Property|Type|Description|
 |:---|:---|:---|
 |allowCustomAssignmentSchedule|Boolean|Indicates whether the requestor is allowed to set a custom schedule.|
+|existingAnswers|[accessPackageAnswer](../resources/accesspackageanswer.md) collection|Answers that have already been provided.|
 |isApprovalRequiredForAdd|Boolean|Indicates whether a request to add must be approved by an approver.|
 |isApprovalRequiredForUpdate|Boolean|Indicates whether a request to update must be approved by an approver.|
 |policyDescription|String|The description of the policy that the user is trying to request access using.|
@@ -24,7 +25,10 @@ Represents requirements that a caller must fulfill in order to successfully crea
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|Schedule restrictions enforced, if any.|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|questions|[accessPackageQuestion](../resources/accesspackagequestion.md) collection|Questions that are configured on the policy. The questions can be required or optional; callers can determine whether a question is required or optional based on the **isRequired** property on **accessPackageQuestion**.|
+
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -43,7 +47,17 @@ The following is a JSON representation of the resource.
   "allowCustomAssignmentSchedule": "Boolean",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
+  },
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageQuestion"
+    }
+  ],
+  "existingAnswers": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageAnswerString"
+    }
+  ]
 }
 ```
 

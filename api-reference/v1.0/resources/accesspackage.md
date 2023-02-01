@@ -26,6 +26,8 @@ Each access package is referenced by a single access package catalog, and has li
 |[Delete accessPackage](../api/accesspackage-delete.md)|None|Delete an **accesspackage**. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[accessPackage](../resources/accesspackage.md) collection|Retrieve the list of **accessPackage** objects filtered on the signed-in user.|
 |[getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md)|[accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection|Retrieve a list of **accessPackageAssignmentRequestRequirement** objects with request requirements. |
+|[List resourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md)|[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) collection|Get the accessPackageResourceRoleScope resources from the resourceRoleScopes navigation property.|
+|[Create accessPackageResourceRoleScope](../api/accesspackage-post-resourcerolescopes.md)|[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)|Create a new accessPackageResourceRoleScope object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,6 +44,7 @@ Each access package is referenced by a single access package catalog, and has li
 |:---|:---|:---|
 |assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Read-only. Nullable.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Read-only. Nullable.|
+|resourceRoleScopes|[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.

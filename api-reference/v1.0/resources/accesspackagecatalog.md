@@ -25,6 +25,12 @@ An access package catalog might also have linked resources that are used in thos
 |[Get accessPackageCatalog](../api/accesspackagecatalog-get.md)|[accessPackageCatalog](accesspackagecatalog.md)|Read properties and relationships of an accessPackageCatalog object. |
 |[Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None|Update the properties of an accessPackageCatalog object. |
 |[Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md)|None|Delete accessPackageCatalog. |
+|[List resourceRoles](../api/accesspackageresource-list-roles.md)|[accessPackageResourceRole](../resources/accesspackageresourcerole.md) collection|Get the accessPackageResourceRole resources from the resourceRoles navigation property.|
+|[Create accessPackageResourceRole](../api/accesspackagecatalog-post-resourceroles.md)|[accessPackageResourceRole](../resources/accesspackageresourcerole.md)|Create a new accessPackageResourceRole object.|
+|[List resources](../api/accesspackagecatalog-list-resources.md)|[accessPackageResource](../resources/accesspackageresource.md) collection|Get the accessPackageResource resources from the resources navigation property.|
+|[Create accessPackageResource](../api/accesspackagecatalog-post-resources.md)|[accessPackageResource](../resources/accesspackageresource.md)|Create a new accessPackageResource object.|
+|[List resourceScopes](../api/accesspackagepowerplatformresource-list-scopes.md)|[accessPackageResourceScope](../resources/accesspackageresourcescope.md) collection|Get the accessPackageResourceScope resources from the resourceScopes navigation property.|
+|[Create accessPackageResourceScope](../api/accesspackagecatalog-post-resourcescopes.md)|[accessPackageResourceScope](../resources/accesspackageresourcescope.md)|Create a new accessPackageResourceScope object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,6 +48,9 @@ An access package catalog might also have linked resources that are used in thos
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessPackages|[accessPackage](accesspackage.md) collection|The access packages in this catalog. Read-only. Nullable.|
+|resourceRoles|[accessPackageResourceRole](../resources/accesspackageresourcerole.md) collection|The resource roles in the catalog.|
+|resources|[accessPackageResource](../resources/accesspackageresource.md) collection|The resources in the catalog.|
+|resourceScopes|[accessPackageResourceScope](../resources/accesspackageresourcescope.md) collection|The resource scopes in the catalog.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
