@@ -19,6 +19,8 @@ The Azure AD recommendation service runs daily to check your tenant against pred
 
 For more information, see [What is Azure Active Directory recommendations?](https://go.microsoft.com/fwlink/?linkid=2221712).
 
+Inherits from [recommendationBase](../resources/recommendationbase.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
