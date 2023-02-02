@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application                            | EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 
@@ -41,13 +41,6 @@ POST /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId}
 
 ## Request body
 In the request body, supply a JSON representation of the [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.
-
-You can specify the following properties when creating an **accessPackageResourceRoleScope**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
 
 
 
