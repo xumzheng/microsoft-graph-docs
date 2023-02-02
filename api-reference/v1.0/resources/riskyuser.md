@@ -1,6 +1,6 @@
 ---
 title: "riskyUser resource type"
-description: "risky users item"
+description: "Represents Azure Active Directory (Azure AD) users who are at risk."
 author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -36,7 +36,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |id|String|Unique ID of the user at risk.|
 |isDeleted|Boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
 |isProcessing|Boolean|Indicates whether a user's risky state is being processed by the backend.|
-|riskDetail|riskDetail|Details of the detected risk. Possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `m365DAdminDismissedDetection`.|
+|riskDetail|riskDetail|Details of the detected risk. Supports a subset of the values for **riskDetail**. Possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `m365DAdminDismissedDetection`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `m365DAdminDismissedDetection`.|
 |riskLastUpdatedDateTime|DateTimeOffset|The date and time when the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |riskLevel|riskLevel|Level of the detected risky user. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
