@@ -91,12 +91,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/delta
 Prefer: odata.maxpagesize=2
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-delta-javascript-snippets.md)]
+# [cli](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/mailfolder-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

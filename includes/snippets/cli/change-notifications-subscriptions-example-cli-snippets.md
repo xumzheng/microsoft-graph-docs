@@ -1,0 +1,16 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```cli
+
+mgc subscriptions create --body '{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
+  "resource": "/me/mailfolders('inbox')/messages",
+  "expirationDateTime": "2016-03-20T11:00:00.0000000Z",
+  "clientState": "SecretClientState"
+}
+'
+
+```
