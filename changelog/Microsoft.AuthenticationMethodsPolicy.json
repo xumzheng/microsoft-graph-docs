@@ -254,11 +254,20 @@
           "Description": "Added the [voiceAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/voiceAuthenticationMethodTarget?view=graph-rest-beta) resource.",
           "Target": "voiceAuthenticationMethodTarget"
         }
+        
       ],
       "Id": "bacd077e-b2ee-4d2b-be5d-b4ca0a6bcfe4",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-12-22T00:00:00.1642286Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "Id": "",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
