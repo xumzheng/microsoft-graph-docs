@@ -1,0 +1,46 @@
+{
+    "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "14f49b9f-4bf2-4d24-b80e-b27ec58409bd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "DataLossPrevention.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of `DataLossPrevention.Read.All` to get the data loss prevention policies for the user resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "14f49b9f-4bf2-4d24-b80e-b27ec58409bd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "DataLossPrevention.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `DataLossPrevention.Read` to get the data loss prevention policies for the user resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "14f49b9f-4bf2-4d24-b80e-b27ec58409bd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "InformationProtectionConfig.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of `InformationProtectionConfig.Read.All` to get the information protection configurations for the user resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "14f49b9f-4bf2-4d24-b80e-b27ec58409bd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "InformationProtectionConfig.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `InformationProtectionConfig.Read` to get the information protection configurations for the user resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "14f49b9f-4bf2-4d24-b80e-b27ec58409bd",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-08T00:00:00",
+      "WorkloadArea": "Microsoft.DataClassificationService",
+      "SubArea": ""
+    }
+  ]
+}
