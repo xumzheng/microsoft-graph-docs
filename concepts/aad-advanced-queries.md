@@ -223,40 +223,6 @@ ConsistencyLevel: eventual
 ```
 
 
-```json
-{
-    "error": {
-        "code": "Request_UnsupportedQuery",
-        "message": "The request uses a filter property that is not indexed",
-        "innerError": {
-            "date": "2021-06-10T19:32:01",
-            "request-id": "5625ba13-0c9f-4fce-a853-4b52f3e0bd09",
-            "client-request-id": "76fe4cd8-df3a-f8c3-659b-594274b6bb31"
-        }
-    }
-}
-```
-
-However, it is important to note that query parameters specified in a request might fail silently.
-This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
-In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_users_silent_fail"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$count=true
-```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-users-silent-fail-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ```http
 HTTP/1.1 200 OK

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc privacy subject-rights-requests item notes create --subject-rights-request-id {subjectRightsRequest-id} --body '{
-"content": 
-  {
-    "content": "String",
-    "contentType": "text"
-  }
-}
+mgc privacy subject-rights-requests item notes create --subject-rights-request-id {subjectRightsRequest-id} --body '{\
+"content": \
+  {\
+    "content": "String",\
+    "contentType": "text"\
+  }\
+}\
 '
 
 ```

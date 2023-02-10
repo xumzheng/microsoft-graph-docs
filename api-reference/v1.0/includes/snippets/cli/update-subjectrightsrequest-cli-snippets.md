@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc privacy subject-rights-requests item patch --subject-rights-request-id {subjectRightsRequest-id} --body '{
-  "@odata.type": "#microsoft.graph.subjectRightsRequest",
-  "internalDueDateTime": "2021-08-30T00:00:00Z"
-}
+mgc privacy subject-rights-requests item patch --subject-rights-request-id {subjectRightsRequest-id} --body '{\
+  "@odata.type": "#microsoft.graph.subjectRightsRequest",\
+  "internalDueDateTime": "2021-08-30T00:00:00Z"\
+}\
 '
 
 ```

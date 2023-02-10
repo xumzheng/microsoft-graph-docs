@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc sites item term-store sets item children create --site-id {site-id} --set-id {set-id} --body '{
-  "labels": [
-    {
-      "languageTag" : "en-US",
-      "name" : "Car",
-      "isDefault" : true
-    }
-  ]
-}
+mgc sites item term-store sets item children create --site-id {site-id} --set-id {set-id} --body '{\
+  "labels": [\
+    {\
+      "languageTag" : "en-US",\
+      "name" : "Car",\
+      "isDefault" : true\
+    }\
+  ]\
+}\
 '
 
 ```

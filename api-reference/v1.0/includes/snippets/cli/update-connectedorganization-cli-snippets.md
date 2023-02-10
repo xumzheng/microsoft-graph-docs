@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc identity-governance entitlement-management connected-organizations item patch --connected-organization-id {connectedOrganization-id} --body '{
-  "displayName":"Connected organization new name",
-  "description":"Connected organization new description",
-  "state":"configured"
-}
+mgc identity-governance entitlement-management connected-organizations item patch --connected-organization-id {connectedOrganization-id} --body '{\
+  "displayName":"Connected organization new name",\
+  "description":"Connected organization new description",\
+  "state":"configured"\
+}\
 '
 
 ```

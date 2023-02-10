@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc applications item extension-properties create --application-id {application-id} --body '{
-    "name": "jobGroup",
-    "dataType": "String",
-    "targetObjects": [
-        "User"
-    ]
-}
+mgc applications item extension-properties create --application-id {application-id} --body '{\
+    "name": "jobGroup",\
+    "dataType": "String",\
+    "targetObjects": [\
+        "User"\
+    ]\
+}\
 '
 
 ```

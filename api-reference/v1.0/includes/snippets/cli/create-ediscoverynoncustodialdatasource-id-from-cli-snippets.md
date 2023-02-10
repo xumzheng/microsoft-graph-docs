@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc security cases ediscovery-cases item noncustodial-data-sources create --ediscovery-case-id {ediscoveryCase-id} --body '{
-    "dataSource": {
-        "@odata.type": "microsoft.graph.security.siteSource",
-        "site": {
-            "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"
-        }
-    }
-}
+mgc security cases ediscovery-cases item noncustodial-data-sources create --ediscovery-case-id {ediscoveryCase-id} --body '{\
+    "dataSource": {\
+        "@odata.type": "microsoft.graph.security.siteSource",\
+        "site": {\
+            "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"\
+        }\
+    }\
+}\
 '
 
 ```

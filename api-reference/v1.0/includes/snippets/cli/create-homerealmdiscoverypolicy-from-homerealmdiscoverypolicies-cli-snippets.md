@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc policies home-realm-discovery-policies create --body '{
-    "definition": [
-    "{\"HomeRealmDiscoveryPolicy\":
-     {\"AccelerateToFederatedDomain\":true,
-      \"PreferredDomain\":\"federated.example.edu\",
-      \"AlternateIdLogin\":{\"Enabled\":true}}}"
-  ],
-    "displayName": "displayName-value",
-    "isOrganizationDefault": true
-}
+mgc policies home-realm-discovery-policies create --body '{\
+    "definition": [\
+    "{\"HomeRealmDiscoveryPolicy\":\
+     {\"AccelerateToFederatedDomain\":true,\
+      \"PreferredDomain\":\"federated.example.edu\",\
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"\
+  ],\
+    "displayName": "displayName-value",\
+    "isOrganizationDefault": true\
+}\
 '
 
 ```

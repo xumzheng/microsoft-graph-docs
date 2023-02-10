@@ -201,63 +201,6 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 ```
 
 
-## Create app roles
-
-### Create app roles on an application object
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-application-basics-create-serviceprincipal-approles"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/applications/bbd46130-e957-4c38-a116-d4d02afd1057
-Content-Type: application/json
-
-{
-    "appRoles": [
-        {
-            "allowedMemberTypes": [
-                "User",
-                "Application"
-            ],
-            "description": "Survey.Read",
-            "displayName": "Survey.Read",
-            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
-            "isEnabled": false,
-            "origin": "Application",
-            "value": "Survey.Read"
-        }
-    ]
-}
-```
-
-
-
-### Identify ownerless service principals and service principals with one owner
-
-Least privilege delegated permission: `Application.ReadWrite.All`
-
-This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-This request also returns the count of the apps that match the filter condition.
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-application-basics-ownerless-serviceprincipals"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=owners/$count eq 0 or owners/$count eq 1&$count=true
-ConsistencyLevel: eventual
-```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/tutorial-application-basics-ownerless-serviceprincipals-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Assign an owner to an app
 

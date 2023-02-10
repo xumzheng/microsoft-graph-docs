@@ -201,52 +201,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
-
-
-<!-- {
-  "blockType": "request",
-  "name": "query-parameters-expand+nested.select-example"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
-```
-
-
-> [!NOTE]
-> + Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
-> 
-> + With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). See more [known issues](known-issues.md#query-parameters).
->
-> + `$expand` is not currently supported with [advanced queries](/graph/aad-advanced-queries).
-
-## filter parameter
-
-Use the `$filter` query parameter to retrieve just a subset of a collection. For guidance on using `$filter`, see [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
-
-## format parameter
-
-Use the `$format` query parameter to specify the media format of the items returned from Microsoft Graph.
-
-For example, the following request returns the users in the organization in the json format:
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "query-parameters-format-example"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$format=json
-```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/query-parameters-format-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 > [!NOTE]
 > The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
 

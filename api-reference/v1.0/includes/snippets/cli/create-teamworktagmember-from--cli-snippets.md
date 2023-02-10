@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc teams item tags item members create --team-id {team-id} --teamwork-tag-id {teamworkTag-id} --body '{
-  "userId": "97f62344-57dc-409c-88ad-c4af14158ff5"
-}
+mgc teams item tags item members create --team-id {team-id} --teamwork-tag-id {teamworkTag-id} --body '{\
+  "userId": "97f62344-57dc-409c-88ad-c4af14158ff5"\
+}\
 '
 
 ```

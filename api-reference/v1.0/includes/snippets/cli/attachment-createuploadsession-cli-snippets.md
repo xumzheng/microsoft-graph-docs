@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc me messages item attachments microsoft-graph-create-upload-session post --message-id {message-id} --body '{
-  "AttachmentItem": {
-    "attachmentType": "file",
-    "name": "flower", 
-    "size": 3483322
-  }
-}
+mgc me messages item attachments microsoft-graph-create-upload-session post --message-id {message-id} --body '{\
+  "AttachmentItem": {\
+    "attachmentType": "file",\
+    "name": "flower", \
+    "size": 3483322\
+  }\
+}\
 '
 
 ```

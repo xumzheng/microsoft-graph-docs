@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc group-settings item patch --group-setting-id {groupSetting-id} --body '{
-    "values": [
-        {
-            "name": "AllowToAddGuests",
-            "value": "false"
-        }
-    ]
-}
+mgc group-settings item patch --group-setting-id {groupSetting-id} --body '{\
+    "values": [\
+        {\
+            "name": "AllowToAddGuests",\
+            "value": "false"\
+        }\
+    ]\
+}\
 '
 
 ```

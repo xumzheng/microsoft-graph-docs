@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc security alerts-v2 item patch --alert-id {alert-id} --body '{
-    "assignedTo": "secAdmin@contoso.onmicrosoft.com",
-    "classification": "truePositive",
-    "determination": "malware",
-    "status": "inProgress"
-}
+mgc security alerts-v2 item patch --alert-id {alert-id} --body '{\
+    "assignedTo": "secAdmin@contoso.onmicrosoft.com",\
+    "classification": "truePositive",\
+    "determination": "malware",\
+    "status": "inProgress"\
+}\
 '
 
 ```

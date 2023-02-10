@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc directory-objects item microsoft-graph-get-member-objects post --directory-object-id {directoryObject-id} --body '{
-  "securityEnabledOnly": true
-}
+mgc directory-objects item microsoft-graph-get-member-objects post --directory-object-id {directoryObject-id} --body '{\
+  "securityEnabledOnly": true\
+}\
 '
 
 ```

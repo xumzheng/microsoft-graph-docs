@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc applications item microsoft-graph-remove-password post --application-id {application-id} --body '{
-    "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6"
-}
+mgc applications item microsoft-graph-remove-password post --application-id {application-id} --body '{\
+    "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6"\
+}\
 '
 
 ```

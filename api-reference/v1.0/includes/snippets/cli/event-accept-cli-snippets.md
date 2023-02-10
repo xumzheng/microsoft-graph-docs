@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc me events item microsoft-graph-accept post --event-id {event-id} --body '{
-  "comment": "comment-value",
-  "sendResponse": true
-}
+mgc me events item microsoft-graph-accept post --event-id {event-id} --body '{\
+  "comment": "comment-value",\
+  "sendResponse": true\
+}\
 '
 
 ```

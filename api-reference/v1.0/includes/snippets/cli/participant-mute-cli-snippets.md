@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc communications calls item participants item microsoft-graph-mute post --call-id {call-id} --participant-id {participant-id} --body '{
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
+mgc communications calls item participants item microsoft-graph-mute post --call-id {call-id} --participant-id {participant-id} --body '{\
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"\
+}\
 '
 
 ```

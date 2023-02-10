@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc search microsoft-graph-query post --body '{
-  "requests": [
-    {
-      "entityTypes": [
-        "chatMessage"
-      ],
-      "query": {
-        "queryString": "contoso from:bob to:alice sent>2022-07-14"
-      },
-      "from": 0,
-      "size": 15,
-      "enableTopResults": true
-    }
-  ]
-}
+mgc search microsoft-graph-query post --body '{\
+  "requests": [\
+    {\
+      "entityTypes": [\
+        "chatMessage"\
+      ],\
+      "query": {\
+        "queryString": "contoso from:bob to:alice sent>2022-07-14"\
+      },\
+      "from": 0,\
+      "size": 15,\
+      "enableTopResults": true\
+    }\
+  ]\
+}\
 '
 
 ```

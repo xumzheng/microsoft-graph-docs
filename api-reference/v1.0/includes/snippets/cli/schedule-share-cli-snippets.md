@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc teams item schedule microsoft-graph-share post --team-id {team-id} --body '{
-  "notifyTeam": true,
-  "startDateTime": "2018-10-08T00:00:00.000Z",
-  "endDateTime": "2018-10-15T00:00:00.000Z"
-}
+mgc teams item schedule microsoft-graph-share post --team-id {team-id} --body '{\
+  "notifyTeam": true,\
+  "startDateTime": "2018-10-08T00:00:00.000Z",\
+  "endDateTime": "2018-10-15T00:00:00.000Z"\
+}\
 '
 
 ```

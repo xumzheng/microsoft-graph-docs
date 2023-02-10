@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc identity conditional-access authentication-context-class-references item patch --authentication-context-class-reference-id {authenticationContextClassReference-id} --body '{
-    "displayName": "Contoso medium",
-    "description": "Medium protection level defined for Contoso policy",
-    "isAvailable": true
-}
+mgc identity conditional-access authentication-context-class-references item patch --authentication-context-class-reference-id {authenticationContextClassReference-id} --body '{\
+    "displayName": "Contoso medium",\
+    "description": "Medium protection level defined for Contoso policy",\
+    "isAvailable": true\
+}\
 '
 
 ```

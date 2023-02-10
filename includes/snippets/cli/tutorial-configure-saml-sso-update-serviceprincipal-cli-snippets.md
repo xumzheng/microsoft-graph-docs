@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```cli
 
-mgc service-principals item patch --service-principal-id {servicePrincipal-id} --body '{
-  "preferredSingleSignOnMode": "saml"
-}
+mgc service-principals item patch --service-principal-id {servicePrincipal-id} --body '{\
+  "preferredSingleSignOnMode": "saml"\
+}\
 '
 
 ```
