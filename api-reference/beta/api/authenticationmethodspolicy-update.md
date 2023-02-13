@@ -146,6 +146,9 @@ Content-Type: application/json
             }
         ]
     }
+  },
+  "systemCredentialPreferences": {
+    "@odata.type": "microsoft.graph.systemCredentialPreferences"
   }
 }
 ```
