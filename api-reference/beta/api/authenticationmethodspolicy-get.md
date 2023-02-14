@@ -127,6 +127,9 @@ Content-Type: application/json
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
                 }
             ]
+        },
+        "systemCredentialPreferences": {
+            "@odata.type": "microsoft.graph.systemCredentialPreferences"
         }
     },
     "authenticationMethodConfigurations": [
@@ -201,24 +204,6 @@ Content-Type: application/json
             "state": "enabled",
             "allowExternalIdToUseEmailOtp": "default",
             "includeTargets": []
-        },
-        {
-            "@odata.type": "#microsoft.graph.authenticationMethodsPolicy",
-            "id": "11feea58-6d38-3496-1fdb-50c4302863a0",
-            "displayName": "String",
-            "description": "String",
-            "lastModifiedDateTime": "String (timestamp)",
-            "policyVersion": "String",
-            "policyMigrationState": "String",
-            "registrationEnforcement": 
-            {
-                "@odata.type": "microsoft.graph.registrationEnforcement"
-            },
-            "reconfirmationInDays": "Integer",
-            "systemCredentialPreferences": 
-            {
-                "@odata.type": "microsoft.graph.systemCredentialPreferences"
-            }
         }
     ]
 }
