@@ -64,7 +64,6 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
@@ -80,12 +79,6 @@ Content-type: application/json
   "title": "title-value"
 }
 ```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-plannerplan-from-planner-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response
