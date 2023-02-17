@@ -69,9 +69,8 @@ If successful, this method returns a `201 Created` response code and a [microsof
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_analyzedmessage_from_"
-}
--->
+  "name": "post_analyzedMessageRemediations"
+}-->
 ``` http
 POST https://graph.microsoft.com/beta/security/analyzedMessageRemediations
 Content-Type: application/json
@@ -89,6 +88,25 @@ Content-Type: application/json
 }
 ```
 
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.analyzedMessageRemediation"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "46a5227a-f2b3-fd21-aae1-ba0b873d0f56"
+}
+```
+
 ### **Scenario #2 - User provides NetworkMessageId and Recipient Email Address of mail**
 
 #### Request
@@ -98,7 +116,7 @@ The following is an example of a request. In this scenario we create the mailmet
 **Make sure the recipientEmailAddress is correct since it is case-sensitive.**
 <!-- {
   "blockType": "request",
-  "name": "create_analyzedmessage_from_"
+  "name": "post_analyzedMessageRemediations"
 }
 -->
 ``` http
@@ -120,20 +138,14 @@ Content-Type: application/json
 }
 ```
 
-### **Scenario #3 - Both are passed**
-
-In this scenario if both are passed, the "id" field takes precedence over other fields.
-
-**We support both scenarios for elements defined in the analyzedMessages list. Some elements can support first scenario and others can support second scenario**
-
-### Response
+#### Response
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.analyzedMessage"
+  "@odata.type": "microsoft.graph.security.analyzedMessageRemediation"
 }
 -->
 ``` http
@@ -141,7 +153,12 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.analyzedMessage",
   "id": "46a5227a-f2b3-fd21-aae1-ba0b873d0f56"
 }
 ```
+
+### **Scenario #3 - Both are passed**
+
+In this scenario if both are passed, the "id" field takes precedence over other fields.
+
+**We support both scenarios for elements defined in the analyzedMessages list. Some elements can support first scenario and others can support second scenario**
