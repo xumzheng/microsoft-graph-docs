@@ -46,7 +46,7 @@ POST /security/analyzedMessageRemediations/
 
 In the request body, supply a JSON representation of the [microsoft.graph.security.analyzedMessageRemediation](../resources/security-analyzedmessageRemediation.md) object.
 
-You can specify the following properties when creating a **analyzedMessage**.
+You can specify the following properties when creating a **analyzedMessageRemediation**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ You can specify the following properties when creating a **analyzedMessage**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.analyzedMessage](../resources/security-analyzedmessage.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.analyzedMessageRemdiation](../resources/security-analyzedmessageRemediation.md) object in the response body.
 
 ## Examples
 
@@ -68,8 +68,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 The following is an example of a request.
 <!-- {
-  "blockType": "request",
-  "name": "post_analyzedMessageRemediations"
+  "blockType": "ignored"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/security/analyzedMessageRemediations
@@ -93,9 +92,7 @@ Content-Type: application/json
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.analyzedMessageRemediation"
+  "blockType": "ignored"
 }
 -->
 ``` http
@@ -115,8 +112,7 @@ The following is an example of a request. In this scenario we create the mailmet
 
 **Make sure the recipientEmailAddress is correct since it is case-sensitive.**
 <!-- {
-  "blockType": "request",
-  "name": "post_analyzedMessageRemediations"
+  "blockType": "ignored"
 }
 -->
 ``` http
@@ -143,9 +139,7 @@ Content-Type: application/json
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.analyzedMessageRemediation"
+  "blockType": "ignored"
 }
 -->
 ``` http
