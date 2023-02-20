@@ -1004,7 +1004,7 @@ HTTP/1.1 200 OK
 }
 -->
 
-### Example 14: Get information about synchronized users from a specific source tenant
+### Example 14: List information about synchronized users from a specific source tenant
 
 The following example lists origin and synchronization information about synchronized users from a specific source Azure AD tenant. This information is only populated for users that are synchronized using [Azure AD cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview). Add a `$filter` parameter for the source tenant and add a `$select` parameter for [originTenantInfo](../resources/user.md).
 
