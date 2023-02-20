@@ -1,6 +1,6 @@
 ---
 title: "synchronizationInfo resource type"
-description: "Contains information about how the object was synchronized. This information is only populated for objects that are synchronized using Azure AD cross-tenant synchronization."
+description: "Contains information about how an object was synchronized. This information is only populated for objects that are synchronized using Azure AD cross-tenant synchronization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about how the object was synchronized. This information is only populated for objects that are synchronized using Azure AD cross-tenant synchronization.
+Contains information about how an object was synchronized. This information is only populated for objects that are synchronized using [Azure AD cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview).
 
 
 ## Properties

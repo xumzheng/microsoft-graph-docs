@@ -1,6 +1,6 @@
 ---
 title: "crossTenantResource resource type"
-description: "Contains information about the original object in the source Azure AD tenant the object was synchronized from."
+description: "Contains origin information about a synchronized object from a source Azure AD tenant."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about the original object in the source Azure AD tenant the object was synchronized from. This information is only populated for objects that are synchronized using Azure AD cross-tenant synchronization.
+Contains origin information about a synchronized object from a source Azure AD tenant. This information is only populated for objects that are synchronized using [Azure AD cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview).
 
 This is an abstract type that's inherited by the [crossTenantSynchronizationResource](crosstenantsynchronizationresource.md) resource type.
 
