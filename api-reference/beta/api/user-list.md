@@ -1004,9 +1004,15 @@ HTTP/1.1 200 OK
 }
 -->
 
-### Example 13: Get information about the original users in a specific source tenant the users were synchronized from
+### Example 14: Get information about the original users in a specific source tenant the users were synchronized from
 
-The following example lists information about the original users in a specific source Azure AD tenant the users were synchronized from. This information is only populated for users that are synchronized using Azure AD cross-tenant synchronization.
+The following example lists information about the original users in a specific source Azure AD tenant the users were synchronized from. This information is only populated for users that are synchronized using [Azure AD cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview). Add a `$filter` parameter for the source tenant and add a `$select` parameter for [originTenantInfo](../resources/user.md).
+
+- `originTenantId`: ID of the source tenant
+- `originId`: ID of the original user in the source tenant
+- `creationType`: User was created using cross-tenant synchronization
+
+For more information, see [Configure cross-tenant synchronization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure-graph).
 
 #### Request
 
@@ -1015,7 +1021,7 @@ The following example lists information about the original users in a specific s
   "name": "list_users_origintenantinfo"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=originTenantInfo/originTenantId eq '376a1f89-b02f-4a85-8252-2974d1984d14'&$select=originTenantInfo
+GET https://graph.microsoft.com/beta/users?$filter=originTenantInfo/originTenantId eq '3d0f5dec-5d3d-455c-8016-e2af1ae4d31a'&$select=originTenantInfo
 ```
 
 #### Response
@@ -1035,7 +1041,7 @@ Content-type: application/json
         {
             "originTenantInfo": {
                 "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
-                "originTenantId": "376a1f89-b02f-4a85-8252-2974d1984d14",
+                "originTenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
                 "originId": "c28334bc-4f66-44de-b9b1-5dccc28496b1",
                 "synchronizationInfo": {
                     "creationType": "tenantToTenantSync"
@@ -1045,7 +1051,7 @@ Content-type: application/json
         {
             "originTenantInfo": {
                 "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
-                "originTenantId": "376a1f89-b02f-4a85-8252-2974d1984d14",
+                "originTenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
                 "originId": "1897469a-2d9b-4337-a372-947efcbf8f4a",
                 "synchronizationInfo": {
                     "creationType": "tenantToTenantSync"
