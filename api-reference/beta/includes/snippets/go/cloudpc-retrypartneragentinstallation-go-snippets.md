@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").RetryPartnerAgentInstallation().Post(context.Background(), nil)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").MicrosoftGraphRetryPartnerAgentInstallation().Post(context.Background(), nil)
 
 
 ```

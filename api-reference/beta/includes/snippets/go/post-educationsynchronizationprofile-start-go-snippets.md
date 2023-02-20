@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Education().SynchronizationProfilesById("educationSynchronizationProfile-id").Start().Post(context.Background(), nil)
+result, err := graphClient.Education().SynchronizationProfilesById("educationSynchronizationProfile-id").MicrosoftGraphStart().Post(context.Background(), nil)
 
 
 ```

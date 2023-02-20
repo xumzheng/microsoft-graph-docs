@@ -20,7 +20,7 @@ $requestBody->setCredentials($credentialsArray);
 
 
 
-$graphServiceClient->applicationsById('application-id')->synchronization()->acquireAccessToken()->post($requestBody);
+$graphServiceClient->applicationsById('application-id')->synchronization()->microsoftGraphAcquireAccessToken()->post($requestBody);
 
 
 ```

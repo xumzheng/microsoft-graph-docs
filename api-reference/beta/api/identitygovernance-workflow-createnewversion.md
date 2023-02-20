@@ -141,7 +141,6 @@ Content-length: 631
 
 ---
 
-
 ### Response
 
 The following is an example of the response

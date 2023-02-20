@@ -75,7 +75,6 @@ workbook-session-id: {session-id}
 
 ---
 
-
 Note that workbook-session-id header is required.
 
 

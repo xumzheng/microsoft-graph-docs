@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_si
 
 ---
 
-
 ### Response
 
 <!-- {

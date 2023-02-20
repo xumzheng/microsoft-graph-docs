@@ -146,7 +146,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 #### Response
 
 The following is an example of the response of a request to get a task from a workflow version.

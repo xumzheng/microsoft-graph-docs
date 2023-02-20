@@ -78,7 +78,6 @@ POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobI
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

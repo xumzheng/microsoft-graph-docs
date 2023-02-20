@@ -50,7 +50,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->evaluateClassificationResults()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->microsoftGraphEvaluateClassificationResults()->post($requestBody, $requestConfiguration);
 
 
 ```

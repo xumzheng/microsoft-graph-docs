@@ -80,7 +80,6 @@ GET https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}/applies
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

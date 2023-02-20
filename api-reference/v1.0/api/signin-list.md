@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 ---
 
-
 #### Response
 
 Here is an example of the response.
@@ -228,7 +227,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

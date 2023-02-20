@@ -54,7 +54,6 @@ Content-Type: application/json
 
 ---
 
-
 The API responds that the action was accepted and the URL for retrieving the status of the long running action.
 
 <!-- { "blockType": "response" } -->
@@ -154,7 +153,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

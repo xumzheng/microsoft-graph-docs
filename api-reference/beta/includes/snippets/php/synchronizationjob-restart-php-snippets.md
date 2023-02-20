@@ -25,7 +25,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->restart()->post($requestBody, $requestConfiguration);
+$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->microsoftGraphRestart()->post($requestBody, $requestConfiguration);
 
 
 ```

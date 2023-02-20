@@ -112,7 +112,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->evaluateRemoval()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->microsoftGraphEvaluateRemoval()->post($requestBody, $requestConfiguration);
 
 
 ```

@@ -82,7 +82,6 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTR
 ---
 
 
-
 ### Response
 The following is an example of the response.
 <!-- {

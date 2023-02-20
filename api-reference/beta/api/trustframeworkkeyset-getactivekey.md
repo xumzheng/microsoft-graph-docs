@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 ---
 
 
-
 ### Response
 
 <!-- {

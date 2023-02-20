@@ -48,7 +48,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is a successful response.
@@ -99,7 +98,6 @@ workbook-session-id: {session-id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -153,7 +151,6 @@ workbook-session-id: {session-id}
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -200,7 +197,6 @@ workbook-session-id: {session-id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -257,7 +253,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The long-running operation pattern will return a `202 Accepted` response similar to the following.

@@ -171,7 +171,6 @@ Workbook-Session-Id: {Workbook-Session-Id}
 
 ---
 
-
 #### Response
 
 Here is another example of the response that will lead to an async operation. For details, see [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./workbook-tablerowoperationresult.md).

@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

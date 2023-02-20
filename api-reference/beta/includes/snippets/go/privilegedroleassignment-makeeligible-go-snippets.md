@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.PrivilegedRoleAssignmentsById("privilegedRoleAssignment-id").MakeEligible().Post(context.Background(), nil)
+result, err := graphClient.PrivilegedRoleAssignmentsById("privilegedRoleAssignment-id").MicrosoftGraphMakeEligible().Post(context.Background(), nil)
 
 
 ```

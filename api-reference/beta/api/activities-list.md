@@ -65,7 +65,6 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->

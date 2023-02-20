@@ -17,7 +17,7 @@ $newAssignmentOrder->setOrder(['City', 'extension_GUID_ShoeSize', ]);
 $requestBody->setNewAssignmentOrder($newAssignmentOrder);
 
 
-$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->userAttributeAssignments()->setOrder()->post($requestBody);
+$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->userAttributeAssignments()->microsoftGraphSetOrder()->post($requestBody);
 
 
 ```

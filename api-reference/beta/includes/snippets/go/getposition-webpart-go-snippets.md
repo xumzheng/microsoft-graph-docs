@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.SitesById("site-id").PagesById("sitePage-id").WebPartsById("webPart-id").GetPositionOfWebPart().Get(context.Background(), nil)
+graphClient.SitesById("site-id").PagesById("sitePage-id").WebPartsById("webPart-id").MicrosoftGraphGetPositionOfWebPart().Get(context.Background(), nil)
 
 
 ```

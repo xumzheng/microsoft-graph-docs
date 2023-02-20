@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}/applies
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

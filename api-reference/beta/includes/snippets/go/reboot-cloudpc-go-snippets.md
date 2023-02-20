@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").Reboot().Post(context.Background(), nil)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").MicrosoftGraphReboot().Post(context.Background(), nil)
 
 
 ```

@@ -148,7 +148,6 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 
 ---
 
-
 #### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

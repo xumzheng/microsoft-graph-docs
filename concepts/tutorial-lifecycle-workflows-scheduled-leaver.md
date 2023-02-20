@@ -128,7 +128,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -220,7 +219,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -273,7 +271,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -348,7 +345,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -410,7 +406,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

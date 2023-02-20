@@ -78,7 +78,6 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 
 ---
 
-
 ### Response
 
 The following is an example of the response. 

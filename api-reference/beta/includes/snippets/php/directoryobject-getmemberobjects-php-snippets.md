@@ -14,7 +14,7 @@ $requestBody->setSecurityEnabledOnly(true);
 
 
 
-$requestResult = $graphServiceClient->me()->getMemberObjects()->post($requestBody);
+$requestResult = $graphServiceClient->me()->microsoftGraphGetMemberObjects()->post($requestBody);
 
 
 ```

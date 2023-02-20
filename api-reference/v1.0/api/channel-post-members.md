@@ -98,7 +98,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. 
@@ -165,7 +164,6 @@ POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -243,7 +241,6 @@ Content-type: application/json
 ---
 
 
-
 #### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. 
@@ -316,7 +313,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -398,7 +394,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -476,7 +471,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -185,7 +185,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 

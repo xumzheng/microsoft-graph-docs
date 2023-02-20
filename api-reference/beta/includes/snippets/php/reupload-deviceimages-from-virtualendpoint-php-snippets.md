@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->deviceImagesById('cloudPcDeviceImage-id')->reupload()->post();
+$graphServiceClient->deviceManagement()->virtualEndpoint()->deviceImagesById('cloudPcDeviceImage-id')->microsoftGraphReupload()->post();
 
 
 ```

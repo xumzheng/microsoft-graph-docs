@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var deployment = new Microsoft.Graph.WindowsUpdates.Deployment
 {
-	Settings = new WindowsDeploymentSettings
+	Settings = new DeploymentSettings
 	{
 		Monitoring = new Microsoft.Graph.WindowsUpdates.MonitoringSettings
 		{

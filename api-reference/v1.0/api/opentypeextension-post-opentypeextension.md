@@ -191,7 +191,6 @@ POST https://graph.microsoft.com/v1.0/me/messages
 
 ---
 
-
 ### Response 1
 
 Here is the response for the first example. The response body includes properties of the new message,
@@ -318,7 +317,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 
 ---
 
-
 ### Response 2
 
 Here is the response for the second example. The response body includes the following for the new extension:
@@ -396,7 +394,6 @@ POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 3
 
@@ -485,7 +482,6 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 ---
 
-
 ### Response 4
 
 Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the
@@ -571,7 +567,6 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 5
 

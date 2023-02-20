@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy
 
 ---
 
-
 ### Response
 
 <!-- {

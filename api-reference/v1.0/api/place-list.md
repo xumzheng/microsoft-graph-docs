@@ -133,7 +133,6 @@ GET https://graph.microsoft.com/v1.0/places/microsoft.graph.room
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -264,7 +263,6 @@ GET https://graph.microsoft.com/v1.0/places/microsoft.graph.roomlist
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

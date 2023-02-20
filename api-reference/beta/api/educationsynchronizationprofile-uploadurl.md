@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 
 ---
 
-
 ##### Response
 The following is an example of the response.
 

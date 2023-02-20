@@ -6,22 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var servicePrincipal = new ServicePrincipal
+var application = new Application
 {
 	AppRoles = new List<AppRole>()
 	{
-		new AppRole
-		{
-			AllowedMemberTypes = new List<String>()
-			{
-				"User"
-			},
-			Description = "Survey.ReadWrite.All",
-			DisplayName = "Survey.ReadWrite.All",
-			Id = Guid.Parse("3ce57053-0ebf-42d8-bf7c-74161a450e4b"),
-			IsEnabled = true,
-			Value = "Survey.ReadWrite.All"
-		},
 		new AppRole
 		{
 			AllowedMemberTypes = new List<String>()
@@ -39,8 +27,8 @@ var servicePrincipal = new ServicePrincipal
 	}
 };
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"]
+await graphClient.Applications["{application-id}"]
 	.Request()
-	.UpdateAsync(servicePrincipal);
+	.UpdateAsync(application);
 
 ```

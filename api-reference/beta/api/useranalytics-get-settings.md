@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/beta/me/analytics/settings
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

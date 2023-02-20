@@ -17,7 +17,7 @@ message.SetContentType(&contentType)
 statusMessage.SetMessage(message)
 requestBody.SetStatusMessage(statusMessage)
 
-graphClient.UsersById("user-id").Presence().SetStatusMessage().Post(context.Background(), requestBody, nil)
+graphClient.UsersById("user-id").Presence().MicrosoftGraphSetStatusMessage().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -175,7 +175,6 @@ ConsistencyLevel: eventual
 ---
 
 
-
 #### Response
 
 The following is an example of the response. Transitive managers are displayed hierarchically.

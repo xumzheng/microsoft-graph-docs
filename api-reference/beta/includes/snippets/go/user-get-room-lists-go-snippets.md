@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Me().FindRoomLists().Get(context.Background(), nil)
+result, err := graphClient.Me().MicrosoftGraphFindRoomLists().Get(context.Background(), nil)
 
 
 ```

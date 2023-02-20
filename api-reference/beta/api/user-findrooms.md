@@ -111,7 +111,6 @@ GET https://graph.microsoft.com/beta/me/findRooms
 
 ---
 
-
 #### Response
 The following is an example of the response.
 
@@ -199,7 +198,6 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.

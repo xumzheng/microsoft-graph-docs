@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->accessReviewsById('accessReview-id')->sendReminder()->post();
+$graphServiceClient->accessReviewsById('accessReview-id')->microsoftGraphSendReminder()->post();
 
 
 ```
