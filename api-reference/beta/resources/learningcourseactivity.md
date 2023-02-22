@@ -11,16 +11,18 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents the metadata of learner course activities for employee learning.
 
-**TODO: Add Description**
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List learningCourseActivities](../api/employeeexperienceuser-list-learningcourseactivities.md)|[learningCourseActivity](../resources/learningcourseactivity.md) collection|Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) objects and their properties.|
 |[Create learningCourseActivity](../api/employeeexperienceuser-post-learningcourseactivities.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Create a new [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 |[Get learningCourseActivity](../api/learningcourseactivity-get.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
+|[Get learningCourseActivity By ExternalCourseActivityId](../api/learningcourseactivity-getByExternalCourseActivityId.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 |[Update learningCourseActivity](../api/learningcourseactivity-update.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Update the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 |[Delete learningCourseActivity](../api/employeeexperienceuser-delete-learningcourseactivities.md)|None|Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 

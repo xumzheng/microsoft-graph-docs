@@ -1,5 +1,5 @@
 ---
-title: "Get learningCourseActivity"
+title: "Get learningCourseActivityByExternalCourseActivityId"
 description: "Read the properties and relationships of a learningCourseActivity object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
@@ -7,11 +7,10 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.
 doc_type: apiPageType
 ---
 
-# Get learningCourseActivity
+# Get learningCourseActivity by ExternalCourseActivityId
 Namespace: microsoft.graph
 
-Retrieves the Course Activity via CourseActivity id that is sent by VivaLearning in the Create 
-course activity api call
+Retrieves the Course Activity using ExternalCourseActivityId that is sent by learning provider in the Create course activity api call.
 
 Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
@@ -31,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /employeeExperience/learningCourseActivities/{learningCourseActivityId}
+GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(extern
+alCourseActivityId={externalCourseActivityId})
 ```
 
 ## Optional query parameters
@@ -49,17 +49,10 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [learningCourseActivity](../resources/learningcourseactivity.md) object in the response body.
 
-## Examples
-
-### Request
-The following is an example of request and response of an assigned learning course activity.
-
-``` http
-GET https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
-```
-
+## Example-1
 
 ### Response
+The following is an example response of an assigned learning course activity.
 
 ``` http
 HTTP/1.1 200 OK
@@ -71,7 +64,8 @@ Content-Type: application/json
   e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('7ba2228a-e020-11ec-9d64-
   0242ac120002')$entity",
   "assignmentType": "required",
-  "notes": {
+  "notes":
+  {
     "contentType": "text",
     "content": "required assignment added for user"
   },
@@ -86,18 +80,13 @@ Content-Type: application/json
   "status": "NotStarted",
   "completedDateTime": null,
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002"
+  "id": "7ba2228a-e020-11ec-9d64-0242ac120002" 
 }
 ```
-
-### Request
-The following is an example of request and response of an self-initiated learning course activity.
-
-``` http
-GET https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
-```
+## Example-2
 
 ### Response
+The following is an example response of an self-initiated learning course activity.
 
 ``` http
 HTTP/1.1 200 OK
