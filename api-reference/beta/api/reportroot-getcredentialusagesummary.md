@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

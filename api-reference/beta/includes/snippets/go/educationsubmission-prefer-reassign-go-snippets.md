@@ -14,7 +14,7 @@ configuration := &graphconfig.EducationClasseItemAssignmentItemSubmissionItemMic
 	Headers: headers,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Reassign().Post(context.Background(), configuration)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").MicrosoftGraphReassign().Post(context.Background(), configuration)
 
 
 ```

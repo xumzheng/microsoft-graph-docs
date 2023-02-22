@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->education()->synchronizationProfilesById('educationSynchronizationProfile-id')->resume()->post();
+$graphServiceClient->education()->synchronizationProfilesById('educationSynchronizationProfile-id')->microsoftGraphResume()->post();
 
 
 ```

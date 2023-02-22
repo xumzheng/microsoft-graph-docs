@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var updatableAssets = await graphClient.Admin.Windows.Updates.UpdatableAssets
+var updatableAssetGroup = await graphClient.Admin.Windows.Updates.UpdatableAssets
 	.Request()
-	.Filter("isof('microsoft.graph.windowsUpdates.updatableAssetGroup')")
 	.GetAsync();
 
 ```

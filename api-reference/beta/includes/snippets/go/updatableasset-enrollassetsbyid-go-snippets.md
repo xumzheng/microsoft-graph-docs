@@ -20,7 +20,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-graphClient.Admin().Windows().Updates().UpdatableAssets().EnrollAssetsById().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().UpdatableAssets().MicrosoftGraphWindowsUpdatesEnrollAssetsById().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setContentTypeId('String');
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->contentTypes()->addCopyFromContentTypeHub()->post($requestBody);
+$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->contentTypes()->microsoftGraphAddCopyFromContentTypeHub()->post($requestBody);
 
 
 ```

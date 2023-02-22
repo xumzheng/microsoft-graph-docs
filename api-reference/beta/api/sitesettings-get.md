@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/sites/03164a2b-a288-486a-993e-c41454113e2a/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

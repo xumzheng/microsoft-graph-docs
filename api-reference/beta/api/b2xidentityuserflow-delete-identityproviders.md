@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignU
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

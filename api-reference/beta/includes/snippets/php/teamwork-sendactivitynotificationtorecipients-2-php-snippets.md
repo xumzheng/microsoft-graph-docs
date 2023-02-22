@@ -74,7 +74,7 @@ $requestBody->setRecipients($recipientsArray);
 
 
 
-$graphServiceClient->teamwork()->sendActivityNotificationToRecipients()->post($requestBody);
+$graphServiceClient->teamwork()->microsoftGraphSendActivityNotificationToRecipients()->post($requestBody);
 
 
 ```

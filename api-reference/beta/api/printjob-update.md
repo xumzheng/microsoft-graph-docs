@@ -109,7 +109,6 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability. 

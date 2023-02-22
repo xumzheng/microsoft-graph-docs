@@ -82,7 +82,6 @@ DELETE https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa814
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

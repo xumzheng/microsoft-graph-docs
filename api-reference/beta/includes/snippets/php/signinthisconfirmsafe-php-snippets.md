@@ -14,7 +14,7 @@ $requestBody->setRequestIds(['5a0c76d2-cb57-4ece-9bc1-c323178f116a', '96609214-0
 
 
 
-$graphServiceClient->auditLogs()->signIns()->confirmSafe()->post($requestBody);
+$graphServiceClient->auditLogs()->signIns()->microsoftGraphConfirmSafe()->post($requestBody);
 
 
 ```

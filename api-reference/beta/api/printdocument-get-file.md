@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/beta/print/printers/fcb0bc53-a446-41d0-bfc3-5c56
 
 ---
 
-
 ### Response
 
 <!-- {

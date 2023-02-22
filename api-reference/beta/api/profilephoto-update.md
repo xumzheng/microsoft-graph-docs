@@ -170,7 +170,6 @@ Binary data for the image
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

@@ -83,7 +83,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_PartnerSignU
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

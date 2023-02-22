@@ -35,7 +35,7 @@ $requestBody->setCredentials($credentialsArray);
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->updatePasswordSingleSignOnCredentials()->post($requestBody);
+$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->microsoftGraphUpdatePasswordSingleSignOnCredentials()->post($requestBody);
 
 
 ```

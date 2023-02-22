@@ -14,7 +14,7 @@ $requestBody->setId('5793aa3b-cca9-4794-679a240f8b58');
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->deletePasswordSingleSignOnCredentials()->post($requestBody);
+$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->microsoftGraphDeletePasswordSingleSignOnCredentials()->post($requestBody);
 
 
 ```

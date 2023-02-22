@@ -20,7 +20,7 @@ $requestBody->setSkip(0);
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->getRemoteConnectionHistoricalReports()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->microsoftGraphGetRemoteConnectionHistoricalReports()->post($requestBody);
 
 
 ```

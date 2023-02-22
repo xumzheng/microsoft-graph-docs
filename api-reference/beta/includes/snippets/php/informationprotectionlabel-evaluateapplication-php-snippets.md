@@ -126,7 +126,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->evaluateApplication()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->microsoftGraphEvaluateApplication()->post($requestBody, $requestConfiguration);
 
 
 ```

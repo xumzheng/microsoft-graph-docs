@@ -50,7 +50,7 @@ value := []graphmodels.Objectable {
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().Alerts().UpdateAlerts().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Security().Alerts().MicrosoftGraphUpdateAlerts().Post(context.Background(), requestBody, nil)
 
 
 ```

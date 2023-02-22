@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/{c
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 

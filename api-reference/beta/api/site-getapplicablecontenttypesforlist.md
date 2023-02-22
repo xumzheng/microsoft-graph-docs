@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/getApplicableContentTypesFor
 
 ---
 
-
 ### Response
 
 <!-- {

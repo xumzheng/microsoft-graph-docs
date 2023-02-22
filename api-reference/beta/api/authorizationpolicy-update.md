@@ -107,7 +107,6 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -388,7 +387,6 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -445,7 +443,6 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

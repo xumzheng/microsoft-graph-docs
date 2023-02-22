@@ -71,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 <!-- {

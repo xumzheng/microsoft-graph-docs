@@ -283,7 +283,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDi
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -440,7 +439,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventType
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

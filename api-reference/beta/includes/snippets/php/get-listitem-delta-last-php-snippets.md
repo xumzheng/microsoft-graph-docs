@@ -17,7 +17,7 @@ $queryParameters->token = "1230919asd190410jlka";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->microsoftGraphDelta()->get($requestConfiguration);
 
 
 ```

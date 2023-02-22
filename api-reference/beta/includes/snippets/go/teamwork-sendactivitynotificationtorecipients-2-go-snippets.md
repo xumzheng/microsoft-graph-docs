@@ -61,7 +61,7 @@ recipients := []graphmodels.TeamworkNotificationRecipientable {
 }
 requestBody.SetRecipients(recipients)
 
-graphClient.Teamwork().SendActivityNotificationToRecipients().Post(context.Background(), requestBody, nil)
+graphClient.Teamwork().MicrosoftGraphSendActivityNotificationToRecipients().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ allowedCombinations := []graphmodels.AuthenticationMethodModesable {
 }
 requestBody.SetAllowedCombinations(allowedCombinations)
 
-result, err := graphClient.Policies().AuthenticationStrengthPoliciesById("authenticationStrengthPolicy-id").UpdateAllowedCombinations().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().AuthenticationStrengthPoliciesById("authenticationStrengthPolicy-id").MicrosoftGraphUpdateAllowedCombinations().Post(context.Background(), requestBody, nil)
 
 
 ```

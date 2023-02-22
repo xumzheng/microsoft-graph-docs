@@ -26,7 +26,7 @@ assignments := []graphmodels.Objectable {
 }
 requestBody.SetAssignments(assignments)
 
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Assign().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").MicrosoftGraphAssign().Post(context.Background(), requestBody, nil)
 
 
 ```

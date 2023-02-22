@@ -72,7 +72,6 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{i
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 <!-- {

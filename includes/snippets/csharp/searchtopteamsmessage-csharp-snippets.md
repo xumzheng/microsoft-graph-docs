@@ -12,7 +12,7 @@ var requests = new List<SearchRequestObject>()
 	{
 		EntityTypes = new List<EntityType>()
 		{
-			EntityType.Event
+			EntityType.ChatMessage
 		},
 		Query = new SearchQuery
 		{

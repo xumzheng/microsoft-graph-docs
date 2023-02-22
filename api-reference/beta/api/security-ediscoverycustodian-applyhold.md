@@ -104,7 +104,6 @@ Content-Type: application/json
 ---
 
 
-
 #### Response
 The following is an example of the response.
 <!-- {
@@ -155,7 +154,6 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

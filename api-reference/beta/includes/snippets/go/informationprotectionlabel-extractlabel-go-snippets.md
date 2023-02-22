@@ -78,7 +78,7 @@ additionalData := map[string]interface{}{
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
 
-result, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.InformationProtection().Policy().Labels().MicrosoftGraphExtractLabel().Post(context.Background(), requestBody, configuration)
 
 
 ```

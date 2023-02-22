@@ -35,7 +35,7 @@ $requestBody->setSharedCookies($sharedCookiesArray);
 
 
 
-$requestResult = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->publish()->post($requestBody);
+$requestResult = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->microsoftGraphPublish()->post($requestBody);
 
 
 ```

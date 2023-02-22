@@ -20,7 +20,7 @@ $requestBody->setSelect(['CloudPcId', 'ManagedDeviceName', 'UserPrincipalName', 
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->getTotalAggregatedRemoteConnectionReports()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->microsoftGraphGetTotalAggregatedRemoteConnectionReports()->post($requestBody);
 
 
 ```

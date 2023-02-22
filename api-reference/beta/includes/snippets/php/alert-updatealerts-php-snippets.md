@@ -53,7 +53,7 @@ $requestBody->setValue($valueArray);
 
 
 
-$requestResult = $graphServiceClient->security()->alerts()->updateAlerts()->post($requestBody);
+$requestResult = $graphServiceClient->security()->alerts()->microsoftGraphUpdateAlerts()->post($requestBody);
 
 
 ```

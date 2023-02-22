@@ -205,7 +205,6 @@ Prefer: odata.maxpagesize=1
 
 ---
 
-
 #### Response
 
 If the request is successful, the response includes a state token, which is either a _skipToken_
@@ -275,7 +274,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

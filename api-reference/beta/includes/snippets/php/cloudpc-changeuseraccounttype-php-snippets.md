@@ -14,7 +14,7 @@ $requestBody->setUserAccountType(new CloudPcUserAccountType('administrator'));
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCsById('cloudPC-id')->changeUserAccountType()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCsById('cloudPC-id')->microsoftGraphChangeUserAccountType()->post($requestBody);
 
 
 ```

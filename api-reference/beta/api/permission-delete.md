@@ -75,7 +75,6 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{pe
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "truncated": false } -->

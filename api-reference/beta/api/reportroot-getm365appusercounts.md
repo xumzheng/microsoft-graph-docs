@@ -120,7 +120,6 @@ GET https://graph.microsoft.com/beta/reports/getM365AppUserCounts(period='D7')?$
 ---
 
 
-
 #### Response
 
 The following is an example of the response.
@@ -181,7 +180,6 @@ GET https://graph.microsoft.com/beta/reports/getM365AppUserCounts(period='D7')?$
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

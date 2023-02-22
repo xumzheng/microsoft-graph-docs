@@ -14,32 +14,8 @@ var addMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
 	}
 };
 
-var removeMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-var addExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-var removeExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"].Audience
-	.UpdateAudience(addMembers,removeMembers,addExclusions,removeExclusions)
+await graphClient.Admin.Windows.Updates.DeploymentAudiences["{windowsUpdates.deploymentAudience-id}"]
+	.UpdateAudience(addMembers,null,null,null)
 	.Request()
 	.PostAsync();
 

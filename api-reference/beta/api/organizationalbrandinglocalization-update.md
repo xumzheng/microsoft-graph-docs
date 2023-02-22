@@ -125,7 +125,6 @@ Content-Type: image/jpeg
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -189,7 +188,6 @@ Content-Type: application/json
 ---
 
 
-
 #### Response
 
 <!-- {
@@ -250,7 +248,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

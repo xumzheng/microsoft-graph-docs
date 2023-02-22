@@ -21,7 +21,7 @@ requestBody.Set(&)
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.Me().AssignLicense().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MicrosoftGraphAssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

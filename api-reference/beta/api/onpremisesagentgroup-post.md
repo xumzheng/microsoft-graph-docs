@@ -87,7 +87,6 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 ---
 
-
 In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ```json

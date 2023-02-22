@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 <!-- {

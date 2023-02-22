@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{t
 
 ---
 
-
 ##### Response
 The following is an example of the response. 
 <!-- {

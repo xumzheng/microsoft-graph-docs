@@ -70,7 +70,6 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 <!-- {

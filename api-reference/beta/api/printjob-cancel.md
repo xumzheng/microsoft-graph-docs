@@ -75,7 +75,6 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 <!-- {

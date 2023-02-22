@@ -29,7 +29,7 @@ requestBody.SetSkip(&skip)
 top := int32(25)
 requestBody.SetTop(&top) 
 
-graphClient.DeviceManagement().VirtualEndpoint().Reports().GetDailyAggregatedRemoteConnectionReports().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().Reports().MicrosoftGraphGetDailyAggregatedRemoteConnectionReports().Post(context.Background(), requestBody, nil)
 
 
 ```

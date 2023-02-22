@@ -32,7 +32,7 @@ $requestBody->setComment('Dana, just want to make sure you get this.');
 
 
 
-$graphServiceClient->me()->messagesById('message-id')->forward()->post($requestBody);
+$graphServiceClient->me()->messagesById('message-id')->microsoftGraphForward()->post($requestBody);
 
 
 ```

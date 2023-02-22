@@ -116,7 +116,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {

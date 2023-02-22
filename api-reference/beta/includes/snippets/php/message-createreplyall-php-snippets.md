@@ -33,7 +33,7 @@ $requestBody->setComment('if the project gets approved, please take a look at th
 
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->createReplyAll()->post($requestBody);
+$requestResult = $graphServiceClient->me()->messagesById('message-id')->microsoftGraphCreateReplyAll()->post($requestBody);
 
 
 ```

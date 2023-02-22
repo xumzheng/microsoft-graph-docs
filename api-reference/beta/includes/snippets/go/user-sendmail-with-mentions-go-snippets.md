@@ -43,7 +43,7 @@ mentions := []graphmodels.Mentionable {
 message.SetMentions(mentions)
 requestBody.SetMessage(message)
 
-graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
+graphClient.Me().MicrosoftGraphSendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

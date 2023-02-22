@@ -92,7 +92,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 
 ---
 
-
 ### Response
 
 <!-- {

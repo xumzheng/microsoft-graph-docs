@@ -11,7 +11,7 @@ requestBody := graphmodels.NewGetPasswordSingleSignOnCredentialsPostRequestBody(
 id := "5793aa3b-cca9-4794-679a240f8b58"
 requestBody.SetId(&id) 
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").GetPasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").MicrosoftGraphGetPasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```
