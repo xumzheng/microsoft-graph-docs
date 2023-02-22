@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "8655f9ae-e86d-4873-8730-d68bd623423b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "docParserMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [docParserMetadata](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-docParserMetadata?view=graph-rest-beta) resource type.",
+          "Target": "docParserMetadata"
+        },
+        {
+          "Id": "8655f9ae-e86d-4873-8730-d68bd623423b",
+          "ApiChange": "Property",
+          "ChangedApiName": "docParserMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the `docParserMetadata` property to the [externalItemContent](https://learn.microsoft.com/en-us/graph/api/resources/externalItemContent?view=graph-rest-beta) resource.",
+          "Target": "externalItemContent"
+        }
+      ],
+      "Id": "8655f9ae-e86d-4873-8730-d68bd623423b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-22T06:40:45.2870279Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
           "ApiChange": "Property",
           "ChangedApiName": "state",
