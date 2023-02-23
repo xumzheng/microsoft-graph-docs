@@ -93,12 +93,15 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
+---
+
 ### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
 
 #### Request
 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_teamsappsettings_2"
@@ -123,6 +126,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+---
 
 ## See also
 
