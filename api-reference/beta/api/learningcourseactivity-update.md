@@ -25,10 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 PATCH /employeeExperience/learningCourseActivities/{learningCourseActivityId}
 ```
@@ -40,73 +36,105 @@ PATCH /employeeExperience/learningCourseActivities/{learningCourseActivityId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
 
-**TODO: Remove properties that don't apply**
+Below properties are eligible to update a learning assignment course activity:
+
 |Property|Type|Description|
 |:---|:---|:---|
-|externalcourseActivityId|String|**TODO: Add Description** Optional.|
-|learningProviderId|String|**TODO: Add Description** Optional.|
-|learningContentId|String|**TODO: Add Description** Required.|
-|learnerUserId|String|**TODO: Add Description** Required.|
-|status|courseStatus|**TODO: Add Description**. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Optional.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|completionPercentage|Int32|**TODO: Add Description** Optional.|
-
+|@odata.type|String|Type to determine if it’s a LearningAssignment or SelfInitiated course.|
+|assignmentType|String|AssignmentType for the course activity (required/recommended)|
+|status|courseStatus|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
+|notes|String|Notes for the course activity (Optional)|
+|dueDateTime|DateTimeOffset|Due date for the course activity (Optional)|
+|assignedDateTime|DateTimeOffset|Assigned date for the course activity (Optional)|
+|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [learningCourseActivity](../resources/learningcourseactivity.md) object in the response body.
+If successful, this method returns a `204 OK` response code.
 
 ## Examples
 
 ### Request
 The following is an example of a request.
-<!-- {
-  "blockType": "request",
-  "name": "update_learningcourseactivity"
-}
--->
+
 ``` http
 PATCH https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.learningCourseActivity",
-  "externalcourseActivityId": "String",
-  "learningProviderId": "String",
-  "learningContentId": "String",
-  "learnerUserId": "String",
-  "status": "String",
-  "completedDateTime": "String (timestamp)",
-  "completionPercentage": "Integer"
+  "@odata.type": "#microsoft.graph.learningAssignment",
+  "assignmentType": "required",
+  "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
+  "notes":
+  {
+    "contentType": "text",
+    "content": "required assignment added for user"
+  },
+  "dueDateTime": {
+    "dateTime": "2022-09-22T16:05:00.0000000",
+    "timeZone": "UTC"
+  },
+  "assignedDateTime": "2021-05-11T22:57:17+00:00",
+  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
+  "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
+  "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
+  "status": "InProgress",
+  "completedDateTime": null,
+  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
 }
-```
 
+```
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 OK
+No Content
+```
+
+Below properties are eligible to update a self-initiated course activity:
+
+|Property|Type|Description|
+|:---|:---|:---|
+|@odata.type|String|Type to determine if it’s a LearningAssignment or SelfInitiated course.|
+|status|courseStatus|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
+|startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
+|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
+
+## Response
+
+If successful, this method returns a `204 OK` response code.
+
+## Examples
+
+### Request
+The following is an example of a request.
+
+``` http
+PATCH https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.learningCourseActivity",
-  "externalcourseActivityId": "String",
-  "learningProviderId": "String",
-  "learningContentId": "String",
-  "learnerUserId": "String",
-  "status": "String",
-  "completedDateTime": "String (timestamp)",
-  "completionPercentage": "Integer"
+  "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
+  "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
+  "startedDateTime": "2021-05-11T22:57:17+00:00",
+  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
+  "status": "InProgress",
+  "completedDateTime": null,
+  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
 }
+
 ```
 
+### Response
+The following is an example of the response
+
+``` http
+HTTP/1.1 204 OK
+No Content
+```
