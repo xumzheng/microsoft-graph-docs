@@ -10,27 +10,21 @@ doc_type: apiPageType
 # Delete learningCourseActivity
 Namespace: microsoft.graph
 
-
-
-Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object.
+Delete a [learningCourseActivity](../resources/learningcourseactivity.md) using a course activity Id of a Learning Assignment or Self-initiated.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API based on the type of learning course activity. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LearningAssignedCourse.ReadWrite.All, LearningSelfInitiatedCourse.ReadWrite.All|
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
-DELETE /employeeExperience/learningCourseActivities/{learningCourseActivityId}/$ref
+DELETE /employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{id}
 ```
 
 ## Request headers
@@ -49,25 +43,17 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following is an example of a request.
-<!-- {
-  "blockType": "request",
-  "name": "delete_learningcourseactivity"
-}
--->
+
 ``` http
-DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
+DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{id}
 ```
 
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
 
+``` http
+HTTP/1.1 204 OK
+
+No Content
+```
