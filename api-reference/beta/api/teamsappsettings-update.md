@@ -66,12 +66,14 @@ If successful, this method returns a `204 No Content` response code.
 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_teamsappsettings_1"
 }
 -->
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 Content-Type: application/json
 
@@ -102,7 +104,7 @@ HTTP/1.1 204 No Content
   "name": "update_teamsappsettings_2"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 Content-Type: application/json
 
