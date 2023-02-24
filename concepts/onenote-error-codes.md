@@ -387,7 +387,7 @@ There is a required parameter missing.
 The user or application does not have the correct permissions.
 
 ### 40001
-The request doesn't contain a valid OAuth token. See [Notes permissions](permissions-reference.md#notes-permissions).
+Your request could not be authenticated. Common causes for this are an invalid OAuth token (see [Notes permissions](permissions-reference.md#notes-permissions)) and/or your account is missing a valid email.
 
 ### 40002
 The user doesn't have permission to write to the requested location.
