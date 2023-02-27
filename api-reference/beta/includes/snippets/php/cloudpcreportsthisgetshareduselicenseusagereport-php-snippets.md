@@ -22,7 +22,7 @@ $requestBody->setTop(100);
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->getSharedUseLicenseUsageReport()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->microsoftGraphGetSharedUseLicenseUsageReport()->post($requestBody);
 
 
 ```

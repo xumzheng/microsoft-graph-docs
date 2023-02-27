@@ -18,7 +18,7 @@ $requestBody->setTicketSystem('ticketSystem-value');
 
 
 
-$requestResult = $graphServiceClient->privilegedRoleAssignmentsById('privilegedRoleAssignment-id')->makePermanent()->post($requestBody);
+$requestResult = $graphServiceClient->privilegedRoleAssignmentsById('privilegedRoleAssignment-id')->microsoftGraphMakePermanent()->post($requestBody);
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewGetMemberObjectsPostRequestBody()
 securityEnabledOnly := true
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
 
-result, err := graphClient.Me().GetMemberObjects().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MicrosoftGraphGetMemberObjects().Post(context.Background(), requestBody, nil)
 
 
 ```

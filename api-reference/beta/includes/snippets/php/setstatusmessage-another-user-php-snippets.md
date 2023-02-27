@@ -22,7 +22,7 @@ $statusMessage->setMessage($statusMessageMessage);
 $requestBody->setStatusMessage($statusMessage);
 
 
-$graphServiceClient->usersById('user-id')->presence()->setStatusMessage()->post($requestBody);
+$graphServiceClient->usersById('user-id')->presence()->microsoftGraphSetStatusMessage()->post($requestBody);
 
 
 ```

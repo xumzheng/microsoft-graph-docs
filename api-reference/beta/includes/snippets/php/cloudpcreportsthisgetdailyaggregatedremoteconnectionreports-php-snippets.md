@@ -22,7 +22,7 @@ $requestBody->setTop(25);
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->getDailyAggregatedRemoteConnectionReports()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->microsoftGraphGetDailyAggregatedRemoteConnectionReports()->post($requestBody);
 
 
 ```

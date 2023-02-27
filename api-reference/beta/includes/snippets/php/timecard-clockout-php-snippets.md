@@ -25,7 +25,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timeCardsById('timeCard-id')->clockOut()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timeCardsById('timeCard-id')->microsoftGraphClockOut()->post($requestBody);
 
 
 ```

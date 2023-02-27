@@ -96,7 +96,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/dele
 
 ---
 
-
 ### Response
 The following is an example of the response
 

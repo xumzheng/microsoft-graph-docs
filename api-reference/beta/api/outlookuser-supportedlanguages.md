@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 <!-- {

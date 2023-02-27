@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCsById('cloudPC-id')->endGracePeriod()->post();
+$graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCsById('cloudPC-id')->microsoftGraphEndGracePeriod()->post();
 
 
 ```

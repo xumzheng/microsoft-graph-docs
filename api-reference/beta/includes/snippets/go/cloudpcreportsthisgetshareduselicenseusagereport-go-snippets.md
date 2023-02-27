@@ -25,7 +25,7 @@ requestBody.SetSkip(&skip)
 top := int32(100)
 requestBody.SetTop(&top) 
 
-graphClient.DeviceManagement().VirtualEndpoint().Reports().GetSharedUseLicenseUsageReport().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().Reports().MicrosoftGraphGetSharedUseLicenseUsageReport().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var onPremisesDirectorySynchronization = await graphClient.Directory.OnPremisesSynchronization["{onPremisesDirectorySynchronization-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Directory.OnPremisesSynchronization["onPremisesDirectorySynchronization-id"].GetAsync();
+
 
 ```

@@ -25,7 +25,7 @@ requestBody.SetTop(&top)
 skip := int32(0)
 requestBody.SetSkip(&skip) 
 
-graphClient.DeviceManagement().VirtualEndpoint().Reports().GetRemoteConnectionHistoricalReports().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().Reports().MicrosoftGraphGetRemoteConnectionHistoricalReports().Post(context.Background(), requestBody, nil)
 
 
 ```

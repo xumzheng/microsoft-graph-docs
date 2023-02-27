@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 
 ---
 
-
 ##### Response
 Here is an example of the response.
 

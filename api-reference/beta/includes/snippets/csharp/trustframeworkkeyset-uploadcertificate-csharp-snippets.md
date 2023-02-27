@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var key = "key-value";
+var requestBody = new Microsoft.Graph.Beta.TrustFramework.KeySets.Item.MicrosoftGraphUploadCertificate.UploadCertificatePostRequestBody
+{
+	Key = "key-value",
+};
+var result = await graphClient.TrustFramework.KeySets["trustFrameworkKeySet-id"].MicrosoftGraphUploadCertificate.PostAsync(requestBody);
 
-await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"]
-	.UploadCertificate(key)
-	.Request()
-	.PostAsync();
 
 ```

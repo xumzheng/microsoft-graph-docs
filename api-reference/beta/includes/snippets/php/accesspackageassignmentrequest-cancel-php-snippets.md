@@ -19,7 +19,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequestsById('accessPackageAssignmentRequest-id')->cancel()->post($requestBody);
+$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequestsById('accessPackageAssignmentRequest-id')->microsoftGraphCancel()->post($requestBody);
 
 
 ```

@@ -16,7 +16,7 @@ $requestBody->setSoftwareVersion('1.0.96.22');
 
 
 
-$graphServiceClient->teamwork()->devicesById('teamworkDevice-id')->updateSoftware()->post($requestBody);
+$graphServiceClient->teamwork()->devicesById('teamworkDevice-id')->microsoftGraphUpdateSoftware()->post($requestBody);
 
 
 ```

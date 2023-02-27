@@ -24,7 +24,7 @@ select := []string {
 }
 requestBody.SetSelect(select)
 
-graphClient.DeviceManagement().VirtualEndpoint().Reports().GetTotalAggregatedRemoteConnectionReports().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().Reports().MicrosoftGraphGetTotalAggregatedRemoteConnectionReports().Post(context.Background(), requestBody, nil)
 
 
 ```

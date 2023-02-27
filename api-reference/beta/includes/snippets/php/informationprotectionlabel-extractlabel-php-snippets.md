@@ -105,7 +105,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->extractLabel()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->microsoftGraphExtractLabel()->post($requestBody, $requestConfiguration);
 
 
 ```

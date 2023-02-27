@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInf
 ---
 
 
-
 ### Response
 <!-- {
   "blockType": "response",

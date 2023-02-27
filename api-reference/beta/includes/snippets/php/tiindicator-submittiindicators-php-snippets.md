@@ -77,7 +77,7 @@ $requestBody->setValue($valueArray);
 
 
 
-$requestResult = $graphServiceClient->security()->tiIndicators()->submitTiIndicators()->post($requestBody);
+$requestResult = $graphServiceClient->security()->tiIndicators()->microsoftGraphSubmitTiIndicators()->post($requestBody);
 
 
 ```

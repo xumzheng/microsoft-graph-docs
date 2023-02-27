@@ -14,7 +14,7 @@ $requestBody->setValue(['externalId-value1', 'externalId-value2', ]);
 
 
 
-$requestResult = $graphServiceClient->security()->tiIndicators()->deleteTiIndicatorsByExternalId()->post($requestBody);
+$requestResult = $graphServiceClient->security()->tiIndicators()->microsoftGraphDeleteTiIndicatorsByExternalId()->post($requestBody);
 
 
 ```

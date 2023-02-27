@@ -150,7 +150,6 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -254,7 +253,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.workspace
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-all-workspaces-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -278,7 +277,6 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.workspace
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -373,7 +371,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-all-roomlists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -397,7 +395,6 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

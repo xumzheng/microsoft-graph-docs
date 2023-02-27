@@ -4,28 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var onPremisesDirectorySynchronization = new OnPremisesDirectorySynchronization
+var requestBody = new OnPremisesDirectorySynchronization
 {
 	Configuration = new OnPremisesDirectorySynchronizationConfiguration
 	{
 		AccidentalDeletionPrevention = new OnPremisesAccidentalDeletionPrevention
 		{
 			SynchronizationPreventionType = OnPremisesDirectorySynchronizationDeletionPreventionType.EnabledForCount,
-			AlertThreshold = 500
+			AlertThreshold = 500,
 		},
-		SynchronizationInterval = new Duration("PT30M"),
-		CustomerRequestedSynchronizationInterval = new Duration("PT1H")
+		SynchronizationInterval = TimeSpan.Parse("PT30M"),
+		CustomerRequestedSynchronizationInterval = TimeSpan.Parse("PT1H"),
 	},
 	Features = new OnPremisesDirectorySynchronizationFeature
 	{
-		GroupWriteBackEnabled = true
-	}
+		GroupWriteBackEnabled = true,
+	},
 };
+var result = await graphClient.Directory.OnPremisesSynchronization["onPremisesDirectorySynchronization-id"].PatchAsync(requestBody);
 
-await graphClient.Directory.OnPremisesSynchronization["{onPremisesDirectorySynchronization-id}"]
-	.Request()
-	.UpdateAsync(onPremisesDirectorySynchronization);
 
 ```

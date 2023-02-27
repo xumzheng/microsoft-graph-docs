@@ -20,7 +20,7 @@ requestBody.SetAtAprovedLocation(&atAprovedLocation)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").ClockOut().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").MicrosoftGraphClockOut().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->teamwork()->devicesById('teamworkDevice-id')->runDiagnostics()->post();
+$graphServiceClient->teamwork()->devicesById('teamworkDevice-id')->microsoftGraphRunDiagnostics()->post();
 
 
 ```

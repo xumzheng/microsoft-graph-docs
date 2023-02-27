@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var softwareType = TeamworkSoftwareType.TeamsClient;
+var requestBody = new Microsoft.Graph.Beta.Teamwork.Devices.Item.MicrosoftGraphUpdateSoftware.UpdateSoftwarePostRequestBody
+{
+	SoftwareType = TeamworkSoftwareType.TeamsClient,
+	SoftwareVersion = "1.0.96.22",
+};
+await graphClient.Teamwork.Devices["teamworkDevice-id"].MicrosoftGraphUpdateSoftware.PostAsync(requestBody);
 
-var softwareVersion = "1.0.96.22";
-
-await graphClient.Teamwork.Devices["{teamworkDevice-id}"]
-	.UpdateSoftware(softwareType,softwareVersion)
-	.Request()
-	.PostAsync();
 
 ```

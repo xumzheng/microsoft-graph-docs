@@ -37,7 +37,7 @@ sharedCookies := []graphmodels.Objectable {
 }
 requestBody.SetSharedCookies(sharedCookies)
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteListsById("browserSiteList-id").Publish().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteListsById("browserSiteList-id").MicrosoftGraphPublish().Post(context.Background(), requestBody, nil)
 
 
 ```

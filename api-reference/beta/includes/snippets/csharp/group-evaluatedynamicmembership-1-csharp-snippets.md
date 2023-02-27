@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var memberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33";
+var requestBody = new Microsoft.Graph.Beta.Groups.Item.MicrosoftGraphEvaluateDynamicMembership.EvaluateDynamicMembershipPostRequestBody
+{
+	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33",
+};
+var result = await graphClient.Groups["group-id"].MicrosoftGraphEvaluateDynamicMembership.PostAsync(requestBody);
 
-await graphClient.Groups["{group-id}"]
-	.EvaluateDynamicMembership(memberId)
-	.Request()
-	.PostAsync();
 
 ```

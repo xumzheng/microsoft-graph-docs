@@ -34,7 +34,7 @@ $requestBody->setRequests($requestsArray);
 
 
 
-$requestResult = $graphServiceClient->search()->query()->post($requestBody);
+$requestResult = $graphServiceClient->search()->microsoftGraphQuery()->post($requestBody);
 
 
 ```
