@@ -32,7 +32,7 @@ Choose the permission marked as least privileged for this API. Use a higher priv
 
 ### One API shared by multiple resources
 
-The following table shows the least privileged permission required for each resource type when calling this API. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following table shows the least privileged permission required to call this API on each supported resource type. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more, including [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions, see the [permissions reference](/graph/permissions-reference).
 
 | Supported resource                        | Delegated (work or school account)                      | Delegated (personal Microsoft account) | Application                                             |
 |:-------------------------------------------|:---------------------------------------------------------|:----------------------------------------|:---------------------------------------------------------|
