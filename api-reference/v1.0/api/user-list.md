@@ -9,6 +9,7 @@ doc_type: apiPageType
 
 # Permissions
 
+<!--
 ### Standard tables
 
 Choose the permission marked as least privileged for this API. Use a higher privileged permission only if your app requires it. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -19,8 +20,11 @@ Choose the permission marked as least privileged for this API. Use a higher priv
 | Delegated (personal Microsoft account) | Not supported.              | Not supported.                                                                 |
 | Application                            | User.Read.All               | User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All                |
 
+-->
 
-### Standard tables - Angela's proposal 2023/02/23
+### Standard tables
+
+<!--  Angela's proposal 2023/02/23 -->
 
 Choose the permission marked as least privileged for this API. Use a higher privileged permission [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
