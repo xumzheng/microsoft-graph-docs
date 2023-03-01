@@ -67,7 +67,6 @@ Attempting to remove existing **fallbackReviewers** returns a `409 Conflict` res
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessreviewinstance"
@@ -118,12 +117,6 @@ Content-Type: application/json
     ]
 }
 ```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-accessreviewinstance-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 
