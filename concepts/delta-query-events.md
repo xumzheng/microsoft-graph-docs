@@ -82,7 +82,6 @@ The first request specifies the following:
 - The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 events at a time.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_1"
@@ -91,12 +90,6 @@ The first request specifies the following:
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-calendarview-delta-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

@@ -157,6 +157,8 @@ Content-type: application/json
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_deleteditems_count"
@@ -165,6 +167,13 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,DisplayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
+
+# [cli](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-deleteditems-count-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response

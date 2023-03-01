@@ -49,7 +49,6 @@ Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_supportedlanguages"
@@ -57,12 +56,6 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 ```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-supportedlanguages-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ##### Response

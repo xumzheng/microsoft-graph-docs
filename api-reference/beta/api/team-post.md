@@ -146,7 +146,6 @@ The following is a request with a full payload. The client can override values i
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_full_payload"
@@ -236,14 +235,8 @@ Content-Type: application/json
     ]
 }
 ```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-team-post-full-payload-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "name": "create_team_post_full_payload"
