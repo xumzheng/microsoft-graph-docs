@@ -33,12 +33,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.conditionalAccessClientApplications",
+  "includeServicePrincipals": [
+    "String"
+  ],
   "excludeServicePrincipals": [
     "String"
   ],
-  "includeServicePrincipals": [
-    "String"
-  ]
+  "servicePrincipalFilter": {"@odata.type": "microsoft.graph.conditionalAccessFilter"},
 }
 ```
 
