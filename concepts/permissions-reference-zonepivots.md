@@ -7,6 +7,7 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
+zone_pivot_groups: grant-api-permissions
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 02/17/2022
 ---
@@ -15,15 +16,14 @@ ms.date: 02/17/2022
 
 For an app to access data in Microsoft Graph, the user or administrator must grant it the permissions it needs. This topic lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
-To find the unique identifiers for all permissions, see [All permissions and IDs](#all-permissions-and-ids).
+<!--To find the unique identifiers for all permissions, see [All permissions and IDs](#all-permissions-and-ids).-->
 
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
 
 <!-- start the delegated permissions zone -->
 ::: zone pivot="grant-delegated-permissions"
 
-<!-- end the delegated permissions zone -->
-## AccessReview permissions
+### AccessReview permissions
 
 | Permission | Identifier | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |---|---|---|---|---|---|
@@ -51,11 +51,13 @@ To find the unique identifiers for all permissions, see [All permissions and IDs
 | _AppCatalog.Submit_ | 3db89e36-7fa6-4012-b281-85f3d9d9fd2e | Submit an app for admin review | Allows the user to submit and app for admin review for publication in an organization's app catalog and allows user to cancel past submissions that have not been published.</br> &#119821;&#119822;&#119827;&#119812;: Non-admin users submit apps for review by including the  `requiresReview=true` query parameter. | Yes | No |
 
 ---
+::: zone-end
+<!-- end the delegated permissions zone -->
 
 <!-- start the application permissions zone -->
 ::: zone pivot="grant-application-permissions"
 
-## AccessReview permissions
+### AccessReview permissions
 
 | Permission | Identifier | Display String | Description | Admin Consent Required |
 |---|---|---|---|---|
@@ -82,5 +84,5 @@ To find the unique identifiers for all permissions, see [All permissions and IDs
 | _AppCatalog.ReadWrite.All_ | dc149144-f292-421e-b185-5953f2e98d7f | Read and write to all app catalogs | Allows the app to create, read, update, and delete apps in the app catalogs without a signed-in user. | Yes |
 
 ---
-
+::: zone-end
 <!-- end the application permissions zone -->
