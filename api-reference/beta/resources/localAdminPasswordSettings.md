@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
-# azureAdJoinPolicy resource type
+# localAdminPasswordSettings resource type
 
 Namespace: microsoft.graph
 
@@ -29,7 +29,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.azureAdJoinPolicy"
+  "@odata.type": "microsoft.graph.localAdminPasswordSettings"
 }
 -->
 ``` json
