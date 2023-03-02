@@ -3,6 +3,49 @@
         {
             "ChangeList": [
                 {
+                    "Id": "109d6254-2f60-408d-99f5-f50dd30a87eb",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "localAdminPasswordSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [localAdminPasswordSettings](https://learn.microsoft.com/en-us/graph/api/resources/localAdminPasswordSettings?view=graph-rest-beta) resource type",
+                    "Target": "localAdminPasswordSettings"
+                },
+                {
+                    "Id": "109d6254-2f60-408d-99f5-f50dd30a87eb",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "deviceRegistrationPolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **localAdminPassword** property.",
+                    "Target": "deviceRegistrationPolicy"
+                },
+                {
+                    "Id": "109d6254-2f60-408d-99f5-f50dd30a87eb",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "deviceRegistrationPolicy-get",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **localAdminPassword** property.",
+                    "Target": "deviceRegistrationPolicy"
+                },
+                {
+                    "Id": "109d6254-2f60-408d-99f5-f50dd30a87eb",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "deviceRegistrationPolicy-update",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **localAdminPassword** property.",
+                    "Target": "deviceRegistrationPolicy"
+                }
+            ],
+            "Id": "109d6254-2f60-408d-99f5-f50dd30a87eb",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Directory management"
+        },
+        {
+            "ChangeList": [
+                
+                {
                     "Id": "19a7a5eb-980a-11eb-8cb0-33bc249d550e",
                     "ApiChange": "Resource",
                     "ChangedApiName": "azureADRegistrationPolicy",
