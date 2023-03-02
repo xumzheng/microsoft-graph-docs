@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewSimulation()
 id := "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc"
@@ -51,7 +51,7 @@ additionalData := map[string]interface{}{
 excludedAccountTarget.SetAdditionalData(additionalData)
 requestBody.SetExcludedAccountTarget(excludedAccountTarget)
 additionalData := map[string]interface{}{
-	"payload@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 
 }
 requestBody.SetAdditionalData(additionalData)
 
