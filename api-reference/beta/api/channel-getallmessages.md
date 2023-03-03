@@ -40,6 +40,30 @@ GET /teams/{team-id}/channels/getAllMessages
 ```
 
 ## Optional query parameters
+Filtering parameters can be applied to customize the response based on specific message attributes. supported filtering parameters are:
+
+`from/user/userId eq '{userId}'` this filter will return only the messages sent by the specified `{userId}`
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?$top=50&$filter=from/user/userId eq '{userId}'
+```
+
+`from/user/userIdentityType eq 'federateUser'` this filter will return only the messages sent by the users which tenant id is different from the original caller's tenant id.
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser'
+```
+
+Both filters can be combined using either `or` or `and` operators to expand the filtering capabilities:
+
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser' or from/user/userId eq '{userId}'
+```
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser' and from/user/userId eq '{userId}'
+```
 
 You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
 as shown in the following examples.  
