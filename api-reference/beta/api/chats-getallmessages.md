@@ -52,7 +52,7 @@ Filtering parameters can be applied to customize the response based on specific 
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userId eq '{userId}'
 ```
 
-`from/user/userIdentityType eq 'federateUser'` this filter will return only the messages sent by the useres which tenant id is different from the original caller's tenant id.
+`from/user/userIdentityType eq 'federateUser'` this filter will return only the messages sent by the users which tenant id is different from the original caller's tenant id.
 
 ```http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser'
