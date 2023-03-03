@@ -44,6 +44,49 @@ This method supports [date range parameters](/graph/query-parameters) to custo
 ```http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
+Filtering parameters can be applied to customize the response based on specific message attributes. supported filtering parameters are:
+
+`from/user/userId eq '{userId}'` this filter will return only the messages sent by the specified `{userId}`
+
+```http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userId eq '{userId}'
+```
+
+`from/user/userIdentityType eq 'federateUser'` this filter will return only the messages sent by the useres which tenant id is different from the original caller's tenant id.
+
+```http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser'
+```
+
+Both filters can be combined using either `or` or `and` operators to expand the filtering capabilities:
+
+
+```http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser' or from/user/userId eq '{userId}'
+```
+
+```http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser' and from/user/userId eq '{userId}'
+```
+
+The same filters can be used along [date range parameters](/graph/query-parameters) using the `and` operator
+```http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser' and lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+```
+
+```http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userId eq '{userId}' and lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+```
+
+```http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=from/user/userIdentity eq 'federatedUser' and from/user/userId eq '{userId}' and lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+```
+
+```http
+GET /users/{id}/chats/getAllMessages?$top=50&$filter=(from/user/userIdentity eq 'federatedUser' or from/user/userId eq '{userId}') and lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+```
+>**Note:** In order to preserve operators precende and due to filtering limitations, parenthesis must be used if the `or` operator is used for the new filtering parameters along date range parameters.
+
 Use the `model` query parameter to specify the [payment model](/graph/teams-licenses) that applies to your scenario, as shown in the following examples.  
 
 ```http
