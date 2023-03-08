@@ -201,34 +201,6 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 ```
 
 
-
-### Assign an owner to an app
-
-Least privilege delegated permission: `Application.ReadWrite.All`
-
-In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-application-basics-assign-app-owner"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/applications/7b45cf6d-9083-4eb2-92c4-a7e090f1fc40/owners/$ref
-Content-Type: application/json
-
-{
-    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/8afc02cb-4d62-4dba-b536-9f6d73e9be26"
-}
-```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/tutorial-application-basics-assign-app-owner-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Assign an owner to a service principal
 
 Least privilege delegated permission: `Application.ReadWrite.All`
