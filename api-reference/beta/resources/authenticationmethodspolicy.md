@@ -22,11 +22,8 @@ Defines authentication methods and the users that are allowed to use them to sig
 |[Update authenticationMethodsPolicy](../api/authenticationmethodspolicy-update.md)|[authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md)|Update the properties of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.|
 
 ## Properties
-|Property|Type|Description|Required|ReadOnly
+|Property|Type|Description|
 |:---|:---|:---|
-|state|microsoft.graph.advancedConfigState|The configuration state of the system preferred authentication method experience.|Yes|No
-|includeTargets|Collection(microsoft.graph.includeTarget)|Users and groups included in the system preferred authentication method experience.|Yes|No
-|excludeTargets|Collection(microsoft.graph.excludeTarget)|Users and groups excluded from the system preferred authentication method experience|Yes|No
 |description|String|A description of the policy.|
 |displayName|String|The name of the policy.|
 |id|String|The identifier of the policy. Inherited from [entity](../resources/entity.md).|
@@ -35,8 +32,8 @@ Defines authentication methods and the users that are allowed to use them to sig
 |policyMigrationState|authenticationMethodsPolicyMigrationState|The state of migration of the authentication methods policy from the legacy multifactor authentication and self-service password reset (SSPR) policies. The possible values are: <br/><li>`premigration` - means the authentication methods policy is used for authentication only, legacy policies are respected. <li>`migrationInProgress` - means the authentication methods policy is used for both authenication and SSPR, legacy policies are respected. <li>`migrationComplete` - means the authentication methods policy is used for authentication and SSPR, legacy policies are ignored. <li>`unknownFutureValue` - Evolvable enumeration sentinel value. Do not use. |
 |reconfirmationInDays|Int32|Days before the user will be asked to reconfirm their method. |
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to remind users to set up targeted authentication methods.|
-|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|"Credential preference for all user authentications is calculated at runtime and prompted to the user. This overrides the user-selected authentication method. Note that presently, it will be enforced only for MFA. Going forward, in future releases, this will be enforced for all authentications."|
-|
+|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Credential preference for all user authentications is calculated at runtime and prompted to the user. This overrides the user-selected authentication method. Note that presently, it will be enforced only for MFA. Going forward, in future releases, this will be enforced for all authentications.|
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -63,7 +60,7 @@ The following is a JSON representation of the resource.
   "registrationEnforcement": {
     "@odata.type": "microsoft.graph.registrationEnforcement"
   } ,
-    "systemCredentialPreferences": {
+  "systemCredentialPreferences": {
     "@odata.type": "microsoft.graph.systemCredentialPreferences"
   }
 }
