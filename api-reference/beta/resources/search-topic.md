@@ -193,10 +193,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.topic",
-  "primaryName": "@odata.type": microsoft.graph.topicName,
+  "primaryName": "@odata.type": "microsoft.graph.topicName",
   "alternateNames": [
     { 
-        "@odata.type": microsoft.graph.topicName 
+        "@odata.type": "microsoft.graph.topicName" 
     }
   ],
   "definition": {
