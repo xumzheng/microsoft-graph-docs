@@ -59,6 +59,7 @@ The following table describes the types available to query and the supported per
 |[person](person.md)|People.Read|Exchange Online|Personal contacts and contacts or addressable objects in your organization.|
 |[qna](search-qna.md)|QnA.Read.All|Microsoft Search|Questions and answers in Microsoft Search in your organization.|
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
+|[topic](topic.md)|Topic.Read.All| Topic | Topics in your organization. |
 
 ## Page search results
 
@@ -188,29 +189,30 @@ The search API has the following limitations:
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. The following table lists the combinations that are supported.
 
-| Entity Type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
-|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
-|  acronym    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  bookmark    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-| chatMessage |     -      |     -      |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-|    drive    |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  driveItem  |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   event     |     -      |     -      |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |     -      |
-|externalItem |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   list      |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  listItem   |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   person    |     -      |     -      |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |     -      |
-|  qna    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |
-|    site     |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+| Entity Type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       | topic        |
+|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|------------|
+|  acronym    |     True   |     -      |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |     -      |
+|  bookmark    |     -      |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |     -      |
+|  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |     -      |
+| chatMessage |     -      |     -      |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |     -      |
+|    drive    |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |     -      |
+|  driveItem  |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |     -      |
+|   event     |     -      |     -      |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |     -      |     -      |
+|externalItem |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |     -      |
+|   list      |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |     -      |
+|  listItem   |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |     -      |
+|   person    |     -      |     -      |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |     -      |     -      |
+|  qna    |     -      |     -      |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |     -      |
+|    site     |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |     -      |
+|    topic    |     -      |     -      |     -      |     -      |      -      |     -      |    -       |    -        |   -        |    -       |      -     |     -      |     -      |     True   |
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **acronym**,**bookmark**,**message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- The search API does not support custom sort for **acronym**,**bookmark**,**message**, **chatMessage**, **event**, **person**, **qna**, **topic**, or **externalItem**.
 
-- The search API does not support aggregations for **acronym**,**bookmark**,**message**, **event**, **site**, **person**, **qna**, or **drive**.
+- The search API does not support aggregations for **acronym**,**bookmark**,**message**, **event**, **site**, **person**, **qna**, **topic**, or **drive**.
 
-- The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, **topic**, or **externalItem**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
