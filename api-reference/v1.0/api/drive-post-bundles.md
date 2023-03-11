@@ -60,7 +60,6 @@ This bundle can be used to share a collection of files with other users without 
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
 ```http
@@ -77,16 +76,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-bundle-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-bundle-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -114,7 +103,6 @@ The request to create a new photo album is similar, although inside the bundle f
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-album" } -->
 
 ```http
@@ -130,16 +118,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-album-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-album-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
