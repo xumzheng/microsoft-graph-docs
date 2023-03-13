@@ -103,7 +103,7 @@ Content-Type: application/json
   "value": [
     {
        "id": "0fbef39d-9e8c-460b-444e-8ae5abcdffd7",
-       "accountEnabled": true,
+       "isEnabled": true,
        "isProcessing": false,
        "riskLastUpdatedDateTime": "2021-10-20T01:14:37.7214159Z",
        "riskState": "atRisk",
