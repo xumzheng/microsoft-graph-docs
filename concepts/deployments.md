@@ -62,6 +62,15 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 The following Microsoft Graph features are generally available on the `/v1.0` endpoint across all national cloud deployments, except where noted.
 
+| Microsoft Graph features                  | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
+|-------------------------------------------|-----------------------------------|--------------------------------------------|
+| Device and app management \| Corporate management (Intune)| ✔\*               | ➖                                        |
+| Identity and access \| Directory management| ✔                                | ✔\*                                       |
+| Identity and access \| Identity and sign in| ✔                                | ✔\*
+| Reports \| Identity and access reports     | ✔\*                               | ➖                                        |        
+
+
+
 | Microsoft Graph features            | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
 |-------------------------------------|-----------------------------------|--------------------------------------------|
 | Access reviews                      | ✔                                | ✔                                          |
