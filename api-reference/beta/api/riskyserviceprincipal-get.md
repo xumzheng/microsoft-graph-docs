@@ -103,7 +103,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.riskyServicePrincipal",
     "id": "9089a539-a539-9089-39a5-899039a58990",
-    "accountEnabled": true,
+    "isEnabled": true,
     "isProcessing": false,
     "riskLastUpdatedDateTime": "2021-08-14T13:06:51.0451374Z",
     "riskLevel": "high",
