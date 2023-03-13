@@ -63,6 +63,7 @@ If successful, this method returns a `204 No Content` response code in the respo
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_learningprovider"
@@ -81,6 +82,12 @@ Content-Type: application/json
     "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-learningprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
