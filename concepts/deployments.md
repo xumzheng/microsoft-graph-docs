@@ -58,18 +58,46 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 > [!NOTE]
 > Apps can only access organizational data through the national cloud endpoints. This means that apps can only access data in tenants that are registered in the specific national cloud. Apps that are trying to access consumer data associated with Microsoft personal accounts through Microsoft Graph should use the global service `https://graph.microsoft.com`. Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service or any other national cloud.
 
+## API implementation in national clouds
+
+The following table lists the Microsoft Graph APIs that are generally available on the `/v1.0` endpoint and the implementation status across all national cloud deployments.
+
+| Microsoft Graph API                       | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
+|-------------------------------------------|-----------------------------------|--------------------------------------------|
+| Calendar (Outlook)                        | ➖                                | ➖                                        |
+| Calendar | Places                         | ➖                                | ➖                                        |
+| Change notifications                      | ✔\*                               | ➖                                        |
+| Compliance \| Subject rights requests     | ➖                                | ➖                                        |
+| Cross-device experiences (Project Rome)   | ➖                                | ➖                                        |
+| Customer booking (Bookings)               | ➖                                | ➖                                        |
+| Device and app management \| Cloud printing (Universal Print)| ➖             | ➖                                        |
+| Device and app management \| Corporate management (Intune)| ✔\*               | ✔\*                                       |
+| Device and app management \| Service health and communications| ✔             | ✔                                         |   
+| Education                                  | ➖                               | ➖                                        |
+| Extensions                                 | ✔                                | ✔\*                                       |
+| Files (OneDrive)                           | ✔\*                              | ✔\*                                       |
+| Identity and access \| Directory management| ✔\*                              | ✔\*                                       |
+| Identity and access \| Governance          | ✔                                | ✔                                         |
+| Identity and access \| Identity and sign in| ✔\*                              | ✔\*                                       |
+| Mail (Outlook)                             | ✔\*                              | ✔\*                                       |
+| Notes (OneNote)                            | ➖                               | ➖                                        |
+| People and workplace intelligence \| Insights| ➖                             | ➖                                        |
+| People and workplace intelligence \| People| ✔                                | ✔                                         |
+| Reports \| Identity and access reports     | ✔\*                              | ➖                                        |
+| Reports \| Microsoft 365 usage reports     | ➖                               | ➖                                        |
+| Search (Microsoft Search)                  | ✔                                | ✔                                         |
+| Security                                   | ✔\*                              | ✔\*                                       |
+| Security \| eDiscovery                     | ✔\*                              | ➖                                        |
+| Tasks and plans (Planner)                  | ✔                                | ➖                                        |
+| Teamwork and communications \| Calls and online meetings| ✔\*                 | ➖                                        |
+| Teamwork and communications \| Messaging   | ✔                                | ➖                                        |
+| Teamwork and communications \| Shift management| ➖                           | ➖                                        |
+| To-do tasks (Microsoft To Do)              | ✔\*                              | ➖                                        |
+| Workbooks and charts (Excel)               | ✔\*                              | ➖                                        | 
+
 ## Supported features
 
-The following Microsoft Graph features are generally available on the `/v1.0` endpoint across all national cloud deployments, except where noted.
-
-| Microsoft Graph features                  | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
-|-------------------------------------------|-----------------------------------|--------------------------------------------|
-| Device and app management \| Corporate management (Intune)| ✔\*               | ➖                                        |
-| Identity and access \| Directory management| ✔                                | ✔\*                                       |
-| Identity and access \| Identity and sign in| ✔                                | ✔\*
-| Reports \| Identity and access reports     | ✔\*                               | ➖                                        |        
-
-
+The following Microsoft Graph features are generally available on the /v1.0 endpoint across all national cloud deployments, except where noted.
 
 | Microsoft Graph features            | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
 |-------------------------------------|-----------------------------------|--------------------------------------------|
