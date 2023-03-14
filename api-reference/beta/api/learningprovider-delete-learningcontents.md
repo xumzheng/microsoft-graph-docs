@@ -77,10 +77,6 @@ DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/137
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-learningcontent-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-learningcontent-id-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
