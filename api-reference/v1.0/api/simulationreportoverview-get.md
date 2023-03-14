@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-simulationreportoverview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-simulationreportoverview-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

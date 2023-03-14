@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c557
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-updatableasset-for-updategroupid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-for-updategroupid-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

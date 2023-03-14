@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-impactedresource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-impactedresource-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
