@@ -70,10 +70,6 @@ POST https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-47
 [!INCLUDE [sample-code](../includes/snippets/javascript/impactedresourcethiscomplete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/impactedresourcethiscomplete-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
