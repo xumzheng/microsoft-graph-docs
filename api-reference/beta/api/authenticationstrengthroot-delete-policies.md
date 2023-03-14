@@ -64,10 +64,6 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-authenticationstrengthpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-authenticationstrengthpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

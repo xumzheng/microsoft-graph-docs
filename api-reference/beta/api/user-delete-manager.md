@@ -52,6 +52,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_manager"
@@ -59,6 +60,16 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/users/{id}/manager/$ref
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 

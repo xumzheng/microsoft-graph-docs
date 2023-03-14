@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ge
 [!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisgetrealtimeremoteconnectionstatus-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisgetrealtimeremoteconnectionstatus-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

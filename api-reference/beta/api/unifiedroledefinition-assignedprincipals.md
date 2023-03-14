@@ -157,10 +157,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/64
 [!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-scope-role-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unifiedroledefinition-assignedprincipals-scope-role-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -202,10 +198,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/64
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-allscopes-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unifiedroledefinition-assignedprincipals-allscopes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -268,10 +260,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/64
 [!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-scope-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unifiedroledefinition-assignedprincipals-scope-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -316,10 +304,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/64
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-minimumpermission-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unifiedroledefinition-assignedprincipals-minimumpermission-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
