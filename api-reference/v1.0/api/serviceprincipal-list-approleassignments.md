@@ -65,6 +65,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request to retrieve the app roles that have been assigned to a service principal.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_get_approleassignments"
@@ -73,6 +75,13 @@ The following is an example of a request to retrieve the app roles that have bee
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-56124728e051/appRoleAssignments
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/serviceprincipal-get-approleassignments-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

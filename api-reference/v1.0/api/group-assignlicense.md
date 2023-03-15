@@ -63,6 +63,8 @@ The following example adds licenses to the group.
 
 # [HTTP](#tab/http)
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_assignlicense"
@@ -91,6 +93,13 @@ Content-type: application/json
   "removeLicenses": []
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/group-assignlicense-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response

@@ -57,6 +57,8 @@ Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_copy"
@@ -70,6 +72,13 @@ Content-type: application/json
   "destinationId": "destinationId-value"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/mailfolder-copy-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 

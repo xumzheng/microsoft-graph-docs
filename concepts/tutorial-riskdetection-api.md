@@ -164,6 +164,8 @@ The conditional access policy provides the ability to set the conditions of the 
 
 #### Request 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
@@ -197,6 +199,13 @@ Content-type: application/json
   } 
 } 
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-riskdetection-create-conditionalaccesspolicy-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response 
 
 <!-- {
@@ -321,6 +330,8 @@ Instead of providing the opportunity for the user to self-remediate, you can blo
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
@@ -354,6 +365,13 @@ Content-type: application/json
   }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-riskdetection-create-conditionalaccesspolicy-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 <!-- {

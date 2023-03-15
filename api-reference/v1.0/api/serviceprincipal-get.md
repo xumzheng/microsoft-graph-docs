@@ -139,6 +139,8 @@ Content-type: application/json
 Here is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_serviceprincipal_select"
@@ -146,6 +148,13 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/7408235b-7540-4850-82fe-a5f15ed019e2?$select=id,appId,displayName,appRoles,oauth2PermissionScopes
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-serviceprincipal-select-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 Here is an example of the response.

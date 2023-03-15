@@ -52,6 +52,8 @@ The following example shows a request to update your own password.
 ### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_changepassword"
@@ -65,6 +67,13 @@ Content-type: application/json
     "newPassword": "0eM85N54wFxWwvJ]"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/user-changepassword-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 <!-- {

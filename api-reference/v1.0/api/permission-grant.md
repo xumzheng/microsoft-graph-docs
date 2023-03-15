@@ -74,6 +74,8 @@ This example grants the users john@contoso.com and ryan@external.com access to a
 ### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "permission-grant", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -92,6 +94,13 @@ Content-type: application/json
   "roles": ["read"]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/permission-grant-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

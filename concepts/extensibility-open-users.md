@@ -32,6 +32,8 @@ The user signs in to the app and configures the look and feel of the app. These 
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "openextensions-users-create"
@@ -48,6 +50,13 @@ Content-type: application/json
     "lang":"Japanese"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/openextensions-users-create-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -77,6 +86,8 @@ When the user signs in to the app from another device, the app calls Microsoft G
 ### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "openextensions-users-get"
@@ -84,6 +95,13 @@ When the user signs in to the app from another device, the app calls Microsoft G
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/openextensions-users-get-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -153,6 +171,8 @@ The user decides that they don't want a roaming profile anymore, so they delete 
 ### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "openextensions-users-delete"
@@ -160,6 +180,13 @@ The user decides that they don't want a roaming profile anymore, so they delete 
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/openextensions-users-delete-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

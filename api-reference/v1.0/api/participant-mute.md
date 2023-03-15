@@ -57,6 +57,8 @@ The following example shows how to call this API.
 ##### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-mute"
@@ -69,6 +71,13 @@ Content-Type: application/json
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/participant-mute-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 

@@ -107,6 +107,8 @@ The following is an example of the request. There is no `$select` parameter, so 
 
 # [HTTP](#tab/http)
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -115,6 +117,13 @@ The following is an example of the request. There is no `$select` parameter, so 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/group-delta-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response 1
@@ -212,6 +221,8 @@ The next example shows the initial request selecting 3 properties for change tra
 
 # [HTTP](#tab/http)
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_delta_minimal"
@@ -221,6 +232,13 @@ The next example shows the initial request selecting 3 properties for change tra
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 Prefer: return=minimal
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/group-delta-minimal-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response 3

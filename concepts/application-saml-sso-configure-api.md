@@ -357,6 +357,8 @@ Use the **id** for the service principal that you recorded earlier.
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_saml_sso_update_servicepricipal_approles"
@@ -412,6 +414,13 @@ Content-type: application/json
   ]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-configure-saml-sso-update-servicepricipal-approles-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -444,6 +453,8 @@ Create the claims mapping policy and record the value of the **id** property to 
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_saml_sso_create_claimsmappingpolicy"
@@ -460,6 +471,13 @@ Content-type: application/json
     "isOrganizationDefault": false
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-configure-saml-sso-create-claimsmappingpolicy-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -767,6 +785,8 @@ You need to set the **preferredTokenSigningKeyThumbprint** property of the servi
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_saml_sso_update_certificatethumbprint"
@@ -779,6 +799,13 @@ Content-type: application/json
   "preferredTokenSigningKeyThumbprint": "A7D3C4626B8A84FDA868CCC67D274D402FFD0A10"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-configure-saml-sso-update-certificatethumbprint-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -848,6 +875,8 @@ In the request body, provide these values:
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_saml_sso_add_approleassignment"
@@ -863,6 +892,13 @@ Content-type: application/json
   "resourceId":"a750f6cf-2319-464a-bcc3-456926736a91"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-configure-saml-sso-add-approleassignment-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -922,6 +958,8 @@ Delete the application that you created.
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_configure_saml_sso_delete_application"
@@ -929,6 +967,13 @@ Delete the application that you created.
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-configure-saml-sso-delete-application-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -945,6 +990,8 @@ Delete the MyTestUser1 user account.
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
  "name": "tutorial_configure_saml_sso_delete_user"
@@ -952,6 +999,13 @@ Delete the MyTestUser1 user account.
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/040f9599-7c0f-4f94-aa75-8394c4c6ea9b
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-configure-saml-sso-delete-user-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {

@@ -218,6 +218,8 @@ This can be true for unsupported query parameters as well as for unsupported com
 In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users_silent_fail"
@@ -225,6 +227,13 @@ In these cases, you should examine the data returned by the request to determine
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$count=true
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-users-silent-fail-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ```http
 
 HTTP/1.1 200 OK

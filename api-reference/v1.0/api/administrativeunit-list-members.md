@@ -59,6 +59,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following request will list the members of the administrative unit, returning a collection of users, groups, and devices.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_administrativeunit_members"
@@ -66,6 +68,13 @@ The following request will list the members of the administrative unit, returnin
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4/members
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-administrativeunit-members-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 Here is an example of the response.

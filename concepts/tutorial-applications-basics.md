@@ -138,6 +138,8 @@ You'll configure the following basic properties for the app.
 + Add basic information including the logo, terms of service, and privacy statement.
 + Store contact information about the application
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-update-app"
@@ -169,6 +171,13 @@ Content-type: application/json
     "serviceManagementReference": "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-application-basics-update-app-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ## Limit app sign-in to only assigned identities
 
 
@@ -225,6 +234,8 @@ Content-Type: application/json
 
 ### Create app roles on an application object
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-create-serviceprincipal-approles"
@@ -250,6 +261,13 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-application-basics-create-serviceprincipal-approles-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ## Manage owners
 
 
@@ -262,6 +280,8 @@ This request requires the **ConsistencyLevel** header set to `eventual` because 
 This request also returns the count of the apps that match the filter condition.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-ownerless-serviceprincipals"
@@ -270,6 +290,13 @@ This request also returns the count of the apps that match the filter condition.
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=owners/$count eq 0 or owners/$count eq 1&$count=true
 ConsistencyLevel: eventual
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-application-basics-ownerless-serviceprincipals-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Assign an owner to an app
 
 
@@ -278,6 +305,8 @@ Least privilege delegated permission: `Application.ReadWrite.All`
 In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-assign-app-owner"
@@ -290,6 +319,13 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/8afc02cb-4d62-4dba-b536-9f6d73e9be26"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-application-basics-assign-app-owner-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Assign an owner to a service principal
 
 

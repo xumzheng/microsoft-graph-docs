@@ -58,6 +58,8 @@ For a more comprehensive list of examples, see [Create chatMessage in a channel 
 The following is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessages_1",
@@ -73,6 +75,13 @@ Content-type: application/json
   }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/post-chatmessages-1-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

@@ -76,6 +76,8 @@ This example shows how you can send an activity feed notification for a team. Th
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_pending_fin_approval_request"
@@ -106,6 +108,13 @@ Content-Type: application/json
     ] 
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/team-sendactivitynotification-pending-fin-approval-request-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -279,6 +288,8 @@ The following example shows how you can send an activity feed notification to al
 The following example shows the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_5"
@@ -310,6 +321,13 @@ Content-Type: application/json
     ] 
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/team-sendactivitynotification-5-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -333,6 +351,8 @@ The following example shows how you can send an activity feed notification to al
 The following example shows the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_6"
@@ -365,6 +385,13 @@ Content-Type: application/json
     ] 
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/team-sendactivitynotification-6-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

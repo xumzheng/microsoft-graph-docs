@@ -58,6 +58,8 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationassignmentdefaults"
@@ -73,6 +75,13 @@ Content-Type: application/json
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-educationassignmentdefaults-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

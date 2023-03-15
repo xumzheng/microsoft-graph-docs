@@ -91,6 +91,8 @@ Notice that when you initially create a schema extension, its status is **InDeve
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schemaextensions-groups-createExtension"
@@ -121,6 +123,13 @@ Content-type: application/json
     ]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/schemaextensions-groups-createextension-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -225,6 +234,8 @@ You can now extend and add custom data to the group you created by updating the 
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schemaextensions-groups-updateGroupWithExtension"
@@ -241,6 +252,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/schemaextensions-groups-updategroupwithextension-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -270,6 +288,8 @@ The following example looks for the group that has the `graphlearn_courses` exte
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schemaextensions-groups-getGroupSelectExtension"
@@ -277,6 +297,13 @@ The following example looks for the group that has the `graphlearn_courses` exte
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq '123'&$select=displayName,id,description,graphlearn_courses
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/schemaextensions-groups-getgroupselectextension-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

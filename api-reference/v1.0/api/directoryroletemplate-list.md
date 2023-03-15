@@ -46,6 +46,8 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ##### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directoryroletemplates"
@@ -53,6 +55,13 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-directoryroletemplates-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 Note: The response object shown here might be shortened for readability.

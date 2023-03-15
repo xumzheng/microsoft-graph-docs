@@ -46,6 +46,8 @@ If successful, this method returns a `201 Created` response code and [columnDefi
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "site_post_columns" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/columns
@@ -65,6 +67,13 @@ Content-Type: application/json
    }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/site-post-columns-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

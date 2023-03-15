@@ -66,6 +66,8 @@ The following is an example of the request. If an object with the ID `c1` doesn'
 
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationcontextclassreference"
@@ -81,6 +83,13 @@ Content-type: application/json
     "isAvailable": true
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-authenticationcontextclassreference-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

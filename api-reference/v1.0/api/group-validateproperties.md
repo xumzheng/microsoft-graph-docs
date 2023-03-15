@@ -73,6 +73,8 @@ This is an example of a successful validation request.
 
 # [HTTP](#tab/http)
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
@@ -88,6 +90,13 @@ Content-type: application/json
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/group-validateproperties-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response

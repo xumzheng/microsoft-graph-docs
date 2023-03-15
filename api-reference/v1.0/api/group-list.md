@@ -329,6 +329,8 @@ The following is an example of the request. This request requires the **Consiste
 > **Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_video_count_search_notin_ADB2C"
@@ -338,6 +340,13 @@ The following is an example of the request. This request requires the **Consiste
 GET https://graph.microsoft.com/v1.0/groups?$search="displayName:Video" OR "description:prod"&$orderby=displayName&$count=true
 ConsistencyLevel: eventual
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-video-count-search-notin-adb2c-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

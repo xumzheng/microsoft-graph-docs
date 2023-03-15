@@ -226,6 +226,8 @@ The following is an example of the request.
 
 # [HTTP](#tab/http)
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_groups_members_startswith"
@@ -235,6 +237,13 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/groups/{id}/members?$count=true&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-groups-members-startswith-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response

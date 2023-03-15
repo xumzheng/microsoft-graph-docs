@@ -53,6 +53,8 @@ If successful, this method returns a `200 OK` response code and the collection o
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_permission_for_site"
@@ -61,6 +63,13 @@ If successful, this method returns a `200 OK` response code and the collection o
 ``` http
 GET https://graph.microsoft.com/v1.0/sites?search={query}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-permission-for-site-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

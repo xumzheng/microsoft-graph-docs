@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code and an updated [team
 The following is an example of a request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamworktag",
@@ -71,6 +73,13 @@ Content-Type: application/json
   "displayName": "Finance"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-teamworktag-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

@@ -754,6 +754,8 @@ The values of authorization token, callback URL, application ID, application nam
 #### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "join-scheduled-meeting-service-hosted-media",
@@ -803,6 +805,13 @@ Content-Type: application/json
   "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/join-scheduled-meeting-service-hosted-media-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -1082,6 +1091,8 @@ Update the media config with the [appHostedMediaConfig](../resources/apphostedme
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "join-scheduled-meeting-app-hosted-media",
@@ -1122,6 +1133,13 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/join-scheduled-meeting-app-hosted-media-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -1211,6 +1229,8 @@ The following shows an example that requires a **joinMeetingId** and a **passcod
 The following is an example of a request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "join-meeting-with-join-meeting-id-and-passcode",
@@ -1248,6 +1268,13 @@ Content-Type: application/json
   "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/join-meeting-with-join-meeting-id-and-passcode-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

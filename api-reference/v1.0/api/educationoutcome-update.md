@@ -92,6 +92,8 @@ Content-type: application/json
 The following example shows a request to update a feedback outcome.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
@@ -111,6 +113,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-educationfeedbackoutcome-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

@@ -95,6 +95,8 @@ HTTP/1.1 204 Accepted
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewInstanceDecisionItem_multi_stage_review"
@@ -108,6 +110,13 @@ Content-Type: application/json
   "justification": "This person is still on my team",
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-accessreviewinstancedecisionitem-multi-stage-review-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

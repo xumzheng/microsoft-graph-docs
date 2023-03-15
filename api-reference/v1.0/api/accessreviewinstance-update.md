@@ -65,6 +65,8 @@ Attempting to remove existing **fallbackReviewers** returns a `409 Conflict` res
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessreviewinstance"
@@ -115,6 +117,13 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-accessreviewinstance-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

@@ -61,6 +61,8 @@ Here is an example of how to call this API.
 
 The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -75,6 +77,13 @@ Content-type: application/json
   "destinationId": "deleteditems"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/message-move-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 

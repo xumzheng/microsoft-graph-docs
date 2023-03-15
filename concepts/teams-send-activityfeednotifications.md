@@ -310,6 +310,8 @@ This example shows how you can send an activity feed notification to all channel
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_channelmember_about_event"
@@ -336,6 +338,13 @@ Content-Type: application/json
     }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/team-sendactivitynotification-channelmember-about-event-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {

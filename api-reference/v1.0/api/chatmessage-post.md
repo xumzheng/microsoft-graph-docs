@@ -85,6 +85,8 @@ In the following examples, the URL can use the [HTTP syntax](#http-request) desc
 The following is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_1",
@@ -100,6 +102,13 @@ Content-type: application/json
   }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/post-chatmessage-1-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -873,6 +882,8 @@ The following is an example of the request.
 >
 > Furthermore, the app specified in the payload must be installed either for the user sending the message or in the chat or channel in which the message is being sent.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_9"
@@ -901,6 +912,13 @@ Content-type: application/json
     ]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/post-chatmessage-9-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

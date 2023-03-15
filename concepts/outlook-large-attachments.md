@@ -37,6 +37,8 @@ The opaque URL, returned in the **uploadUrl** property of the new **uploadSessio
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "walkthrough_create_uploadsession_message",
@@ -54,6 +56,13 @@ Content-type: application/json
   }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/walkthrough-create-uploadsession-message-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The following example response shows the **uploadSession** resource returned for the message.
@@ -82,6 +91,8 @@ Content-type: application/json
 #### Request 
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "walkthrough_create_uploadsession_event",
@@ -99,6 +110,13 @@ Content-type: application/json
   }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/walkthrough-create-uploadsession-event-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The following example response shows the **uploadSession** resource returned for the event.

@@ -66,6 +66,8 @@ If successful, this function returns a `200 OK` response code and a collection o
 
 In this request, you list all **userConsentRequest** objects for which the current user is the reviewer and the status is `Completed`.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userconsentrequest_filterbycurrentuser"
@@ -74,6 +76,13 @@ In this request, you list all **userConsentRequest** objects for which the curre
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests/filterByCurrentUser(on='reviewer')?$filter= (status eq 'Completed')
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/userconsentrequest-filterbycurrentuser-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

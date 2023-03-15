@@ -281,6 +281,8 @@ HTTP/1.1 204 No Content
 The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_3"
@@ -332,6 +334,13 @@ Content-Type: application/json
   "reactions": []
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/patch-chatmessage-3-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -353,6 +362,8 @@ The following is an example of the request to update the reactions property on a
 
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_4"
@@ -509,6 +520,13 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/patch-chatmessage-4-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

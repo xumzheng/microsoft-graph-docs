@@ -61,6 +61,8 @@ If successful, this method returns a 200-series response code and a new [oAuth2P
 ### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_oAuth2PermissionGrant"
@@ -77,6 +79,13 @@ Content-Type: application/json
     "scope": "DelegatedPermissionGrant.ReadWrite.All"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/post-oauth2permissiongrant-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

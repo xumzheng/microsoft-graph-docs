@@ -84,6 +84,8 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 ### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_directory_deleteditem"
@@ -91,6 +93,13 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 ```http
 POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/restore-directory-deleteditem-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 Note: The response object shown here might be shortened for readability.

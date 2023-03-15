@@ -100,6 +100,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%
 For requests that use single quotes, if any parameter values also contain single quotes, those must be double escaped; otherwise, the request will fail due to invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query-parameters-escaped-quotes-example"
@@ -107,6 +109,13 @@ For requests that use single quotes, if any parameter values also contain single
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-escaped-quotes-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ## count parameter
 
 
@@ -123,6 +132,8 @@ Use the `$count` query parameter to retrieve the count of the total number of it
 For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query-parameters-count-example"
@@ -130,6 +141,13 @@ For example, the following request returns both the **contact** collection of th
 ```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-count-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 The `$count` query parameter is supported for collections of the following frequently used resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only in [advanced queries](/graph/aad-advanced-queries):
 
 - [administrativeUnit](/graph/api/resources/administrativeunit)
@@ -204,6 +222,8 @@ Use the `$orderby` query parameter to specify the sort order of the items return
 For example, the following request returns the users in the organization ordered by their display name:
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query-parameters-orderby-example"
@@ -211,10 +231,19 @@ For example, the following request returns the users in the organization ordered
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-orderby-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query-parameters-default.orderby-collection-example"
@@ -222,12 +251,21 @@ You can also sort by complex type entities. The following request gets messages 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-defaultorderby-collection-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space; for example, `?$orderby=name%20desc`. If the sort order is not specified, the default (ascending order) is inferred.
 
 
 With some APIs, you can order results on multiple properties. For example, the following request orders the messages in the user's Inbox, first by the name of the person who sent it in descending order (Z to A), and then by subject in ascending order (default).
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query-parameters-desc.orderby-collection-example"
@@ -235,6 +273,13 @@ With some APIs, you can order results on multiple properties. For example, the f
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-descorderby-collection-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 > [!NOTE]
 
 > When you specify `$filter` the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
@@ -243,6 +288,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and **receivedDateTime** properties in descending order.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query-parameters-filter+orderby-example"
@@ -250,6 +297,13 @@ The following example shows a query filtered by the **subject** and **importance
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-filter+orderby-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 > [!NOTE] 
 
 > Combining `$orderby` and `$filter` query parameters is supported for directory objects. See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
@@ -265,6 +319,8 @@ Use the `$select` query parameter to return a set of properties that are differe
 For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query-parameters-select-example"
@@ -272,6 +328,13 @@ For example, when retrieving the messages of the signed-in user, you can specify
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-select-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 > [!IMPORTANT]
 
 > In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
@@ -284,6 +347,8 @@ Use the `$skip` query parameter to set the number of items to skip at the start 
 For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query-parameters-skip-example"
@@ -291,6 +356,13 @@ For example, the following request returns events for the user sorted by date cr
 ```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-skip-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
 
 

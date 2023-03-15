@@ -163,6 +163,8 @@ If you're getting the raw contents of a file or item attachment, the response bo
 
 Here is an example of the request to get a file attachment on an event.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment_v1",
@@ -171,6 +173,13 @@ Here is an example of the request to get a file attachment on an event.
 ```
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-file-attachment-v1-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.

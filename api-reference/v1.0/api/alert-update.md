@@ -116,6 +116,8 @@ HTTP/1.1 204 No Content
 The following example shows a request that includes the `Prefer` request header.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_alert_2"
@@ -143,6 +145,13 @@ Prefer: return=representation
   }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-alert-2-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

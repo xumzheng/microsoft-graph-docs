@@ -49,6 +49,8 @@ If successful, this method returns a `200 OK` response code and an [alert](../re
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["da637578995287051192_756343937"],
@@ -58,6 +60,13 @@ If successful, this method returns a `200 OK` response code and an [alert](../re
 ``` http
 GET https://graph.microsoft.com/v1.0/security/alerts_v2/da637578995287051192_756343937
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-security-alert-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

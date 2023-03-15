@@ -51,10 +51,19 @@ Content-Type: application/json
 ## define users as an queryable entityset
 
 
+
+# [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get_users_1" } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{user-id}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-users-1-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 
 ```http

@@ -30,6 +30,8 @@ If successful, all requests return `204 No Content` response codes.
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Expiration_EndUser_Assignment`
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "how-to-pim-update-rules-Expiration_EndUser_Assignment"
@@ -55,6 +57,13 @@ Content-Type: application/json
     }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/how-to-pim-update-rules-expiration-enduser-assignment-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ## Example 2: Update the justification, MFA, and ticketing rules required on activation 
 
 
@@ -62,6 +71,8 @@ Content-Type: application/json
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyEnablementRule](/graph/api/resources/unifiedrolemanagementpolicyenablementrule)
 + Microsoft Graph rule ID: `Enablement_EndUser_Assignment`
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "how-to-pim-update-rules-Enablement_EndUser_Assignment"
@@ -90,6 +101,13 @@ Content-Type: application/json
     }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/how-to-pim-update-rules-enablement-enduser-assignment-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ## Example 3: Require approval to activate
 
 
@@ -192,6 +210,8 @@ Content-Type: application/json
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)
 + Microsoft Graph rule ID: `Expiration_Admin_Assignment`
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "how-to-pim-update-rules-Expiration_Admin_Assignment"
@@ -217,6 +237,13 @@ Content-Type: application/json
     }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/how-to-pim-update-rules-expiration-admin-assignment-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ## Example 6: Set the justification and MFA requirements for active assignment
 
 

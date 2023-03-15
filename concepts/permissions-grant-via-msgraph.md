@@ -196,6 +196,8 @@ Content-type: application/json
 ### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "revoke-approles-using-approleassignedto"
@@ -203,6 +205,13 @@ Content-type: application/json
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/7ea9e944-71ce-443d-811c-71e8047b557a/appRoleAssignedTo/47nZsM8O_UuNq5Jz3QValCxBBiqJea9Drc9CMK4Ru_M
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/revoke-approles-using-approleassignedto-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -326,6 +335,8 @@ In this step, you'll grant your app, on behalf of a user, a delegated permission
 + The principal is a user identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5`.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "grant-delegated-perms-sp-oauth2permissiongrants"
@@ -342,6 +353,13 @@ Content-Type: application/json
     "scope": "User.Read.All Group.Read.All"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/grant-delegated-perms-sp-oauth2permissiongrants-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 While the preceding request grants consent on behalf of a single user, you can choose to grant consent on behalf of all users in the tenant. The request body is similar to the previous request body except with the following changes:
 
 - The **consentType** is `AllPrincipals`, indicating that you're consenting on behalf of all users in the tenant.

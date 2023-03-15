@@ -212,6 +212,8 @@ You can use the following  scope terms in your [Keyword Query Language (KQL)](/s
 The following example shows how to search a message that contains Contoso that Bob sent to Alice after 2022-07-14.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "searchTeamsMessageWithKQL"
@@ -238,6 +240,13 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/searchteamsmessagewithkql-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

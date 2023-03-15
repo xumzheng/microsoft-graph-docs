@@ -31,6 +31,8 @@ To complete this tutorial, you need the following resources and privileges:
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-createUser"
@@ -51,6 +53,13 @@ Content-Type: application/json
     }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-accessreviews-m365group-createuser-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 <!-- {
@@ -352,6 +361,8 @@ The following query lists all instances of the access review definition. If ther
 In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the ID of your access review definition returned in Step 4.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-list_accessReviewInstance"
@@ -359,6 +370,13 @@ In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the ID of your
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-accessreviews-m365group-list-accessreviewinstance-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -403,6 +421,8 @@ In this call:
 + Replace `6392b1a7-9c25-4844-83e5-34e23c88e16a` with the ID of your access review instance returned in Step 5.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-list_accessReviewInstanceDecisionItem"
@@ -410,6 +430,13 @@ In this call:
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-accessreviews-m365group-list-accessreviewinstancedecisionitem-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -505,6 +532,8 @@ In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the ID of your
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-delete_accessReviewScheduleDefinition"
@@ -512,6 +541,13 @@ In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the ID of your
 ```http
 DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-accessreviews-m365group-delete-accessreviewscheduledefinition-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -552,6 +588,8 @@ In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the ID of your
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-delete_guestuser"
@@ -560,6 +598,13 @@ In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the ID of your
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-accessreviews-m365group-delete-guestuser-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {

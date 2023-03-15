@@ -55,6 +55,8 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 ##### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationclass"
@@ -68,6 +70,13 @@ Content-type: application/json
   "displayName": "World History Level 1",
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-educationclass-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 The following is an example of the response. 

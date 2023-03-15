@@ -92,6 +92,8 @@ Create a group that’s assignable to an Azure AD role. Assign yourself as the g
 Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your ID and `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's ID.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-createSecurityGroup"
@@ -116,6 +118,13 @@ Content-type: application/json
     ]
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-assignaadroles-createsecuritygroup-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -231,6 +240,8 @@ While the group members are now eligible for the User Administrator role, they'r
 In the following request, replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignments_list"
@@ -238,6 +249,13 @@ In the following request, replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with th
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-assignaadroles-roleassignments-list-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -279,6 +297,8 @@ To activate a role, call the `roleAssignmentScheduleRequests` endpoint. In this 
 + Enter the details of the ticket system that provides an auditable justification for activating the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignmentScheduleRequests_selfActivate"
@@ -306,6 +326,13 @@ Content-type: application/json
     }
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-assignaadroles-roleassignmentschedulerequests-selfactivate-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 
@@ -367,6 +394,8 @@ Sign in as the Global Administrator and delete the following resources that you 
 Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_revoke"
@@ -383,6 +412,13 @@ Content-type: application/json
 }
 
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-assignaadroles-roleeligibilityschedulerequests-revoke-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -413,6 +449,8 @@ Content-type: application/json
 Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-group_delete"
@@ -420,6 +458,13 @@ Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Us
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-assignaadroles-group-delete-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -438,6 +483,8 @@ HTTP/1.1 204 No Content
 Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-user_delete"
@@ -445,6 +492,13 @@ Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/tutorial-assignaadroles-user-delete-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

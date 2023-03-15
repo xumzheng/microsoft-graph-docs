@@ -108,6 +108,8 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_user"
@@ -123,6 +125,13 @@ Content-type: application/json
   "officeLocation": "18/2111"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-user-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The following example shows the response.
@@ -140,6 +149,8 @@ HTTP/1.1 204 No Content
 The following example shows a request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_other_user"
@@ -155,6 +166,13 @@ Content-type: application/json
   "officeLocation": "18/2111"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-other-user-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

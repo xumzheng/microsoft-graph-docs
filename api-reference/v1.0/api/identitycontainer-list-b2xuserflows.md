@@ -114,6 +114,8 @@ Content-type: application/json
 The following is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_b2xUserFlows_expand"
@@ -123,6 +125,13 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows?$expand=identityProviders
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-b2xuserflows-expand-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

@@ -55,6 +55,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_delegatedpermissionclassifications"
@@ -63,6 +65,13 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/serviceprincipal-delete-delegatedpermissionclassifications-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

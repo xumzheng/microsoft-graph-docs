@@ -138,6 +138,8 @@ The following is an example of the request. This request requires the **Consiste
 
 >**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_serviceprincipals_startswith"
@@ -146,6 +148,13 @@ The following is an example of the request. This request requires the **Consiste
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-serviceprincipals-startswith-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -234,6 +243,8 @@ Here is an example of the request. This request requires the **ConsistencyLevel*
 >**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_serviceprincipals_lessthan2owners"
@@ -242,6 +253,13 @@ Here is an example of the request. This request requires the **ConsistencyLevel*
 GET https://graph.microsoft.com/v1.0/serviceprincipals?$filter=owners/$count eq 0 or owners/$count eq 1&$count=true&$select=id,displayName
 ConsistencyLevel: eventual
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-serviceprincipals-lessthan2owners-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

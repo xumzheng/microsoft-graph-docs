@@ -27,6 +27,8 @@ If you do a search on messages and specify only a value without specific message
 
 The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "search_my_messages"
@@ -34,6 +36,13 @@ The following example returns all messages in the signed-in user's Inbox that co
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/search-my-messages-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 Alternatively, you can search messages by specifying message property names in the following table, that are recognized by the Keyword Query Language (KQL) syntax. These property names correspond to properties defined in the **message** entity of Microsoft Graph. Outlook and other Microsoft 365 applications such as SharePoint support KQL syntax, providing the convenience of a common discovery domain for their data stores.
 
 

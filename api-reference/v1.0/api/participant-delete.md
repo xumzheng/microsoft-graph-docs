@@ -84,6 +84,8 @@ HTTP/1.1 204 No Content
 #### Invite a participant to an existing call
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite-nonactive-participant"
@@ -111,6 +113,13 @@ Content-Length: 464
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/participant-invite-nonactive-participant-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

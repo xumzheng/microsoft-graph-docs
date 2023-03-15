@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code and the updated **te
 The following is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tabs_in_chat",
@@ -70,6 +72,13 @@ Content-type: application/json
   "displayName": "My Contoso Tab - updated again"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-tabs-in-chat-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
