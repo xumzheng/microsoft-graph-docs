@@ -64,7 +64,6 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
 #### Request
 The following is an example of a request to get metadata for a print job.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printjob",
@@ -73,18 +72,8 @@ The following is an example of a request to get metadata for a print job.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printjob-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-printjob-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -120,7 +109,6 @@ Content-type: application/json
 The following is a request to get a print job and any [tasks](../resources/printtask.md) that are executing, or have executed, against it.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printjob_withtasks",
@@ -129,18 +117,8 @@ The following is a request to get a print job and any [tasks](../resources/print
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182?$expand=tasks
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printjob-withtasks-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-printjob-withtasks-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -190,7 +168,6 @@ Content-type: application/json
 
 #### Request
 The following is an example of a request to get a print job and its associated document data.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printjob_withdocumentdata",
@@ -199,18 +176,8 @@ The following is an example of a request to get a print job and its associated d
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e56cd81bd/jobs/31216?$expand=documents
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printjob-withdocumentdata-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-printjob-withdocumentdata-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

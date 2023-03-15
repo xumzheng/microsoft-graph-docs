@@ -64,7 +64,6 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_activateserviceplan"
@@ -80,14 +79,8 @@ Content-type: application/json
   "skuId": "465a2a90-5e59-456d-a7b8-127b9fb2e484"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-activateserviceplan-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
+
 
 <!-- {
   "blockType": "response",

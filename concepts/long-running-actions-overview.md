@@ -25,7 +25,6 @@ In this scenario, your app requests to copy a folder that contains a large amoun
 This request will likely take several seconds to complete since the amount of data is large.
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "lro-copy-item-example", "scopes": "files.readwrite" } -->
 
 ```http
@@ -39,18 +38,8 @@ Content-Type: application/json
   "name": "Copy of LargeFolder1"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lro-copy-item-example-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 The API responds that the action was accepted and the URL for retrieving the status of the long running action.
+
 
 <!-- { "blockType": "response" } -->
 
@@ -125,7 +114,6 @@ Once the job has completed, the monitor URL returns the resourceId of the result
 You can address this new item using the resourceId, for example:
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lro-copy-item-example-complete",
@@ -135,18 +123,8 @@ You can address this new item using the resourceId, for example:
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lro-copy-item-example-complete-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
 
 ```http
 HTTP/1.1 200 OK

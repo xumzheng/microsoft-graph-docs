@@ -1,0 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershellv2
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	AuthenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
+		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+		Password = "secret"
+	}
+}
+
+Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+
+```
