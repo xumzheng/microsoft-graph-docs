@@ -59,7 +59,6 @@ If successful, this method returns `200 OK` response code and a collection of [t
 ##### Request 1
 The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format. 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_supportedtimezones_default"
@@ -67,12 +66,6 @@ The following example does not specify the `timeZoneStandard` parameter, and get
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-supportedtimezones-default-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ##### Response 1
