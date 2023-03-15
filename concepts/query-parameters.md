@@ -201,32 +201,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 
 
-> [!NOTE]
-> The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
-
-## orderby parameter
-
-Use the `$orderby` query parameter to specify the sort order of the items returned from Microsoft Graph. The default order is ascending order.
-
-For example, the following request returns the users in the organization ordered by their display name:
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "query-parameters-orderby-example"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
-```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/query-parameters-orderby-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
 
