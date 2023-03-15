@@ -116,88 +116,6 @@ The following is an example of the request. There is no `$select` parameter, so 
 GET https://graph.microsoft.com/beta/groups/delta
 ```
 
-#### Response 1
-
-The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization.
-
-> **Note:** The response object shown here might be shortened for readability.
->
-> Note the presence of the _members@delta_ property which includes the ids of member objects in the group.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "isCollection": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
-  "value":[
-    {
-      "createdDateTime":"2021-03-12T10:36:14Z",
-      "description":"This is the default group for everyone in the network",
-      "displayName":"All Company",
-      "groupTypes": [
-        "Unified"
-      ],
-      "mail": "allcompany@contoso.com",
-      "members@delta": [
-        {
-          "@odata.type": "#microsoft.graph.user",
-          "id": "693acd06-2877-4339-8ade-b704261fe7a0"
-        },
-        {
-          "@odata.type": "#microsoft.graph.user",
-          "id": "49320844-be99-4164-8167-87ff5d047ace"
-        }
-      ]
-    }
-  ]
-}
-```
-
-#### Request 2
-
-The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
-
-# [HTTP](#tab/http)
-
-<!-- {
-  "blockType": "request",
-  "name": "group_delta_with_selelct"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description,mailNickname
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-selelct-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-selelct-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-selelct-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-delta-with-selelct-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/group-delta-with-selelct-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response 2
 
@@ -243,27 +161,6 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 Prefer: return=minimal
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-delta-minimal-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/group-delta-minimal-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response 3
 

@@ -45,7 +45,6 @@ If successful, this method returns `201 Created` response code and [WorkbookChar
 ##### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chartseries_from_chart"
@@ -58,18 +57,8 @@ Content-type: application/json
   "name": "name-value"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chartseries-from-chart-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chartseries-from-chart-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 In the request body, supply a JSON representation of [WorkbookChartSeries](../resources/chartseries.md) object.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
