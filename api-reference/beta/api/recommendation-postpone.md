@@ -78,6 +78,13 @@ Content-Type: application/json
   "postponeUntilDateTime": "2023-02-01T02:53:00Z"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/recommendationthispostpone-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following is an example of the response

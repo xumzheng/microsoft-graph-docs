@@ -87,6 +87,13 @@ The following request does a search for a person named "Irene McGowen" in the **
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/search-my-people-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 The following example shows the response.
 
 
@@ -162,6 +169,13 @@ For example:
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo" OR "mail:onevideo"
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/search-groups-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
 
 
@@ -175,6 +189,13 @@ This looks for all groups with display names that has `one` and `video` tokens, 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/search-filter-groups-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 This looks for all mail-enabled groups with display names that look like "OneVideo".
 
 The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`.

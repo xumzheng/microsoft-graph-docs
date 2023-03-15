@@ -66,6 +66,11 @@ If successful, this method returns a `200 OK` response code and [groupLifecycleP
 GET https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-grouplifecyclepolicy-1-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 

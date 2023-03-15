@@ -81,6 +81,11 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups/{id}/members
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-group-members-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -244,6 +249,11 @@ GET https://graph.microsoft.com/beta/groups/{id}/members?$count=true&$filter=sta
 ConsistencyLevel: eventual
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-groups-members-startswith-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

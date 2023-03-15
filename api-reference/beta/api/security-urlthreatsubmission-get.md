@@ -61,6 +61,13 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/threatSubmission/urlThreats/49c5ef5b-1f65-444a-e6b9-08d772ea2059
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-urlthreatsubmission-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following is an example of the response.

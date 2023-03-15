@@ -73,6 +73,13 @@ Content-type: application/json
   "deviceVersion": 99
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-device-from-devices-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
 
 ##### Response

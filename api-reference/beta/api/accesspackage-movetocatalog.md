@@ -72,6 +72,13 @@ Content-Type: application/json
   "catalogId": "3301434b-99bd-46be-923b-d762c30c8e8b"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/accesspackagethismovetocatalog-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following is an example of the response.

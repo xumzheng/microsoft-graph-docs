@@ -71,6 +71,13 @@ Content-Type: application/json
   "userId": "97f62344-57dc-409c-88ad-c4af14158ff5"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-teamworktagmember-from--powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

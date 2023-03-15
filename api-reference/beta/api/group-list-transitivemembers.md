@@ -83,6 +83,11 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-group-transitivemembers-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -162,6 +167,11 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitivemembers/microsoft.gra
 ConsistencyLevel: eventual
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-group-transitivemembers-odatacast-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -227,6 +237,11 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers/microsoft.gra
 ConsistencyLevel: eventual
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-tier-count-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -275,6 +290,11 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers/microsoft.gra
 ConsistencyLevel: eventual
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-groups-transitivemembers-startswith-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

@@ -62,6 +62,13 @@ The following example gets all resource namespaces.
 ``` http
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-unifiedrbacresourcenamespace-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here has been shortened for readability.

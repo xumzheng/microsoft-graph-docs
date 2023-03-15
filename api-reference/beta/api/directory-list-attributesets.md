@@ -73,6 +73,13 @@ The following example gets all attribute sets in a tenant.
 ``` http
 GET https://graph.microsoft.com/beta/directory/attributeSets
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-attributeset-all-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -117,6 +124,13 @@ The following example gets the top 10 attribute sets with support for paging.
 ``` http
 GET https://graph.microsoft.com/beta/directory/attributeSets?$top=10
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-attributeset-top-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 
@@ -162,6 +176,13 @@ The following example gets attribute sets ordered by id.
 ``` http
 GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-attributeset-orderby-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

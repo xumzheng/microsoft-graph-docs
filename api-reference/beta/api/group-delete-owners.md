@@ -66,6 +66,11 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/delete-owner-from-group-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 In the request, specify the `id` of the directory object you want to remove after the $ref segment.
 

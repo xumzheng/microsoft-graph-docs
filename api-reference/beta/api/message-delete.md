@@ -71,6 +71,13 @@ The first example deletes the specified message.
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/delete-message-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response 1
 
 Here is an example of the response.
@@ -92,6 +99,13 @@ The next example deletes a certain **mention** in the specified message.
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/delete-mention-in-message-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response 2
 
 Here is an example of the response.

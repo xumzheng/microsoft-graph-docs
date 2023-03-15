@@ -62,6 +62,13 @@ If successful, this method returns a `200 OK` response code and a [schema](../re
 ``` http
 GET https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-schema-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

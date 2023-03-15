@@ -82,6 +82,13 @@ Content-Type: application/json
   "termsOfUseUrl": "https://portal.mg.contoso.com/TermsofUse.aspx"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-mobilitymanagementpolicy-for-id-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

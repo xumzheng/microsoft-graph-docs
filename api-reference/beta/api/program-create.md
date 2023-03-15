@@ -69,6 +69,13 @@ Content-type: application/json
     "description": "test description"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-program-from-programs-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 >**Note:** The response object shown here might be shortened for readability.

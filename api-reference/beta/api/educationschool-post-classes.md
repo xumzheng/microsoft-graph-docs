@@ -59,6 +59,13 @@ Content-type: application/json
  "@odata.id":"https://graph.microsoft.com/beta/education/classes/11006"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-educationclass-from-educationschool-5-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response 
 
 The following is an example of the response. 

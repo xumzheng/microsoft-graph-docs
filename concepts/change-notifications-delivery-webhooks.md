@@ -49,6 +49,13 @@ Content-Type: application/json
   "clientState": "SecretClientState"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/change-notifications-subscriptions-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 The **clientState** property is required. Setting this property allows your service to confirm that change notifications you receive originate from Microsoft Graph. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
 
@@ -136,6 +143,13 @@ Content-Type: application/json
   "expirationDateTime": "2016-03-22T11:00:00.0000000Z"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/change-notifications-subscriptions-example-renewal-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 If the subscription renewal request is successful, Microsoft Graph returns a `200 OK` response code and a [subscription](/graph/api/resources/subscription) object in the response body. The subscription object includes the new **expirationDateTime** value.
 
 
@@ -150,6 +164,13 @@ If the client app no longer wants change notifications, it can delete the subscr
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/change-notifications-subscriptions-example-delete-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 If successful, Microsoft Graph returns a `204 No Content` code.
 
 

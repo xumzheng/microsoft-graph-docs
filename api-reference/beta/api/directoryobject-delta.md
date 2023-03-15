@@ -122,6 +122,12 @@ The following is an example of the request using the `$filter=isof('{resource ty
 GET https://graph.microsoft.com/beta/directoryObjects/delta?filter=isof('microsoft.graph.user') or isof('microsoft.graph.group')
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/directoryobject-delta-filter-isof-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -199,6 +205,12 @@ The following example shows the request using the `$filter=id eq '{id}'` paramet
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/directoryobject-delta-filter-id-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -260,6 +272,12 @@ The following example shows the initial request selecting one property each from
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.group')&$select=microsoft.graph.user/surname,microsoft.graph.group/displayName
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/directoryobject-delta-with-select-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -309,6 +327,13 @@ The following example shows the initial request selecting one property each from
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isof('microsoft.graph.user') or isof('microsoft.graph.group')&$select=microsoft.graph.user/surname,microsoft.graph.group/displayName
 Prefer: return=minimal
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/directoryobject-delta-minimal-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

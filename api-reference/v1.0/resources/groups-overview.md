@@ -169,6 +169,13 @@ Content-type: application/json
     "membershipRuleProcessingState": "on"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/groups-overview-createdynamicgroup-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 The request returns a `201 Created` response code and the newly created group object in the response body.
 
 

@@ -147,6 +147,13 @@ For directory objects, `$search` works only in advanced queries. If the **Consis
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-applications-missing-advancedqueryparams-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ```json
 
 {
@@ -172,6 +179,13 @@ If a property or query parameter in the URL is supported only in advanced querie
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-users-missing-advancedqueryparams-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ```json
 
 {
@@ -198,6 +212,13 @@ If a property has not been indexed to support a query parameter, even if the adv
 GET https://graph.microsoft.com/beta/groups?$filter=createdDateTime ge 2021-11-01&$count=true
 ConsistencyLevel: eventual
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-groups-missing-advancedqueryparams-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ```json
 
 {

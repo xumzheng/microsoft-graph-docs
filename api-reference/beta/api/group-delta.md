@@ -116,6 +116,11 @@ The following is an example of the request. There is no `$select` parameter, so 
 GET https://graph.microsoft.com/beta/groups/delta
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/group-delta-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response 2
 
@@ -161,6 +166,11 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 Prefer: return=minimal
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/group-delta-minimal-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response 3
 

@@ -68,6 +68,13 @@ Content-type: application/json
     "displayName": "testprogram3 new name"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/update-program-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 >**Note:** The response object shown here might be shortened for readability.

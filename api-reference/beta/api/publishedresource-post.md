@@ -74,6 +74,13 @@ Content-Type: application/json
     "resourceName": "domain1.contoso.com"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-publishedresource-from-onpremisespublishingprofile-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

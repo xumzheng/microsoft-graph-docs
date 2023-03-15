@@ -78,6 +78,13 @@ Content-Type: application/json
   "dismissReason": "Recommendations is not relevant for my organization because..."
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/recommendationthisdismiss-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following is an example of the response

@@ -148,6 +148,13 @@ Content-type: application/json
    "latestSupportedTlsVersion": "v1_2"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-subscription-from-subscriptions-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 
 The `clientState` and `latestSupportedTlsVersion` fields are optional.

@@ -59,6 +59,13 @@ The following is an example of a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/delete-printer-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

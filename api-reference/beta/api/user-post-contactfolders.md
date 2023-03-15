@@ -62,6 +62,13 @@ Content-type: application/json
   "displayName": "Important contacts"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-contactfolder-from-user-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.
 
 ### Response

@@ -68,6 +68,13 @@ By default, the response will not contain [printerCapabilities](../resources/pri
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-printer-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 **Note:** The response object shown here might be shortened for readability.
@@ -161,6 +168,13 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displayName,capabilities
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-printer-capabilities-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

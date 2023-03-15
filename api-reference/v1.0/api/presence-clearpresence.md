@@ -73,6 +73,13 @@ Content-Type: application/json
   "sessionId": "22553876-f5ab-4529-bffb-cfe50aa89f87"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/clear--presence-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

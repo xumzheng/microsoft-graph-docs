@@ -70,6 +70,13 @@ Content-Type: application/json
     "id":"006111db-0810-4494-a6df-904d368bd81b"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/add-accessreview-reviewer-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 <!-- {

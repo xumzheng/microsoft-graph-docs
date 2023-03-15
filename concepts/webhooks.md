@@ -76,6 +76,13 @@ Content-Type: application/json
   "clientState": "SecretClientState"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/change-notifications-subscriptions-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription) for property definitions and values.
 
 
@@ -139,6 +146,13 @@ Content-Type: application/json
   "expirationDateTime": "2016-03-22T11:00:00.0000000Z"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/change-notifications-subscriptions-example-renewal-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription) object in the body. The subscription object includes the new `expirationDateTime` value.
 
 
@@ -154,6 +168,13 @@ The client can stop receiving change notifications by deleting the subscription 
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/change-notifications-subscriptions-example-delete-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 If successful, Microsoft Graph returns a `204 No Content` code.
 
 

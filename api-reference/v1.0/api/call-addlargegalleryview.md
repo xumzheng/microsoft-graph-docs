@@ -70,6 +70,13 @@ Content-Length: 46
   "clientContext": "785f4929-92ca-497b-863f-c778c77c9758"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/addlargegalleryview-1-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

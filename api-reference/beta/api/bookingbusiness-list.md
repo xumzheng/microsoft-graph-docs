@@ -61,6 +61,13 @@ The following example gets the Bookings businesses in a tenant.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-bookingbusinesses-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response 1
 
 The following is an example of the response.
@@ -101,6 +108,13 @@ Bookings businesses in the tenant.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-bookingbusinesses-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response 2
 
 The following is an example of the response.

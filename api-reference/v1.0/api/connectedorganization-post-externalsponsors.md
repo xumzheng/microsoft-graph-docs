@@ -59,6 +59,13 @@ Content-type: application/json
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-externalsponsor-from-connectedorganization-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

@@ -72,6 +72,13 @@ For example, an unencoded URL looks like this:
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-unencoded-url-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 The properly percent-encoded URL looks like this:
 
 
@@ -83,6 +90,13 @@ The properly percent-encoded URL looks like this:
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-percentencoded-url-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 The double-encoded URL looks like this:
 
 
@@ -94,6 +108,13 @@ The double-encoded URL looks like this:
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%27J%27%29
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-doublepercentencoded-url-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Escaping single quotes
 
 
@@ -211,6 +232,13 @@ For example, the following request returns the users in the organization in the 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-format-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 > [!NOTE]
 
 > The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
@@ -396,6 +424,13 @@ For example, the following [list messages](/graph/api/user-list-messages) reques
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/query-parameters-top-example-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 > [!NOTE]
 
 > The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.

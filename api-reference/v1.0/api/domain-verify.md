@@ -65,6 +65,13 @@ If successful, this method returns `200 OK` response code and [domain](../resour
 ```http
 POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/domain-verify-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 Note: The response object shown here might be shortened for readability.

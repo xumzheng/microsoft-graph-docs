@@ -68,6 +68,13 @@ If successful, this method returns a `200 OK` response code and a [cloudPcGaller
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryImages/{id}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-cloudpcgalleryimage-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

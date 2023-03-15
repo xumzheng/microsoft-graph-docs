@@ -74,6 +74,13 @@ Content-type: application/json
     "allowStudentsToAddResourcesToSubmission": true
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-educationassignment-from-educationclass-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.
 
 

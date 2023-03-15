@@ -141,6 +141,13 @@ Content-type: application/json
   "securityEnabledOnly": true
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/directoryobject-getmemberobjects-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 >**Note:** The response object shown here might be shortened for readability.

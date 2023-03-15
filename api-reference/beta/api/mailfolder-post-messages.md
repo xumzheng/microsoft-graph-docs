@@ -66,6 +66,13 @@ Content-type: application/json
   "bodyPreview": "bodyPreview-value"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-message-from-mailfolder-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 
 ##### Response

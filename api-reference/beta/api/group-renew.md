@@ -62,6 +62,11 @@ If successful, this method returns `204 No Content` response code. It does not r
 POST https://graph.microsoft.com/beta/groups/{id}/renew
 ```
 
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/group-renew-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -70,6 +70,13 @@ Content-type: application/json
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/applicationsappmanagementpolicies-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 

@@ -66,6 +66,13 @@ If successful, this call returns a `200 OK` response and a Boolean value that sp
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/promote
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/domain-promote-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

@@ -57,6 +57,13 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 ``` http
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/b5171742-1742-b517-4217-17b5421717b5
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/delete-updatableasset-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 <!-- {

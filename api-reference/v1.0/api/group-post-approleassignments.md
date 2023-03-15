@@ -85,6 +85,13 @@ Content-Type: application/json
   "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/group-create-approleassignment-1-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 

@@ -20,6 +20,13 @@ tool was able to properly handle the Graph docs.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-current-user-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 
 ```http
@@ -37,6 +44,13 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 ```
+
+# [powershellv2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-drive-from-id-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.drive", truncated: true } -->
 
 ```http
