@@ -10,7 +10,7 @@ ms.date: 03/13/2023
 
 # Govern membership and ownership of Azure AD groups using PIM
 
-With Privileged Identity Management for groups (PIM for groups), you can govern how principals are assigned membership or ownership of [Azure AD groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to various other resources in the Microsoft cloud like Azure AD roles, Azure roles, Azure SQL, Azure Key Vault, Intune, and third-party applications.
+With Privileged Identity Management for groups (PIM for groups), you can govern how principals are assigned membership or ownership of [Azure AD groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to various other resources in the Microsoft cloud like Azure AD roles, Azure roles, Azure SQL, Azure Key Vault, Intune, and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group memberhip or ownership.
 
 The PIM for groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 groups such as the following capabilities:
 
@@ -58,8 +58,8 @@ Membership and ownership of any security and Microsoft 365 group (except dynamic
 When a principal is assigned *active* permanent or temporary membership or ownership of a group, or when they make a just-in-time activation:
 
 - The principal's details are returned when you query the members and owners relationships through the [List group members](../api/group-list-members.md) or [List group owners](../api/group-list-owners.md) APIs.
-- Attempting to remove the principal from the group using the [Remove group owner](../api/group-delete-owners) or [Remove group member](../api/group-delete-members) API returns a ****.
-- If changes to the group are tracked using the [Get delta](../api/group-delta) and [Get delta for directory objects](../api/directoryobject-delta) functions, an `@odata.nextLink` contains the new member or owner.
+- Attempting to remove the principal from the group using the [Remove group owner](../api/group-delete-owners.md) or [Remove group member](../api/group-delete-members.md) API returns a ****.
+- If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` contains the new member or owner.
 - The changes to group members and owners made through PIM for groups are logged in Azure AD activity logs and can be read through the [List directory audits](../api/directoryaudit-list.md) API.
 
 When a principal is assigned *eligible* permanent or temporary membership or ownership of a group, the members and owners relationships of the group aren't updated.
@@ -67,7 +67,7 @@ When a principal is assigned *eligible* permanent or temporary membership or own
 When a principal's *temporary active* membership or ownership expires:
 
 - The principal's details are automatically removed from the members and owners relationships.
-- If changes to the group are tracked using the [Get delta](../api/group-delta) and [Get delta for directory objects](../api/directoryobject-delta) functions, an `@odata.nextLink` indicates the removed group member or owner.
+- If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` indicates the removed group member or owner.
 
 ## PIM for groups and identity security with Zero Trust
 
@@ -89,10 +89,9 @@ In addition, for delegated scenarios, the calling principal requires the followi
 | Privileged Role Administrator <br/> Global Administrator <br/> Group owner <br/> Group member | CREATE, LIST, GET, UPDATE, DELELE |
 | Global Reader <br/> Privileged Role Administrator <br/> Global Administrator | LIST, GET |
 
-Permissions for group members and group owners are limited to the read or write operations they need to perform using PIM for groups APIs.
+Permissions for group members and group owners are limited to the read or write operations they need to perform.
 
-<!--
-## Licensing
+<!--## Licensing
 
 The PIM API requires an Azure AD Premium P2 license. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
 -->
@@ -101,4 +100,4 @@ The PIM API requires an Azure AD Premium P2 license. For more information, see [
 
 - [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
-- [Privileged Identity Management (PIM) for groups (preview)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
+- [Privileged Identity Management (PIM) for Groups (preview)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
