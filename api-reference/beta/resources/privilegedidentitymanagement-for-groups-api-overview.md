@@ -51,22 +51,22 @@ The following table lists scenarios for using PIM for groups APIs to manage elig
 | An administrator cancels an eligible membership or ownership request they created | [privilegedAccessGroupEligibilityScheduleRequest:cancel](../api/privilegedaccessgroupeligibilityschedulerequest-cancel.md) |
 | A principal queries their eligible membership or ownership request their details | [privilegedAccessGroupEligibilityScheduleRequest: filterByCurrentUser](../api/privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser.md) |
 
-## PIM for groups and the groups object
+## PIM for groups and the group object
 
 Membership and ownership of any security and Microsoft 365 group (except dynamic groups and groups synchronized from on-premises) can be governed through PIM for groups. The group doesn't have to be role-assignable to be enabled in PIM for groups.
 
 When a principal is assigned *active* permanent or temporary membership or ownership of a group, or when they make a just-in-time activation:
 
-- The principal's details are returned when you query the members and owners relationships through the [List group members](../api/group-list-members.md) or [List group owners](../api/group-list-owners.md) APIs.
-- Attempting to remove the principal from the group using the [Remove group owner](../api/group-delete-owners.md) or [Remove group member](../api/group-delete-members.md) API returns a ****.
+- The principal's details are returned when you query the **members** and **owners** relationships through the [List group members](../api/group-list-members.md) or [List group owners](../api/group-list-owners.md) APIs.
+- You can remove the principal from the group using the [Remove group owner](../api/group-delete-owners.md) or [Remove group member](../api/group-delete-members.md) APIs.
 - If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` contains the new member or owner.
-- The changes to group members and owners made through PIM for groups are logged in Azure AD activity logs and can be read through the [List directory audits](../api/directoryaudit-list.md) API.
+- The changes to group **members** and **owners** made through PIM for groups are logged in Azure AD audit logs and can be read through the [List directory audits](../api/directoryaudit-list.md) API.
 
 When a principal is assigned *eligible* permanent or temporary membership or ownership of a group, the members and owners relationships of the group aren't updated.
 
-When a principal's *temporary active* membership or ownership expires:
+When a principal's *temporary active* membership or ownership of a group expires:
 
-- The principal's details are automatically removed from the members and owners relationships.
+- The principal's details are automatically removed from the **members** and **owners** relationships.
 - If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` indicates the removed group member or owner.
 
 ## PIM for groups and identity security with Zero Trust
