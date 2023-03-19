@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershellv2
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	Id = "my-custom-consent-policy"
+	DisplayName = "Custom application consent policy"
+	Description = "A custom permission grant policy to customize conditions for granting consent."
+}
+
+New-MgBetaPolicyPermissionGrantPolicy -BodyParameter $params
+
+```

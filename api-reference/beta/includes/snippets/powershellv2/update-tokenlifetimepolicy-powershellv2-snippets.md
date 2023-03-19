@@ -1,0 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershellv2
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	Definition = @(
+		"{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"5:30:00"}}"
+	)
+	DisplayName = "Contoso token lifetime policy"
+	IsOrganizationDefault = $true
+}
+
+Update-MgBetaPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId -BodyParameter $params
+
+```

@@ -97,7 +97,6 @@ of incremental changes since the last delta query. For an example that shows a r
 [Get incremental changes to messages in a folder](/graph/delta-query-messages).
  
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_delta"
@@ -107,14 +106,8 @@ GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
 
 Prefer: odata.maxpagesize=2
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ##### Response
+
 If the request is successful, the response would include a state token, which is either a _skipToken_  
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
 Respectively, they indicate whether you should continue with the round or you have completed 
