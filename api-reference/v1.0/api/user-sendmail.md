@@ -175,6 +175,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershellv2/user-sendmail-with-headers-powershellv2-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 Here is an example of the response.

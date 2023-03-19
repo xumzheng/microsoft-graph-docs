@@ -249,6 +249,7 @@ You've learned how to manage app role grants for a service principal. This metho
 
 ## See also
 
++ [Tutorial: Grant app roles in Azure AD using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-app-only-api-permissions)
 + [appRoleAssignment resource type](/graph/api/resources/approleassignment)
 
 ::: zone-end
@@ -553,7 +554,8 @@ You've granted delegated permissions (or scopes) to a service principal. This me
 
 ## See also
 
-+ [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)
+- [Tutorial: Grant delegated permissions in Azure AD using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-delegated-api-permissions)
+- [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)
 
 ::: zone-end
 

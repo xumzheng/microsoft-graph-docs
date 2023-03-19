@@ -103,13 +103,6 @@ Content-Type: application/json
   "expirationDuration": "PT1H"
 }
 ```
-
-# [powershellv2](#tab/powershellv2)
-[!INCLUDE [sample-code](../includes/snippets/powershellv2/set-presence-powershellv2-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 

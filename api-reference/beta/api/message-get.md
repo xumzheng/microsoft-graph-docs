@@ -103,13 +103,6 @@ The first example gets the specified message. It does not specify any header to 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
-
-# [powershellv2](#tab/powershellv2)
-[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-message-powershellv2-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.

@@ -296,6 +296,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/powershellv2/list-groups-transitivemembers-startswith-powershellv2-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

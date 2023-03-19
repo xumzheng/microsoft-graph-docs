@@ -72,13 +72,6 @@ Here is an example of the request.
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 ```
-
-# [powershellv2](#tab/powershellv2)
-[!INCLUDE [sample-code](../includes/snippets/powershellv2/delete-directorysetting-powershellv2-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 <!-- {
