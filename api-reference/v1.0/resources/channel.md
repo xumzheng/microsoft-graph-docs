@@ -51,6 +51,7 @@ where files are shared, and where tabs are added.
 |[Unshare channel with team](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a [channel](../resources/channel.md) with a [team](../resources/team.md) by deleting the corresponding [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) resource.|
 |[List allowed members](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of [conversationMembers](../resources/conversationmember.md) who can access a shared [channel](../resources/channel.md).|
 |[Check user access](../api/channel-doesuserhaveaccess.md)|Boolean|Determine whether a [user](../resources/useridentity.md) has access to a shared [channel](../resources/channel.md).|
+|[Get primaryChannel](../api/team-get-primarychannel.md)| [channel](channel.md) |Get the default channel, General, of a team.|
 
 ## Properties
 
