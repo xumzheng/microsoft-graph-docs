@@ -82,14 +82,14 @@ The following Microsoft Graph permissions are required to call the PIM for group
 | PrivilegedAccess.Read.AzureADGroup | LIST, GET |
 | PrivilegedAccess.ReadWrite.AzureADGroup | CREATE, LIST, GET, UPDATE, DELELE |
 
-In addition, for delegated scenarios, the calling principal requires the following roles.
+In addition, for delegated scenarios, the calling principal requires one of the following roles.
 
 | Role | Supported operations |
 |---|---|
-| Privileged Role Administrator <br/> Global Administrator <br/> Group owner <br/> Group member | CREATE, LIST, GET, UPDATE, DELELE |
-| Global Reader <br/> Privileged Role Administrator <br/> Global Administrator | LIST, GET |
+| Privileged Role Administrator <br/> Group owner* <br/> Group member* | CREATE, LIST, GET, UPDATE, DELELE |
+| Global Reader <br/> Privileged Role Administrator <br/> Group owner* <br/> Group member* | LIST, GET |
 
-Permissions for group members and group owners are limited to the read or write operations they need to perform.
+Permissions for group members and group owners are limited to the read or write operations they need to perform. For example, a group member can [cancel their assignmentScheduleRequest](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md).
 
 <!--## Licensing
 
