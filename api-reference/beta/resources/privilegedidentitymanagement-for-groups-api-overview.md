@@ -86,10 +86,10 @@ In addition, for delegated scenarios, the calling principal requires one of the 
 
 | Role | Supported operations |
 |---|---|
-| Privileged Role Administrator <br/> Group owner* <br/> Group member* | CREATE, LIST, GET, UPDATE, DELELE |
+| Privileged Role Administrator <br/> Group owner* <br/> Group member* | CREATE, UPDATE, DELELE |
 | Global Reader <br/> Privileged Role Administrator <br/> Group owner* <br/> Group member* | LIST, GET |
 
-Permissions for group members and group owners are limited to the read or write operations they need to perform. For example, a group member can [cancel their assignmentScheduleRequest](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md).
+`*` Permissions for group members and group owners are limited to the read or write operations they need to perform. For example, a group member can [cancel their assignmentScheduleRequest](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md) but not any other principal's request.
 
 <!--## Licensing
 
