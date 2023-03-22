@@ -180,7 +180,6 @@ Content-type: text/plain
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_pr_count"
@@ -190,12 +189,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/groups/{id}/members/microsoft.graph.user?$count=true&$orderby=displayName&$search="displayName:Pr"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
-
-# [cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-pr-count-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
