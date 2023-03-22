@@ -1,11 +1,11 @@
 ---
 title: "Govern membership and ownership of Azure AD groups using the privileged identity management (PIM) API for groups"
 description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
-author: "rkarim-ms"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 03/13/2023
+ms.date: 03/22/2023
 ---
 
 # Govern membership and ownership of Azure AD groups using PIM for groups
