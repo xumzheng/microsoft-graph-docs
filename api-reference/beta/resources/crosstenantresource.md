@@ -20,7 +20,6 @@ This is an abstract type that's inherited by the [crossTenantSynchronizationReso
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|originId|String|ID of the original object in the source Azure AD tenant the object was synchronized from.|
 |originTenantId|String|ID of the source Azure AD tenant.|
 
 ## Relationships
@@ -36,7 +35,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantResource",
-  "originId": "String",
   "originTenantId": "String"
 }
 ```

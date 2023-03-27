@@ -1025,12 +1025,11 @@ HTTP/1.1 200 OK
 }
 -->
 
-### Example 14: List information about synchronized users from a specific source tenant
+### Example 14: List information about synchronized users
 
-The following example lists origin and synchronization information about synchronized users from a specific source Azure AD tenant. This information is only populated for users that are synchronized using [Azure AD cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview). Add a `$filter` parameter for the source tenant and add a `$select` parameter for [originTenantInfo](../resources/user.md).
+The following example lists origin and synchronization information about synchronized users from any source Azure AD tenant. This information is only populated for users that are synchronized using [Azure AD cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview). Add a `$filter` parameter for the source tenant and add a `$select` parameter for [originTenantInfo](../resources/user.md).
 
 - `originTenantId`: ID of the source tenant
-- `originId`: ID of the original user in the source tenant
 - `creationType`: User was created using cross-tenant synchronization
 
 For more information, see [Configure cross-tenant synchronization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure-graph).
@@ -1042,7 +1041,7 @@ For more information, see [Configure cross-tenant synchronization using Microsof
   "name": "list_users_origintenantinfo"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=originTenantInfo/originTenantId eq '3d0f5dec-5d3d-455c-8016-e2af1ae4d31a'&$select=originTenantInfo
+GET https://graph.microsoft.com/beta/users?$select=originTenantInfo,displayName,id&$filter=originTenantInfo/microsoft.graph.crossTenantSynchronizationResource/synchronizationInfo/creationType eq 'TenantToTenantSync'
 ```
 
 #### Response
@@ -1060,20 +1059,22 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(originTenantInfo)",
     "value": [
         {
+            "displayName": "User1",
+            "id": "cc9b0598-d9cb-4659-8552-067049cb8675",
             "originTenantInfo": {
                 "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
                 "originTenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
-                "originId": "c28334bc-4f66-44de-b9b1-5dccc28496b1",
                 "synchronizationInfo": {
                     "creationType": "tenantToTenantSync"
                 }
             }
         },
         {
+            "displayName": "User4",
+            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
             "originTenantInfo": {
                 "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
                 "originTenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
-                "originId": "1897469a-2d9b-4337-a372-947efcbf8f4a",
                 "synchronizationInfo": {
                     "creationType": "tenantToTenantSync"
                 }

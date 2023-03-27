@@ -20,7 +20,6 @@ Inherits from [crossTenantResource](../resources/crosstenantresource.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|originId|String|ID of the original object in the source Azure AD tenant the object was synchronized from. Inherited from [crossTenantResource](../resources/crosstenantresource.md).|
 |originTenantId|String|ID of the source Azure AD tenant. Inherited from [crossTenantResource](../resources/crosstenantresource.md).|
 |synchronizationInfo|[synchronizationInfo](../resources/synchronizationinfo.md)|Contains information about how the object was synchronized.|
 
@@ -37,7 +36,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
-  "originId": "String",
   "originTenantId": "String",
   "synchronizationInfo": {
     "@odata.type": "microsoft.graph.synchronizationInfo"
