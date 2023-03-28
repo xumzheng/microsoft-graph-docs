@@ -1,0 +1,29 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY$requestBody = new ServicePrincipal();
+$customSecurityAttributes = new CustomSecurityAttributeValue();
+$additionalData = [
+'Engineering' => $customSecurityAttributes = new Engineering();
+$		customSecurityAttributes->set@odatatype('#Microsoft.DirectoryServices.CustomSecurityAttributeValue');
+
+$		customSecurityAttributes->setProjectDate('2022-10-01');
+
+
+$customSecurityAttributes->setEngineering($engineering);
+
+];
+$customSecurityAttributes->setAdditionalData($additionalData);
+
+
+
+$requestBody->setCustomSecurityAttributes($customSecurityAttributes);
+
+
+$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->patch($requestBody);
+
+
+```

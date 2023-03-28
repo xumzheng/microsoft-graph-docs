@@ -73,7 +73,7 @@ The following is an example of the request.
   "name": "list_appManagementPolicyAppliesTo"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo
 ```
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-appmanagementpolicyappliesto-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-appmanagementpolicyappliesto-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -144,7 +148,7 @@ The following is an example of the request using $select query option.
   "name": "list_appManagementPolicyAppliesTo_select"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$select=id,appId,displayName,createdDateTime
 ```
 
@@ -170,6 +174,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-appmanagementpolicyappliesto-select-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-appmanagementpolicyappliesto-select-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

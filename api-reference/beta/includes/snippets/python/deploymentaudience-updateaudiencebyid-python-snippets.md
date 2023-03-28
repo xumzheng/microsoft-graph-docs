@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY$requestBody = new UpdateAudienceByIdPostRequestBody();
+$requestBody->setMemberEntityType('String');
+
+$requestBody->setAddMembers(['String', ]);
+
+$requestBody->setRemoveMembers(['String', ]);
+
+$requestBody->setAddExclusions(['String', ]);
+
+$requestBody->setRemoveExclusions(['String', ]);
+
+
+
+$graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->audience()->windowsUpdatesUpdateAudienceById()->post($requestBody);
+
+
+```

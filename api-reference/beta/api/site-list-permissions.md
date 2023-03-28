@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions
 [!INCLUDE [sample-code](../includes/snippets/php/list-permission-site-nav-property-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-permission-site-nav-property-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2/da637578995287051192_756
 [!INCLUDE [sample-code](../includes/snippets/php/get-security-alert-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-security-alert-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

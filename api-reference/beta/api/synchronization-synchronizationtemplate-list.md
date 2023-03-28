@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 [!INCLUDE [sample-code](../includes/snippets/php/get-synchronizationtemplate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-synchronizationtemplate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
