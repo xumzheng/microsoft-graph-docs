@@ -38,6 +38,10 @@ GET /admin/serviceAnnouncement/healthOverviews
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
+For example, OData `$expand=issues` option could be used to get a collection of issues that happened on each tenant subscribed service. All historical issues that happened up to one year and current happending issues will be included in the collection if not specify time range.
+
+This example shows how to use Odata query to return issues that happen within specified time range on each service. `$expand=issues($filter=(isResolved+eq+false)+or+endDateTime+eq+null+or+(lastModifiedDateTime+gt+2023-01-06T17%3a12%3a30.6568739Z))`.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
