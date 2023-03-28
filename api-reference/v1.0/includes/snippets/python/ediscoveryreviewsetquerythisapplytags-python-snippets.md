@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY$requestBody = new ApplyTagsPostRequestBody();
+$tagsToAddEdiscoveryReviewTag1 = new EdiscoveryReviewTag();
+$tagsToAddEdiscoveryReviewTag1.setId('d3d99dc704a74801b792b3e1e722aa0d');
+
+
+$tagsToAddArray []= $tagsToAddEdiscoveryReviewTag1;
+$requestBody.setTagsToAdd($tagsToAddArray);
+
+
+
+
+$graphServiceClient.security().cases().ediscoveryCasesById('ediscoveryCase-id').reviewSetsById('ediscoveryReviewSet-id').queriesById('ediscoveryReviewSetQuery-id').securityApplyTags().post($requestBody);
+
+
+```

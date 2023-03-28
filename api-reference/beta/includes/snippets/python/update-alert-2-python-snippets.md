@@ -1,0 +1,40 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY$requestBody = new Alert();
+$requestBody.setAssignedTo('String');
+
+$requestBody.setClosedDateTime(new DateTime('String (timestamp)'));
+
+$requestBody.setComments(['String', ]);
+
+$requestBody.setFeedback(new AlertFeedback('alertfeedback'));
+
+$requestBody.setStatus(new AlertStatus('alertstatus'));
+
+$requestBody.setTags(['String', ]);
+
+$vendorInformation = new SecurityVendorInformation();
+$vendorInformation.setProvider('String');
+
+$vendorInformation.setVendor('String');
+
+
+$requestBody.setVendorInformation($vendorInformation);
+
+$requestConfiguration = new AlertRequestBuilderPatchRequestConfiguration();
+
+$headers = [
+'Prefer' => 'return=representation',
+];
+
+$requestConfiguration.headers = $headers;
+
+
+$requestResult = $graphServiceClient.security().alertsById('alert-id').patch($requestBody, $requestConfiguration);
+
+
+```

@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY$requestBody = new Channel();
+$requestBody.setDisplayName('UpdateChannelModeration');
+
+$requestBody.setDescription('Update channel moderation.');
+
+$moderationSettings = new ChannelModerationSettings();
+$moderationSettings.setUserNewMessageRestriction(new UserNewMessageRestriction('moderators'));
+
+$moderationSettings.setReplyRestriction(new ReplyRestriction('everyone'));
+
+$moderationSettings.setAllowNewMessageFromBots(true);
+
+$moderationSettings.setAllowNewMessageFromConnectors(true);
+
+
+$requestBody.setModerationSettings($moderationSettings);
+
+
+$requestResult = $graphServiceClient.teamsById('team-id').channelsById('channel-id').patch($requestBody);
+
+
+```

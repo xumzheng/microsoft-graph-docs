@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/{au
 [!INCLUDE [sample-code](../includes/snippets/php/authenticationstrengthpolicythisusage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/authenticationstrengthpolicythisusage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

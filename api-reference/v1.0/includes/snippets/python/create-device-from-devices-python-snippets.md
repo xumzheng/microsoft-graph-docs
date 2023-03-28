@@ -1,0 +1,33 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY$requestBody = new Device();
+$requestBody.setAccountEnabled(false);
+
+$alternativeSecurityIdsAlternativeSecurityId1 = new AlternativeSecurityId();
+$alternativeSecurityIdsAlternativeSecurityId1.setType(2);
+
+$alternativeSecurityIdsAlternativeSecurityId1.setKey(base64_decode('base64Y3YxN2E1MWFlYw=='));
+
+
+$alternativeSecurityIdsArray []= $alternativeSecurityIdsAlternativeSecurityId1;
+$requestBody.setAlternativeSecurityIds($alternativeSecurityIdsArray);
+
+
+$requestBody.setDeviceId('4c299165-6e8f-4b45-a5ba-c5d250a707ff');
+
+$requestBody.setDisplayName('Test device');
+
+$requestBody.setOperatingSystem('linux');
+
+$requestBody.setOperatingSystemVersion('1');
+
+
+
+$requestResult = $graphServiceClient.devices().post($requestBody);
+
+
+```

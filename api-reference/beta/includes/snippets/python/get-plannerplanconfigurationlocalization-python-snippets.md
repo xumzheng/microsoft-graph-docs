@@ -1,0 +1,11 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+$requestResult = $graphServiceClient.solutions().businessScenariosById('businessScenario-id').planner().planConfiguration().localizationsById('plannerPlanConfigurationLocalization-id').get();
+
+
+```
