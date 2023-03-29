@@ -40,7 +40,7 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |impactDescription|String|The description of the service issue impact.|
 |isResolved|Boolean|Indicates whether the issue is resolved. Supports `$filter` (`eq`, `ne`).|
 |lastModifiedDateTime|DateTimeOffset|The last modified time of the issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md). Supports `$filter` (`eq`, `ne`, `ge`, `le`).|
-|origin|serviceHealthOrigin|Indicates the origin of the service issue. Possible values are: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`).|
+|origin|serviceHealthOrigin|Indicates the origin of the service issue. Possible values are: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`). More information about origin values microsoft/thirdParty/customer could be found [here](microsoft-365/enterprise/view-service-health).|
 |posts|Collection([serviceHealthIssuePost](../resources/servicehealthissuepost.md))|Collection of historical posts for the service issue.|
 |service|String|Indicates the service affected by the issue. Supports `$filter` (`eq`, `ne`).|
 |startDateTime|DateTimeOffset|The start time of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md). Supports `$filter` (`eq`, `ne`, `ge`, `le`).|
