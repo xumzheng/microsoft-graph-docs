@@ -80,6 +80,8 @@ Content-type: application/json
   ]
 }
 ```
+> **Important:**
+> Domain authentication type must be ‘Managed’ to become default domain.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-domain-csharp-snippets.md)]
