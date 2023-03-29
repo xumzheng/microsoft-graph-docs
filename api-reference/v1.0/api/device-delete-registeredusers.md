@@ -49,6 +49,8 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_registeredusers"
@@ -56,6 +58,13 @@ Here is an example of the request.
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers/{id}/$ref
 ```
+
+# [cli](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-registeredusers-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ---
