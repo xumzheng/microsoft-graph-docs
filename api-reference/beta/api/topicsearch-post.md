@@ -96,7 +96,7 @@ HTTP/1.1 200 Ok
 {
   "value": [
     {
-      { "@type": "searchResult" },// Search Response
+      { "@type": "searchResult" },
       "searchTerms": [
         "topics"
       ],
