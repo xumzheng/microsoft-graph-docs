@@ -1,13 +1,13 @@
 ---
 title: "topic resource type"
 description: "Represents a topic in Microsoft Search."
-author: "yijit-msft"
+author: "watermelonT"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: resourcePageType
 ---
 
-# qna resource type
+# Topic resource type
 
 Namespace: microsoft.graph.search
 
@@ -19,7 +19,7 @@ A topic represents a Viva Topic, which uses AI to automatically search for and i
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get topic](../api/search-topic-get.md)|[microsoft.graph.search.topic](../resources/search-topic.md)|Read the properties and relationships of a [topic](../resources/search-topic.md) object.|
+|[Search topic](../api/topicsearch-post.md)|[microsoft.graph.search.topic](../resources/topic.md)|Read the properties and relationships of a [topic](../resources/topic.md) object.|
 
 ## Properties
 
@@ -37,7 +37,7 @@ A topic represents a Viva Topic, which uses AI to automatically search for and i
 | highlyRelatedFiles | Collection(microsoft.graph.topicFile) | The list hosting at most 10 files mined or curated that are highly relevant for this topic. |
 | highlyRelatedSites | Collection(microsoft.graph.topicSite) | The list hosting at most 10 sites mined or curated that are highly relevant for this topic. |
 | highlyRelatedUsers | Collection(microsoft.graph.topicUser) | The list hosting at most 10 users mined or curated that are highly relevant for this topic. |
-| lastModifiedBy | microsoft.graph.identity | The last modifier of the topic, if the topic has been modified | 
+| lastModifiedBy | microsoft.graph.identity | The last user to edit this topic, if the topic has been modified | 
 | lastModifiedDateTime | Edm.DateTimeOffset | The last modified time of the topic, if the topic has been modified | 
 
 ## Types
@@ -66,8 +66,8 @@ The lifecycle represents the state of a topic, or a resource related to the topi
 #### Properties
 | Property       | Type           | Description                                 |
 | -------------- | -------------- | ------------------------------------------- |
-| state | microsoft.graph.topicLifecycleState | The lifecycle state enum type. | No | Yes | Yes |
-| lastModifiedDateTime | Edm.DateTimeOffset | The last modified time of the lifecycle, if the lifecycle has been modified | No | No | Yes |
+| state | microsoft.graph.topicLifecycleState | The lifecycle state enum type. |
+| lastModifiedDateTime | Edm.DateTimeOffset | The last modified time of the lifecycle, if the lifecycle has been modified |
 
 
 ### Enum: topicLifecycleState
