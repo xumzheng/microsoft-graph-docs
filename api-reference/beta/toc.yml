@@ -15298,6 +15298,11 @@ items:
             href: api/search-qna-update.md
           - name: Delete qna
             href: api/search-qna-delete.md
+        - name: Topic
+          href: resources/topic.md
+          items:
+          - name: Get qna
+            href: api/topicsearch-post.md
       - name: Index
         items:
         - name: Overview

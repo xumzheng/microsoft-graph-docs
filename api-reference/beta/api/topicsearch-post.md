@@ -50,36 +50,32 @@ Note that the requestor needs to have an assigned Viva Topics license. Otherwise
 Here is an example of the request.
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_privilegedrole"
-}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/search
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedrole-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/topicsearch-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedrole-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/topicsearch-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedrole-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/topicsearch-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedrole-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/topicsearch-post-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedrole-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/topicsearch-post-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-privilegedrole-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/topicsearch-post-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

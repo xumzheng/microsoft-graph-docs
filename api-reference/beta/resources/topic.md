@@ -182,14 +182,6 @@ None.
 
 The following is a JSON representation of the resource.
 
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.search.qna",
-  "baseType": "microsoft.graph.search.searchAnswer",
-  "openType": false
-}
--->
 ``` json
 {
   "@odata.type": "#microsoft.graph.topic",
