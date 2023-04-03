@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.OpenShifts.Item.O
 			"schedulingGroupId" , "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 		},
 		{
-			"sharedOpenShift" , new 
+			"sharedOpenShift" , new SharedOpenShift
 			{
 				Notes = "Inventory Management",
 				OpenSlotCount = 5,

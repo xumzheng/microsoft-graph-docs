@@ -84,7 +84,7 @@ var requestBody = new AccessPackageAssignmentPolicy
 						new 
 						{
 							ActualValue = "AZ",
-							DisplayValue = new 
+							DisplayValue = new DisplayValue
 							{
 								LocalizedTexts = new List<>
 								{
@@ -99,7 +99,7 @@ var requestBody = new AccessPackageAssignmentPolicy
 						new 
 						{
 							ActualValue = "CA",
-							DisplayValue = new 
+							DisplayValue = new DisplayValue
 							{
 								LocalizedTexts = new List<>
 								{
@@ -114,7 +114,7 @@ var requestBody = new AccessPackageAssignmentPolicy
 						new 
 						{
 							ActualValue = "OH",
-							DisplayValue = new 
+							DisplayValue = new DisplayValue
 							{
 								LocalizedTexts = new List<>
 								{

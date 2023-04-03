@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.DataSource
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"site" , new 
+			"site" , new Site
 			{
 				WebUrl = "https://contoso.sharepoint.com/sites/SecretSite",
 			}

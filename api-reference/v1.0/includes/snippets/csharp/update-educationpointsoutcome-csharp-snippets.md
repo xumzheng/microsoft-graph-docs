@@ -12,7 +12,7 @@ var requestBody = new EducationOutcome
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"points" , new 
+			"points" , new Points
 			{
 				OdataType = "#microsoft.graph.educationAssignmentPointsGrade",
 				Points = 85.0,

@@ -20,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participant
 				{
 					Participant = "550fae72-d251-43ec-868c-373732c2704f",
 					Exclusive = true,
-					Ducking = new 
+					Ducking = new Ducking
 					{
 						RampActive = 50,
 						RampInactive = 50,

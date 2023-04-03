@@ -19,7 +19,7 @@ var requestBody = new IdentityProviderBase
 			"clientSecret" , "12345"
 		},
 		{
-			"claimsMapping" , new 
+			"claimsMapping" , new ClaimsMapping
 			{
 				UserId = "myUserId",
 				GivenName = "myGivenName",

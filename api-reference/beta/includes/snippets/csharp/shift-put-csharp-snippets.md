@@ -26,12 +26,12 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.Shifts.Item.Shift
 			"schedulingGroupId" , "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 		},
 		{
-			"lastModifiedBy" , new 
+			"lastModifiedBy" , new LastModifiedBy
 			{
 				Application = null,
 				Device = null,
 				Conversation = null,
-				User = new 
+				User = new User
 				{
 					Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
 					DisplayName = "John Doe",
@@ -39,7 +39,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.Shifts.Item.Shift
 			}
 		},
 		{
-			"sharedShift" , new 
+			"sharedShift" , new SharedShift
 			{
 				DisplayName = "Day shift",
 				Notes = "Please do inventory as part of your shift.",
@@ -60,7 +60,7 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.Shifts.Item.Shift
 			}
 		},
 		{
-			"draftShift" , new 
+			"draftShift" , new DraftShift
 			{
 				DisplayName = "Day shift",
 				Notes = "Please do inventory as part of your shift.",

@@ -12,7 +12,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.DataSource
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"site" , new 
+			"site" , new Site
 			{
 				WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
 			}

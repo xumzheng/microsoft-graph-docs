@@ -17,7 +17,7 @@ var requestBody = new ConversationThread
 			"originalEndTimeZone" , "originalEndTimeZone-value"
 		},
 		{
-			"responseStatus" , new 
+			"responseStatus" , new ResponseStatus
 			{
 				Response = "",
 				Time = "datetime-value",

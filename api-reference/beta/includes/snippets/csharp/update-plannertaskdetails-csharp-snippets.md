@@ -14,7 +14,7 @@ var requestBody = new PlannerTaskDetails
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"http%3A//developer%2Emicrosoft%2Ecom" , new 
+				"http%3A//developer%2Emicrosoft%2Ecom" , new Http%3A//developer%2Emicrosoft%2Ecom
 				{
 					OdataType = "microsoft.graph.plannerExternalReference",
 					Alias = "Documentation",
@@ -23,7 +23,7 @@ var requestBody = new PlannerTaskDetails
 				}
 			},
 			{
-				"https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer" , new 
+				"https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer" , new Https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer
 				{
 					OdataType = "microsoft.graph.plannerExternalReference",
 					PreviewPriority = "  !!",
@@ -39,7 +39,7 @@ var requestBody = new PlannerTaskDetails
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"95e27074-6c4a-447a-aa24-9d718a0b86fa" , new 
+				"95e27074-6c4a-447a-aa24-9d718a0b86fa" , new 95e27074-6c4a-447a-aa24-9d718a0b86fa
 				{
 					OdataType = "microsoft.graph.plannerChecklistItem",
 					Title = "Update task details",
@@ -47,7 +47,7 @@ var requestBody = new PlannerTaskDetails
 				}
 			},
 			{
-				"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff" , new 
+				"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff" , new D280ed1a-9f6b-4f9c-a962-fb4d00dc50ff
 				{
 					OdataType = "microsoft.graph.plannerChecklistItem",
 					IsChecked = true,

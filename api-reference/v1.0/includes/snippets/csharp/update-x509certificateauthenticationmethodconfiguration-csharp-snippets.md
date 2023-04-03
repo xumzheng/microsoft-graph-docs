@@ -25,7 +25,7 @@ var requestBody = new AuthenticationMethodConfiguration
 			}
 		},
 		{
-			"authenticationModeConfiguration" , new 
+			"authenticationModeConfiguration" , new AuthenticationModeConfiguration
 			{
 				X509CertificateAuthenticationDefaultMode = "x509CertificateMultiFactor",
 				Rules = new List<>

@@ -18,7 +18,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.RecordRespo
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"mediaInfo" , new 
+					"mediaInfo" , new MediaInfo
 					{
 						Uri = "https://cdn.contoso.com/beep.wav",
 						ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",

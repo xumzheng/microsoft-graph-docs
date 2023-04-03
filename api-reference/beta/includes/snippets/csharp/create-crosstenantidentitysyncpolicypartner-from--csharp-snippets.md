@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Policies.CrossTenantAccessPolicy.Part
 			"displayName" , "Fabrikam"
 		},
 		{
-			"userSyncInbound" , new 
+			"userSyncInbound" , new UserSyncInbound
 			{
 				IsSyncAllowed = true,
 			}

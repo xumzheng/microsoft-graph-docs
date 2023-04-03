@@ -16,7 +16,7 @@ var requestBody = new IdentityProvider
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"claimsMapping" , new 
+			"claimsMapping" , new ClaimsMapping
 			{
 				UserId = "myUserId",
 				GivenName = "myGivenName",

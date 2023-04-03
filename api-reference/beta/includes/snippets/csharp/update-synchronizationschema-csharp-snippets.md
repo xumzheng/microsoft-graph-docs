@@ -56,7 +56,7 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronizatio
 							{
 								new 
 								{
-									Source = new 
+									Source = new Source
 									{
 									},
 									TargetAttributeName = "userName",

@@ -15,7 +15,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"catalogEntry" , new 
+				"catalogEntry" , new CatalogEntry
 				{
 					OdataType = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
 					Id = "f341705b-0b15-4ce3-aaf2-6a1681d78606",

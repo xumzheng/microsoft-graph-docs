@@ -19,7 +19,7 @@ var requestBody = new Call
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"applicationInstance" , new 
+					"applicationInstance" , new ApplicationInstance
 					{
 						OdataType = "#microsoft.graph.identity",
 						DisplayName = "Calling Bot",
@@ -44,7 +44,7 @@ var requestBody = new Call
 				AdditionalData = new Dictionary<string, object>
 				{
 					{
-						"phone" , new 
+						"phone" , new Phone
 						{
 							OdataType = "#microsoft.graph.identity",
 							Id = "+12345678901",

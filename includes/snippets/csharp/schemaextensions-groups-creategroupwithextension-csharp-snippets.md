@@ -20,7 +20,7 @@ var requestBody = new Group
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"graphlearn_courses" , new 
+			"graphlearn_courses" , new Graphlearn_courses
 			{
 				CourseId = "123",
 				CourseName = "New Managers",

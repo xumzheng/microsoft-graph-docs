@@ -19,7 +19,7 @@ var requestBody = new Call
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"guest" , new 
+					"guest" , new Guest
 					{
 						OdataType = "#microsoft.graph.identity",
 						DisplayName = "Guest User",
@@ -68,10 +68,10 @@ var requestBody = new Call
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"organizer" , new 
+				"organizer" , new Organizer
 				{
 					OdataType = "#microsoft.graph.identitySet",
-					User = new 
+					User = new User
 					{
 						OdataType = "#microsoft.graph.identity",
 						Id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",

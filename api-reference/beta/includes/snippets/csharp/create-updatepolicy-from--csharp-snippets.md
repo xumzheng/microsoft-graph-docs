@@ -28,7 +28,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"contentFilter" , new 
+					"contentFilter" , new ContentFilter
 					{
 						OdataType = "#microsoft.graph.windowsUpdates.driverUpdateFilter",
 					}

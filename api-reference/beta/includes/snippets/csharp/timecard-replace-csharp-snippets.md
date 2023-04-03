@@ -23,11 +23,11 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.TimeCards.Item.Ti
 			"notes" , null
 		},
 		{
-			"clockInEvent" , new 
+			"clockInEvent" , new ClockInEvent
 			{
 				DateTime = "2021-05-21T21:58:41.327Z",
 				AtApprovedLocation = null,
-				Notes = new 
+				Notes = new Notes
 				{
 					ContentType = "text",
 					Content = "update sample notes",
@@ -35,11 +35,11 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.TimeCards.Item.Ti
 			}
 		},
 		{
-			"clockOutEvent" , new 
+			"clockOutEvent" , new ClockOutEvent
 			{
 				DateTime = "2021-05-21T22:01:46.205Z",
 				AtApprovedLocation = null,
-				Notes = new 
+				Notes = new Notes
 				{
 					ContentType = "text",
 					Content = "update sample notes",
@@ -53,21 +53,21 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.TimeCards.Item.Ti
 				{
 					BreakId = "BRK_138f4751-68b1-44c1-aca2-2b26cba9e73f",
 					Notes = null,
-					Start = new 
+					Start = new Start
 					{
 						DateTime = "2021-05-21T21:59:59.328Z",
 						AtApprovedLocation = null,
-						Notes = new 
+						Notes = new Notes
 						{
 							ContentType = "text",
 							Content = "update sample notes",
 						},
 					},
-					End = new 
+					End = new End
 					{
 						DateTime = "2021-05-21T22:01:10.205Z",
 						AtApprovedLocation = null,
-						Notes = new 
+						Notes = new Notes
 						{
 							ContentType = "text",
 							Content = "update sample notes",

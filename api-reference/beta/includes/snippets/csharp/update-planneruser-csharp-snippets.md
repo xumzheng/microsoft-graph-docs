@@ -13,7 +13,7 @@ var requestBody = new PlannerUser
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"jd8S5gOaFk2S8aWCIAJz42QAAxtD" , new 
+				"jd8S5gOaFk2S8aWCIAJz42QAAxtD" , new Jd8S5gOaFk2S8aWCIAJz42QAAxtD
 				{
 					OdataType = "#microsoft.graph.plannerFavoritePlanReference",
 					OrderHint = " !",
@@ -30,7 +30,7 @@ var requestBody = new PlannerUser
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"jd8S5gOaFk2S8aWCIAJz42QAAxtD" , new 
+				"jd8S5gOaFk2S8aWCIAJz42QAAxtD" , new Jd8S5gOaFk2S8aWCIAJz42QAAxtD
 				{
 					OdataType = "#microsoft.graph.plannerRecentPlanReference",
 					LastAccessedDateTime = "2018-01-02T22:49:46.155Z",

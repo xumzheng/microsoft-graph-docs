@@ -18,14 +18,14 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"scope" , new 
+				"scope" , new Scope
 				{
 					OdataType = "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
 					Rule = "(department eq 'Sales')",
 				}
 			},
 			{
-				"trigger" , new 
+				"trigger" , new Trigger
 				{
 					OdataType = "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
 					TimeBasedAttribute = "employeeHireDate",

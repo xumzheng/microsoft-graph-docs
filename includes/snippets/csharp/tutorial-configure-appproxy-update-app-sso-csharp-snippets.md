@@ -11,11 +11,11 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.Application
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"onPremisesPublishing" , new 
+			"onPremisesPublishing" , new OnPremisesPublishing
 			{
-				SingleSignOnSettings = new 
+				SingleSignOnSettings = new SingleSignOnSettings
 				{
-					KerberosSignOnSettings = new 
+					KerberosSignOnSettings = new KerberosSignOnSettings
 					{
 						KerberosServicePrincipalName = "HTTP/iwademo.contoso.com",
 						KerberosSignOnMappingAttributeType = "userPrincipalName",

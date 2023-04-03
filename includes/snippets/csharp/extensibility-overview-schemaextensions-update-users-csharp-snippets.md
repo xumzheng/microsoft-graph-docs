@@ -11,7 +11,7 @@ var requestBody = new User
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"extkmpdyld2_graphLearnCourses" , new 
+			"extkmpdyld2_graphLearnCourses" , new Extkmpdyld2_graphLearnCourses
 			{
 				CourseType = "Instructor-led",
 				CourseId = null,

@@ -11,7 +11,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Settings.RegionalAndLanguageSettin
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"defaultDisplayLanguage" , new 
+			"defaultDisplayLanguage" , new DefaultDisplayLanguage
 			{
 				Locale = "en-US",
 			}
@@ -30,25 +30,25 @@ var requestBody = new Microsoft.Graph.Beta.Me.Settings.RegionalAndLanguageSettin
 			}
 		},
 		{
-			"defaultTranslationLanguage" , new 
+			"defaultTranslationLanguage" , new DefaultTranslationLanguage
 			{
 				Locale = "en-US",
 			}
 		},
 		{
-			"defaultSpeechInputLanguage" , new 
+			"defaultSpeechInputLanguage" , new DefaultSpeechInputLanguage
 			{
 				Locale = "en-US",
 			}
 		},
 		{
-			"defaultRegionalFormat" , new 
+			"defaultRegionalFormat" , new DefaultRegionalFormat
 			{
 				Locale = "en-GB",
 			}
 		},
 		{
-			"regionalFormatOverrides" , new 
+			"regionalFormatOverrides" , new RegionalFormatOverrides
 			{
 				Calendar = "Gregorian Calendar",
 				FirstDayOfWeek = "Sunday",
@@ -60,7 +60,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Settings.RegionalAndLanguageSettin
 			}
 		},
 		{
-			"translationPreferences" , new 
+			"translationPreferences" , new TranslationPreferences
 			{
 				TranslationBehavior = "Yes",
 				LanguageOverrides = new List<>

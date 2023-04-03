@@ -16,7 +16,7 @@ var requestBody = new EducationAssignmentResource
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"file" , new 
+				"file" , new FileObject
 				{
 					Odataid = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RPHKSP6THE4ORD2RQAR6MQLF26G",
 				}

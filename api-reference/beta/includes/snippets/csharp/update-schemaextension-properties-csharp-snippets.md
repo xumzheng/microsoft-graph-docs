@@ -11,7 +11,7 @@ var requestBody = new User
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"ext55gb1l09_msLearnCourses" , new 
+			"ext55gb1l09_msLearnCourses" , new Ext55gb1l09_msLearnCourses
 			{
 				CourseType = "Admin",
 			}

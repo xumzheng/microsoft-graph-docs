@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participant
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"mediaInfo" , new 
+				"mediaInfo" , new MediaInfo
 				{
 					OdataType = "#microsoft.graph.mediaInfo",
 					Uri = "https://bot.contoso.com/onHold.wav",

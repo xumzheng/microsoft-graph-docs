@@ -49,10 +49,10 @@ var requestBody = new Call
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"organizer" , new 
+				"organizer" , new Organizer
 				{
 					OdataType = "#microsoft.graph.identitySet",
-					User = new 
+					User = new User
 					{
 						OdataType = "#microsoft.graph.identity",
 						Id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",

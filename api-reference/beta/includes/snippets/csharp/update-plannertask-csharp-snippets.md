@@ -13,7 +13,7 @@ var requestBody = new PlannerTask
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"fbab97d0-4932-4511-b675-204639209557" , new 
+				"fbab97d0-4932-4511-b675-204639209557" , new Fbab97d0-4932-4511-b675-204639209557
 				{
 					OdataType = "#microsoft.graph.plannerAssignment",
 					OrderHint = "N9917 U2883!",
@@ -31,6 +31,18 @@ var requestBody = new PlannerTask
 			{
 				"category4" , false
 			},
+		},
+	},
+	Recurrence = new PlannerTaskRecurrence
+	{
+		Schedule = new PlannerRecurrenceSchedule
+		{
+			Pattern = new RecurrencePattern
+			{
+				Type = RecurrencePatternType.Daily,
+				Interval = 3,
+			},
+			PatternStartDateTime = DateTimeOffset.Parse("2022-02-22T02:10:33Z"),
 		},
 	},
 };

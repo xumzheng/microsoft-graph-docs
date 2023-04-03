@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Teams.Item.Schedule.TimesOff.Item.TimesOff
 			"userId" , "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 		},
 		{
-			"sharedTimeOff" , new 
+			"sharedTimeOff" , new SharedTimeOff
 			{
 				TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
 				StartDateTime = "2019-03-11T07:00:00Z",
@@ -23,7 +23,7 @@ var requestBody = new Microsoft.Graph.Teams.Item.Schedule.TimesOff.Item.TimesOff
 			}
 		},
 		{
-			"draftTimeOff" , new 
+			"draftTimeOff" , new DraftTimeOff
 			{
 				TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
 				StartDateTime = "2019-03-11T07:00:00Z",

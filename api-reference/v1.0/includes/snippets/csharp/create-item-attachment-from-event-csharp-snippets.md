@@ -13,21 +13,21 @@ var requestBody = new Attachment
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"item" , new 
+			"item" , new Item
 			{
 				OdataType = "microsoft.graph.event",
 				Subject = "Discuss gifts for children",
-				Body = new 
+				Body = new Body
 				{
 					ContentType = "HTML",
 					Content = "Let's look for funding!",
 				},
-				Start = new 
+				Start = new Start
 				{
 					DateTime = "2016-12-02T18:00:00",
 					TimeZone = "Pacific Standard Time",
 				},
-				End = new 
+				End = new End
 				{
 					DateTime = "2016-12-02T19:00:00",
 					TimeZone = "Pacific Standard Time",

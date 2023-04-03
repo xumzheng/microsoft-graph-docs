@@ -28,7 +28,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryHoldPolicy
 				new 
 				{
 					OdataType = "microsoft.graph.security.siteSource",
-					Site = new 
+					Site = new Site
 					{
 						WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
 					},

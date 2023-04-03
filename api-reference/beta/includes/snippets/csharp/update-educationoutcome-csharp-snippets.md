@@ -17,7 +17,7 @@ var requestBody = new EducationOutcome
 				new 
 				{
 					QualityId = "9a145aa8-f3d9-43a1-8f77-5387ff0693f2",
-					Feedback = new 
+					Feedback = new Feedback
 					{
 						Content = "This is feedback specific to the first quality of the rubric.",
 						ContentType = "text",
@@ -26,7 +26,7 @@ var requestBody = new EducationOutcome
 				new 
 				{
 					QualityId = "d2331fb2-2761-402e-8de6-93e0afaa076e",
-					Feedback = new 
+					Feedback = new Feedback
 					{
 						Content = "This is feedback specific to the second quality of the rubric.",
 						ContentType = "text",

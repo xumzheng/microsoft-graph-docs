@@ -21,9 +21,9 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Settings.ShiftPreferences.
 			{
 				new 
 				{
-					Recurrence = new 
+					Recurrence = new Recurrence
 					{
-						Pattern = new 
+						Pattern = new Pattern
 						{
 							Type = "Weekly",
 							DaysOfWeek = new List<string>
@@ -34,7 +34,7 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Settings.ShiftPreferences.
 							},
 							Interval = 1,
 						},
-						Range = new 
+						Range = new RangeObject
 						{
 							Type = "noEnd",
 						},

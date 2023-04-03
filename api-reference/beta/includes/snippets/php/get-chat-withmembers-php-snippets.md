@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ChatRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ChatRequestBuilderGetQueryParameters();
+$queryParameters = ChatRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["members"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->get($requestConfiguration);
+$result = $graphServiceClient->chatsById('chat-id')->get($requestConfiguration);
 
 
 ```

@@ -11,7 +11,7 @@ var requestBody = new Device
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"extensionAttributes" , new 
+			"extensionAttributes" , new ExtensionAttributes
 			{
 				ExtensionAttribute1 = "BYOD-Device",
 			}

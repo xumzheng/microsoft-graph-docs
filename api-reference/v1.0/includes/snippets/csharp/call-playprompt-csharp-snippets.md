@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.PlayPrompt.PlayP
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"mediaInfo" , new 
+					"mediaInfo" , new MediaInfo
 					{
 						OdataType = "#microsoft.graph.mediaInfo",
 						Uri = "https://cdn.contoso.com/beep.wav",

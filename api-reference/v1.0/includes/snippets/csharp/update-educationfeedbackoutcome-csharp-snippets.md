@@ -12,9 +12,9 @@ var requestBody = new EducationOutcome
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"feedback" , new 
+			"feedback" , new Feedback
 			{
-				Text = new 
+				Text = new Text
 				{
 					Content = "This is feedback for the assignment as a whole.",
 					ContentType = "text",

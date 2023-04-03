@@ -12,7 +12,7 @@ var requestBody = new EducationOutcome
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"feedbackResource" , new 
+			"feedbackResource" , new FeedbackResource
 			{
 				OdataType = "#microsoft.graph.educationWordResource",
 				DisplayName = "Document1.docx",

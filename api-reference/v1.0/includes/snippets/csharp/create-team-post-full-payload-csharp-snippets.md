@@ -124,7 +124,7 @@ var requestBody = new Team
 			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 		},
 		{
-			"discoverySettings" , new 
+			"discoverySettings" , new DiscoverySettings
 			{
 				ShowInTeamsSearchAndSuggestions = true,
 			}

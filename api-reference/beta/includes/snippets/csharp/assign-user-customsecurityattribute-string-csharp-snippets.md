@@ -13,7 +13,7 @@ var requestBody = new User
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"Engineering" , new 
+				"Engineering" , new Engineering
 				{
 					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
 					ProjectDate = "2022-10-01",
