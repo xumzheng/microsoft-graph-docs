@@ -1,0 +1,73 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphServiceClient =  GraphServiceClient(requestAdapter);
+
+requestBody = Event();
+requestBody.setSubject('Let\'s go for lunch');
+
+body = ItemBody();
+body.setContentType(BodyType('html'));
+
+body.setContent('Does noon work for you?');
+
+
+requestBody.setBody($body);
+start = DateTimeTimeZone();
+start.setDateTime('2017-04-15T12:00:00');
+
+start.setTimeZone('Pacific Standard Time');
+
+
+requestBody.setStart($start);
+end = DateTimeTimeZone();
+end.setDateTime('2017-04-15T14:00:00');
+
+end.setTimeZone('Pacific Standard Time');
+
+
+requestBody.setEnd($end);
+location = Location();
+location.setDisplayName('Harry\'s Bar');
+
+
+requestBody.setLocation($location);
+attendeesAttendee1 = Attendee();
+attendeesAttendee1EmailAddress = EmailAddress();
+attendeesAttendee1EmailAddress.setAddress('samanthab@contoso.onmicrosoft.com');
+
+attendeesAttendee1EmailAddress.setName('Samantha Booth');
+
+
+attendeesAttendee1.setEmailAddress($attendeesAttendee1EmailAddress);
+attendeesAttendee1.setType(AttendeeType('required'));
+
+
+attendeesArray []= attendeesAttendee1;
+requestBody.setAttendees(attendeesArray);
+
+
+requestBody.setAllowNewTimeProposals(true);
+
+requestBody.setIsOnlineMeeting(true);
+
+requestBody.setOnlineMeetingProvider(OnlineMeetingProviderType('teamsforbusiness'));
+
+
+requestConfiguration = EventsRequestBuilderPostRequestConfiguration();
+
+headers = [
+'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+];
+
+requestConfiguration.headers = headers;
+
+
+requestResult = graphServiceClient.me().events().post(requestBody, requestConfiguration);
+
+
+```

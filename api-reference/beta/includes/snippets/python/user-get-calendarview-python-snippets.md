@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphServiceClient =  GraphServiceClient(requestAdapter);
+
+requestConfiguration = CalendarViewRequestBuilderGetRequestConfiguration();
+
+queryParameters = CalendarViewRequestBuilderGetQueryParameters();
+queryParameters.startDateTime = "2020-01-01T19:00:00-08:00";
+queryParameters.endDateTime = "2020-01-02T19:00:00-08:00";
+
+requestConfiguration.queryParameters = queryParameters;
+
+
+requestResult = graphServiceClient.me().calendarView().get(requestConfiguration);
+
+
+```

@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/users/{id}/manager/$ref
 [!INCLUDE [sample-code](../includes/snippets/php/remove-manager-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/remove-manager-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

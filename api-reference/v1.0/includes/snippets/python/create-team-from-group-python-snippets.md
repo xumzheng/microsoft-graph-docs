@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphServiceClient =  GraphServiceClient(requestAdapter);
+
+requestBody = Team();
+additionalData = [
+'template@odata.bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')', 
+'group@odata.bind' => 'https://graph.microsoft.com/v1.0/groups(\'71392b2f-1765-406e-86af-5907d9bdb2ab\')', 
+];
+requestBody.setAdditionalData(additionalData);
+
+
+
+
+requestResult = graphServiceClient.teams().post(requestBody);
+
+
+```

@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphServiceClient =  GraphServiceClient(requestAdapter);
+
+requestBody = IdentityProviderBase();
+requestBody.set@odatatype('#microsoft.graph.socialIdentityProvider');
+
+additionalData = [
+'clientSecret' => '1111111111111', 
+];
+requestBody.setAdditionalData(additionalData);
+
+
+
+
+requestResult = graphServiceClient.identity().identityProvidersById('identityProviderBase-id').patch(requestBody);
+
+
+```

@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphServiceClient =  GraphServiceClient(requestAdapter);
+
+requestBody = TranslateExchangeIdsPostRequestBody();
+requestBody.setInputIds(['{rest-formatted-id-1}', '{rest-formatted-id-2}', ]);
+
+requestBody.setSourceIdType(ExchangeIdFormat('restid'));
+
+requestBody.setTargetIdType(ExchangeIdFormat('restimmutableentryid'));
+
+
+
+requestResult = graphServiceClient.me().translateExchangeIds().post(requestBody);
+
+
+```

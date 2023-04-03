@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphServiceClient =  GraphServiceClient(requestAdapter);
+
+requestBody = User();
+passwordProfile = PasswordProfile();
+passwordProfile.setForceChangePasswordNextSignIn(false);
+
+passwordProfile.setPassword('xWwvJ]6NMw+bWH-d');
+
+
+requestBody.setPasswordProfile($passwordProfile);
+
+
+requestResult = graphServiceClient.usersById('user-id').patch(requestBody);
+
+
+```

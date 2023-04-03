@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-schemaextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-schemaextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
