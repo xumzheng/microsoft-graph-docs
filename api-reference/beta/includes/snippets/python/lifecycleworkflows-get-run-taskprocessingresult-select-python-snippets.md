@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+request_config = UserProcessingResultsRequestBuilderGetRequestConfiguration();
+
+query_params = UserProcessingResultsRequestBuilderGetQueryParameters();
+query_params.select = ["id","failedTasksCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","subject"];
+
+request_config.queryParameters = query_params;
+
+
+result = awaitclient.identityGovernance().lifecycleWorkflows().workflowsById('workflow-id').runsById('run-id').userProcessingResults().get(request_config);
+
+
+```

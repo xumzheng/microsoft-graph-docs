@@ -1,0 +1,37 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+requestBody = $valuePutRequestBody();
+additionalData = [
+'LocalizedStrings' => localizedStrings1 = ();
+		localizedStrings1.setElementType('UxElement');
+
+		localizedStrings1.setElementId(null);
+
+		localizedStrings1.setStringId('alert_message');
+
+		localizedStrings1.setOverride(true);
+
+		localizedStrings1.setValue('Are you sure that you want to cancel entering your information?');
+
+
+localizedStringsArray []= localizedStrings1;
+requestBody.setLocalizedStrings(localizedStringsArray);
+
+
+];
+requestBody.setAdditionalData(additionalData);
+
+
+
+
+awaitclient.identity().b2xUserFlowsById('b2xIdentityUserFlow-id').languagesById('userFlowLanguageConfiguration-id').overridesPagesById('userFlowLanguagePage-id').value().put(requestBody);
+
+
+```

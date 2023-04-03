@@ -104,6 +104,10 @@ Content-length: 190
 [!INCLUDE [sample-code](../includes/snippets/php/externalitemthisaddactivities-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/externalitemthisaddactivities-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

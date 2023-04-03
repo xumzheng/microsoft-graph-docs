@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/applications/{id}/tokenIssuancePolicies
 [!INCLUDE [sample-code](../includes/snippets/php/list-tokenissuancepolicies-on-application-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-tokenissuancepolicies-on-application-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

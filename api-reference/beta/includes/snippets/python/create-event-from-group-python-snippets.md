@@ -1,0 +1,59 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+requestBody = Event();
+requestBody.setSubject('Let\'s go for lunch');
+
+body = ItemBody();
+body.setContentType(BodyType('html'));
+
+body.setContent('Does late morning work for you?');
+
+
+requestBody.setBody($body);
+start = DateTimeTimeZone();
+start.setDateTime('2019-06-15T12:00:00');
+
+start.setTimeZone('Pacific Standard Time');
+
+
+requestBody.setStart($start);
+end = DateTimeTimeZone();
+end.setDateTime('2019-06-15T14:00:00');
+
+end.setTimeZone('Pacific Standard Time');
+
+
+requestBody.setEnd($end);
+location = Location();
+location.setDisplayName('Harry\'s Bar');
+
+
+requestBody.setLocation($location);
+attendeesAttendee1 = Attendee();
+attendeesAttendee1EmailAddress = EmailAddress();
+attendeesAttendee1EmailAddress.setAddress('adelev@contoso.onmicrosoft.com');
+
+attendeesAttendee1EmailAddress.setName('Adele Vance');
+
+
+attendeesAttendee1.setEmailAddress($attendeesAttendee1EmailAddress);
+attendeesAttendee1.setType(AttendeeType('required'));
+
+
+attendeesArray []= attendeesAttendee1;
+requestBody.setAttendees(attendeesArray);
+
+
+
+
+result = awaitclient.groupsById('group-id').events().post(requestBody);
+
+
+```

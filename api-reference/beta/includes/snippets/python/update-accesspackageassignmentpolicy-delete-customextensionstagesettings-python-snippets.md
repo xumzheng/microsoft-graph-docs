@@ -1,0 +1,52 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+requestBody = AccessPackageAssignmentPolicy();
+requestBody.setId('5540a08f-8ab5-43f6-a923-015275799197');
+
+requestBody.setDisplayName('policy with access package custom workflow extension');
+
+requestBody.setDescription('Run specified access package custom workflow extension at different stages.');
+
+requestBody.setAccessPackageId('ba5807c7-2aa9-4c8a-907e-4a17ee587500');
+
+requestBody.setRequestApprovalSettings(null);
+
+requestorSettings = RequestorSettings();
+requestorSettings.setAcceptRequests(true);
+
+requestorSettings.setScopeType('AllExistingDirectorySubjects');
+
+requestorSettings.setAllowedRequestors([]);
+
+
+requestBody.setRequestorSettings($requestorSettings);
+requestBody.setAccessReviewSettings(null);
+
+requestBody.setCustomExtensionHandlers([]);
+
+additionalData = [
+'expiration' => requestBody = Expiration();
+requestBody.setType('afterDuration');
+
+requestBody.setDuration('P365D');
+
+
+requestBody.setExpiration($expiration);
+
+];
+requestBody.setAdditionalData(additionalData);
+
+
+
+
+result = awaitclient.identityGovernance().entitlementManagement().accessPackageAssignmentPoliciesById('accessPackageAssignmentPolicy-id').put(requestBody);
+
+
+```

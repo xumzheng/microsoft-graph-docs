@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+requestBody = Set();
+requestBody.setDescription('mySet');
+
+
+
+result = awaitclient.sitesById('site-id').termStore().setsById('set-id').patch(requestBody);
+
+
+```

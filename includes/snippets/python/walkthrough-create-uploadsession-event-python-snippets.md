@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+requestBody = CreateUploadSessionPostRequestBody();
+attachmentItem = AttachmentItem();
+attachmentItem.setAttachmentType(AttachmentType('file'));
+
+attachmentItem.setName('flower');
+
+attachmentItem.setSize(3483322);
+
+
+requestBody.setAttachmentItem($attachmentItem);
+
+
+result = awaitclient.me().eventsById('event-id').attachments().createUploadSession().post(requestBody);
+
+
+```

@@ -1,0 +1,68 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+requestBody = EducationUser();
+requestBody.setDisplayName('Dion Matheson');
+
+requestBody.setGivenName('Dion');
+
+requestBody.setMiddleName(null);
+
+requestBody.setSurname('Matheson');
+
+requestBody.setMail('DionM@contoso.com');
+
+requestBody.setMobilePhone('+1 (253) 555-0101');
+
+createdBy = IdentitySet();
+createdByUser = Identity();
+createdByUser.setDisplayName('Susana Rocha');
+
+createdByUser.setId('14012');
+
+
+createdBy.setUser($createdByUser);
+
+requestBody.setCreatedBy($createdBy);
+requestBody.setExternalSource(EducationExternalSource('sis'));
+
+mailingAddress = PhysicalAddress();
+mailingAddress.setCity('Los Angeles');
+
+mailingAddress.setCountryOrRegion('United States');
+
+mailingAddress.setPostalCode('98055');
+
+mailingAddress.setState('CA');
+
+mailingAddress.setStreet('12345 Main St.');
+
+
+requestBody.setMailingAddress($mailingAddress);
+requestBody.setPrimaryRole(EducationUserRole('student'));
+
+residenceAddress = PhysicalAddress();
+residenceAddress.setCity('Los Angeles');
+
+residenceAddress.setCountryOrRegion('United States');
+
+residenceAddress.setPostalCode('98055');
+
+residenceAddress.setState('CA');
+
+residenceAddress.setStreet('12345 Main St.');
+
+
+requestBody.setResidenceAddress($residenceAddress);
+
+
+result = awaitclient.education().users().post(requestBody);
+
+
+```

@@ -1,0 +1,29 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+requestBody = MarkChatUnreadForUserPostRequestBody();
+user = TeamworkUserIdentity();
+user.setId('d864e79f-a516-4d0f-9fee-0eeb4d61fdc2');
+
+additionalData = [
+'tenantId' => '2a690434-97d9-4eed-83a6-f5f13600199a', 
+];
+user.setAdditionalData(additionalData);
+
+
+
+requestBody.setUser($user);
+requestBody.setLastMessageReadDateTime(DateTime('2021-05-27T22:13:01.577Z'));
+
+
+
+awaitclient.chatsById('chat-id').markChatUnreadForUser().post(requestBody);
+
+
+```

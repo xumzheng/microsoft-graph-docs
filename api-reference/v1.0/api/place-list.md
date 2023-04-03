@@ -127,6 +127,10 @@ GET https://graph.microsoft.com/v1.0/places/microsoft.graph.room
 [!INCLUDE [sample-code](../includes/snippets/php/get-all-rooms-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-all-rooms-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -252,6 +256,10 @@ GET https://graph.microsoft.com/v1.0/places/microsoft.graph.roomlist
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-all-roomlists-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-all-roomlists-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

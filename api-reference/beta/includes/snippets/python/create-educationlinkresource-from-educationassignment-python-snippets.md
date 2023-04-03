@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(requestAdapter);
+
+requestBody = EducationAssignmentResource();
+requestBody.setDistributeForStudentWork(false);
+
+resource = EducationResource();
+resource.setDisplayName('Where the Wonders of Learning Never Cease | Wonderopolis');
+
+resource.set@odatatype('#microsoft.graph.educationLinkResource');
+
+additionalData = [
+'link' => 'https://wonderopolis.org/', 
+'thumbnailPreviewUrl' => 		null,
+];
+resource.setAdditionalData(additionalData);
+
+
+
+requestBody.setResource($resource);
+
+
+result = awaitclient.education().classesById('educationClass-id').assignmentsById('educationAssignment-id').resources().post(requestBody);
+
+
+```
