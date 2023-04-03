@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new $refDeleteRequestBody();
 $additionalData = [
-'@odata.id' => 'https://graph.microsoft.com/v1.0/directoryObjects/{id}', 
+		'@odata.id' => 'https://graph.microsoft.com/v1.0/directoryObjects/{id}', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
