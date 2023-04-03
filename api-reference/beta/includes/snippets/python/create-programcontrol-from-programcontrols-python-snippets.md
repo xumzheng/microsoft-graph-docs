@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+requestBody = ProgramControl();
+requestBody.setControlId('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213');
+
+requestBody.setControlTypeId('6e4f3d20-c5c3-407f-9695-8460952bcc68');
+
+requestBody.setProgramId('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213');
+
+
+
+result = await client.programControls().post(requestBody);
+
+
+```

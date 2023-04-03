@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_
 [!INCLUDE [sample-code](../includes/snippets/php/schemaextensions-groups-get-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schemaextensions-groups-get-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -174,6 +178,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/schemaextensions-groups-createextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schemaextensions-groups-createextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -270,6 +278,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/schemaextensions-groups-creategroupwithextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schemaextensions-groups-creategroupwithextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -348,6 +360,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/schemaextensions-groups-updategroupwithextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schemaextensions-groups-updategroupwithextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -409,6 +425,10 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId 
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/schemaextensions-groups-getgroupselectextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schemaextensions-groups-getgroupselectextension-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

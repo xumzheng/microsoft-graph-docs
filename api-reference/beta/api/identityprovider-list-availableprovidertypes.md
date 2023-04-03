@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 [!INCLUDE [sample-code](../includes/snippets/php/identityprovider-availableprovidertypes-in-directory-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/identityprovider-availableprovidertypes-in-directory-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

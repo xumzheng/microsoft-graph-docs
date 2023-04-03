@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+requestBody = Subscription();
+requestBody.setChangeType('created');
+
+requestBody.setNotificationUrl('https://webhook.azurewebsites.net/api/send/myNotifyClient');
+
+requestBody.setResource('me/mailFolders(\'Inbox\')/messages');
+
+requestBody.setExpirationDateTime(DateTime('2016-11-20T18:23:45.9356913Z'));
+
+requestBody.setClientState('secretClientValue');
+
+requestBody.setLatestSupportedTlsVersion('v1_2');
+
+
+
+result = await client.subscriptions().post(requestBody);
+
+
+```

@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+requestBody = Place();
+requestBody.set@odatatype('microsoft.graph.room');
+
+additionalData = [
+'nickname' => 'Conf Room', 
+'building' => '1', 
+'label' => '100', 
+'capacity' => 50,
+'isWheelChairAccessible' => false,
+];
+requestBody.setAdditionalData(additionalData);
+
+
+
+
+result = await client.placesById('place-id').patch(requestBody);
+
+
+```

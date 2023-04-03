@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+requestBody = OutlookTaskFolder();
+requestBody.setName('Cooking');
+
+
+
+result = await client.me().outlook().taskGroupsById('outlookTaskGroup-id').taskFolders().post(requestBody);
+
+
+```

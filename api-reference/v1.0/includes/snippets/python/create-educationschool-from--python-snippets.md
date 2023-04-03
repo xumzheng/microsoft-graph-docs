@@ -1,0 +1,54 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+requestBody = EducationSchool();
+requestBody.set@odatatype('#microsoft.graph.educationSchool');
+
+requestBody.setDisplayName('String');
+
+requestBody.setDescription('String');
+
+requestBody.setExternalSource(EducationExternalSource('string'));
+
+requestBody.setExternalSourceDetail('String');
+
+requestBody.setPrincipalEmail('String');
+
+requestBody.setPrincipalName('String');
+
+requestBody.setExternalPrincipalId('String');
+
+requestBody.setLowestGrade('String');
+
+requestBody.setHighestGrade('String');
+
+requestBody.setSchoolNumber('String');
+
+requestBody.setExternalId('String');
+
+requestBody.setPhone('String');
+
+requestBody.setFax('String');
+
+createdBy = IdentitySet();
+createdBy.set@odatatype('microsoft.graph.identitySet');
+
+
+requestBody.setCreatedBy($createdBy);
+address = PhysicalAddress();
+address.set@odatatype('microsoft.graph.physicalAddress');
+
+
+requestBody.setAddress($address);
+
+
+result = await client.education().schools().post(requestBody);
+
+
+```
