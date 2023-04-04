@@ -30,8 +30,7 @@ The following is a JSON representation of the resource.
 -->
 
 ``` json
-{ 
-  "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication", 
-  "resourceId": "String" 
- } 
+{
+  "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+}
 ```
