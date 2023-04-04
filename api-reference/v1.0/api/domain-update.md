@@ -1,6 +1,6 @@
 ---
 title: "Update domain"
-description: "Update the properties of domain object."
+description: "Update the properties of a domain object."
 author: "adimitui"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of domain object.
+Update the properties of a domain object.
 
 > **Important:**
 > Only verified domains can be updated.
@@ -41,7 +41,7 @@ The work or school account needs to belong to one of the following roles:
 PATCH /domains/{id}
 ```
 
-> For {id}, specify the domain with its fully qualified domain name.
+> **Note:** For {id}, specify the domain with its fully qualified domain name.
 
 ## Request headers
 
@@ -58,8 +58,8 @@ In the request body, supply the values for relevant fields to be updated. Existi
 
 If successful, this method returns a `204 No Content` response code and no response body.
 
-## Example
-##### Request
+## Examples
+### Request
 
 
 # [HTTP](#tab/http)
@@ -80,8 +80,8 @@ Content-type: application/json
   ]
 }
 ```
-> **Important:**
-> Domain authentication type must be ‘Managed’ to be set as default domain.
+> [!Important]
+> The domain authentication type must be `Managed` to be set as the default.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-domain-csharp-snippets.md)]
@@ -109,7 +109,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response"
