@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+request_body = UpdateAudienceByIdPostRequestBody();
+request_body.setMemberEntityType('String');
+
+request_body.setAddMembers(['String', ]);
+
+request_body.setRemoveMembers(['String', ]);
+
+request_body.setAddExclusions(['String', ]);
+
+request_body.setRemoveExclusions(['String', ]);
+
+
+
+await client.admin().windows().updates().deploymentsById('deployment-id').audience().windowsUpdatesUpdateAudienceById().post(request_body);
+
+
+```

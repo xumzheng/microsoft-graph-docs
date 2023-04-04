@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/137273
 [!INCLUDE [sample-code](../includes/snippets/php/get-learningprovider-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-learningprovider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -78,12 +78,12 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/c2b6c2b9-dddc
 [!INCLUDE [sample-code](../includes/snippets/go/get-riskyuser-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-riskyuser-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-riskyuser-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-riskyuser-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

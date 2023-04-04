@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocation
 [!INCLUDE [sample-code](../includes/snippets/php/delete-namedlocation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-namedlocation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

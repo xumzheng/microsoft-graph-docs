@@ -135,8 +135,11 @@ Content-length: 631
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-workflowthiscreatenewversion-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-workflowthiscreatenewversion-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -283,6 +286,10 @@ Content-length: 631
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-workflowthiscreatenewversion-customemail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-workflowthiscreatenewversion-customemail-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
