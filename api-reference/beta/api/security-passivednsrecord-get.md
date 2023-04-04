@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/passiveDnsRecor
 [!INCLUDE [sample-code](../includes/snippets/php/get-passivedns-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-passivedns-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

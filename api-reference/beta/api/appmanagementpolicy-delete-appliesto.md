@@ -92,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/remove-appliesto-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/remove-appliesto-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -149,8 +153,11 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPoli
 [!INCLUDE [sample-code](../includes/snippets/php/remove-appliesto-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/remove-appliesto-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

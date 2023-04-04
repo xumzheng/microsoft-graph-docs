@@ -1,0 +1,56 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+request_body = TrustFrameworkKeySet();
+request_body.setId('keyset1');
+
+keysTrustFrameworkKey1 = TrustFrameworkKey();
+keysTrustFrameworkKey1.setK('k-value');
+
+keysTrustFrameworkKey1.setX5c(['x5c-value', ]);
+
+keysTrustFrameworkKey1.setX5t('x5t-value');
+
+keysTrustFrameworkKey1.setKty('kty-value');
+
+keysTrustFrameworkKey1.setUse('use-value');
+
+keysTrustFrameworkKey1.setExp(99);
+
+keysTrustFrameworkKey1.setNbf(99);
+
+keysTrustFrameworkKey1.setKid('kid-value');
+
+keysTrustFrameworkKey1.setE('e-value');
+
+keysTrustFrameworkKey1.setN('n-value');
+
+keysTrustFrameworkKey1.setD('d-value');
+
+keysTrustFrameworkKey1.setP('p-value');
+
+keysTrustFrameworkKey1.setQ('q-value');
+
+keysTrustFrameworkKey1.setDp('dp-value');
+
+keysTrustFrameworkKey1.setDq('dq-value');
+
+keysTrustFrameworkKey1.setQi('qi-value');
+
+
+keysArray []= keysTrustFrameworkKey1;
+request_body.setKeys(keysArray);
+
+
+
+
+result = await client.trustFramework.keySets.post(request_body);
+
+
+```

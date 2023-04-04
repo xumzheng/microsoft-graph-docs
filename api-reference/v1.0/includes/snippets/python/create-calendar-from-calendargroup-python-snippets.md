@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+request_body = Calendar();
+request_body.setName('Marketing calendar');
+
+
+
+result = await client.me.calendarGroupsById('calendarGroup-id').calendars.post(request_body);
+
+
+```

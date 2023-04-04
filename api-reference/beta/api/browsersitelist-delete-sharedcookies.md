@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 [!INCLUDE [sample-code](../includes/snippets/php/delete-browsersharedcookie-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-browsersharedcookie-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -131,6 +135,10 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-browsersharedcookie-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-browsersharedcookie-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

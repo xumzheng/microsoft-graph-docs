@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 [!INCLUDE [sample-code](../includes/snippets/php/remove-user-from-rejectedsenderslist-of-group-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/remove-user-from-rejectedsenderslist-of-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -132,6 +136,10 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/remove-group-from-rejectedsenderslist-of-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/remove-group-from-rejectedsenderslist-of-group-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
