@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/planner/tasks/delta
 [!INCLUDE [sample-code](../includes/snippets/php/plannertaskthisdelta-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/plannertaskthisdelta-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -259,6 +263,10 @@ GET https://graph.microsoft.com/beta/me/planner/tasks/delta
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/plannertaskthisdelta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/plannertaskthisdelta-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

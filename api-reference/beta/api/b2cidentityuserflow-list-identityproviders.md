@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProvider
 [!INCLUDE [sample-code](../includes/snippets/php/get-b2cuserflow-list-identityproviders-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-b2cuserflow-list-identityproviders-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

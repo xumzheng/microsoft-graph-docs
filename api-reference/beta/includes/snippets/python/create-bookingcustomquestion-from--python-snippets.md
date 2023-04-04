@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter);
+
+request_body = CustomQuestion()
+additionalData = [
+'@odata.type' => '#microsoft.graph.bookingCustomQuestion', 
+'displayName' => 'What is your age?', 
+'answerInputType' => 'text', 
+'answerOptions' => [],
+];
+request_body.setAdditionalData(additionalData)
+
+
+
+
+await client.bookingBusinessesById('bookingBusiness-id').customQuestionsById('bookingCustomQuestion-id').post(request_body)
+
+
+```

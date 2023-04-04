@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 [!INCLUDE [sample-code](../includes/snippets/php/get-assignments-forrole-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-assignments-forrole-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
