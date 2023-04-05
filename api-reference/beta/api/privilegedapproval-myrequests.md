@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 [!INCLUDE [sample-code](../includes/snippets/php/privilegedapproval-myrequests-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/privilegedapproval-myrequests-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

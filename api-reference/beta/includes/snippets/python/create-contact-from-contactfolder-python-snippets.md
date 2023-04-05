@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = Contact()
+request_body.setParentFolderId('parentFolderId-value')
+
+request_body.setBirthday(DateTime('2016-10-19T10:37:00Z'))
+
+request_body.setFileAs('fileAs-value')
+
+request_body.setDisplayName('displayName-value')
+
+request_body.setGivenName('givenName-value')
+
+request_body.setInitials('initials-value')
+
+
+
+result = await client.me.contactFoldersby_id('contactFolder-id').contacts.post(request_body)
+
+
+```
