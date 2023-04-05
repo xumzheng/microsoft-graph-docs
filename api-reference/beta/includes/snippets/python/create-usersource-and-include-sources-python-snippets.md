@@ -1,0 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = UserSource()
+request_body.setEmail('admin@M365x809305.onmicrosoft.com')
+
+request_body.setIncludedSources(SourceType('mailbox, site'))
+
+
+
+result = await client.security.cases.ediscoveryCasesby_id('ediscoveryCase-id').legalHoldsby_id('ediscoveryHoldPolicy-id').userSources.post(request_body)
+
+
+```

@@ -143,6 +143,10 @@ GET https://graph.microsoft.com/v1.0/users/$count
 [!INCLUDE [sample-code](../includes/snippets/php/get-users-count-missing-advancedqueryparams-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-users-count-missing-advancedqueryparams-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- {
@@ -200,6 +204,10 @@ GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 [!INCLUDE [sample-code](../includes/snippets/php/get-applications-missing-advancedqueryparams-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applications-missing-advancedqueryparams-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ```json
@@ -250,6 +258,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-users-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-users-missing-advancedqueryparams-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -305,6 +317,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/php/get-groups-missing-advancedqueryparams-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-groups-missing-advancedqueryparams-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ```json
@@ -357,6 +373,10 @@ GET https://graph.microsoft.com/v1.0/users?$count=true
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-users-silent-fail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-users-silent-fail-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
