@@ -89,12 +89,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
