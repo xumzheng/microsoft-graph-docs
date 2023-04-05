@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = SynchronizationJob()
+request_body.setTemplateId('BoxOutDelta')
+
+
+
+result = await client.servicePrincipalsById('servicePrincipal-id').synchronization.jobs.post(request_body)
+
+
+```
