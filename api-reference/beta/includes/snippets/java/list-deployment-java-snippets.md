@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-DeploymentAudienceCollectionPage deploymentAudiences = graphClient.admin().windows().updates().deploymentAudiences()
+DeploymentCollectionPage deployments = graphClient.admin().windows().updates().deployments()
 	.buildRequest()
 	.get();
 

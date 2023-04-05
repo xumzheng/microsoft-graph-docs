@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = TeamsAppsRequestBuilderGetRequestConfiguration(
+query_params = TeamsAppsRequestBuilderGetQueryParameters()
+query_params.expand = ["appDefinitions($expand=bot)"]
+query_params.filter = "appDefinitions/any"
+
+)
+
+
+result = await client.appCatalogs.teamsApps.get(request_config)
+
+
+```

@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = UsersRequestBuilderGetRequestConfiguration(
+query_params = UsersRequestBuilderGetQueryParameters()
+query_params.select = ["displayName","id"]
+query_params.filter = "identities/any"
+
+)
+
+
+result = await client.users.get(request_config)
+
+
+```

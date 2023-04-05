@@ -1,0 +1,27 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = DevicesRequestBuilderGetRequestConfiguration(
+query_params = DevicesRequestBuilderGetQueryParameters()
+query_params.filter = "startswith(displayName,%20'a')"
+query_params.count = true
+query_params.top = 1
+query_params.orderby = ["displayName"]
+
+headers = [
+'ConsistencyLevel' => 'eventual',
+]
+
+)
+
+
+result = await client.devices.get(request_config)
+
+
+```
