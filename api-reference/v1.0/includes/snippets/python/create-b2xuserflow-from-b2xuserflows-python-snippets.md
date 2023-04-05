@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = B2xIdentityUserFlow()
+request_body.setId('Partner')
+
+request_body.setUserFlowType(UserFlowType('signuporsignin'))
+
+request_body.setUserFlowTypeVersion(1)
+
+
+
+result = await client.identity_b2xUserFlows.post(request_body)
+
+
+```

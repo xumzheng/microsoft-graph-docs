@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = FilesRequestBuilderGetRequestConfiguration()
+
+query_params = FilesRequestBuilderGetQueryParameters()
+query_params.top = 5
+
+request_config.queryParameters = query_params
+
+
+result = await client.security_cases_ediscoveryCasesby_id('ediscoveryCase-id')_reviewSetsby_id('ediscoveryReviewSet-id')_files.get(request_config)
+
+
+```

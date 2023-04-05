@@ -1,0 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+result = await client.teamwork_deletedTeamsby_id('deletedTeam-id')_channels_getAllMessages.get()
+
+
+```

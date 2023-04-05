@@ -1,0 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = AccessReviewInstanceDecisionItem()
+request_body.setDecision('Approve')
+
+request_body.setJustification('This person is still on my team')
+
+
+
+result = await client.identityGovernance_accessReviews_definitionsby_id('accessReviewScheduleDefinition-id')_instancesby_id('accessReviewInstance-id')_stagesby_id('accessReviewStage-id')_decisionsby_id('accessReviewInstanceDecisionItem-id').patch(request_body)
+
+
+```

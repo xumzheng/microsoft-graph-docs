@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = EmailThreatSubmissionPolicy()
+request_body.setIsReportToMicrosoftEnabled(false)
+
+
+
+result = await client.security_threatSubmission_emailThreatSubmissionPoliciesby_id('emailThreatSubmissionPolicy-id').patch(request_body)
+
+
+```

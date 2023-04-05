@@ -1,0 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+await client.solutions_businessScenariosby_id('businessScenario-id')_planner_tasksby_id('businessScenarioTask-id').delete()
+
+
+```

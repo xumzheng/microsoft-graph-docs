@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = CancelPostRequestBody()
+request_body.setCancellationMessage('Your appointment has been successfully cancelled. Please call us again.')
+
+
+
+await client.solutions_bookingBusinessesby_id('bookingBusiness-id')_appointmentsby_id('bookingAppointment-id')_cancel.post(request_body)
+
+
+```

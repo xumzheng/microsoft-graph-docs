@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = AuthenticationMethodConfiguration()
+request_body.set@odatatype('#microsoft.graph.emailAuthenticationMethodConfiguration')
+
+additionalData = [
+'allowExternalIdToUseEmailOtp' => 'enabled', 
+];
+request_body.setAdditionalData(additionalData)
+
+
+
+
+result = await client.policies_authenticationMethodsPolicy_authenticationMethodConfigurationsby_id('authenticationMethodConfiguration-id').patch(request_body)
+
+
+```

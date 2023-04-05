@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = SubmissionsRequestBuilderGetRequestConfiguration()
+
+query_params = SubmissionsRequestBuilderGetQueryParameters()
+query_params.expand = ["outcomes"]
+
+request_config.queryParameters = query_params
+
+
+result = await client.education_classesby_id('educationClass-id')_assignmentsby_id('educationAssignment-id')_submissions.get(request_config)
+
+
+```
