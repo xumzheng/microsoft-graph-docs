@@ -1,0 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+await client.identityGovernance.entitlementManagement.connectedOrganizations._by_id('connectedOrganization-id').internalSponsors._by_id('directoryObject-id').ref.delete()
+
+
+```

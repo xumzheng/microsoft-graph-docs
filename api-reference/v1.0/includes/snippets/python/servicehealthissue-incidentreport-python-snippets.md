@@ -1,0 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+await client.admin.serviceAnnouncement.issues._by_id('serviceHealthIssue-id').incidentReport.get()
+
+
+```

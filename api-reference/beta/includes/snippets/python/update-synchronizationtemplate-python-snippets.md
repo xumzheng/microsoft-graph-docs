@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = Template()
+additionalData = [
+'id' => 'Slack', 
+'applicationId' => '{id}', 
+'factoryTag' => 'CustomSCIM', 
+];
+request_body.setAdditionalData(additionalData)
+
+
+
+request_config = SynchronizationTemplateRequestBuilderPutRequestConfiguration()
+
+headers = [
+	'Authorization' => 'Bearer <token>',
+]
+
+request_config.headers = headers
+
+
+await client.applications._by_id('application-id').synchronization.templates._by_id('synchronizationTemplate-id').put(request_body, request_config)
+
+
+```

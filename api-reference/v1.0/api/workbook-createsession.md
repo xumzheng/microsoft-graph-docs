@@ -141,11 +141,11 @@ Content-type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-workbook-session-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-excel-session-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-workbook-session-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

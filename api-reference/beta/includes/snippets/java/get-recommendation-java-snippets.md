@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Recommendation recommendation = graphClient.directory().recommendations("0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA")
+RecommendationCollectionPage recommendations = graphClient.directory().recommendations()
 	.buildRequest()
+	.filter("recommendationType eq 'turnOffPerUserMFA'")
 	.get();
 
 ```

@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter/016b
 [!INCLUDE [sample-code](../includes/snippets/php/get-printusagebyprinter-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-printusagebyprinter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
