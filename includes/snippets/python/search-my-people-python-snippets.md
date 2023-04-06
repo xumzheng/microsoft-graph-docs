@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = PeopleRequestBuilderGetRequestConfiguration(
+request_config = PeopleRequestBuilderGetRequestConfiguration(query_params=query_params = PeopleRequestBuilderGetQueryParameters()
+query_params.search = "\"Irene McGowen\""
+
+)
+query_params = PeopleRequestBuilderGetQueryParameters()
+query_params.search = "\"Irene McGowen\""
+
+)
+
+
+result = await client.me.people.get(request_config, headers=request_config)
+
+
+```

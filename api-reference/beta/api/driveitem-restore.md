@@ -83,11 +83,11 @@ Content-type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restore-item-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/restore-item-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
