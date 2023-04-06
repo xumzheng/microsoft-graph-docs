@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = AttachmentsRequestBuilderGetRequestConfiguration(
+request_config = AttachmentsRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.me.events_by_id('event-id').attachments.get(, headers=)
+
+
+```

@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = TermRequestBuilderGetRequestConfiguration(
+request_config = TermRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.sites_by_id('site-id').termStore.groups_by_id('group-id').sets_by_id('set-id').terms_by_id('term-id').get(, headers=)
+
+
+```

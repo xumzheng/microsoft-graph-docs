@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = ReprovisionRequestBuilderPostRequestConfiguration(
+request_config = ReprovisionRequestBuilderPostRequestConfiguration(query_params=)
+
+
+await client.me.cloudPCs_by_id('cloudPC-id').reprovision.post(, headers=)
+
+
+```

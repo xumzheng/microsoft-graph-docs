@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = IndustryDataConnectorRequestBuilderDeleteRequestConfiguration(
+request_config = IndustryDataConnectorRequestBuilderDeleteRequestConfiguration(query_params=)
+
+
+await client.external.industryData.dataConnectors_by_id('industryDataConnector-id').delete(, headers=)
+
+
+```

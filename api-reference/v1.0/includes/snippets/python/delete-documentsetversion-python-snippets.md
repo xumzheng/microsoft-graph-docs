@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = DocumentSetVersionRequestBuilderDeleteRequestConfiguration(
+request_config = DocumentSetVersionRequestBuilderDeleteRequestConfiguration(query_params=)
+
+
+await client.sites_by_id('site-id').lists_by_id('list-id').items_by_id('listItem-id').documentSetVersions_by_id('documentSetVersion-id').delete(, headers=)
+
+
+```

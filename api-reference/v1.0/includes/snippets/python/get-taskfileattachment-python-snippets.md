@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = AttachmentBaseRequestBuilderGetRequestConfiguration(
+request_config = AttachmentBaseRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.me.todo.lists_by_id('todoTaskList-id').tasks_by_id('todoTask-id').attachments_by_id('attachmentBase-id').get(, headers=)
+
+
+```

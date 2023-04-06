@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = PublishedResource()
+request_body.setDisplayName('Demo provisioning (updated)')
+
+
+request_config = PublishedResourceRequestBuilderPatchRequestConfiguration(
+request_config = PublishedResourceRequestBuilderPatchRequestConfiguration(query_params=)
+
+
+result = await client.onPremisesPublishingProfiles_by_id('onPremisesPublishingProfile-id').publishedResources_by_id('publishedResource-id').patch(request_body, headers=)
+
+
+```

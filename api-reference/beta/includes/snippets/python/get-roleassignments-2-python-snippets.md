@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = RoleAssignmentsRequestBuilderGetRequestConfiguration(
+request_config = RoleAssignmentsRequestBuilderGetRequestConfiguration(query_params=params['filter'] = " principalId eq 'f1847572-48aa-47aa-96a3-2ec61904f41f'"
+)
+
+
+result = await client.roleManagement.directory.roleAssignments.get(request_config, headers=request_config)
+
+
+```

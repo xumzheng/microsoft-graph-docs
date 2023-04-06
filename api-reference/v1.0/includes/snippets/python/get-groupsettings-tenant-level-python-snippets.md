@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = GroupSettingsRequestBuilderGetRequestConfiguration(
+request_config = GroupSettingsRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.groupSettings.get(, headers=)
+
+
+```

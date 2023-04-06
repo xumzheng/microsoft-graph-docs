@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = FileThreatSubmissionRequestBuilderGetRequestConfiguration(
+request_config = FileThreatSubmissionRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.security.threatSubmission.fileThreats_by_id('fileThreatSubmission-id').get(, headers=)
+
+
+```

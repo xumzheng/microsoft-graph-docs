@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = WorkforceIntegrationRequestBuilderDeleteRequestConfiguration(
+request_config = WorkforceIntegrationRequestBuilderDeleteRequestConfiguration(query_params=)
+
+
+await client.teamwork.workforceIntegrations_by_id('workforceIntegration-id').delete(, headers=)
+
+
+```

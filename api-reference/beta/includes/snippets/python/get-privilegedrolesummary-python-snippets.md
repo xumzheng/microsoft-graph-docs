@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = SummaryRequestBuilderGetRequestConfiguration(
+request_config = SummaryRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.privilegedRoles_by_id('privilegedRole-id').summary.get(, headers=)
+
+
+```

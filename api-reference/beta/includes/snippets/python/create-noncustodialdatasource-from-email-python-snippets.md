@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = NoncustodialDataSource()
+request_body.setApplyHoldToSource(true)
+
+dataSource = DataSource()
+dataSource.set@odatatype('microsoft.graph.ediscovery.userSource')
+
+additionalData = [
+'email' => 'adelev@contoso.com', 
+];
+dataSource.setAdditionalData(additionalData)
+
+
+
+request_body.setDataSource($dataSource)
+
+request_config = NoncustodialDataSourcesRequestBuilderPostRequestConfiguration(
+request_config = NoncustodialDataSourcesRequestBuilderPostRequestConfiguration(query_params=)
+
+
+result = await client.compliance.ediscovery.cases_by_id('case-id').noncustodialDataSources.post(request_body, headers=)
+
+
+```

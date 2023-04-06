@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = ConnectedOrganizationRequestBuilderDeleteRequestConfiguration(
+request_config = ConnectedOrganizationRequestBuilderDeleteRequestConfiguration(query_params=)
+
+
+await client.identityGovernance.entitlementManagement.connectedOrganizations_by_id('connectedOrganization-id').delete(, headers=)
+
+
+```

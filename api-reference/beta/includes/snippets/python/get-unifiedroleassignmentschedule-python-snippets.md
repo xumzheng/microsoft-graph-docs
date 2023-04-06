@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = UnifiedRoleAssignmentScheduleRequestBuilderGetRequestConfiguration(
+request_config = UnifiedRoleAssignmentScheduleRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.roleManagement.directory.roleAssignmentSchedules_by_id('unifiedRoleAssignmentSchedule-id').get(, headers=)
+
+
+```

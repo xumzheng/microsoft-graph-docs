@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = SetUserPreferredPresencePostRequestBody()
+request_body.setAvailability('DoNotDisturb')
+
+request_body.setActivity('DoNotDisturb')
+
+$request_body.setExpirationDuration( \DateInterval('PT8H'))
+
+
+request_config = SetUserPreferredPresenceRequestBuilderPostRequestConfiguration(
+request_config = SetUserPreferredPresenceRequestBuilderPostRequestConfiguration(query_params=)
+
+
+await client.users_by_id('user-id').presence.setUserPreferredPresence.post(request_body, headers=)
+
+
+```

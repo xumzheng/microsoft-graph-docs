@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = User()
+passwordProfile = PasswordProfile()
+passwordProfile.setForceChangePasswordNextSignIn(false)
+
+passwordProfile.setPassword('xWwvJ]6NMw+bWH-d')
+
+
+request_body.setPasswordProfile($passwordProfile)
+
+request_config = UserRequestBuilderPatchRequestConfiguration(
+request_config = UserRequestBuilderPatchRequestConfiguration(query_params=)
+
+
+result = await client.users_by_id('user-id').patch(request_body, headers=)
+
+
+```

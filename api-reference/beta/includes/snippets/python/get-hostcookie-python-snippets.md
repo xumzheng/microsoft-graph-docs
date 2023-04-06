@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = HostCookieRequestBuilderGetRequestConfiguration(
+request_config = HostCookieRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.security.threatIntelligence.hostCookies_by_id('hostCookie-id').get(, headers=)
+
+
+```

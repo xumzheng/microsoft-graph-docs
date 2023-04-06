@@ -1,0 +1,27 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = ConditionalAccessPolicy()
+conditions = ConditionalAccessConditionSet()
+conditions.setSignInRiskLevels([conditions.setRiskLevel(RiskLevel('high'))
+conditions.setRiskLevel(RiskLevel('medium'))
+conditions.setRiskLevel(RiskLevel('low'))
+])
+
+
+request_body.setConditions($conditions)
+
+request_config = ConditionalAccessPolicyRequestBuilderPatchRequestConfiguration(
+request_config = ConditionalAccessPolicyRequestBuilderPatchRequestConfiguration(query_params=)
+
+
+result = await client.identity.conditionalAccess.policies_by_id('conditionalAccessPolicy-id').patch(request_body, headers=)
+
+
+```

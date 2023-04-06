@@ -1,0 +1,31 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = BrowserSite()
+request_body.setWebUrl('www.microsoft.com')
+
+request_body.setTargetEnvironment(BrowserSiteTargetEnvironment('microsoftedge'))
+
+request_body.setMergeType(BrowserSiteMergeType('default'))
+
+request_body.setCompatibilityMode(BrowserSiteCompatibilityMode('default'))
+
+request_body.setAllowRedirect(false)
+
+request_body.setComment('Updating to Edge.')
+
+
+request_config = BrowserSiteRequestBuilderPatchRequestConfiguration(
+request_config = BrowserSiteRequestBuilderPatchRequestConfiguration(query_params=)
+
+
+result = await client.admin.edge.internetExplorerMode.siteLists_by_id('browserSiteList-id').sites_by_id('browserSite-id').patch(request_body, headers=)
+
+
+```

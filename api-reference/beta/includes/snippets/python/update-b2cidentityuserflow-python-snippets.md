@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = B2cIdentityUserFlow()
+request_body.setIsLanguageCustomizationEnabled(true)
+
+request_body.setDefaultLanguageTag('en')
+
+
+request_config = B2cIdentityUserFlowRequestBuilderPatchRequestConfiguration(
+request_config = B2cIdentityUserFlowRequestBuilderPatchRequestConfiguration(query_params=)
+
+
+result = await client.identity.b2cUserFlows_by_id('b2cIdentityUserFlow-id').patch(request_body, headers=)
+
+
+```

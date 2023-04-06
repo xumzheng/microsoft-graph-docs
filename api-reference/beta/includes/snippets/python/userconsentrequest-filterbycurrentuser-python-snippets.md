@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = UserConsentRequestRequestBuilderGetRequestConfiguration(
+request_config = UserConsentRequestRequestBuilderGetRequestConfiguration(query_params=params['filter'] = " "
+)
+
+
+result = await client.identityGovernance.appConsent.appConsentRequests_by_id('appConsentRequest-id').userConsentRequests_by_id('userConsentRequest-id').get(request_config, headers=request_config)
+
+
+```

@@ -1,0 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration(
+request_config = AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration(query_params=params['select'] = ["displayName","accountEnabled","servicePrincipalType","signInAudience"]
+)
+headers['ConsistencyLevel'] = "eventual"
+
+
+result = await client.me.appRoleAssignedResources.get(request_config, headers=request_config)
+
+
+```

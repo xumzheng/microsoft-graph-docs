@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = LanguageProficiencyRequestBuilderGetRequestConfiguration(
+request_config = LanguageProficiencyRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.me.profile.languages_by_id('languageProficiency-id').get(, headers=)
+
+
+```

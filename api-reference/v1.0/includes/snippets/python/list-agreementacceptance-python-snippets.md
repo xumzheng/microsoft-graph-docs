@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = AcceptancesRequestBuilderGetRequestConfiguration(
+request_config = AcceptancesRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.identityGovernance.termsOfUse.agreements_by_id('agreement-id').acceptances.get(, headers=)
+
+
+```

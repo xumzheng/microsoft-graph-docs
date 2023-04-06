@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = UnenrollAssetsByIdPostRequestBody()
+request_body.setUpdateCategory(UpdateCategory('feature'))
+
+request_body.setMemberEntityType('#microsoft.graph.windowsUpdates.azureADDevice')
+
+request_body.setIds(['String', 'String', 'String', ])
+
+
+request_config = UnenrollAssetsByIdRequestBuilderPostRequestConfiguration(
+request_config = UnenrollAssetsByIdRequestBuilderPostRequestConfiguration(query_params=)
+
+
+await client.admin.windows.updates.updatableAssets.windowsUpdatesunenrollAssetsById.post(request_body, headers=)
+
+
+```

@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = SourceCollectionRequestBuilderGetRequestConfiguration(
+request_config = SourceCollectionRequestBuilderGetRequestConfiguration(query_params=params['expand'] = ["addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"]
+)
+
+
+result = await client.compliance.ediscovery.cases_by_id('case-id').sourceCollections_by_id('sourceCollection-id').get(request_config, headers=request_config)
+
+
+```

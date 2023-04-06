@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = OpenShiftRequestBuilderGetRequestConfiguration(
+request_config = OpenShiftRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.teams_by_id('team-id').schedule.openShifts_by_id('openShift-id').get(, headers=)
+
+
+```

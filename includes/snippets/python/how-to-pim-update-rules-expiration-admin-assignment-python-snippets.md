@@ -1,0 +1,46 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = UnifiedRoleManagementPolicyRule()
+request_body.set@odatatype('#microsoft.graph.unifiedRoleManagementPolicyExpirationRule')
+
+request_body.setId('Expiration_Admin_Assignment')
+
+target = UnifiedRoleManagementPolicyRuleTarget()
+target.set@odatatype('microsoft.graph.unifiedRoleManagementPolicyRuleTarget')
+
+target.setCaller('Admin')
+
+target.setOperations([target.setUnifiedRoleManagementPolicyRuleTargetOperations(UnifiedRoleManagementPolicyRuleTargetOperations('all'))
+])
+
+target.setLevel('Assignment')
+
+target.setInheritableSettings([])
+
+target.setEnforcedSettings([])
+
+
+request_body.setTarget($target)
+additionalData = [
+'isExpirationRequired' => true,
+'maximumDuration' => 'P90D', 
+];
+request_body.setAdditionalData(additionalData)
+
+
+
+request_config = UnifiedRoleManagementPolicyRuleRequestBuilderPatchRequestConfiguration(
+request_config = UnifiedRoleManagementPolicyRuleRequestBuilderPatchRequestConfiguration(query_params=)
+
+
+result = await client.policies.roleManagementPolicies_by_id('unifiedRoleManagementPolicy-id').rules_by_id('unifiedRoleManagementPolicyRule-id').patch(request_body, headers=)
+
+
+```

@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = ReprovisionPostRequestBody()
+request_body.setUserAccountType(CloudPcUserAccountType('administrator'))
+
+request_body.setOsVersion(CloudPcOperatingSystem('windows10'))
+
+
+request_config = ReprovisionRequestBuilderPostRequestConfiguration(
+request_config = ReprovisionRequestBuilderPostRequestConfiguration(query_params=)
+
+
+await client.deviceManagement.virtualEndpoint.cloudPCs_by_id('cloudPC-id').reprovision.post(request_body, headers=)
+
+
+```

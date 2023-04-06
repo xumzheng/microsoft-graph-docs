@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = UnifiedRbacResourceActionRequestBuilderGetRequestConfiguration(
+request_config = UnifiedRbacResourceActionRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.roleManagement.directory.resourceNamespaces_by_id('unifiedRbacResourceNamespace-id').resourceActions_by_id('unifiedRbacResourceAction-id').get(, headers=)
+
+
+```

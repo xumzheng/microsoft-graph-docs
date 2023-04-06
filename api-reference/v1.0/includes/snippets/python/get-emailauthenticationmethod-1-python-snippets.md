@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_config = EmailAuthenticationMethodRequestBuilderGetRequestConfiguration(
+request_config = EmailAuthenticationMethodRequestBuilderGetRequestConfiguration(query_params=)
+
+
+result = await client.me.authentication.emailMethods_by_id('emailAuthenticationMethod-id').get(, headers=)
+
+
+```
