@@ -109,6 +109,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 [!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedroleassignment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-unifiedroleassignment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

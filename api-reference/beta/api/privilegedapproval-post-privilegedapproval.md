@@ -92,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-privilegedapproval-from-privilegedapproval-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-privilegedapproval-from-privilegedapproval-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.

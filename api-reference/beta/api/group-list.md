@@ -117,6 +117,10 @@ GET https://graph.microsoft.com/beta/groups
 [!INCLUDE [sample-code](../includes/snippets/php/get-groups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-groups-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -260,6 +264,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/php/get-groups-withlicenseerrors-count-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-groups-withlicenseerrors-count-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -373,6 +381,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/php/get-groups-startswith-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-groups-startswith-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -446,6 +458,10 @@ ConsistencyLevel: eventual
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-video-count-or-description-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-video-count-or-description-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -529,6 +545,10 @@ GET https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq false and sec
 [!INCLUDE [sample-code](../includes/snippets/php/get-enabled-dynamic-groups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-enabled-dynamic-groups-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -597,6 +617,10 @@ GET https://graph.microsoft.com/beta/groups?$select=id,assignedLicenses&$filter=
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-groups-with-licenses-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-groups-with-licenses-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

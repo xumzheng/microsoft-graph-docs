@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_configuration = BookingBusinessesRequestBuilderGetRequestConfiguration(
+request_configuration = BookingBusinessesRequestBuilderGetRequestConfiguration(query_params=query_params = BookingBusinessesRequestBuilderGetQueryParameters()
+query_params['query'] = "Adventure"
+
+)
+query_params = BookingBusinessesRequestBuilderGetQueryParameters()
+query_params['query'] = "Adventure"
+
+)
+
+
+result = await client.solutions.bookingBusinesses.get(request_configuration)
+
+
+```

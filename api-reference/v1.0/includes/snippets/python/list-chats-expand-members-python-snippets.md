@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_configuration = ChatsRequestBuilderGetRequestConfiguration(
+request_configuration = ChatsRequestBuilderGetRequestConfiguration(query_params=query_params = ChatsRequestBuilderGetQueryParameters()
+query_params['expand'] = ["members"]
+
+)
+query_params = ChatsRequestBuilderGetQueryParameters()
+query_params['expand'] = ["members"]
+
+)
+
+
+result = await client.users_by_id('user-id').chats.get(request_configuration)
+
+
+```

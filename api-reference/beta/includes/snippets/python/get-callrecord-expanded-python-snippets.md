@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_configuration = CallRecordRequestBuilderGetRequestConfiguration(
+request_configuration = CallRecordRequestBuilderGetRequestConfiguration(query_params=query_params = CallRecordRequestBuilderGetQueryParameters()
+query_params['expand'] = ["sessions($expand=segments)"]
+
+)
+query_params = CallRecordRequestBuilderGetQueryParameters()
+query_params['expand'] = ["sessions($expand=segments)"]
+
+)
+
+
+result = await client.communications.callRecords_by_id('callRecord-id').get(request_configuration)
+
+
+```

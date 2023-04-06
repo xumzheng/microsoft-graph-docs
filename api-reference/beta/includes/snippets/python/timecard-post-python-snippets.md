@@ -1,0 +1,72 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = TimeCard()
+clockInEvent = TimeCardEvent()
+clockInEvent.setDateTime(DateTime('2019-03-18T00:00:00.000Z'))
+
+clockInEvent.setAtApprovedLocation(true)
+
+clockInEventNotes = ItemBody()
+clockInEventNotes.setContent('Started late due to traffic in CA 237')
+
+clockInEventNotes.setContentType(BodyType('text'))
+
+
+clockInEvent.setNotes($clockInEventNotes)
+
+request_body.setClockInEvent($clockInEvent)
+notes = ItemBody()
+notes.setContent('8 To 5 Inventory management')
+
+notes.setContentType(BodyType('text'))
+
+
+request_body.setNotes($notes)
+breaksTimeCardBreak1 = TimeCardBreak()
+breaksTimeCardBreak1.setBreakId('string')
+
+breaksTimeCardBreak1Notes = ItemBody()
+breaksTimeCardBreak1Notes.setContent('Lunch break')
+
+breaksTimeCardBreak1Notes.setContentType(BodyType('text'))
+
+
+breaksTimeCardBreak1.setNotes($breaksTimeCardBreak1Notes)
+breaksTimeCardBreak1Start = TimeCardEvent()
+breaksTimeCardBreak1Start.setDateTime(DateTime('2019-03-18T02:00:00.000Z'))
+
+breaksTimeCardBreak1Start.setAtApprovedLocation(true)
+
+breaksTimeCardBreak1StartNotes = ItemBody()
+breaksTimeCardBreak1StartNotes.setContent('Reduced break to make up for lost time')
+
+breaksTimeCardBreak1StartNotes.setContentType(BodyType('text'))
+
+
+breaksTimeCardBreak1Start.setNotes($breaksTimeCardBreak1StartNotes)
+
+breaksTimeCardBreak1.setStart($breaksTimeCardBreak1Start)
+
+breaksArray []= breaksTimeCardBreak1;
+request_body.setBreaks(breaksArray)
+
+
+additionalData = [
+'onBehalfOfUserId' => 'a3601044-a1b5-438e-b742-f78d01d68a67', 
+];
+request_body.setAdditionalData(additionalData)
+
+
+
+
+result = await client.teams_by_id('team-id').schedule.timeCards.post(request_body)
+
+
+```

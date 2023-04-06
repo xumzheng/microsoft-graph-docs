@@ -89,6 +89,10 @@ PATCH https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-extattributes1-15-update-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-extattributes1-15-update-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The request returns a `204 No Content` response object.
@@ -124,11 +128,15 @@ GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExte
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/extensibility-overview-extattributes1-15-get-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-extattributes1-15-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-extattributes1-15-get-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -235,6 +243,10 @@ POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-directoryextensions-create-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-directoryextensions-create-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ###### Response
@@ -314,6 +326,10 @@ POST https://graph.microsoft.com/v1.0/users
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-directoryextensions-add-users-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-directoryextensions-add-users-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The request returns a `201 Created` response code and a [user](/graph/api/resources/user) object in the response body.
@@ -356,6 +372,10 @@ GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-directoryextensions-get-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-directoryextensions-get-users-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -427,6 +447,10 @@ PATCH https://graph.microsoft.com/v1.0/users/63384f56-42d2-4aa7-b1d6-b10c78f143a
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-directoryextensions-update-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-directoryextensions-update-users-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -535,6 +559,10 @@ POST https://graph.microsoft.com/v1.0/schemaExtensions
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-schemaextensions-create-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-schemaextensions-create-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ###### Response
@@ -624,6 +652,10 @@ POST https://graph.microsoft.com/beta/users
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-schemaextensions-add-users-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-schemaextensions-add-users-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The request returns a `201 Created` response code and a [schemaExtension](/graph/api/resources/schemaextension) object in the response body
@@ -675,6 +707,10 @@ PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-schemaextensions-update-users-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-schemaextensions-update-users-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The request returns a `204 No Content` response object.
@@ -717,6 +753,10 @@ GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-schemaextensions-get-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-schemaextensions-get-user-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -821,6 +861,10 @@ POST https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-openextensions-create-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-openextensions-create-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The request returns a `201 Created` response code and an [openTypeExtension](/graph/api/resources/opentypeextension) object in the response body.
@@ -870,6 +914,10 @@ PATCH https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-openextensions-update-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-openextensions-update-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 This request returns a `204 No Content` response code.
@@ -917,6 +965,10 @@ GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-openextensions-get-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/extensibility-overview-openextensions-get-user-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

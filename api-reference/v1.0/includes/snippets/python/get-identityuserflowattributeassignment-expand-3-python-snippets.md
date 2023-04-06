@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_configuration = IdentityUserFlowAttributeAssignmentRequestBuilderGetRequestConfiguration(
+request_configuration = IdentityUserFlowAttributeAssignmentRequestBuilderGetRequestConfiguration(query_params=query_params = IdentityUserFlowAttributeAssignmentRequestBuilderGetQueryParameters()
+query_params['expand'] = ["userAttribute"]
+
+)
+query_params = IdentityUserFlowAttributeAssignmentRequestBuilderGetQueryParameters()
+query_params['expand'] = ["userAttribute"]
+
+)
+
+
+result = await client.identity.b2xUserFlows_by_id('b2xIdentityUserFlow-id').userAttributeAssignments_by_id('identityUserFlowAttributeAssignment-id').get(request_configuration)
+
+
+```
