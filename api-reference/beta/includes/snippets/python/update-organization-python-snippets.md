@@ -1,0 +1,35 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = Organization()
+request_body.MarketingNotificationEmails(['marketing@contoso.com', ])
+
+privacyProfile = PrivacyProfile()
+privacyProfile.contactEmail = 'alice@contoso.com'
+
+privacyProfile.statementUrl = 'https://contoso.com/privacyStatement'
+
+
+request_body.privacyProfile = privacyProfile
+request_body.SecurityComplianceNotificationMails(['security@contoso.com', ])
+
+request_body.SecurityComplianceNotificationPhones(['(123) 456-7890', ])
+
+request_body.TechnicalNotificationMails(['tech@contoso.com', ])
+
+
+
+request_configuration = OrganizationRequestBuilderPatchRequestConfiguration(
+)
+
+
+result = await client.organization_by_id('organization-id').patch(request_body = request_body)
+
+
+```

@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = ChecklistItem()
+request_body.displayName = 'buy cake'
+
+
+
+request_configuration = ChecklistItemRequestBuilderPatchRequestConfiguration(
+)
+
+
+result = await client.me.todo.lists_by_id('todoTaskList-id').tasks_by_id('todoTask-id').checklistItems_by_id('checklistItem-id').patch(request_body = request_body)
+
+
+```

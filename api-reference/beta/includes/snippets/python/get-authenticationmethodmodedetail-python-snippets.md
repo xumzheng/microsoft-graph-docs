@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+request_configuration = AuthenticationMethodModeDetailRequestBuilderGetRequestConfiguration(
+)
+
+
+result = await client.identity.conditionalAccess.authenticationStrengths.authenticationMethodModes_by_id('authenticationMethodModeDetail-id').get()
+
+
+```

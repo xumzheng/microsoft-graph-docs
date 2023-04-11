@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = GetPasswordSingleSignOnCredentialsPostRequestBody()
+request_body.id = '5793aa3b-cca9-4794-679a240f8b58'
+
+
+
+request_configuration = GetPasswordSingleSignOnCredentialsRequestBuilderPostRequestConfiguration(
+)
+
+
+result = await client.servicePrincipals_by_id('servicePrincipal-id').getPasswordSingleSignOnCredentials.post(request_body = request_body)
+
+
+```

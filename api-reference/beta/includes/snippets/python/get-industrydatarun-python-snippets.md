@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+
+request_configuration = IndustryDataRunRequestBuilderGetRequestConfiguration(
+)
+
+
+result = await client.external.industryData.runs_by_id('industryDataRun-id').get()
+
+
+```

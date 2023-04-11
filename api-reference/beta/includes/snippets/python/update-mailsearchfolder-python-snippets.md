@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = MailFolder()
+request_body.@odatatype = 'microsoft.graph.mailSearchFolder'
+
+additionalData = [
+'filterQuery' => 'contains(subject, \'Analytics\')', 
+];
+request_body.additionaldata(additionalData)
+
+
+
+
+request_configuration = MailFolderRequestBuilderPatchRequestConfiguration(
+)
+
+
+result = await client.me.mailFolders_by_id('mailFolder-id').patch(request_body = request_body)
+
+
+```

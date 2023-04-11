@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/fin
 [!INCLUDE [sample-code](../includes/snippets/php/authenticationstrengthpolicythisfindbymethodmode-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/authenticationstrengthpolicythisfindbymethodmode-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

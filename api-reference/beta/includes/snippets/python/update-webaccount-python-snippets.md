@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = WebAccount()
+request_body.webUrl = 'https://github.com/innocenty.popov'
+
+
+
+request_configuration = WebAccountRequestBuilderPatchRequestConfiguration(
+)
+
+
+result = await client.me.profile.webAccounts_by_id('webAccount-id').patch(request_body = request_body)
+
+
+```

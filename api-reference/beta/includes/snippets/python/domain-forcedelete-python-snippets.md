@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = ForceDeletePostRequestBody()
+request_body.disableUserAccounts = true
+
+
+
+request_configuration = ForceDeleteRequestBuilderPostRequestConfiguration(
+)
+
+
+await client.domains_by_id('domain-id').forceDelete.post(request_body = request_body)
+
+
+```

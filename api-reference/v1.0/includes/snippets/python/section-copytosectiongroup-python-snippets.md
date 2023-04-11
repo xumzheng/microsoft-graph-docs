@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = CopyToSectionGroupPostRequestBody()
+request_body.id = 'id-value'
+
+request_body.groupId = 'groupId-value'
+
+request_body.renameAs = 'renameAs-value'
+
+
+
+request_configuration = CopyToSectionGroupRequestBuilderPostRequestConfiguration(
+)
+
+
+result = await client.me.onenote.sections_by_id('onenoteSection-id').copyToSectionGroup.post(request_body = request_body)
+
+
+```

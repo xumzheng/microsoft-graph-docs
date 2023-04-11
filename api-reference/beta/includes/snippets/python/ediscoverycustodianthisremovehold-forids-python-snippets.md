@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = RemoveHoldPostRequestBody()
+request_body.Ids(['7f697316-43ed-48e1-977f-261be050db93', 'b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8', ])
+
+
+
+request_configuration = RemoveHoldRequestBuilderPostRequestConfiguration(
+)
+
+
+await client.security.cases.ediscoveryCases_by_id('ediscoveryCase-id').custodians.securityremoveHold.post(request_body = request_body)
+
+
+```

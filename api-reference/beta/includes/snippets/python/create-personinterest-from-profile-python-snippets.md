@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = PersonInterest()
+request_body.Categories(['Sports', ])
+
+request_body.description = 'World\'s greatest football club'
+
+request_body.displayName = 'Chelsea FC'
+
+request_body.webUrl = 'https://www.chelseafc.com'
+
+
+
+request_configuration = InterestsRequestBuilderPostRequestConfiguration(
+)
+
+
+result = await client.me.profile.interests.post(request_body = request_body)
+
+
+```

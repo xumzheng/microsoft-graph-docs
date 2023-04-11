@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = EdiscoveryReviewTag()
+request_body.displayName = 'My tag API'
+
+request_body.description = 'Use Graph API to create tags'
+
+request_body.ChildSelectability(ChildSelectability('many'))
+
+
+
+request_configuration = TagsRequestBuilderPostRequestConfiguration(
+)
+
+
+result = await client.security.cases.ediscoveryCases_by_id('ediscoveryCase-id').tags.post(request_body = request_body)
+
+
+```

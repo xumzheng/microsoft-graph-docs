@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = PermissionGrantConditionSet()
+request_body.PermissionType(PermissionType('delegated'))
+
+request_body.clientApplicationsFromVerifiedPublisherOnly = true
+
+
+
+request_configuration = IncludesRequestBuilderPostRequestConfiguration(
+)
+
+
+result = await client.policies.permissionGrantPolicies_by_id('permissionGrantPolicy-id').includes.post(request_body = request_body)
+
+
+```

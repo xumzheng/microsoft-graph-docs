@@ -107,6 +107,10 @@ GET https://graph.microsoft.com/beta/security/alerts_v2
 [!INCLUDE [sample-code](../includes/snippets/php/security-list-alerts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/security-list-alerts-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = TranslateExchangeIdsPostRequestBody()
+request_body.InputIds(['{rest-formatted-id-1}', '{rest-formatted-id-2}', ])
+
+request_body.SourceIdType(ExchangeIdFormat('restid'))
+
+request_body.TargetIdType(ExchangeIdFormat('restimmutableentryid'))
+
+
+
+request_configuration = TranslateExchangeIdsRequestBuilderPostRequestConfiguration(
+)
+
+
+result = await client.me.translateExchangeIds.post(request_body = request_body)
+
+
+```

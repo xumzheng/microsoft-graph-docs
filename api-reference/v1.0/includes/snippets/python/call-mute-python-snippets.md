@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = MutePostRequestBody()
+request_body.clientContext = 'clientContext-value'
+
+
+
+request_configuration = MuteRequestBuilderPostRequestConfiguration(
+)
+
+
+result = await client.communications.calls_by_id('call-id').mute.post(request_body = request_body)
+
+
+```
