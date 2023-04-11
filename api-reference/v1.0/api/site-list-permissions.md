@@ -17,9 +17,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)
 |:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Sites.FullControl.All (must be tenant admin)
+|Delegated (work or school account)     | Sites.FullControl.All<sup>1</sup>
 |Delegated (personal Microsoft account) | Not supported.
 |Application                            | Sites.FullControl.All
+
+<sup>1</sup> Must be a tenant admin account with required permissions.
 
 ## HTTP request
 
