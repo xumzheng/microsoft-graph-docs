@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 [!INCLUDE [sample-code](../includes/snippets/php/privilegedrole-selfdeactivate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/privilegedrole-selfdeactivate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

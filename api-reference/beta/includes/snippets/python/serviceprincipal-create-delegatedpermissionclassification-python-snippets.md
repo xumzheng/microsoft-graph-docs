@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = DelegatedPermissionClassification()
+request_body.permissionId = 'e1fe6dd8-ba31-4d61-89e7-88639da4683d'
+
+request_body.permissionName = 'User.Read'
+
+request_body.Classification(PermissionClassificationType('low'))
+
+
+
+
+result = await client.servicePrincipals_by_id('servicePrincipal-id').delegatedPermissionClassifications.post(request_body = request_body)
+
+
+```

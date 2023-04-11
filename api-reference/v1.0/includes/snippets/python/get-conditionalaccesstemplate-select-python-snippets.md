@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+query_params = ConditionalAccessTemplateRequestBuilder.ConditionalAccessTemplateRequestBuilderGetQueryParameters(
+		select = ["details"],
+)
+
+request_configuration = ConditionalAccessTemplateRequestBuilderGetRequestConfiguration(
+query_parameters = query_params,
+)
+
+
+result = await client.identity.conditionalAccess.templates_by_id('conditionalAccessTemplate-id').get(request_configuration = request_configuration)
+
+
+```
