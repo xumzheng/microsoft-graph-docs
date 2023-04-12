@@ -107,6 +107,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | searchResult         | [searchResult][]   | Search metadata, if the item is from a search result. Read-only.
 | shared               | [shared][]         | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
+| sharingViewpoint     | [sharingViewpoint][]| Describes sharing capabilities an API caller has with respect to the item. Read-only. Returned only on `$select`. Only on OneDrive for Business and SharePoint.
 | size                 | Int64              | Size of the item in bytes. Read-only.
 | specialFolder        | [specialFolder][]  | If the current item is also available as a special folder, this facet is returned. Read-only.
 | source               | [driveItemSource][]| Information about the drive item source. Read-only. Only on OneDrive for Business and SharePoint.
@@ -189,6 +190,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "sharingViewpoint": { "@odata.type": "microsoft.graph.sharingViewpoint" },
   "size": 1024,
   "source": { "@odata.type": "microsoft.graph.driveItemSource" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
@@ -259,6 +261,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [searchResult]: searchresult.md
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
+[sharingViewpoint]: sharingviewpoint.md
 [specialFolder]: specialfolder.md
 [subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
