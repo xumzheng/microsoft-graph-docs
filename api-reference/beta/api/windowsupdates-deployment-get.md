@@ -73,7 +73,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-
 ---
 
 
-
 ### Response
 
 <!-- {

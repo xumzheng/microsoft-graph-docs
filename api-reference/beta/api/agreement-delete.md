@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

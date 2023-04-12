@@ -85,7 +85,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of the `id` of the [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [group](../resources/group.md) object you want to add.
 
 ### Response

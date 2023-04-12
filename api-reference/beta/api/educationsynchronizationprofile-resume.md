@@ -63,7 +63,6 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 ---
 
-
 ##### Response
 
 There is no response body.

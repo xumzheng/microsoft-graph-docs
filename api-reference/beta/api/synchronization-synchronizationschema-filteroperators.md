@@ -66,7 +66,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 
 ---
 
-
 ##### Response
 The following is an example of a response.
 

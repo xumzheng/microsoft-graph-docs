@@ -80,7 +80,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{userflow-id}/user
 
 ---
 
-
 ### Response
 
 <!-- {

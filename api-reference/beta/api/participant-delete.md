@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -141,7 +140,6 @@ Content-Length: 464
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -202,7 +200,6 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies?$filter=sco
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 
 ---
 
-
 #### Response
 
 Here is an example of the response.
@@ -161,7 +160,6 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/me/profile/skills
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

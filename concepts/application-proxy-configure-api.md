@@ -201,7 +201,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -241,7 +240,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -345,7 +343,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -386,7 +383,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -438,7 +434,6 @@ Content-type: appplication/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -603,7 +598,6 @@ Content-type: appRoleAssignments/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -736,7 +730,6 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

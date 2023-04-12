@@ -73,7 +73,6 @@ GET https://graph.microsoft.com/beta/security/alerts/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

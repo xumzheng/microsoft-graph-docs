@@ -74,7 +74,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcC
 ---
 
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

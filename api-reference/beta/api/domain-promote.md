@@ -78,7 +78,6 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/promote
 
 ---
 
-
 ### Response
 
 <!-- {

@@ -77,7 +77,6 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 

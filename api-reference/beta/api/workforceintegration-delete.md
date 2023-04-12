@@ -73,7 +73,6 @@ DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforc
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

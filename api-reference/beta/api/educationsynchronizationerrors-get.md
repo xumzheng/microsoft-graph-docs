@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 
 ---
 
-
 ##### Response
 
 The following is an example of the response.

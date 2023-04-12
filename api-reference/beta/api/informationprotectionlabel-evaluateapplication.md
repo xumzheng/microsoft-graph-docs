@@ -164,7 +164,6 @@ User-agent: ContosoLOBApp/1.0
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

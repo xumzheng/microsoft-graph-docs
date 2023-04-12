@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones
 
 ---
 
-
 ##### Response 1
 Here is an example of the response. 
 <!-- {

@@ -123,7 +123,6 @@ GET https://graph.microsoft.com/beta/contacts/delta
 ---
 
 
-
 #### Response
 
 The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization.
@@ -183,7 +182,6 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 
 ---
 
-
 #### Response
 
 The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization. Note that all three properties are included in the response and it is not known which ones have changed since the `@odata.deltaLink` was obtained.
@@ -235,7 +233,6 @@ Prefer: return=minimal
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

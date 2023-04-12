@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calenda
 
 ---
 
-
 <!-- {
   "blockType": "response",
   "name": "get_calendarperms",
@@ -196,7 +195,6 @@ Content-type: application/json
 
 ---
 
-
 <!-- {
   "blockType": "response",
   "name": "update_calendarperm",
@@ -274,7 +272,6 @@ GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calenda
 
 ---
 
-
 <!-- {
   "blockType": "response",
   "name": "get_calendar_props_owner",
@@ -351,7 +348,6 @@ GET https://graph.microsoft.com/beta/users/meganb@contoso.OnMicrosoft.com/calend
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- {
   "blockType": "response",
@@ -549,7 +545,6 @@ DELETE https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/cale
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- {
   "blockType": "response",

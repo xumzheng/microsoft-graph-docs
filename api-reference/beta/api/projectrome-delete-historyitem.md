@@ -72,7 +72,6 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 
 ---
 
-
 ##### Response
 
 Here is an example of the response.
