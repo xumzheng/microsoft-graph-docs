@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All, Acronym.Read.All, Bookmark.Read.All, ChannelMessage.Read.All, Chat.Read, QnA.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Files.Read.All, Sites.Read.All |
+| Application                            | Files.Read.All, Sites.Read.All, Topic.Read.All |
 
 ## HTTP request
 

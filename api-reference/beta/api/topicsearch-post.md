@@ -1,5 +1,5 @@
 ---
-title: "Get topic through search"
+title: "Use the Microsoft Search API to search Topics"
 description: "Retrieve the properties and relationships of Topic object. "
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,9 +7,11 @@ ms.prod: "governance"
 author: "watermelonT" 
 ---
 
-# Get Topic through search
+# Search Topics
 
 Namespace: microsoft.graph
+
+You can use the Microsoft Search API in Microsoft Graph to search Topics. Administrators can manage Topics in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
 ```http
-GET /search
+POST /search
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -38,6 +39,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
+// TODO: Add sample code
 Do not supply a request body for this method.
 
 ## Response
@@ -51,7 +53,7 @@ Here is an example of the request.
 
 # [HTTP](#tab/http)
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/search
+POST https://graph.microsoft.com/beta/search
 ```
 
 # [C#](#tab/csharp)
@@ -81,7 +83,7 @@ GET https://graph.microsoft.com/beta/search
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response. Note: The response object shown here might be shortened for readability. You can find the full list of Topics properties in [topic](../resources/topic.md) page.
 
 ```http
 Response
