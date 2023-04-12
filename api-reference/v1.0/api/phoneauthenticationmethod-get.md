@@ -19,19 +19,19 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions acting on self
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Permission type                        | Least privileged permissions  | Higher privileged permissions      |
+|----------------------------------------|-------------------------------|------------------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.Read | UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported.                | Not supported.                     |
+| Application                            | Not supported.                | Not supported.                     |
 
 ### Permissions acting on other users
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Permission type                        | Least privileged permissions      | Higher privileged permissions          |
+|----------------------------------------|-----------------------------------|----------------------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.Read.All | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                    | Not supported.                         |
+| Application                            | UserAuthenticationMethod.Read.All | UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Global administrator
