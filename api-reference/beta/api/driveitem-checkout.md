@@ -78,7 +78,6 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 ---
 
-
 ## Response
 
 If successful, the API call returns `204 No content`.

@@ -79,7 +79,6 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}?expan
 
 ---
 
-
 ### Response
 
 This returns a collection of versions:

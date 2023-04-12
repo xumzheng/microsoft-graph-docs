@@ -67,7 +67,6 @@ GET /me/drive
 
 ---
 
-
 ## Get a user's OneDrive
 
 To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.
@@ -156,7 +155,6 @@ GET /groups/{groupId}/drive
 
 ---
 
-
 ### Path parameters
 
 | Parameter name | Value  | Description                                       |
@@ -203,7 +201,6 @@ GET /sites/{siteId}/drive
 
 ---
 
-
 ### Path parameters
 
 | Parameter name | Value  | Description                                       |
@@ -249,7 +246,6 @@ GET /drives/{drive-id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Path parameters
 

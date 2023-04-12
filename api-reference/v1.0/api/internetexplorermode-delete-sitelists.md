@@ -80,7 +80,6 @@ DELETE https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteList
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

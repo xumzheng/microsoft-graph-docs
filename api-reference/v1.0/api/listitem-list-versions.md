@@ -80,7 +80,6 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 
 ---
 
-
 ### Response
 
 This returns a collection of versions:

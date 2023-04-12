@@ -89,7 +89,6 @@ Content-Type: application/json
 
 ---
 
-
 ## Response
 
 If successful, the API call returns a `204 No content`.

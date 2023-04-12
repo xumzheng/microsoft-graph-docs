@@ -74,7 +74,6 @@ POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/rest
 
 ---
 
-
 ## Response
 
 If successful, the API call returns a `204 No Content`.

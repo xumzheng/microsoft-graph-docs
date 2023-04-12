@@ -174,7 +174,6 @@ GET /sites
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->

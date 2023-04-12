@@ -338,7 +338,6 @@ GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

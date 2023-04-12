@@ -584,7 +584,6 @@ Content-Type: application/json
 
 ---
 
-
 ##### Response
 
 <!-- {
@@ -784,7 +783,6 @@ Content-Length: 464
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -994,7 +992,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

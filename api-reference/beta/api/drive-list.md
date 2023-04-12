@@ -65,7 +65,6 @@ GET /groups/{groupId}/drives
 
 ---
 
-
 ## List a site's drives
 
 To list the document libraries for a site, your app requests the **drives** relationship on the Site.
@@ -104,7 +103,6 @@ GET /sites/{siteId}/drives
 
 ---
 
-
 ## List a user's drives
 
 
@@ -141,7 +139,6 @@ GET /users/{userId}/drives
 
 ---
 
-
 ## List the current user's drives
 
 
@@ -177,7 +174,6 @@ GET /me/drives
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Optional query parameters
 

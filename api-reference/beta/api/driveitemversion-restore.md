@@ -79,7 +79,6 @@ POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 
 ---
 
-
 ## Response
 
 If successful, the API call returns a `204 No content`.

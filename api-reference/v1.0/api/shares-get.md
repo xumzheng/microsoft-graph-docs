@@ -116,7 +116,6 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 ---
 
-
 ### Response
 
 Here is an example of the response.
@@ -184,7 +183,6 @@ GET /shares/{shareIdOrUrl}/driveItem
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
@@ -241,7 +239,6 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

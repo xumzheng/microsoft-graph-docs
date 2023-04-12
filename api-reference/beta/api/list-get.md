@@ -76,7 +76,6 @@ GET /sites/{site-id}/lists/{list-id}
 
 ---
 
-
 #### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
@@ -135,7 +134,6 @@ GET /sites/{site-id}/lists/{list-title}
 
 ---
 
-
 #### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
@@ -193,7 +191,6 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

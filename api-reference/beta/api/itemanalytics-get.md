@@ -97,7 +97,6 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -253,7 +253,6 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 [!INCLUDE [sample-code](../includes/snippets/php/get-classcategories-delta-for-token-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-
 ---
 
 #### Response

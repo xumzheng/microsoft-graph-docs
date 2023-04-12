@@ -101,7 +101,6 @@ GET /sites/{siteId}/drives
 
 ---
 
-
 ## List a user's drives
 
 
@@ -173,7 +172,6 @@ GET /me/drives
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Optional query parameters
 

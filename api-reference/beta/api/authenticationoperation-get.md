@@ -102,7 +102,6 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

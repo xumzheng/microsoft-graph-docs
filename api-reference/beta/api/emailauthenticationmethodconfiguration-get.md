@@ -93,7 +93,6 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

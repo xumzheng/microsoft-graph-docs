@@ -92,7 +92,6 @@ GET /sites/{site-id}
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->

@@ -100,7 +100,6 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

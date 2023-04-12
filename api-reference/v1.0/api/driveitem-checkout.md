@@ -82,7 +82,6 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response" } -->

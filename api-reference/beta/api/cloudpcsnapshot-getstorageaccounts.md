@@ -88,7 +88,6 @@ GET /deviceManagement/virtualEndpoint/snapshots/getStorageAccounts(subscriptionI
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

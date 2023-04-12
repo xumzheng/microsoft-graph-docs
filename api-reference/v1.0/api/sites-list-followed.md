@@ -90,7 +90,6 @@ GET /me/followedSites
 
 ---
 
-
 ### Response
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
