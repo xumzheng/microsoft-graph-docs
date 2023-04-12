@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	emailAddress = "kim@contoso.com"
+	EmailAddress = "kim@contoso.com"
 }
 
 New-MgUserAuthenticationEmailMethod -UserId $userId -BodyParameter $params

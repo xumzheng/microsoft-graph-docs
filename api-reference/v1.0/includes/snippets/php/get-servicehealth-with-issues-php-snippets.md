@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ServiceHealthRequestBuilderGetRequestConfiguration();
-$queryParameters = ServiceHealthRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new ServiceHealthRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["issues"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->admin()->serviceAnnouncement()->healthOverviewsById('serviceHealth-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->healthOverviewsById('serviceHealth-id')->get($requestConfiguration);
 
 
 ```

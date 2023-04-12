@@ -30,7 +30,7 @@ $requestBody->setIdentityProviders($identityProvidersArray);
 
 
 
-$result = $graphServiceClient->identity()->b2xUserFlows()->post($requestBody);
+$requestResult = $graphServiceClient->identity()->b2xUserFlows()->post($requestBody);
 
 
 ```

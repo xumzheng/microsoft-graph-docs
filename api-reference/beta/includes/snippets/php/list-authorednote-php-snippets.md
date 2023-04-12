@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->privacy()->subjectRightsRequestsById('subjectRightsRequest-id')->notes()->get();
+$requestResult = $graphServiceClient->privacy()->subjectRightsRequestsById('subjectRightsRequest-id')->notes()->get();
 
 
 ```

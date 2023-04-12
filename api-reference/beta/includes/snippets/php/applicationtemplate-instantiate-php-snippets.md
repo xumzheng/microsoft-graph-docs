@@ -14,7 +14,7 @@ $requestBody->setDisplayName('testProperties');
 
 
 
-$result = $graphServiceClient->applicationTemplatesById('applicationTemplate-id')->instantiate()->post($requestBody);
+$requestResult = $graphServiceClient->applicationTemplatesById('applicationTemplate-id')->instantiate()->post($requestBody);
 
 
 ```

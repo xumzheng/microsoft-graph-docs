@@ -14,7 +14,7 @@ $requestBody->setAllowedAudiences(new AllowedAudiences('organization'));
 
 
 
-$result = $graphServiceClient->me()->profile()->languagesById('languageProficiency-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->languagesById('languageProficiency-id')->patch($requestBody);
 
 
 ```

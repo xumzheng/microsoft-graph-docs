@@ -28,7 +28,7 @@ $requestBody->setPersonalSiteDefaultStorageLimitInMB(120000);
 
 
 
-$result = $graphServiceClient->admin()->sharepoint()->settings()->patch($requestBody);
+$requestResult = $graphServiceClient->admin()->sharepoint()->settings()->patch($requestBody);
 
 
 ```

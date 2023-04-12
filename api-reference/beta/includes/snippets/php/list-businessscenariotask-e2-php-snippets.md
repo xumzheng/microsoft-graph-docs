@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TasksRequestBuilderGetRequestConfiguration();
-$queryParameters = TasksRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TasksRequestBuilderGetQueryParameters();
 $queryParameters->filter = "businessScenarioProperties/externalContextId eq 'Warehouse-CA-36'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasks()->get($requestConfiguration);
+$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasks()->get($requestConfiguration);
 
 
 ```

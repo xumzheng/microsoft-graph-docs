@@ -18,7 +18,7 @@ $requestBody->setProgramId('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213');
 
 
 
-$result = $graphServiceClient->programControls()->post($requestBody);
+$requestResult = $graphServiceClient->programControls()->post($requestBody);
 
 
 ```

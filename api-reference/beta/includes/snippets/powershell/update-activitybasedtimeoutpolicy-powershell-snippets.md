@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	definition = @(
+	Definition = @(
 		"definition-value"
 	)
-	displayName = "displayName-value"
-	isOrganizationDefault = $true
+	DisplayName = "displayName-value"
+	IsOrganizationDefault = $true
 }
 
 Update-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId -BodyParameter $params

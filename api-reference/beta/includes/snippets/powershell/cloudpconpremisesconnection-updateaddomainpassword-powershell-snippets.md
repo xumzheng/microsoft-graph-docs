@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.DeviceManagement.Actions
 
 $params = @{
-	adDomainPassword = "AdDomainPassword value"
+	AdDomainPassword = "AdDomainPassword value"
 }
 
 Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params

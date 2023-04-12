@@ -20,13 +20,15 @@ $requestBody->setRecipientShiftId('e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c');
 
 
 $requestConfiguration = new SwapShiftsChangeRequestsRequestBuilderPostRequestConfiguration();
+
 $headers = [
-		'Authorization' => 'Bearer {token}',
-	];
+	'Authorization' => 'Bearer {token}',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->swapShiftsChangeRequests()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->swapShiftsChangeRequests()->post($requestBody, $requestConfiguration);
 
 
 ```

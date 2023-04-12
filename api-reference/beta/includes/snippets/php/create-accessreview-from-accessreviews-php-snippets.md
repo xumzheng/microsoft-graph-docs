@@ -75,7 +75,7 @@ $settings->setAutoReviewSettings($settingsAutoReviewSettings);
 $requestBody->setSettings($settings);
 
 
-$result = $graphServiceClient->accessReviews()->post($requestBody);
+$requestResult = $graphServiceClient->accessReviews()->post($requestBody);
 
 
 ```

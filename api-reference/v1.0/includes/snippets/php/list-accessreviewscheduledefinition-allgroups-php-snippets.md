@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DefinitionsRequestBuilderGetRequestConfiguration();
-$queryParameters = DefinitionsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new DefinitionsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "contains(scope/microsoft.graph.accessReviewQueryScope/query,%20'./members')";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->get($requestConfiguration);
 
 
 ```

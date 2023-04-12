@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->onenote()->sectionsById('onenoteSection-id')->get();
+$requestResult = $graphServiceClient->me()->onenote()->sectionsById('onenoteSection-id')->get();
 
 
 ```

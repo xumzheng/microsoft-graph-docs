@@ -8,18 +8,18 @@ Import-Module Microsoft.Graph.ManagedTenants
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedTenants.tenantCustomizedInformation"
-	tenantId = "String"
-	contacts = @(
+	TenantId = "String"
+	Contacts = @(
 		@{
 			"@odata.type" = "microsoft.graph.managedTenants.tenantContactInformation"
-			name = "String"
-			title = "String"
-			email = "String"
-			phone = "String"
-			notes = "String"
+			Name = "String"
+			Title = "String"
+			Email = "String"
+			Phone = "String"
+			Notes = "String"
 		}
 	)
-	website = "String"
+	Website = "String"
 }
 
 Update-MgTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId -BodyParameter $params

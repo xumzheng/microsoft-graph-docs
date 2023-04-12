@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	topic = "Take your wellness days and rest"
-	posts = @(
+	Topic = "Take your wellness days and rest"
+	Posts = @(
 		@{
-			body = @{
-				contentType = "html"
-				content = "Waiting for the summer holidays."
+			Body = @{
+				ContentType = "html"
+				Content = "Waiting for the summer holidays."
 			}
 		}
 	)

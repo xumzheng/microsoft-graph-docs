@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	memberSettings = @{
-		allowCreateUpdateChannels = $true
+	MemberSettings = @{
+		AllowCreateUpdateChannels = $true
 	}
-	messagingSettings = @{
-		allowUserEditMessages = $true
-		allowUserDeleteMessages = $true
+	MessagingSettings = @{
+		AllowUserEditMessages = $true
+		AllowUserDeleteMessages = $true
 	}
-	funSettings = @{
-		allowGiphy = $true
-		giphyContentRating = "strict"
+	FunSettings = @{
+		AllowGiphy = $true
+		GiphyContentRating = "strict"
 	}
 }
 

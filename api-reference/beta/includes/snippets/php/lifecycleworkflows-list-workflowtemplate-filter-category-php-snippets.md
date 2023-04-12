@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new WorkflowTemplatesRequestBuilderGetRequestConfiguration();
-$queryParameters = WorkflowTemplatesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new WorkflowTemplatesRequestBuilderGetQueryParameters();
 $queryParameters->filter = "category eq 'leaver'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowTemplates()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowTemplates()->get($requestConfiguration);
 
 
 ```

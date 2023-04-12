@@ -41,7 +41,7 @@ $requestBody->setMentions($mentionsArray);
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
 
 
 ```

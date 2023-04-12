@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	topic = @{
-		source = "entityUrl"
-		value = "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+	Topic = @{
+		Source = "entityUrl"
+		Value = "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
 	}
-	activityType = "taskCreated"
-	previewText = @{
-		content = "New Task Created"
+	ActivityType = "taskCreated"
+	PreviewText = @{
+		Content = "New Task Created"
 	}
-	recipient = @{
+	Recipient = @{
 		"@odata.type" = "microsoft.graph.chatMembersNotificationRecipient"
-		chatId = "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+		ChatId = "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
 	}
-	templateParameters = @(
+	TemplateParameters = @(
 		@{
-			name = "taskId"
-			value = "Task 12322"
+			Name = "taskId"
+			Value = "Task 12322"
 		}
 	)
 }

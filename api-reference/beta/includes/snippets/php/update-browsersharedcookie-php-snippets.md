@@ -24,7 +24,7 @@ $requestBody->setComment('Updating source environment.');
 
 
 
-$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->sharedCookiesById('browserSharedCookie-id')->patch($requestBody);
+$requestResult = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->sharedCookiesById('browserSharedCookie-id')->patch($requestBody);
 
 
 ```

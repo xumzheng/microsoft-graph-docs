@@ -14,7 +14,7 @@ $requestBody->setStatus('Deprecated');
 
 
 
-$result = $graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->patch($requestBody);
+$requestResult = $graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->patch($requestBody);
 
 
 ```

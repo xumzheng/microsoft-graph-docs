@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new CompleteRequestBuilderPostRequestConfiguration();
+
 $headers = [
-		'Prefer' => 'outlook.timezone="Pacific Standard Time"',
-	];
+	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->me()->outlook()->tasksById('outlookTask-id')->complete()->post($requestConfiguration);
+$requestResult = $graphServiceClient->me()->outlook()->tasksById('outlookTask-id')->complete()->post($requestConfiguration);
 
 
 ```

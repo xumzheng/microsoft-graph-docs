@@ -29,7 +29,7 @@ $moderationSettings->setAllowNewMessageFromConnectors(true);
 $requestBody->setModerationSettings($moderationSettings);
 
 
-$result = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
 
 
 ```

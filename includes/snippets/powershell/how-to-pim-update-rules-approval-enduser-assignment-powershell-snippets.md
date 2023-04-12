@@ -8,43 +8,43 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule"
-	id = "Approval_EndUser_Assignment"
-	target = @{
+	Id = "Approval_EndUser_Assignment"
+	Target = @{
 		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
-		caller = "EndUser"
-		operations = @(
+		Caller = "EndUser"
+		Operations = @(
 			"All"
 		)
-		level = "Assignment"
-		inheritableSettings = @(
+		Level = "Assignment"
+		InheritableSettings = @(
 		)
-		enforcedSettings = @(
+		EnforcedSettings = @(
 		)
 	}
-	setting = @{
+	Setting = @{
 		"@odata.type" = "microsoft.graph.approvalSettings"
-		isApprovalRequired = $true
-		isApprovalRequiredForExtension = $false
-		isRequestorJustificationRequired = $true
-		approvalMode = "SingleStage"
-		approvalStages = @(
+		IsApprovalRequired = $true
+		IsApprovalRequiredForExtension = $false
+		IsRequestorJustificationRequired = $true
+		ApprovalMode = "SingleStage"
+		ApprovalStages = @(
 			@{
 				"@odata.type" = "microsoft.graph.unifiedApprovalStage"
-				approvalStageTimeOutInDays = 
-				isApproverJustificationRequired = $true
-				escalationTimeInMinutes = 
-				primaryApprovers = @(
+				ApprovalStageTimeOutInDays = 
+				IsApproverJustificationRequired = $true
+				EscalationTimeInMinutes = 
+				PrimaryApprovers = @(
 					@{
 						"@odata.type" = "#microsoft.graph.singleUser"
-						userId = "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6"
+						UserId = "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6"
 					}
 					@{
 						"@odata.type" = "#microsoft.graph.groupMembers"
-						groupId = "14f2746d-7d6f-4ac6-acd8-8cac318b041b"
+						GroupId = "14f2746d-7d6f-4ac6-acd8-8cac318b041b"
 					}
 				)
-				isEscalationEnabled = $false
-				escalationApprovers = @(
+				IsEscalationEnabled = $false
+				EscalationApprovers = @(
 				)
 			}
 		)

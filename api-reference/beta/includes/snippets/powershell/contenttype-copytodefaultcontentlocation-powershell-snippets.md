@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	sourceFile = @{
-		sharepointIds = @{
-			listId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
-			listItemId = "2"
+	SourceFile = @{
+		SharepointIds = @{
+			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
+			ListItemId = "2"
 		}
 	}
-	destinationFileName = "newname.txt"
+	DestinationFileName = "newname.txt"
 }
 
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params

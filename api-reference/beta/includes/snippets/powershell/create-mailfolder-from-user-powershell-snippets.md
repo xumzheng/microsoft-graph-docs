@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	displayName = "Clutter"
-	isHidden = $true
+	DisplayName = "Clutter"
+	IsHidden = $true
 }
 
 # A UPN can also be used as -UserId.

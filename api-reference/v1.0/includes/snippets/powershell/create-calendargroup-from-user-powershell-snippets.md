@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
-	name = "Personal events"
+	Name = "Personal events"
 }
 
 # A UPN can also be used as -UserId.

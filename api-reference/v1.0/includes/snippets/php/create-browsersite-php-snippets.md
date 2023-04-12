@@ -26,7 +26,7 @@ $requestBody->setAllowRedirect(true);
 
 
 
-$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->sites()->post($requestBody);
+$requestResult = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->sites()->post($requestBody);
 
 
 ```

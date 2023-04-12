@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsAppInstallationRequestBuilderGetRequestConfiguration();
-$queryParameters = TeamsAppInstallationRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TeamsAppInstallationRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["teamsAppDefinition"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->installedAppsById('teamsAppInstallation-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->installedAppsById('teamsAppInstallation-id')->get($requestConfiguration);
 
 
 ```

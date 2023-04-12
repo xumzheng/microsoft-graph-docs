@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	displayName = "My Query 1"
-	contentQuery = "(Author="edison")"
+	DisplayName = "My Query 1"
+	ContentQuery = "(Author="edison")"
 }
 
 New-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params

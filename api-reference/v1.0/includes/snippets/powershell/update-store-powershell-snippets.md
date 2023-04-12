@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	defaultLanguageTag = "en-US"
+	DefaultLanguageTag = "en-US"
 }
 
 Update-MgSiteTermStore -SiteId $siteId -BodyParameter $params

@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	comment = "comment-value"
-	toRecipients = @(
+	Comment = "comment-value"
+	ToRecipients = @(
 		@{
-			emailAddress = @{
-				name = "name-value"
-				address = "address-value"
+			EmailAddress = @{
+				Name = "name-value"
+				Address = "address-value"
 			}
 		}
 	)

@@ -18,13 +18,15 @@ $requestBody->setRecipientUserId('fe278b61-21ac-4872-8b41-1962bbb98e3c');
 
 
 $requestConfiguration = new OfferShiftRequestsRequestBuilderPostRequestConfiguration();
+
 $headers = [
-		'Authorization' => 'Bearer {token}',
-	];
+	'Authorization' => 'Bearer {token}',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->offerShiftRequests()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->offerShiftRequests()->post($requestBody, $requestConfiguration);
 
 
 ```

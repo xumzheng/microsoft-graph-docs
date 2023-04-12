@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->organizationById('organization-id')->settings()->profileCardProperties()->get();
+$requestResult = $graphServiceClient->organizationById('organization-id')->settings()->profileCardProperties()->get();
 
 
 ```

@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
-	comments = @(
+	AssignedTo = "String"
+	ClosedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	Comments = @(
 		"String"
 	)
-	feedback = "@odata.type: microsoft.graph.alertFeedback"
-	status = "@odata.type: microsoft.graph.alertStatus"
-	tags = @(
+	Feedback = "@odata.type: microsoft.graph.alertFeedback"
+	Status = "@odata.type: microsoft.graph.alertStatus"
+	Tags = @(
 		"String"
 	)
-	vendorInformation = @{
-		provider = "String"
-		vendor = "String"
+	VendorInformation = @{
+		Provider = "String"
+		Vendor = "String"
 	}
 }
 

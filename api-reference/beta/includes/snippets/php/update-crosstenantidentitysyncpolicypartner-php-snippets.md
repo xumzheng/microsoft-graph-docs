@@ -17,7 +17,7 @@ $userSyncInbound->setIsSyncAllowed(true);
 $requestBody->setUserSyncInbound($userSyncInbound);
 
 
-$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partnersById('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->partnersById('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->patch($requestBody);
 
 
 ```

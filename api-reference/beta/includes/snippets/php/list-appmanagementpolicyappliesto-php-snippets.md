@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->policies()->appManagementPoliciesById('appManagementPolicy-id')->appliesTo()->get();
+$requestResult = $graphServiceClient->policies()->appManagementPoliciesById('appManagementPolicy-id')->appliesTo()->get();
 
 
 ```

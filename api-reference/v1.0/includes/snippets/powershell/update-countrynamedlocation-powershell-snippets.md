@@ -8,12 +8,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.countryNamedLocation"
-	displayName = "Updated named location without unknown countries and regions"
-	countriesAndRegions = @(
+	DisplayName = "Updated named location without unknown countries and regions"
+	CountriesAndRegions = @(
 		"CA"
 		"IN"
 	)
-	includeUnknownCountriesAndRegions = $false
+	IncludeUnknownCountriesAndRegions = $false
 }
 
 Update-MgIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId -BodyParameter $params

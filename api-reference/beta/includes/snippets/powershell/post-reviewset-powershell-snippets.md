@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	displayName = "My Reviewset 3"
+	DisplayName = "My Reviewset 3"
 }
 
 New-MgComplianceEdiscoveryCaseReviewSet -CaseId $caseId -BodyParameter $params

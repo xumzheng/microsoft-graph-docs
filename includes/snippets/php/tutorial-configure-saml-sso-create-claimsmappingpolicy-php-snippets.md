@@ -18,7 +18,7 @@ $requestBody->setIsOrganizationDefault(false);
 
 
 
-$result = $graphServiceClient->policies()->claimsMappingPolicies()->post($requestBody);
+$requestResult = $graphServiceClient->policies()->claimsMappingPolicies()->post($requestBody);
 
 
 ```

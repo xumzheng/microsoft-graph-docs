@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Sites
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.sitePage"
-	title = "sample"
-	showComments = $true
-	showRecommendedPages = $false
+	Title = "sample"
+	ShowComments = $true
+	ShowRecommendedPages = $false
 }
 
 Update-MgSitePage -SiteId $siteId -SitePageId $sitePageId -BodyParameter $params

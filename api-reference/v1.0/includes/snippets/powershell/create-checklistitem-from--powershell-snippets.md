@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	displayName = "Final sign-off from the team"
+	DisplayName = "Final sign-off from the team"
 }
 
 # A UPN can also be used as -UserId.

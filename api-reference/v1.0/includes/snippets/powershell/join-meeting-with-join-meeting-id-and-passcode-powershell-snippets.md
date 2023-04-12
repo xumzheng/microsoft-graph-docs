@@ -8,21 +8,21 @@ Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	callbackUri = "https://bot.contoso.com/callback"
-	requestedModalities = @(
+	CallbackUri = "https://bot.contoso.com/callback"
+	RequestedModalities = @(
 		"audio"
 	)
-	mediaConfig = @{
+	MediaConfig = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-		preFetchMedia = @(
+		PreFetchMedia = @(
 		)
 	}
-	meetingInfo = @{
+	MeetingInfo = @{
 		"@odata.type" = "#microsoft.graph.joinMeetingIdMeetingInfo"
-		joinMeetingId = "1234567"
-		passcode = "psw123"
+		JoinMeetingId = "1234567"
+		Passcode = "psw123"
 	}
-	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+	TenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 
 New-MgCommunicationCall -BodyParameter $params

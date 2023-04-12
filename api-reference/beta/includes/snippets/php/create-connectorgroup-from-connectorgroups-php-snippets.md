@@ -16,7 +16,7 @@ $requestBody->setIsDefault(false);
 
 
 
-$result = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->connectorGroups()->post($requestBody);
+$requestResult = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->connectorGroups()->post($requestBody);
 
 
 ```

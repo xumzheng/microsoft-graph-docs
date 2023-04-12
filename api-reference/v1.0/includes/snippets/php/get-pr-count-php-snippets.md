@@ -10,20 +10,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
-$headers = [
-		'ConsistencyLevel' => 'eventual',
-	];
-$requestConfiguration->headers = $headers;
 
-$queryParameters = UserRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = new UserRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["displayName"];
 $queryParameters->search = "\"displayName:Pr\"";
 $queryParameters->select = ["displayName","id"];
+
+$headers = [
+'ConsistencyLevel' => 'eventual',
+];
+
 $requestConfiguration->queryParameters = $queryParameters;
+$requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->groupsById('group-id')->members()->graphUser()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groupsById('group-id')->members()->graphUser()->get($requestConfiguration);
 
 
 ```

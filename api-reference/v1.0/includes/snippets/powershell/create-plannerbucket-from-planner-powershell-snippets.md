@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Planner
 
 $params = @{
-	name = "Advertising"
-	planId = "xqQg5FS2LkCp935s-FIFm2QAFkHM"
-	orderHint = " !"
+	Name = "Advertising"
+	PlanId = "xqQg5FS2LkCp935s-FIFm2QAFkHM"
+	OrderHint = " !"
 }
 
 New-MgPlannerBucket -BodyParameter $params

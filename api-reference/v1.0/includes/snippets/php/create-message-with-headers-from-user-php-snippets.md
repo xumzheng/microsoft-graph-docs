@@ -49,7 +49,7 @@ $requestBody->setInternetMessageHeaders($internetMessageHeadersArray);
 
 
 
-$result = $graphServiceClient->me()->messages()->post($requestBody);
+$requestResult = $graphServiceClient->me()->messages()->post($requestBody);
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	webUrl = "https://github.com/innocenty.popov"
+	WebUrl = "https://github.com/innocenty.popov"
 }
 
 # A UPN can also be used as -UserId.

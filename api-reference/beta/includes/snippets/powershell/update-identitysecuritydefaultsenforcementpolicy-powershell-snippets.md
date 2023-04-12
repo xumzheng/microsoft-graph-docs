@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	isEnabled = $false
+	IsEnabled = $false
 }
 
 Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params

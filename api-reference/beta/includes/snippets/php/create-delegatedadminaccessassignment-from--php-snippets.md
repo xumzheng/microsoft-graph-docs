@@ -45,7 +45,7 @@ $accessDetails->setUnifiedRoles($unifiedRolesArray);
 $requestBody->setAccessDetails($accessDetails);
 
 
-$result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->accessAssignments()->post($requestBody);
+$requestResult = $graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->accessAssignments()->post($requestBody);
 
 
 ```

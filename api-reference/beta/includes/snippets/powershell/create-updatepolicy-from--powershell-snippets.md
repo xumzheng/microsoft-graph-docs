@@ -8,30 +8,30 @@ Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.updatePolicy"
-	audience = @{
-		id = "8c4eb1eb-d7a3-4633-8e2f-f926e82df08e"
+	Audience = @{
+		Id = "8c4eb1eb-d7a3-4633-8e2f-f926e82df08e"
 	}
-	complianceChanges = @(
+	ComplianceChanges = @(
 		@{
 			"@odata.type" = "#microsoft.graph.windowsUpdates.contentApproval"
 		}
 	)
-	complianceChangeRules = @(
+	ComplianceChangeRules = @(
 		@{
 			"@odata.type" = "#microsoft.graph.windowsUpdates.contentApprovalRule"
-			contentFilter = @{
+			ContentFilter = @{
 				"@odata.type" = "#microsoft.graph.windowsUpdates.driverUpdateFilter"
 			}
-			durationBeforeDeploymentStart = "P7D"
+			DurationBeforeDeploymentStart = "P7D"
 		}
 	)
-	deploymentSettings = @{
+	DeploymentSettings = @{
 		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentSettings"
-		schedule = @{
-			gradualRollout = @{
+		Schedule = @{
+			GradualRollout = @{
 				"@odata.type" = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings"
-				durationBetweenOffers = "P1D"
-				devicePerOffer = 
+				DurationBetweenOffers = "P1D"
+				DevicePerOffer = 
 			}
 		}
 	}

@@ -18,7 +18,7 @@ $requestBody->setIsOrganizationDefault(true);
 
 
 
-$result = $graphServiceClient->policies()->tokenLifetimePoliciesById('tokenLifetimePolicy-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->tokenLifetimePoliciesById('tokenLifetimePolicy-id')->patch($requestBody);
 
 
 ```

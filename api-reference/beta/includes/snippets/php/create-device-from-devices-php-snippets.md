@@ -34,7 +34,7 @@ $requestBody->setDeviceVersion(99);
 
 
 
-$result = $graphServiceClient->devices()->post($requestBody);
+$requestResult = $graphServiceClient->devices()->post($requestBody);
 
 
 ```

@@ -7,37 +7,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	displayName = "Test create"
-	descriptionForAdmins = "New scheduled access review"
-	descriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
-	scope = @{
+	DisplayName = "Test create"
+	DescriptionForAdmins = "New scheduled access review"
+	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
+	Scope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-		query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-		queryType = "MicrosoftGraph"
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+		QueryType = "MicrosoftGraph"
 	}
-	reviewers = @(
+	Reviewers = @(
 		@{
-			query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
-			queryType = "MicrosoftGraph"
+			Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+			QueryType = "MicrosoftGraph"
 		}
 	)
-	settings = @{
-		instanceDurationInDays = 1
-		recurrence = @{
-			pattern = @{
-				type = "weekly"
-				interval = 1
+	Settings = @{
+		InstanceDurationInDays = 1
+		Recurrence = @{
+			Pattern = @{
+				Type = "weekly"
+				Interval = 1
 			}
-			range = @{
-				type = "noEnd"
-				startDate = "2020-09-08T12:02:30.667Z"
+			Range = @{
+				Type = "noEnd"
+				StartDate = "2020-09-08T12:02:30.667Z"
 			}
 		}
-		recommendationInsightSettings = @(
+		RecommendationInsightSettings = @(
 			@{
 				"@odata.type" = "#microsoft.graph.userLastSignInRecommendationInsightSetting"
-				recommendationLookBackDuration = "P30D"
-				signInScope = "tenant"
+				RecommendationLookBackDuration = "P30D"
+				SignInScope = "tenant"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings"

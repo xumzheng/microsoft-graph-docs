@@ -33,7 +33,7 @@ $accessPackageResourceScope->setOriginSystem('SharePointOnline');
 $requestBody->setAccessPackageResourceScope($accessPackageResourceScope);
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackagesById('accessPackage-id')->accessPackageResourceRoleScopes()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackagesById('accessPackage-id')->accessPackageResourceRoleScopes()->post($requestBody);
 
 
 ```

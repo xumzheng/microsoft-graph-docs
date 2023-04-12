@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new OnlineMeetingsRequestBuilderGetRequestConfiguration();
-$queryParameters = OnlineMeetingsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new OnlineMeetingsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "VideoTeleconferenceId eq '123456789'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->communications()->onlineMeetings()->get($requestConfiguration);
+$requestResult = $graphServiceClient->communications()->onlineMeetings()->get($requestConfiguration);
 
 
 ```

@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new HorizontalSectionRequestBuilderGetRequestConfiguration();
-$queryParameters = HorizontalSectionRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new HorizontalSectionRequestBuilderGetQueryParameters();
 $queryParameters->select = ["id","expand=columns"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->canvasLayout()->horizontalSectionsById('horizontalSection-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->canvasLayout()->horizontalSectionsById('horizontalSection-id')->get($requestConfiguration);
 
 
 ```

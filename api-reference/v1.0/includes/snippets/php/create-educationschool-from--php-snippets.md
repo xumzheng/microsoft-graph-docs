@@ -50,7 +50,7 @@ $address->set@odatatype('microsoft.graph.physicalAddress');
 $requestBody->setAddress($address);
 
 
-$result = $graphServiceClient->education()->schools()->post($requestBody);
+$requestResult = $graphServiceClient->education()->schools()->post($requestBody);
 
 
 ```

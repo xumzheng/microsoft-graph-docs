@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new SourceCollectionRequestBuilderGetRequestConfiguration();
-$queryParameters = SourceCollectionRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new SourceCollectionRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->get($requestConfiguration);
 
 
 ```

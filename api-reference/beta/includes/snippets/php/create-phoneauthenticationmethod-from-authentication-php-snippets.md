@@ -16,7 +16,7 @@ $requestBody->setPhoneType(new AuthenticationPhoneType('mobile'));
 
 
 
-$result = $graphServiceClient->me()->authentication()->phoneMethods()->post($requestBody);
+$requestResult = $graphServiceClient->me()->authentication()->phoneMethods()->post($requestBody);
 
 
 ```

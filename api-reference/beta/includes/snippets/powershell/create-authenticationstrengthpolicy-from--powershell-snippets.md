@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.authenticationStrengthPolicy"
-	displayName = "Contoso authentication level"
-	description = "The only authentication level allowed to access our secret apps"
-	allowedCombinations = @(
+	DisplayName = "Contoso authentication level"
+	Description = "The only authentication level allowed to access our secret apps"
+	AllowedCombinations = @(
 		"password, hardwareOath"
 		"password, sms"
 	)

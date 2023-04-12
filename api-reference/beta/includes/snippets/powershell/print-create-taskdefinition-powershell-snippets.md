@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 $params = @{
-	displayName = "Test TaskDefinitionName"
-	createdBy = @{
-		displayName = "Requesting App Display Name"
+	DisplayName = "Test TaskDefinitionName"
+	CreatedBy = @{
+		DisplayName = "Requesting App Display Name"
 	}
 }
 

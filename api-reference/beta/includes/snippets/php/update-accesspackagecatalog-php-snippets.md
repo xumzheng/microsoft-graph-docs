@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Catalog One');
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->patch($requestBody);
 
 
 ```

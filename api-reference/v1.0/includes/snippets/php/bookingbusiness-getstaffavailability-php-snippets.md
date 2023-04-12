@@ -28,7 +28,7 @@ $endDateTime->setTimeZone('Pacific Standard Time');
 $requestBody->setEndDateTime($endDateTime);
 
 
-$result = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->getStaffAvailability()->post($requestBody);
+$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->getStaffAvailability()->post($requestBody);
 
 
 ```

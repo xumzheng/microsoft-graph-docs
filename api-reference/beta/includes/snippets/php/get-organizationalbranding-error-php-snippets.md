@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new BrandingRequestBuilderGetRequestConfiguration();
+
 $headers = [
-		'Accept-Language' => '0',
-	];
+	'Accept-Language' => '0',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->organizationById('organization-id')->branding()->get($requestConfiguration);
+$requestResult = $graphServiceClient->organizationById('organization-id')->branding()->get($requestConfiguration);
 
 
 ```

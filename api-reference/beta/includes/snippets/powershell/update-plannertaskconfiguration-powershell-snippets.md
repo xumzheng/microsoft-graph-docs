@@ -8,112 +8,112 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerTaskConfiguration"
-	editPolicy = @{
-		rules = @(
+	EditPolicy = @{
+		Rules = @(
 			@{
-				defaultRule = "block"
-				role = @{
+				DefaultRule = "block"
+				Role = @{
 					"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
-					roleKind = "relationship"
-					role = "defaultRules"
+					RoleKind = "relationship"
+					Role = "defaultRules"
 				}
-				propertyRule = @{
-					percentComplete = @(
+				PropertyRule = @{
+					PercentComplete = @(
 						"allow"
 					)
-					ruleKind = "taskRule"
-					assignments = @{
-						defaultRules = @(
+					RuleKind = "taskRule"
+					Assignments = @{
+						DefaultRules = @(
 							"addSelf"
 						)
-						overrides = @(
+						Overrides = @(
 						)
 					}
 				}
 			}
 			@{
-				defaultRule = "block"
-				role = @{
+				DefaultRule = "block"
+				Role = @{
 					"@odata.type" = "#microsoft.graph.plannerRelationshipBasedUserType"
-					roleKind = "relationship"
-					role = "taskAssignees"
+					RoleKind = "relationship"
+					Role = "taskAssignees"
 				}
-				propertyRule = @{
-					startDate = @(
+				PropertyRule = @{
+					StartDate = @(
 						"allow"
 					)
-					dueDate = @(
+					DueDate = @(
 						"allow"
 					)
-					percentComplete = @(
+					PercentComplete = @(
 						"allow"
 					)
-					order = @(
+					Order = @(
 						"allow"
 					)
-					ruleKind = "taskRule"
-					references = @{
-						defaultRules = @(
+					RuleKind = "taskRule"
+					References = @{
+						DefaultRules = @(
 							"allow"
 						)
-						overrides = @(
+						Overrides = @(
 							@{
-								name = "userCreated"
-								rules = @(
+								Name = "userCreated"
+								Rules = @(
 									"allow"
 								)
 							}
 							@{
-								name = "applicationCreated"
-								rules = @(
+								Name = "applicationCreated"
+								Rules = @(
 									"block"
 								)
 							}
 						)
 					}
-					checkLists = @{
-						defaultRules = @(
+					CheckLists = @{
+						DefaultRules = @(
 							"allow"
 						)
-						overrides = @(
+						Overrides = @(
 							@{
-								name = "userCreated"
-								rules = @(
+								Name = "userCreated"
+								Rules = @(
 									"allow"
 								)
 							}
 							@{
-								name = "applicationCreated"
-								rules = @(
+								Name = "applicationCreated"
+								Rules = @(
 									"check"
 								)
 							}
 						)
 					}
-					assignments = @{
-						defaultRules = @(
+					Assignments = @{
+						DefaultRules = @(
 							"block"
 						)
-						overrides = @(
+						Overrides = @(
 							@{
-								name = "userCreated"
-								rules = @(
+								Name = "userCreated"
+								Rules = @(
 									"removeSelf"
 								)
 							}
 							@{
-								name = "applicationCreated"
-								rules = @(
+								Name = "applicationCreated"
+								Rules = @(
 									"check"
 								)
 							}
 						)
 					}
-					appliedCategories = @{
-						defaultRules = @(
+					AppliedCategories = @{
+						DefaultRules = @(
 							"allow"
 						)
-						overrides = @(
+						Overrides = @(
 						)
 					}
 				}

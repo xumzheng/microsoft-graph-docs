@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new SchemaExtensionsRequestBuilderGetRequestConfiguration();
-$queryParameters = SchemaExtensionsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new SchemaExtensionsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "id eq 'graphlearn_test'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->schemaExtensions()->get($requestConfiguration);
+$requestResult = $graphServiceClient->schemaExtensions()->get($requestConfiguration);
 
 
 ```

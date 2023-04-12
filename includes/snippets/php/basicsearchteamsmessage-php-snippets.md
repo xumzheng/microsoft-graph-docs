@@ -30,7 +30,7 @@ $requestBody->setRequests($requestsArray);
 
 
 
-$result = $graphServiceClient->search()->query()->post($requestBody);
+$requestResult = $graphServiceClient->search()->query()->post($requestBody);
 
 
 ```

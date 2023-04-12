@@ -16,7 +16,7 @@ $requestBody->setInviteRedirectUrl('https://myapp.contoso.com');
 
 
 
-$result = $graphServiceClient->invitations()->post($requestBody);
+$requestResult = $graphServiceClient->invitations()->post($requestBody);
 
 
 ```

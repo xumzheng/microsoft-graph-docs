@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	statusMessage = @{
-		message = @{
-			content = "Hey I'm currently in a meeting."
-			contentType = "text"
+	StatusMessage = @{
+		Message = @{
+			Content = "Hey I'm currently in a meeting."
+			ContentType = "text"
 		}
-		expiryDateTime = @{
-			dateTime = "2022-10-18T17:05:33.2079781"
-			timeZone = "Pacific Standard Time"
+		ExpiryDateTime = @{
+			DateTime = "2022-10-18T17:05:33.2079781"
+			TimeZone = "Pacific Standard Time"
 		}
 	}
 }

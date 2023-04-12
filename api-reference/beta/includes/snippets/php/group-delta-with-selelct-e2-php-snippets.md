@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new DeltaRequestBuilderGetQueryParameters();
 $queryParameters->select = ["displayName","description","mailNickname"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groups()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groups()->delta()->get($requestConfiguration);
 
 
 ```

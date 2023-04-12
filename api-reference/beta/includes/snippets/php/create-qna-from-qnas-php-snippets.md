@@ -38,7 +38,7 @@ $requestBody->setState(new AnswerState('published'));
 
 
 
-$result = $graphServiceClient->search()->qnas()->post($requestBody);
+$requestResult = $graphServiceClient->search()->qnas()->post($requestBody);
 
 
 ```

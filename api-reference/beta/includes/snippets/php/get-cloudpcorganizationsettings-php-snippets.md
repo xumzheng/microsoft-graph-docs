@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->organizationSettings()->get();
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->organizationSettings()->get();
 
 
 ```

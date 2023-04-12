@@ -7,25 +7,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	tenantId = "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a"
-	b2bDirectConnectOutbound = @{
-		usersAndGroups = @{
-			accessType = "blocked"
-			targets = @(
+	TenantId = "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a"
+	B2bDirectConnectOutbound = @{
+		UsersAndGroups = @{
+			AccessType = "blocked"
+			Targets = @(
 				@{
-					target = "6f546279-4da5-4b53-a095-09ea0cef9971"
-					targetType = "group"
+					Target = "6f546279-4da5-4b53-a095-09ea0cef9971"
+					TargetType = "group"
 				}
 			)
 		}
 	}
-	b2bDirectConnectInbound = @{
-		applications = @{
-			accessType = "allowed"
-			targets = @(
+	B2bDirectConnectInbound = @{
+		Applications = @{
+			AccessType = "allowed"
+			Targets = @(
 				@{
-					target = "Office365"
-					targetType = "application"
+					Target = "Office365"
+					TargetType = "application"
 				}
 			)
 		}

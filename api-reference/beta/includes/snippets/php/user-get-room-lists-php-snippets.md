@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->findRoomLists()->get();
+$requestResult = $graphServiceClient->me()->findRoomLists()->get();
 
 
 ```

@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingService"
-	defaultDuration = "PT30M"
+	DefaultDuration = "PT30M"
 }
 
 Update-MgBookingBusinessService -BookingBusinessId $bookingBusinessId -BookingServiceId $bookingServiceId -BodyParameter $params

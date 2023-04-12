@@ -10,8 +10,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsAppsRequestBuilderPostRequestConfiguration();
-$queryParameters = TeamsAppsRequestBuilderPostRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TeamsAppsRequestBuilderPostQueryParameters();
 $queryParameters->requiresreview = true;
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 

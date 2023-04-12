@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	isGroupOwnerManagementEnabled = $true
+	IsGroupOwnerManagementEnabled = $true
 }
 
 Update-MgPolicyAccessReviewPolicy -BodyParameter $params

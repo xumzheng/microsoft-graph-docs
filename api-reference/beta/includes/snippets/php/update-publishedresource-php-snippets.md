@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Demo provisioning (updated)');
 
 
 
-$result = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->publishedResourcesById('publishedResource-id')->patch($requestBody);
+$requestResult = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->publishedResourcesById('publishedResource-id')->patch($requestBody);
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	storageLocation = "storageLocation-value"
+	StorageLocation = "storageLocation-value"
 }
 
 Export-MgUserPersonalData -UserId $userId -BodyParameter $params

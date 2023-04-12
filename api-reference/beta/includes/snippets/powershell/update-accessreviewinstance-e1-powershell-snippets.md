@@ -7,42 +7,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	scope = @{
+	Scope = @{
 		"@odata.type" = "#microsoft.graph.principalResourceMembershipsScope"
-		principalScopes = @(
+		PrincipalScopes = @(
 			@{
 				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				query = "/v1.0/users"
-				queryType = "MicrosoftGraph"
+				Query = "/v1.0/users"
+				QueryType = "MicrosoftGraph"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				query = "/v1.0/groups"
-				queryType = "MicrosoftGraph"
+				Query = "/v1.0/groups"
+				QueryType = "MicrosoftGraph"
 			}
 		)
-		resourceScopes = @(
+		ResourceScopes = @(
 			@{
 				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				query = "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
-				queryType = "MicrosoftGraph"
+				Query = "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+				QueryType = "MicrosoftGraph"
 			}
 		)
 	}
-	reviewers = @(
+	Reviewers = @(
 		@{
-			query = "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
-			queryType = "MicrosoftGraph"
+			Query = "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+			QueryType = "MicrosoftGraph"
 		}
 	)
-	fallbackReviewers = @(
+	FallbackReviewers = @(
 		@{
-			query = "/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
-			queryType = "MicrosoftGraph"
+			Query = "/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+			QueryType = "MicrosoftGraph"
 		}
 		@{
-			query = "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
-			queryType = "MicrosoftGraph"
+			Query = "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+			QueryType = "MicrosoftGraph"
 		}
 	)
 }

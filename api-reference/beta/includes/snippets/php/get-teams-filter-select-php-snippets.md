@@ -10,9 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsRequestBuilderGetRequestConfiguration();
-$queryParameters = TeamsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TeamsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "displayName eq 'A Contoso Team'";
 $queryParameters->select = ["id","description"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 

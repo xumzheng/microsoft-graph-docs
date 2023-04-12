@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	subject = "subject-value"
-	body = @{
-		contentType = ""
-		content = "content-value"
+	Subject = "subject-value"
+	Body = @{
+		ContentType = ""
+		Content = "content-value"
 	}
-	inferenceClassification = "other"
+	InferenceClassification = "other"
 }
 
 # A UPN can also be used as -UserId.

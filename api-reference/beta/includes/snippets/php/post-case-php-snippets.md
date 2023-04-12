@@ -14,7 +14,7 @@ $requestBody->setDisplayName('My Case 1');
 
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->cases()->post($requestBody);
+$requestResult = $graphServiceClient->compliance()->ediscovery()->cases()->post($requestBody);
 
 
 ```

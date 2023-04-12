@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Mail
 
 $params = @{
 	"@odata.type" = "microsoft.graph.mailSearchFolder"
-	filterQuery = "contains(subject, 'Analytics')"
+	FilterQuery = "contains(subject, 'Analytics')"
 }
 
 # A UPN can also be used as -UserId.

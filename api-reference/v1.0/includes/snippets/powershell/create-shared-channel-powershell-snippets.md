@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	displayName = "My First Shared Channel"
-	description = "This is my first shared channel"
-	membershipType = "shared"
-	members = @(
+	DisplayName = "My First Shared Channel"
+	Description = "This is my first shared channel"
+	MembershipType = "shared"
+	Members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')"
-			roles = @(
+			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')"
+			Roles = @(
 				"owner"
 			)
 		}

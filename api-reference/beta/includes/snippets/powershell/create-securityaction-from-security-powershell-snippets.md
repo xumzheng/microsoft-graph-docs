@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	name = "BlockIp"
-	actionReason = "Test"
-	parameters = @(
+	Name = "BlockIp"
+	ActionReason = "Test"
+	Parameters = @(
 		@{
-			name = "IP"
-			value = "1.2.3.4"
+			Name = "IP"
+			Value = "1.2.3.4"
 		}
 	)
-	vendorInformation = @{
-		provider = "Windows Defender ATP"
-		vendor = "Microsoft"
+	VendorInformation = @{
+		Provider = "Windows Defender ATP"
+		Vendor = "Microsoft"
 	}
 }
 

@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
-$queryParameters = GroupsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new GroupsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "graphlearn_courses/courseId eq '123'";
 $queryParameters->select = ["displayName","id","description","graphlearn_courses"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groups()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groups()->get($requestConfiguration);
 
 
 ```

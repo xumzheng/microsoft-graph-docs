@@ -14,7 +14,7 @@ $requestBody->setWebUrl('webUrl value');
 
 
 
-$result = $graphServiceClient->me()->onenote()->notebooks()->getNotebookFromWebUrl()->post($requestBody);
+$requestResult = $graphServiceClient->me()->onenote()->notebooks()->getNotebookFromWebUrl()->post($requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowTemplatesById('workflowTemplate-id')->get();
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowTemplatesById('workflowTemplate-id')->get();
 
 
 ```

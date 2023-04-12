@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AccessPackageResourceEnvironmentsRequestBuilderGetRequestConfiguration();
-$queryParameters = AccessPackageResourceEnvironmentsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new AccessPackageResourceEnvironmentsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "originSystem eq 'SharePointOnline'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceEnvironments()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceEnvironments()->get($requestConfiguration);
 
 
 ```

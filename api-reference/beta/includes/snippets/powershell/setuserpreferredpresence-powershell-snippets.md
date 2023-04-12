@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	availability = "DoNotDisturb"
-	activity = "DoNotDisturb"
-	expirationDuration = "PT8H"
+	Availability = "DoNotDisturb"
+	Activity = "DoNotDisturb"
+	ExpirationDuration = "PT8H"
 }
 
 Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params

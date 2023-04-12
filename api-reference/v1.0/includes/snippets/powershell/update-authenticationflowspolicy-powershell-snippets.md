@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	selfServiceSignUp = @{
-		isEnabled = $true
+	SelfServiceSignUp = @{
+		IsEnabled = $true
 	}
 }
 

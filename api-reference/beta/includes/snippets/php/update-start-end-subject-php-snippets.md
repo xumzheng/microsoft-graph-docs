@@ -18,7 +18,7 @@ $requestBody->setSubject('Patch Meeting Subject');
 
 
 
-$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->patch($requestBody);
 
 
 ```

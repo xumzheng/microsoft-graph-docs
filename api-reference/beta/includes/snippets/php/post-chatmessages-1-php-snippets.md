@@ -17,7 +17,7 @@ $body->setContent('Hello world');
 $requestBody->setBody($body);
 
 
-$result = $graphServiceClient->chatsById('chat-id')->messages()->post($requestBody);
+$requestResult = $graphServiceClient->chatsById('chat-id')->messages()->post($requestBody);
 
 
 ```

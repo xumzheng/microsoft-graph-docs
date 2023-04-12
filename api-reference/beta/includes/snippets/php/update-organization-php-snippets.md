@@ -27,7 +27,7 @@ $requestBody->setTechnicalNotificationMails(['tech@contoso.com', ]);
 
 
 
-$result = $graphServiceClient->organizationById('organization-id')->patch($requestBody);
+$requestResult = $graphServiceClient->organizationById('organization-id')->patch($requestBody);
 
 
 ```

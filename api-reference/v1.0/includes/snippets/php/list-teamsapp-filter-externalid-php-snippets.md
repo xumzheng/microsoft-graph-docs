@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsAppsRequestBuilderGetRequestConfiguration();
-$queryParameters = TeamsAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TeamsAppsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->appCatalogs()->teamsApps()->get($requestConfiguration);
+$requestResult = $graphServiceClient->appCatalogs()->teamsApps()->get($requestConfiguration);
 
 
 ```

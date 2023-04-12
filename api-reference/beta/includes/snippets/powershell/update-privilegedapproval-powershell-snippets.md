@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	approvalState = "approvalState-value"
-	approverReason = "approverReason-value"
+	ApprovalState = "approvalState-value"
+	ApproverReason = "approverReason-value"
 }
 
 Update-MgPrivilegedApproval -PrivilegedApprovalId $privilegedApprovalId -BodyParameter $params

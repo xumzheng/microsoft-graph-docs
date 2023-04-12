@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
 $params = @{
-	displayName = "NewName"
-	description = "A new roleAssignment"
+	DisplayName = "NewName"
+	Description = "A new roleAssignment"
 }
 
 Update-MgRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId -BodyParameter $params

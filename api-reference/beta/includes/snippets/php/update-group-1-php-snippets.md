@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Contoso Life Renewed');
 
 
 
-$result = $graphServiceClient->groupsById('group-id')->patch($requestBody);
+$requestResult = $graphServiceClient->groupsById('group-id')->patch($requestBody);
 
 
 ```

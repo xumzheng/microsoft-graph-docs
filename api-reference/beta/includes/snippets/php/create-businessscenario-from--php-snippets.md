@@ -18,7 +18,7 @@ $requestBody->setUniqueName('com.contoso.apps.ordertracking');
 
 
 
-$result = $graphServiceClient->solutions()->businessScenarios()->post($requestBody);
+$requestResult = $graphServiceClient->solutions()->businessScenarios()->post($requestBody);
 
 
 ```

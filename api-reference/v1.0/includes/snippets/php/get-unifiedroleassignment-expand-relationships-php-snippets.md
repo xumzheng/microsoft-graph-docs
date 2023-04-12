@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UnifiedRoleAssignmentRequestBuilderGetRequestConfiguration();
-$queryParameters = UnifiedRoleAssignmentRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new UnifiedRoleAssignmentRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["roleDefinition"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->roleManagement()->directory()->roleAssignmentsById('unifiedRoleAssignment-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->roleManagement()->directory()->roleAssignmentsById('unifiedRoleAssignment-id')->get($requestConfiguration);
 
 
 ```

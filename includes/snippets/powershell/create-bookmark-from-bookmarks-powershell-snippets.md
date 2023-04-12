@@ -7,20 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Search
 
 $params = @{
-	displayName = "Contoso Install Site"
-	webUrl = "http://www.contoso.com/"
-	description = "Try or buy Contoso for Home or Business and view product information"
-	keywords = @{
-		keywords = @(
+	DisplayName = "Contoso Install Site"
+	WebUrl = "http://www.contoso.com/"
+	Description = "Try or buy Contoso for Home or Business and view product information"
+	Keywords = @{
+		Keywords = @(
 			"Contoso"
 			"install"
 		)
-		reservedKeywords = @(
+		ReservedKeywords = @(
 			"Contoso"
 		)
-		matchSimilarKeywords = $true
+		MatchSimilarKeywords = $true
 	}
-	state = "published"
+	State = "published"
 }
 
 New-MgSearchBookmark -BodyParameter $params

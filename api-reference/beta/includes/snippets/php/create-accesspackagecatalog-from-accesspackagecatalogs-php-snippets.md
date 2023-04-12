@@ -18,7 +18,7 @@ $requestBody->setIsExternallyVisible(true);
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->post($requestBody);
 
 
 ```

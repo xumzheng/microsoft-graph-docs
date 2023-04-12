@@ -7,26 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	displayName = "Grant manager access to mailbox and OneDrive"
-	description = "Grant manager access to mailbox and OneDrive"
-	endpointConfiguration = @{
+	DisplayName = "Grant manager access to mailbox and OneDrive"
+	Description = "Grant manager access to mailbox and OneDrive"
+	EndpointConfiguration = @{
 		"@odata.type" = "#microsoft.graph.logicAppTriggerEndpointConfiguration"
-		subscriptionId = "c500b67c-e9b7-4ad2-a90d-77d41385ae55"
-		resourceGroupName = "RG-LCM"
-		logicAppWorkflowName = "ManagerAccess"
+		SubscriptionId = "c500b67c-e9b7-4ad2-a90d-77d41385ae55"
+		ResourceGroupName = "RG-LCM"
+		LogicAppWorkflowName = "ManagerAccess"
 	}
-	authenticationConfiguration = @{
+	AuthenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
-		resourceId = "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+		ResourceId = "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
 	}
-	clientConfiguration = @{
+	ClientConfiguration = @{
 		"@odata.type" = "#microsoft.graph.customExtensionClientConfiguration"
-		maximumRetries = 
-		timeoutInMilliseconds = 1000
+		MaximumRetries = 
+		TimeoutInMilliseconds = 1000
 	}
-	callbackConfiguration = @{
+	CallbackConfiguration = @{
 		"@odata.type" = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration"
-		timeoutDuration = "PT20M"
+		TimeoutDuration = "PT20M"
 	}
 }
 

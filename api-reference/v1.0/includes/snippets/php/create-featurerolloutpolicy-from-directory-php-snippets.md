@@ -22,7 +22,7 @@ $requestBody->setIsAppliedToOrganization(false);
 
 
 
-$result = $graphServiceClient->policies()->featureRolloutPolicies()->post($requestBody);
+$requestResult = $graphServiceClient->policies()->featureRolloutPolicies()->post($requestBody);
 
 
 ```

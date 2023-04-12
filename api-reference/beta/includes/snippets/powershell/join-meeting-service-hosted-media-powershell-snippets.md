@@ -8,34 +8,34 @@ Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	callbackUri = "https://bot.contoso.com/callback"
-	requestedModalities = @(
+	CallbackUri = "https://bot.contoso.com/callback"
+	RequestedModalities = @(
 		"audio"
 	)
-	mediaConfig = @{
+	MediaConfig = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-		preFetchMedia = @(
+		PreFetchMedia = @(
 		)
 	}
-	chatInfo = @{
+	ChatInfo = @{
 		"@odata.type" = "#microsoft.graph.chatInfo"
-		threadId = "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2"
-		messageId = "0"
+		ThreadId = "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2"
+		MessageId = "0"
 	}
-	meetingInfo = @{
+	MeetingInfo = @{
 		"@odata.type" = "#microsoft.graph.organizerMeetingInfo"
-		organizer = @{
+		Organizer = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			user = @{
+			User = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
-				tenantId = "9f386a15-f9cc-445b-8106-ac85e314a07b"
-				displayName = "Bob"
+				Id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+				TenantId = "9f386a15-f9cc-445b-8106-ac85e314a07b"
+				DisplayName = "Bob"
 			}
 		}
-		allowConversationWithoutHost = $true
+		AllowConversationWithoutHost = $true
 	}
-	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+	TenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 
 New-MgCommunicationCall -BodyParameter $params

@@ -22,7 +22,7 @@ $requestBody->setCollaborationTags(['ableToMentor', ]);
 
 
 
-$result = $graphServiceClient->me()->profile()->skills()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->skills()->post($requestBody);
 
 
 ```

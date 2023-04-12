@@ -19,7 +19,7 @@ $requestBody->setTitle('title-value');
 
 
 
-$result = $graphServiceClient->planner()->plans()->post($requestBody);
+$requestResult = $graphServiceClient->planner()->plans()->post($requestBody);
 
 
 ```

@@ -17,15 +17,15 @@ $requestBody->setExpectedAssessment(new ThreatExpectedAssessment('block'));
 $requestBody->setCategory(new ThreatCategory('malware'));
 
 $additionalData = [
-		'fileName' => 'test.txt', 
-		'contentData' => 'VGhpcyBpcyBhIHRlc3QgZmlsZQ==', 
+'fileName' => 'test.txt', 
+'contentData' => 'VGhpcyBpcyBhIHRlc3QgZmlsZQ==', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->informationProtection()->threatAssessmentRequests()->post($requestBody);
+$requestResult = $graphServiceClient->informationProtection()->threatAssessmentRequests()->post($requestBody);
 
 
 ```

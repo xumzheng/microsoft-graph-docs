@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	post = @{
-		body = @{
-			contentType = "html"
-			content = "<html><body><div><div><div><div>When and where? </div></div></div></div></body></html>"
+	Post = @{
+		Body = @{
+			ContentType = "html"
+			Content = "<html><body><div><div><div><div>When and where? </div></div></div></div></body></html>"
 		}
-		extensions = @(
+		Extensions = @(
 			@{
 				"@odata.type" = "microsoft.graph.openTypeExtension"
-				extensionName = "Com.Contoso.HR"
-				companyName = "Contoso"
-				expirationDate = "2015-07-03T13:04:00.000Z"
-				topPicks = @(
+				ExtensionName = "Com.Contoso.HR"
+				CompanyName = "Contoso"
+				ExpirationDate = "2015-07-03T13:04:00.000Z"
+				TopPicks = @(
 					"Employees only"
 					"Add spouse or guest"
 					"Add family"

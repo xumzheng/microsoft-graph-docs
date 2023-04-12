@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Test1234');
 
 
 
-$result = $graphServiceClient->policies()->claimsMappingPolicies()->post($requestBody);
+$requestResult = $graphServiceClient->policies()->claimsMappingPolicies()->post($requestBody);
 
 
 ```

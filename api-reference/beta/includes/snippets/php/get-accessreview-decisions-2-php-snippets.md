@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->accessReviewsById('accessReview-id')->myDecisions()->get();
+$requestResult = $graphServiceClient->accessReviewsById('accessReview-id')->myDecisions()->get();
 
 
 ```

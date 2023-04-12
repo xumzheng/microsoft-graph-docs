@@ -15,17 +15,17 @@ $requestBody->set@odatatype('#microsoft.graph.referenceAttachment');
 $requestBody->setName('Personal pictures');
 
 $additionalData = [
-		'sourceUrl' => 'https://contoso.com/personal/mario_contoso_net/Documents/Pics', 
-		'providerType' => 'oneDriveConsumer', 
-		'permission' => 'Edit', 
-		'isFolder' => 'True', 
+'sourceUrl' => 'https://contoso.com/personal/mario_contoso_net/Documents/Pics', 
+'providerType' => 'oneDriveConsumer', 
+'permission' => 'Edit', 
+'isFolder' => 'True', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
+$requestResult = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
 
 
 ```

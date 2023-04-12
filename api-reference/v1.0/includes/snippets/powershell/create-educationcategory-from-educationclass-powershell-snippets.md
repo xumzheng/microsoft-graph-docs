@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	displayName = "Quizzes"
+	DisplayName = "Quizzes"
 }
 
 New-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -BodyParameter $params

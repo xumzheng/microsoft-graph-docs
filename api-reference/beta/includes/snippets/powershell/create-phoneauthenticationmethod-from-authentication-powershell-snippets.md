@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	phoneNumber = "+1 2065555555"
-	phoneType = "mobile"
+	PhoneNumber = "+1 2065555555"
+	PhoneType = "mobile"
 }
 
 # A UPN can also be used as -UserId.

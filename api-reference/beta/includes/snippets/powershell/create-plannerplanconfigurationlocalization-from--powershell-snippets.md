@@ -8,28 +8,28 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerPlanConfigurationLocalization"
-	languageTag = "en-us"
-	planTitle = "Order Tracking"
-	buckets = @(
+	LanguageTag = "en-us"
+	PlanTitle = "Order Tracking"
+	Buckets = @(
 		@{
 			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-			externalBucketId = "deliveryBucket"
-			name = "Deliveries"
+			ExternalBucketId = "deliveryBucket"
+			Name = "Deliveries"
 		}
 		@{
 			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-			externalBucketId = "storePickupBucket"
-			name = "Pickup"
+			ExternalBucketId = "storePickupBucket"
+			Name = "Pickup"
 		}
 		@{
 			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-			externalBucketId = "specialOrdersBucket"
-			name = "Special Orders"
+			ExternalBucketId = "specialOrdersBucket"
+			Name = "Special Orders"
 		}
 		@{
 			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
-			externalBucketId = "returnProcessingBucket"
-			name = "Customer Returns"
+			ExternalBucketId = "returnProcessingBucket"
+			Name = "Customer Returns"
 		}
 	)
 }

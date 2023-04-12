@@ -10,14 +10,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
-$queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new MessagesRequestBuilderGetQueryParameters();
 $queryParameters->top = 2;
 $queryParameters->filter = "lastModifiedDateTime gt 2021-03-17T07:13:28.000z";
 $queryParameters->orderby = ["createdDateTime desc"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->usersById('user-id')->chatsById('chat-id')->messages()->get($requestConfiguration);
+$requestResult = $graphServiceClient->usersById('user-id')->chatsById('chat-id')->messages()->get($requestConfiguration);
 
 
 ```

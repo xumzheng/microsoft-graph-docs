@@ -16,7 +16,7 @@ $requestBody->setContentQuery('(Author=\"edison\")');
 
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->queries()->post($requestBody);
+$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->queries()->post($requestBody);
 
 
 ```

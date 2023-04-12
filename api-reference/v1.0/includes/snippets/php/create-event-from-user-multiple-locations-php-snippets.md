@@ -109,13 +109,15 @@ $requestBody->setAllowNewTimeProposals(true);
 
 
 $requestConfiguration = new EventsRequestBuilderPostRequestConfiguration();
+
 $headers = [
 'Prefer' => 'outlook.timezone="Pacific Standard Time"',
 ];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
 
 
 ```

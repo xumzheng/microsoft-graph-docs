@@ -10,18 +10,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DevicesRequestBuilderGetRequestConfiguration();
-$headers = [
-		'ConsistencyLevel' => 'eventual',
-	];
-$requestConfiguration->headers = $headers;
 
-$queryParameters = DevicesRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = new DevicesRequestBuilderGetQueryParameters();
 $queryParameters->search = "\"displayName:Android\"";
 $queryParameters->count = true;
+
+$headers = [
+'ConsistencyLevel' => 'eventual',
+];
+
 $requestConfiguration->queryParameters = $queryParameters;
+$requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->devices()->get($requestConfiguration);
+$requestResult = $graphServiceClient->devices()->get($requestConfiguration);
 
 
 ```

@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new CloudPcOnPremisesConnectionRequestBuilderGetRequestConfiguration();
-$queryParameters = CloudPcOnPremisesConnectionRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new CloudPcOnPremisesConnectionRequestBuilderGetQueryParameters();
 $queryParameters->select = ["id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnectionsById('cloudPcOnPremisesConnection-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnectionsById('cloudPcOnPremisesConnection-id')->get($requestConfiguration);
 
 
 ```

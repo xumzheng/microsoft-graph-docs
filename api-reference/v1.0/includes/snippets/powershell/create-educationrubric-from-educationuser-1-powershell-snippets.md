@@ -7,64 +7,64 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	displayName = "Example Credit Rubric"
-	description = @{
-		content = "This is an example of a credit rubric (no points)"
-		contentType = "text"
+	DisplayName = "Example Credit Rubric"
+	Description = @{
+		Content = "This is an example of a credit rubric (no points)"
+		ContentType = "text"
 	}
-	levels = @(
+	Levels = @(
 		@{
-			displayName = "Good"
-			description = @{
-				content = ""
-				contentType = "text"
+			DisplayName = "Good"
+			Description = @{
+				Content = ""
+				ContentType = "text"
 			}
 		}
 		@{
-			displayName = "Poor"
-			description = @{
-				content = ""
-				contentType = "text"
+			DisplayName = "Poor"
+			Description = @{
+				Content = ""
+				ContentType = "text"
 			}
 		}
 	)
-	qualities = @(
+	Qualities = @(
 		@{
-			description = @{
-				content = "Argument"
-				contentType = "text"
+			Description = @{
+				Content = "Argument"
+				ContentType = "text"
 			}
-			criteria = @(
+			Criteria = @(
 				@{
-					description = @{
-						content = "The essay's argument is persuasive."
-						contentType = "text"
+					Description = @{
+						Content = "The essay's argument is persuasive."
+						ContentType = "text"
 					}
 				}
 				@{
-					description = @{
-						content = "The essay's argument does not make sense."
-						contentType = "text"
+					Description = @{
+						Content = "The essay's argument does not make sense."
+						ContentType = "text"
 					}
 				}
 			)
 		}
 		@{
-			description = @{
-				content = "Spelling and Grammar"
-				contentType = "text"
+			Description = @{
+				Content = "Spelling and Grammar"
+				ContentType = "text"
 			}
-			criteria = @(
+			Criteria = @(
 				@{
-					description = @{
-						content = "The essay uses proper spelling and grammar with few or no errors."
-						contentType = "text"
+					Description = @{
+						Content = "The essay uses proper spelling and grammar with few or no errors."
+						ContentType = "text"
 					}
 				}
 				@{
-					description = @{
-						content = "The essay has numerous errors in spelling and/or grammar."
-						contentType = "text"
+					Description = @{
+						Content = "The essay has numerous errors in spelling and/or grammar."
+						ContentType = "text"
 					}
 				}
 			)

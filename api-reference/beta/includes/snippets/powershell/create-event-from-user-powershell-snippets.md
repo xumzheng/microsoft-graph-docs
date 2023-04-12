@@ -7,33 +7,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
-	subject = "Let's go for lunch"
-	body = @{
-		contentType = "HTML"
-		content = "Does noon work for you?"
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does noon work for you?"
 	}
-	start = @{
-		dateTime = "2017-04-15T12:00:00"
-		timeZone = "Pacific Standard Time"
+	Start = @{
+		DateTime = "2017-04-15T12:00:00"
+		TimeZone = "Pacific Standard Time"
 	}
-	end = @{
-		dateTime = "2017-04-15T14:00:00"
-		timeZone = "Pacific Standard Time"
+	End = @{
+		DateTime = "2017-04-15T14:00:00"
+		TimeZone = "Pacific Standard Time"
 	}
-	location = @{
-		displayName = "Harry's Bar"
+	Location = @{
+		DisplayName = "Harry's Bar"
 	}
-	attendees = @(
+	Attendees = @(
 		@{
-			emailAddress = @{
-				address = "samanthab@contoso.onmicrosoft.com"
-				name = "Samantha Booth"
+			EmailAddress = @{
+				Address = "samanthab@contoso.onmicrosoft.com"
+				Name = "Samantha Booth"
 			}
-			type = "required"
+			Type = "required"
 		}
 	)
-	allowNewTimeProposals = $true
-	transactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
+	AllowNewTimeProposals = $true
+	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 
 # A UPN can also be used as -UserId.

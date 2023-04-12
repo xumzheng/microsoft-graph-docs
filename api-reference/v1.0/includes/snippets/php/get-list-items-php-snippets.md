@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ItemsRequestBuilderGetRequestConfiguration();
-$queryParameters = ItemsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new ItemsRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["fields(select=Name,Color,Quantity)"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->get($requestConfiguration);
+$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->get($requestConfiguration);
 
 
 ```

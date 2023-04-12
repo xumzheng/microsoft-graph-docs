@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
-$queryParameters = UserRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new UserRequestBuilderGetQueryParameters();
 $queryParameters->select = ["ext55gb1l09_msLearnCourses"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->usersById('user-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->usersById('user-id')->get($requestConfiguration);
 
 
 ```

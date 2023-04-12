@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	customPrompt = @{
+	CustomPrompt = @{
 		"@odata.type" = "#microsoft.graph.mediaPrompt"
-		mediaInfo = @{
+		MediaInfo = @{
 			"@odata.type" = "#microsoft.graph.mediaInfo"
-			uri = "https://bot.contoso.com/onHold.wav"
+			Uri = "https://bot.contoso.com/onHold.wav"
 		}
 	}
-	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 
 Start-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params

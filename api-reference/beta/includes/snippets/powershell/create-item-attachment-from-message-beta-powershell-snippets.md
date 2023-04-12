@@ -8,10 +8,10 @@ Import-Module Microsoft.Graph.Mail
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
-	name = "Holiday event"
-	item = @{
+	Name = "Holiday event"
+	Item = @{
 		"@odata.type" = "microsoft.graph.event"
-		subject = "Discuss gifts for children"
+		Subject = "Discuss gifts for children"
 	}
 }
 

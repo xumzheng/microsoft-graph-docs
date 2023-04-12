@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Bookings
 
 $params = @{
-	target = @{
+	Target = @{
 		"@odata.type" = "microsoft.graph.businessScenarioGroupTarget"
-		taskTargetKind = "group"
-		groupId = "7a339254-4b2b-4410-b295-c890a16776ee"
+		TaskTargetKind = "group"
+		GroupId = "7a339254-4b2b-4410-b295-c890a16776ee"
 	}
 }
 

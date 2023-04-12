@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MembersRequestBuilderGetRequestConfiguration();
-$queryParameters = MembersRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new MembersRequestBuilderGetQueryParameters();
 $queryParameters->filter = "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->members()->get($requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->members()->get($requestConfiguration);
 
 
 ```

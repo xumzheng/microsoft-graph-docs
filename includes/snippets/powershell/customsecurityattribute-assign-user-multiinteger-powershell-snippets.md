@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	customSecurityAttributes = @{
+	CustomSecurityAttributes = @{
 		Engineering = @{
 			"@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
 			"CostCenter@odata.type" = "#Collection(Int32)"

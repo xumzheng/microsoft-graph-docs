@@ -94,6 +94,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/ediscoverycustodianthisremovehold-caseid-custodians-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/ediscoverycustodianthisremovehold-caseid-custodians-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -140,6 +144,10 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/ediscoverycustodianthisremovehold-single-custodian-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/ediscoverycustodianthisremovehold-single-custodian-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

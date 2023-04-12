@@ -31,13 +31,15 @@ $vendorInformation->setVendor('String');
 $requestBody->setVendorInformation($vendorInformation);
 
 $requestConfiguration = new AlertRequestBuilderPatchRequestConfiguration();
+
 $headers = [
 'Prefer' => 'return=representation',
 ];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->security()->alertsById('alert-id')->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->security()->alertsById('alert-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

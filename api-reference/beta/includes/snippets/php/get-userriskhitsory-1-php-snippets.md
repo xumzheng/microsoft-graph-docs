@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->riskyUsersById('riskyUser-id')->history()->get();
+$requestResult = $graphServiceClient->riskyUsersById('riskyUser-id')->history()->get();
 
 
 ```

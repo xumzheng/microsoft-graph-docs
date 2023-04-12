@@ -14,7 +14,7 @@ $requestBody->setQuery('DeviceProcessEvents | where InitiatingProcessFileName =~
 
 
 
-$result = $graphServiceClient->security()->securityRunHuntingQuery()->post($requestBody);
+$requestResult = $graphServiceClient->security()->securityRunHuntingQuery()->post($requestBody);
 
 
 ```

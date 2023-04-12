@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new SitePageRequestBuilderGetRequestConfiguration();
-$queryParameters = SitePageRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new SitePageRequestBuilderGetQueryParameters();
 $queryParameters->select = ["id","title"];
 $queryParameters->expand = ["webparts"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->get($requestConfiguration);
 
 
 ```

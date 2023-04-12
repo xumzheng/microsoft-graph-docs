@@ -13,14 +13,14 @@ $requestBody = new IdentityProviderBase();
 $requestBody->set@odatatype('#microsoft.graph.socialIdentityProvider');
 
 $additionalData = [
-		'clientSecret' => '1111111111111', 
+'clientSecret' => '1111111111111', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->identity()->identityProvidersById('identityProviderBase-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identity()->identityProvidersById('identityProviderBase-id')->patch($requestBody);
 
 
 ```

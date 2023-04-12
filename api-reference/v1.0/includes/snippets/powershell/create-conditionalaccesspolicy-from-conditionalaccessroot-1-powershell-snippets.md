@@ -7,35 +7,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	displayName = "Access to EXO requires MFA"
-	state = "enabled"
-	conditions = @{
-		clientAppTypes = @(
+	DisplayName = "Access to EXO requires MFA"
+	State = "enabled"
+	Conditions = @{
+		ClientAppTypes = @(
 			"mobileAppsAndDesktopClients"
 			"browser"
 		)
-		applications = @{
-			includeApplications = @(
+		Applications = @{
+			IncludeApplications = @(
 				"00000002-0000-0ff1-ce00-000000000000"
 			)
 		}
-		users = @{
-			includeGroups = @(
+		Users = @{
+			IncludeGroups = @(
 				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
 			)
 		}
-		locations = @{
-			includeLocations = @(
+		Locations = @{
+			IncludeLocations = @(
 				"All"
 			)
-			excludeLocations = @(
+			ExcludeLocations = @(
 				"AllTrusted"
 			)
 		}
 	}
-	grantControls = @{
-		operator = "OR"
-		builtInControls = @(
+	GrantControls = @{
+		Operator = "OR"
+		BuiltInControls = @(
 			"mfa"
 		)
 	}

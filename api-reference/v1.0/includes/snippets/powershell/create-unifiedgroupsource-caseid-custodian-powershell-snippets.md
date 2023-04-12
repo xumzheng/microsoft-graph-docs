@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	group = @{
-		mail = "SOCTeam@M365x809305.onmicrosoft.com"
+	Group = @{
+		Mail = "SOCTeam@M365x809305.onmicrosoft.com"
 	}
-	includedSources = "mailbox, site"
+	IncludedSources = "mailbox, site"
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params

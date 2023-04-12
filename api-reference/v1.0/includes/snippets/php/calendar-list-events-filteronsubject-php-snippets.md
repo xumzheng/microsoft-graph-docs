@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new EventsRequestBuilderGetRequestConfiguration();
-$queryParameters = EventsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new EventsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "startsWith(subject,'All')";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->calendar()->events()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->calendar()->events()->get($requestConfiguration);
 
 
 ```

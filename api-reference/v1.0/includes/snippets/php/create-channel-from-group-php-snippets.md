@@ -18,7 +18,7 @@ $requestBody->setMembershipType(new ChannelMembershipType('standard'));
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
 
 
 ```

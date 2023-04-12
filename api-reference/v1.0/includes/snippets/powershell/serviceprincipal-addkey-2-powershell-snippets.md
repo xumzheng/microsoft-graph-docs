@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	keyCredential = @{
-		type = "X509CertAndPassword"
-		usage = "Sign"
-		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+	KeyCredential = @{
+		Type = "X509CertAndPassword"
+		Usage = "Sign"
+		Key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
-	passwordCredential = @{
-		secretText = "MKTr0w1..."
+	PasswordCredential = @{
+		SecretText = "MKTr0w1..."
 	}
-	proof = "eyJ0eXAiOiJ..."
+	Proof = "eyJ0eXAiOiJ..."
 }
 
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params

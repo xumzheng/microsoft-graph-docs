@@ -35,7 +35,7 @@ $onPremisesPublishing->setIsTranslateLinksInBodyEnabled(true);
 $requestBody->setOnPremisesPublishing($onPremisesPublishing);
 
 
-$result = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$requestResult = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
 
 
 ```

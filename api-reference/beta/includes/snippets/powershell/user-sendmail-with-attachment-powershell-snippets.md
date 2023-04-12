@@ -7,25 +7,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	message = @{
-		subject = "Meet for lunch?"
-		body = @{
-			contentType = "Text"
-			content = "The new cafeteria is open."
+	Message = @{
+		Subject = "Meet for lunch?"
+		Body = @{
+			ContentType = "Text"
+			Content = "The new cafeteria is open."
 		}
-		toRecipients = @(
+		ToRecipients = @(
 			@{
-				emailAddress = @{
-					address = "meganb@contoso.onmicrosoft.com"
+				EmailAddress = @{
+					Address = "meganb@contoso.onmicrosoft.com"
 				}
 			}
 		)
-		attachments = @(
+		Attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				name = "attachment.txt"
-				contentType = "text/plain"
-				contentBytes = "SGVsbG8gV29ybGQh"
+				Name = "attachment.txt"
+				ContentType = "text/plain"
+				ContentBytes = "SGVsbG8gV29ybGQh"
 			}
 		)
 	}

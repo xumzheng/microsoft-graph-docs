@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	comment = "v1"
-	shouldCaptureMinorVersion = $false
+	Comment = "v1"
+	ShouldCaptureMinorVersion = $false
 }
 
 New-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params

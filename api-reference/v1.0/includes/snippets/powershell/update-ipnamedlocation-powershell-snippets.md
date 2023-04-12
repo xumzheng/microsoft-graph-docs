@@ -8,12 +8,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.ipNamedLocation"
-	displayName = "Untrusted named location with only IPv4 address"
-	isTrusted = $false
-	ipRanges = @(
+	DisplayName = "Untrusted named location with only IPv4 address"
+	IsTrusted = $false
+	IpRanges = @(
 		@{
 			"@odata.type" = "#microsoft.graph.iPv4CidrRange"
-			cidrAddress = "6.5.4.3/18"
+			CidrAddress = "6.5.4.3/18"
 		}
 	)
 }

@@ -16,7 +16,7 @@ $requestBody->setIsViewingBeforeAcceptanceRequired(true);
 
 
 
-$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->patch($requestBody);
 
 
 ```

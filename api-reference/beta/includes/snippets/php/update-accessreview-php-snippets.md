@@ -14,7 +14,7 @@ $requestBody->setDisplayName('TestReview new name');
 
 
 
-$result = $graphServiceClient->accessReviewsById('accessReview-id')->patch($requestBody);
+$requestResult = $graphServiceClient->accessReviewsById('accessReview-id')->patch($requestBody);
 
 
 ```

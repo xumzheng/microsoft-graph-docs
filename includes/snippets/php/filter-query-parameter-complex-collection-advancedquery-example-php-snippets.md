@@ -10,18 +10,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
-$headers = [
-		'ConsistencyLevel' => 'eventual',
-	];
-$requestConfiguration->headers = $headers;
 
-$queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = new UsersRequestBuilderGetQueryParameters();
 $queryParameters->filter = "NOT)";
 $queryParameters->count = true;
+
+$headers = [
+'ConsistencyLevel' => 'eventual',
+];
+
 $requestConfiguration->queryParameters = $queryParameters;
+$requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->users()->get($requestConfiguration);
+$requestResult = $graphServiceClient->users()->get($requestConfiguration);
 
 
 ```

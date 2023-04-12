@@ -10,17 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
+
+$queryParameters = new DeltaRequestBuilderGetQueryParameters();
+$queryParameters->select = ["displayName"];
+
 $headers = [
-		'Prefer' => 'odata.maxpagesize=2',
-	];
+'Prefer' => 'odata.maxpagesize=2',
+];
+
+$requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
-$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["displayName"];
-$requestConfiguration->queryParameters = $queryParameters;
 
-
-$result = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->contacts()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->contacts()->delta()->get($requestConfiguration);
 
 
 ```

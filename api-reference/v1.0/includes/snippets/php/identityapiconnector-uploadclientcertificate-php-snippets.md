@@ -16,7 +16,7 @@ $requestBody->setPassword('<password>');
 
 
 
-$result = $graphServiceClient->identity()->apiConnectorsById('identityApiConnector-id')->uploadClientCertificate()->post($requestBody);
+$requestResult = $graphServiceClient->identity()->apiConnectorsById('identityApiConnector-id')->uploadClientCertificate()->post($requestBody);
 
 
 ```

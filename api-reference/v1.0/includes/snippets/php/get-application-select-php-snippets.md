@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ApplicationRequestBuilderGetRequestConfiguration();
-$queryParameters = ApplicationRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new ApplicationRequestBuilderGetQueryParameters();
 $queryParameters->select = ["id","appId","displayName","requiredResourceAccess"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->applicationsById('application-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->applicationsById('application-id')->get($requestConfiguration);
 
 
 ```

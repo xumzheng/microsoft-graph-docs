@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new IdentityUserFlowAttributeAssignmentRequestBuilderGetRequestConfiguration();
-$queryParameters = IdentityUserFlowAttributeAssignmentRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new IdentityUserFlowAttributeAssignmentRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["userAttribute"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userAttributeAssignmentsById('identityUserFlowAttributeAssignment-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userAttributeAssignmentsById('identityUserFlowAttributeAssignment-id')->get($requestConfiguration);
 
 
 ```

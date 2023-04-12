@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	body = @{
-		contentType = "html"
-		content = "<emoji alt="😶‍🌫️"></emoji>"
+	Body = @{
+		ContentType = "html"
+		Content = "<emoji alt="😶‍🌫️"></emoji>"
 	}
 }
 

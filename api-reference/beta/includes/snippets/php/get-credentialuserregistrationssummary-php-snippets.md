@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->tenantRelationships()->managedTenants()->credentialUserRegistrationsSummariesById('credentialUserRegistrationsSummary-id')->get();
+$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->credentialUserRegistrationsSummariesById('credentialUserRegistrationsSummary-id')->get();
 
 
 ```

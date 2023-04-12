@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	id = "keyset1"
+	Id = "keyset1"
 }
 
 New-MgTrustFrameworkKeySet -BodyParameter $params

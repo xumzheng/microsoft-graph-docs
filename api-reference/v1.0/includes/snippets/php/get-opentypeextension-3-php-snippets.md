@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessageRequestBuilderGetRequestConfiguration();
-$queryParameters = MessageRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new MessageRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->messagesById('message-id')->get($requestConfiguration);
 
 
 ```

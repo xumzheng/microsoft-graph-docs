@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	comment = "comment-value"
+	Comment = "comment-value"
 }
 
 # A UPN can also be used as -UserId.

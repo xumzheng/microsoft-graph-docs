@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GetAllMessagesRequestBuilderGetRequestConfiguration();
-$queryParameters = GetAllMessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new GetAllMessagesRequestBuilderGetQueryParameters();
 $queryParameters->filter = "lastModifiedDateTime gt 2019-11-01T00:00:00Z and lastModifiedDateTime lt 2021-11-01T00:00:00Z";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->channels()->getAllMessages()->get($requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->channels()->getAllMessages()->get($requestConfiguration);
 
 
 ```

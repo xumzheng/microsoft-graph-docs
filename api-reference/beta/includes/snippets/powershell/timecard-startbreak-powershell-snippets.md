@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	atAprovedLocation = $true
-	notes = @{
-		contentType = "text"
-		content = "start break smaple notes"
+	AtAprovedLocation = $true
+	Notes = @{
+		ContentType = "text"
+		Content = "start break smaple notes"
 	}
 }
 

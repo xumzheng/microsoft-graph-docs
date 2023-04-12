@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new PlannerTask();
 $assignments = new PlannerAssignments();
 $additionalData = [
-		'fbab97d0-4932-4511-b675-204639209557' => $assignments = new Fbab97d0-4932-4511-b675-204639209557();
+'fbab97d0-4932-4511-b675-204639209557' => $assignments = new Fbab97d0-4932-4511-b675-204639209557();
 $		assignments->set@odatatype('#microsoft.graph.plannerAssignment');
 
 $		assignments->setOrderHint('N9917 U2883!');
@@ -28,8 +28,8 @@ $assignments->setAdditionalData($additionalData);
 $requestBody->setAssignments($assignments);
 $appliedCategories = new PlannerAppliedCategories();
 $additionalData = [
-		'category3' => true,
-		'category4' => false,
+'category3' => true,
+'category4' => false,
 ];
 $appliedCategories->setAdditionalData($additionalData);
 
@@ -53,14 +53,16 @@ $recurrence->setSchedule($recurrenceSchedule);
 $requestBody->setRecurrence($recurrence);
 
 $requestConfiguration = new PlannerTaskRequestBuilderPatchRequestConfiguration();
+
 $headers = [
-		'Prefer' => 'return=representation',
-		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-	];
+	'Prefer' => 'return=representation',
+	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->tasksById('plannerTask-id')->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

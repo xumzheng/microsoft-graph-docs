@@ -8,11 +8,11 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration"
-	id = "X509Certificate"
-	state = "enabled"
-	certificateUserBindings = @(
+	Id = "X509Certificate"
+	State = "enabled"
+	CertificateUserBindings = @(
 	)
-	includeTargets = @(
+	IncludeTargets = @(
 	)
 }
 

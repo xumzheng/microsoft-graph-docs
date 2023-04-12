@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Important contacts');
 
 
 
-$result = $graphServiceClient->me()->contactFolders()->post($requestBody);
+$requestResult = $graphServiceClient->me()->contactFolders()->post($requestBody);
 
 
 ```

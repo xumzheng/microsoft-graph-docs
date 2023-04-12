@@ -88,13 +88,15 @@ $downgradeJustification->setIsDowngradeJustified(true);
 $requestBody->setDowngradeJustification($downgradeJustification);
 
 $requestConfiguration = new EvaluateRemovalRequestBuilderPostRequestConfiguration();
+
 $headers = [
-	'User-Agent' => 'ContosoLOBApp/1.0',
+'User-Agent' => 'ContosoLOBApp/1.0',
 ];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->securityEvaluateRemoval()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->securityEvaluateRemoval()->post($requestBody, $requestConfiguration);
 
 
 ```

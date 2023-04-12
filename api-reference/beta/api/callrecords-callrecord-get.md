@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecord-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-callrecord-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -197,6 +201,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecord-expanded-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-callrecord-expanded-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
