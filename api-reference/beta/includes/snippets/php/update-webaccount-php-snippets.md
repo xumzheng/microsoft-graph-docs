@@ -14,7 +14,7 @@ $requestBody->setWebUrl('https://github.com/innocenty.popov');
 
 
 
-$result = $graphServiceClient->me()->profile()->webAccountsById('webAccount-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->webAccountsById('webAccount-id')->patch($requestBody);
 
 
 ```

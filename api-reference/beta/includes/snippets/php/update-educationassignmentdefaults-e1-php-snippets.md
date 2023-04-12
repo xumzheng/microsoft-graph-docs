@@ -18,7 +18,7 @@ $requestBody->setNotificationChannelUrl('https://graph.microsoft.com/beta/teams(
 
 
 
-$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentDefaults()->patch($requestBody);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentDefaults()->patch($requestBody);
 
 
 ```

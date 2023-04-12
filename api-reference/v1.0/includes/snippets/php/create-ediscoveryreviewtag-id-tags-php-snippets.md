@@ -18,7 +18,7 @@ $requestBody->setChildSelectability(new ChildSelectability('many'));
 
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->tags()->post($requestBody);
+$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->tags()->post($requestBody);
 
 
 ```

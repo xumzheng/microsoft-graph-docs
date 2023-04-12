@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	displayName = "TestReview new name"
+	DisplayName = "TestReview new name"
 }
 
 Update-MgAccessReview -AccessReviewId $accessReviewId -BodyParameter $params

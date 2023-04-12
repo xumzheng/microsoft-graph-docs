@@ -38,7 +38,7 @@ $requestBody->setServiceManagementReference('Owners aliases: Finance @ contosofi
 
 
 
-$result = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$requestResult = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
 
 
 ```

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Search
 
 $params = @{
-	name = "Contoso HR Service Tickets"
-	description = "Connection to index HR service tickets"
+	Name = "Contoso HR Service Tickets"
+	Description = "Connection to index HR service tickets"
 }
 
 Update-MgExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params

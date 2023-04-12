@@ -16,7 +16,7 @@ $requestBody->setIsChatResourceSpecificConsentEnabled(true);
 
 
 
-$result = $graphServiceClient->teamwork()->teamsAppSettings()->patch($requestBody);
+$requestResult = $graphServiceClient->teamwork()->teamsAppSettings()->patch($requestBody);
 
 
 ```

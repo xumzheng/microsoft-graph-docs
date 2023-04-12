@@ -28,7 +28,7 @@ $requestBody->setLinkedResources($linkedResourcesArray);
 
 
 
-$result = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasks()->post($requestBody);
+$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasks()->post($requestBody);
 
 
 ```

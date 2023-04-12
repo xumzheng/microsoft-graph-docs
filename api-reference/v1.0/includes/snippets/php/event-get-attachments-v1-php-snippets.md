@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->eventsById('event-id')->attachments()->get();
+$requestResult = $graphServiceClient->me()->eventsById('event-id')->attachments()->get();
 
 
 ```

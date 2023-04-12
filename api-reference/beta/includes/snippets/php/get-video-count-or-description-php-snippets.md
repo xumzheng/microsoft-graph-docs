@@ -10,19 +10,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
-$headers = [
-		'ConsistencyLevel' => 'eventual',
-	];
-$requestConfiguration->headers = $headers;
 
-$queryParameters = GroupsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = new GroupsRequestBuilderGetQueryParameters();
 $queryParameters->search = "\"displayName:Video\" OR \"description:prod\"";
 $queryParameters->orderby = ["displayName"];
 $queryParameters->count = true;
+
+$headers = [
+'ConsistencyLevel' => 'eventual',
+];
+
 $requestConfiguration->queryParameters = $queryParameters;
+$requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->groups()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groups()->get($requestConfiguration);
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Contoso IWA App');
 
 
 
-$result = $graphServiceClient->applicationTemplatesById('applicationTemplate-id')->instantiate()->post($requestBody);
+$requestResult = $graphServiceClient->applicationTemplatesById('applicationTemplate-id')->instantiate()->post($requestBody);
 
 
 ```

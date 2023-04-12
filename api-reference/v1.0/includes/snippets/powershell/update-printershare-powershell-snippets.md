@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 $params = @{
-	displayName = "PrinterShare Name"
-	"printer@odata.bind" = "https://graph.microsoft.com/v1.0/print/printers/{printerId}"
-	allowAllUsers = $false
+	DisplayName = "PrinterShare Name"
+	"Printer@odata.bind" = "https://graph.microsoft.com/v1.0/print/printers/{printerId}"
+	AllowAllUsers = $false
 }
 
 Update-MgPrintShare -PrinterShareId $printerShareId -BodyParameter $params

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	isOptional = $false
-	requiresVerification = $false
-	userInputType = "TextBox"
-	displayName = "Shoe size"
-	userAttributeValues = @(
+	IsOptional = $false
+	RequiresVerification = $false
+	UserInputType = "TextBox"
+	DisplayName = "Shoe size"
+	UserAttributeValues = @(
 	)
-	userAttribute = @{
-		id = "extension_guid_shoeSize"
+	UserAttribute = @{
+		Id = "extension_guid_shoeSize"
 	}
 }
 

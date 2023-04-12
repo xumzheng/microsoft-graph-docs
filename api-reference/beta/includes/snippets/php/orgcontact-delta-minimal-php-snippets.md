@@ -10,17 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
+
+$queryParameters = new DeltaRequestBuilderGetQueryParameters();
+$queryParameters->select = ["displayName","jobTitle","mail"];
+
 $headers = [
-		'Prefer' => 'return=minimal',
-	];
+'Prefer' => 'return=minimal',
+];
+
+$requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
-$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["displayName","jobTitle","mail"];
-$requestConfiguration->queryParameters = $queryParameters;
 
-
-$result = $graphServiceClient->contacts()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->contacts()->delta()->get($requestConfiguration);
 
 
 ```

@@ -16,7 +16,7 @@ $requestBody->setRoles(['owner', ]);
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->membersById('conversationMember-id')->patch($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->membersById('conversationMember-id')->patch($requestBody);
 
 
 ```

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	reason = "reason-value"
-	duration = "duration-value"
-	ticketNumber = "ticketNumber-value"
-	ticketSystem = "ticketSystem-value"
+	Reason = "reason-value"
+	Duration = "duration-value"
+	TicketNumber = "ticketNumber-value"
+	TicketSystem = "ticketSystem-value"
 }
 
 Invoke-MgSelfPrivilegedRoleActivate -PrivilegedRoleId $privilegedRoleId -BodyParameter $params

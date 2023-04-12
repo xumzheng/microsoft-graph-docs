@@ -20,7 +20,7 @@ $requestBody->setInviteRedirectUrl('https://myapps.microsoft.com');
 
 
 
-$result = $graphServiceClient->invitations()->post($requestBody);
+$requestResult = $graphServiceClient->invitations()->post($requestBody);
 
 
 ```

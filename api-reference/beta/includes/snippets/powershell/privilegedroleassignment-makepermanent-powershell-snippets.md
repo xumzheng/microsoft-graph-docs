@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	reason = "reason-value"
-	ticketNumber = "ticketNumber-value"
-	ticketSystem = "ticketSystem-value"
+	Reason = "reason-value"
+	TicketNumber = "ticketNumber-value"
+	TicketSystem = "ticketSystem-value"
 }
 
 New-MgPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId -BodyParameter $params

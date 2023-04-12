@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	topic = @{
-		source = "entityUrl"
-		value = "https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}"
+	Topic = @{
+		Source = "entityUrl"
+		Value = "https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}"
 	}
-	activityType = "approvalRequired"
-	previewText = @{
-		content = "Deployment requires your approval"
+	ActivityType = "approvalRequired"
+	PreviewText = @{
+		Content = "Deployment requires your approval"
 	}
-	recipient = @{
+	Recipient = @{
 		"@odata.type" = "microsoft.graph.aadUserNotificationRecipient"
-		userId = "jacob@contoso.com"
+		UserId = "jacob@contoso.com"
 	}
-	templateParameters = @(
+	TemplateParameters = @(
 		@{
-			name = "approvalTaskId"
-			value = "2020AAGGTAPP"
+			Name = "approvalTaskId"
+			Value = "2020AAGGTAPP"
 		}
 	)
 }

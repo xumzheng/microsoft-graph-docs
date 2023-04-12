@@ -23,7 +23,7 @@ $joinMeetingIdSettings->setIsPasscodeRequired(false);
 $requestBody->setJoinMeetingIdSettings($joinMeetingIdSettings);
 
 
-$result = $graphServiceClient->me()->onlineMeetings()->post($requestBody);
+$requestResult = $graphServiceClient->me()->onlineMeetings()->post($requestBody);
 
 
 ```

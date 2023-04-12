@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MailFoldersRequestBuilderGetRequestConfiguration();
-$queryParameters = MailFoldersRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new MailFoldersRequestBuilderGetQueryParameters();
 $queryParameters->includehiddenfolders = true;
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->mailFolders()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->mailFolders()->get($requestConfiguration);
 
 
 ```

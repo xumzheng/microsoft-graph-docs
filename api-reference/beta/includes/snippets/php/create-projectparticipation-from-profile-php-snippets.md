@@ -45,7 +45,7 @@ $detail->setSummary('A 6 month project to help Contoso rebrand after they were d
 $requestBody->setDetail($detail);
 
 
-$result = $graphServiceClient->me()->profile()->projects()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->projects()->post($requestBody);
 
 
 ```

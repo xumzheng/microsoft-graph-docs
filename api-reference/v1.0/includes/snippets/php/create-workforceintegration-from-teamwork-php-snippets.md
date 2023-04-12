@@ -29,7 +29,7 @@ $requestBody->setSupportedEntities(new WorkforceIntegrationSupportedEntities('su
 
 
 
-$result = $graphServiceClient->teamwork()->workforceIntegrations()->post($requestBody);
+$requestResult = $graphServiceClient->teamwork()->workforceIntegrations()->post($requestBody);
 
 
 ```

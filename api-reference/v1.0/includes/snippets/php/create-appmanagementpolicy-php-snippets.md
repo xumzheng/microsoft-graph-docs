@@ -72,7 +72,7 @@ $restrictions->setKeyCredentials($keyCredentialsArray);
 $requestBody->setRestrictions($restrictions);
 
 
-$result = $graphServiceClient->policies()->appManagementPolicies()->post($requestBody);
+$requestResult = $graphServiceClient->policies()->appManagementPolicies()->post($requestBody);
 
 
 ```

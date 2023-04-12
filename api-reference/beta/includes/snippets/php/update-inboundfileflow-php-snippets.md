@@ -20,7 +20,7 @@ $requestBody->setExpirationDateTime(new DateTime('2023-03-12T16:40:46.924769+05:
 
 
 
-$result = $graphServiceClient->external()->industryData()->inboundFlowsById('inboundFlow-id')->patch($requestBody);
+$requestResult = $graphServiceClient->external()->industryData()->inboundFlowsById('inboundFlow-id')->patch($requestBody);
 
 
 ```

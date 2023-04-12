@@ -14,14 +14,16 @@ $requestBody->setName('Development');
 
 
 $requestConfiguration = new PlannerBucketRequestBuilderPatchRequestConfiguration();
+
 $headers = [
-		'Prefer' => 'return=representation',
-		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-	];
+	'Prefer' => 'return=representation',
+	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->bucketsById('plannerBucket-id')->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->planner()->bucketsById('plannerBucket-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

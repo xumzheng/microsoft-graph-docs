@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	"teamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785"
-	consentedPermissionSet = @{
-		resourceSpecificPermissions = @(
+	"TeamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785"
+	ConsentedPermissionSet = @{
+		ResourceSpecificPermissions = @(
 			@{
-				permissionValue = "OnlineMeeting.ReadBasic.Chat"
-				permissionType = "delegated"
+				PermissionValue = "OnlineMeeting.ReadBasic.Chat"
+				PermissionType = "delegated"
 			}
 			@{
-				permissionValue = "ChatMessage.Read.Chat"
-				permissionType = "application"
+				PermissionValue = "ChatMessage.Read.Chat"
+				PermissionType = "application"
 			}
 		)
 	}

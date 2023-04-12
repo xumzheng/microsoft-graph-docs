@@ -22,7 +22,7 @@ $requestBody->setPrincipalIds(['f8ca5a85-489a-49a0-b555-0a6d81e56f0d', 'c1518aa9
 
 
 
-$result = $graphServiceClient->roleManagement()->cloudPC()->roleAssignments()->post($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->cloudPC()->roleAssignments()->post($requestBody);
 
 
 ```

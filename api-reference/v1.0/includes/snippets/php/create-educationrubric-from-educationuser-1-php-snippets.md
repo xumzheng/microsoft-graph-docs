@@ -117,7 +117,7 @@ $requestBody->setQualities($qualitiesArray);
 
 
 
-$result = $graphServiceClient->education()->me()->rubrics()->post($requestBody);
+$requestResult = $graphServiceClient->education()->me()->rubrics()->post($requestBody);
 
 
 ```

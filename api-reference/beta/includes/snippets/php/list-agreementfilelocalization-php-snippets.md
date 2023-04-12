@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AgreementRequestBuilderGetRequestConfiguration();
-$queryParameters = AgreementRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new AgreementRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["files"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->get($requestConfiguration);
 
 
 ```

@@ -15,15 +15,15 @@ $requestBody->set@odatatype('#microsoft.graph.countryNamedLocation');
 $requestBody->setDisplayName('Named location with unknown countries and regions');
 
 $additionalData = [
-		'countriesAndRegions' => ['US', 'GB', ],
-	'includeUnknownCountriesAndRegions' => true,
+'countriesAndRegions' => ['US', 'GB', ],
+'includeUnknownCountriesAndRegions' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->post($requestBody);
+$requestResult = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->post($requestBody);
 
 
 ```

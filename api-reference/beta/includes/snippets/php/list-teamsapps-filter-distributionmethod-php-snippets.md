@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsAppsRequestBuilderGetRequestConfiguration();
-$queryParameters = TeamsAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TeamsAppsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "distributionMethod eq 'organization'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->appCatalogs()->teamsApps()->get($requestConfiguration);
+$requestResult = $graphServiceClient->appCatalogs()->teamsApps()->get($requestConfiguration);
 
 
 ```

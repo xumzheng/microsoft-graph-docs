@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->security()->secureScoresById('secureScore-id')->get();
+$requestResult = $graphServiceClient->security()->secureScoresById('secureScore-id')->get();
 
 
 ```

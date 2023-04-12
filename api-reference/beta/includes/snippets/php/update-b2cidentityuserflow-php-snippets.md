@@ -16,7 +16,7 @@ $requestBody->setDefaultLanguageTag('en');
 
 
 
-$result = $graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->patch($requestBody);
 
 
 ```

@@ -18,13 +18,15 @@ $requestBody->setDescription('description-after-update');
 
 
 $requestConfiguration = new TiIndicatorRequestBuilderPatchRequestConfiguration();
+
 $headers = [
-		'Prefer' => 'return=representation',
-	];
+	'Prefer' => 'return=representation',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->security()->tiIndicatorsById('tiIndicator-id')->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->security()->tiIndicatorsById('tiIndicator-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

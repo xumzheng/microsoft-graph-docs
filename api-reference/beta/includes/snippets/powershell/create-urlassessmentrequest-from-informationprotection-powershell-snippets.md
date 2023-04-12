@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlAssessmentRequest"
-	url = "http://test.com"
-	expectedAssessment = "block"
-	category = "phishing"
+	Url = "http://test.com"
+	ExpectedAssessment = "block"
+	Category = "phishing"
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params

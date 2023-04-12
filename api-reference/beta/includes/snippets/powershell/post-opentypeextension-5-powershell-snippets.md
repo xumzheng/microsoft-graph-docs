@@ -19,10 +19,10 @@ $params = @{
 					Extensions = @(
 						@{
 							"@odata.type" = "microsoft.graph.openTypeExtension"
-							extensionName = "Com.Contoso.Benefits"
-							companyName = "Contoso"
-							expirationDate = "2016-08-03T11:00:00.000Z"
-							topPicks = @(
+							ExtensionName = "Com.Contoso.Benefits"
+							CompanyName = "Contoso"
+							ExpirationDate = "2016-08-03T11:00:00.000Z"
+							TopPicks = @(
 								"Employees only"
 								"Add spouse or guest"
 								"Add family"

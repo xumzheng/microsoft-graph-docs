@@ -18,14 +18,14 @@ $notes->setContent('start break smaple notes');
 
 $requestBody->setNotes($notes);
 $additionalData = [
-		'atAprovedLocation' => true,
+'atAprovedLocation' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->timeCardsById('timeCard-id')->startBreak()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timeCardsById('timeCard-id')->startBreak()->post($requestBody);
 
 
 ```

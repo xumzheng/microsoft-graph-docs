@@ -14,7 +14,7 @@ $requestBody->setName('Connector Group Demo');
 
 
 
-$result = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->connectorGroups()->post($requestBody);
+$requestResult = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->connectorGroups()->post($requestBody);
 
 
 ```

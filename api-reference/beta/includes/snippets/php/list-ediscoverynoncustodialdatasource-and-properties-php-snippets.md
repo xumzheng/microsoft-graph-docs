@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new NoncustodialDataSourcesRequestBuilderGetRequestConfiguration();
-$queryParameters = NoncustodialDataSourcesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new NoncustodialDataSourcesRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["dataSource"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->get($requestConfiguration);
+$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->get($requestConfiguration);
 
 
 ```

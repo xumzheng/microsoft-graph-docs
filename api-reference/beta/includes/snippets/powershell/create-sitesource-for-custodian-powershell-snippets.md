@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	site = @{
-		webUrl = "https://m365x809305.sharepoint.com/sites/Retail"
+	Site = @{
+		WebUrl = "https://m365x809305.sharepoint.com/sites/Retail"
 	}
 }
 

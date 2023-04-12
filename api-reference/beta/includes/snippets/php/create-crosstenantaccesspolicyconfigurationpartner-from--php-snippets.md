@@ -50,7 +50,7 @@ $b2bDirectConnectInbound->setApplications($b2bDirectConnectInboundApplications);
 $requestBody->setB2bDirectConnectInbound($b2bDirectConnectInbound);
 
 
-$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->post($requestBody);
+$requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->post($requestBody);
 
 
 ```

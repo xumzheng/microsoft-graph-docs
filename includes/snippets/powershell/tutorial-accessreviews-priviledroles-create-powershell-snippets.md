@@ -7,52 +7,52 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	displayName = "Review access of users and groups to privileged roles"
-	descriptionForAdmins = "Review access of users and groups to privileged roles"
-	scope = @{
+	DisplayName = "Review access of users and groups to privileged roles"
+	DescriptionForAdmins = "Review access of users and groups to privileged roles"
+	Scope = @{
 		"@odata.type" = "#microsoft.graph.principalResourceMembershipsScope"
-		principalScopes = @(
+		PrincipalScopes = @(
 			@{
 				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				query = "/users"
-				queryType = "MicrosoftGraph"
+				Query = "/users"
+				QueryType = "MicrosoftGraph"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				query = "/groups"
-				queryType = "MicrosoftGraph"
+				Query = "/groups"
+				QueryType = "MicrosoftGraph"
 			}
 		)
-		resourceScopes = @(
+		ResourceScopes = @(
 			@{
 				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				query = "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1"
-				queryType = "MicrosoftGraph"
+				Query = "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1"
+				QueryType = "MicrosoftGraph"
 			}
 		)
 	}
-	reviewers = @(
+	Reviewers = @(
 		@{
-			query = "/users/f674a1c9-4a40-439c-bfa3-4b61a9f29d85"
-			queryType = "MicrosoftGraph"
+			Query = "/users/f674a1c9-4a40-439c-bfa3-4b61a9f29d85"
+			QueryType = "MicrosoftGraph"
 		}
 	)
-	settings = @{
-		mailNotificationsEnabled = $true
-		reminderNotificationsEnabled = $true
-		justificationRequiredOnApproval = $true
-		defaultDecisionEnabled = $false
-		defaultDecision = "None"
-		instanceDurationInDays = 3
-		recommendationsEnabled = $false
-		recurrence = @{
-			pattern = @{
-				type = "absoluteMonthly"
-				interval = 3
+	Settings = @{
+		MailNotificationsEnabled = $true
+		ReminderNotificationsEnabled = $true
+		JustificationRequiredOnApproval = $true
+		DefaultDecisionEnabled = $false
+		DefaultDecision = "None"
+		InstanceDurationInDays = 3
+		RecommendationsEnabled = $false
+		Recurrence = @{
+			Pattern = @{
+				Type = "absoluteMonthly"
+				Interval = 3
 			}
-			range = @{
-				type = "noEnd"
-				startDate = "2022-03-02"
+			Range = @{
+				Type = "noEnd"
+				StartDate = "2022-03-02"
 			}
 		}
 	}

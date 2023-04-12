@@ -50,7 +50,7 @@ $requestBody->setParameters($parametersArray);
 
 
 
-$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->provisionOnDemand()->post($requestBody);
+$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->provisionOnDemand()->post($requestBody);
 
 
 ```

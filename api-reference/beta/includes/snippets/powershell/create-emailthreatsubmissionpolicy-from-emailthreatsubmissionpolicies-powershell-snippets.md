@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	isReportToMicrosoftEnabled = $true
+	IsReportToMicrosoftEnabled = $true
 }
 
 New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy -BodyParameter $params

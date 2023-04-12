@@ -36,7 +36,7 @@ $registrationEnforcement->setAuthenticationMethodsRegistrationCampaign($registra
 $requestBody->setRegistrationEnforcement($registrationEnforcement);
 
 
-$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->patch($requestBody);
 
 
 ```

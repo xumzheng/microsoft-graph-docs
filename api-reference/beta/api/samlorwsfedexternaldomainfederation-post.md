@@ -114,6 +114,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-samlorwsfedexternaldomainfederation-from-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-samlorwsfedexternaldomainfederation-from-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

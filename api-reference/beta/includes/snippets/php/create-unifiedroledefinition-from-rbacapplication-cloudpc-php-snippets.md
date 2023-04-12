@@ -30,7 +30,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->roleManagement()->cloudPC()->roleDefinitions()->post($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->cloudPC()->roleDefinitions()->post($requestBody);
 
 
 ```

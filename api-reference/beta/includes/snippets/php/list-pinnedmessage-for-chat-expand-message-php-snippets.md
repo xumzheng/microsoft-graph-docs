@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PinnedMessagesRequestBuilderGetRequestConfiguration();
-$queryParameters = PinnedMessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new PinnedMessagesRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["message"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->pinnedMessages()->get($requestConfiguration);
+$requestResult = $graphServiceClient->chatsById('chat-id')->pinnedMessages()->get($requestConfiguration);
 
 
 ```

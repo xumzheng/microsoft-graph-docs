@@ -35,7 +35,7 @@ $requestBody->setEmailAddresses($emailAddressesArray);
 
 
 
-$result = $graphServiceClient->me()->contactsById('contact-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->contactsById('contact-id')->patch($requestBody);
 
 
 ```

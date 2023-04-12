@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	signInPageText = "Welcome to Contoso France."
-	usernameHintText = " "
+	SignInPageText = "Welcome to Contoso France."
+	UsernameHintText = " "
 }
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params

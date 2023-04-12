@@ -14,14 +14,16 @@ $requestBody->setOrderHint('A6673H Ejkl!');
 
 
 $requestConfiguration = new ProgressTaskBoardFormatRequestBuilderPatchRequestConfiguration();
+
 $headers = [
-		'Prefer' => 'return=representation',
-		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-	];
+	'Prefer' => 'return=representation',
+	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->tasksById('plannerTask-id')->progressTaskBoardFormat()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->progressTaskBoardFormat()->patch($requestBody, $requestConfiguration);
 
 
 ```

@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	displayName = "From partner"
-	sequence = 2
-	isEnabled = $true
-	conditions = @{
-		senderContains = @(
+	DisplayName = "From partner"
+	Sequence = 2
+	IsEnabled = $true
+	Conditions = @{
+		SenderContains = @(
 			"adele"
 		)
 	}
-	actions = @{
-		forwardTo = @(
+	Actions = @{
+		ForwardTo = @(
 			@{
-				emailAddress = @{
-					name = "Alex Wilbur"
-					address = "AlexW@contoso.onmicrosoft.com"
+				EmailAddress = @{
+					Name = "Alex Wilbur"
+					Address = "AlexW@contoso.onmicrosoft.com"
 				}
 			}
 		)
-		stopProcessingRules = $true
+		StopProcessingRules = $true
 	}
 }
 

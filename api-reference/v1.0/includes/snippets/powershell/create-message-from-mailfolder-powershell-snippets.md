@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	receivedDateTime = [System.DateTime]::Parse("datetime-value")
-	sentDateTime = [System.DateTime]::Parse("datetime-value")
-	hasAttachments = $true
-	subject = "subject-value"
-	body = @{
-		contentType = ""
-		content = "content-value"
+	ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
+	SentDateTime = [System.DateTime]::Parse("datetime-value")
+	HasAttachments = $true
+	Subject = "subject-value"
+	Body = @{
+		ContentType = ""
+		Content = "content-value"
 	}
-	bodyPreview = "bodyPreview-value"
+	BodyPreview = "bodyPreview-value"
 }
 
 # A UPN can also be used as -UserId.

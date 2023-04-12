@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	description = "Library Assist"
-	displayName = "Library Assist"
-	groupTypes = @(
+	Description = "Library Assist"
+	DisplayName = "Library Assist"
+	GroupTypes = @(
 		"Unified"
 	)
-	mailEnabled = $true
-	mailNickname = "library-help"
+	MailEnabled = $true
+	MailNickname = "library-help"
 }
 
 Update-MgGroup -GroupId $groupId -BodyParameter $params

@@ -7,26 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	attributeSet = "Engineering"
-	description = "Active projects for user"
-	isCollection = $true
-	isSearchable = $true
-	name = "Project"
-	status = "Available"
-	type = "String"
-	usePreDefinedValuesOnly = $true
-	allowedValues = @(
+	AttributeSet = "Engineering"
+	Description = "Active projects for user"
+	IsCollection = $true
+	IsSearchable = $true
+	Name = "Project"
+	Status = "Available"
+	Type = "String"
+	UsePreDefinedValuesOnly = $true
+	AllowedValues = @(
 		@{
-			id = "Alpine"
-			isActive = $true
+			Id = "Alpine"
+			IsActive = $true
 		}
 		@{
-			id = "Baker"
-			isActive = $true
+			Id = "Baker"
+			IsActive = $true
 		}
 		@{
-			id = "Cascade"
-			isActive = $true
+			Id = "Cascade"
+			IsActive = $true
 		}
 	)
 }

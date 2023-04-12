@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	webUrl = "webUrl value"
+	WebUrl = "webUrl value"
 }
 
 # A UPN can also be used as -UserId.

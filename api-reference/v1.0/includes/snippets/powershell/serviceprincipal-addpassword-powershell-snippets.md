@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	passwordCredential = @{
-		displayName = "Password friendly name"
+	PasswordCredential = @{
+		DisplayName = "Password friendly name"
 	}
 }
 

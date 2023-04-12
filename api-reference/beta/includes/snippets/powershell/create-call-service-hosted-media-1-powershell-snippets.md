@@ -8,28 +8,28 @@ Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	callbackUri = "https://bot.contoso.com/callback"
-	targets = @(
+	CallbackUri = "https://bot.contoso.com/callback"
+	Targets = @(
 		@{
 			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			identity = @{
+			Identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
-				user = @{
+				User = @{
 					"@odata.type" = "#microsoft.graph.identity"
-					displayName = "John"
-					id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+					DisplayName = "John"
+					Id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
 				}
 			}
 		}
 	)
-	requestedModalities = @(
+	RequestedModalities = @(
 		"audio"
 	)
-	callOptions = @{
+	CallOptions = @{
 		"@odata.type" = "#microsoft.graph.outgoingCallOptions"
-		isContentSharingNotificationEnabled = $true
+		IsContentSharingNotificationEnabled = $true
 	}
-	mediaConfig = @{
+	MediaConfig = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
 	}
 }

@@ -32,7 +32,7 @@ $scheduleInfo->setExpiration($scheduleInfoExpiration);
 $requestBody->setScheduleInfo($scheduleInfo);
 
 
-$result = $graphServiceClient->roleManagement()->directory()->roleAssignmentScheduleRequests()->post($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->directory()->roleAssignmentScheduleRequests()->post($requestBody);
 
 
 ```

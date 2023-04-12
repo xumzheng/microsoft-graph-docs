@@ -20,7 +20,7 @@ $requestBody->setTermsOfUseUrl('https://portal.mg.contoso.com/TermsofUse.aspx');
 
 
 
-$result = $graphServiceClient->policies()->mobileAppManagementPoliciesById('mobilityManagementPolicy-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->mobileAppManagementPoliciesById('mobilityManagementPolicy-id')->patch($requestBody);
 
 
 ```

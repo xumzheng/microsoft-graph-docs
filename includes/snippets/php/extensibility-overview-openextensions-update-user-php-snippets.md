@@ -11,15 +11,15 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Extension();
 $additionalData = [
-		'xboxGamerTag' => 'FierceAdele', 
-		'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
+'xboxGamerTag' => 'FierceAdele', 
+'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->usersById('user-id')->extensionsById('extension-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->extensionsById('extension-id')->patch($requestBody);
 
 
 ```

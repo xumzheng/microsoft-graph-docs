@@ -7,26 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	topic = @{
-		source = "entityUrl"
-		value = "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/tabs/{tabId}"
+	Topic = @{
+		Source = "entityUrl"
+		Value = "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/tabs/{tabId}"
 	}
-	activityType = "reservationUpdated"
-	previewText = @{
-		content = "You have moved up the queue"
+	ActivityType = "reservationUpdated"
+	PreviewText = @{
+		Content = "You have moved up the queue"
 	}
-	recipient = @{
+	Recipient = @{
 		"@odata.type" = "microsoft.graph.aadUserNotificationRecipient"
-		userId = "jacob@contoso.com"
+		UserId = "jacob@contoso.com"
 	}
-	templateParameters = @(
+	TemplateParameters = @(
 		@{
-			name = "reservationId"
-			value = "TREEE433"
+			Name = "reservationId"
+			Value = "TREEE433"
 		}
 		@{
-			name = "currentSlot"
-			value = "23"
+			Name = "currentSlot"
+			Value = "23"
 		}
 	)
 }

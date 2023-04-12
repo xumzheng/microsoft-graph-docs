@@ -27,7 +27,7 @@ $userAttribute->setId('extension_guid_shoeSize');
 $requestBody->setUserAttribute($userAttribute);
 
 
-$result = $graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userAttributeAssignments()->post($requestBody);
+$requestResult = $graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userAttributeAssignments()->post($requestBody);
 
 
 ```

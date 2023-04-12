@@ -16,7 +16,7 @@ $requestBody->setIsHidden(true);
 
 
 
-$result = $graphServiceClient->me()->mailFolders()->post($requestBody);
+$requestResult = $graphServiceClient->me()->mailFolders()->post($requestBody);
 
 
 ```

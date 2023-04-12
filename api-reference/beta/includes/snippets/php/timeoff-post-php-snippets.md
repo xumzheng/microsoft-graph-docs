@@ -36,7 +36,7 @@ $draftTimeOff->setTheme(new ScheduleEntityTheme('pink'));
 $requestBody->setDraftTimeOff($draftTimeOff);
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->timesOff()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timesOff()->post($requestBody);
 
 
 ```

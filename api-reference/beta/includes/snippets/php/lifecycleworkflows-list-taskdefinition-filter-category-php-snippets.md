@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TaskDefinitionsRequestBuilderGetRequestConfiguration();
-$queryParameters = TaskDefinitionsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TaskDefinitionsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "category has 'joiner'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->taskDefinitions()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->taskDefinitions()->get($requestConfiguration);
 
 
 ```

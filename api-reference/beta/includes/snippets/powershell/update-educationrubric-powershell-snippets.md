@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	displayName = "Example Credit Rubric after display name patch"
+	DisplayName = "Example Credit Rubric after display name patch"
 }
 
 Update-MgEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params

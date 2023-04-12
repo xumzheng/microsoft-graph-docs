@@ -24,7 +24,7 @@ $requestBody->setExpiryTime(new DateTime('2023-03-17T00:00:00Z'));
 
 
 
-$result = $graphServiceClient->oauth2PermissionGrants()->post($requestBody);
+$requestResult = $graphServiceClient->oauth2PermissionGrants()->post($requestBody);
 
 
 ```

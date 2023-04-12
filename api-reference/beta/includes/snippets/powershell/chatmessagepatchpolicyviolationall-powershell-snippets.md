@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	policyViolation = @{
-		policyTip = @{
-			generalText = "This item has been blocked by the administrator."
-			complianceUrl = "https://contoso.com/dlp-policy-page"
-			matchedConditionDescriptions = @(
+	PolicyViolation = @{
+		PolicyTip = @{
+			GeneralText = "This item has been blocked by the administrator."
+			ComplianceUrl = "https://contoso.com/dlp-policy-page"
+			MatchedConditionDescriptions = @(
 				"Credit Card Number"
 			)
 		}
-		verdictDetails = "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
-		dlpAction = "BlockAccess"
+		VerdictDetails = "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
+		DlpAction = "BlockAccess"
 	}
 }
 

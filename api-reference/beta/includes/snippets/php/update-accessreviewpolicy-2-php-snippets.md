@@ -14,7 +14,7 @@ $requestBody->setIsGroupOwnerManagementEnabled(true);
 
 
 
-$result = $graphServiceClient->identityGovernance()->accessReviews()->policy()->patch($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->accessReviews()->policy()->patch($requestBody);
 
 
 ```

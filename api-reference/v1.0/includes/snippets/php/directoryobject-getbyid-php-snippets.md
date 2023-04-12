@@ -16,7 +16,7 @@ $requestBody->setTypes(['user', 'group', 'device', ]);
 
 
 
-$result = $graphServiceClient->directoryObjects()->getByIds()->post($requestBody);
+$requestResult = $graphServiceClient->directoryObjects()->getByIds()->post($requestBody);
 
 
 ```

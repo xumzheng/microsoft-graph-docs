@@ -1,0 +1,53 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = Bookmark()
+request_body.displayName = 'Contoso Install Site'
+
+request_body.webUrl = 'http://www.contoso.com/'
+
+request_body.description = 'Try or buy Contoso for Home or Business and view product information'
+
+keywords = AnswerKeyword()
+keywords.Keywords(['Contoso', 'install', ])
+
+keywords.ReservedKeywords(['Contoso', ])
+
+keywords.matchSimilarKeywords = true
+
+
+request_body.keywords = keywords
+request_body.availabilityStartDateTime=null
+
+request_body.availabilityEndDateTime=null
+
+request_body.Platforms([request_body.DevicePlatformType(DevicePlatformType('windows'))
+])
+
+targetedVariationsAnswerVariant1 = AnswerVariant()
+targetedVariationsAnswerVariant1.languageTag = 'es-es'
+
+targetedVariationsAnswerVariant1.displayName = 'Sitio de instalación Contoso'
+
+targetedVariationsAnswerVariant1.description = 'Pruebe o compre Contoso hogar o negocios y vea la información del producto'
+
+
+targetedVariationsArray []= targetedVariationsAnswerVariant1;
+request_body.targetedvariations(targetedVariationsArray)
+
+
+request_body.State(AnswerState('published'))
+
+
+
+
+result = await client.search.bookmarks.post(request_body = request_body)
+
+
+```

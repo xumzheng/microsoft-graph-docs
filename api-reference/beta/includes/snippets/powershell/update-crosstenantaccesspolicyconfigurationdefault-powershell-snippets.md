@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	b2bCollaborationOutbound = @{
-		usersAndGroups = @{
-			accessType = "blocked"
-			targets = @(
+	B2bCollaborationOutbound = @{
+		UsersAndGroups = @{
+			AccessType = "blocked"
+			Targets = @(
 				@{
-					target = "0be493dc-cb56-4a53-936f-9cf64410b8b0"
-					targetType = "group"
+					Target = "0be493dc-cb56-4a53-936f-9cf64410b8b0"
+					TargetType = "group"
 				}
 			)
 		}
-		applications = @{
-			accessType = "blocked"
-			targets = @(
+		Applications = @{
+			AccessType = "blocked"
+			Targets = @(
 				@{
-					target = "AllApplications"
-					targetType = "application"
+					Target = "AllApplications"
+					TargetType = "application"
 				}
 			)
 		}

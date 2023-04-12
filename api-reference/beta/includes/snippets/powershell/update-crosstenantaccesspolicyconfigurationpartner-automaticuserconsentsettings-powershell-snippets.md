@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	automaticUserConsentSettings = @{
-		inboundAllowed = $true
-		outboundAllowed = $true
+	AutomaticUserConsentSettings = @{
+		InboundAllowed = $true
+		OutboundAllowed = $true
 	}
 }
 

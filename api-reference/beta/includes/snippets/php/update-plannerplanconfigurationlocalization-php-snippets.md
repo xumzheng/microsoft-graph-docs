@@ -47,7 +47,7 @@ $requestBody->setBuckets($bucketsArray);
 
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->planConfiguration()->localizationsById('plannerPlanConfigurationLocalization-id')->patch($requestBody);
+$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->planConfiguration()->localizationsById('plannerPlanConfigurationLocalization-id')->patch($requestBody);
 
 
 ```

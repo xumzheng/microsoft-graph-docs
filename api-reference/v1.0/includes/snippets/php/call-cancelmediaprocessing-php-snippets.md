@@ -14,7 +14,7 @@ $requestBody->setClientContext('clientContext-value');
 
 
 
-$result = $graphServiceClient->communications()->callsById('call-id')->cancelMediaProcessing()->post($requestBody);
+$requestResult = $graphServiceClient->communications()->callsById('call-id')->cancelMediaProcessing()->post($requestBody);
 
 
 ```

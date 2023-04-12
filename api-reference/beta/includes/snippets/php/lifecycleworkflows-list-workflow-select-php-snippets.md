@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new WorkflowsRequestBuilderGetRequestConfiguration();
-$queryParameters = WorkflowsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new WorkflowsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "category eq 'leaver'";
 $queryParameters->select = ["id","category","displayName","isEnabled","isSchedulingEnabled"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->get($requestConfiguration);
 
 
 ```

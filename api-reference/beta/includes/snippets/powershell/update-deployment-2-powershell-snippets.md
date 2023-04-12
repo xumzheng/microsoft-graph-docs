@@ -8,14 +8,14 @@ Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
-	settings = @{
+	Settings = @{
 		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentSettings"
-		monitoring = @{
-			monitoringRules = @(
+		Monitoring = @{
+			MonitoringRules = @(
 				@{
-					signal = "rollback"
-					threshold = 5
-					action = "pauseDeployment"
+					Signal = "rollback"
+					Threshold = 5
+					Action = "pauseDeployment"
 				}
 			)
 		}

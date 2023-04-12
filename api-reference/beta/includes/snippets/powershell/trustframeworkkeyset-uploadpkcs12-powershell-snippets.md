@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	key = "Base64-encoded-pfx-content"
-	password = "password-value"
+	Key = "Base64-encoded-pfx-content"
+	Password = "password-value"
 }
 
 Invoke-MgUploadTrustFrameworkKeySetPkcs12 -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params

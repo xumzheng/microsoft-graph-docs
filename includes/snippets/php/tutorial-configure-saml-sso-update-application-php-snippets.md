@@ -19,7 +19,7 @@ $requestBody->setIdentifierUris(['https://signin.aws.amazon.com/saml', ]);
 
 
 
-$result = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$requestResult = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
 
 
 ```

@@ -23,7 +23,7 @@ $createdBy->set@odatatype('microsoft.graph.identitySet');
 $requestBody->setCreatedBy($createdBy);
 
 
-$result = $graphServiceClient->security()->triggerTypes()->retentionEventTypes()->post($requestBody);
+$requestResult = $graphServiceClient->security()->triggerTypes()->retentionEventTypes()->post($requestBody);
 
 
 ```

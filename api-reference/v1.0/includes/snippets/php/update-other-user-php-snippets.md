@@ -16,7 +16,7 @@ $requestBody->setOfficeLocation('18/2111');
 
 
 
-$result = $graphServiceClient->usersById('user-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
 
 
 ```

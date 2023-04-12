@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcExternalPartnerSetting"
-	enableConnection = $true
+	EnableConnection = $true
 }
 
 Update-MgDeviceManagementVirtualEndpointExternalPartnerSetting -CloudPcExternalPartnerSettingId $cloudPcExternalPartnerSettingId -BodyParameter $params

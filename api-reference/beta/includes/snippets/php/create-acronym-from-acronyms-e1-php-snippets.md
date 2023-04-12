@@ -22,7 +22,7 @@ $requestBody->setState(new AnswerState('draft'));
 
 
 
-$result = $graphServiceClient->search()->acronyms()->post($requestBody);
+$requestResult = $graphServiceClient->search()->acronyms()->post($requestBody);
 
 
 ```

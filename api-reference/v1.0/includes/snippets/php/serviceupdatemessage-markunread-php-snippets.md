@@ -14,7 +14,7 @@ $requestBody->setMessageIds(['MC172851', 'MC167983', ]);
 
 
 
-$result = $graphServiceClient->admin()->serviceAnnouncement()->messages()->markUnread()->post($requestBody);
+$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->messages()->markUnread()->post($requestBody);
 
 
 ```

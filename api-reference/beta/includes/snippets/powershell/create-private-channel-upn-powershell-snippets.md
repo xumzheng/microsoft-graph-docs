@@ -8,14 +8,14 @@ Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
-	membershipType = "private"
-	displayName = "My First Private Channel"
-	description = "This is my first private channels"
-	members = @(
+	MembershipType = "private"
+	DisplayName = "My First Private Channel"
+	Description = "This is my first private channels"
+	Members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
-			roles = @(
+			"User@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+			Roles = @(
 				"owner"
 			)
 		}

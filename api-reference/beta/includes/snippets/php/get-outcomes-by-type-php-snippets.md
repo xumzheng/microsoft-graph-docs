@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new OutcomesRequestBuilderGetRequestConfiguration();
-$queryParameters = OutcomesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new OutcomesRequestBuilderGetQueryParameters();
 $queryParameters->filter = "isof('microsoft.graph.educationFeedbackResourceOutcome')";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomes()->get($requestConfiguration);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomes()->get($requestConfiguration);
 
 
 ```

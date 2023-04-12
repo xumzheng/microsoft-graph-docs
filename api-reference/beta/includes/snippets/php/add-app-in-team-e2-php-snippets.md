@@ -31,14 +31,14 @@ $consentedPermissionSet->setResourceSpecificPermissions($resourceSpecificPermiss
 
 $requestBody->setConsentedPermissionSet($consentedPermissionSet);
 $additionalData = [
-	'teamsApp@odata.bind' => 'https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785', 
+'teamsApp@odata.bind' => 'https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->installedApps()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->installedApps()->post($requestBody);
 
 
 ```

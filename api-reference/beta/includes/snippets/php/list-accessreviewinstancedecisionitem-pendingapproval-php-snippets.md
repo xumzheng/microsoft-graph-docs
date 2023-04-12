@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DecisionsRequestBuilderGetRequestConfiguration();
-$queryParameters = DecisionsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new DecisionsRequestBuilderGetQueryParameters();
 $queryParameters->top = 100;
 $queryParameters->skip = 0;
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->pendingAccessReviewInstancesById('accessReviewInstance-id')->decisions()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->pendingAccessReviewInstancesById('accessReviewInstance-id')->decisions()->get($requestConfiguration);
 
 
 ```

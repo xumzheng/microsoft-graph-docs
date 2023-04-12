@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Section group name');
 
 
 
-$result = $graphServiceClient->me()->onenote()->notebooksById('notebook-id')->sectionGroups()->post($requestBody);
+$requestResult = $graphServiceClient->me()->onenote()->notebooksById('notebook-id')->sectionGroups()->post($requestBody);
 
 
 ```

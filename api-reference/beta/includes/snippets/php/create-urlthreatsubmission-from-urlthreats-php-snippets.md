@@ -18,7 +18,7 @@ $requestBody->setWebUrl('http://phishing.contoso.com');
 
 
 
-$result = $graphServiceClient->security()->threatSubmission()->urlThreats()->post($requestBody);
+$requestResult = $graphServiceClient->security()->threatSubmission()->urlThreats()->post($requestBody);
 
 
 ```

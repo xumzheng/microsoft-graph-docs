@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UnifiedRoleManagementPolicyAssignmentRequestBuilderGetRequestConfiguration();
-$queryParameters = UnifiedRoleManagementPolicyAssignmentRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new UnifiedRoleManagementPolicyAssignmentRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["policy($expand=rules)"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->policies()->roleManagementPolicyAssignmentsById('unifiedRoleManagementPolicyAssignment-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->policies()->roleManagementPolicyAssignmentsById('unifiedRoleManagementPolicyAssignment-id')->get($requestConfiguration);
 
 
 ```

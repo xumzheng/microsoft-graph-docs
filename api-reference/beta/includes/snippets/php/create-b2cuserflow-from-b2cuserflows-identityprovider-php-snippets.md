@@ -26,13 +26,15 @@ $requestBody->setIdentityProviders($identityProvidersArray);
 
 
 $requestConfiguration = new B2cUserFlowsRequestBuilderPostRequestConfiguration();
+
 $headers = [
-	'Location' => 'https://graph.microsoft.com/beta/identity/b2cUserFlows(\'B2C_1_Customer\')',
+'Location' => 'https://graph.microsoft.com/beta/identity/b2cUserFlows(\'B2C_1_Customer\')',
 ];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->identity()->b2cUserFlows()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->identity()->b2cUserFlows()->post($requestBody, $requestConfiguration);
 
 
 ```

@@ -22,7 +22,7 @@ $requestBody->setAppScopeIds(['allDevices', ]);
 
 
 
-$result = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignments()->post($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignments()->post($requestBody);
 
 
 ```

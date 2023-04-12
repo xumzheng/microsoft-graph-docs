@@ -7,43 +7,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	name = "updatedCt"
-	documentSet = @{
-		shouldPrefixNameToFile = $true
-		allowedContentTypes = @(
+	Name = "updatedCt"
+	DocumentSet = @{
+		ShouldPrefixNameToFile = $true
+		AllowedContentTypes = @(
 			@{
-				id = "0x0101"
-				name = "Document"
+				Id = "0x0101"
+				Name = "Document"
 			}
 		)
-		defaultContents = @(
+		DefaultContents = @(
 			@{
-				fileName = "a.txt"
-				contentType = @{
-					id = "0x0101"
+				FileName = "a.txt"
+				ContentType = @{
+					Id = "0x0101"
 				}
 			}
 			@{
-				fileName = "b.txt"
-				contentType = @{
-					id = "0x0101"
+				FileName = "b.txt"
+				ContentType = @{
+					Id = "0x0101"
 				}
 			}
 		)
-		sharedColumns = @(
+		SharedColumns = @(
 			@{
-				name = "Description"
-				id = "cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
+				Name = "Description"
+				Id = "cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
 			}
 			@{
-				name = "Address"
-				id = "fc2e188e-ba91-48c9-9dd3-16431afddd50"
+				Name = "Address"
+				Id = "fc2e188e-ba91-48c9-9dd3-16431afddd50"
 			}
 		)
-		welcomePageColumns = @(
+		WelcomePageColumns = @(
 			@{
-				name = "Address"
-				id = "fc2e188e-ba91-48c9-9dd3-16431afddd50"
+				Name = "Address"
+				Id = "fc2e188e-ba91-48c9-9dd3-16431afddd50"
 			}
 		)
 	}

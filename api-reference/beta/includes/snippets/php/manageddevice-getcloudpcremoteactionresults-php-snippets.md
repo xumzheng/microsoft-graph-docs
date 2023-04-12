@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->deviceManagement()->managedDevicesById('managedDevice-id')->getCloudPcRemoteActionResults()->get();
+$requestResult = $graphServiceClient->deviceManagement()->managedDevicesById('managedDevice-id')->getCloudPcRemoteActionResults()->get();
 
 
 ```

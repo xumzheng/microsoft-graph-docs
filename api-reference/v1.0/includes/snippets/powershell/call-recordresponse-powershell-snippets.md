@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	bargeInAllowed = $true
-	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
-	prompts = @(
+	BargeInAllowed = $true
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+	Prompts = @(
 		@{
 			"@odata.type" = "#microsoft.graph.mediaPrompt"
 		}
 	)
-	maxRecordDurationInSeconds = 10
-	initialSilenceTimeoutInSeconds = 5
-	maxSilenceTimeoutInSeconds = 2
-	playBeep = $true
-	stopTones = @(
+	MaxRecordDurationInSeconds = 10
+	InitialSilenceTimeoutInSeconds = 5
+	MaxSilenceTimeoutInSeconds = 2
+	PlayBeep = $true
+	StopTones = @(
 		"#"
 		"1"
 		"*"

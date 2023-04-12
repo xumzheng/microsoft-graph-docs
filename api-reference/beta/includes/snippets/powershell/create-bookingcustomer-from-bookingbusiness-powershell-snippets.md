@@ -7,36 +7,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Bookings
 
 $params = @{
-	displayName = "Joni Sherman"
-	emailAddress = "jonis@relecloud.com"
-	addresses = @(
+	DisplayName = "Joni Sherman"
+	EmailAddress = "jonis@relecloud.com"
+	Addresses = @(
 		@{
-			postOfficeBox = ""
-			street = "4567 Main Street"
-			city = "Buffalo"
-			state = "NY"
-			countryOrRegion = "USA"
-			postalCode = "98052"
-			type = "home"
+			PostOfficeBox = ""
+			Street = "4567 Main Street"
+			City = "Buffalo"
+			State = "NY"
+			CountryOrRegion = "USA"
+			PostalCode = "98052"
+			Type = "home"
 		}
 		@{
-			postOfficeBox = ""
-			street = "4570 Main Street"
-			city = "Buffalo"
-			state = "NY"
-			countryOrRegion = "USA"
-			postalCode = "98054"
-			type = "business"
+			PostOfficeBox = ""
+			Street = "4570 Main Street"
+			City = "Buffalo"
+			State = "NY"
+			CountryOrRegion = "USA"
+			PostalCode = "98054"
+			Type = "business"
 		}
 	)
-	phones = @(
+	Phones = @(
 		@{
-			number = "206-555-0100"
-			type = "home"
+			Number = "206-555-0100"
+			Type = "home"
 		}
 		@{
-			number = "206-555-0200"
-			type = "business"
+			Number = "206-555-0200"
+			Type = "business"
 		}
 	)
 }

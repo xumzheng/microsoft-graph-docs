@@ -14,7 +14,7 @@ $requestBody->setName('Leisure tasks');
 
 
 
-$result = $graphServiceClient->me()->outlook()->taskGroups()->post($requestBody);
+$requestResult = $graphServiceClient->me()->outlook()->taskGroups()->post($requestBody);
 
 
 ```

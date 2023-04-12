@@ -20,7 +20,7 @@ $requestBody->setDirectoryScopeId('/');
 
 
 
-$result = $graphServiceClient->roleManagement()->directory()->roleAssignments()->post($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->directory()->roleAssignments()->post($requestBody);
 
 
 ```

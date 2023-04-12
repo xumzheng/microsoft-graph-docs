@@ -16,7 +16,7 @@ $requestBody->setDescription('Tenants that have purchased extended support');
 
 
 
-$result = $graphServiceClient->tenantRelationships()->managedTenants()->tenantTags()->post($requestBody);
+$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->tenantTags()->post($requestBody);
 
 
 ```

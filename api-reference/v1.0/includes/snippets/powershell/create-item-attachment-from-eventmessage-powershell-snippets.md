@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Calendar
 
 $params = @{
 	"@odata.type" = "#Microsoft.OutlookServices.ItemAttachment"
-	name = "name-value"
-	item = @{
+	Name = "name-value"
+	Item = @{
 		"@odata.type" = "microsoft.graph.message"
 	}
 }

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Notes
 
 $params = @{
-	displayName = "My Private notebook"
+	DisplayName = "My Private notebook"
 }
 
 # A UPN can also be used as -UserId.

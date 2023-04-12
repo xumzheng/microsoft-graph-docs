@@ -27,7 +27,7 @@ $requestBody->setLocalAdminEnabled(false);
 
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->patch($requestBody);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->patch($requestBody);
 
 
 ```

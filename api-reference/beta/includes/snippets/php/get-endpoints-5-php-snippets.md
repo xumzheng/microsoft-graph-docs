@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->print()->reports()->monthlyPrintUsageByPrinter()->get();
+$requestResult = $graphServiceClient->print()->reports()->monthlyPrintUsageByPrinter()->get();
 
 
 ```

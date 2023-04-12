@@ -21,7 +21,7 @@ $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 
 $additionalData = [
-	'preFetchMedia' => $preFetchMedia1 = new ();
+'preFetchMedia' => $preFetchMedia1 = new ();
 $	preFetchMedia1->setUri('https://cdn.contoso.com/beep.wav');
 
 $	preFetchMedia1->setResourceId('f8971b04-b53e-418c-9222-c82ce681a582');
@@ -84,7 +84,7 @@ $meetingInfo->setAdditionalData($additionalData);
 $requestBody->setMeetingInfo($meetingInfo);
 
 
-$result = $graphServiceClient->communications()->calls()->post($requestBody);
+$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

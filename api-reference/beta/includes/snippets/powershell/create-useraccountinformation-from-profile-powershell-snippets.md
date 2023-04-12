@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	allowedAudiences = "organization"
-	countryCode = "NO"
+	AllowedAudiences = "organization"
+	CountryCode = "NO"
 }
 
 # A UPN can also be used as -UserId.

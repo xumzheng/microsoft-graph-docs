@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.SchemaExtensions
 
 $params = @{
-	id = "courses"
-	description = "Graph Learn training courses extensions"
-	targetTypes = @(
+	Id = "courses"
+	Description = "Graph Learn training courses extensions"
+	TargetTypes = @(
 		"Group"
 	)
-	owner = "50897f70-a455-4adf-87bc-4cf17091d5ac"
-	properties = @(
+	Owner = "50897f70-a455-4adf-87bc-4cf17091d5ac"
+	Properties = @(
 		@{
-			name = "courseId"
-			type = "Integer"
+			Name = "courseId"
+			Type = "Integer"
 		}
 		@{
-			name = "courseName"
-			type = "String"
+			Name = "courseName"
+			Type = "String"
 		}
 		@{
-			name = "courseType"
-			type = "String"
+			Name = "courseType"
+			Type = "String"
 		}
 	)
 }

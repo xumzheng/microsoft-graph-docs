@@ -14,7 +14,7 @@ $requestBody->setName('Volunteer');
 
 
 
-$result = $graphServiceClient->me()->calendars()->post($requestBody);
+$requestResult = $graphServiceClient->me()->calendars()->post($requestBody);
 
 
 ```

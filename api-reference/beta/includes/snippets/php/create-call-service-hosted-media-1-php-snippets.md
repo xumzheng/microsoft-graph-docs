@@ -53,7 +53,7 @@ $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 $requestBody->setMediaConfig($mediaConfig);
 
 
-$result = $graphServiceClient->communications()->calls()->post($requestBody);
+$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

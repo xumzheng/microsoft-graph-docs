@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasks()->get();
+$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasks()->get();
 
 
 ```

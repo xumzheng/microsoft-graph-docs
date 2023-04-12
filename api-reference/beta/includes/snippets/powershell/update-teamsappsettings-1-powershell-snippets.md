@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
-	isChatResourceSpecificConsentEnabled = "true"
+	IsChatResourceSpecificConsentEnabled = "true"
 }
 
 Update-MgTeamworkTeamAppSetting -BodyParameter $params

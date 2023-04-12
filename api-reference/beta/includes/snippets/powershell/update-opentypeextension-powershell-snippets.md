@@ -8,11 +8,11 @@ Import-Module Microsoft.Graph.Groups
 
 $params = @{
 	"@odata.type" = "#microsoft.outlookServices.openTypeExtension"
-	extensionName = "Com.Contoso.Estimate"
-	companyName = "Contoso"
-	expirationDate = "2016-07-30T11:00:00.000Z"
+	ExtensionName = "Com.Contoso.Estimate"
+	CompanyName = "Contoso"
+	ExpirationDate = "2016-07-30T11:00:00.000Z"
 	DealValue = 
-	topPicks = @(
+	TopPicks = @(
 		"Employees only"
 		"Add spouse or guest"
 		"Add family"

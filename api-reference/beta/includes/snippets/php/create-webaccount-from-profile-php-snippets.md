@@ -23,7 +23,7 @@ $service->setWebUrl('https://github.com');
 $requestBody->setService($service);
 
 
-$result = $graphServiceClient->me()->profile()->webAccounts()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->webAccounts()->post($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setPassword('1234567890');
 
 
 
-$result = $graphServiceClient->users()->validatePassword()->post($requestBody);
+$requestResult = $graphServiceClient->users()->validatePassword()->post($requestBody);
 
 
 ```

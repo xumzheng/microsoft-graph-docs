@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Planner
 
 $params = @{
-	title = "title-value"
+	Title = "title-value"
 }
 
 Update-MgPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params

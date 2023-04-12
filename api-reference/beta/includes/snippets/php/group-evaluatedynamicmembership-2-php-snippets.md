@@ -16,7 +16,7 @@ $requestBody->setMembershipRule('(user.displayName -startsWith \"EndTestUser\")'
 
 
 
-$result = $graphServiceClient->groups()->evaluateDynamicMembership()->post($requestBody);
+$requestResult = $graphServiceClient->groups()->evaluateDynamicMembership()->post($requestBody);
 
 
 ```

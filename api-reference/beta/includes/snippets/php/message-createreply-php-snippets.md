@@ -40,7 +40,7 @@ $requestBody->setComment('Samantha, Randi, would you name the group if the proje
 
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->createReply()->post($requestBody);
+$requestResult = $graphServiceClient->me()->messagesById('message-id')->createReply()->post($requestBody);
 
 
 ```

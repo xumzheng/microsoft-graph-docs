@@ -12,9 +12,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new CrossCloudGovernmentOrganizationMappingPostRequestBody();
 
 $requestConfiguration = new CrossCloudGovernmentOrganizationMappingRequestBuilderPostRequestConfiguration();
+
 $headers = [
-		'X-MS-CloudPC-USGovCloudTenantAADToken' => '{token}',
-	];
+	'X-MS-CloudPC-USGovCloudTenantAADToken' => '{token}',
+];
+
 $requestConfiguration->headers = $headers;
 
 

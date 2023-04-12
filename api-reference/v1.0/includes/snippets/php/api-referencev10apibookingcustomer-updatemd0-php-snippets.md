@@ -13,15 +13,15 @@ $requestBody = new BookingCustomerBase();
 $requestBody->set@odatatype('#microsoft.graph.bookingCustomer');
 
 $additionalData = [
-		'displayName' => 'Adele', 
-		'emailAddress' => 'adele@relecloud.com', 
+'displayName' => 'Adele', 
+'emailAddress' => 'adele@relecloud.com', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->customersById('bookingCustomerBase-id')->patch($requestBody);
+$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->customersById('bookingCustomerBase-id')->patch($requestBody);
 
 
 ```

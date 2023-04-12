@@ -21,7 +21,7 @@ $senderEmailAddress->setAddress('samanthab@adatum.onmicrosoft.com');
 $requestBody->setSenderEmailAddress($senderEmailAddress);
 
 
-$result = $graphServiceClient->me()->inferenceClassification()->overrides()->post($requestBody);
+$requestResult = $graphServiceClient->me()->inferenceClassification()->overrides()->post($requestBody);
 
 
 ```

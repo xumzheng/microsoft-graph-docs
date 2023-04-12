@@ -16,7 +16,7 @@ $requestBody->setClientApplicationsFromVerifiedPublisherOnly(true);
 
 
 
-$result = $graphServiceClient->policies()->permissionGrantPoliciesById('permissionGrantPolicy-id')->includes()->post($requestBody);
+$requestResult = $graphServiceClient->policies()->permissionGrantPoliciesById('permissionGrantPolicy-id')->includes()->post($requestBody);
 
 
 ```

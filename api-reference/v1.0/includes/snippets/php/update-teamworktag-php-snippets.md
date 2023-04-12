@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Finance');
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->tagsById('teamworkTag-id')->patch($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->tagsById('teamworkTag-id')->patch($requestBody);
 
 
 ```

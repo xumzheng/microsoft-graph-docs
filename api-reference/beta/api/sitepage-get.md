@@ -164,6 +164,10 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}?select=i
 [!INCLUDE [sample-code](../includes/snippets/php/get-sitepage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-sitepage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response

@@ -7,78 +7,78 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
-	visibility = "Private"
-	displayName = "Sample Engineering Team"
-	description = "This is a sample engineering team, used to showcase the range of properties supported by this API"
-	channels = @(
+	"Template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+	Visibility = "Private"
+	DisplayName = "Sample Engineering Team"
+	Description = "This is a sample engineering team, used to showcase the range of properties supported by this API"
+	Channels = @(
 		@{
-			displayName = "Announcements 📢"
-			isFavoriteByDefault = $true
-			description = "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements."
+			DisplayName = "Announcements 📢"
+			IsFavoriteByDefault = $true
+			Description = "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements."
 		}
 		@{
-			displayName = "Training 🏋️"
-			isFavoriteByDefault = $true
-			description = "This is a sample training channel, that is favorited by default, and contains an example of pinned website and YouTube tabs."
-			tabs = @(
+			DisplayName = "Training 🏋️"
+			IsFavoriteByDefault = $true
+			Description = "This is a sample training channel, that is favorited by default, and contains an example of pinned website and YouTube tabs."
+			Tabs = @(
 				@{
-					"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')"
-					displayName = "A Pinned Website"
-					configuration = @{
-						contentUrl = "https://learn.microsoft.com/microsoftteams/microsoft-teams"
+					"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')"
+					DisplayName = "A Pinned Website"
+					Configuration = @{
+						ContentUrl = "https://learn.microsoft.com/microsoftteams/microsoft-teams"
 					}
 				}
 				@{
-					"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')"
-					displayName = "A Pinned YouTube Video"
-					configuration = @{
-						contentUrl = "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ"
-						websiteUrl = "https://www.youtube.com/watch?v=X8krAMdGvCQ"
+					"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')"
+					DisplayName = "A Pinned YouTube Video"
+					Configuration = @{
+						ContentUrl = "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ"
+						WebsiteUrl = "https://www.youtube.com/watch?v=X8krAMdGvCQ"
 					}
 				}
 			)
 		}
 		@{
-			displayName = "Planning 📅 "
-			description = "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu."
-			isFavoriteByDefault = $false
+			DisplayName = "Planning 📅 "
+			Description = "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu."
+			IsFavoriteByDefault = $false
 		}
 		@{
-			displayName = "Issues and Feedback 🐞"
-			description = "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu."
+			DisplayName = "Issues and Feedback 🐞"
+			Description = "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu."
 		}
 	)
-	memberSettings = @{
-		allowCreateUpdateChannels = $true
-		allowDeleteChannels = $true
-		allowAddRemoveApps = $true
-		allowCreateUpdateRemoveTabs = $true
-		allowCreateUpdateRemoveConnectors = $true
+	MemberSettings = @{
+		AllowCreateUpdateChannels = $true
+		AllowDeleteChannels = $true
+		AllowAddRemoveApps = $true
+		AllowCreateUpdateRemoveTabs = $true
+		AllowCreateUpdateRemoveConnectors = $true
 	}
-	guestSettings = @{
-		allowCreateUpdateChannels = $false
-		allowDeleteChannels = $false
+	GuestSettings = @{
+		AllowCreateUpdateChannels = $false
+		AllowDeleteChannels = $false
 	}
-	funSettings = @{
-		allowGiphy = $true
-		giphyContentRating = "Moderate"
-		allowStickersAndMemes = $true
-		allowCustomMemes = $true
+	FunSettings = @{
+		AllowGiphy = $true
+		GiphyContentRating = "Moderate"
+		AllowStickersAndMemes = $true
+		AllowCustomMemes = $true
 	}
-	messagingSettings = @{
-		allowUserEditMessages = $true
-		allowUserDeleteMessages = $true
-		allowOwnerDeleteMessages = $true
-		allowTeamMentions = $true
-		allowChannelMentions = $true
+	MessagingSettings = @{
+		AllowUserEditMessages = $true
+		AllowUserDeleteMessages = $true
+		AllowOwnerDeleteMessages = $true
+		AllowTeamMentions = $true
+		AllowChannelMentions = $true
 	}
-	installedApps = @(
+	InstalledApps = @(
 		@{
-			"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+			"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
 		}
 		@{
-			"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+			"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
 		}
 	)
 }

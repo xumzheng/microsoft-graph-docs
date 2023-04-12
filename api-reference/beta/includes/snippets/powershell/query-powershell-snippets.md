@@ -7,20 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Search
 
 $params = @{
-	requests = @(
+	Requests = @(
 		@{
-			entityTypes = @(
+			EntityTypes = @(
 				"externalItem"
 			)
-			contentSources = @(
+			ContentSources = @(
 				"/external/connections/connectionfriendlyname"
 			)
-			query = @{
-				queryString = "contoso product"
+			Query = @{
+				QueryString = "contoso product"
 			}
-			from = 0
-			size = 25
-			fields = @(
+			From = 0
+			Size = 25
+			Fields = @(
 				"title"
 				"description"
 			)

@@ -14,7 +14,7 @@ $requestBody->setPreferredSingleSignOnMode('saml');
 
 
 
-$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->patch($requestBody);
+$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->patch($requestBody);
 
 
 ```

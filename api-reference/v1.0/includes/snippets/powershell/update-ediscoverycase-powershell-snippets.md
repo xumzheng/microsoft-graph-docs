@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	displayName = "My Case 1 - Renamed"
-	description = "Updated description"
+	DisplayName = "My Case 1 - Renamed"
+	Description = "Updated description"
 }
 
 Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params

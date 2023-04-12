@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
 $params = @{
-	description = "Update basic properties and permission of application registrations"
-	displayName = "ExampleCustomRole"
-	rolePermissions = @(
+	Description = "Update basic properties and permission of application registrations"
+	DisplayName = "ExampleCustomRole"
+	RolePermissions = @(
 		@{
-			allowedResourceActions = @(
+			AllowedResourceActions = @(
 				"Microsoft.CloudPC/CloudPCs/Read"
 				"Microsoft.CloudPC/CloudPCs/Reprovision"
 			)

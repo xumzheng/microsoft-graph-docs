@@ -8,13 +8,13 @@ Import-Module Microsoft.Graph.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.ediscoveryCaseSettings"
-	redundancyDetection = @{
+	RedundancyDetection = @{
 		"@odata.type" = "microsoft.graph.security.redundancyDetectionSettings"
 	}
-	topicModeling = @{
+	TopicModeling = @{
 		"@odata.type" = "microsoft.graph.security.topicModelingSettings"
 	}
-	ocr = @{
+	Ocr = @{
 		"@odata.type" = "microsoft.graph.security.ocrSettings"
 	}
 }

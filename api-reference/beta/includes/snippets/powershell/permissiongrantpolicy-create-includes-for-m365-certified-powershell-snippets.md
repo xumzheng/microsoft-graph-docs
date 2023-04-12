@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	permissionType = "delegated"
-	certifiedClientApplicationsOnly = $true
+	PermissionType = "delegated"
+	CertifiedClientApplicationsOnly = $true
 }
 
 New-MgPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId $permissionGrantPolicyId -BodyParameter $params

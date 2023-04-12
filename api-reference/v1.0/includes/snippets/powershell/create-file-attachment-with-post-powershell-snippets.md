@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	post = @{
-		body = @{
-			contentType = "text"
-			content = "Which quarter does that file cover? See my attachment."
+	Post = @{
+		Body = @{
+			ContentType = "text"
+			Content = "Which quarter does that file cover? See my attachment."
 		}
-		attachments = @(
+		Attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				name = "Another file as attachment"
-				contentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+				Name = "Another file as attachment"
+				ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
 			}
 		)
 	}

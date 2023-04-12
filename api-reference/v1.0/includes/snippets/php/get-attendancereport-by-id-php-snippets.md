@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MeetingAttendanceReportRequestBuilderGetRequestConfiguration();
-$queryParameters = MeetingAttendanceReportRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new MeetingAttendanceReportRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["attendanceRecords"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->attendanceReportsById('meetingAttendanceReport-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->attendanceReportsById('meetingAttendanceReport-id')->get($requestConfiguration);
 
 
 ```

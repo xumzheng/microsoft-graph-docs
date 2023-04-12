@@ -44,7 +44,7 @@ $requestBody->setProperties($propertiesArray);
 
 
 
-$result = $graphServiceClient->schemaExtensions()->post($requestBody);
+$requestResult = $graphServiceClient->schemaExtensions()->post($requestBody);
 
 
 ```

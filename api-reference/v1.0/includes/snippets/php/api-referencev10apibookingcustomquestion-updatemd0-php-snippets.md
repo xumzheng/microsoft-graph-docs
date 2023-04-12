@@ -20,7 +20,7 @@ $requestBody->setAnswerOptions([]);
 
 
 
-$result = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->customQuestionsById('bookingCustomQuestion-id')->patch($requestBody);
+$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->customQuestionsById('bookingCustomQuestion-id')->patch($requestBody);
 
 
 ```

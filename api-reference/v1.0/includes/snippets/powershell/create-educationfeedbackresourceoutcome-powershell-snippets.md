@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Education
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationFeedbackResourceOutcome"
-	feedbackResource = @{
+	FeedbackResource = @{
 		"@odata.type" = "#microsoft.graph.educationWordResource"
-		displayName = "Document1.docx"
+		DisplayName = "Document1.docx"
 	}
 }
 

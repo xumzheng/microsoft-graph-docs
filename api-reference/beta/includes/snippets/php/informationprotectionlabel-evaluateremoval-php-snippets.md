@@ -86,9 +86,9 @@ $contentInfo->setMetadata($metadataArray);
 
 
 $additionalData = [
-	'format@odata.type' => '#microsoft.graph.contentFormat', 
-	'state@odata.type' => '#microsoft.graph.contentState', 
-	'metadata@odata.type' => '#Collection(microsoft.graph.keyValuePair)', 
+'format@odata.type' => '#microsoft.graph.contentFormat', 
+'state@odata.type' => '#microsoft.graph.contentState', 
+'metadata@odata.type' => '#Collection(microsoft.graph.keyValuePair)', 
 ];
 $contentInfo->setAdditionalData($additionalData);
 
@@ -104,13 +104,15 @@ $downgradeJustification->setIsDowngradeJustified(true);
 $requestBody->setDowngradeJustification($downgradeJustification);
 
 $requestConfiguration = new EvaluateRemovalRequestBuilderPostRequestConfiguration();
+
 $headers = [
-	'User-Agent' => 'ContosoLOBApp/1.0',
+'User-Agent' => 'ContosoLOBApp/1.0',
 ];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->informationProtection()->policy()->labels()->evaluateRemoval()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->evaluateRemoval()->post($requestBody, $requestConfiguration);
 
 
 ```

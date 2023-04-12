@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->file()->get();
+$requestResult = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->file()->get();
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->security()->triggerTypes()->retentionEventTypesById('retentionEventType-id')->get();
+$requestResult = $graphServiceClient->security()->triggerTypes()->retentionEventTypesById('retentionEventType-id')->get();
 
 
 ```

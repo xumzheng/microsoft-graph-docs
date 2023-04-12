@@ -45,7 +45,7 @@ $requestBody->setIsCurrent(true);
 
 
 
-$result = $graphServiceClient->me()->profile()->positions()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->positions()->post($requestBody);
 
 
 ```

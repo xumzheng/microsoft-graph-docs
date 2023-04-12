@@ -20,7 +20,7 @@ $requestBody->setIsExternallyVisible(true);
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->catalogs()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->catalogs()->post($requestBody);
 
 
 ```

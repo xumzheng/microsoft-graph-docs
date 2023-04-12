@@ -22,7 +22,7 @@ $requestBody->setAuthenticationMethodModes(new AuthenticationMethodModes('passwo
 
 
 
-$result = $graphServiceClient->policies()->authenticationStrengthPolicies()->post($requestBody);
+$requestResult = $graphServiceClient->policies()->authenticationStrengthPolicies()->post($requestBody);
 
 
 ```

@@ -7,21 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	chatType = "oneOnOne"
-	members = @(
+	ChatType = "oneOnOne"
+	Members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
+			Roles = @(
 				"owner"
 			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+			"User@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
+			Roles = @(
 				"owner"
 			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+			"User@odata.bind" = "https://graph.microsoft.com/beta/users('alex@contoso.com')"
 		}
 	)
 }

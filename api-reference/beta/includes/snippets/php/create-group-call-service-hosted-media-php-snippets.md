@@ -92,7 +92,7 @@ $requestBody->setTenantId('aa67bd4c-8475-432d-bd41-39f255720e0a');
 
 
 
-$result = $graphServiceClient->communications()->calls()->post($requestBody);
+$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	description = "This is an updated description."
+	Description = "This is an updated description."
 }
 
 Update-MgComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -BodyParameter $params

@@ -7,25 +7,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	subject = "Annual review"
-	body = @{
-		contentType = "HTML"
-		content = "You should be proud!"
+	Subject = "Annual review"
+	Body = @{
+		ContentType = "HTML"
+		Content = "You should be proud!"
 	}
-	toRecipients = @(
+	ToRecipients = @(
 		@{
-			emailAddress = @{
-				address = "rufus@contoso.com"
+			EmailAddress = @{
+				Address = "rufus@contoso.com"
 			}
 		}
 	)
-	extensions = @(
+	Extensions = @(
 		@{
 			"@odata.type" = "microsoft.graph.openTypeExtension"
-			extensionName = "Com.Contoso.Referral"
-			companyName = "Wingtip Toys"
-			expirationDate = "2015-12-30T11:00:00.000Z"
-			dealValue = 
+			ExtensionName = "Com.Contoso.Referral"
+			CompanyName = "Wingtip Toys"
+			ExpirationDate = "2015-12-30T11:00:00.000Z"
+			DealValue = 
 		}
 	)
 }

@@ -14,7 +14,7 @@ $requestBody->setIsRead(true);
 
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->messagesById('message-id')->patch($requestBody);
 
 
 ```

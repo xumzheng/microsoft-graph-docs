@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new LocalizationsRequestBuilderGetRequestConfiguration();
-$queryParameters = LocalizationsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new LocalizationsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "languageTag eq 'en-us'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->planConfiguration()->localizations()->get($requestConfiguration);
+$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->planConfiguration()->localizations()->get($requestConfiguration);
 
 
 ```

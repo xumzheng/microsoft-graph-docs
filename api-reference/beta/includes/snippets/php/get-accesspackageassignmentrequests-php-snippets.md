@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AccessPackageAssignmentRequestsRequestBuilderGetRequestConfiguration();
-$queryParameters = AccessPackageAssignmentRequestsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new AccessPackageAssignmentRequestsRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["requestor($expand=connectedOrganization)"];
 $queryParameters->filter = "(requestState eq 'PendingApproval')";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->get($requestConfiguration);
 
 
 ```
