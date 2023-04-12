@@ -17,6 +17,7 @@ In the traditional Azure AD B2B collaboration, any invited user from an organiza
 
 Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in Azure AD B2B collaboration and Azure AD B2B direct connect. These controls are implemented through:
 
+
 + **Default cross-tenant access settings** which set the baseline inbound and outbound access settings.
     + In Azure AD B2B collaboration, both access settings are enabled by default. This means all your users can be invited to external organizations, and all your users can invite external users.
     + In Azure AD B2B direct connect, both access settings are disabled by default.
