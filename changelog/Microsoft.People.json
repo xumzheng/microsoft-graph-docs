@@ -127,6 +127,32 @@
 			"CreatedDateTime": "2022-10-03T13:58:56.9132926Z",
 			"WorkloadArea": "Personal contacts",
 			"SubArea": "Org control for contact insights"
-		}
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "e3f2e4e8-d39e-40ac-997e-2267da226849",
+				"ApiChange": "Permission",
+				"ChangedApiName": "PeopleSettings.Read.All",
+				"ChangeType": "Addition",
+				"Description": "Added support for the policy-based application permission of `PeopleSettings.Read.All` to read tenant-wide peoplesettings resource.",
+				"Target": "PeopleSettings"
+			  },
+			  {
+				"Id": "e3f2e4e8-d39e-40ac-997e-2267da226849",
+				"ApiChange": "Permission",
+				"ChangedApiName": "PeopleSettings.ReadWrite.All",
+				"ChangeType": "Addition",
+				"Description": "Added support for the policy-based application permission of `PeopleSettings.Read.All` to the read and write tenant-wide peoplesettings resource.",
+				"Target": "PeopleSettings"
+			  }
+			],
+			"Id": "e3f2e4e8-d39e-40ac-997e-2267da226849",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2023-03-23T00:00:00",
+			"WorkloadArea": "People and workplace intelligence",
+			"SubArea": "People"
+		  }
 	]
 }
