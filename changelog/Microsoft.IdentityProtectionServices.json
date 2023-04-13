@@ -1,6 +1,48 @@
 {
 	"changelog": [
-	    {
+		{
+			"ChangeList": [
+			  {
+				"Id": "b7b17c1b-4d95-4f06-a47c-21cb9efa8d05",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrengthUsage",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrengthUsage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthUsage?view=graph-rest-1.0) resource type.",
+				"Target": "authenticationStrengthUsage"
+			  },
+			  {
+				"Id": "b7b17c1b-4d95-4f06-a47c-21cb9efa8d05",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrength",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrength](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls?view=graph-rest-1.0) resource",
+				"Target": "conditionalAccessGrantControls"
+			  },
+			  {
+				"Id": "b7b17c1b-4d95-4f06-a47c-21cb9efa8d05",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrengthPolicy",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource",
+				"Target": "authenticationStrengthPolicy"
+			  },
+			  {
+				"Id": "b7b17c1b-4d95-4f06-a47c-21cb9efa8d05",
+				"ApiChange": "Method",
+				"ChangedApiName": "usage",
+				"ChangeType": "Addition",
+				"Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+				"Target": "authenticationStrengthPolicy"
+			  }
+			],
+			"Id": "b7b17c1b-4d95-4f06-a47c-21cb9efa8d05",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-03-31T18:53:31.8074968Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		  },
+	{
       "ChangeList": [
         {
           "Id": "e089521e-41bb-42ea-8e00-9dcbf72772f0",
