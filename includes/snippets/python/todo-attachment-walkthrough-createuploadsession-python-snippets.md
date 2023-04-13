@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = CreateUploadSessionPostRequestBody()
+attachment_info = AttachmentInfo()
+attachmentInfo.AttachmentType(AttachmentType('file'))
+
+attachmentInfo.name = 'flower'
+
+attachmentInfo.size = 3483322
+
+
+request_body.attachment_info = attachmentInfo
+
+
+
+result = await client.me.todo.lists_by_id('todoTaskList-id').tasks_by_id('todoTask-id').attachments.createUploadSession.post(request_body = request_body)
+
+
+```

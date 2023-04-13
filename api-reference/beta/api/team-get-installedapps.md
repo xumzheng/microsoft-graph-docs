@@ -91,6 +91,10 @@ GET /teams/{id}/installedApps/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-installed-teams-apps-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-installed-teams-apps-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -157,6 +161,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}?$expand=teams
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-installed-teams-apps-expand-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-installed-teams-apps-expand-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -233,6 +241,10 @@ GET https://graph.microsoft.com/beta/teams/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-installedapps-in-team-select-consentedpermissionset-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-installedapps-in-team-select-consentedpermissionset-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(user
 [!INCLUDE [sample-code](../includes/snippets/php/reports-getuserarchivedprintjobs-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reports-getuserarchivedprintjobs-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

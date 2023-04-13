@@ -1,0 +1,37 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = EducationalActivity()
+institution = InstitutionData()
+institution_location = PhysicalAddress()
+institutionLocation.Type(PhysicalAddressType('business'))
+
+InstitutionLocation.postOfficeBox=null
+
+institutionLocation.street = '12000 E Prospect Rd'
+
+institutionLocation.city = 'Fort Collins'
+
+institutionLocation.state = 'Colorado'
+
+institutionLocation.countryOrRegion = 'USA'
+
+institutionLocation.postalCode = '80525'
+
+
+institution.location = institutionLocation
+
+request_body.institution = institution
+
+
+
+result = await client.me.profile.educationalActivities_by_id('educationalActivity-id').patch(request_body = request_body)
+
+
+```

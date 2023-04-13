@@ -109,6 +109,10 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
 [!INCLUDE [sample-code](../includes/snippets/php/authenticationmethodsroot-usersregisteredbymethod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/authenticationmethodsroot-usersregisteredbymethod-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

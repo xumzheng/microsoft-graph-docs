@@ -106,6 +106,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamsapps-filter-distributionmethod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapps-filter-distributionmethod-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- markdownlint-disable MD024 -->
@@ -179,6 +183,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq 'b1c535
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamsapp-filter-id-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-filter-id-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -248,6 +256,10 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId e
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamsapp-filter-externalid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-filter-externalid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -321,6 +333,10 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamsapp-with-filter-expand-appdefinitions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-with-filter-expand-appdefinitions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -410,6 +426,10 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitio
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamsapp-with-bots-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-with-bots-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -555,6 +575,10 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitio
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamsapp-in-personal-scope-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-in-personal-scope-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -632,6 +656,10 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id+eq+'a5228
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamsapp-with-rsc-permissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-with-rsc-permissions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

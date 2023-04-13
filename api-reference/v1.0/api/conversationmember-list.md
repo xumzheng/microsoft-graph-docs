@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/v1.0/chats/19:9ef2dcdf14ba44cbae25c2f5d53171ba@t
 [!INCLUDE [sample-code](../includes/snippets/php/list-conversation-members-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-conversation-members-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

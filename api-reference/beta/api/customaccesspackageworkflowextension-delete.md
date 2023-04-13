@@ -86,8 +86,11 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 [!INCLUDE [sample-code](../includes/snippets/php/delete-customaccesspackageworkflowextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-customaccesspackageworkflowextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 
 ### Response

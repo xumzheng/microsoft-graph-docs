@@ -1,0 +1,53 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = SendActivityNotificationPostRequestBody()
+topic = TeamworkActivityTopic()
+topic.Source(TeamworkActivityTopicSource('entityurl'))
+
+topic.value = 'https://graph.microsoft.com/v1.0/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7'
+
+
+request_body.topic = topic
+request_body.activityType = 'pendingFinanceApprovalRequests'
+
+preview_text = ItemBody()
+previewText.content = 'Internal spending team has a pending finance approval requests'
+
+
+request_body.preview_text = previewText
+recipient = TeamworkNotificationRecipient()
+recipient.@odatatype = 'microsoft.graph.channelMembersNotificationRecipient'
+
+additionalData = [
+'teamId' => 'e8bece96-d393-4b9b-b8da-69cedef1a7e7', 
+'channelId' => '19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2', 
+];
+recipient.additionaldata(additionalData)
+
+
+
+request_body.recipient = recipient
+template_parameters_key_value_pair1 = KeyValuePair()
+templateParametersKeyValuePair1.name = 'pendingRequestCount'
+
+templateParametersKeyValuePair1.value = '5'
+
+
+templateParametersArray []= templateParametersKeyValuePair1;
+request_body.templateparameters(templateParametersArray)
+
+
+
+
+
+await client.teams_by_id('team-id').sendActivityNotification.post(request_body = request_body)
+
+
+```

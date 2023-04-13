@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter
 [!INCLUDE [sample-code](../includes/snippets/php/list-sites-example1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-sites-example1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -176,6 +180,10 @@ GET https://graph.microsoft.com/v1.0/sites
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-sites-example2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-sites-example2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

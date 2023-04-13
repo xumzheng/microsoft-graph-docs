@@ -125,6 +125,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 [!INCLUDE [sample-code](../includes/snippets/php/list-provisioningobjectsummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-provisioningobjectsummary-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -284,6 +288,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-provisioningobjectsummary-error-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-provisioningobjectsummary-error-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

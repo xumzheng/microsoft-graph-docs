@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = SetOrderPostRequestBody()
+new_assignment_order = AssignmentOrder()
+newAssignmentOrder.Order(['City', 'extension_GUID_ShoeSize', ])
+
+
+request_body.new_assignment_order = newAssignmentOrder
+
+
+
+await client.identity.b2xUserFlows_by_id('b2xIdentityUserFlow-id').userAttributeAssignments.setOrder.post(request_body = request_body)
+
+
+```

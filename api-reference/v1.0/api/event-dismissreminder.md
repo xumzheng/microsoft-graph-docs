@@ -95,6 +95,10 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 [!INCLUDE [sample-code](../includes/snippets/php/event-dismissreminder-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/event-dismissreminder-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <br/>

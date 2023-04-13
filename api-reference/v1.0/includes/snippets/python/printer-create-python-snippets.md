@@ -1,0 +1,36 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = CreatePostRequestBody()
+request_body.displayName = 'Test Printer'
+
+request_body.manufacturer = 'Test Printer Manufacturer'
+
+request_body.model = 'Test Printer Model'
+
+request_body.physicalDeviceId=null
+
+request_body.has_physical_device = False
+
+certificate_signing_request = PrintCertificateSigningRequest()
+certificateSigningRequest.content = '{content}'
+
+certificateSigningRequest.transportKey = '{sampleTransportKey}'
+
+
+request_body.certificate_signing_request = certificateSigningRequest
+request_body.connectorId=null
+
+
+
+
+await client.print.printers.create.post(request_body = request_body)
+
+
+```

@@ -63,8 +63,11 @@ GET /groups/{groupId}/drives
 [!INCLUDE [sample-code](../includes/snippets/php/group-list-drives-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-list-drives-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ## List a site's drives
 
@@ -102,8 +105,11 @@ GET /sites/{siteId}/drives
 [!INCLUDE [sample-code](../includes/snippets/php/site-list-drives-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/site-list-drives-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ## List a user's drives
 
@@ -139,8 +145,11 @@ GET /users/{userId}/drives
 [!INCLUDE [sample-code](../includes/snippets/php/user-list-drives-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-list-drives-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ## List the current user's drives
 
@@ -176,8 +185,11 @@ GET /me/drives
 [!INCLUDE [sample-code](../includes/snippets/php/enum-drives-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/enum-drives-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ## Optional query parameters
 

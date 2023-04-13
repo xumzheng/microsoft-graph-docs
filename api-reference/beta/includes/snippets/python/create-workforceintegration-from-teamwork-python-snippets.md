@@ -1,0 +1,34 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+client =  GraphServiceClient(request_adapter)
+
+request_body = WorkforceIntegration()
+request_body.displayName = 'displayName-value'
+
+request_body.api_version = 99
+
+encryption = WorkforceIntegrationEncryption()
+encryption.Protocol(WorkforceIntegrationEncryptionProtocol('protocol-value'))
+
+encryption.secret = 'secret-value'
+
+
+request_body.encryption = encryption
+request_body.is_active = True
+
+request_body.url = 'url-value'
+
+request_body.Supports(WorkforceIntegrationSupportedEntities('supports-value'))
+
+
+
+
+result = await client.teamwork.workforceIntegrations.post(request_body = request_body)
+
+
+```

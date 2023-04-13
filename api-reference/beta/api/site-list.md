@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 [!INCLUDE [sample-code](../includes/snippets/php/list-sites-for-keywords-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-sites-for-keywords-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -172,8 +176,11 @@ GET /sites
 [!INCLUDE [sample-code](../includes/snippets/php/get-a-listofsites-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-a-listofsites-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

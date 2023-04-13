@@ -94,6 +94,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/assign-appliesto-ex1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/assign-appliesto-ex1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -151,6 +155,10 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPolici
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/assign-appliesto-ex2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/assign-appliesto-ex2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

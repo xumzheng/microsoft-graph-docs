@@ -65,8 +65,11 @@ GET /me/drive
 [!INCLUDE [sample-code](../includes/snippets/php/get-drive-default-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-drive-default-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ## Get a user's OneDrive
 
@@ -106,6 +109,10 @@ GET https://graph.microsoft.com/v1.0/users/{48d31887-5fad-4d73-a9f5-3c356e68a038
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-drive-by-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-drive-by-user-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -154,8 +161,11 @@ GET /groups/{groupId}/drive
 [!INCLUDE [sample-code](../includes/snippets/php/get-drive-by-group-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-drive-by-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Path parameters
 
@@ -201,8 +211,11 @@ GET /sites/{siteId}/drive
 [!INCLUDE [sample-code](../includes/snippets/php/get-drive-by-site-id-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-drive-by-site-id-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Path parameters
 
@@ -248,8 +261,11 @@ GET /drives/{drive-id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-drive-by-id-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-drive-by-id-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Path parameters
 
