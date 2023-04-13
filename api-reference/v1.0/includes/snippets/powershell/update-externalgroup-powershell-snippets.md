@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Search
 
 $params = @{
-	displayName = "Contoso Marketing"
-	description = "The product marketing team"
+	DisplayName = "Contoso Marketing"
+	Description = "The product marketing team"
 }
 
 Update-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params

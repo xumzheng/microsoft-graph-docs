@@ -64,7 +64,7 @@ $requestBody->setNotificationChannels($notificationChannelsArray);
 
 
 
-$result = $graphServiceClient->deviceManagement()->monitoring()->alertRules()->post($requestBody);
+$requestResult = $graphServiceClient->deviceManagement()->monitoring()->alertRules()->post($requestBody);
 
 
 ```

@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RegistrationRequestBuilderGetRequestConfiguration();
-$queryParameters = RegistrationRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new RegistrationRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["microsoft.graph.meetingRegistration/customQuestions"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->get($requestConfiguration);
 
 
 ```

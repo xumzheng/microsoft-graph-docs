@@ -7,20 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	subject = "Party planning"
-	toRecipients = @(
+	Subject = "Party planning"
+	ToRecipients = @(
 		@{
-			emailAddress = @{
-				name = "Samantha Booth"
-				address = "samanthab@contoso.onmicrosoft.com"
+			EmailAddress = @{
+				Name = "Samantha Booth"
+				Address = "samanthab@contoso.onmicrosoft.com"
 			}
 		}
 	)
-	mentions = @(
+	Mentions = @(
 		@{
-			mentioned = @{
-				name = "Dana Swope"
-				address = "danas@contoso.onmicrosoft.com"
+			Mentioned = @{
+				Name = "Dana Swope"
+				Address = "danas@contoso.onmicrosoft.com"
 			}
 		}
 	)

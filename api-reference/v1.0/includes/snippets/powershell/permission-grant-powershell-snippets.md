@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Files
 
 $params = @{
-	recipients = @(
+	Recipients = @(
 		@{
-			email = "john@contoso.com"
+			Email = "john@contoso.com"
 		}
 		@{
-			email = "ryan@external.com"
+			Email = "ryan@external.com"
 		}
 	)
-	roles = @(
+	Roles = @(
 		"read"
 	)
 }

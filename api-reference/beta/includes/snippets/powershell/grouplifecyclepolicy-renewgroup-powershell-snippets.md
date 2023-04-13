@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	groupId = "ffffffff-ffff-ffff-ffff-ffffffffffff"
+	GroupId = "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 
 Invoke-MgRenewGroupLifecyclePolicy -BodyParameter $params

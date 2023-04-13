@@ -7,65 +7,65 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	displayName = "Group Multi-stage Access Review"
-	descriptionForAdmins = "New scheduled access review"
-	descriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
-	scope = @{
+	DisplayName = "Group Multi-stage Access Review"
+	DescriptionForAdmins = "New scheduled access review"
+	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
+	Scope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-		query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-		queryType = "MicrosoftGraph"
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+		QueryType = "MicrosoftGraph"
 	}
-	stageSettings = @(
+	StageSettings = @(
 		@{
-			stageId = "1"
-			durationInDays = 2
-			recommendationsEnabled = $false
-			decisionsThatWillMoveToNextStage = @(
+			StageId = "1"
+			DurationInDays = 2
+			RecommendationsEnabled = $false
+			DecisionsThatWillMoveToNextStage = @(
 				"NotReviewed"
 				"Approve"
 			)
-			reviewers = @(
+			Reviewers = @(
 				@{
-					query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
-					queryType = "MicrosoftGraph"
+					Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+					QueryType = "MicrosoftGraph"
 				}
 			)
 		}
 		@{
-			stageId = "2"
-			dependsOn = @(
+			StageId = "2"
+			DependsOn = @(
 				"1"
 			)
-			durationInDays = 2
-			recommendationsEnabled = $true
-			reviewers = @(
+			DurationInDays = 2
+			RecommendationsEnabled = $true
+			Reviewers = @(
 				@{
-					query = "./manager"
-					queryType = "MicrosoftGraph"
-					queryRoot = "decisions"
+					Query = "./manager"
+					QueryType = "MicrosoftGraph"
+					QueryRoot = "decisions"
 				}
 			)
-			fallbackReviewers = @(
+			FallbackReviewers = @(
 				@{
-					query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
-					queryType = "MicrosoftGraph"
+					Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+					QueryType = "MicrosoftGraph"
 				}
 			)
 		}
 	)
-	settings = @{
-		instanceDurationInDays = 4
-		recurrence = @{
-			pattern = @{
-				type = "weekly"
-				interval = 1
+	Settings = @{
+		InstanceDurationInDays = 4
+		Recurrence = @{
+			Pattern = @{
+				Type = "weekly"
+				Interval = 1
 			}
-			range = @{
-				type = "noEnd"
-				startDate = "2020-09-08T12:02:30.667Z"
+			Range = @{
+				Type = "noEnd"
+				StartDate = "2020-09-08T12:02:30.667Z"
 			}
 		}
-		decisionHistoriesForReviewersEnabled = $true
+		DecisionHistoriesForReviewersEnabled = $true
 	}
 }
 

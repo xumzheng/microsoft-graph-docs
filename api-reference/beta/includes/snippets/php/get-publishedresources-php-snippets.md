@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PublishedResourcesRequestBuilderGetRequestConfiguration();
-$queryParameters = PublishedResourcesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new PublishedResourcesRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["agentGroups"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->publishedResources()->get($requestConfiguration);
+$requestResult = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->publishedResources()->get($requestConfiguration);
 
 
 ```

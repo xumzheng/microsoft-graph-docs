@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	signInPageText = "Default"
-	usernameHintText = "DefaultHint"
+	SignInPageText = "Default"
+	UsernameHintText = "DefaultHint"
 }
 
 Update-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params

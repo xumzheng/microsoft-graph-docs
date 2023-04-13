@@ -7,63 +7,63 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	messageType = "message"
-	deletedDateTime = $null
-	subject = $null
-	summary = $null
-	importance = "normal"
-	locale = "en-us"
-	from = @{
-		application = $null
-		device = $null
-		conversation = $null
-		user = @{
-			id = "6b3f3c54-d09c-4fdd-b146-9b514a8a4f40"
-			displayName = "Lam Cong"
-			userIdentityType = "aadUser"
+	MessageType = "message"
+	DeletedDateTime = $null
+	Subject = $null
+	Summary = $null
+	Importance = "normal"
+	Locale = "en-us"
+	From = @{
+		Application = $null
+		Device = $null
+		Conversation = $null
+		User = @{
+			Id = "6b3f3c54-d09c-4fdd-b146-9b514a8a4f40"
+			DisplayName = "Lam Cong"
+			UserIdentityType = "aadUser"
 		}
 	}
-	body = @{
-		contentType = "html"
-		content = "<div><div>
+	Body = @{
+		ContentType = "html"
+		Content = "<div><div>
 <div>
 <div>
 <div>
 <div><at id="0">Raghav</at><at id="1">TestGlobalBot</at> YEAH"
 	}
-	attachments = @(
+	Attachments = @(
 	)
-	mentions = @(
+	Mentions = @(
 		@{
-			id = 0
-			mentionText = "Raghav"
-			mentioned = @{
-				application = $null
-				device = $null
-				conversation = $null
-				user = @{
-					id = "f1b66449-b46d-49b0-9c3c-53c10234c818e"
-					displayName = "Lam Cong"
-					userIdentityType = "aadUser"
+			Id = 0
+			MentionText = "Raghav"
+			Mentioned = @{
+				Application = $null
+				Device = $null
+				Conversation = $null
+				User = @{
+					Id = "f1b66449-b46d-49b0-9c3c-53c10234c818e"
+					DisplayName = "Lam Cong"
+					UserIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			id = 1
-			mentionText = "TestGlobalBot"
-			mentioned = @{
-				application = @{
-					id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
-					displayName = "TestGlobalBot"
-					applicationIdentityType = "bot"
+			Id = 1
+			MentionText = "TestGlobalBot"
+			Mentioned = @{
+				Application = @{
+					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					DisplayName = "TestGlobalBot"
+					ApplicationIdentityType = "bot"
 				}
-				device = $null
-				conversation = $null
-				user = $null
+				Device = $null
+				Conversation = $null
+				User = $null
 			}
 		}
 	)
-	reactions = @(
+	Reactions = @(
 	)
 }
 

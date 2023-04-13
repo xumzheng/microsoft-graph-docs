@@ -24,7 +24,7 @@ $requestBody->setLoginWebUrl('https://www.linkedin.com/learning-login/teams');
 
 
 
-$result = $graphServiceClient->employeeExperience()->learningProvidersById('learningProvider-id')->patch($requestBody);
+$requestResult = $graphServiceClient->employeeExperience()->learningProvidersById('learningProvider-id')->patch($requestBody);
 
 
 ```

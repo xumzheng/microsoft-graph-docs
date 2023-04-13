@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
+
 $headers = [
-		'Prefer' => 'odata.maxpagesize=2',
-	];
+	'Prefer' => 'odata.maxpagesize=2',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->me()->contactFolders()->delta()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->contactFolders()->delta()->get($requestConfiguration);
 
 
 ```

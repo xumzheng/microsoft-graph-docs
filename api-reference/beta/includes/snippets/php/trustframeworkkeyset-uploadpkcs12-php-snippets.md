@@ -16,7 +16,7 @@ $requestBody->setPassword('password-value');
 
 
 
-$result = $graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->uploadPkcs12()->post($requestBody);
+$requestResult = $graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->uploadPkcs12()->post($requestBody);
 
 
 ```

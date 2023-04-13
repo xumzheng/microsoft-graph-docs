@@ -14,7 +14,7 @@ $requestBody->setRole(new CalendarRoleType('write'));
 
 
 
-$result = $graphServiceClient->usersById('user-id')->calendar()->calendarPermissionsById('calendarPermission-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->calendar()->calendarPermissionsById('calendarPermission-id')->patch($requestBody);
 
 
 ```

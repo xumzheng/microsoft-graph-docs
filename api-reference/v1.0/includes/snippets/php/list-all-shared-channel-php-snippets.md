@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AllChannelsRequestBuilderGetRequestConfiguration();
-$queryParameters = AllChannelsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new AllChannelsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "membershipType eq 'shared'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->allChannels()->get($requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->allChannels()->get($requestConfiguration);
 
 
 ```

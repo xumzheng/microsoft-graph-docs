@@ -22,7 +22,7 @@ $requestBody->setClientSecret('000000000000');
 
 
 
-$result = $graphServiceClient->identityProviders()->post($requestBody);
+$requestResult = $graphServiceClient->identityProviders()->post($requestBody);
 
 
 ```

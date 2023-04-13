@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	group = @{
-		mail = "SecretGroup@contoso.com"
+	Group = @{
+		Mail = "SecretGroup@contoso.com"
 	}
-	includedSources = "mailbox, site"
+	IncludedSources = "mailbox, site"
 }
 
 New-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params

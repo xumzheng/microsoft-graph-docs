@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(i:i eq 'admin
 [!INCLUDE [sample-code](../includes/snippets/php/filter-query-parameter-string-collection-example-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/filter-query-parameter-string-collection-example-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 The **assignedLicenses** property of the `user` resource contains a collection of **assignedLicense** objects, a complex type with two properties, **skuId** and **disabledPlans**. The following query retrieves only users with an assigned license identified by the **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
@@ -131,6 +135,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuI
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/filter-query-parameter-complex-collection-example-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/filter-query-parameter-complex-collection-example-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -171,6 +179,10 @@ ConsistencyLevel: eventual
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/filter-query-parameter-complex-collection-advancedquery-example-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/filter-query-parameter-complex-collection-advancedquery-example-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

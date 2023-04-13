@@ -10,14 +10,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
-$queryParameters = GroupsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new GroupsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "mailEnabled eq false and securityEnabled eq true and NOT) and membershipRuleProcessingState eq 'On'";
 $queryParameters->count = true;
 $queryParameters->select = ["id","membershipRule","membershipRuleProcessingState"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groups()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groups()->get($requestConfiguration);
 
 
 ```

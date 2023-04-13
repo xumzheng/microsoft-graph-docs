@@ -17,9 +17,11 @@ $criteria->setResetScope(new SynchronizationJobRestartScope('watermark, escrows,
 $requestBody->setCriteria($criteria);
 
 $requestConfiguration = new RestartRequestBuilderPostRequestConfiguration();
+
 $headers = [
-		'Authorization' => 'Bearer <token>',
-	];
+	'Authorization' => 'Bearer <token>',
+];
+
 $requestConfiguration->headers = $headers;
 
 

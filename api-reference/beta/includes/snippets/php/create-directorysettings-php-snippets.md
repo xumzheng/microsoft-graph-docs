@@ -45,7 +45,7 @@ $requestBody->setValues($valuesArray);
 
 
 
-$result = $graphServiceClient->settings()->post($requestBody);
+$requestResult = $graphServiceClient->settings()->post($requestBody);
 
 
 ```

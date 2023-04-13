@@ -19,15 +19,15 @@ $requestBody->setContentType('contentType-value');
 $requestBody->setIsInline(false);
 
 $additionalData = [
-		'contentLocation' => 'contentLocation-value', 
-		'contentBytes' => 'base64-contentBytes-value', 
+'contentLocation' => 'contentLocation-value', 
+'contentBytes' => 'base64-contentBytes-value', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->attachments()->post($requestBody);
+$requestResult = $graphServiceClient->me()->messagesById('message-id')->attachments()->post($requestBody);
 
 
 ```

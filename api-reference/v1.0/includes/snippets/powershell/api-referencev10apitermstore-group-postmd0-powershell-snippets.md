@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	displayName = "myGroup"
+	DisplayName = "myGroup"
 }
 
 New-MgSiteTermStoreGroup -SiteId $siteId -BodyParameter $params

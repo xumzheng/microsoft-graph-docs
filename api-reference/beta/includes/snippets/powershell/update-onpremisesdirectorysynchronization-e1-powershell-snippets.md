@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	configuration = @{
-		accidentalDeletionPrevention = @{
-			synchronizationPreventionType = "enabledForCount"
-			alertThreshold = 500
+	Configuration = @{
+		AccidentalDeletionPrevention = @{
+			SynchronizationPreventionType = "enabledForCount"
+			AlertThreshold = 500
 		}
-		synchronizationInterval = "PT30M"
-		customerRequestedSynchronizationInterval = "PT1H"
+		SynchronizationInterval = "PT30M"
+		CustomerRequestedSynchronizationInterval = "PT1H"
 	}
-	features = @{
-		groupWriteBackEnabled = $true
+	Features = @{
+		GroupWriteBackEnabled = $true
 	}
 }
 

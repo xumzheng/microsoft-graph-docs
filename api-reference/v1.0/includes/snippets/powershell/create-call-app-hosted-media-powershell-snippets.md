@@ -8,39 +8,39 @@ Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	callbackUri = "https://bot.contoso.com/callback"
-	source = @{
+	CallbackUri = "https://bot.contoso.com/callback"
+	Source = @{
 		"@odata.type" = "#microsoft.graph.participantInfo"
-		identity = @{
+		Identity = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			application = @{
+			Application = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				displayName = "Calling Bot"
-				id = "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+				DisplayName = "Calling Bot"
+				Id = "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
 			}
 		}
-		region = $null
-		languageId = $null
+		Region = $null
+		LanguageId = $null
 	}
-	targets = @(
+	Targets = @(
 		@{
 			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			identity = @{
+			Identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
-				user = @{
+				User = @{
 					"@odata.type" = "#microsoft.graph.identity"
-					displayName = "John"
-					id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+					DisplayName = "John"
+					Id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
 				}
 			}
 		}
 	)
-	requestedModalities = @(
+	RequestedModalities = @(
 		"audio"
 	)
-	mediaConfig = @{
+	MediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		Blob = "<Media Session Configuration>"
 	}
 }
 

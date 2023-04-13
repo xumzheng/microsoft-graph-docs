@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	distributeForStudentWork = $false
-	resource = @{
-		displayName = "article.pdf"
+	DistributeForStudentWork = $false
+	Resource = @{
+		DisplayName = "article.pdf"
 		"@odata.type" = "#microsoft.graph.educationFileResource"
 	}
 }

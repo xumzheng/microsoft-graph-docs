@@ -22,7 +22,7 @@ $requestBody->setWebUrl('https://patents.gov/3954432633');
 
 
 
-$result = $graphServiceClient->me()->profile()->patents()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->patents()->post($requestBody);
 
 
 ```

@@ -42,7 +42,7 @@ $requestBody->setTlpLevel(new TlpLevel('green'));
 
 
 
-$result = $graphServiceClient->security()->tiIndicators()->post($requestBody);
+$requestResult = $graphServiceClient->security()->tiIndicators()->post($requestBody);
 
 
 ```

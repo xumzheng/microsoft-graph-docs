@@ -16,7 +16,7 @@ $requestBody->setRoleId('roleId-value');
 
 
 
-$result = $graphServiceClient->privilegedRoleAssignments()->post($requestBody);
+$requestResult = $graphServiceClient->privilegedRoleAssignments()->post($requestBody);
 
 
 ```

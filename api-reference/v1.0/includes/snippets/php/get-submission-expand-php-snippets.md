@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new EducationSubmissionRequestBuilderGetRequestConfiguration();
-$queryParameters = EducationSubmissionRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new EducationSubmissionRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["*"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->get($requestConfiguration);
 
 
 ```

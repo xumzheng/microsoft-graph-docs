@@ -77,13 +77,15 @@ $requestBody->setMinimumAttendeePercentage('100');
 
 
 $requestConfiguration = new FindMeetingTimesRequestBuilderPostRequestConfiguration();
+
 $headers = [
 'Prefer' => 'outlook.timezone="Pacific Standard Time"',
 ];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->me()->findMeetingTimes()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->me()->findMeetingTimes()->post($requestBody, $requestConfiguration);
 
 
 ```

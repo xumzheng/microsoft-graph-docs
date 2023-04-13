@@ -15,14 +15,14 @@ $requestBody->set@odatatype('#microsoft.graph.fido2AuthenticationMethodConfigura
 $requestBody->setState(new AuthenticationMethodState('enabled'));
 
 $additionalData = [
-		'isAttestationEnforced' => 'true', 
+'isAttestationEnforced' => 'true', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

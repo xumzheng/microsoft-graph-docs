@@ -10,18 +10,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ContactsRequestBuilderGetRequestConfiguration();
-$headers = [
-		'ConsistencyLevel' => 'eventual',
-	];
-$requestConfiguration->headers = $headers;
 
-$queryParameters = ContactsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = new ContactsRequestBuilderGetQueryParameters();
 $queryParameters->search = "\"displayName:wa\"";
 $queryParameters->count = true;
+
+$headers = [
+'ConsistencyLevel' => 'eventual',
+];
+
 $requestConfiguration->queryParameters = $queryParameters;
+$requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->contacts()->get($requestConfiguration);
+$requestResult = $graphServiceClient->contacts()->get($requestConfiguration);
 
 
 ```

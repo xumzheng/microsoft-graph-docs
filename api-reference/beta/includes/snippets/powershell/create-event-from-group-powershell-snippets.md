@@ -7,29 +7,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
-	subject = "Let's go for lunch"
-	body = @{
-		contentType = "HTML"
-		content = "Does late morning work for you?"
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does late morning work for you?"
 	}
-	start = @{
-		dateTime = "2019-06-15T12:00:00"
-		timeZone = "Pacific Standard Time"
+	Start = @{
+		DateTime = "2019-06-15T12:00:00"
+		TimeZone = "Pacific Standard Time"
 	}
-	end = @{
-		dateTime = "2019-06-15T14:00:00"
-		timeZone = "Pacific Standard Time"
+	End = @{
+		DateTime = "2019-06-15T14:00:00"
+		TimeZone = "Pacific Standard Time"
 	}
-	location = @{
-		displayName = "Harry's Bar"
+	Location = @{
+		DisplayName = "Harry's Bar"
 	}
-	attendees = @(
+	Attendees = @(
 		@{
-			emailAddress = @{
-				address = "adelev@contoso.onmicrosoft.com"
-				name = "Adele Vance"
+			EmailAddress = @{
+				Address = "adelev@contoso.onmicrosoft.com"
+				Name = "Adele Vance"
 			}
-			type = "required"
+			Type = "required"
 		}
 	)
 }

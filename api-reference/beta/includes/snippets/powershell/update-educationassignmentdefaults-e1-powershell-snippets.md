@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	addedStudentAction = "assignIfOpen"
-	addToCalendarAction = "studentsAndTeamOwners"
-	notificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+	AddedStudentAction = "assignIfOpen"
+	AddToCalendarAction = "studentsAndTeamOwners"
+	NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 
 Update-MgEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params

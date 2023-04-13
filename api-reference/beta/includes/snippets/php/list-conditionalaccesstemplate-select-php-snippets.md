@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TemplatesRequestBuilderGetRequestConfiguration();
-$queryParameters = TemplatesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TemplatesRequestBuilderGetQueryParameters();
 $queryParameters->select = ["name","description","id","scenarios"];
 $queryParameters->filter = "scenarios has 'secureFoundation'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->templates()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identity()->conditionalAccess()->templates()->get($requestConfiguration);
 
 
 ```

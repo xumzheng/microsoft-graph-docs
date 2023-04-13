@@ -14,7 +14,7 @@ $requestBody->setName('Social events');
 
 
 
-$result = $graphServiceClient->me()->calendar()->patch($requestBody);
+$requestResult = $graphServiceClient->me()->calendar()->patch($requestBody);
 
 
 ```

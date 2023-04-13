@@ -14,7 +14,7 @@ $requestBody->setNewPassword('Cuyo5459');
 
 
 
-$result = $graphServiceClient->usersById('user-id')->authentication()->methodsById('authenticationMethod-id')->resetPassword()->post($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->authentication()->methodsById('authenticationMethod-id')->resetPassword()->post($requestBody);
 
 
 ```

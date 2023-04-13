@@ -10,8 +10,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TagRequestBuilderDeleteRequestConfiguration();
-$queryParameters = TagRequestBuilderDeleteRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TagRequestBuilderDeleteQueryParameters();
 $queryParameters->forcedelete = true;
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 

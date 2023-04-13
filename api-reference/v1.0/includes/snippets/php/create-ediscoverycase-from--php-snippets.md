@@ -18,7 +18,7 @@ $requestBody->setExternalId('324516');
 
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCases()->post($requestBody);
+$requestResult = $graphServiceClient->security()->cases()->ediscoveryCases()->post($requestBody);
 
 
 ```

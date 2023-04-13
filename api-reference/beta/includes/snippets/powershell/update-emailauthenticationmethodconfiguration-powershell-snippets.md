@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.emailAuthenticationMethodConfiguration"
-	allowExternalIdToUseEmailOtp = "disabled"
+	AllowExternalIdToUseEmailOtp = "disabled"
 }
 
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params

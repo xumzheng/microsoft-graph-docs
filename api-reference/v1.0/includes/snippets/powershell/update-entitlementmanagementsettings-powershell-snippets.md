@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	externalUserLifecycleAction = "None"
+	ExternalUserLifecycleAction = "None"
 }
 
 Update-MgEntitlementManagementSetting -BodyParameter $params

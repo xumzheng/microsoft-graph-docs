@@ -7,21 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
-	displayName = "Reading test 09.14 Beta"
-	instructions = @{
-		contentType = "text"
-		content = "Read chapter 4"
+	DueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
+	DisplayName = "Reading test 09.14 Beta"
+	Instructions = @{
+		ContentType = "text"
+		Content = "Read chapter 4"
 	}
-	grading = @{
+	Grading = @{
 		"@odata.type" = "#microsoft.graph.educationAssignmentPointsGradeType"
-		maxPoints = 
+		MaxPoints = 
 	}
-	assignTo = @{
+	AssignTo = @{
 		"@odata.type" = "#microsoft.graph.educationAssignmentClassRecipient"
 	}
-	status = "draft"
-	allowStudentsToAddResourcesToSubmission = $true
+	Status = "draft"
+	AllowStudentsToAddResourcesToSubmission = $true
 }
 
 New-MgEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params

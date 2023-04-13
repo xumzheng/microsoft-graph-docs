@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	displayName = "Connected organization name"
-	description = "Connected organization description"
-	identitySources = @(
+	DisplayName = "Connected organization name"
+	Description = "Connected organization description"
+	IdentitySources = @(
 		@{
 			"@odata.type" = "#microsoft.graph.domainIdentitySource"
-			domainName = "example.com"
-			displayName = "example.com"
+			DomainName = "example.com"
+			DisplayName = "example.com"
 		}
 	)
-	state = "proposed"
+	State = "proposed"
 }
 
 New-MgEntitlementManagementConnectedOrganization -BodyParameter $params

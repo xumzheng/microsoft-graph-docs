@@ -10,18 +10,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration();
-$headers = [
-		'ConsistencyLevel' => 'eventual',
-	];
-$requestConfiguration->headers = $headers;
 
-$queryParameters = TransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = new TransitiveRoleAssignmentsRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
 $queryParameters->filter = "principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516'";
+
+$headers = [
+'ConsistencyLevel' => 'eventual',
+];
+
 $requestConfiguration->queryParameters = $queryParameters;
+$requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->roleManagement()->directory()->transitiveRoleAssignments()->get($requestConfiguration);
+$requestResult = $graphServiceClient->roleManagement()->directory()->transitiveRoleAssignments()->get($requestConfiguration);
 
 
 ```

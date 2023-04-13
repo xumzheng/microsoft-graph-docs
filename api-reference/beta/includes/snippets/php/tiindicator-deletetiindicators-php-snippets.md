@@ -14,7 +14,7 @@ $requestBody->setValue(['id-value1', 'id-value2', ]);
 
 
 
-$result = $graphServiceClient->security()->tiIndicators()->deleteTiIndicators()->post($requestBody);
+$requestResult = $graphServiceClient->security()->tiIndicators()->deleteTiIndicators()->post($requestBody);
 
 
 ```

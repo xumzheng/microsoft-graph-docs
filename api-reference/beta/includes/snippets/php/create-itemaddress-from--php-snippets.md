@@ -31,7 +31,7 @@ $detail->setPostalCode('E14 3TD');
 $requestBody->setDetail($detail);
 
 
-$result = $graphServiceClient->me()->profile()->addresses()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->addresses()->post($requestBody);
 
 
 ```

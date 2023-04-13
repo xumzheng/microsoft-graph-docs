@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new CloudPcUserSettingRequestBuilderGetRequestConfiguration();
-$queryParameters = CloudPcUserSettingRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new CloudPcUserSettingRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["assignments"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->get($requestConfiguration);
 
 
 ```

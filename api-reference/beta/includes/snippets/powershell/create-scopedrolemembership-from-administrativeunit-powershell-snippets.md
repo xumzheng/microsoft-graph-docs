@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	roleId = "roleId-value"
-	roleMemberInfo = @{
-		id = "id-value"
+	RoleId = "roleId-value"
+	RoleMemberInfo = @{
+		Id = "id-value"
 	}
 }
 

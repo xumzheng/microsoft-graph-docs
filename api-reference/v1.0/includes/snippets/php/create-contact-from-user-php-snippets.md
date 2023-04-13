@@ -28,7 +28,7 @@ $requestBody->setBusinessPhones(['+1 732 555 0102', ]);
 
 
 
-$result = $graphServiceClient->me()->contacts()->post($requestBody);
+$requestResult = $graphServiceClient->me()->contacts()->post($requestBody);
 
 
 ```

@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
-$queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new MessagesRequestBuilderGetQueryParameters();
 $queryParameters->orderby = ["from/emailAddress/name desc","subject"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messages()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messages()->get($requestConfiguration);
 
 
 ```

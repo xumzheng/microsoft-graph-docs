@@ -18,7 +18,7 @@ $requestBody->setTargetIdType(new ExchangeIdFormat('restimmutableentryid'));
 
 
 
-$result = $graphServiceClient->me()->translateExchangeIds()->post($requestBody);
+$requestResult = $graphServiceClient->me()->translateExchangeIds()->post($requestBody);
 
 
 ```

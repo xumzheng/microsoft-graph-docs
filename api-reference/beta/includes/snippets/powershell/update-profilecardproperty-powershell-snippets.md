@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	annotations = @(
+	Annotations = @(
 		@{
-			localizations = @(
+			Localizations = @(
 				@{
-					languageTag = "no-NB"
-					displayName = "Kostnads Senter"
+					LanguageTag = "no-NB"
+					DisplayName = "Kostnads Senter"
 				}
 			)
 		}

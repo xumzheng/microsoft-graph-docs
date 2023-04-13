@@ -11,14 +11,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new IdentityProvider();
 $additionalData = [
-		'responseType' => 'id_token', 
+'responseType' => 'id_token', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$result = $graphServiceClient->identityProvidersById('identityProvider-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identityProvidersById('identityProvider-id')->patch($requestBody);
 
 
 ```

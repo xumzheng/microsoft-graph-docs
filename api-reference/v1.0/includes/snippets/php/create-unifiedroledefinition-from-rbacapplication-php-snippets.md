@@ -26,7 +26,7 @@ $requestBody->setIsEnabled(true);
 
 
 
-$result = $graphServiceClient->roleManagement()->directory()->roleDefinitions()->post($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->directory()->roleDefinitions()->post($requestBody);
 
 
 ```

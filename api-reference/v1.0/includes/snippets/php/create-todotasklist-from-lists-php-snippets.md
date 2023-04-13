@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Travel items');
 
 
 
-$result = $graphServiceClient->me()->todo()->lists()->post($requestBody);
+$requestResult = $graphServiceClient->me()->todo()->lists()->post($requestBody);
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	description = "mySet"
+	Description = "mySet"
 }
 
 Update-MgSiteTermStoreSet -SiteId $siteId -SetId $setId -BodyParameter $params

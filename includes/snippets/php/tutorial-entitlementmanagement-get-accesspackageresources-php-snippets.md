@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AccessPackageResourcesRequestBuilderGetRequestConfiguration();
-$queryParameters = AccessPackageResourcesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new AccessPackageResourcesRequestBuilderGetQueryParameters();
 $queryParameters->filter = "(displayName eq 'Marketing resources')";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->accessPackageResources()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->accessPackageResources()->get($requestConfiguration);
 
 
 ```

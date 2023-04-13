@@ -21,7 +21,7 @@ $requestBody->setDisplayName('About Me');
 
 
 
-$result = $graphServiceClient->me()->profile()->notes()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->notes()->post($requestBody);
 
 
 ```

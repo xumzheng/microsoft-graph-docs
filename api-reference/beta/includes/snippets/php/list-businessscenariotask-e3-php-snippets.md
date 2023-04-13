@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TasksRequestBuilderGetRequestConfiguration();
-$queryParameters = TasksRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TasksRequestBuilderGetQueryParameters();
 $queryParameters->filter = "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasks()->get($requestConfiguration);
+$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasks()->get($requestConfiguration);
 
 
 ```

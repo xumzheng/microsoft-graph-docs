@@ -7,37 +7,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	displayName = "Onboard pre-hire employee"
-	description = "Configure pre-hire tasks for onboarding employees before their first day"
-	isEnabled = $true
-	isSchedulingEnabled = $false
-	executionConditions = @{
+	DisplayName = "Onboard pre-hire employee"
+	Description = "Configure pre-hire tasks for onboarding employees before their first day"
+	IsEnabled = $true
+	IsSchedulingEnabled = $false
+	ExecutionConditions = @{
 		"@odata.type" = "microsoft.graph.identityGovernance.triggerAndScopeBasedConditions"
-		scope = @{
+		Scope = @{
 			"@odata.type" = "microsoft.graph.identityGovernance.ruleBasedSubjectSet"
-			rule = "(department eq 'Sales')"
+			Rule = "(department eq 'Sales')"
 		}
-		trigger = @{
+		Trigger = @{
 			"@odata.type" = "microsoft.graph.identityGovernance.timeBasedAttributeTrigger"
-			timeBasedAttribute = "employeeHireDate"
-			offsetInDays = 
+			TimeBasedAttribute = "employeeHireDate"
+			OffsetInDays = 
 		}
 	}
-	tasks = @(
+	Tasks = @(
 		@{
-			isEnabled = $true
-			category = "Joiner"
-			taskDefinitionId = "1b555e50-7f65-41d5-b514-5894a026d10d"
-			displayName = "Generate TAP And Send Email"
-			description = "Generate Temporary Access Pass and send via email to user's manager"
-			arguments = @(
+			IsEnabled = $true
+			Category = "Joiner"
+			TaskDefinitionId = "1b555e50-7f65-41d5-b514-5894a026d10d"
+			DisplayName = "Generate TAP And Send Email"
+			Description = "Generate Temporary Access Pass and send via email to user's manager"
+			Arguments = @(
 				@{
-					name = "tapLifetimeMinutes"
-					value = "480"
+					Name = "tapLifetimeMinutes"
+					Value = "480"
 				}
 				@{
-					name = "tapIsUsableOnce"
-					value = "true"
+					Name = "tapIsUsableOnce"
+					Value = "true"
 				}
 			)
 		}

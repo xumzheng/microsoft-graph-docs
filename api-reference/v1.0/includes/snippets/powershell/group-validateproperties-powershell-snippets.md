@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	displayName = "Myprefix_test_mysuffix"
-	mailNickname = "Myprefix_test_mysuffix"
-	onBehalfOfUserId = "onBehalfOfUserId-value"
+	DisplayName = "Myprefix_test_mysuffix"
+	MailNickname = "Myprefix_test_mysuffix"
+	OnBehalfOfUserId = "onBehalfOfUserId-value"
 }
 
 Test-MgGroupProperty -GroupId $groupId -BodyParameter $params

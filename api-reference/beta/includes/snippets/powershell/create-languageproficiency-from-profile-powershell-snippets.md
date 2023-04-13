@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	displayName = "Norwegian Bokmål"
-	tag = "nb-NO"
-	spoken = "nativeOrBilingual"
-	written = "nativeOrBilingual"
-	reading = "nativeOrBilingual"
+	DisplayName = "Norwegian Bokmål"
+	Tag = "nb-NO"
+	Spoken = "nativeOrBilingual"
+	Written = "nativeOrBilingual"
+	Reading = "nativeOrBilingual"
 }
 
 # A UPN can also be used as -UserId.

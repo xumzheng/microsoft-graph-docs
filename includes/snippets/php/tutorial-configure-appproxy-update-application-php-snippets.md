@@ -21,7 +21,7 @@ $web->setHomePageUrl('https://contosoiwaapp-contoso.msappproxy.net');
 $requestBody->setWeb($web);
 
 
-$result = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$requestResult = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
 
 
 ```

@@ -30,7 +30,7 @@ $requestBody->setKeyCredentials($keyCredentialsArray);
 
 
 
-$result = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$requestResult = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
 
 
 ```

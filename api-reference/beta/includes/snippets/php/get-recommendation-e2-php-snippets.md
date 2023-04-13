@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RecommendationsRequestBuilderGetRequestConfiguration();
-$queryParameters = RecommendationsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new RecommendationsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "recommendationType eq 'turnOffPerUserMFA'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->directory()->recommendations()->get($requestConfiguration);
+$requestResult = $graphServiceClient->directory()->recommendations()->get($requestConfiguration);
 
 
 ```

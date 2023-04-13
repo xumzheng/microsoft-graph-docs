@@ -14,7 +14,7 @@ $requestBody->setDisplayName('UpdateClaimsPolicy');
 
 
 
-$result = $graphServiceClient->policies()->claimsMappingPoliciesById('claimsMappingPolicy-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->claimsMappingPoliciesById('claimsMappingPolicy-id')->patch($requestBody);
 
 
 ```

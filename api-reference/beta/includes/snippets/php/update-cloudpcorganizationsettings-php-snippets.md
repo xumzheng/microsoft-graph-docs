@@ -25,7 +25,7 @@ $windowsSettings->setLanguage('en-US');
 $requestBody->setWindowsSettings($windowsSettings);
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->organizationSettings()->patch($requestBody);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->organizationSettings()->patch($requestBody);
 
 
 ```

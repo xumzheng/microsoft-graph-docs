@@ -42,7 +42,7 @@ $term->set@odatatype('microsoft.graph.educationTerm');
 $requestBody->setTerm($term);
 
 
-$result = $graphServiceClient->education()->classes()->post($requestBody);
+$requestResult = $graphServiceClient->education()->classes()->post($requestBody);
 
 
 ```

@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.continuousAccessEvaluationPolicy"
-	migrate = $true
+	Migrate = $true
 }
 
 Update-MgIdentityContinuouAccessEvaluationPolicy -BodyParameter $params

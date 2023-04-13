@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
-	emailAddresses = @(
+	EmailAddresses = @(
 		@{
-			type = "personal"
-			name = "Pavel Bansky"
-			address = "pavelb@adatum.onmicrosoft.com"
+			Type = "personal"
+			Name = "Pavel Bansky"
+			Address = "pavelb@adatum.onmicrosoft.com"
 		}
 		@{
-			address = "pavelb@fabrikam.onmicrosoft.com"
-			name = "Pavel Bansky"
-			type = "other"
-			otherLabel = "Volunteer work"
+			Address = "pavelb@fabrikam.onmicrosoft.com"
+			Name = "Pavel Bansky"
+			Type = "other"
+			OtherLabel = "Volunteer work"
 		}
 	)
 }

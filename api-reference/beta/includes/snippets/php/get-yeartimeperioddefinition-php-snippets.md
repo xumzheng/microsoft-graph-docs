@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->external()->industryData()->yearsById('yearTimePeriodDefinition-id')->get();
+$requestResult = $graphServiceClient->external()->industryData()->yearsById('yearTimePeriodDefinition-id')->get();
 
 
 ```

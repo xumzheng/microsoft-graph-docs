@@ -46,7 +46,7 @@ $requestBody->setThreads($threadsArray);
 
 
 
-$result = $graphServiceClient->groupsById('group-id')->conversations()->post($requestBody);
+$requestResult = $graphServiceClient->groupsById('group-id')->conversations()->post($requestBody);
 
 
 ```

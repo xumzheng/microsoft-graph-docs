@@ -10,20 +10,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ApplicationsRequestBuilderGetRequestConfiguration();
-$headers = [
-		'ConsistencyLevel' => 'eventual',
-	];
-$requestConfiguration->headers = $headers;
 
-$queryParameters = ApplicationsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = new ApplicationsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "startswith(displayName,%20'a')";
 $queryParameters->count = true;
 $queryParameters->top = 1;
 $queryParameters->orderby = ["displayName"];
+
+$headers = [
+'ConsistencyLevel' => 'eventual',
+];
+
 $requestConfiguration->queryParameters = $queryParameters;
+$requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->applications()->get($requestConfiguration);
+$requestResult = $graphServiceClient->applications()->get($requestConfiguration);
 
 
 ```

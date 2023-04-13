@@ -7,20 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	marketingNotificationEmails = @(
+	MarketingNotificationEmails = @(
 		"marketing@contoso.com"
 	)
-	privacyProfile = @{
-		contactEmail = "alice@contoso.com"
-		statementUrl = "https://contoso.com/privacyStatement"
+	PrivacyProfile = @{
+		ContactEmail = "alice@contoso.com"
+		StatementUrl = "https://contoso.com/privacyStatement"
 	}
-	securityComplianceNotificationMails = @(
+	SecurityComplianceNotificationMails = @(
 		"security@contoso.com"
 	)
-	securityComplianceNotificationPhones = @(
+	SecurityComplianceNotificationPhones = @(
 		"(123) 456-7890"
 	)
-	technicalNotificationMails = @(
+	TechnicalNotificationMails = @(
 		"tech@contoso.com"
 	)
 }

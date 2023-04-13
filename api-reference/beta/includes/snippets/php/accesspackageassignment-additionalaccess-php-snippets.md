@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AccessPackageAssignmentRequestBuilderGetRequestConfiguration();
-$queryParameters = AccessPackageAssignmentRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new AccessPackageAssignmentRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["target"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentsById('accessPackageAssignment-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentsById('accessPackageAssignment-id')->get($requestConfiguration);
 
 
 ```

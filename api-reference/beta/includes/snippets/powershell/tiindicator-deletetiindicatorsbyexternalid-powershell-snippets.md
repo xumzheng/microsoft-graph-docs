@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	value = @(
+	Value = @(
 		"externalId-value1"
 		"externalId-value2"
 	)

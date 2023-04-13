@@ -10,17 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new EventRequestBuilderGetRequestConfiguration();
+
+$queryParameters = new EventRequestBuilderGetQueryParameters();
+$queryParameters->select = ["subject","body","bodyPreview"];
+
 $headers = [
-		'Prefer' => 'outlook.body-content-type="text"',
-	];
+'Prefer' => 'outlook.body-content-type="text"',
+];
+
+$requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
-$queryParameters = EventRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["subject","body","bodyPreview"];
-$requestConfiguration->queryParameters = $queryParameters;
 
-
-$result = $graphServiceClient->me()->eventsById('event-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->eventsById('event-id')->get($requestConfiguration);
 
 
 ```

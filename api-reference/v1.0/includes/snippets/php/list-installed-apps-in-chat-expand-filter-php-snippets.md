@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new InstalledAppsRequestBuilderGetRequestConfiguration();
-$queryParameters = InstalledAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new InstalledAppsRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["teamsApp","teamsAppDefinition"];
 $queryParameters->filter = "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->installedApps()->get($requestConfiguration);
+$requestResult = $graphServiceClient->chatsById('chat-id')->installedApps()->get($requestConfiguration);
 
 
 ```

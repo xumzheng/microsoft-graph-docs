@@ -27,7 +27,7 @@ $requestBody->setRoles(['read', ]);
 
 
 
-$result = $graphServiceClient->sharesById('sharedDriveItem-id')->permission()->grant()->post($requestBody);
+$requestResult = $graphServiceClient->sharesById('sharedDriveItem-id')->permission()->grant()->post($requestBody);
 
 
 ```

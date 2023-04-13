@@ -10,8 +10,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RefRequestBuilderDeleteRequestConfiguration();
-$queryParameters = RefRequestBuilderDeleteRequestConfiguration::createQueryParameters();
+
+$queryParameters = new RefRequestBuilderDeleteQueryParameters();
 $queryParameters->id = "https://graph.microsoft.com/v1.0/users/{user-id}";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 

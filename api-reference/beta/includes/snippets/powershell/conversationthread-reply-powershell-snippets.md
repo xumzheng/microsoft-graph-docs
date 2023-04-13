@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	post = @{
-		body = @{
-			contentType = ""
-			content = "content-value"
+	Post = @{
+		Body = @{
+			ContentType = ""
+			Content = "content-value"
 		}
 	}
 }

@@ -18,7 +18,7 @@ $requestBody->setVisibility('HiddenMembership');
 
 
 
-$result = $graphServiceClient->directory()->administrativeUnits()->post($requestBody);
+$requestResult = $graphServiceClient->directory()->administrativeUnits()->post($requestBody);
 
 
 ```

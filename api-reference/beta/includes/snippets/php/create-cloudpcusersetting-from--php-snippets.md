@@ -27,7 +27,7 @@ $restorePointSetting->setUserRestoreEnabled(true);
 $requestBody->setRestorePointSetting($restorePointSetting);
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettings()->post($requestBody);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettings()->post($requestBody);
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	displayName = "My Case 1"
+	DisplayName = "My Case 1"
 }
 
 New-MgComplianceEdiscoveryCase -BodyParameter $params

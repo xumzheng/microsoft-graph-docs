@@ -14,7 +14,7 @@ $requestBody->setDescription('Lyn Damer play in the Women\'s 1st Division (Topps
 
 
 
-$result = $graphServiceClient->me()->profile()->websitesById('personWebsite-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->websitesById('personWebsite-id')->patch($requestBody);
 
 
 ```

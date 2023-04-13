@@ -7,40 +7,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	category = "joiner"
-	description = "Configure new hire tasks for onboarding employees on their first day"
-	displayName = "Australia Onboard new hire employee"
-	isEnabled = $true
-	isSchedulingEnabled = $false
-	executionConditions = @{
+	Category = "joiner"
+	Description = "Configure new hire tasks for onboarding employees on their first day"
+	DisplayName = "Australia Onboard new hire employee"
+	IsEnabled = $true
+	IsSchedulingEnabled = $false
+	ExecutionConditions = @{
 		"@odata.type" = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions"
-		scope = @{
+		Scope = @{
 			"@odata.type" = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet"
-			rule = "(country eq 'Australia')"
+			Rule = "(country eq 'Australia')"
 		}
-		trigger = @{
+		Trigger = @{
 			"@odata.type" = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger"
-			timeBasedAttribute = "employeeHireDate"
-			offsetInDays = 
+			TimeBasedAttribute = "employeeHireDate"
+			OffsetInDays = 
 		}
 	}
-	tasks = @(
+	Tasks = @(
 		@{
-			continueOnError = $false
-			description = "Enable user account in the directory"
-			displayName = "Enable User Account"
-			isEnabled = $true
-			taskDefinitionId = "6fc52c9d-398b-4305-9763-15f42c1676fc"
-			arguments = @(
+			ContinueOnError = $false
+			Description = "Enable user account in the directory"
+			DisplayName = "Enable User Account"
+			IsEnabled = $true
+			TaskDefinitionId = "6fc52c9d-398b-4305-9763-15f42c1676fc"
+			Arguments = @(
 			)
 		}
 		@{
-			continueOnError = $false
-			description = "Send welcome email to new hire"
-			displayName = "Send Welcome Email"
-			isEnabled = $true
-			taskDefinitionId = "70b29d51-b59a-4773-9280-8841dfd3f2ea"
-			arguments = @(
+			ContinueOnError = $false
+			Description = "Send welcome email to new hire"
+			DisplayName = "Send Welcome Email"
+			IsEnabled = $true
+			TaskDefinitionId = "70b29d51-b59a-4773-9280-8841dfd3f2ea"
+			Arguments = @(
 			)
 		}
 	)

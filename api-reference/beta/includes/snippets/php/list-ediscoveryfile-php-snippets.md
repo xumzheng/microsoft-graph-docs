@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new FilesRequestBuilderGetRequestConfiguration();
-$queryParameters = FilesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new FilesRequestBuilderGetQueryParameters();
 $queryParameters->top = 5;
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->files()->get($requestConfiguration);
+$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->files()->get($requestConfiguration);
 
 
 ```

@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PayloadsRequestBuilderGetRequestConfiguration();
-$queryParameters = PayloadsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new PayloadsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "source eq 'Tenant'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->security()->attackSimulation()->payloads()->get($requestConfiguration);
+$requestResult = $graphServiceClient->security()->attackSimulation()->payloads()->get($requestConfiguration);
 
 
 ```

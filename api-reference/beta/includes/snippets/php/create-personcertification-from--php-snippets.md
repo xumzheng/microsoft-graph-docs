@@ -22,7 +22,7 @@ $requestBody->setWebUrl('https://www.iame.io/blackbelt');
 
 
 
-$result = $graphServiceClient->me()->profile()->certifications()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->certifications()->post($requestBody);
 
 
 ```

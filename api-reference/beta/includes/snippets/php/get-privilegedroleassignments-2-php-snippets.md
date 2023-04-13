@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PrivilegedRoleAssignmentsRequestBuilderGetRequestConfiguration();
-$queryParameters = PrivilegedRoleAssignmentsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new PrivilegedRoleAssignmentsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "isElevated eq true";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->privilegedRoleAssignments()->get($requestConfiguration);
+$requestResult = $graphServiceClient->privilegedRoleAssignments()->get($requestConfiguration);
 
 
 ```

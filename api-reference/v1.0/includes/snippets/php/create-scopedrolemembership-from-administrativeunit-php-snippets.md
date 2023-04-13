@@ -19,7 +19,7 @@ $roleMemberInfo->setId('id-value');
 $requestBody->setRoleMemberInfo($roleMemberInfo);
 
 
-$result = $graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->scopedRoleMembers()->post($requestBody);
+$requestResult = $graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->scopedRoleMembers()->post($requestBody);
 
 
 ```

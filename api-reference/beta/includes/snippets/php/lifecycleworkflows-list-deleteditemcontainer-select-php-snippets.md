@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new WorkflowsRequestBuilderGetRequestConfiguration();
-$queryParameters = WorkflowsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new WorkflowsRequestBuilderGetQueryParameters();
 $queryParameters->select = ["id","category","displayName","description","version"];
 $queryParameters->filter = "category eq 'leaver'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflows()->get($requestConfiguration);
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflows()->get($requestConfiguration);
 
 
 ```

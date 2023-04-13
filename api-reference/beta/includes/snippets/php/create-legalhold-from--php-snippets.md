@@ -31,7 +31,7 @@ $requestBody->setDisplayName('String');
 
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->legalHolds()->post($requestBody);
+$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->legalHolds()->post($requestBody);
 
 
 ```

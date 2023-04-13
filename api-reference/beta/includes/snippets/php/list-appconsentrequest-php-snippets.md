@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->get();
+$requestResult = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->get();
 
 
 ```

@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	contentInfo = @{
+	ContentInfo = @{
 		"@odata.type" = "#microsoft.graph.contentInfo"
-		"format@odata.type" = "#microsoft.graph.contentFormat"
-		format = "default"
-		identifier = $null
-		"state@odata.type" = "#microsoft.graph.contentState"
-		state = "rest"
+		"Format@odata.type" = "#microsoft.graph.contentFormat"
+		Format = "default"
+		Identifier = $null
+		"State@odata.type" = "#microsoft.graph.contentState"
+		State = "rest"
 	}
-	classificationResults = @(
+	ClassificationResults = @(
 		@{
-			sensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
-			count = 4
-			confidenceLevel = 75
+			SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
+			Count = 4
+			ConfidenceLevel = 75
 		}
 	)
 }

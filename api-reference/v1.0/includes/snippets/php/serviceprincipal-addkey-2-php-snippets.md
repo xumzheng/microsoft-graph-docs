@@ -28,7 +28,7 @@ $requestBody->setProof('eyJ0eXAiOiJ...');
 
 
 
-$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->addKey()->post($requestBody);
+$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->addKey()->post($requestBody);
 
 
 ```

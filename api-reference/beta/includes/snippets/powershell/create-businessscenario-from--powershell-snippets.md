@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.businessScenario"
-	displayName = "Contoso Order Tracking"
-	uniqueName = "com.contoso.apps.ordertracking"
+	DisplayName = "Contoso Order Tracking"
+	UniqueName = "com.contoso.apps.ordertracking"
 }
 
 New-MgBusinessScenario -BodyParameter $params

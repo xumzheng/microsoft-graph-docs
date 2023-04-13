@@ -7,28 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	message = @{
-		subject = "Meet for lunch?"
-		body = @{
-			contentType = "Text"
-			content = "The new cafeteria is open."
+	Message = @{
+		Subject = "Meet for lunch?"
+		Body = @{
+			ContentType = "Text"
+			Content = "The new cafeteria is open."
 		}
-		toRecipients = @(
+		ToRecipients = @(
 			@{
-				emailAddress = @{
-					address = "samanthab@contoso.onmicrosoft.com"
+				EmailAddress = @{
+					Address = "samanthab@contoso.onmicrosoft.com"
 				}
 			}
 		)
-		ccRecipients = @(
+		CcRecipients = @(
 			@{
-				emailAddress = @{
-					address = "danas@contoso.onmicrosoft.com"
+				EmailAddress = @{
+					Address = "danas@contoso.onmicrosoft.com"
 				}
 			}
 		)
 	}
-	saveToSentItems = "false"
+	SaveToSentItems = "false"
 }
 
 # A UPN can also be used as -UserId.

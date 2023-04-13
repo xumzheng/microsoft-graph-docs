@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ThreatAssessmentRequestRequestBuilderGetRequestConfiguration();
-$queryParameters = ThreatAssessmentRequestRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new ThreatAssessmentRequestRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["results"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->informationProtection()->threatAssessmentRequestsById('threatAssessmentRequest-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->informationProtection()->threatAssessmentRequestsById('threatAssessmentRequest-id')->get($requestConfiguration);
 
 
 ```

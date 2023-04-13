@@ -60,7 +60,7 @@ $requestBody->setApprovers($approversArray);
 
 
 
-$result = $graphServiceClient->privacy()->subjectRightsRequests()->post($requestBody);
+$requestResult = $graphServiceClient->privacy()->subjectRightsRequests()->post($requestBody);
 
 
 ```

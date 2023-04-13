@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->security()->threatIntelligence()->passiveDnsRecordsById('passiveDnsRecord-id')->get();
+$requestResult = $graphServiceClient->security()->threatIntelligence()->passiveDnsRecordsById('passiveDnsRecord-id')->get();
 
 
 ```

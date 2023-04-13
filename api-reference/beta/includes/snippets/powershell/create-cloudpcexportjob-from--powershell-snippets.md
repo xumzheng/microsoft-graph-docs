@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
-	reportName = "TotalAggregatedRemoteConnectionReports"
-	select = @(
+	ReportName = "TotalAggregatedRemoteConnectionReports"
+	Select = @(
 		"CloudPcId"
 		"ManagedDeviceName"
 		"UserPrincipalName"

@@ -24,7 +24,7 @@ $requestBody->setSourceImageResourceId('/subscriptions/0ac520ee-14c0-480f-b6c9-0
 
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->deviceImages()->post($requestBody);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->deviceImages()->post($requestBody);
 
 
 ```

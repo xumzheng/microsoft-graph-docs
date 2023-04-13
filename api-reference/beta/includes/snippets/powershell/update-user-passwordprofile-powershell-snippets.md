@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	passwordProfile = @{
-		forceChangePasswordNextSignIn = $true
-		password = "xWwvJ]6NMw+bWH-d"
+	PasswordProfile = @{
+		ForceChangePasswordNextSignIn = $true
+		Password = "xWwvJ]6NMw+bWH-d"
 	}
 }
 

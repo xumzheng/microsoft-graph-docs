@@ -18,7 +18,7 @@ $requestBody->setTimeRange(new RestoreTimeRange('before'));
 
 
 
-$result = $graphServiceClient->deviceManagement()->managedDevices()->bulkRestoreCloudPc()->post($requestBody);
+$requestResult = $graphServiceClient->deviceManagement()->managedDevices()->bulkRestoreCloudPc()->post($requestBody);
 
 
 ```

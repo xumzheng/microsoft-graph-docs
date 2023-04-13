@@ -18,8 +18,8 @@ $identitySourcesIdentitySource1 = new IdentitySource();
 $identitySourcesIdentitySource1->set@odatatype('#microsoft.graph.domainIdentitySource');
 
 $additionalData = [
-		'domainName' => 'example.com', 
-		'displayName' => 'example.com', 
+'domainName' => 'example.com', 
+'displayName' => 'example.com', 
 ];
 $identitySourcesIdentitySource1->setAdditionalData($additionalData);
 
@@ -33,7 +33,7 @@ $requestBody->setState(new ConnectedOrganizationState('proposed'));
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->connectedOrganizations()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->connectedOrganizations()->post($requestBody);
 
 
 ```

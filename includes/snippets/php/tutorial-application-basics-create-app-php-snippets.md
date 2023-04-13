@@ -14,7 +14,7 @@ $requestBody->setDisplayName('My application');
 
 
 
-$result = $graphServiceClient->applications()->post($requestBody);
+$requestResult = $graphServiceClient->applications()->post($requestBody);
 
 
 ```

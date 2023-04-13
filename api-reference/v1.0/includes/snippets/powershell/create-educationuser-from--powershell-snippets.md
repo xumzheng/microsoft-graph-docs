@@ -8,63 +8,63 @@ Import-Module Microsoft.Graph.Education
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationUser"
-	primaryRole = "String"
-	middleName = "String"
-	externalSource = "String"
-	externalSourceDetail = "String"
-	residenceAddress = @{
+	PrimaryRole = "String"
+	MiddleName = "String"
+	ExternalSource = "String"
+	ExternalSourceDetail = "String"
+	ResidenceAddress = @{
 		"@odata.type" = "microsoft.graph.physicalAddress"
 	}
-	mailingAddress = @{
+	MailingAddress = @{
 		"@odata.type" = "microsoft.graph.physicalAddress"
 	}
-	student = @{
+	Student = @{
 		"@odata.type" = "microsoft.graph.educationStudent"
 	}
-	teacher = @{
+	Teacher = @{
 		"@odata.type" = "microsoft.graph.educationTeacher"
 	}
-	createdBy = @{
+	CreatedBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
-	accountEnabled = "Boolean"
-	assignedLicenses = @(
+	AccountEnabled = "Boolean"
+	AssignedLicenses = @(
 		@{
 			"@odata.type" = "microsoft.graph.assignedLicense"
 		}
 	)
-	assignedPlans = @(
+	AssignedPlans = @(
 		@{
 			"@odata.type" = "microsoft.graph.assignedPlan"
 		}
 	)
-	businessPhones = @(
+	BusinessPhones = @(
 		"String"
 	)
-	department = "String"
-	displayName = "String"
-	givenName = "String"
-	mail = "String"
-	mailNickname = "String"
-	mobilePhone = "String"
-	passwordPolicies = "String"
-	passwordProfile = @{
+	Department = "String"
+	DisplayName = "String"
+	GivenName = "String"
+	Mail = "String"
+	MailNickname = "String"
+	MobilePhone = "String"
+	PasswordPolicies = "String"
+	PasswordProfile = @{
 		"@odata.type" = "microsoft.graph.passwordProfile"
 	}
-	officeLocation = "String"
-	preferredLanguage = "String"
-	provisionedPlans = @(
+	OfficeLocation = "String"
+	PreferredLanguage = "String"
+	ProvisionedPlans = @(
 		@{
 			"@odata.type" = "microsoft.graph.provisionedPlan"
 		}
 	)
-	refreshTokensValidFromDateTime = [System.DateTime]::Parse("String (timestamp)")
-	showInAddressList = "Boolean"
-	surname = "String"
-	usageLocation = "String"
-	userPrincipalName = "String"
-	userType = "String"
-	onPremisesInfo = @{
+	RefreshTokensValidFromDateTime = [System.DateTime]::Parse("String (timestamp)")
+	ShowInAddressList = "Boolean"
+	Surname = "String"
+	UsageLocation = "String"
+	UserPrincipalName = "String"
+	UserType = "String"
+	OnPremisesInfo = @{
 		"@odata.type" = "microsoft.graph.educationOnPremisesInfo"
 	}
 }

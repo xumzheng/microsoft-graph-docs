@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new VerticalSectionRequestBuilderGetRequestConfiguration();
-$queryParameters = VerticalSectionRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new VerticalSectionRequestBuilderGetQueryParameters();
 $queryParameters->select = ["emphasis","expand=webparts"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->canvasLayout()->verticalSection()->get($requestConfiguration);
+$requestResult = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->canvasLayout()->verticalSection()->get($requestConfiguration);
 
 
 ```

@@ -18,7 +18,7 @@ $requestBody->setWebUrl('www.lyndamer.no');
 
 
 
-$result = $graphServiceClient->me()->profile()->websites()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->websites()->post($requestBody);
 
 
 ```

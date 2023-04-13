@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Education
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationPointsOutcome"
-	points = @{
+	Points = @{
 		"@odata.type" = "#microsoft.graph.educationAssignmentPointsGrade"
-		points = 
+		Points = 
 	}
 }
 

@@ -18,7 +18,7 @@ $requestBody->setDescription('Access to resources for the campaign');
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->post($requestBody);
 
 
 ```

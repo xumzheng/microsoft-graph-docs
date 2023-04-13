@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	displayName = "Seattle District Technical Schools"
-	description = "Seattle district technical schools administration"
-	visibility = "HiddenMembership"
+	DisplayName = "Seattle District Technical Schools"
+	Description = "Seattle district technical schools administration"
+	Visibility = "HiddenMembership"
 }
 
 New-MgDirectoryAdministrativeUnit -BodyParameter $params

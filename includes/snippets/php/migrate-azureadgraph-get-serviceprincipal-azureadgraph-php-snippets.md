@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ServicePrincipalsRequestBuilderGetRequestConfiguration();
-$queryParameters = ServicePrincipalsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new ServicePrincipalsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "appId eq '00000002-0000-0000-c000-000000000000'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->servicePrincipals()->get($requestConfiguration);
+$requestResult = $graphServiceClient->servicePrincipals()->get($requestConfiguration);
 
 
 ```

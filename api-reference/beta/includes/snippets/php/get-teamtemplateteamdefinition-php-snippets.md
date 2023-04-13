@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->teamwork()->teamTemplatesById('teamTemplate-id')->definitionsById('teamTemplateDefinition-id')->teamDefinition()->get();
+$requestResult = $graphServiceClient->teamwork()->teamTemplatesById('teamTemplate-id')->definitionsById('teamTemplateDefinition-id')->teamDefinition()->get();
 
 
 ```

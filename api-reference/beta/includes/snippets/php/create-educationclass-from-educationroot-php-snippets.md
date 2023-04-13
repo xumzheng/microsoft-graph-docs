@@ -26,7 +26,7 @@ $requestBody->setMailNickname('fineartschool.net');
 
 
 
-$result = $graphServiceClient->education()->classes()->post($requestBody);
+$requestResult = $graphServiceClient->education()->classes()->post($requestBody);
 
 
 ```

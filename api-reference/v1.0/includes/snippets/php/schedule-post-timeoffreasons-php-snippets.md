@@ -18,7 +18,7 @@ $requestBody->setIsActive(true);
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->timeOffReasons()->post($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timeOffReasons()->post($requestBody);
 
 
 ```

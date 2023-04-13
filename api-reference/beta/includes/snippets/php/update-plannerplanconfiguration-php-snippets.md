@@ -39,7 +39,7 @@ $requestBody->setBuckets($bucketsArray);
 
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->planConfiguration()->patch($requestBody);
+$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->planConfiguration()->patch($requestBody);
 
 
 ```

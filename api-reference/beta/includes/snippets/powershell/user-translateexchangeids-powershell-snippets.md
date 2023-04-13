@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	inputIds = @(
+	InputIds = @(
 		"{rest-formatted-id-1}"
 		"{rest-formatted-id-2}"
 	)
-	sourceIdType = "restId"
-	targetIdType = "restImmutableEntryId"
+	SourceIdType = "restId"
+	TargetIdType = "restImmutableEntryId"
 }
 
 # A UPN can also be used as -UserId.

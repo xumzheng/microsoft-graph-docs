@@ -7,27 +7,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	displayName = "Policy for risky sign-in block access"
-	state = "enabled"
-	conditions = @{
-		signInRiskLevels = @(
+	DisplayName = "Policy for risky sign-in block access"
+	State = "enabled"
+	Conditions = @{
+		SignInRiskLevels = @(
 			"high"
 			"medium"
 		)
-		applications = @{
-			includeApplications = @(
+		Applications = @{
+			IncludeApplications = @(
 				"All"
 			)
 		}
-		users = @{
-			includeUsers = @(
+		Users = @{
+			IncludeUsers = @(
 				"4628e7df-dff3-407c-a08f-75f08c0806dc"
 			)
 		}
 	}
-	grantControls = @{
-		operator = "OR"
-		builtInControls = @(
+	GrantControls = @{
+		Operator = "OR"
+		BuiltInControls = @(
 			"block"
 		)
 	}

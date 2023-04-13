@@ -14,7 +14,7 @@ $requestBody->setId('keyset1');
 
 
 
-$result = $graphServiceClient->trustFramework()->keySets()->post($requestBody);
+$requestResult = $graphServiceClient->trustFramework()->keySets()->post($requestBody);
 
 
 ```

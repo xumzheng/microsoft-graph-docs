@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	email = "adelev@contoso.com"
-	includedSources = "mailbox"
+	Email = "adelev@contoso.com"
+	IncludedSources = "mailbox"
 }
 
 New-MgComplianceEdiscoveryCaseLegalHoldUserSource -CaseId $caseId -LegalHoldId $legalHoldId -BodyParameter $params

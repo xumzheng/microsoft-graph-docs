@@ -115,7 +115,7 @@ $sessionControls->setSignInFrequency($sessionControlsSignInFrequency);
 $requestBody->setSessionControls($sessionControls);
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->policies()->post($requestBody);
+$requestResult = $graphServiceClient->identity()->conditionalAccess()->policies()->post($requestBody);
 
 
 ```

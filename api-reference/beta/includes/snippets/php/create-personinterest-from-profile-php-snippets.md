@@ -20,7 +20,7 @@ $requestBody->setWebUrl('https://www.chelseafc.com');
 
 
 
-$result = $graphServiceClient->me()->profile()->interests()->post($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->interests()->post($requestBody);
 
 
 ```

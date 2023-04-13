@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new SitesRequestBuilderGetRequestConfiguration();
-$queryParameters = SitesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new SitesRequestBuilderGetQueryParameters();
 $queryParameters->select = ["siteCollection","webUrl"];
 $queryParameters->filter = "siteCollection/root ne null";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sites()->get($requestConfiguration);
+$requestResult = $graphServiceClient->sites()->get($requestConfiguration);
 
 
 ```

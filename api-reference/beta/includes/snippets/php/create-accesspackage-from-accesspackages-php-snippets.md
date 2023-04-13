@@ -18,7 +18,7 @@ $requestBody->setDescription('outside sales representatives');
 
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->post($requestBody);
 
 
 ```

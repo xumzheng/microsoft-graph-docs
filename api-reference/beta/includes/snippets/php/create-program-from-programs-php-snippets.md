@@ -16,7 +16,7 @@ $requestBody->setDescription('test description');
 
 
 
-$result = $graphServiceClient->programs()->post($requestBody);
+$requestResult = $graphServiceClient->programs()->post($requestBody);
 
 
 ```

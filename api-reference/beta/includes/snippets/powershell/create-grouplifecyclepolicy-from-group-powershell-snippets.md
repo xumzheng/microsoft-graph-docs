@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	groupLifetimeInDays = 100
-	managedGroupTypes = "Selected"
-	alternateNotificationEmails = "admin@contoso.com"
+	GroupLifetimeInDays = 100
+	ManagedGroupTypes = "Selected"
+	AlternateNotificationEmails = "admin@contoso.com"
 }
 
 New-MgGroupLifecyclePolicy -BodyParameter $params

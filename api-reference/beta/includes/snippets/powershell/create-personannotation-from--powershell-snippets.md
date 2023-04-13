@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	detail = @{
-		contentType = "text"
-		content = "I am originally from Australia, but grew up in Moscow, Russia."
+	Detail = @{
+		ContentType = "text"
+		Content = "I am originally from Australia, but grew up in Moscow, Russia."
 	}
-	displayName = "About Me"
+	DisplayName = "About Me"
 }
 
 # A UPN can also be used as -UserId.

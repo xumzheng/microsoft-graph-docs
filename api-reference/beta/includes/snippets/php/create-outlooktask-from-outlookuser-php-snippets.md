@@ -28,13 +28,15 @@ $dueDateTime->setTimeZone('Eastern Standard Time');
 $requestBody->setDueDateTime($dueDateTime);
 
 $requestConfiguration = new TasksRequestBuilderPostRequestConfiguration();
+
 $headers = [
-		'Prefer' => 'outlook.timezone="Pacific Standard Time"',
-	];
+	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+];
+
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->me()->outlook()->tasks()->post($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->me()->outlook()->tasks()->post($requestBody, $requestConfiguration);
 
 
 ```

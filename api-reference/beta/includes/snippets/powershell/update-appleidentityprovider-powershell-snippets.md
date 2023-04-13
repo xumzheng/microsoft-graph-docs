@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.socialIdentityProvider"
-	displayName = "Apple"
+	DisplayName = "Apple"
 }
 
 Update-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params

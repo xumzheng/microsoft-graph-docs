@@ -7,22 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	accessPackageId = "56ff43fd-6b05-48df-9634-956a777fce6d"
-	displayName = "direct"
-	description = "direct assignments by administrator"
-	accessReviewSettings = $null
-	requestorSettings = @{
-		scopeType = "NoSubjects"
-		acceptRequests = $true
-		allowedRequestors = @(
+	AccessPackageId = "56ff43fd-6b05-48df-9634-956a777fce6d"
+	DisplayName = "direct"
+	Description = "direct assignments by administrator"
+	AccessReviewSettings = $null
+	RequestorSettings = @{
+		ScopeType = "NoSubjects"
+		AcceptRequests = $true
+		AllowedRequestors = @(
 		)
 	}
-	requestApprovalSettings = @{
-		isApprovalRequired = $false
-		isApprovalRequiredForExtension = $false
-		isRequestorJustificationRequired = $false
-		approvalMode = "NoApproval"
-		approvalStages = @(
+	RequestApprovalSettings = @{
+		IsApprovalRequired = $false
+		IsApprovalRequiredForExtension = $false
+		IsRequestorJustificationRequired = $false
+		ApprovalMode = "NoApproval"
+		ApprovalStages = @(
 		)
 	}
 }

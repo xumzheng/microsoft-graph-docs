@@ -24,7 +24,7 @@ $requestBody->setRolePermissions($rolePermissionsArray);
 
 
 
-$result = $graphServiceClient->roleManagement()->cloudPC()->roleDefinitionsById('unifiedRoleDefinition-id')->patch($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->cloudPC()->roleDefinitionsById('unifiedRoleDefinition-id')->patch($requestBody);
 
 
 ```

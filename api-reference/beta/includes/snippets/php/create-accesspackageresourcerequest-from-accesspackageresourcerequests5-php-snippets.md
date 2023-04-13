@@ -21,7 +21,7 @@ $accessPackageResource->setId('354078e5-dbce-4894-8af4-0ab274d41662');
 $requestBody->setAccessPackageResource($accessPackageResource);
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
 
 
 ```

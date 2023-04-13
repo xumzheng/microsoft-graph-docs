@@ -8,19 +8,19 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerPlanConfiguration"
-	defaultLanguage = "en-us"
-	buckets = @(
+	DefaultLanguage = "en-us"
+	Buckets = @(
 		@{
-			externalBucketId = "deliveryBucket"
+			ExternalBucketId = "deliveryBucket"
 		}
 		@{
-			externalBucketId = "storePickupBucket"
+			ExternalBucketId = "storePickupBucket"
 		}
 		@{
-			externalBucketId = "specialOrdersBucket"
+			ExternalBucketId = "specialOrdersBucket"
 		}
 		@{
-			externalBucketId = "returnProcessingBucket"
+			ExternalBucketId = "returnProcessingBucket"
 		}
 	)
 }

@@ -7,23 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
-	values = @(
+	TemplateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+	Values = @(
 		@{
-			name = "GuestUsageGuidelinesUrl"
-			value = "https://privacy.contoso.com/privacystatement"
+			Name = "GuestUsageGuidelinesUrl"
+			Value = "https://privacy.contoso.com/privacystatement"
 		}
 		@{
-			name = "EnableMSStandardBlockedWords"
-			value = "true"
+			Name = "EnableMSStandardBlockedWords"
+			Value = "true"
 		}
 		@{
-			name = "EnableMIPLabels"
-			value = "true"
+			Name = "EnableMIPLabels"
+			Value = "true"
 		}
 		@{
-			name = "PrefixSuffixNamingRequirement"
-			value = "[Contoso-][GroupName]"
+			Name = "PrefixSuffixNamingRequirement"
+			Value = "[Contoso-][GroupName]"
 		}
 	)
 }

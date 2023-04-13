@@ -14,7 +14,7 @@ $requestBody->setSecurityEnabledOnly(true);
 
 
 
-$result = $graphServiceClient->me()->getMemberGroups()->post($requestBody);
+$requestResult = $graphServiceClient->me()->getMemberGroups()->post($requestBody);
 
 
 ```

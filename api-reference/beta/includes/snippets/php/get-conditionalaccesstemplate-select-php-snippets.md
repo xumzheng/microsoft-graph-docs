@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ConditionalAccessTemplateRequestBuilderGetRequestConfiguration();
-$queryParameters = ConditionalAccessTemplateRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new ConditionalAccessTemplateRequestBuilderGetQueryParameters();
 $queryParameters->select = ["details"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->templatesById('conditionalAccessTemplate-id')->get($requestConfiguration);
+$requestResult = $graphServiceClient->identity()->conditionalAccess()->templatesById('conditionalAccessTemplate-id')->get($requestConfiguration);
 
 
 ```

@@ -10,9 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsRequestBuilderGetRequestConfiguration();
-$queryParameters = TeamsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TeamsRequestBuilderGetQueryParameters();
 $queryParameters->filter = "startswith(displayName,%20'A')";
 $queryParameters->top = 2;
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 

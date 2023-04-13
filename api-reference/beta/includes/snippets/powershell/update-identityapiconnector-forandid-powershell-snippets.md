@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	displayName = "New Test API"
-	targetUrl = "https://otherapi.com/api/endpoint"
-	authenticationConfiguration = @{
+	DisplayName = "New Test API"
+	TargetUrl = "https://otherapi.com/api/endpoint"
+	AuthenticationConfiguration = @{
 		"@odata.type" = "microsoft.graph.basicAuthentication"
-		username = "<NEW_USERNAME>"
-		password = "<NEW_PASSWORD>"
+		Username = "<NEW_USERNAME>"
+		Password = "<NEW_PASSWORD>"
 	}
 }
 

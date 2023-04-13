@@ -19,7 +19,7 @@ $content->setContentType(new BodyType('text'));
 $requestBody->setContent($content);
 
 
-$result = $graphServiceClient->privacy()->subjectRightsRequestsById('subjectRightsRequest-id')->notes()->post($requestBody);
+$requestResult = $graphServiceClient->privacy()->subjectRightsRequestsById('subjectRightsRequest-id')->notes()->post($requestBody);
 
 
 ```

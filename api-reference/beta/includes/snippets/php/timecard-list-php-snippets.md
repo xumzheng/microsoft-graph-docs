@@ -10,13 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TimeCardsRequestBuilderGetRequestConfiguration();
-$queryParameters = TimeCardsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new TimeCardsRequestBuilderGetQueryParameters();
 $queryParameters->top = 2;
 $queryParameters->filter = "state eq 'clockedOut'";
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->timeCards()->get($requestConfiguration);
+$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timeCards()->get($requestConfiguration);
 
 
 ```

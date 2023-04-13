@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
-$queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new MessagesRequestBuilderGetQueryParameters();
 $queryParameters->top = 5;
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->messages()->get($requestConfiguration);
+$requestResult = $graphServiceClient->me()->messages()->get($requestConfiguration);
 
 
 ```

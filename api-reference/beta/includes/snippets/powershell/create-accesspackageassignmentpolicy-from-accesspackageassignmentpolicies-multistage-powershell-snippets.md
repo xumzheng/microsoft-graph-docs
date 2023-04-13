@@ -7,85 +7,85 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	accessPackageId = "string (identifier)"
-	displayName = "Users from connected organizations can request"
-	description = "Allow users from configured connected organizations to request and be approved by their sponsors"
-	canExtend = $false
-	durationInDays = 365
-	expirationDateTime = $null
-	requestorSettings = @{
-		scopeType = "AllExistingConnectedOrganizationSubjects"
-		acceptRequests = $true
-		allowedRequestors = @(
+	AccessPackageId = "string (identifier)"
+	DisplayName = "Users from connected organizations can request"
+	Description = "Allow users from configured connected organizations to request and be approved by their sponsors"
+	CanExtend = $false
+	DurationInDays = 365
+	ExpirationDateTime = $null
+	RequestorSettings = @{
+		ScopeType = "AllExistingConnectedOrganizationSubjects"
+		AcceptRequests = $true
+		AllowedRequestors = @(
 		)
 	}
-	requestApprovalSettings = @{
-		isApprovalRequired = $true
-		isApprovalRequiredForExtension = $false
-		isRequestorJustificationRequired = $true
-		approvalMode = "Serial"
-		approvalStages = @(
+	RequestApprovalSettings = @{
+		IsApprovalRequired = $true
+		IsApprovalRequiredForExtension = $false
+		IsRequestorJustificationRequired = $true
+		ApprovalMode = "Serial"
+		ApprovalStages = @(
 			@{
-				approvalStageTimeOutInDays = 14
-				isApproverJustificationRequired = $true
-				isEscalationEnabled = $true
-				escalationTimeInMinutes = 11520
-				primaryApprovers = @(
+				ApprovalStageTimeOutInDays = 14
+				IsApproverJustificationRequired = $true
+				IsEscalationEnabled = $true
+				EscalationTimeInMinutes = 11520
+				PrimaryApprovers = @(
 					@{
 						"@odata.type" = "#microsoft.graph.groupMembers"
-						isBackup = $true
-						id = "string (identifier)"
-						description = "group for users from connected organizations which have no external sponsor"
+						IsBackup = $true
+						Id = "string (identifier)"
+						Description = "group for users from connected organizations which have no external sponsor"
 					}
 					@{
 						"@odata.type" = "#microsoft.graph.externalSponsors"
-						isBackup = $false
+						IsBackup = $false
 					}
 				)
-				escalationApprovers = @(
+				EscalationApprovers = @(
 					@{
 						"@odata.type" = "#microsoft.graph.singleUser"
-						isBackup = $true
-						id = "string (identifier)"
-						description = "user if the external sponsor does not respond"
+						IsBackup = $true
+						Id = "string (identifier)"
+						Description = "user if the external sponsor does not respond"
 					}
 				)
 			}
 			@{
-				approvalStageTimeOutInDays = 14
-				isApproverJustificationRequired = $true
-				isEscalationEnabled = $true
-				escalationTimeInMinutes = 11520
-				primaryApprovers = @(
+				ApprovalStageTimeOutInDays = 14
+				IsApproverJustificationRequired = $true
+				IsEscalationEnabled = $true
+				EscalationTimeInMinutes = 11520
+				PrimaryApprovers = @(
 					@{
 						"@odata.type" = "#microsoft.graph.groupMembers"
-						isBackup = $true
-						id = "string (identifier)"
-						description = "group for users from connected organizations which have no internal sponsor"
+						IsBackup = $true
+						Id = "string (identifier)"
+						Description = "group for users from connected organizations which have no internal sponsor"
 					}
 					@{
 						"@odata.type" = "#microsoft.graph.internalSponsors"
-						isBackup = $false
+						IsBackup = $false
 					}
 				)
-				escalationApprovers = @(
+				EscalationApprovers = @(
 					@{
 						"@odata.type" = "#microsoft.graph.singleUser"
-						isBackup = $true
-						id = "string (identifier)"
-						description = "user if the internal sponsor does not respond"
+						IsBackup = $true
+						Id = "string (identifier)"
+						Description = "user if the internal sponsor does not respond"
 					}
 				)
 			}
 		)
 	}
-	accessReviewSettings = @{
-		isEnabled = $true
-		recurrenceType = "quarterly"
-		reviewerType = "Self"
-		startDateTime = [System.DateTime]::Parse("2020-04-01T07:59:59.998Z")
-		durationInDays = 25
-		reviewers = @(
+	AccessReviewSettings = @{
+		IsEnabled = $true
+		RecurrenceType = "quarterly"
+		ReviewerType = "Self"
+		StartDateTime = [System.DateTime]::Parse("2020-04-01T07:59:59.998Z")
+		DurationInDays = 25
+		Reviewers = @(
 		)
 	}
 }

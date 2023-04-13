@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	displayName = "Contoso name change"
-	federatedIdpMfaBehavior = "acceptIfMfaDoneByFederatedIdp"
+	DisplayName = "Contoso name change"
+	FederatedIdpMfaBehavior = "acceptIfMfaDoneByFederatedIdp"
 }
 
 Update-MgDomainFederationConfiguration -DomainId $domainId -InternalDomainFederationId $internalDomainFederationId -BodyParameter $params

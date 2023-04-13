@@ -8,11 +8,11 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomer"
-	displayName = "Joni Sherman"
-	emailAddress = "jonis@relecloud.com"
-	addresses = @(
+	DisplayName = "Joni Sherman"
+	EmailAddress = "jonis@relecloud.com"
+	Addresses = @(
 	)
-	phones = @(
+	Phones = @(
 	)
 }
 

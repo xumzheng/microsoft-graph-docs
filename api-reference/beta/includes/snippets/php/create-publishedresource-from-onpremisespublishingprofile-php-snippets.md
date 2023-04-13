@@ -16,7 +16,7 @@ $requestBody->setResourceName('domain1.contoso.com');
 
 
 
-$result = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->publishedResources()->post($requestBody);
+$requestResult = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->publishedResources()->post($requestBody);
 
 
 ```

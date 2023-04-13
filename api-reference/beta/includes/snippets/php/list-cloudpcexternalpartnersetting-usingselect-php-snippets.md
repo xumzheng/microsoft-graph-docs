@@ -10,12 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ExternalPartnerSettingsRequestBuilderGetRequestConfiguration();
-$queryParameters = ExternalPartnerSettingsRequestBuilderGetRequestConfiguration::createQueryParameters();
+
+$queryParameters = new ExternalPartnerSettingsRequestBuilderGetQueryParameters();
 $queryParameters->select = ["id","partnerId","enableConnection"];
+
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettings()->get($requestConfiguration);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettings()->get($requestConfiguration);
 
 
 ```

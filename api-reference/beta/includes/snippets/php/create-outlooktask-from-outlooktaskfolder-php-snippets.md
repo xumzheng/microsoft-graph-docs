@@ -28,7 +28,7 @@ $dueDateTime->setTimeZone('Pacific Standard Time');
 $requestBody->setDueDateTime($dueDateTime);
 
 
-$result = $graphServiceClient->me()->outlook()->taskFoldersById('outlookTaskFolder-id')->tasks()->post($requestBody);
+$requestResult = $graphServiceClient->me()->outlook()->taskFoldersById('outlookTaskFolder-id')->tasks()->post($requestBody);
 
 
 ```
