@@ -24,7 +24,9 @@ Represents the namespace of the area or service such as Azure AD, Intune, and Ex
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|authenticationContextId|String|Conditional Access authentication context id that is assigned to the permission to add a protected action, such as `c1`. This property is only show when requested using `$select`.|
 |id|String|Unique identifier of the resource namespace that defines permissions, such as `microsoft.aad.b2c`. Required.|
+|isAuthenticationContextSettable|Boolean|This property indicates is the current resource can be assigned a Conditional Access authentication context .This property is only show when requested using `$select`.|
 |name|String|Name of the resource namespace. Typically, the same name as the **id** property, such as `microsoft.aad.b2c`. Required. Supports `$filter` (`eq`, `startsWith`).|
 
 ## Relationships
