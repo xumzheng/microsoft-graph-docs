@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationMethodModes",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "authenticationMethodModes"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationStrengthPolicyType",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "authenticationStrengthPolicyType"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationStrengthRequirements",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "authenticationStrengthRequirements"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "baseAuthenticationMethod",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "baseAuthenticationMethod"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "updateAllowedCombinationsResult",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "updateAllowedCombinationsResult"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationCombinationConfiguration",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "authenticationCombinationConfiguration"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethodModeDetail",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "authenticationMethodModeDetail"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationStrengthPolicy",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "authenticationStrengthPolicy"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationStrengthRoot",
           "ChangeType": "Addition",
@@ -75,7 +75,7 @@
           "Target": "authenticationStrengthRoot"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessRoot",
           "ChangeType": "Addition",
@@ -83,7 +83,7 @@
           "Target": "conditionalAccessRoot"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "fido2CombinationConfiguration",
           "ChangeType": "Addition",
@@ -91,7 +91,7 @@
           "Target": "fido2CombinationConfiguration"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationStrengthPolicies",
           "ChangeType": "Addition",
@@ -99,18 +99,18 @@
           "Target": "policyRoot"
         },
         {
-          "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Method",
           "ChangedApiName": "updateAllowedCombinations",
           "ChangeType": "Addition",
-          "Description": "Added the [updateAllowedCombinations](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+          "Description": "Added the [updateAllowedCombinations](https://learn.microsoft.com/en-us/graph/api/authenticationstrengthpolicy-updateallowedcombinations.md?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
           "Target": "authenticationStrengthPolicy"
         }
       ],
-      "Id": "aa832423-29d2-4631-8faa-b8355951a7e0",
+      "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-03-31T18:53:31.8062566Z",
+      "CreatedDateTime": "2023-03-21T00:00:00.7593978Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
