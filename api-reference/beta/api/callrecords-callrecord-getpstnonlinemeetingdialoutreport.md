@@ -77,6 +77,7 @@ The following example shows how to get the aggregated report for the audio confe
 ### Request
 
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "callrecordthis.getpstnonlinemeetingdialoutreport"
@@ -85,6 +86,12 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/communications/callRecords/getPstnOnlineMeetingDialoutReport(fromDateTime=2022-11-01,toDateTime=2022-12-01)
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/callrecordthisgetpstnonlinemeetingdialoutreport-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
