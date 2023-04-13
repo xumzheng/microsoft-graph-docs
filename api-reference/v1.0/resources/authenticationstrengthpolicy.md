@@ -40,3 +40,28 @@ A collection of settings that define specific combinations of authentication met
 |Relationship|Type|Description|
 |:---|:---|:---|
 |combinationConfigurations|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) collection|Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.|
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.authenticationStrengthPolicy",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "modifiedDateTime": "String (timestamp)",
+  "displayName": "String",
+  "description": "String",
+  "policyType": "String",
+  "requirementsSatisfied": "String",
+  "allowedCombinations": [
+    "String"
+  ]
+}
+```
