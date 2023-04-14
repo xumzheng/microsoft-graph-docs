@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 Change notifications in Microsoft Graph enable you to subscribe to call started/ended and call roster updates for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload. 
 
-A subscription has a max expiry period of 3 days. To persist the subscription for more than this period, a subscription renewal request must be made. For details, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
+A subscription has a max expiry period of 1 day. To persist the subscription for more than this period, a subscription renewal request must be made. For details, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
 To get change notifications for a meeting's call events, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. 
 
