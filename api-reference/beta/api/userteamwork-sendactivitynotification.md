@@ -105,7 +105,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -160,7 +159,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

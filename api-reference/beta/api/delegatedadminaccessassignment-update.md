@@ -101,7 +101,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 The following is an example response that returns a `202 Accepted` response code along with **Location** and **Retry-After** headers.
 >**Note:** The response object shown here might be shortened for readability.

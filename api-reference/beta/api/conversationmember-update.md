@@ -87,7 +87,6 @@ content-length: 26
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

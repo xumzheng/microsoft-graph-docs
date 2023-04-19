@@ -73,7 +73,6 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/getRecentNotebooks(inc
 
 ---
 
-
 ##### Response
 The following example shows the response.
 

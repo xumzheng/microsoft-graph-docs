@@ -69,7 +69,6 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/beta/contracts
 
 ---
 
-
 ##### Response
 
 Note: The response object shown here might be shortened for readability.

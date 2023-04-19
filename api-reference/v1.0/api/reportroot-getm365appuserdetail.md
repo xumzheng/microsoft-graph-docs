@@ -148,7 +148,6 @@ GET https://graph.microsoft.com/v1.0/reports/getM365AppUserDetail(period='D7')?$
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -204,7 +203,6 @@ GET https://graph.microsoft.com/v1.0/reports/getM365AppUserDetail(period='D7')?$
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

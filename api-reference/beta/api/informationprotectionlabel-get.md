@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

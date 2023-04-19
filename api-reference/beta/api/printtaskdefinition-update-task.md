@@ -75,7 +75,6 @@ PATCH https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-
 
 ---
 
-
 ---
 
 ### Response

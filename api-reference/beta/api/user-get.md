@@ -165,7 +165,6 @@ GET https://graph.microsoft.com/beta/users/{id}
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -310,7 +309,6 @@ GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 ---
 
 
-
 #### Response
 
 <!-- {
@@ -387,7 +385,6 @@ GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -451,7 +448,6 @@ GET https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

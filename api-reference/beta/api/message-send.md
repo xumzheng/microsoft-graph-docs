@@ -82,7 +82,6 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 
 ---
 
-
 ##### Response
 
 Here is an example of the response.

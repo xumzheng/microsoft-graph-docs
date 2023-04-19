@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

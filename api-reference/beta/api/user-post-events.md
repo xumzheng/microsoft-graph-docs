@@ -330,7 +330,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
@@ -719,7 +718,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.

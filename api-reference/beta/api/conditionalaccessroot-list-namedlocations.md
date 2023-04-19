@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -178,7 +177,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -265,7 +263,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -333,7 +330,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

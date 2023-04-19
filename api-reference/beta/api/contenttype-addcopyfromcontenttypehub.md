@@ -91,7 +91,6 @@ Content-length: 33
 ---
 
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -143,7 +142,6 @@ Content-length: 33
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

@@ -50,7 +50,6 @@ Content-Type: application/json
 
 ---
 
-
 The API responds that the action was accepted and the URL for retrieving the status of the long running action.
 
 <!-- { "blockType": "response" } -->

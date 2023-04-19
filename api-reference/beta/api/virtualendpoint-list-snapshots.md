@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots
 ---
 
 
-
 ### Response
 
 The following is an example of the response.

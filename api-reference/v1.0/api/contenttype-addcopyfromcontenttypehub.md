@@ -164,7 +164,6 @@ Content-length: 33
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

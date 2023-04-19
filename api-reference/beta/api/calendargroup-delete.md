@@ -75,7 +75,6 @@ DELETE https://graph.microsoft.com/beta/me/calendarGroups/{id}
 
 ---
 
-
 ##### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.

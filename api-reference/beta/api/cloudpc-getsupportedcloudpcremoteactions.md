@@ -74,7 +74,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/8
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

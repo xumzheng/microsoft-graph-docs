@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/teams/14c981a4-dca9-4565-bae6-e13ada8861be/
 
 ---
 
-
 ---
 
 ### Response

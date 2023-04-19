@@ -75,7 +75,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{s
 
 ---
 
-
 #### Response
 
 The following is an example of the response. 

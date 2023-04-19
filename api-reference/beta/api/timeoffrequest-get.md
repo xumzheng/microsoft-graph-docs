@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{ti
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
