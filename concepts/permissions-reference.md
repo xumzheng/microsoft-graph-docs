@@ -777,7 +777,12 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Device.Read_ |Read user devices |Allows the app to read a user's list of devices on behalf of the signed-in user. |No | Yes |
 |_Device.Read.All_ |Read all devices |Allows the app to read your organization's devices' configuration information on behalf of the signed-in user.|Yes | Yes |
+|_Device.ReadWrite.All_|Read and write all device properties|Allows the app to read and write all properties of a device on behalf of a signed-in user|Yes|No|
+|_Device.Delete.All_|Delete a device|Allows the app to delete a device on behalf of a signed-in user|Yes|No|
+|_Device.DisableAccount_|Disable user's device accounts|Allows the app to disable the signed-in user's device account their behalf|Yes|No|
+|_Device.EnableDisableAccount.All_|Enable or disable a device account|Allows the app to enable or disable a device account on behalf of a signed-in user.|Yes|No|
 |_Device.Command_ |Communicate with user devices |Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. |No | Yes |
+
 
 
 #### Application permissions
@@ -786,6 +791,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Device.Read.All_ |Read all devices |Allows the app to read your organization's devices' configuration information without a signed-in user. |Yes |
 |_Device.ReadWrite.All_ |Read and write devices |Allows the app to read and write all device properties without a signed in user. Does not allow device creation or update of device alternative security identifiers. |Yes |
+|_Device-MdmManagedProperties.ReadWrite.All_|Read and write the MDM-managed properties of a device|Allows the app to read and write the MDM-managed properties of a device, without a signed-in user|Yes|
+|_Device.Delete.All_|Delete a device|Allows the app to delete a device, without a signed-in user.|Yes|
+|_Device.EnableDisableAccount.All_|Enable or disable a device account|Allows the app to enable or disable a device account, without a signed-in user.|Yes|
+
+
 
 > [!NOTE]
 > Before December 3rd, 2020, when the application permission *Device.ReadWrite.All* was granted, the [Device Managers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) directory role was also assigned to the app's service principal. This directory role assignment is not removed automatically when the associated application permissions is revoked. To ensure that an application's access to read or write to devices is removed, customers must also remove any related directory roles that were granted to the application.
