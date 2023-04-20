@@ -1236,10 +1236,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1289,10 +1294,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1366,10 +1376,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -4229,6 +4244,12 @@
           {
             "name": "isOpen",
             "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
           }
         ],
         "taskName": "Notification for idle PRs - changes requested",
@@ -4333,6 +4354,12 @@
           {
             "name": "isOpen",
             "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
           }
         ],
         "taskName": "Notification for idle PRs - complete",

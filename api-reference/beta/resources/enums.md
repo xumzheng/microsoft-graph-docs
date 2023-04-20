@@ -11,6 +11,22 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
+
 ### usqState values
 
 | Member             | 
@@ -340,6 +356,15 @@ Namespace: microsoft.graph
 |:---|
 |strictEnforcement|
 |disabled|
+|unknownFutureValue|
+
+### msiType values 
+
+|Member|
+|:---|
+|none|
+|userAssigned|
+|systemAssigned|
 |unknownFutureValue|
 
 ### multiFactorAuthConfiguration values
@@ -3705,6 +3730,7 @@ Possible values for user account types (group membership), per Windows definitio
 |premigration|
 |migrationInProgress|
 |migrationComplete|
+|unknownFutureValue|
 
 ### authenticationEventType values
 
