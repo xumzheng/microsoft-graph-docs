@@ -30,7 +30,7 @@ Represents the namespace of the area or service such as Azure AD, Intune, and Ex
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authenticationContext|[authenticationContextClassReference](authenticationContextClassReference.md)|The authentication context assigned to the permission.|
+|resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection|Operations that an authorized principal are allowed to perform.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

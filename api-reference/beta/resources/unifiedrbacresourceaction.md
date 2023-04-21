@@ -35,8 +35,7 @@ Represents an operation that an authorized principal is allowed to perform.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection|Operations that an authorized principal are allowed to perform.|
-None.
+|authenticationContext|[authenticationContextClassReference](authenticationContextClassReference.md)|The authentication context assigned to the permission.|
 
 <!-- The resourceScope relationship hasn't been implemented but is in the public schema. To unhide this and its related entities and methods once it's implemented.
 |Relationship|Type|Description|
