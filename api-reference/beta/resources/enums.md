@@ -11,6 +11,32 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
+
+### usqState values
+
+| Member             | 
+|:-------------------|
+| norma.             |
+| nearing            |
+| critical           |
+| full               |
+| overLimit          |
+
 ### userPurpose values
 
 | Member             | 
@@ -203,6 +229,17 @@ Namespace: microsoft.graph
 |requestReceived|
 |unknownFutureValue|
 
+### customExtensionCalloutInstanceStatus values
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
+|unknownFutureValue|
+
 ### accessPackageCustomExtensionStage values 
 
 |Member|
@@ -319,6 +356,15 @@ Namespace: microsoft.graph
 |:---|
 |strictEnforcement|
 |disabled|
+|unknownFutureValue|
+
+### msiType values 
+
+|Member|
+|:---|
+|none|
+|userAssigned|
+|systemAssigned|
 |unknownFutureValue|
 
 ### multiFactorAuthConfiguration values
@@ -3684,6 +3730,7 @@ Possible values for user account types (group membership), per Windows definitio
 |premigration|
 |migrationInProgress|
 |migrationComplete|
+|unknownFutureValue|
 
 ### authenticationEventType values
 
@@ -3699,4 +3746,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:-----|
 |microsoftAuthenticator|
 |outlookMobile|
+|unknownFutureValue|
+
+### verifiableCredentialPresentationStatusCode values 
+
+|Member|
+|:---|
+|request_retrieved|
+|presentation_verified|
 |unknownFutureValue|

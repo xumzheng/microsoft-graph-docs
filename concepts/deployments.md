@@ -95,6 +95,37 @@ The following table lists the Microsoft Graph APIs that are generally available 
 | To-do tasks (Microsoft To Do)              | ✔\*                              | ➖                                        |
 | Workbooks and charts (Excel)               | ✔\*                              | ➖                                        | 
 
+## Supported features
+
+The following Microsoft Graph features are generally available on the `/v1.0` endpoint across all national cloud deployments, except where noted.
+
+| Microsoft Graph features            | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
+|-------------------------------------|-----------------------------------|--------------------------------------------|
+| Access reviews                      | ✔                                | ✔                                          |
+| Applications and service principals | ✔                                | ✔                                          |
+| Change notifications (webhooks)     | ✔                                | ✔                                          |
+| Delta query                         | ✔                                | ✔                                          |
+| Directory extensions                | ✔                                | ✔                                          |
+| Excel                               | ✔                                | ➖                                         |
+| Groups                              | ✔                                | ✔                                          |
+| OneDrive                            | ✔                                | ✔\*                                        |
+| Open type extensions                | ✔                                | ✔                                          |
+| Organizational contacts             | ✔                                | ✔                                          |
+| Outlook Calendar                    | ✔                                | ✔                                          |
+| Outlook Mail                        | ✔                                | ✔                                          |
+| Personal Contacts                   | ✔                                | ✔                                          |
+| Privileged identity management      | ✔                                | ✔                                          |
+| Planner                             | ✔                                | ✔                                          |
+| Reports (Azure AD activity reports) | ✔                                | ✔                                          |
+| Reports (Microsoft 365 reports)     | ➖                               | ➖                                         |
+| Search (Microsoft Search)           | ✔                                | ✔                                          |
+| Security                            | ✔                                | ✔                                          |
+| Service health and communications   | ✔                                | ✔                                          |
+| SharePoint                          | ✔                                | ✔                                          |
+| Teams                               | ✔                                | ➖                                         |
+| To Do                               | ✔                                | ➖                                         |
+| Users                               | ✔                                | ✔                                          |
+
 For more information about the availability of Microsoft 365 usage reports in national clouds, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report).
 
 (\*) Limited support for Exchange and OneDrive services only. Azure AD services aren't supported.
