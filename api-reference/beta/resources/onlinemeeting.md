@@ -33,6 +33,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
+| allowAttendeeToEnableCamera2 | Boolean | Indicates whether attendees can turn on their camera. |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
