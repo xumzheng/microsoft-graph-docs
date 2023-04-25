@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 ---
 
-
 ### Response
 
 #### Response running

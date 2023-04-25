@@ -180,7 +180,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, provide the properties of the [group](../resources/group.md) object you want to add.
 
 #### Response

@@ -66,7 +66,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 The following example shows the **uploadSession** resource returned for the task in the response body.
 

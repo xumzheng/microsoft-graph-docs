@@ -171,7 +171,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.

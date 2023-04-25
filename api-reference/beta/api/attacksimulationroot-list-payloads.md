@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=
 
 ---
 
-
 ### Response
 
 The following is an example of a response.

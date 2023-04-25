@@ -168,7 +168,6 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -241,7 +240,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

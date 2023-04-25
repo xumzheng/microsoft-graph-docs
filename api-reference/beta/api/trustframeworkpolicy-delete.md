@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAnd
 
 ---
 
-
 ##### Response
 
 <!-- {

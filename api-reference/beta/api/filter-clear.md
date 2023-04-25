@@ -63,7 +63,6 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers/{id}/$ref
 
 ---
 
-
 ---
 
 ##### Response

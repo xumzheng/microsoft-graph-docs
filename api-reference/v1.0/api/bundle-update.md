@@ -90,7 +90,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->

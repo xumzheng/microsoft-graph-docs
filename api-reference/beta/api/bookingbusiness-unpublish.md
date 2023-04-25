@@ -67,7 +67,6 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@con
 
 ---
 
-
 ##### Response
 The following is an example of the response.
 <!-- {

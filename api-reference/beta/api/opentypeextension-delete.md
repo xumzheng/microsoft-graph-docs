@@ -101,7 +101,6 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 ---
 
-
 The second example deletes an extension in the specified group event.
 
 <!-- { "blockType": "ignored" } -->

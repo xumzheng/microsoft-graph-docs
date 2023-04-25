@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/v1.0/domains/contoso.com/federationConfigurat
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

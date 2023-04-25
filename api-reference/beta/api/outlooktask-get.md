@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 
 #### Response
@@ -167,7 +166,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

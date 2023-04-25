@@ -105,7 +105,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The response is the updated group object.
@@ -167,7 +166,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

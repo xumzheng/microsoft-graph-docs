@@ -73,7 +73,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

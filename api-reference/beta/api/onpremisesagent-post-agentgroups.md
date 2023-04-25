@@ -69,7 +69,6 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 ---
 
-
 In the request body, supply a JSON representation of OData reference to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ```http

@@ -76,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisi
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

@@ -90,7 +90,6 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

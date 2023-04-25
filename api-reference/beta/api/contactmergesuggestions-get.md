@@ -72,7 +72,6 @@ GET https://graph.microsoft.com/beta/me/settings/contactMergeSuggestions
 ---
 
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
