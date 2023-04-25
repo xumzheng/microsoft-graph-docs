@@ -72,7 +72,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0e
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -119,7 +118,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/09
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Directory_c
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -135,7 +134,6 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRo
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

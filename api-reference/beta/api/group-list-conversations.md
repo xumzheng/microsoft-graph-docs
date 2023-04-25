@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

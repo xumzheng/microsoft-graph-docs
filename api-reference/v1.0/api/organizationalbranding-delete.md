@@ -62,6 +62,10 @@ DELETE https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276
 }
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-organizationalbranding-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/delete-organizationalbranding-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -71,7 +75,6 @@ DELETE https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

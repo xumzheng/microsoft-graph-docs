@@ -20,7 +20,7 @@ $params = @{
 		trigger = @{
 			"@odata.type" = "microsoft.graph.identityGovernance.timeBasedAttributeTrigger"
 			timeBasedAttribute = "employeeHireDate"
-			offsetInDays = 
+			offsetInDays = -2
 		}
 	}
 	tasks = @(

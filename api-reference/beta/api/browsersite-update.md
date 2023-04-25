@@ -90,7 +90,6 @@ Content-length: 387
 ---
 
 
-
 ### Response
 The following is an example of the response.
 <!-- {

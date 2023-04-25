@@ -89,7 +89,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
 ##### Response
 The POST method ignores the time portion of **startDateTime** and **dueDateTime** in the request body and assumes the time to be always 

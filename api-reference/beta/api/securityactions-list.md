@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/security/securityActions
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

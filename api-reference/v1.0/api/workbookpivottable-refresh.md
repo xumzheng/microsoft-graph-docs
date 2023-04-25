@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/piv
 
 ---
 
-
 ##### Response
 Here is an example of the response.
 <!-- {

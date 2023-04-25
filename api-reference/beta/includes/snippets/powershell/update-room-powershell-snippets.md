@@ -11,7 +11,7 @@ $params = @{
 	nickname = "Conf Room"
 	building = "1"
 	label = "100"
-	capacity = 
+	capacity = 50
 	isWheelChairAccessible = $false
 }
 

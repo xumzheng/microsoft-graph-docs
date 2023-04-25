@@ -731,7 +731,6 @@ DELETE https://graph.microsoft.com/beta/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f89
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -771,7 +770,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -809,7 +807,6 @@ DELETE https://graph.microsoft.com/beta/users/3b8ceebc-49e6-4e0c-9e14-c906374a7e
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

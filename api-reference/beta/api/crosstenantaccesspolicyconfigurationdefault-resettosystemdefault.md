@@ -76,7 +76,6 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 ---
 
-
 ### Response
 
 <!-- {

@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
 ---
 
 
-
 ### Response
 <!-- {
   "blockType": "response",

@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -215,7 +214,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -277,7 +275,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -352,7 +349,6 @@ GET https://graph.microsoft.com/beta/groups/3802e9bb-0951-4e18-b9eb-f934b4241194
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

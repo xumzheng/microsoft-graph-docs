@@ -83,6 +83,7 @@ between tracking contacts and tracking messages in a folder are in the delta que
 returning **contact** rather than **message** collections.
  
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contact_delta"
@@ -92,6 +93,12 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts/delta?$sele
 
 Prefer: odata.maxpagesize=2
 ```
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contact-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ##### Response

@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationP
 ---
 
 
-
 ### Response
 
 The following is an example of the response.

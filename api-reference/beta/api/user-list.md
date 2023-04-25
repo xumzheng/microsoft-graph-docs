@@ -273,7 +273,6 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -473,7 +472,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -534,7 +532,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -594,7 +591,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -660,7 +656,6 @@ GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$fil
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -728,7 +723,6 @@ GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

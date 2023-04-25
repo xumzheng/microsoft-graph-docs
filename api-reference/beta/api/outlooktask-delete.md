@@ -78,7 +78,6 @@ DELETE https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADIyAAAhrb_QAAA=
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

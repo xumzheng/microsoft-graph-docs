@@ -69,6 +69,10 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-inazure-ad-directory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/identityprovider-availableprovidertypes-inazure-ad-directory-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -119,6 +123,10 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
 ```
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-b2c-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/identityprovider-availableprovidertypes-b2c-typescript-snippets.md)]

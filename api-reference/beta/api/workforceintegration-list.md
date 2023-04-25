@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

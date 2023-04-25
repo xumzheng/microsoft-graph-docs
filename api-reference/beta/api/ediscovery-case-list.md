@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

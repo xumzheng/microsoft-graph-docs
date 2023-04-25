@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ---
 
-
 ---
 
 #### Response
@@ -189,7 +188,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ---
 
@@ -367,7 +365,6 @@ GET https://graph.microsoft.com/beta/chats?$expand=lastMessagePreview
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -553,7 +550,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ---
 
-
 ---
 
 #### Response
@@ -677,7 +673,6 @@ GET https://graph.microsoft.com/beta/chats?$orderBy=lastMessagePreview/createdDa
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ---
 

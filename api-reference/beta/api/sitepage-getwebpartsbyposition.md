@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/getWebPar
 
 ---
 
-
 ### Response
 
 The following is an example of the response

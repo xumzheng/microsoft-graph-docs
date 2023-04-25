@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/beta/policies/accessReviewPolicy
 ---
 
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -115,7 +114,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/policy
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 ### Response

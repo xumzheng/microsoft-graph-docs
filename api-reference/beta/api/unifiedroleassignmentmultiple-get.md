@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -158,7 +157,6 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -225,7 +223,6 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -312,7 +309,6 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9
 
 ---
 
-
 #### Response
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -370,7 +366,6 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.

@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deployme
 ---
 
 
-
 ### Response
 
 <!-- {

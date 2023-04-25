@@ -75,7 +75,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPoli
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
