@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deplo
 ---
 
 
-
 ### Response
 
 <!-- {

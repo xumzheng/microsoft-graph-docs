@@ -265,7 +265,6 @@ GET https://graph.microsoft.com/beta/education/classes/a86a5c30-0437-49d6-9c6b-b
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 

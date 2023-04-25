@@ -185,7 +185,6 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 
 ---
 
-
 #### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
@@ -482,7 +481,6 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.

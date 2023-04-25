@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 

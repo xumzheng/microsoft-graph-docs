@@ -73,7 +73,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 
 ---
 
-
 ### Response
 
 <!-- {

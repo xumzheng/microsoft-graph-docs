@@ -298,7 +298,6 @@ GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8
 
 ---
 
-
 ##### Response
 
 <!-- {
@@ -515,7 +514,6 @@ POST https://graph.microsoft.com/beta/users
 
 ---
 
-
 The request returns a `201 Created` response code and a [schemaExtension](/graph/api/resources/schemaextension) object in the response body
 
 ##### Update or delete a schema extension property
@@ -555,7 +553,6 @@ PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3
 
 ---
 
-
 The request returns a `204 No Content` response object.
 
 ##### Retrieve the schema extension property
@@ -587,7 +584,6 @@ GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ###### Response
 

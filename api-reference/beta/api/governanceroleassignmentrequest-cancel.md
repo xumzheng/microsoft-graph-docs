@@ -96,7 +96,6 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

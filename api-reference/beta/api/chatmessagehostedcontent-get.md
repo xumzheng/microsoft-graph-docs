@@ -154,7 +154,6 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 ---
 
-
 #### Response
 
 Response contains bytes for the hosted content in the body. `content-type` header specifies the kind of hosted content.

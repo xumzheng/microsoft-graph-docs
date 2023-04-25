@@ -97,7 +97,6 @@ Accept-Language: 0
 
 ---
 
-
 #### Response
 The following is an example of the response.
 

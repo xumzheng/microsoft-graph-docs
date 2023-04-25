@@ -73,7 +73,6 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

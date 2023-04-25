@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/directory/attributeSets
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -140,7 +139,6 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$top=10
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -197,7 +195,6 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

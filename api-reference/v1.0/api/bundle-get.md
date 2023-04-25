@@ -82,7 +82,6 @@ GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -141,7 +140,6 @@ GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -190,7 +190,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response 1
 
 Here is the response for the first example. The response body includes properties of the new message,
@@ -311,7 +310,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response 2
 
 Here is the response for the second example. The response body includes the following for the new extension:
@@ -382,7 +380,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 3
 
@@ -464,7 +461,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response 4
 
 Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the
@@ -543,7 +539,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 5
 

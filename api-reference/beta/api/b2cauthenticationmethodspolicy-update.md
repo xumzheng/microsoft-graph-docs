@@ -85,7 +85,6 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

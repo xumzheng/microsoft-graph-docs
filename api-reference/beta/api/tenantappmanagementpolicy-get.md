@@ -74,7 +74,6 @@ GET https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
 
 ---
 
-
 ### Response
 
 The following is an example of the response that shows the default tenant app management policy.

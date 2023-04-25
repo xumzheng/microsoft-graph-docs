@@ -84,7 +84,6 @@ content-type: application/json
 
 ---
 
-
 ---
 
 
@@ -137,7 +136,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ---
 
@@ -193,7 +191,6 @@ content-type: application/json
 
 ---
 
-
 ---
 
 
@@ -247,7 +244,6 @@ content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

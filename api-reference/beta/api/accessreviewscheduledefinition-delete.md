@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 
 ---
 
-
 ---
 
 ### Response

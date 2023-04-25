@@ -78,7 +78,6 @@ DELETE https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

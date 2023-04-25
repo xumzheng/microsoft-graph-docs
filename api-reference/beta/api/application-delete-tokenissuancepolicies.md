@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/tokenIssuancePolicies/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

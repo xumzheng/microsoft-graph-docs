@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 ---
 
-
 ##### Response
 Here is an example of the response.
 
