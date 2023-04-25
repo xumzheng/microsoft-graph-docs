@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.
 
-> **Note:** Files tab is native to channel or chat, and is not part of the list tabs API.
+> **Note:** The Files tab is native to a channel or chat and is not returned by this API.
 
 ## Examples
 
