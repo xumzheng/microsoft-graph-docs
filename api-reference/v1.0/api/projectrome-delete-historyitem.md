@@ -69,7 +69,6 @@ PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{i
 
 ---
 
-
 ##### Response
 
 Here is an example of the response.

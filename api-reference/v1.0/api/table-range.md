@@ -69,7 +69,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 

@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 ---
 
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -166,7 +165,6 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 ---
 
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -232,7 +230,6 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 #### Response

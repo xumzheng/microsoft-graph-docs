@@ -70,7 +70,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/contentType
 
 ---
 
-
 ### Response
 
 <!-- {

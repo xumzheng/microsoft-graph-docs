@@ -80,7 +80,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -186,7 +185,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$e
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

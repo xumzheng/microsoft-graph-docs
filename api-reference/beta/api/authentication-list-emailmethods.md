@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/me/authentication/emailMethods
 ---
 
 
-
 ### Response
 The following is an example of the response.
 

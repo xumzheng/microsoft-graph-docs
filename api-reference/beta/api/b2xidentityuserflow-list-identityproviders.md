@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProvider
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

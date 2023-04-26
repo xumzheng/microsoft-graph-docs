@@ -77,7 +77,6 @@ DELETE https://graph.microsoft.com/beta/users/{id}/appRoleAssignments/{id}
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

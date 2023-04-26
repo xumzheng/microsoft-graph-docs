@@ -75,7 +75,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttribute
 
 ---
 
-
 ### Response
 
 <!-- {

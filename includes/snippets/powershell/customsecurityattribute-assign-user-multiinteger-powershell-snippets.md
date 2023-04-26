@@ -12,8 +12,8 @@ $params = @{
 			"@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
 			"CostCenter@odata.type" = "#Collection(Int32)"
 			CostCenter = @(
-				
-				
+				1001
+				1003
 			)
 		}
 	}

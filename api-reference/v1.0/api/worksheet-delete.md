@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 <!-- {

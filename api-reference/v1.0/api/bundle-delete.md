@@ -77,7 +77,6 @@ DELETE https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

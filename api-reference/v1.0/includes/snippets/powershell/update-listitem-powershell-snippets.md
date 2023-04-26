@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Sites
 
 $params = @{
 	Color = "Fuchsia"
-	Quantity = 
+	Quantity = 934
 }
 
 Update-MgSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params

@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
 	Color = "Fuchsia"
-	Quantity = 
+	Quantity = 934
 }
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params

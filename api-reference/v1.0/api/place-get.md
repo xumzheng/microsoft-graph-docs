@@ -134,7 +134,6 @@ GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicroso
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

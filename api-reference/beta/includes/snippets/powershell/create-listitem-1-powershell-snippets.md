@@ -10,7 +10,7 @@ $params = @{
 	fields = @{
 		Title = "Widget"
 		Color = "Purple"
-		Weight = 
+		Weight = 32
 	}
 }
 

@@ -82,7 +82,6 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 
 ---
 
-
 ##### Response
 
 Note: The response object shown here might be shortened for readability.

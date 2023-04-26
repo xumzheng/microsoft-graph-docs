@@ -106,7 +106,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->

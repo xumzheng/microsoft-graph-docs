@@ -84,7 +84,6 @@ GET https://graph.microsoft.com/beta/drive/bundles
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -148,7 +147,6 @@ GET https://graph.microsoft.com/v1.0/drive/bundles?filter=bundle/album%20ne%20nu
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -177,7 +177,6 @@ ConsistencyLevel: eventual
 ---
 
 
-
 #### Response
 
 The following is an example of the response.
@@ -233,7 +232,7 @@ ConsistencyLevel: eventual
 ```
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-tenantscoped-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [TypeScript](#tab/typescript)

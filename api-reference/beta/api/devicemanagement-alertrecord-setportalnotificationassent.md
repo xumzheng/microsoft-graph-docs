@@ -72,7 +72,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/6
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

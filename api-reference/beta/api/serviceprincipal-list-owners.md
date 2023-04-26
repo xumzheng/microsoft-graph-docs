@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
 
 ---
 
-
 ### Response
 Here is an example of the response.
 

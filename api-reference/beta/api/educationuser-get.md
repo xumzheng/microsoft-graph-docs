@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/education/users/13012
 
 ---
 
-
 ##### Response
 
 The following is an example of the response.

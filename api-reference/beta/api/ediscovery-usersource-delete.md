@@ -76,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-778
 
 ---
 
-
 ### Response
 
 <!-- {

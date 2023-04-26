@@ -66,7 +66,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 
 ---
 
-
 ##### Response
 The following is an example of the response. 
 

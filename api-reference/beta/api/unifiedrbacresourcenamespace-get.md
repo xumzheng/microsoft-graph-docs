@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 ---
 
 
-
 ### Response
 <!-- {
   "blockType": "response",
