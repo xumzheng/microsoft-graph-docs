@@ -1,40 +1,40 @@
 {
   "changelog": [
-    {
-        {
-          "ChangeList": [
-            {
-              "Id": "9f793143-536a-4f23-acc3-54c937fccbe6",
-              "ApiChange": "Relationship",
-              "ChangedApiName": "unifiedrbacresourceaction",
-              "ChangeType": "Addition",
-              "Description": "Added the **authenticationContext** relationship to the [unifiedrbacresourceaction](https://learn.microsoft.com/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource.",
-              "Target": "unifiedrbacresourceaction"
-            },
-            {
-              "Id": "8486b1f7-22b2-425b-bae7-e08c4cb7146b",
-              "ApiChange": "Property",
-              "ChangedApiName": "unifiedRbacApplication",
-              "ChangeType": "Addition",
-              "Description": "Added the **authenticationContextId** property to [unifiedrbacresourceaction](https://learn.microsoft.com/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource.",
-              "Target": "unifiedrbacresourceaction"
-            },
-            {
-              "Id": "8d824497-c249-4bd9-be81-99c461a327c4",
-              "ApiChange": "Property",
-              "ChangedApiName": "isAuthenticationContextSettable",
-              "ChangeType": "Addition",
-              "Description": "Added the **isAuthenticationContextSettable** property to [unifiedrbacresourceaction](https://learn.microsoft.com/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource.",
-              "Target": "unifiedrbacresourceaction"
-            }
-          ],
-          "Id": "8ab6d6eb-b5cd-4ed9-a5db-8d3bfd29c834",
-          "Cloud": "prd",
-          "Version": "beta",
-          "CreatedDateTime": "2023-04-25T12:47:30.2614679Z",
-          "WorkloadArea": "Identity and access",
-          "SubArea": "Directory management"
-        },
+
+      {
+        "ChangeList": [
+          {
+            "Id": "9f793143-536a-4f23-acc3-54c937fccbe6",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "unifiedrbacresourceaction",
+            "ChangeType": "Addition",
+            "Description": "Added the **authenticationContext** relationship to the [unifiedrbacresourceaction](https://learn.microsoft.com/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource.",
+            "Target": "unifiedrbacresourceaction"
+          },
+          {
+            "Id": "8486b1f7-22b2-425b-bae7-e08c4cb7146b",
+            "ApiChange": "Property",
+            "ChangedApiName": "unifiedRbacApplication",
+            "ChangeType": "Addition",
+            "Description": "Added the **authenticationContextId** property to [unifiedrbacresourceaction](https://learn.microsoft.com/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource.",
+            "Target": "unifiedrbacresourceaction"
+          },
+          {
+            "Id": "8d824497-c249-4bd9-be81-99c461a327c4",
+            "ApiChange": "Property",
+            "ChangedApiName": "isAuthenticationContextSettable",
+            "ChangeType": "Addition",
+            "Description": "Added the **isAuthenticationContextSettable** property to [unifiedrbacresourceaction](https://learn.microsoft.com/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource.",
+            "Target": "unifiedrbacresourceaction"
+          }
+        ],
+        "Id": "8ab6d6eb-b5cd-4ed9-a5db-8d3bfd29c834",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2023-04-25T12:47:30.2614679Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
