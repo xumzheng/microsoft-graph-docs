@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

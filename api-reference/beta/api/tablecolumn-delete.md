@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 <!-- {

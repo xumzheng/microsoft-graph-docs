@@ -78,7 +78,6 @@ DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db0
 
 ---
 
-
 ### Response
 
 <!-- {

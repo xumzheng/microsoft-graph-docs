@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/groups
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -232,7 +231,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response which includes only the requested properties.
@@ -330,7 +328,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -389,7 +386,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -450,7 +446,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -518,7 +513,6 @@ GET https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq false and sec
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -573,7 +567,6 @@ GET https://graph.microsoft.com/beta/groups?$select=id,assignedLicenses&$filter=
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/print/taskDefinitions/4c6a0f26-8e5d-4bf6
 
 ---
 
-
 ---
 
 ### Response

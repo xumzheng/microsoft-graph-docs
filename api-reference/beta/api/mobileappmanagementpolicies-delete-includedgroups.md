@@ -76,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab9
 
 ---
 
-
 ### Response
 
 <!-- {

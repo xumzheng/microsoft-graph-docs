@@ -20,6 +20,6 @@ $params = @{
 	)
 }
 
-Grant-MgSharesPermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
+Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 
 ```

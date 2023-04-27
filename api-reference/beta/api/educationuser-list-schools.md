@@ -83,7 +83,6 @@ GET https://graph.microsoft.com/beta/education/me/schools
 
 ---
 
-
 ##### Response
 
 The following is an example of the response.

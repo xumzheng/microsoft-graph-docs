@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

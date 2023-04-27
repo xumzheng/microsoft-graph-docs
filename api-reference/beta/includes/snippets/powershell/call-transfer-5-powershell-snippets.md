@@ -30,6 +30,6 @@ $params = @{
 	region = "region-value"
 }
 
-Move-MgBetaCommunicationsCall -CallId $callId -BodyParameter $params
+Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
 ```

@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserActivityStatistics -UserId $userId
+Get-MgBetaUserAnalyticActivitystatistic -UserId $userId
 
 ```

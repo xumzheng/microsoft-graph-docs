@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceTermOfUseAgreement -AgreementId $agreementId
+Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId
 
 ```

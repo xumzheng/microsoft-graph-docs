@@ -184,6 +184,7 @@ The request uses the `Prefer: odata.maxpagesize` header to limit the maximum num
 Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get a `@odata.deltaLink` in the response.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_delta_events"
@@ -193,6 +194,12 @@ GET https://graph.microsoft.com/beta/me/calendar/events/delta?startDateTime=2020
 
 Prefer: odata.maxpagesize=1
 ```
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-delta-events-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response

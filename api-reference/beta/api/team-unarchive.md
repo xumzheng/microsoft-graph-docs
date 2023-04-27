@@ -71,7 +71,6 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 
 ---
 
-
 #### Response
 The following is an example of a response.
 <!-- {

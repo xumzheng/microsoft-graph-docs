@@ -72,7 +72,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{u
 ---
 
 
-
 ### Response
 
 <!-- {

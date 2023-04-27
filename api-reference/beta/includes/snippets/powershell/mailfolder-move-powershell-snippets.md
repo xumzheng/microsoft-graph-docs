@@ -11,6 +11,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Move-MgBetaUsersMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+Move-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 
 ```

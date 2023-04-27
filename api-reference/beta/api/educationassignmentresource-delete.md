@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a85
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 

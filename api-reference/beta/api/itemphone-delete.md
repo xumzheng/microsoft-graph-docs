@@ -75,7 +75,6 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/phones/{itemPhone
 
 ---
 
-
 ### Response
 
 <!-- {

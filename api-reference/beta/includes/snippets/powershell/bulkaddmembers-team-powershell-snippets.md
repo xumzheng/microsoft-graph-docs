@@ -24,6 +24,6 @@ $params = @{
 	)
 }
 
-Add-MgBetaTeamsMember -TeamId $teamId -BodyParameter $params
+Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
 ```

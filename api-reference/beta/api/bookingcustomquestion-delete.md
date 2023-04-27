@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 
 ---
 
-
 ### Response
 
 <!-- {

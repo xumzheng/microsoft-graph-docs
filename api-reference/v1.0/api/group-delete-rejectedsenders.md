@@ -69,7 +69,6 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

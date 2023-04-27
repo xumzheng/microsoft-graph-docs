@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateI
 ---
 
 
-
 ---
 
 

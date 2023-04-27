@@ -112,7 +112,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -260,7 +259,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -323,7 +321,6 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAs
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

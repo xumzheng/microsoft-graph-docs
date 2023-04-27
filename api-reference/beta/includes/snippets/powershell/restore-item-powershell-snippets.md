@@ -13,6 +13,6 @@ $params = @{
 	name = "String"
 }
 
-Restore-MgBetaDrivesItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+Restore-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```

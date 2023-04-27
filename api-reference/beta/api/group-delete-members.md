@@ -80,7 +80,6 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 
 ---
 
-
 In the request, specify the identifier of the group and the identifier of the directory object you want to remove.
 
 #### Response

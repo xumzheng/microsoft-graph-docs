@@ -11,6 +11,6 @@ $params = @{
 	isViewingBeforeAcceptanceRequired = $true
 }
 
-Update-MgBetaIdentityGovernanceTermOfUseAgreement -AgreementId $agreementId -BodyParameter $params
+Update-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -BodyParameter $params
 
 ```

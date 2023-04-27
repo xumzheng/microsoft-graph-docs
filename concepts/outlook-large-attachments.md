@@ -130,7 +130,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following example response shows the **uploadSession** resource returned for the event.
 

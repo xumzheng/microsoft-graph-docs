@@ -73,7 +73,6 @@ POST https://graph.microsoft.com/beta/groups/{id}/renew
 
 ---
 
-
 ### Response
 
 <!-- {

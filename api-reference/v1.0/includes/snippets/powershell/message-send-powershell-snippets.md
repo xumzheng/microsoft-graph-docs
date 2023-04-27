@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 # A UPN can also be used as -UserId.
-Send-MgUsersMessage -UserId $userId -MessageId $messageId
+Send-MgUserMessage -UserId $userId -MessageId $messageId
 
 ```

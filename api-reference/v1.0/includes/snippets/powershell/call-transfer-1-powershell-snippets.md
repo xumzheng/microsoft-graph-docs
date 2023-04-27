@@ -18,6 +18,6 @@ $params = @{
 	}
 }
 
-Move-MgCommunicationsCall -CallId $callId -BodyParameter $params
+Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
 ```
