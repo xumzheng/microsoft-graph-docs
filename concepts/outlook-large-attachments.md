@@ -60,6 +60,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/walkthrough-create-uploadsession-message-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/walkthrough-create-uploadsession-message-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/walkthrough-create-uploadsession-message-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,6 +124,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/walkthrough-create-uploadsession-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/walkthrough-create-uploadsession-event-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/walkthrough-create-uploadsession-event-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,7 +137,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example response shows the **uploadSession** resource returned for the event.

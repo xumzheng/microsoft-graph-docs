@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	userId = "userId-value"
@@ -14,6 +14,6 @@ $params = @{
 	approvalDuration = "datetime-value"
 }
 
-New-MgBetaPrivilegedApproval -BodyParameter $params
+New-MgPrivilegedApproval -BodyParameter $params
 
 ```

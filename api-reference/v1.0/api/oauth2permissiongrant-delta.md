@@ -84,6 +84,14 @@ For details, see [Using delta query](/graph/delta-query-overview). For example r
 GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/delta
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/oauth2permissiongrant-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/oauth2permissiongrant-delta-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/oauth2permissiongrant-delta-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

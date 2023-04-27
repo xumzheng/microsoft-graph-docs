@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAssessmentRequest"
@@ -14,6 +14,6 @@ $params = @{
 	contentData = "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
 }
 
-New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
+New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
 
 ```

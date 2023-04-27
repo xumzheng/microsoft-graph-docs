@@ -70,12 +70,15 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-mobiledevicepolicies-includedgroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-mobiledevicepolicies-includedgroups-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/list-mobiledevicepolicies-includedgroups-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

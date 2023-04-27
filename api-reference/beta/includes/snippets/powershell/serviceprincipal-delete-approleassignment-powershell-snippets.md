@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Applications
+Import-Module Microsoft.Graph.Applications
 
-Remove-MgBetaServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -AppRoleAssignmentId $appRoleAssignmentId
+Remove-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -AppRoleAssignmentId $appRoleAssignmentId
 
 ```

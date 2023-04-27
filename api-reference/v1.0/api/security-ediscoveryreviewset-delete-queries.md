@@ -64,6 +64,10 @@ DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-ediscoveryreviewsetquery-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/delete-ediscoveryreviewsetquery-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/delete-ediscoveryreviewsetquery-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -73,7 +77,6 @@ DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

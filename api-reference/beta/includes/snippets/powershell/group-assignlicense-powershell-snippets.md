@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Groups
+Import-Module Microsoft.Graph.Groups
 
 $params = @{
 	addLicenses = @(
@@ -26,6 +26,6 @@ $params = @{
 	)
 }
 
-Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
+Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
 
 ```

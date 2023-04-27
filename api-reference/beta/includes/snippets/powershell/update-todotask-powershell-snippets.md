@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users
+Import-Module Microsoft.Graph.Users
 
 $params = @{
 	dueDateTime = @{
@@ -14,6 +14,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+Update-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
 
 ```

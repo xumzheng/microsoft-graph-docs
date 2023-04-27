@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Calendar
+Import-Module Microsoft.Graph.Calendar
 
-Get-MgBetaGroupEvent -GroupId $groupId
+Get-MgGroupEvent -GroupId $groupId
 
 ```

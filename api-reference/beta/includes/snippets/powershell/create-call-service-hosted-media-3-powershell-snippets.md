@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.CloudCommunications
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -46,6 +46,6 @@ $params = @{
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
-New-MgBetaCommunicationCall -BodyParameter $params
+New-MgCommunicationCall -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
 $params = @{
 	description = "Update basic properties and permission of application registrations"
@@ -19,6 +19,6 @@ $params = @{
 	)
 }
 
-Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
+Update-MgRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
 
 ```

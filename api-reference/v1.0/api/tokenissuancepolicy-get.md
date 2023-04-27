@@ -68,8 +68,8 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/policies/tokenIssuancepolicies/{id}
 ```
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-tokenissuancepolicy-powershell-snippets.md)]
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/get-tokenissuancepolicy-powershellv2-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [TypeScript](#tab/typescript)

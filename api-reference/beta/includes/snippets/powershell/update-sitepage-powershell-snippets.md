@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Sites
+Import-Module Microsoft.Graph.Sites
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.sitePage"
@@ -13,6 +13,6 @@ $params = @{
 	showRecommendedPages = $false
 }
 
-Update-MgBetaSitePage -SiteId $siteId -SitePageId $sitePageId -BodyParameter $params
+Update-MgSitePage -SiteId $siteId -SitePageId $sitePageId -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.People
+Import-Module Microsoft.Graph.People
 
 $params = @{
 	description = "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel."
@@ -15,6 +15,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgBetaUserProfilePatent -UserId $userId -BodyParameter $params
+New-MgUserProfilePatent -UserId $userId -BodyParameter $params
 
 ```

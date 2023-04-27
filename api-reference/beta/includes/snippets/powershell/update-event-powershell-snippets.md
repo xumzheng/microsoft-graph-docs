@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Calendar
+Import-Module Microsoft.Graph.Calendar
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
@@ -26,6 +26,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+Update-MgUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 
 ```

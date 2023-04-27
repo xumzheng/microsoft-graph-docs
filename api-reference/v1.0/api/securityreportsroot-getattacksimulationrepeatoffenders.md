@@ -62,6 +62,14 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationRepeatOffenders
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/securityreportsrootthisgetattacksimulationrepeatoffenders-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/securityreportsrootthisgetattacksimulationrepeatoffenders-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/securityreportsrootthisgetattacksimulationrepeatoffenders-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

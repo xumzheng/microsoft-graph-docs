@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Applications
+Import-Module Microsoft.Graph.Applications
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 
-Set-MgBetaApplicationConnectorGroupByRef -ApplicationId $applicationId -BodyParameter $params
+Set-MgApplicationConnectorGroupByRef -ApplicationId $applicationId -BodyParameter $params
 
 ```

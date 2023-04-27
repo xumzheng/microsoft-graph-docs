@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Calendar
+Import-Module Microsoft.Graph.Calendar
 
 # A UPN can also be used as -UserId.
-Remove-MgBetaUserEvent -UserId $userId -EventId $eventId
+Remove-MgUserEvent -UserId $userId -EventId $eventId
 
 ```

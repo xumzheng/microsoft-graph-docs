@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
 $params = @{
 	description = "An example custom role"
@@ -19,6 +19,6 @@ $params = @{
 	condition = "null"
 }
 
-New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
+New-MgRoleManagementCloudPcRoleDefinition -BodyParameter $params
 
 ```

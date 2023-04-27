@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.PersonalContacts
+Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
 	parentFolderId = "parentFolderId-value"
@@ -12,6 +12,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserContactFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
+Update-MgUserContactFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
 
 ```

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
+Import-Module Microsoft.Graph.DirectoryObjects
 
-Get-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
+Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
 
 ```

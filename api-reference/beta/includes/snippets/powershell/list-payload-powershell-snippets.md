@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Security
+Import-Module Microsoft.Graph.Security
 
-Get-MgBetaSecurityAttackSimulationPayload -Filter "source eq 'Tenant'" 
+Get-MgSecurityAttackSimulationPayload -Filter "source eq 'Tenant'" 
 
 ```

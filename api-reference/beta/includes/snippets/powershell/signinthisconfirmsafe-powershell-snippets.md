@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Reports
+Import-Module Microsoft.Graph.Reports
 
 $params = @{
 	requestIds = @(
@@ -14,6 +14,6 @@ $params = @{
 	)
 }
 
-Confirm-MgBetaAuditLogSignInSafe -BodyParameter $params
+Confirm-MgAuditLogSignInSafe -BodyParameter $params
 
 ```

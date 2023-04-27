@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true" 
+Get-MgPrivilegedRoleRoleAssignment -Filter "isElevated eq true" 
 
 ```

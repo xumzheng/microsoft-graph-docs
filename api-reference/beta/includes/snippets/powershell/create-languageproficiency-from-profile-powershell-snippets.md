@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.People
+Import-Module Microsoft.Graph.People
 
 $params = @{
 	displayName = "Norwegian Bokmål"
@@ -15,6 +15,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgBetaUserProfileLanguage -UserId $userId -BodyParameter $params
+New-MgUserProfileLanguage -UserId $userId -BodyParameter $params
 
 ```

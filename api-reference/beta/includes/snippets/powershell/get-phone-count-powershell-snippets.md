@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgBetaContact -Search '"displayName:wa"' -CountVariable CountVar -ConsistencyLevel eventual 
+Get-MgContact -Search '"displayName:wa"' -CountVariable CountVar -ConsistencyLevel eventual 
 
 
 ```

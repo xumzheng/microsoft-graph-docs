@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Applications
+Import-Module Microsoft.Graph.Applications
 
 $params = @{
 	name = "jobGroup"
@@ -14,6 +14,6 @@ $params = @{
 	)
 }
 
-New-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
+New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
 
 ```

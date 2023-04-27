@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Education
+Import-Module Microsoft.Graph.Education
 
 $params = @{
 	displayName = "Rogelio Cazares"
@@ -13,6 +13,6 @@ $params = @{
 	surname = "Cazares"
 }
 
-Update-MgBetaEducationUser -EducationUserId $educationUserId -BodyParameter $params
+Update-MgEducationUser -EducationUserId $educationUserId -BodyParameter $params
 
 ```

@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserAuthenticationMethod -UserId $userId
+Get-MgUserAuthenticationMethod -UserId $userId
 
 ```

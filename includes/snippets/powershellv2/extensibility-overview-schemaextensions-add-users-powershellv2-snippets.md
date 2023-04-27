@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershellv2
+
+Import-Module Microsoft.Graph.Beta.Users
+
+$params = @{
+	accountEnabled = $true
+	displayName = "Adele Vance"
+	mailNickname = "AdeleV"
+	userPrincipalName = "AdeleV@m365x72712789.onmicrosoft.com"
+	passwordProfile = @{
+		forceChangePasswordNextSignIn = $false
+		password = "xWwvJ]6NMw+bWH-d"
+	}
+}
+
+New-MgBetaUser -BodyParameter $params
+
+```

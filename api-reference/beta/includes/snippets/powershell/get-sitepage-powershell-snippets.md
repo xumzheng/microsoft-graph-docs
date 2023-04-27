@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Sites
+Import-Module Microsoft.Graph.Sites
 
-Get-MgBetaSitePage -SiteId $siteId -SitePageId $sitePageId -Property "id,title" -ExpandProperty "webparts" 
+Get-MgSitePage -SiteId $siteId -SitePageId $sitePageId -Property "id,title" -ExpandProperty "webparts" 
 
 ```

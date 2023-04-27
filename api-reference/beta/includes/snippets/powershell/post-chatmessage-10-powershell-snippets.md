@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	subject = $null
@@ -38,6 +38,6 @@ $params = @{
 	)
 }
 
-New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```

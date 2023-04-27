@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.PersonalContacts
+Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
 	emailAddresses = @(
@@ -23,6 +23,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
+Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
 
 ```

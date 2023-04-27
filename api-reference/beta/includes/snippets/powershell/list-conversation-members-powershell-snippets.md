@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Teams
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserChatMember -UserId $userId -ChatId $chatId
+Get-MgUserChatMember -UserId $userId -ChatId $chatId
 
 ```

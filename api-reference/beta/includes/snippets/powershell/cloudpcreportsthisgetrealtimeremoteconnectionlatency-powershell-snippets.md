@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+Import-Module Microsoft.Graph.DeviceManagement.Functions
 
-Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
+Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
 
 ```

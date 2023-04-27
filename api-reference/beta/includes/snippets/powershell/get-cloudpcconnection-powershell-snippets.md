@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.ManagedTenants
+Import-Module Microsoft.Graph.ManagedTenants
 
-Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection -CloudPcConnectionId $cloudPcConnectionId
+Get-MgTenantRelationshipManagedTenantCloudPcConnection -CloudPcConnectionId $cloudPcConnectionId
 
 ```

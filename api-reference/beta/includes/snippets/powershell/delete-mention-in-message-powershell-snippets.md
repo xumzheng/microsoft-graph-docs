@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Mail
+Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
-Remove-MgBetaUserMessageMention -UserId $userId -MessageId $messageId -MentionId $mentionId
+Remove-MgUserMessageMention -UserId $userId -MessageId $messageId -MentionId $mentionId
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Search
+Import-Module Microsoft.Graph.Search
 
 $params = @{
 	id = "31bea3d537902000"
@@ -12,6 +12,6 @@ $params = @{
 	description = "The product marketing team"
 }
 
-New-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -BodyParameter $params
+New-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -BodyParameter $params
 
 ```

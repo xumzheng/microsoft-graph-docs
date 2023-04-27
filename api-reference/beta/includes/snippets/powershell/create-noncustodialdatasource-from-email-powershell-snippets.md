@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Compliance
+Import-Module Microsoft.Graph.Compliance
 
 $params = @{
 	applyHoldToSource = $true
@@ -14,6 +14,6 @@ $params = @{
 	}
 }
 
-New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
+New-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
 
 ```

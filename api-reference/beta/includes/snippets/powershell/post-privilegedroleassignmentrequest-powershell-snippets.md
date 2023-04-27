@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	duration = "2"
@@ -19,6 +19,6 @@ $params = @{
 	roleId = "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 
-New-MgBetaPrivilegedRoleAssignmentRequest -BodyParameter $params
+New-MgPrivilegedRoleAssignmentRequest -BodyParameter $params
 
 ```

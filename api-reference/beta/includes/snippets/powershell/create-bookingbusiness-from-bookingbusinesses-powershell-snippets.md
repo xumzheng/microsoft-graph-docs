@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	displayName = "Fourth Coffee"
@@ -22,6 +22,6 @@ $params = @{
 	defaultCurrencyIso = "USD"
 }
 
-New-MgBetaBookingBusiness -BodyParameter $params
+New-MgBookingBusiness -BodyParameter $params
 
 ```

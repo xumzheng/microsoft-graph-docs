@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.ManagedTenants
+Import-Module Microsoft.Graph.ManagedTenants
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedTenants.tenantCustomizedInformation"
@@ -22,6 +22,6 @@ $params = @{
 	website = "String"
 }
 
-Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId -BodyParameter $params
+Update-MgTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId -BodyParameter $params
 
 ```

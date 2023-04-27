@@ -9,7 +9,7 @@ const graphServiceClient = GraphServiceClient.init({authProvider});
 
 
 async () => {
-	await graphServiceClient.identity.b2xUserFlowsById("b2xIdentityUserFlow-id").languagesById("userFlowLanguageConfiguration-id").overridesPagesById("userFlowLanguagePage-id").$value.delete();
+	await graphServiceClient.identity.b2cUserFlowsById("b2cIdentityUserFlow-id").languagesById("userFlowLanguageConfiguration-id").overridesPagesById("userFlowLanguagePage-id").$value.delete();
 }
 
 

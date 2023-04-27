@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users.Actions
+Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	securityEnabledOnly = $true
 }
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
+Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
 
 ```

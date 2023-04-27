@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.SchemaExtensions
+Import-Module Microsoft.Graph.SchemaExtensions
 
-Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'" 
+Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'" 
 
 ```

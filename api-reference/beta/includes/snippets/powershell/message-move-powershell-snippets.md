@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users.Actions
+Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	destinationId = "deleteditems"
 }
 
 # A UPN can also be used as -UserId.
-Move-MgBetaUsersMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+Move-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

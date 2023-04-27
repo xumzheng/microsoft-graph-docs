@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Confirm-MgBetaDomain -DomainId $domainId
+Confirm-MgDomain -DomainId $domainId
 
 ```

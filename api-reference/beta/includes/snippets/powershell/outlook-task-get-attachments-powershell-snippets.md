@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users
+Import-Module Microsoft.Graph.Users
 
-Get-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId
+Get-MgUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId
 
 ```

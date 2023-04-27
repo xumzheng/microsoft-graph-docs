@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Files
+Import-Module Microsoft.Graph.Files
 
 $params = @{
 	parentReference = @{
@@ -13,6 +13,6 @@ $params = @{
 	name = "Copy of LargeFolder1"
 }
 
-Copy-MgBetaDrivesItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+Copy-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```

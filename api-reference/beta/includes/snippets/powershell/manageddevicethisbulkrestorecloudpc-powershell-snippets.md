@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
 $params = @{
 	managedDeviceIds = @(
@@ -15,6 +15,6 @@ $params = @{
 	timeRange = "before"
 }
 
-Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc -BodyParameter $params
+Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc -BodyParameter $params
 
 ```

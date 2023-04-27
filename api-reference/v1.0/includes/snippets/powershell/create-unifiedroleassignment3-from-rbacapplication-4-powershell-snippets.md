@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
 $params = @{
 	principalId = "679a9213-c497-48a4-830a-8d3d25d94ddc"

@@ -45,6 +45,7 @@ If successful, this method returns a `204 No Content` response code and a respon
 ### Request
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationclass_from_educationschool_3",
@@ -53,6 +54,12 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001
 ```
+
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/create-educationclass-from-educationschool-3-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

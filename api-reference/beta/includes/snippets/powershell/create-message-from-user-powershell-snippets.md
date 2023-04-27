@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Mail
+Import-Module Microsoft.Graph.Mail
 
 $params = @{
 	subject = "Did you see last night's game?"
@@ -23,6 +23,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgBetaUserMessage -UserId $userId -BodyParameter $params
+New-MgUserMessage -UserId $userId -BodyParameter $params
 
 ```

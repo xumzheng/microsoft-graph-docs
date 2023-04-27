@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Groups
+Import-Module Microsoft.Graph.Groups
 
 $params = @{
 	topic = "New head count"
@@ -30,6 +30,6 @@ $params = @{
 	)
 }
 
-New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
+New-MgGroupConversation -GroupId $groupId -BodyParameter $params
 
 ```

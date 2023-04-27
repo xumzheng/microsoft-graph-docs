@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Groups
+Import-Module Microsoft.Graph.Groups
 
 $params = @{
 	description = "Marketing department folks"
@@ -20,6 +20,6 @@ $params = @{
 	membershipRuleProcessingState = "on"
 }
 
-New-MgBetaGroup -BodyParameter $params
+New-MgGroup -BodyParameter $params
 
 ```

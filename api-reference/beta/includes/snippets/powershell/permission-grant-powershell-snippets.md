@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Files
+Import-Module Microsoft.Graph.Files
 
 $params = @{
 	recipients = @(
@@ -20,6 +20,6 @@ $params = @{
 	)
 }
 
-Grant-MgBetaSharesPermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
+Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 
 ```

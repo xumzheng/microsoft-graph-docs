@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	notifyTeam = $true
@@ -12,6 +12,6 @@ $params = @{
 	endDateTime = [System.DateTime]::Parse("2018-10-15T00:00:00.000Z")
 }
 
-Invoke-MgBetaShareTeamSchedule -TeamId $teamId -BodyParameter $params
+Invoke-MgShareTeamSchedule -TeamId $teamId -BodyParameter $params
 
 ```

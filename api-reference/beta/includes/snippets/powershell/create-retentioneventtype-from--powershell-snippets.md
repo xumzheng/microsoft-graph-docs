@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Security
+Import-Module Microsoft.Graph.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEventType"
@@ -15,6 +15,6 @@ $params = @{
 	}
 }
 
-New-MgBetaSecurityTriggerTypeRetentionEventType -BodyParameter $params
+New-MgSecurityTriggerTypeRetentionEventType -BodyParameter $params
 
 ```

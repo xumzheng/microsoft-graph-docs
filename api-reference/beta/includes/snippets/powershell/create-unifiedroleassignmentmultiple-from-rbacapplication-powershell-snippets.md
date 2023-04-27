@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignmentMultiple"
@@ -20,6 +20,6 @@ $params = @{
 	)
 }
 
-New-MgBetaRoleManagementDeviceManagementRoleAssignment -BodyParameter $params
+New-MgRoleManagementDeviceManagementRoleAssignment -BodyParameter $params
 
 ```

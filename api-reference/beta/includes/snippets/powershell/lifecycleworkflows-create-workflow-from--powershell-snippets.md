@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	category = "joiner"
@@ -21,7 +21,7 @@ $params = @{
 		trigger = @{
 			"@odata.type" = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger"
 			timeBasedAttribute = "employeeHireDate"
-			offsetInDays = 
+			offsetInDays = 0
 		}
 	}
 	tasks = @(
@@ -46,6 +46,6 @@ $params = @{
 	)
 }
 
-New-MgBetaIdentityGovernanceLifecycleWorkflow -BodyParameter $params
+New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter $params
 
 ```

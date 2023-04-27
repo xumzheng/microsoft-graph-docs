@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId $userId
+Get-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId
 
 ```

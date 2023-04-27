@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Applications
+Import-Module Microsoft.Graph.Applications
 
-Get-MgBetaApplication -Search '"displayName:Web"' -CountVariable CountVar -Property "appId,identifierUris,displayName,publisherDomain,signInAudience" -ConsistencyLevel eventual 
+Get-MgApplication -Search '"displayName:Web"' -CountVariable CountVar -Property "appId,identifierUris,displayName,publisherDomain,signInAudience" -ConsistencyLevel eventual 
 
 
 ```

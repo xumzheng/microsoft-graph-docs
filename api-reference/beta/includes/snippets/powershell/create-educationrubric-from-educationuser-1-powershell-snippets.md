@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Education
+Import-Module Microsoft.Graph.Education
 
 $params = @{
 	displayName = "Example Credit Rubric"
@@ -72,6 +72,6 @@ $params = @{
 	)
 }
 
-New-MgBetaEducationMeRubric -BodyParameter $params
+New-MgEducationMeRubric -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Security
+Import-Module Microsoft.Graph.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlThreatSubmission"
@@ -12,6 +12,6 @@ $params = @{
 	webUrl = "http://phishing.contoso.com"
 }
 
-New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter $params
+New-MgSecurityThreatSubmissionUrlThreat -BodyParameter $params
 
 ```

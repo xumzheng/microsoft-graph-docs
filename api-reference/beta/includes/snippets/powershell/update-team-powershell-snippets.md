@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	isMembershipLimitedToOwners = $true
@@ -24,6 +24,6 @@ $params = @{
 	}
 }
 
-Update-MgBetaTeam -TeamId $teamId -BodyParameter $params
+Update-MgTeam -TeamId $teamId -BodyParameter $params
 
 ```

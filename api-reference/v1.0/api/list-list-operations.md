@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-richlongrunningoperation-forsite-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/list-richlongrunningoperation-forsite-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/list-richlongrunningoperation-forsite-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,7 +82,6 @@ GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

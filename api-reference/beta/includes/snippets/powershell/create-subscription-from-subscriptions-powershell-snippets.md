@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.ChangeNotifications
+Import-Module Microsoft.Graph.ChangeNotifications
 
 $params = @{
 	changeType = "created"
@@ -15,6 +15,6 @@ $params = @{
 	latestSupportedTlsVersion = "v1_2"
 }
 
-New-MgBetaSubscription -BodyParameter $params
+New-MgSubscription -BodyParameter $params
 
 ```

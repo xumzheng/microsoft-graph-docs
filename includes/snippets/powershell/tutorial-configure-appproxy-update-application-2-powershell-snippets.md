@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Applications
+Import-Module Microsoft.Graph.Applications
 
 $params = @{
 	onPremisesPublishing = @{
@@ -21,6 +21,6 @@ $params = @{
 	}
 }
 
-Update-MgBetaApplication -ApplicationId $applicationId -BodyParameter $params
+Update-MgApplication -ApplicationId $applicationId -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Compliance
+Import-Module Microsoft.Graph.Compliance
 
 $params = @{
 	displayName = "My Case 1 - Renamed"
@@ -12,6 +12,6 @@ $params = @{
 	externalId = "Updated externalId"
 }
 
-Update-MgBetaComplianceEdiscoveryCase -CaseId $caseId -BodyParameter $params
+Update-MgComplianceEdiscoveryCase -CaseId $caseId -BodyParameter $params
 
 ```

@@ -94,6 +94,7 @@ If successful, this action returns a `200 OK` response code and an [informationP
 The following is an example of a request.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sensitivitylabelthis.evaluateclassificationresults",
@@ -125,6 +126,12 @@ User-agent: ContosoLOBApp/1.0
     ]
 }
 ```
+
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/sensitivitylabelthisevaluateclassificationresults-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 

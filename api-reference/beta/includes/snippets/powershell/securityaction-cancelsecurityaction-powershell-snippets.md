@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Security
+Import-Module Microsoft.Graph.Security
 
-Stop-MgBetaSecurityAction -SecurityActionId $securityActionId
+Stop-MgSecurityAction -SecurityActionId $securityActionId
 
 ```

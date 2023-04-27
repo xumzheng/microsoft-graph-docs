@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	phoneNumber = "+1 2065555555"
@@ -12,6 +12,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgBetaUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
+New-MgUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
 
 ```

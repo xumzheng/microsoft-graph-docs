@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Search
+Import-Module Microsoft.Graph.Search
 
 $params = @{
 	displayName = "Contoso Install Site"
@@ -23,6 +23,6 @@ $params = @{
 	state = "published"
 }
 
-New-MgBetaSearchBookmark -BodyParameter $params
+New-MgSearchBookmark -BodyParameter $params
 
 ```

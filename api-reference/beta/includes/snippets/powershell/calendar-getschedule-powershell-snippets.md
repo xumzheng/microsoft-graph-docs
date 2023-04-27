@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users.Actions
+Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	schedules = @(
@@ -23,6 +23,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
+Get-MgUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
 
 ```

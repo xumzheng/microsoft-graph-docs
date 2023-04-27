@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users.Actions
+Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	currentPassword = "xWwvJ]6NMw+bWH-d"
@@ -12,6 +12,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserPassword -UserId $userId -BodyParameter $params
+Update-MgUserPassword -UserId $userId -BodyParameter $params
 
 ```

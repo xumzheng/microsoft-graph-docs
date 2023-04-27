@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.People
+Import-Module Microsoft.Graph.People
 
 $params = @{
 	description = "One persons journey to the top of the branding management field."
@@ -16,6 +16,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgBetaUserProfilePublication -UserId $userId -BodyParameter $params
+New-MgUserProfilePublication -UserId $userId -BodyParameter $params
 
 ```

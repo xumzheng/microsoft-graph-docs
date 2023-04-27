@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Applications
+Import-Module Microsoft.Graph.Applications
 
 $params = @{
 	passwordCredential = @{
@@ -12,6 +12,6 @@ $params = @{
 	}
 }
 
-Add-MgBetaApplicationPassword -ApplicationId $applicationId -BodyParameter $params
+Add-MgApplicationPassword -ApplicationId $applicationId -BodyParameter $params
 
 ```

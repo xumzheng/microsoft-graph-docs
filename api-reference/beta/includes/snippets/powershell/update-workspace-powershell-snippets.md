@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Calendar
+Import-Module Microsoft.Graph.Calendar
 
 $params = @{
 	"@odata.type" = "microsoft.graph.workspace"
 	nickname = "Conf Room"
 	building = "1"
 	label = "100"
-	capacity = 
+	capacity = 50
 	isWheelChairAccessible = $false
 }
 
-Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
 ```

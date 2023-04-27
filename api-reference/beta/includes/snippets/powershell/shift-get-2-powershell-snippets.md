@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users
+Import-Module Microsoft.Graph.Users
 
-Get-MgBetaUserSettingShiftPreference -UserId $userId
+Get-MgUserSettingShiftPreference -UserId $userId
 
 ```

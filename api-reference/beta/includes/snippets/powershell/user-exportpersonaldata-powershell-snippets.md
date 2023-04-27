@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users.Actions
+Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	storageLocation = "storageLocation-value"
 }
 
-Export-MgBetaUserPersonalData -UserId $userId -BodyParameter $params
+Export-MgUserPersonalData -UserId $userId -BodyParameter $params
 
 ```

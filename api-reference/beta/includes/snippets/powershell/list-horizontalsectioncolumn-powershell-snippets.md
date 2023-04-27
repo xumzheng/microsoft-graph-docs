@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Sites
+Import-Module Microsoft.Graph.Sites
 
-Get-MgBetaSitePageCanvaLayoutHorizontalSectionColumn -SiteId $siteId -SitePageId $sitePageId -HorizontalSectionId $horizontalSectionId
+Get-MgSitePageCanvaLayoutHorizontalSectionColumn -SiteId $siteId -SitePageId $sitePageId -HorizontalSectionId $horizontalSectionId
 
 ```

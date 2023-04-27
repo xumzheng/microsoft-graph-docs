@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.People
+Import-Module Microsoft.Graph.People
 
 $params = @{
 	certificationId = "KB-1235466333663322"
@@ -15,6 +15,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgBetaUserProfileCertification -UserId $userId -BodyParameter $params
+New-MgUserProfileCertification -UserId $userId -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Security
+Import-Module Microsoft.Graph.Security
 
 $params = @{
 	additionalInformation = "additionalInformation-after-update"
@@ -12,6 +12,6 @@ $params = @{
 	description = "description-after-update"
 }
 
-Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
+Update-MgSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
 
 ```

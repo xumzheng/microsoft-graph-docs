@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	displayName = "extension-policy"
@@ -38,6 +38,6 @@ $params = @{
 	)
 }
 
-New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
+New-MgEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Search
+Import-Module Microsoft.Graph.Search
 
 $params = @{
 	displayName = "Global Country Holidays"
@@ -38,6 +38,6 @@ $params = @{
 	state = "published"
 }
 
-New-MgBetaSearchQna -BodyParameter $params
+New-MgSearchQna -BodyParameter $params
 
 ```

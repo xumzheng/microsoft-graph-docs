@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Teams
 
-Get-MgBetaAppCatalogTeamApp -Filter "distributionMethod eq 'organization'" 
+Get-MgAppCatalogTeamApp -Filter "distributionMethod eq 'organization'" 
 
 ```

@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 # A UPN can also be used as -UserId.
-Disable-MgUserAuthenticationPhoneMethodSmSignIn -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
+Disable-MgUserAuthenticationPhoneMethodSmSign -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
 
 ```

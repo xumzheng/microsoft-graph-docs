@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Compliance
+Import-Module Microsoft.Graph.Compliance
 
-Remove-MgBetaComplianceEdiscoveryCase -CaseId $caseId
+Remove-MgComplianceEdiscoveryCase -CaseId $caseId
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
+Import-Module Microsoft.Graph.DirectoryObjects
 
 $params = @{
 	groupIds = @(
@@ -16,6 +16,6 @@ $params = @{
 	)
 }
 
-Confirm-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+Confirm-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
 ```

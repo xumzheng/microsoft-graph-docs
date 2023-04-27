@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Teams
 
-Remove-MgBetaTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId
+Remove-MgTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId
 
 ```

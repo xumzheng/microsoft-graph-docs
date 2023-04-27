@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
@@ -14,6 +14,6 @@ $params = @{
 	clientSecret = "000000000000"
 }
 
-New-MgBetaIdentityProvider -BodyParameter $params
+New-MgIdentityProvider -BodyParameter $params
 
 ```

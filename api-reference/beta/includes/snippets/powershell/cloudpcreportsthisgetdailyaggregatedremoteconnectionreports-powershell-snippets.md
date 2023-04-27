@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
 $params = @{
 	filter = "CloudPcId eq '5db15afe-025d-4f1b-b43a-d0554b63ffff' and RoundTripTimeInMsP50 lt 100 and EventDateTime gt 2022-06-01 "
@@ -23,6 +23,6 @@ $params = @{
 	top = "25"
 }
 
-Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport -BodyParameter $params
+Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.CloudCommunications
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	ids = @(
@@ -13,6 +13,6 @@ $params = @{
 	)
 }
 
-Get-MgBetaCommunicationPresenceByUserId -BodyParameter $params
+Get-MgCommunicationPresenceByUserId -BodyParameter $params
 
 ```

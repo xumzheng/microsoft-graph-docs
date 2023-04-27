@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.ChangeNotifications
+Import-Module Microsoft.Graph.ChangeNotifications
 
-Get-MgBetaSubscription
+Get-MgSubscription
 
 ```

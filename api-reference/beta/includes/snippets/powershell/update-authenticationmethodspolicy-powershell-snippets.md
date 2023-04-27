@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	registrationEnforcement = @{
@@ -24,6 +24,6 @@ $params = @{
 	}
 }
 
-Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
+Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
 
 ```

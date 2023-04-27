@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Mail
+Import-Module Microsoft.Graph.Mail
 
 $params = @{
 	classifyAs = "focused"
@@ -15,6 +15,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgBetaUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
+New-MgUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
 
 ```

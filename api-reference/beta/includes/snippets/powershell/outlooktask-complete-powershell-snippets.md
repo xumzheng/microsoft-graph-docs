@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users.Actions
+Import-Module Microsoft.Graph.Users.Actions
 
 # A UPN can also be used as -UserId.
-Complete-MgBetaUsersOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
+Complete-MgUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 
 ```

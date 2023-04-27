@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/beta/teamsTemplates('educationClass')"
@@ -12,6 +12,6 @@ $params = @{
 	description = "My Class Team’s Description"
 }
 
-New-MgBetaTeam -BodyParameter $params
+New-MgTeam -BodyParameter $params
 
 ```

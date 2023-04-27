@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
 	membershipType = "Dynamic"
@@ -12,6 +12,6 @@ $params = @{
 	membershipRuleProcessingState = "On"
 }
 
-Update-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+Update-MgAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
 
 ```

@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime={start_
 Prefer: odata.maxpagesize=2
 ```
 
+# [PowerShellV2](#tab/powershellv2)
+[!INCLUDE [sample-code](../includes/snippets/powershellv2/event-delta-powershellv2-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Cli](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/event-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

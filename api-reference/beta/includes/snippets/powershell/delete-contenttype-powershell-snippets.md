@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Sites
+Import-Module Microsoft.Graph.Sites
 
-Remove-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
+Remove-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 
 ```

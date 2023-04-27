@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.PersonalContacts
+Import-Module Microsoft.Graph.PersonalContacts
 
 # A UPN can also be used as -UserId.
-Remove-MgBetaUserContact -UserId $userId -ContactId $contactId
+Remove-MgUserContact -UserId $userId -ContactId $contactId
 
 ```

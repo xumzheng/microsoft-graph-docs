@@ -1,0 +1,9 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershellv2
+
+UnsupportedSDKPath:POST /compliance/ediscovery/cases/{case-id}/reviewSets/{reviewSet-id}/queries/{reviewSetQuery-id}/ediscovery.applyTags
+
+```

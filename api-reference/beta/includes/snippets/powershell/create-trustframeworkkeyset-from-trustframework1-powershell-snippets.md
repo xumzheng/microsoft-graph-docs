@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	id = "keyset1"
 }
 
-New-MgBetaTrustFrameworkKeySet -BodyParameter $params
+New-MgTrustFrameworkKeySet -BodyParameter $params
 
 ```

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Bookings
 
-Get-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId
+Get-MgBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId
 
 ```

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.CloudCommunications
+Import-Module Microsoft.Graph.CloudCommunications
 
-Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
 
 ```

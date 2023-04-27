@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users
+Import-Module Microsoft.Graph.Users
 
 $params = @{
 	isEnabled = "false"
 }
 
-Update-MgBetaUserSettingItemInsight -UserId $userId -BodyParameter $params
+Update-MgUserSettingItemInsight -UserId $userId -BodyParameter $params
 
 ```
