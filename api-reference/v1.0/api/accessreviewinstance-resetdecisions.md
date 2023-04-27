@@ -71,7 +71,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

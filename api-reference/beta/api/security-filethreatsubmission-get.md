@@ -74,7 +74,6 @@ GET https://graph.microsoft.com/beta/security/threatSubmission/fileThreats/{file
 ---
 
 
-
 ### Response
 The following is an example of the response.
 

@@ -21,6 +21,6 @@ $params = @{
 	)
 }
 
-New-MgBetaIdentityGovernanceTermOfUseAgreement -BodyParameter $params
+New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
 
 ```

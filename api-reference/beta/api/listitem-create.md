@@ -68,7 +68,6 @@ Content-Type: application/json
 
 ---
 
-
 ## Response
 
 If successful, this method returns a [listItem][] in the response body for the created list item.

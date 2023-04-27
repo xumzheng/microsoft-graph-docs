@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

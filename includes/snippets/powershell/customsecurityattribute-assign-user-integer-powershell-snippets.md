@@ -11,7 +11,7 @@ $params = @{
 		Engineering = @{
 			"@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
 			"NumVendors@odata.type" = "#Int32"
-			NumVendors = 
+			NumVendors = 4
 		}
 	}
 }

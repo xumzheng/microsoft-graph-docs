@@ -10,7 +10,7 @@ $params = @{
 	"@odata.type" = "#microsoft.graph.educationPointsOutcome"
 	points = @{
 		"@odata.type" = "#microsoft.graph.educationAssignmentPointsGrade"
-		points = 
+		points = 85.0
 	}
 }
 

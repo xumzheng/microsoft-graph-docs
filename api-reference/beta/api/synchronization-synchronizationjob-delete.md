@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/j
 
 ---
 
-
 ##### Response
 The following is an example of the response. 
 

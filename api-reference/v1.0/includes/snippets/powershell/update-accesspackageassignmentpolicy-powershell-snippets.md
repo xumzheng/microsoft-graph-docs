@@ -40,7 +40,7 @@ $params = @{
 				primaryApprovers = @(
 					@{
 						"@odata.type" = "#microsoft.graph.requestorManager"
-						managerLevel = 
+						managerLevel = 1
 					}
 				)
 				fallbackPrimaryApprovers = @(

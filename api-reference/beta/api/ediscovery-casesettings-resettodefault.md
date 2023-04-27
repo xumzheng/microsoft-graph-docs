@@ -72,7 +72,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 
 ---
 
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

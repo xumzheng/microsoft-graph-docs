@@ -94,7 +94,6 @@ Content-length: 70
 ---
 
 
-
 ### Response
 
 The following is an example of the response.

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Update-MgBetaTeamsInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
+Update-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
 
 ```

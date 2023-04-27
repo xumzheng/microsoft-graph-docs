@@ -83,7 +83,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation with the **@odata.id** of a [user](../resources/user.md) or [servicePrincipal](../resources/user.md) object to be added.
 
 ### Response

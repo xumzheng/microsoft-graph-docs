@@ -11,6 +11,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Stop-MgBetaUsersEvent -UserId $userId -EventId $eventId -BodyParameter $params
+Stop-MgBetaUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 
 ```

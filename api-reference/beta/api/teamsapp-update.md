@@ -90,6 +90,7 @@ If successful, this method returns a `204 No Content` response code.
 
 <!-- markdownlint-disable MD034 -->
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -101,6 +102,12 @@ Content-type: application/zip
 
 [Zip file containing a Teams app package]
 ```
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-teamsapp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

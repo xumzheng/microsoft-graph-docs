@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response

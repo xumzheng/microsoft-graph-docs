@@ -82,7 +82,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/servicePla
 
 ---
 
-
 ### Response
 
 <!-- {

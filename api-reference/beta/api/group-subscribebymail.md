@@ -74,7 +74,6 @@ POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

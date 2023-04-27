@@ -36,6 +36,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+Get-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
 
 ```

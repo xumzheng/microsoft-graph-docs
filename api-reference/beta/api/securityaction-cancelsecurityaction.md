@@ -75,7 +75,6 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

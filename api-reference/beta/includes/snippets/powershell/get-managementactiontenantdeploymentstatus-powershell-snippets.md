@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 
-Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatuses -ManagementActionTenantDeploymentStatusId $managementActionTenantDeploymentStatusId
+Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus -ManagementActionTenantDeploymentStatusId $managementActionTenantDeploymentStatusId
 
 ```

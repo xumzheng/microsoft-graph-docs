@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

@@ -79,7 +79,6 @@ DELETE https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -11,6 +11,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Copy-MgBetaUsersMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+Copy-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

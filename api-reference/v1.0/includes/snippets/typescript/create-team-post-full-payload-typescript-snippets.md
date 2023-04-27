@@ -77,6 +77,9 @@ const requestBody : Team = {
 		allowTeamMentions : true,
 		allowChannelMentions : true,
 	},
+	discoverySettings : {
+		showInTeamsSearchAndSuggestions : true,
+	},
 	installedApps : [
 		{
 			additionalData : {
@@ -90,10 +93,7 @@ const requestBody : Team = {
 		},
 	],
 	additionalData : {
-		"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-		discoverySettings : {
-			showInTeamsSearchAndSuggestions : true,
-		},
+		"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')",
 	},
 };
 

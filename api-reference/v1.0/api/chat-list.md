@@ -387,7 +387,6 @@ GET https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview/createdDa
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

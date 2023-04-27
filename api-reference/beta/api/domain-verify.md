@@ -80,7 +80,6 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 
 ---
 
-
 ##### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {

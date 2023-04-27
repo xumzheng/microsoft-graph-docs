@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 ---
 
 
-
 ### Response
 <!-- {
   "blockType": "response",

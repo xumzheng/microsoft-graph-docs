@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 # A UPN can also be used as -UserId.
-Complete-MgBetaUsersOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
+Complete-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 
 ```

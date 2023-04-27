@@ -21,6 +21,6 @@ $params = @{
 	}
 }
 
-Move-MgBetaCommunicationsCall -CallId $callId -BodyParameter $params
+Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
 ```

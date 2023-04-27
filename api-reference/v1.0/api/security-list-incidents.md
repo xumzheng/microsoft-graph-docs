@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/v1.0/security/incidents
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -173,7 +172,6 @@ GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

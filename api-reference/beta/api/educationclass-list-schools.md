@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/education/classes/11014/schools
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

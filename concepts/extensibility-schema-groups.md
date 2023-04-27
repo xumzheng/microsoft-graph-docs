@@ -307,7 +307,6 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId 
 
 ---
 
-
 ### Response
 
 <!-- {

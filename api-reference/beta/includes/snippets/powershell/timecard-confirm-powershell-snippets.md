@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Confirm-MgBetaTeamsScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
+Confirm-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
 
 ```

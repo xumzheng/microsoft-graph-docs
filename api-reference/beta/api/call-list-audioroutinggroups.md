@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

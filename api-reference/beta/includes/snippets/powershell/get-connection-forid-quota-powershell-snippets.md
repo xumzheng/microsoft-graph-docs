@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Search
 
-Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId
+Invoke-MgBetaGetquotaExternalConnection -ExternalConnectionId $externalConnectionId
 
 ```

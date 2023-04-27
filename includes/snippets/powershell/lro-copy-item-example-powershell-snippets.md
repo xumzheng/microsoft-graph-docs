@@ -13,6 +13,6 @@ $params = @{
 	name = "Copy of LargeFolder1"
 }
 
-Copy-MgBetaDrivesItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```

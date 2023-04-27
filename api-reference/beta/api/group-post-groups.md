@@ -132,7 +132,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
@@ -233,7 +232,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -346,7 +344,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
