@@ -31,6 +31,7 @@ This alert evidence base type and its derived evidence types provide a means to 
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`.|
 |remediationStatusDetails|String|Details about the remediation status.|
 |roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role "Attacker".|
+|detailedRoles|String collection|Detailed description of the entity role/s in an alert. Values are free-form.|
 |tags|String collection|Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.|
 |verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
@@ -119,6 +120,9 @@ The following is a JSON representation of the resource.
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
   "roles": [
+    "String"
+  ],
+  "detailedRoles": [
     "String"
   ],
   "tags": [

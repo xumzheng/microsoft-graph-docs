@@ -26,6 +26,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |registryValue|String|Data of the registry value that the recorded action was applied to.|
 |registryValueName|String|Name of the registry value that the recorded action was applied to.|
 |registryValueType|String|Data type, such as binary or string, of the registry value that the recorded action was applied to.|
+|mdeDeviceId|String|A unique identifier assigned to a device by Microsoft Defender for Endpoint.|
 
 ## Relationships
 None.
@@ -47,6 +48,9 @@ The following is a JSON representation of the resource.
   "roles": [
     "String"
   ],
+  "detailedRoles": [
+    "String"
+  ],
   "tags": [
     "String"
   ],
@@ -54,6 +58,7 @@ The following is a JSON representation of the resource.
   "registryHive": "String",
   "registryValue": "String",
   "registryValueName": "String",
-  "registryValueType": "String"
+  "registryValueType": "String",
+  "mdeDeviceId": "String"
 }
 ```
