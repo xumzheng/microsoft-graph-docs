@@ -111,10 +111,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-skillproficiency-from-profile-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-skillproficiency-from-profile-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
