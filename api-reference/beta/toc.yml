@@ -16991,6 +16991,13 @@ items:
               href: api/onlinemeeting-list-transcripts.md
             - name: Get
               href: api/calltranscript-get.md
+          - name: Call recoding (preview)
+            href: resources/recording.md
+            items:
+            - name: List
+              href: api/onlinemeeting-list-recordings.md
+            - name: Get
+              href: api/callrecording-get.md
           - name: External meeting registration (preview)
             href: resources/externalmeetingregistration.md
             items:
