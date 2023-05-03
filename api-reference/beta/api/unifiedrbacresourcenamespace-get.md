@@ -85,10 +85,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 [!INCLUDE [sample-code](../includes/snippets/php/get-unifiedrbacresourcenamespace-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedrbacresourcenamespace-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
