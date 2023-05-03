@@ -1,5 +1,5 @@
 ---
-title: "approval resource type"
+title: "PIM for groups approval resource type"
 description: "The approval object associated with an assignmentApprovals."
 ms.localizationpriority: medium
 author: "ilyal"

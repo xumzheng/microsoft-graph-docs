@@ -1,5 +1,5 @@
 ---
-title: "approvalStep resource type"
+title: "PIM for groups approvalStep resource type"
 description: "The approvalStep object associated with an assignmentApprovals."
 ms.localizationpriority: medium
 author: "ilyal"
