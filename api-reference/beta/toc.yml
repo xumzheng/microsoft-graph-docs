@@ -12950,6 +12950,22 @@ items:
               href: api/policyroot-list-rolemanagementpolicyassignments.md
             - name: Get
               href: api/unifiedrolemanagementpolicyassignment-get.md
+          - name: PIM for groups assignment approval
+            items:
+            - name: Approval
+              href: resources/pim-for-groups-approval.md
+            - name: Get
+              href: api/pim-for-groups-approval-get.md
+            - name: Approval step
+              items:
+              - name: Approval Step
+                href: resources/pim-for-groups-approvalstep.md
+              - name: List
+                href: api/pim-for-groups-approval-list-steps.md
+              - name: Get
+                href: api/pim-for-groups-approvalstep-get.md
+              - name: Update
+                href: api/pim-for-groups-approvalstep-update.md
         - name: Privileged Identity Management v2
           items:
           - name: Privileged Identity Management
