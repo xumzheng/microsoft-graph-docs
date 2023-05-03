@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

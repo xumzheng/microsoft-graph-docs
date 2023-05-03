@@ -308,7 +308,6 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

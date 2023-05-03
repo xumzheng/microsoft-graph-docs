@@ -83,7 +83,6 @@ Content-length: 35
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

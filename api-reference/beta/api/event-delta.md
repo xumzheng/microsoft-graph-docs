@@ -201,7 +201,6 @@ Prefer: odata.maxpagesize=1
 
 ---
 
-
 #### Response
 
 If the request is successful, the response includes a state token, which is either a _skipToken_

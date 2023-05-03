@@ -308,7 +308,6 @@ GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 
 ---
 
-
 #### Response
 
 <!-- {

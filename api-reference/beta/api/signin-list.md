@@ -393,7 +393,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventType
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 

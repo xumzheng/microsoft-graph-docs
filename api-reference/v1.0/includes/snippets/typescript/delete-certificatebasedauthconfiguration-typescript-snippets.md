@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 const graphServiceClient = GraphServiceClient.init({authProvider});
 
 
-async () => {
+const result = async () => {
 	await graphServiceClient.organizationById("organization-id").certificateBasedAuthConfigurationById("certificateBasedAuthConfiguration-id").delete();
 }
 

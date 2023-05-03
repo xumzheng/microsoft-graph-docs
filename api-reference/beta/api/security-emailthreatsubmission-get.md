@@ -73,7 +73,6 @@ GET https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/{ema
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

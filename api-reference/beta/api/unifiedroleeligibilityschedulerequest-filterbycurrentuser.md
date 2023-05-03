@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilitySch
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

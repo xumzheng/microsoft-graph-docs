@@ -72,7 +72,6 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/contentTypes/
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

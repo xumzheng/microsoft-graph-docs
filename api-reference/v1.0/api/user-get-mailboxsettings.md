@@ -121,7 +121,6 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 
 ---
 
-
 #### Response
 The response includes all the mailbox settings of the signed-in user.
 Note: The response object shown here might be shortened for readability.

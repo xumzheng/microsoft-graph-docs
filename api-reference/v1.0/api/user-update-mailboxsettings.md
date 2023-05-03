@@ -123,7 +123,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 The response includes the updated settings for automatic replies. Note: The response object shown here might be shortened for readability.
 <!-- {

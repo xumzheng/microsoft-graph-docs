@@ -69,7 +69,6 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSch
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

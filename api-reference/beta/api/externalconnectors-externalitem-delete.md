@@ -83,7 +83,6 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 <!-- markdownlint-enable MD024 -->

@@ -72,7 +72,6 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionId}
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

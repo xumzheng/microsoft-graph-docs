@@ -436,7 +436,6 @@ GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/mailbox
 
 ---
 
-
 <!-- {
   "blockType": "response",
   "name": "get_mailboxsettings_owner",
@@ -521,7 +520,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- {
   "blockType": "response",

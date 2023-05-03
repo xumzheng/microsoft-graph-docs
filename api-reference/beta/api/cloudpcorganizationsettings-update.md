@@ -91,7 +91,6 @@ Content-length: 127
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",
