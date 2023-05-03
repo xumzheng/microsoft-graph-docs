@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
-# approvalStep resource type
+# PIM for groups  resource type
 
 Namespace: microsoft.graph
 

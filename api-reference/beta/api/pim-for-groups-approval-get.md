@@ -1,13 +1,13 @@
 ---
 title: "Get PIM for groups approval"
-description: "Retrieve the properties of an approval object."
+description: "Retrieve the properties of an PIM for groups approval object."
 ms.localizationpriority: medium
 author: "ilyal"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Get approval
+# Get PIM for groups approval
 
 Namespace: microsoft.graph
 

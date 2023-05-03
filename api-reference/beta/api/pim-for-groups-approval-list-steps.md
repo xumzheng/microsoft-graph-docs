@@ -1,13 +1,13 @@
 ---
-title: "List approvalSteps"
-description: "List approval steps associated with an approval object."
+title: "List PIM for groups approvalSteps"
+description: "List approval steps associated with an PIM for groups approval object."
 ms.localizationpriority: medium
 author: "ilyal"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# List approvalSteps
+# List PIM for groups approvalSteps
 
 Namespace: microsoft.graph
 

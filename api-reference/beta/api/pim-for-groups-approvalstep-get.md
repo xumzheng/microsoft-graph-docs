@@ -1,13 +1,13 @@
 ---
 title: "Get PIM for groups approvalStep"
-description: "Retrieve the properties of an approvalStep object."
+description: "Retrieve the properties of an PIM for groups approvalStep object."
 ms.localizationpriority: medium
 author: "ilyal"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Get approvalStep
+# Get PIM for groups approvalStep
 
 Namespace: microsoft.graph
 

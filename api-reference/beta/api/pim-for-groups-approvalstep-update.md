@@ -1,13 +1,13 @@
 ---
 title: "Update PIM for groups approvalStep"
-description: "Apply approve or deny decision on an approvalStep object."
+description: "Apply approve or deny decision on an PIM for groups approvalStep object."
 ms.localizationpriority: medium
 author: "ilyal"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Update approvalStep
+# Update PIM for groups approvalStep
 
 Namespace: microsoft.graph
 
