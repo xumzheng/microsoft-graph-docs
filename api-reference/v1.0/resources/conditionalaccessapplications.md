@@ -44,8 +44,8 @@ The following is a JSON representation of the resource.
 {
   "excludeApplications": ["String"],
   "includeApplications": ["String"],
-  "includeUserActions": ["String"],
-  "includeAuthenticationContextClassReferences":["String"]
+  "includeAuthenticationContextClassReferences":["String"],
+  "includeUserActions": ["String"]
 }
 ```
 
