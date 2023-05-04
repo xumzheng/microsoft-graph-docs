@@ -12,7 +12,7 @@ const requestBody : TenantSearchPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.tenantRelationships.managedTenants.tenantGroups.managedTenantsTenantSearch.post(requestBody);
+	await graphServiceClient.tenantRelationships.managedTenants.tenantGroups.microsoftGraphManagedTenantsTenantSearch.post(requestBody);
 }
 
 

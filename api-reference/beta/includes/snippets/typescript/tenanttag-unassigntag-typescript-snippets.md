@@ -14,7 +14,7 @@ const requestBody : UnassignTagPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.tenantRelationships.managedTenants.tenantTagsById("tenantTag-id").managedTenantsUnassignTag.post(requestBody);
+	await graphServiceClient.tenantRelationships.managedTenants.tenantTagsById("tenantTag-id").microsoftGraphManagedTenantsUnassignTag.post(requestBody);
 }
 
 

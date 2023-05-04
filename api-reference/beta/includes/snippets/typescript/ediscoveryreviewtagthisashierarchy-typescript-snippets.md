@@ -9,7 +9,7 @@ const graphServiceClient = GraphServiceClient.init({authProvider});
 
 
 const result = async () => {
-	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").tagsById("ediscoveryReviewTag-id").get();
+	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").tags.microsoftGraphSecurityAsHierarchy().get();
 }
 
 

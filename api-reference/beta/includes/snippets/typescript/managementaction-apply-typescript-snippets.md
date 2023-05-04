@@ -14,7 +14,7 @@ const requestBody : ApplyPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.tenantRelationships.managedTenants.managementActionsById("managementAction-id").managedTenantsApply.post(requestBody);
+	await graphServiceClient.tenantRelationships.managedTenants.managementActionsById("managementAction-id").microsoftGraphManagedTenantsApply.post(requestBody);
 }
 
 

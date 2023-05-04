@@ -18,7 +18,7 @@ const requestBody : EnrollAssetsByIdPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.admin.windows.updates.updatableAssets.windowsUpdatesEnrollAssetsById.post(requestBody);
+	await graphServiceClient.admin.windows.updates.updatableAssets.microsoftGraphWindowsUpdatesEnrollAssetsById.post(requestBody);
 }
 
 

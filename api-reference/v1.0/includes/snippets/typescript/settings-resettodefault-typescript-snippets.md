@@ -9,7 +9,7 @@ const graphServiceClient = GraphServiceClient.init({authProvider});
 
 
 const result = async () => {
-	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").settings.securityResetToDefault.post();
+	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").settings.microsoftGraphSecurityResetToDefault.post();
 }
 
 
