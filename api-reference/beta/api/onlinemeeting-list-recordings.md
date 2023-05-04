@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Retrieve the list of [callrecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
-> **Notes:** 
+> **Notes:**
 > - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
-> - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+> - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | OnlineMeetingTranscript.Read.All |
+|Delegated (work or school account) | OnlineMeetingRecording.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | OnlineMeetingTranscript.Read.All |
+|Application |  OnlineMeetingRecording.Read.All  |
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -36,7 +36,6 @@ To use application permission for this API, tenant administrators must create an
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings({meetingId})/recordings
 GET /users({userId})/onlineMeetings({meetingId})/recordings
@@ -72,14 +71,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_callTranscripts",
-  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ"]
-}
--->
+
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/recordings
+GET  https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/onlineMeetings/MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy/recordings/
 ```
 
 ---
@@ -88,33 +82,15 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 > **Note:** The response object shown here might be shortened for readability.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.callTranscript)"
-}
--->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/recordings",
-    "@odata.count": 3,
-    "@odata.nextLink": "https://graph.microsoft.com/beta/users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/recordings?$skiptoken=MSMjMCMjMjAyMS0wOS0xNlQxMzo1OToyNy4xMjEwMzgzWg%3d%3d",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings",
+    "@odata.count": 1,
     "value": [
         {
-            "id": "MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh",
-            "createdDateTime": "2021-09-17T06:09:24.8968037Z"
-        },
-        {
-            "id": "MSMjMCMjMzAxNjNhYTctNWRmZi00MjM3LTg5MGQtNWJhYWZjZTZhNWYw",
-            "createdDateTime": "2021-09-16T18:58:58.6760692Z"
-        },
-        {
-            "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
-            "createdDateTime": "2021-09-16T18:56:00.9038309Z"
-        }        
+            "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
+            "createdDateTime": "2023-04-10T08:13:17.5990966Z"
+        }
     ]
 }
 ```

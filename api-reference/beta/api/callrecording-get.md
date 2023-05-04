@@ -18,6 +18,7 @@ Retrieve a [callRecording](../resources/callrecording.md) object associated with
 Retrieving the recording returns the metadata of the single recording associated with the online meeting. Retrieving the content of the recording returns the stream of text associated with the recording.
 
 > **Notes:** 
+>
 > - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 > - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
@@ -37,8 +38,6 @@ To use application permission for this API, tenant administrators must create an
 > This API works for a meeting only if the meeting has not expired. For more details, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
 
 Get a single recording of an online meeting.
 
@@ -79,7 +78,7 @@ If successful, this method returns a `200 OK` response code and a [callRecording
 # [HTTP](#tab/http)
 
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/recordings/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4
+GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/onlineMeetings/MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy/recordings/7e31db25-bc6e-4fd8-96c7-e01264e9b6fc
 ```
 
 ---
@@ -88,20 +87,14 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 > **Note:** The response object shown here might be shortened for readability.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.callrecording"
-}
--->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/recordings/$entity",
-    "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
-    "createdDateTime": "2021-09-17T06:09:24.8968037Z"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/$entity",
+    "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
+    "createdDateTime": "2023-04-10T08:13:17.5990966Z"
 }
 ```
 
@@ -109,28 +102,19 @@ Content-type: application/json
 #### Request
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_callrecording_content",
-  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
-}
--->
+
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/recordings/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/onlineMeetings/MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy/recordings/7e31db25-bc6e-4fd8-96c7-e01264e9b6fc/content
 ```
 
 ---
 
 #### Response
 
-Response contains bytes for the recording in the body. `content-type` header specifies type of the recording content. Negative offsets indicate that the recordingion began while the conversation was ongoing.
+Response contains bytes for the recording in the body. `content-type` header specifies type of the recording content. Negative offsets indicate that the recording on began while the conversation was ongoing.
 
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-}
+
 -->
 ```http
 HTTP/1.1 200 OK
@@ -140,150 +124,4 @@ WEBVTT
 
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a recording test.</v>
-```
-
-### Example 3: Get a callRecording content specifying $format query param
-#### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_callRecording_content_format",
-  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/recordings/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
-```
-
----
-
-#### Response
-
-Response contains bytes for the recording in the body. `content-type` header specifies type of the recording content.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-}
--->
-```http
-HTTP/1.1 200 OK
-Content-type: text/vtt
-
-WEBVTT
-
-0:0:0.0 --> 0:0:5.320
-<v User Name>This is a recording test.</v>
-```
-
-### Example 4: Get a callRecording content specifying Accept header
-
->**Note:** The docx format and `Accept` header will be deprecated starting May 31, 2023.
-
-#### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_callRecording_content_Accept",
-  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/recordings/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
-Accept: application/vnd.openxmlformats-officedocument.wordprocessingml.document
-```
-
----
-
-#### Response
-
-Response contains bytes for the recording in the body. `Content-Type` header specifies type of the recording content.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-}
--->
-```http
-HTTP/1.1 200 OK
-Content-type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
-
-0:0:0.0 --> 0:0:5.320
-User Name
-This is a recording test.
-```
-### Example 5: Get a callRecording content with $format getting precedence over the Accept header
-
->**Note:** The docx format and `$format` query parameter will be deprecated starting May 31, 2023.
-
-#### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_callrecording_content_format_precedence",
-  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/recordings/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
-Accept: application/vnd.openxmlformats-officedocument.wordprocessingml.document
-```
-
----
-
-#### Response
-
-Response contains bytes for the recording in the body. `Content-Type` header specifies type of the recording content.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-}
--->
-```http
-HTTP/1.1 200 OK
-Content-type: text/vtt
-
-WEBVTT
-
-0:0:0.0 --> 0:0:5.320
-<v User Name>This is a recording test.</v>
-```
-
-### Example 6: Get a callRecording metadataContent
-#### Request
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_callRecording_metadatacontent"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/recordings/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
-```
-
----
-
-#### Response
-> **Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-}
--->
-```http
-HTTP/1.1 200 OK
-Content-type: text/vtt
-
-WEBVTT
-
-00:00:16.246 --> 00:00:17.726
-{"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
 ```
