@@ -69,9 +69,6 @@ If successful, this method returns a `200 OK` response code and a [callRecording
 
 ## Examples
 
-> [!NOTE]
-> The docx format for recordings will be deprecated starting May 31, 2023.
-
 ### Example 1: Get a callRecording
 #### Request
 
