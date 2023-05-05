@@ -17,7 +17,7 @@ const requestBody : AddToReviewSetPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.compliance.ediscovery.casesById("case-id").reviewSetsById("reviewSet-id").ediscoveryAddToReviewSet.post(requestBody);
+	await graphServiceClient.compliance.ediscovery.casesById("case-id").reviewSetsById("reviewSet-id").microsoftGraphEdiscoveryAddToReviewSet.post(requestBody);
 }
 
 

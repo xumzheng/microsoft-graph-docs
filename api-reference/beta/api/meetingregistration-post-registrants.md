@@ -75,6 +75,7 @@ The following example shows how to enroll a signed-in registrant with the regist
 #### Request
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add-registratrant-user",
@@ -102,6 +103,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/add-registratrant-user-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
@@ -137,6 +144,7 @@ The following example shows how to enroll an anonymous registrant with applicati
 #### Request
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add-registratrant-app",
@@ -164,6 +172,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/add-registratrant-app-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response

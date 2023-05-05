@@ -51,7 +51,7 @@ const requestBody : CreateNewVersionPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.identityGovernance.lifecycleWorkflows.workflowsById("workflow-id").identityGovernanceCreateNewVersion.post(requestBody);
+	await graphServiceClient.identityGovernance.lifecycleWorkflows.workflowsById("workflow-id").microsoftGraphIdentityGovernanceCreateNewVersion.post(requestBody);
 }
 
 

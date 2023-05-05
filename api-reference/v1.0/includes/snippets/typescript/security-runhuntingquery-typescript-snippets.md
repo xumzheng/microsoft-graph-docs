@@ -12,7 +12,7 @@ const requestBody : RunHuntingQueryPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.security.securityRunHuntingQuery.post(requestBody);
+	await graphServiceClient.security.microsoftGraphSecurityRunHuntingQuery.post(requestBody);
 }
 
 

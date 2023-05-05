@@ -15,7 +15,7 @@ const requestBody : ExportPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.compliance.ediscovery.casesById("case-id").reviewSetsById("reviewSet-id").ediscoveryExport.post(requestBody);
+	await graphServiceClient.compliance.ediscovery.casesById("case-id").reviewSetsById("reviewSet-id").microsoftGraphEdiscoveryExport.post(requestBody);
 }
 
 

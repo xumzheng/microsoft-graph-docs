@@ -15,7 +15,7 @@ const requestBody : RemoveHoldPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").custodians.securityRemoveHold.post(requestBody);
+	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").custodians.microsoftGraphSecurityRemoveHold.post(requestBody);
 }
 
 
