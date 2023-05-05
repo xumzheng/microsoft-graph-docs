@@ -28,7 +28,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->privilegedRolesById('privilegedRole-id')->settings()->put($requestBody);
+$graphServiceClient->privilegedRoles()->byPrivilegedRoleId('privilegedRole-id')->settings()->put($requestBody);
 
 
 ```

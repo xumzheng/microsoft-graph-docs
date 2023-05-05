@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Connections/Item/Items/Item/ExternalConnectorsAddActivities"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Connections/Item/Items/Item/MicrosoftGraphExternalConnectorsAddActivities"
 	  //other-imports
 )
 
@@ -30,7 +30,7 @@ activities := []graphmodels.ExternalActivityable {
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").ExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").MicrosoftGraphExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

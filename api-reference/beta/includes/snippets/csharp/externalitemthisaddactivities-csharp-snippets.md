@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Connections.Item.Items.Item.ExternalConnectorsAddActivities.AddActivitiesPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Connections.Item.Items.Item.MicrosoftGraphExternalConnectorsAddActivities.AddActivitiesPostRequestBody
 {
 	Activities = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivity>
 	{
@@ -18,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Connections.Item.Items.Item.ExternalC
 		},
 	},
 };
-var result = await graphClient.Connections["{externalConnection-id}"].Items["{externalItem-id}"].ExternalConnectorsAddActivities.PostAsync(requestBody);
+var result = await graphClient.Connections["{externalConnection-id}"].Items["{externalItem-id}"].MicrosoftGraphExternalConnectorsAddActivities.PostAsync(requestBody);
 
 
 ```

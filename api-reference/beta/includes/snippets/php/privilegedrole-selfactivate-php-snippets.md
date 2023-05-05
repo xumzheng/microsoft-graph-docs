@@ -20,7 +20,7 @@ $requestBody->setTicketSystem('ticketSystem-value');
 
 
 
-$result = $graphServiceClient->privilegedRolesById('privilegedRole-id')->selfActivate()->post($requestBody);
+$result = $graphServiceClient->privilegedRoles()->byPrivilegedRoleId('privilegedRole-id')->selfActivate()->post($requestBody);
 
 
 ```
