@@ -2,6 +2,32 @@
     "changelog": [
         {
             "ChangeList": [
+                {                    
+                    "Id": "6da2fd0e-369d-45d1-9dd0-ca3efc9cc978",
+                    "ApiChange": "EntityType",
+                    "ChangedApiName": "cloudPcActionStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcActionStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcactionstatus?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcActionStatus"
+                },
+                {
+                    "Id": "6da2fd0e-369d-45d1-9dd0-ca3efc9cc978",
+                    "ApiChange": "NavigationProperty",
+                    "ChangedApiName": "actionStatuses",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **actionStatuses** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "6da2fd0e-369d-45d1-9dd0-ca3efc9cc978",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-05T07:45:15.1242441Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                 {
                     "Id": "7f706f6a-ee66-49b5-9325-f55149f952ac",
                     "ApiChange": "Property",

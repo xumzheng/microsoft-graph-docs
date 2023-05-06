@@ -10591,6 +10591,13 @@ items:
             href: api/cloudpc-troubleshoot.md
           - name: Retry partner agent installation
             href: api/cloudpc-retrypartneragentinstallation.md
+        - name: Cloud PC action status
+          href: resources/cloudpcactionstatus.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-cloudpcactionstatuses.md
+          - name: Get
+            href: api/cloudpcactionstatus-get.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:
