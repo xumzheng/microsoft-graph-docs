@@ -86,7 +86,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/$metadata#cloudPcActionStatuses"",    
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/$metadata#cloudPcActionStatuses",    
     "@odata.count": 377,
     "@odate.nextLink": "https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/actionStatuses?$count=true&top=200&$skip=200",
     "value": [
@@ -142,8 +142,7 @@ Content-Type: application/json
             "actionState": "done",
             "requestDateTime": "2020-07-25T08:10:57Z",
             "lastUpdatedDateTime": "2020-07-25T08:29:57Z"
-        },
-        ...
+        }
     ]
 }
 ```
