@@ -42,15 +42,15 @@ To use application permission for this API, tenant administrators must create an
 Get a single recording of an online meeting.
 
 ```http
-GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
-GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
+GET /me/onlineMeetings/{meetingId}/recordings/recording/{Id}
+GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{Id}
 ```
 
 Get the content of a single recording of an online meeting.
 
 ```http
-GET me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
-GET users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
+GET me/onlineMeetings/{meetingId}/recordings/{Id}/content
+GET users/{userId}/onlineMeetings/{meetingId}/recordings/{Id}/content
 ```
 
 ## Request headers

@@ -50,7 +50,6 @@ This method supports the `$skipToken` and `$top` [OData query parameters](/graph
 | Pattern                | Supported | Syntax                                 | Notes |
 | ---------------------- | ------- | -------------------------------------- | ----- |
 | Server-side pagination |     ✓     | `@odata.nextLink`                      | You will get a continuation token in the response, when a result set spans multiple pages. |
-| Page limit             |     ✓     | `/recordings?$top=20` |  |
 
 ## Request headers
 

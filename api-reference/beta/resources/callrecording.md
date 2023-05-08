@@ -35,12 +35,6 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 
 The following is a JSON representation of the resource.
 
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.callRecording"
-}-->
-
 ```json
 {
   "content": "stream",
