@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```typescript
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+const graphServiceClient = GraphServiceClient.init({authProvider});
+
+const requestBody : CreateUploadSessionPostRequestBody = {
+	properties : {
+		documentName : "TestFile.pdf",
+		contentType : "application/pdf",
+		size : 4533322,
+	},
+};
+
+const result = async () => {
+	await graphServiceClient.print.printersById("printer-id").jobsById("printJob-id").documentsById("printDocument-id").createUploadSession.post(requestBody);
+}
+
+
+```

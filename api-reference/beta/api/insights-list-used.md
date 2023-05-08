@@ -115,6 +115,7 @@ For more details, see [customize insights privacy](/graph/insights-customize-ite
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mymodifieddocuments"
@@ -123,6 +124,12 @@ For more details, see [customize insights privacy](/graph/insights-customize-ite
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/used
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-mymodifieddocuments-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
@@ -171,6 +178,7 @@ Content-type: application/json
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mymodifiedandvieweddocuments"
@@ -179,6 +187,12 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-mymodifiedandvieweddocuments-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response

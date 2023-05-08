@@ -81,7 +81,7 @@ const requestBody : EvaluateApplicationPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.usersById("user-id").security.informationProtection.sensitivityLabels.securityEvaluateApplication.post(requestBody, configuration);
+	await graphServiceClient.usersById("user-id").security.informationProtection.sensitivityLabels.microsoftGraphSecurityEvaluateApplication.post(requestBody, configuration);
 }
 
 

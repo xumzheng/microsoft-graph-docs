@@ -35,7 +35,7 @@ const requestBody : UpdateAudiencePostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.admin.windows.updates.deploymentsById("deployment-id").audience.windowsUpdatesUpdateAudience.post(requestBody);
+	await graphServiceClient.admin.windows.updates.deploymentsById("deployment-id").audience.microsoftGraphWindowsUpdatesUpdateAudience.post(requestBody);
 }
 
 

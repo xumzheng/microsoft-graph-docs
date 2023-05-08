@@ -17,7 +17,7 @@ const requestBody : AddMembersPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.admin.windows.updates.updatableAssetsById("updatableAsset-id").windowsUpdatesAddMembers.post(requestBody);
+	await graphServiceClient.admin.windows.updates.updatableAssetsById("updatableAsset-id").microsoftGraphWindowsUpdatesAddMembers.post(requestBody);
 }
 
 

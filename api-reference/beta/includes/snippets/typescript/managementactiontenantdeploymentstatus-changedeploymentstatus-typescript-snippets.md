@@ -16,7 +16,7 @@ const requestBody : ChangeDeploymentStatusPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.tenantRelationships.managedTenants.managementActionTenantDeploymentStatuses.managedTenantsChangeDeploymentStatus.post(requestBody);
+	await graphServiceClient.tenantRelationships.managedTenants.managementActionTenantDeploymentStatuses.microsoftGraphManagedTenantsChangeDeploymentStatus.post(requestBody);
 }
 
 

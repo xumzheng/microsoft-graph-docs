@@ -9,7 +9,7 @@ const graphServiceClient = GraphServiceClient.init({authProvider});
 
 
 const result = async () => {
-	await graphServiceClient.tenantRelationships.managedTenants.tenantsById("tenant-id").managedTenantsOffboardTenant.post();
+	await graphServiceClient.tenantRelationships.managedTenants.tenantsById("tenant-id").microsoftGraphManagedTenantsOffboardTenant.post();
 }
 
 

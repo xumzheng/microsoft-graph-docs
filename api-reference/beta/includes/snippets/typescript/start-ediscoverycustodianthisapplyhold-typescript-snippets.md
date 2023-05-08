@@ -15,7 +15,7 @@ const requestBody : ApplyHoldPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").custodians.securityApplyHold.post(requestBody);
+	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").custodians.microsoftGraphSecurityApplyHold.post(requestBody);
 }
 
 

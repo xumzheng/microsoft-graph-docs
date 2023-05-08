@@ -59,7 +59,7 @@ const requestBody : EvaluateRemovalPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.usersById("user-id").security.informationProtection.sensitivityLabels.securityEvaluateRemoval.post(requestBody, configuration);
+	await graphServiceClient.usersById("user-id").security.informationProtection.sensitivityLabels.microsoftGraphSecurityEvaluateRemoval.post(requestBody, configuration);
 }
 
 

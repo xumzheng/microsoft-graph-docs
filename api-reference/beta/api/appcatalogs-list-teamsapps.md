@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 
 #### Response

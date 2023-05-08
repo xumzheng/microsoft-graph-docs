@@ -53,7 +53,7 @@ const requestBody : ExtractContentLabelPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.usersById("user-id").security.informationProtection.sensitivityLabels.securityExtractContentLabel.post(requestBody, configuration);
+	await graphServiceClient.usersById("user-id").security.informationProtection.sensitivityLabels.microsoftGraphSecurityExtractContentLabel.post(requestBody, configuration);
 }
 
 
