@@ -45,12 +45,6 @@ GET /users({userId})/onlineMeetings({meetingId})/recordings
 
 This method supports the `$skipToken` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
-### Supported query patterns
-
-| Pattern                | Supported | Syntax                                 | Notes |
-| ---------------------- | ------- | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      | You will get a continuation token in the response, when a result set spans multiple pages. |
-
 ## Request headers
 
 | Header       | Value |

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
-> **Notes:** 
+> **Notes:**
 > - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 > - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
@@ -45,13 +45,6 @@ GET /users({userId})/onlineMeetings({meetingId})/transcripts
 ## Optional query parameters
 
 This method supports the `$skipToken` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
-
-### Supported query patterns
-
-| Pattern                | Supported | Syntax                                 | Notes |
-| ---------------------- | ------- | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      | You will get a continuation token in the response, when a result set spans multiple pages. |
-| Page limit             |     ✓     | `/transcripts?$top=20` | Get transcripts with page size 20. Default page limit is 10. Max page limit is 100. |
 
 ## Request headers
 

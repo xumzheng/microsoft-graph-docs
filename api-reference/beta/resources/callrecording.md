@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Represents a recording associated with an [online meeting](onlinemeeting.md).
 
 ## Methods
+
 |  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
 |[List callRecordings](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of recordings associated to an online meeting.| 
@@ -28,18 +29,15 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 | content| Stream| A field that represents the content of the recording. Read-only.|
 | createdDateTime| DateTimeOffset|  Date and time at which the recording was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id| String| The unique identifier for the recording. Read-only.|
-| metadataContent| Stream| A field that represents the time-aligned metadata of the utterances in the recording. Read-only.|
-
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following is a JSON representation of the resource.m
 
 ```json
 {
   "content": "stream",
   "createdDateTime": "dateTimeOffset",  
-  "id": "string (identifier)",
-  "metadataContent": "stream"
+  "id": "string (identifier)"
 }
 ```

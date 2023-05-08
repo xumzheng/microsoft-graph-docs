@@ -135,6 +135,10 @@ Content-type: application/json
 ```
 
 ### Example 2: Get a callTranscript content
+
+> [!NOTE]
+> In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+
 #### Request
 
 # [HTTP](#tab/http)

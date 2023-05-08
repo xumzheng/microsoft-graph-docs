@@ -17,7 +17,7 @@ Retrieve a [callRecording](../resources/callrecording.md) object associated with
 
 Retrieving the recording returns the metadata of the single recording associated with the online meeting. Retrieving the content of the recording returns the stream of text associated with the recording.
 
-> **Notes:** 
+> **Notes:**
 >
 > - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 > - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
@@ -42,15 +42,15 @@ To use application permission for this API, tenant administrators must create an
 Get a single recording of an online meeting.
 
 ```http
-GET /me/onlineMeetings/{meetingId}/recordings/recording/{Id}
-GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{Id}
+GET /me/onlineMeetings/{meetingId}/recordings/recording/{recordingId}
+GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
 ```
 
 Get the content of a single recording of an online meeting.
 
 ```http
-GET me/onlineMeetings/{meetingId}/recordings/{Id}/content
-GET users/{userId}/onlineMeetings/{meetingId}/recordings/{Id}/content
+GET me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
+GET users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 ```
 
 ## Request headers
@@ -96,6 +96,10 @@ Content-type: application/json
 ```
 
 ### Example 2: Get a callRecording content
+
+> [!NOTE]
+> In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+
 #### Request
 
 # [HTTP](#tab/http)
