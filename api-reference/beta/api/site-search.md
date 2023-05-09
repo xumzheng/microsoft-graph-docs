@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/beta/sites?search={query}
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-permission-that-match-query-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-permission-that-match-query-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

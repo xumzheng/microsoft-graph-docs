@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-conversations-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-conversations-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

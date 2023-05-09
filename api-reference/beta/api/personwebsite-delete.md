@@ -69,10 +69,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/websites/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-personwebsite-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/delete-personwebsite-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

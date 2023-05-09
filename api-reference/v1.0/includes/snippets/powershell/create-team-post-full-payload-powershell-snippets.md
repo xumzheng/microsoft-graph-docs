@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Teams
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	"template@odata.bind" = "https://graph.microsoft.com/beta/teamsTemplates('standard')"
+	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 	visibility = "Private"
 	displayName = "Sample Engineering Team"
 	description = "This is a sample engineering team, used to showcase the range of properties supported by this API"
@@ -73,9 +73,6 @@ $params = @{
 		allowTeamMentions = $true
 		allowChannelMentions = $true
 	}
-	discoverySettings = @{
-		showInTeamsSearchAndSuggestions = $true
-	}
 	installedApps = @(
 		@{
 			"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
@@ -86,6 +83,6 @@ $params = @{
 	)
 }
 
-New-MgBetaTeam -BodyParameter $params
+New-MgTeam -BodyParameter $params
 
 ```

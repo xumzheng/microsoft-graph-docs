@@ -70,10 +70,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceI
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-deviceimages-from-virtualendpoint-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/delete-deviceimages-from-virtualendpoint-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

@@ -67,8 +67,8 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/identityprovider-availableprovidertypes-in-directory-typescript-snippets.md)]
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-in-directory-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcD
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcdevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-cloudpcdevice-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

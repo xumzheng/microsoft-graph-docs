@@ -73,10 +73,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-incompatiblegroup-to-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/add-incompatiblegroup-to-accesspackage-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

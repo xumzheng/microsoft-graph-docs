@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/security/incidents/2972395
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-incident-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-incident-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

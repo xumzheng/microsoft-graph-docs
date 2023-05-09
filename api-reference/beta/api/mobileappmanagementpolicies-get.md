@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90ba
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-mobilitymanagementpolicy-forid-app-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-mobilitymanagementpolicy-forid-app-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

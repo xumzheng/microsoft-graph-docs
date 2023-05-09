@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-tiindicator-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-tiindicator-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

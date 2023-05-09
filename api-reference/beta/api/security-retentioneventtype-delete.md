@@ -65,10 +65,6 @@ DELETE https://graph.microsoft.com/beta/security/triggerTypes/retentionEventType
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-retentioneventtype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/delete-retentioneventtype-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

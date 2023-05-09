@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/teamwork/deletedTeams
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-deletedteam-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-deletedteam-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

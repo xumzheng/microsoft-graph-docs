@@ -70,10 +70,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sou
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-sourcecollection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/delete-sourcecollection-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

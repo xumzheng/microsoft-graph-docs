@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-retentioneventtype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-retentioneventtype-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

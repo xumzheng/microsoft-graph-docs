@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c557
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-updatableassetgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-updatableassetgroup-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

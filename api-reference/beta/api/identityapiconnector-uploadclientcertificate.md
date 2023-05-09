@@ -85,10 +85,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/identityapiconnector-uploadclientcertificate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/identityapiconnector-uploadclientcertificate-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

@@ -68,10 +68,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-webaccount-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/delete-webaccount-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

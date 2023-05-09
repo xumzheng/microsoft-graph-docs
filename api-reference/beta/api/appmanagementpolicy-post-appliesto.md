@@ -76,10 +76,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/applicationsappmanagementpolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/applicationsappmanagementpolicies-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -104,7 +100,6 @@ The following is an example of the request to assign an appManagementPolicy to a
 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals_appManagementPolicy"
@@ -117,16 +112,6 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolici
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 ```
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/serviceprincipals-appmanagementpolicy-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 

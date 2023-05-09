@@ -72,10 +72,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-privilegedapproval-from-privilegedapproval-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/create-privilegedapproval-from-privilegedapproval-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.

@@ -68,10 +68,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationalactivity-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/delete-educationalactivity-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

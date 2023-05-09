@@ -68,10 +68,6 @@ X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpccrosscloudgovernmentorganizationmapping-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-cloudpccrosscloudgovernmentorganizationmapping-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

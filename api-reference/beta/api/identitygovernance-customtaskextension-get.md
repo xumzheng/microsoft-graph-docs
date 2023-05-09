@@ -79,10 +79,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/custo
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-customtaskextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/lifecycleworkflows-get-customtaskextension-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

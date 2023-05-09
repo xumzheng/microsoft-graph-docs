@@ -44,10 +44,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/lro-copy-item-example-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/lro-copy-item-example-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 The API responds that the action was accepted and the URL for retrieving the status of the long running action.

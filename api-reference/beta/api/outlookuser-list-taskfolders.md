@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-taskfolders-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-taskfolders-2-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response

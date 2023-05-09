@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationsigninsummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-applicationsigninsummary-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

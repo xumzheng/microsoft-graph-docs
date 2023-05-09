@@ -108,10 +108,6 @@ Content-type: application/zip
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-teamsapp-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-teamsapp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 <!-- markdownlint-disable MD024 -->

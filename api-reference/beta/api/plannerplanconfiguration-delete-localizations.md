@@ -79,10 +79,6 @@ DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-plannerplanconfigurationlocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/delete-plannerplanconfigurationlocalization-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

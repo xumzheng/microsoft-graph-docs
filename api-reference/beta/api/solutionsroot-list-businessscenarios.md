@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-businessscenario-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-businessscenario-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

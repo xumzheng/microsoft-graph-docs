@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/beta/teamwork/devices
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamworkdevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-teamworkdevice-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

@@ -68,10 +68,6 @@ DELETE https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af1
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-openshift-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/delete-openshift-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

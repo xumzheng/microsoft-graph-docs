@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/m
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-operationalinsightsconnection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-operationalinsightsconnection-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

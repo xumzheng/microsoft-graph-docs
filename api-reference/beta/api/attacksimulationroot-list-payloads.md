@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-payload-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-payload-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

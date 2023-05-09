@@ -62,8 +62,8 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOrgani
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/organizationSettings
 ```
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/get-cloudpcorganizationsettings-typescript-snippets.md)]
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcorganizationsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

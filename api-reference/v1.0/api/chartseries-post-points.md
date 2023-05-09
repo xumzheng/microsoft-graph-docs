@@ -45,7 +45,6 @@ If successful, this method returns `201 Created` response code and [ChartPoints]
 ##### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chartpoints_from_chartseries"
@@ -57,16 +56,6 @@ Content-type: application/json
 {
 }
 ```
-
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/create-chartpoints-from-chartseries-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Cli](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-chartpoints-from-chartseries-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.
 

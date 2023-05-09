@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/?$fil
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-azureaddevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [TypeScript](#tab/typescript)
-[!INCLUDE [sample-code](../includes/snippets/typescript/list-azureaddevice-typescript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
