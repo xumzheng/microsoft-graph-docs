@@ -81,6 +81,10 @@ Content-type: application/json
 }
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

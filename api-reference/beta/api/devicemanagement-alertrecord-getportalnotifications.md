@@ -66,6 +66,10 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/getPortalNotifications
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/alertrecordthisgetportalnotifications-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/alertrecordthisgetportalnotifications-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

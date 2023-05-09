@@ -42,6 +42,7 @@ In the request body, supply a JSON representation of the [sitePage](../resources
 
 The following example shows how to create a new page.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -139,6 +140,16 @@ Content-Type: application/json
   }
 }
 ```
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-page-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/create-page-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ## Response

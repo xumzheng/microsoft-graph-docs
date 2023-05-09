@@ -183,7 +183,7 @@ GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 ```
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chat-withmembers-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [TypeScript](#tab/typescript)

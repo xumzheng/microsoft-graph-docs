@@ -83,6 +83,7 @@ The following example shows how to create an upload session that you can use in 
 ### Request
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printdocument_createuploadsession",
@@ -100,6 +101,12 @@ Content-type: application/json
   }
 }
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/printdocument-createuploadsession-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

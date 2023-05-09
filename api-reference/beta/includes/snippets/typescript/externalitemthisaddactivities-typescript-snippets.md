@@ -18,7 +18,7 @@ const requestBody : AddActivitiesPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.connectionsById("externalConnection-id").itemsById("externalItem-id").externalConnectorsAddActivities.post(requestBody);
+	await graphServiceClient.connectionsById("externalConnection-id").itemsById("externalItem-id").microsoftGraphExternalConnectorsAddActivities.post(requestBody);
 }
 
 

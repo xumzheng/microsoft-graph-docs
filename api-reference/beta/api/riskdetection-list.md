@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/riskDetections
 ```
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-riskdetection-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [TypeScript](#tab/typescript)

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
-Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId
+Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -CaseId $caseId
 
 ```

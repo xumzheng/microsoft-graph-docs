@@ -86,6 +86,7 @@ The following example shows a request that updates the metadata of a learning co
 #### Request
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_learningcontent_id",
@@ -123,6 +124,12 @@ Content-Type: application/json
     "isSearchable": true
 }
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/update-learningcontent-id-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

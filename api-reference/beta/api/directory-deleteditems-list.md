@@ -114,6 +114,10 @@ If successful, this method returns a `200 OK` response code and collection of [d
 GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deleteditems-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/get-deleteditems-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -164,6 +168,10 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deleteditems-count-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/get-deleteditems-count-typescript-snippets.md)]

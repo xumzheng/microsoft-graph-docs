@@ -154,7 +154,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 ```
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-lifecycle-workflows-leaverondemand-run-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [TypeScript](#tab/typescript)

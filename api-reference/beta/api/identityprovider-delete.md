@@ -68,6 +68,10 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-identityprovider-forid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/delete-identityprovider-forid-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

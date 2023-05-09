@@ -103,6 +103,10 @@ Content-type: application/json
 }
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-identityprovider-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/update-identityprovider-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -144,6 +148,10 @@ Content-type: application/json
   "responseType": "id_token"
 }
 ```
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-openidconnectprovider-azure-ad-b2c-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/update-openidconnectprovider-azure-ad-b2c-typescript-snippets.md)]

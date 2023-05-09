@@ -203,7 +203,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response. The request returns a response object that shows the status of previously eligible assignment changes as `Revoked`. The principal will no longer see their previously eligible role.

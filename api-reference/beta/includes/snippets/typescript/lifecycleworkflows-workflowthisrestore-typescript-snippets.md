@@ -9,7 +9,7 @@ const graphServiceClient = GraphServiceClient.init({authProvider});
 
 
 const result = async () => {
-	await graphServiceClient.identityGovernance.lifecycleWorkflows.deletedItems.workflowsById("workflow-id").identityGovernanceRestore.post();
+	await graphServiceClient.identityGovernance.lifecycleWorkflows.deletedItems.workflowsById("workflow-id").microsoftGraphIdentityGovernanceRestore.post();
 }
 
 

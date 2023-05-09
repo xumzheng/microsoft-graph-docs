@@ -9,7 +9,7 @@ const graphServiceClient = GraphServiceClient.init({authProvider});
 
 
 const result = async () => {
-	await graphServiceClient.deviceManagement.monitoring.alertRecordsById("alertRecord-id").get();
+	await graphServiceClient.deviceManagement.monitoring.alertRecords.microsoftGraphDeviceManagementGetPortalNotifications().get();
 }
 
 

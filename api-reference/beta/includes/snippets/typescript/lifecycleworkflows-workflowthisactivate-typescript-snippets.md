@@ -19,7 +19,7 @@ const requestBody : ActivatePostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.identityGovernance.lifecycleWorkflows.workflowsById("workflow-id").identityGovernanceActivate.post(requestBody);
+	await graphServiceClient.identityGovernance.lifecycleWorkflows.workflowsById("workflow-id").microsoftGraphIdentityGovernanceActivate.post(requestBody);
 }
 
 

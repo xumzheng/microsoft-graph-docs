@@ -16,7 +16,7 @@ const requestBody : ApplyTagsPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").reviewSetsById("ediscoveryReviewSet-id").queriesById("ediscoveryReviewSetQuery-id").securityApplyTags.post(requestBody);
+	await graphServiceClient.security.cases.ediscoveryCasesById("ediscoveryCase-id").reviewSetsById("ediscoveryReviewSet-id").queriesById("ediscoveryReviewSetQuery-id").microsoftGraphSecurityApplyTags.post(requestBody);
 }
 
 

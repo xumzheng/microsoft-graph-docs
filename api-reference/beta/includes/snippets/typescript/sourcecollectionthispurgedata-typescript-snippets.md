@@ -9,7 +9,7 @@ const graphServiceClient = GraphServiceClient.init({authProvider});
 
 
 const result = async () => {
-	await graphServiceClient.compliance.ediscovery.casesById("case-id").sourceCollectionsById("sourceCollection-id").ediscoveryPurgeData.post();
+	await graphServiceClient.compliance.ediscovery.casesById("case-id").sourceCollectionsById("sourceCollection-id").microsoftGraphEdiscoveryPurgeData.post();
 }
 
 

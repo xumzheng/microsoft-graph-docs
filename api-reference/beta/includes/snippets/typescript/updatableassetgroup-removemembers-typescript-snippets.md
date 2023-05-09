@@ -17,7 +17,7 @@ const requestBody : RemoveMembersPostRequestBody = {
 };
 
 const result = async () => {
-	await graphServiceClient.admin.windows.updates.updatableAssetsById("updatableAsset-id").windowsUpdatesRemoveMembers.post(requestBody);
+	await graphServiceClient.admin.windows.updates.updatableAssetsById("updatableAsset-id").microsoftGraphWindowsUpdatesRemoveMembers.post(requestBody);
 }
 
 

@@ -69,10 +69,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-swapshiftschangerequest-2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [TypeScript](#tab/typescript)
 [!INCLUDE [sample-code](../includes/snippets/typescript/get-swapshiftschangerequest-2-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

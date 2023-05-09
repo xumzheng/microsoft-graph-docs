@@ -69,6 +69,7 @@ If successful, this method returns a `200 OK` response code and an [externalMeet
 #### Request
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add-externalregistratrant-public",
@@ -84,6 +85,12 @@ Content-Type: application/json
   "id": "9d96988d-a66a-46ce-aad7-0b245615b297"
 }
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/add-externalregistratrant-public-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
@@ -113,6 +120,7 @@ Content-Type: application/json
 #### Request
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add-externalregistratrant-private",
@@ -130,6 +138,12 @@ Content-Type: application/json
   "userId": "cc515404-b55c-466e-b896-992c918ecc01"
 }
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/add-externalregistratrant-private-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response

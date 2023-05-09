@@ -51,6 +51,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-update",
@@ -93,6 +94,12 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
   }
 }
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/printjob-update-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

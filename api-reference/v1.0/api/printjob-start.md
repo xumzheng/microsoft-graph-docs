@@ -48,6 +48,7 @@ If successful, this method returns a `200 OK` response code and a [printJobStatu
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob_start"
@@ -56,6 +57,16 @@ If successful, this method returns a `200 OK` response code and a [printJobStatu
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/jobs/{printJobId}/start
 ```
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/printjob-start-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Cli](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/printjob-start-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
