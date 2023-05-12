@@ -14,7 +14,7 @@
           {
             "Id": "8486b1f7-22b2-425b-bae7-e08c4cb7146b",
             "ApiChange": "Property",
-            "ChangedApiName": "unifiedRbacApplication",
+            "ChangedApiName": "authenticationContextId",
             "ChangeType": "Addition",
             "Description": "Added the **authenticationContextId** property to [unifiedrbacresourceaction](https://learn.microsoft.com/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource.",
             "Target": "unifiedrbacresourceaction"
