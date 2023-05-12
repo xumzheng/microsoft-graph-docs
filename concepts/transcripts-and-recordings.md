@@ -9,9 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Get change notification for meeting transcripts and recordings using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create) to transcripts and recordings. You can get notified whenever a transcript or recording is available after an online meeting.
+Change notifications enable you to subscribe to changes (create) to transcripts and recordings. You can get notified whenever a [transcript](/api-reference/beta/resources/calltranscript.md) or [recording](/api-reference/beta/resources/callrecording.md) is available after an online meeting.
 
-Continue with this article about scenarios for the transcript or recording resource. Or, find out about change notifications for other Microsoft Teams resources.
+Continue with this article about scenarios for the transcript or recording resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 ## Subscribe to any transcripts being available at tenant level
 
@@ -21,7 +21,7 @@ To get change notifications for any transcript being available for any online me
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported. |
+|Delegated (work or school account) | Not supported |
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | OnlineMeetingTranscript.Read.All   |
 
@@ -69,7 +69,7 @@ Content-Type: application/json
 
 ## Subscribe to any recordings being available at tenant level
 
-To get change notifications for any recording being available for any online meeting for a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports including resource data in the notification. This subscription is supported only for regular scheduled and recurring meetings.
+To get change notifications for any recording being available for any online meeting for a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular scheduled and recurring meetings.
 
 ### Permissions
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 
 ## Subscribe to any recordings being available for a particular online meeting
 
-To get change notifications for any recording being available for a particular online meeting, subscribe to communications/onlineMeetings/{onlineMeetingId}/recordings. This resource supports including resource data in the notification. This subscription is supported only for regular scheduled and recurring meetings.
+To get change notifications for any recording being available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular scheduled and recurring meetings.
 
 ### Permissions
 
@@ -156,7 +156,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-The decrypted notification payload looks like the following. The payload conforms to the recording[links to the new callRecording resource type page] schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [recording](/api-reference/beta/resources/callrecording.md) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -167,7 +167,8 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the transcript/recording. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the transcript or recording. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+
 For notifications without resource data, the payload looks like the following. This payload is for a transcript being available for an online meeting.
 
 ```json
@@ -186,7 +187,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-The resource and @odata.id properties can be used to make calls to Microsoft Graph to get the transcript/recording.
+The `resource` and `@odata.id` properties can be used to make calls to Microsoft Graph to get the transcript or recording.
 
 For notifications without resource data, the payload looks like the following. This payload is for a recording being available for an online meeting.
 
