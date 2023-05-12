@@ -23,9 +23,9 @@ Represents the job release options supported by a printer.
 ## printReleaseType values
 
 |Member|Value|Description|
-|:---|:---|
+|:---|:---|:---|
 |direct|0|Print job is released to printer immediately after the print job is processed by Universal Print.|
-|qrCode|1|Print job is held within Universal Print until user scans the QR code and completes the release workflow.
+|qrCode|1|Print job is held within Universal Print until user scans the QR code and completes the release workflow.|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
