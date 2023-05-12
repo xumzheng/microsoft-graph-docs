@@ -6,7 +6,7 @@
           {
             "Id": "9f793143-536a-4f23-acc3-54c937fccbe6",
             "ApiChange": "Relationship",
-            "ChangedApiName": "unifiedrbacresourceaction",
+            "ChangedApiName": "authenticationContext",
             "ChangeType": "Addition",
             "Description": "Added the **authenticationContext** relationship to the [unifiedrbacresourceaction](https://learn.microsoft.com/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource.",
             "Target": "unifiedrbacresourceaction"
