@@ -35,6 +35,24 @@
         "WorkloadArea": "Identity and access",
         "SubArea": "Directory management"
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "8624f9a7-741d-4fde-8e9f-4d9488637a7d",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeAuthenticationContextClassReferences",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeAuthenticationContextClassReferences** property to the [conditionalaccessapplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-1.0) resource.",
+          "Target": "conditionalaccessapplications"
+     },
+     {
+      "Id": "8624f9a7-741d-4fde-8e9f-4d9488637a7d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-12T10:35:50Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
