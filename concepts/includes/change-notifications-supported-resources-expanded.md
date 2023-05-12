@@ -35,6 +35,9 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Teams [team][] | Changes to any team in the tenant: `/teams` <br><br> Changes to a specific team: `/teams/{id}` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | [todoTask][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
 | [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>A [known issue](/graph/known-issues#change-notifications) for the subscription **changeType**. |
+| [CallTranscript][] | Any transcript becomes available in the tenant: `communications/onlineMeetings/getAllTranscripts` <br><br> Any transcript becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
+| [CallRecording][] | Any recording becomes available in the tenant: `communications/onlineMeetings/getAllRecordings` <br><br> Any recording becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
+
 
 Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
 
@@ -60,3 +63,5 @@ Some of these resources support rich notifications (notifications with resource 
 [todoTask]: /graph/api/resources/todotask
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [baseTask]: /graph/api/resources/basetask
+[CallTranscript]: /graph/api/resources/calltranscript
+[CallRecording]: /graph/api/resources/callrecording

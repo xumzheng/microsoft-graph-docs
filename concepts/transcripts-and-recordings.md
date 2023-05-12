@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notification for meeting transcripts and recordings using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create) to transcripts and recordings. You can get notified whenever a [transcript](/api-reference/beta/resources/calltranscript.md) or [recording](/api-reference/beta/resources/callrecording.md) is available after an online meeting.
+Change notifications enable you to subscribe to changes (create) to transcripts and recordings. You can get notified whenever a [transcript](/api/resources/calltranscript) or [recording](/api/resources/callrecording) is available after an online meeting.
 
 Continue with this article about scenarios for the transcript or recording resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
