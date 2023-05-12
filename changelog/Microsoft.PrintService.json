@@ -4,18 +4,10 @@
       "ChangeList": [
         {
           "Id": "76f67492-6a6f-4be7-86b6-b390e20a82be",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "printReleaseType",
-          "ChangeType": "Addition",
-          "Description": "Added the **printReleaseType** enumeration type.",
-          "Target": "printReleaseType"
-        },
-        {
-          "Id": "76f67492-6a6f-4be7-86b6-b390e20a82be",
           "ApiChange": "Resource",
           "ChangedApiName": "printRelease",
           "ChangeType": "Addition",
-          "Description": "Added the [printRelease](https://learn.microsoft.com/en-us/graph/api/resources/intune-printRelease?view=graph-rest-beta) resource type.",
+          "Description": "Added the [printRelease](https://learn.microsoft.com/en-us/graph/api/resources/printRelease?view=graph-rest-beta) complext type.",
           "Target": "printRelease"
         },
         {
@@ -23,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releases",
           "ChangeType": "Addition",
-          "Description": "Added the `releases` property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/intune-printer?view=graph-rest-beta) resource.",
+          "Description": "Added the `releases` property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
