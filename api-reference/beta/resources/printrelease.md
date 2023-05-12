@@ -1,7 +1,7 @@
 ---
 title: "printRelease complex type"
 description: "Represents the job release options supported by a printer."
-author: "vnagula-msft"
+author: "venkatnagula"
 ms.localizationpriority: medium
 ms.prod: "cloud-printing"
 doc_type: resourcePageType
