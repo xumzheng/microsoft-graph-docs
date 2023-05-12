@@ -50,7 +50,7 @@ This resource supports:
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
 |capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer.|
 |lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
-|releases|[printRelease](printrelease.md)|The list of Job Release Options enabled for the printer.|
+|releases|[printRelease](printrelease.md)|The list of Job Release Options enabled for the printer. Currently Printer supports single release option only.|
 
 ## Relationships
 | Relationship | Type        | Description |
@@ -89,6 +89,7 @@ The following is a JSON representation of the resource.
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
   "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"},
   "lastSeenDateTime": "String (timestamp)"
+  "releases": "[{"@odata.type": "microsoft.graph.printRelease"}]"
 }
 ```
 
