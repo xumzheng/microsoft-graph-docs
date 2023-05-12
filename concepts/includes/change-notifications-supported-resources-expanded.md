@@ -38,7 +38,6 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | [CallTranscript][] | Any transcript becomes available in the tenant: `communications/onlineMeetings/getAllTranscripts` <br><br> Any transcript becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
 | [CallRecording][] | Any recording becomes available in the tenant: `communications/onlineMeetings/getAllRecordings` <br><br> Any recording becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
 
-
 Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
 
 [channel]: /graph/api/resources/channel
