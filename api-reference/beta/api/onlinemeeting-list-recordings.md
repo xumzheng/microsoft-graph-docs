@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Retrieve the list of [callrecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
 > **Notes:**
+
 > - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 > - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
@@ -26,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | OnlineMeetingRecording.Read.All |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported   |
 |Application |  OnlineMeetingRecording.Read.All  |
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).

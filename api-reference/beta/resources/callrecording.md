@@ -27,7 +27,7 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 | content| Stream| A field that represents the content of the recording. Read-only.|
-| createdDateTime| DateTimeOffset|  Date and time at which the recording was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+| createdDateTime| DateTimeOffset|  Date and time at which the recording was created. The `dateTimeOffset` type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id| String| The unique identifier for the recording. Read-only.|
 
 ## JSON representation
