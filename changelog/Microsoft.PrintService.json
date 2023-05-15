@@ -4,6 +4,14 @@
       "ChangeList": [
         {
           "Id": "76f67492-6a6f-4be7-86b6-b390e20a82be",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "printReleaseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **printReleaseType** enumeration type.",
+          "Target": "printReleaseType"
+        },
+        {
+          "Id": "76f67492-6a6f-4be7-86b6-b390e20a82be",
           "ApiChange": "Resource",
           "ChangedApiName": "printRelease",
           "ChangeType": "Addition",
