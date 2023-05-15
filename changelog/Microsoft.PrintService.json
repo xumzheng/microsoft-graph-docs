@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printRelease",
           "ChangeType": "Addition",
-          "Description": "Added the [printRelease](https://learn.microsoft.com/en-us/graph/api/resources/printRelease?view=graph-rest-beta) complext type.",
+          "Description": "Added the [printRelease](https://learn.microsoft.com/en-us/graph/api/resources/printRelease?view=graph-rest-beta) complex type.",
           "Target": "printRelease"
         },
         {
