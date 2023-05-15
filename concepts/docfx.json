@@ -50,7 +50,7 @@
     },
     "fileMetadata": {
       "ms.technology": {
-        "**/*.md": "microsoft-graph"
+        "**/*.md": "microsoft graph"
       },
       "ms.topic": {
         "**/*.md": "conceptual"
