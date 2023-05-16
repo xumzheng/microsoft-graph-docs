@@ -18,7 +18,7 @@ Represents the job release options supported by a printer.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|releaseType|printReleaseType|Supported print release type|
+|releaseType|[printReleaseType](enums.md#printreleasetype-values)|Supported print release type|
 
 ## Relationships
 None.
