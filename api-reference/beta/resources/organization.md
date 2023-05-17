@@ -21,7 +21,6 @@ This resource lets you add your own data to custom properties using [extensions]
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get organization](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of organization object.|
 |[Update organization](../api/organization-update.md) | None | Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones**, and **privacyProfile**. |
 | [Get organization settings](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Read the organization settings object. |
 |**Open extensions**| | |
