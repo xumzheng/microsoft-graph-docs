@@ -177,7 +177,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "GET",
 				"ChangeType": "Deletion",
-				"Description": "Removed the Get **OrganizationSettings** since [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) returns the same data",
+				"Description": "Removed the Get **OrganizationSettings** since [List profileCardProperties](/api/organizationsettings-list-profilecardproperties) returns the same data",
 				"Target": "organizationSettings"
 			}
 			],
