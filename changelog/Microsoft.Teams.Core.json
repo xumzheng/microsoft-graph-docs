@@ -6282,7 +6282,7 @@
     "WorkloadArea": "Teamwork and communications",
     "SubArea": ""
   },
-{
+  {
       "ChangeList": [
         {
           "Id": "ae5b528b-38cf-473b-8e01-475844067c9c",
@@ -6343,7 +6343,7 @@
       "WorkloadArea": "Teamwork and communications", 
       "SubArea": "Calls and online meetings"
     },
-	{
+	  {
       "ChangeList": [
         {
           "Id": "163505d3-b68c-4fc0-b9d5-ec67cd05f574",
@@ -6446,6 +6446,24 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-04-10T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5c7f9e29-b6e1-42fb-a9d2-a0ba6d94b63e",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Change",
+          "Description": "Added new emoji support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-1.0) resource.",
+          "Target": "itemBody"
+        }
+      ],
+      "Id": "5c7f9e29-b6e1-42fb-a9d2-a0ba6d94b63e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-18T10:11:41.458Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
