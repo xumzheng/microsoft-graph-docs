@@ -1,7 +1,7 @@
 {
     "redirections": [
       {
-        "source_path_from_root": "api-reference/beta/api/organizationsettings-get.md",
+        "source_path_from_root": "/api-reference/beta/api/organizationsettings-get.md",
         "redirect_url": "/graph/api/organizationsettings-list-profilecardproperties?view=graph-rest-beta",
         "redirect_document_id": false
       }
