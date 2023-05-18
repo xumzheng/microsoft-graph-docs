@@ -6281,8 +6281,8 @@
     "CreatedDateTime": "2023-02-27T18:02:43.7311444Z",
     "WorkloadArea": "Teamwork and communications",
     "SubArea": ""
-  },
-  {
+    },
+    {
       "ChangeList": [
         {
           "Id": "ae5b528b-38cf-473b-8e01-475844067c9c",
@@ -6326,7 +6326,8 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
-    { "ChangeList": [ 
+    { 
+      "ChangeList": [ 
         { 
           "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
           "ApiChange": "Property", 
@@ -6334,7 +6335,7 @@
           "ChangeType": "Addition", 
           "Description": "Added the **metadataContent** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.", 
           "Target": "callTranscript" 
-        } 
+        }
       ], 
       "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
       "Cloud": "prd", 
