@@ -1001,6 +1001,24 @@
       "CreatedDateTime": "2023-03-14T05:32:34.8477703Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5997e838-8b68-4ef5-9298-c5d9dac95add",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-beta) resource",
+          "Target": "callRecording"
+        }
+      ],
+      "Id": "5997e838-8b68-4ef5-9298-c5d9dac95add",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-18T07:44:49.733067Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
     }
   ]
 }
