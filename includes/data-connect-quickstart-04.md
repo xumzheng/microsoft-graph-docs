@@ -16,7 +16,7 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
 
     - **Subscription**: select your Azure subscription
     - **Resource group**: mgdc-app-resource (or select an existing resource group)
-    - **Storage account name**: mgdcdemoap (or you can name and select your own storage account)
+    - **Storage account name**: mgdcdemoap (please name and select your own storage account since the naming must be unique for storage accounts only)
     - **Region**: [pick an Azure region in the same region as your Microsoft 365 region](/graph/data-connect-datasets#regions)
     - **Performance**: Standard
     - **Redundancy**: Geo-redundant storage
@@ -32,7 +32,7 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
 
     ![Screenshot of the Create a storage account page with Networking and Enable public access from all networks highlighted](../concepts/images/data-connect-azure-storage-network-new.png)
 
-1. Review that the settings match those shown in the previous steps and select **Create** to finalize.
+1. Click on **Review** to ensure that the settings match those shown in the previous steps and select **Create** to finalize.
 
 1. After the Azure Storage account has been created, grant the Azure Active Directory application previously created the proper access to it.
 

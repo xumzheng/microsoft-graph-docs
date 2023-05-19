@@ -23,7 +23,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
     - **Resource group:** Select the resource group you created previously, **mgdc-app-resource**.
     - **Region:** [Select an Azure region in the same region as your Microsoft 365 tenant](/graph/data-connect-datasets#regions).
     - **Workspace name:** m365tostorage
-    - **Account name:** synapsedatalstorage
+    - **Account name:** synapsedatalstorage (Create a new account below the field and give it a unique name for the storage account. For this tutorial we used the account name above but you will need your own name.)
     - **File system name:** flsynapse
 
         ![A screenshot of the Azure Synapse Analytics page with fields shown with values input and Review and create highlighted.](../concepts/images/data-connect-synapse-create.png)
@@ -35,20 +35,6 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
     ![A screenshot of the resource page with Open Synapse Studio highlighted.](../concepts/images/azure-synapse-studio-tile.png)
 
 1. By default, Azure Synapse Analytics uses an integration runtime that auto-resolves the region. We recommend for the context of this tutorial in the developer tenant, to use the default auto-resolve.
-
-    1. Switch to **Manage (toolbox icon) > Integration runtimes > New**.
-
-    1. Select **Azure, Self-Hosted**, and choose **Continue**.
-
-        ![A screenshot of the integration runtime setup with Azure, Self-Hosted highlighted.](../concepts/images/data-connect-synapse-IR.png)
-
-    1. For the network environment, select **Azure**, and then choose **Continue**.
-
-        ![A screenshot of the Integration runtime setup with Azure selected for network environment and Continue highlighted.](../concepts/images/data-connect-synapse-azure.png)
-
-    1. Use the following details to complete the form on the final screen and then choose **Create**.
-        - **Name**: Name of your integration runtime.
-        - **Region**: Select the region that matches your Microsoft 365 region.
 
 1. On the left pane, select **Integrate (tube icon)**.
 
@@ -77,7 +63,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
         ![A screenshot of the Set properties pane with New highlighted.](../concepts/images/data-connect-synapse-linked-service.png)
 
-    1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the **Application ID** and **client secret value** of the Azure Active Directory (Azure AD) application in the **Service principal ID** and **Service principal key** fields respectively, and choose **Create**.  
+    1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the **Application ID** and **client secret value** of the Azure Active Directory (Azure AD) application in the **Service principal ID** and **Service principal key** fields respectively. We recommend clicking the **Test Connection** in the bottom right of the window pane to see if the connection is valid before clicking on **Create**. 
 
         ![A screenshot of the New linked service pane.](../concepts/images/data-connect-synapse-service-id.png)
 
@@ -95,24 +81,25 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
     1. Select the **Sink** tab. Choose **New**, select **Azure Blob Storage**, and then choose **Continue**.  
 
-    ![A screenshot of the Integrate page with the Sink tab and the New button highlighted.](../concepts/images/data-connect-synapse-sink.png)
+        ![A screenshot of the Integrate page with the Sink tab and the New button highlighted.](../concepts/images/data-connect-synapse-sink.png)
 
-    ![A screenshot of the New integration dataset pane with Azure Blob Storage highlighted.](../concepts/images/data-connect-synapse-integration-service.png)
-
+        ![A screenshot of the New integration dataset pane with Azure Blob Storage highlighted.](../concepts/images/data-connect-synapse-integration-service.png)
+    
     1. For the format for the data, select **Binary**, and then choose **Continue**.
+
     1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
 
         ![A screenshot of the Set properties pane with Linked service highlighted.](../concepts/images/data-connect-synapse-set-properties.png)
 
         1. Under **Linked service**, choose **Select**, and then choose **+New**.
-        1. In the dialog box, set the following values, and then choose **Create**.
+        1. In the dialog box, set the following values. We recommend clicking the **Test Connection** in the bottom right of the window pane to see if the connection is valid before clicking on **Create**.  
             - **Authentication type:** Service Principal
             - **Azure subscription:** Select all.
             - **Storage account name:** mgdcm365datastore. This is the storage account created earlier in this exercise.
             - **Service principal ID:** Enter the ID of the Azure AD application you created.
             - **Service principal key:** Enter the hashed key of the Azure AD application you created.
 
-        ![A screenshot of the New linked service pane with the pane highlighted.](../concepts/images/data-connect-synapse-new-linked-service.png)
+            ![A screenshot of the New linked service pane with the pane highlighted.](../concepts/images/data-connect-synapse-new-linked-service.png)
 
     1. Next to the **File path** field, select **Browse**.
 
@@ -122,11 +109,13 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
 1. With the pipeline created, at the top of the designer, choose **Validate all**.  
 
-![A screenshot of the Synapse Analytics Pipeline with validate all highlighted.](../concepts/images/data-connect-synapse-validateAll.png)
+    ![A screenshot of the Synapse Analytics Pipeline with validate all highlighted.](../concepts/images/data-connect-synapse-validateAll.png)
 
 1. After validating (and fixing any issues that were found), at the top of the designer, choose **Publish all**.  
 
-![A screenshot of the Synapse Analytics Pipeline with Publish all highlighted.](../concepts/images/data-connect-synapse-publishAll.png)
+    ![A screenshot of the Synapse Analytics Pipeline with Publish all highlighted.](../concepts/images/data-connect-synapse-publishAll.png)
+
+1. (Optional) You can also add multiple dataset extractions within a run. For the context if this tutorial, if you would like to add **BasicDataSet_v0.Users_v1**, please follow steps 8 - 10. We recommend you re use the same linked service and storage container as you did previously, the only difference is ensuring you select **BasicDataSet_v0.Users_v1** during dataset collection and click import schema once the required fields are filled out.
 
 ## Run the Azure Synapse Analytics pipeline
 
@@ -153,7 +142,7 @@ Now that you've created the pipeline, it's time to run it.
 
 1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image.The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data and Succeeded – no further action needed from you for this.  
 
-    ![A screenshot of the Details page with ConsentPending highlighted.](../concepts/images/data-connect-synapse-accept-request.png)
+    ![A screenshot of the Details tab with RequestingConsent highlighted.](../concepts/images/data-connect-adf-wait-for-approval.png)
 
 1. The request will be sent to the global admin to be approved. For the context of this tutorial, we recommend opening another tab with your admin priviledges enabled so you can approve the pipeline request.
 
@@ -181,22 +170,9 @@ Now that you've created the pipeline, it's time to run it.
 1. Switch from the **Overview** (home icon) to the **Manage** (toolbox icon) experience by selecting it from the left-hand navigation.
 
 1. By default, the Azure Data Factory uses an integration runtime that is auto-resolving the region. We recommend for the context of this tutorial in the developer tenant, to use the default auto-resolve.  
-    1. Select **Integration runtimes** > **New**.
-    2. Select **Azure, Self-Hosted** and select **Continue**.
-
-        ![A screenshot of the Azure portal Data Factory service page with Azure, self-hosted selected.](../concepts/images/data-connect-adf-integration-runtime-b-new.png)
-
-    3. Select **Azure** for network environment and select **Continue**.
-
-        ![A screenshot of the Azure portal Data Factory service page with the Azure option selected for the network environment.](../concepts/images/data-connect-adf-network-new.png)
-
-    4. Use the following details to complete the form on the final screen, and then select **Create**.
-
-        - **Name**: Name of your integration runtime.
-        - **Region**: Select the region that matches your Microsoft 365 region.
-        - **Virtual network configuration (preview)**: Disabled
 
 1. Switch from the **Manage** (toolbox icon) to the **Author** (pencil icon) experience by selecting it from the left-hand navigation.
+
 1. Create a new pipeline by selecting the **plus** icon, then **pipeline**.
 
     ![A screenshot of the Azure portal Data Factory service page with Pipeline highlighted.](../concepts/images/data-connect-adf-pipeline-create.png)
@@ -269,6 +245,7 @@ Now that you've created the pipeline, it's time to run it.
 
       ![A screenshot of the Azure portal Factory resources page with publish all highlighted.](../concepts/images/data-connect-adf-publish-all.png)
 
+1. (Optional) You can also add multiple dataset extractions within a run. For the context if this tutorial, if you would like to add **BasicDataSet_v0.Users_v1**, please follow steps 9 - 11. We recommend you reuse the same linked service and storage container as you did previously, the only difference is ensuring you select **BasicDataSet_v0.Users_v1** during dataset collection and click import schema once the required fields are filled out.
 ## Run the Azure Data Factory pipeline
 
 With the pipeline created, now it is time to run it.
