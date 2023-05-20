@@ -32,6 +32,7 @@ Connectors are lightweight agents that sit on-premises and facilitate the outbou
 |id|String| Unique identifier of the connector. Read-only. |
 |machineName|String| The machine name the connector is installed and running on. |
 |status|connectorStatus| Indicates the status of the connector. Possible values are: `active`, `inactive`. Read-only. |
+|version|String| Indicates the version of the connector. Read-only. |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -56,7 +57,8 @@ The following is a JSON representation of the resource.
   "externalIp": "String",
   "id": "String (identifier)",
   "machineName": "String",
-  "status": "string"
+  "status": "string",
+  "version": "String"
 }
 
 ```

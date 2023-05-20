@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type for defining application segments when publishing an on-premises wildcard application through Azure AD Application Proxy. The following types are derived from this abstract type:
+An abstract type for defining application segments when publishing an on-premises wildcard or non web application through Azure AD Application Proxy. The following types are derived from this abstract type:
 + [webSegmentConfiguration](websegmentconfiguration.md)
++ [ipSegmentConfiguration](ipsegmentconfiguration.md)
 
 ## Properties
 

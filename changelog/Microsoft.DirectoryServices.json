@@ -724,6 +724,48 @@
     {
       "ChangeList": [
         {
+          "Id": "c25c77b1-9332-4494-996b-aabaffecc960",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAccessibleViaZTNAClient",
+          "ChangeType": "Addition",
+          "Description": "Added the `isAccessibleViaZTNAClient` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        },
+        {
+          "Id": "c25c77b1-9332-4494-996b-aabaffecc960",
+          "ApiChange": "Property",
+          "ChangedApiName": "version",
+          "ChangeType": "Addition",
+          "Description": "Added the `version` property to the [connector](https://learn.microsoft.com/en-us/graph/api/resources/connector?view=graph-rest-beta) resource.",
+          "Target": "connector"
+        },
+        {
+          "Id": "c25c77b1-9332-4494-996b-aabaffecc960",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipSegmentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/ipSegmentConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "ipSegmentConfiguration"
+        },
+        {
+          "Id": "c25c77b1-9332-4494-996b-aabaffecc960",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipApplicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/ipApplicationSegment?view=graph-rest-beta) resource",
+          "Target": "ipApplicationSegment"
+        }
+      ],
+      "Id": "c25c77b1-9332-4494-996b-aabaffecc960",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-19T15:32:15.8103673Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "19cc5fe8-13f2-4257-93c6-7ff1ca8581d5",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantIdentitySyncPolicyPartner",
