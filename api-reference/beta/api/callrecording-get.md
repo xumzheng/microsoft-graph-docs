@@ -118,7 +118,7 @@ Response contains bytes for the recording in the body. `content-type` header spe
 
 ```http
 HTTP/1.1 200 OK
-Content-type: text/vtt
+Content-type: video/mp4
 
 WEBVTT
 

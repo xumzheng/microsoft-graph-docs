@@ -42,10 +42,6 @@ GET /me/onlineMeetings({meetingId})/recordings
 GET /users({userId})/onlineMeetings({meetingId})/recordings
 ```
 
-## Optional query parameters
-
-This method supports the `$skipToken` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
-
 ## Request headers
 
 | Header       | Value |
